@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharrre.com</title>
+    <meta name="description" content="Sharrre"/>
+    <script src="http://code.jquery.com/jquery-1.7.min.js"></script>
+    <script src="src/js/platform/platform.js"></script>
+    <script src="src/js/platform/twitter.js"></script>
+    <script src="src/js/platform/googlePlus.js"></script>
+    <script src="src/js/platform/facebook.js"></script>
+    <script src="src/js/platform/digg.js"></script>
+    <script src="src/js/platform/delicious.js"></script>
+    <script src="src/js/platform/stumbleupon.js"></script>
+    <script src="src/js/platform/linkedin.js"></script>
+    <script src="src/js/platform/pinterest.js"></script>
+    <script src="src/js/platform/tumblr.js"></script>
+    <script src="src/js/platform/reddit.js"></script>
+    <script src="src/js/platform/twitterFollow.js"></script>
+    <script src="src/js/jquery.sharrre.js"></script>
+    <link rel="stylesheet" href="dist/test.css">
+</head>
+<body>
+
+<script>
+    $(function () {
+        $('h1').each(function () {
+            $this = $(this);
+            $this.append("<a class='show-source'>Show source</a>");
+        });
+
+        $(document).on('click', '.show-source', function () {
+            $this = $(this);
+            $script = $this.parent().prev("script");
+            $this.parent().append("<div class='source'>" + $script.html() + "</div>");
+            $this.remove();
+        });
+    });
+
+</script>
+
+<script>
+    $(function () {
+        $('#demo-all').sharrre({
+            share: {
+                googlePlus: true,
+                facebook: true,
+                twitter: true,
+                delicious: true,
+                stumbleupon: true,
+                linkedin: true,
+                pinterest: true,
+                tumblr: true,
+                reddit: true
+            },
+            buttons: {
+                facebook: {},
+                twitter: {
+                    hashtags: "ShareMe"
+                },
+                delicious: {},
+                linkedin: {},
+                pinterest: {}
+            },
+            hover: function (api, options) {
+                $(api.element).find('.buttons').show();
+            },
+            hide: function (api, options) {
+                $(api.element).find('.buttons').hide();
+            },
+            url: 'http://sharrre.com'
+        });
+    });
+</script>
+<h1>All standard buttons</h1>
+
+<div id="demo-all" class="clearfix"></div>
+
+
+<script>
+    $(function () {
+        $('#demo-no-count').sharrre({
+            share: {
+                googlePlus: true,
+                facebook: true,
+                twitter: true,
+                delicious: true,
+                stumbleupon: true,
+                linkedin: true,
+                pinterest: true,
+                tumblr: true,
+                reddit: true
+            },
+            buttons: {
+                facebook: {},
+                twitter: {},
+                delicious: {},
+                linkedin: {},
+                pinterest: {}
+            },
+            url: 'http://sharrre.com',
+            enableCounter: false
+        });
+    });
+</script>
+<h1>All standard buttons (without counter)</h1>
+
+<div id="demo-no-count" class="clearfix"></div>
+
+<link type="text/css" rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<script>
+    var list = ['facebook', 'twitter', 'tumblr', 'reddit', 'twitterFollow'];
+    $(function () {
+        $('#demo-custom').sharrre({
+            share: {
+                googlePlus: true,
+                facebook: true,
+                twitter: true,
+                delicious: true,
+                stumbleupon: true,
+                linkedin: true,
+                pinterest: true,
+                tumblr: true,
+                reddit: true,
+                twitterFollow: true
+            },
+            buttons: {
+                facebook: {
+                    popup: {
+                        width: 1200,
+                        height: 900
+                    }
+                },
+                twitter: {},
+                delicious: {},
+                linkedin: {},
+                pinterest: {},
+                twitterFollow: {
+                    user: 'GarethBale11'
+                }
+            },
+            url: 'http://sharrre.com',
+
+            enableCounter: false,
+            enableHover: false,
+            template: function () {
+                content = '';
+                for (i in list) {
+                    service = list[i];
+                    content += '<a class="' + service + '"><i class="fa fa-' + service + '"></i></a>';
+                }
+                return content;
+            }(),
+            render: function (api, options) {
+                for (i in list) {
+                    service = list[i];
+                    $(api.element).on('click', '.' + service, function () {
+                        api.openPopup(this.className);
+                    });
+                }
+            }
+        });
+    });
+</script>
+<h1>Customized buttons</h1>
+
+<div id="demo-custom" class="clearfix"></div>
+
+<script>
+    $(function () {
+        $('#follow').sharrre({
+            share: {
+                twitterFollow: true
+            },
+            buttons: {
+                twitterFollow: {
+                    user: 'GarethBale11'
+                }
+            },
+            url: 'https://github.com'
+        });
+    });
+</script>
+<h1>Twitter follow</h1>
+
+<div id="follow" class="clearfix"></div>
+
+</body>
