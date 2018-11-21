@@ -1,0 +1,2 @@
+<p><?php _e( 'You are using features that are only available in WP Ultimate Post Grid Premium.', 'wp-ultimate-post-grid' ); ?></p>
+<p style="text-align: center"><a href="http://bootstrapped.ventures/wp-ultimate-post-grid/" class="button" target="_blank"><?php _e( 'Learn More', 'wp-ultimate-post-grid' ); ?></a></p>

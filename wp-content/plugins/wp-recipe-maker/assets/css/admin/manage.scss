@@ -1,0 +1,93 @@
+.wprm-manage {
+
+	.wprm-manage-header {
+		margin-top: 20px;
+	}
+
+	.wprm-manage-recipes-filters {		
+		.wprm-manage-recipes-filter,
+		.select2_wprm-container {
+			margin-left: 5px;
+			z-index: 100;
+			max-width: 100%;
+		}
+	}
+
+	.wprm-manage-datatable {
+		display: none;
+
+		.wprm-icon {
+			cursor: pointer;
+			color: #444;
+		}
+	}
+
+	.dataTables_wrapper {
+		margin-top: 20px;
+
+		.wprm-manage-datatable {
+			display: table;
+		}
+	}
+
+	.wprm-manage-recipes-rating-details {
+		font-size: 0.7em;
+	}
+
+	.wprm-manage-recipes-seo {
+		margin: 0 auto;
+		width: 15px;
+		height: 15px;
+		border: 1px solid #444;
+		border-radius: 50%;
+		
+		&.wprm-manage-recipes-seo-bad {
+			background-color: #e74c3c;
+		}
+		&.wprm-manage-recipes-seo-warning {
+			background-color: #e67e22;
+		}
+		&.wprm-manage-recipes-seo-rating {
+			background-color: #f1c40f;
+		}
+		&.wprm-manage-recipes-seo-good {
+			background-color: #27ae60;
+		}
+
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	.wprm-manage-recipes-seo-tooltip {
+		display: none;
+	}
+
+	.wprm-manage-action-icon {
+		cursor: pointer;
+		margin-left: 5px;
+	}
+}
+
+.wprm-manage-recipes-actions-tooltip,
+.wprm-manage-ingredients-actions-tooltip,
+.wprm-manage-taxonomies-actions-tooltip,
+.wprm-manage-custom-taxonomies-actions-tooltip {
+	text-align: right;
+	min-width: 250px;
+	font-size: 14px;
+
+	.tooltip-header {
+		margin-bottom: 5px;
+		font-weight: bold;
+	}
+
+	a {
+		color: white;
+		display: block;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

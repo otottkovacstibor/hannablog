@@ -1,0 +1,55 @@
+.wpurp-ingredients-nutritional .column-ingredient {
+  width: 25%; }
+.wpurp-ingredients-nutritional .column-actions {
+  width: 25%; }
+.wpurp-ingredients-nutritional .column-nutritional {
+  width: 50%; }
+.wpurp-ingredients-nutritional .nutritional-panel-row {
+  padding: 0; }
+.wpurp-ingredients-nutritional .nutritional-panel {
+  display: none;
+  padding: 10px;
+  background-color: #eee;
+  border-bottom: 1px solid #0074a2; }
+  .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional, .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results, .wpurp-ingredients-nutritional .nutritional-panel .edit-nutritional {
+    display: none; }
+  .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results table {
+    border-collapse: collapse;
+    width: 100%; }
+    .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results table tr:nth-child(2n) {
+      background-color: #ddd; }
+    .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results table td {
+      vertical-align: middle;
+      padding: 2px 5px; }
+      .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results table td:nth-child(1) {
+        width: 5%; }
+      .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results table td:nth-child(2) {
+        width: 30%; }
+      .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results table td:nth-child(3) {
+        width: 15%; }
+      .wpurp-ingredients-nutritional .nutritional-panel .get-nutritional-results table td:nth-child(4) {
+        width: 50%; }
+  .wpurp-ingredients-nutritional .nutritional-panel .edit-nutritional table tr:first-child td {
+    font-weight: bold;
+    background-color: #ddd; }
+
+.wpurp-recipe-nutritional .calculate-recipe-row {
+  padding: 0; }
+.wpurp-recipe-nutritional .calculate-recipe-panel {
+  display: none;
+  padding: 10px;
+  background-color: #eee;
+  border-bottom: 1px solid #0074a2; }
+.wpurp-recipe-nutritional table {
+  border-collapse: collapse;
+  width: 100%; }
+  .wpurp-recipe-nutritional table td {
+    vertical-align: middle;
+    padding: 2px 5px;
+    width: 33%; }
+    .wpurp-recipe-nutritional table td input {
+      width: 75px; }
+      .wpurp-recipe-nutritional table td input.wide {
+        width: 100%; }
+.wpurp-recipe-nutritional table.nutritional-data td {
+  width: 25%; }

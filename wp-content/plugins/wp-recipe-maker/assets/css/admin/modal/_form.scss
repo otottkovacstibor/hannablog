@@ -1,0 +1,61 @@
+// main: ../modal.scss
+.wprm-recipe-form {
+		max-width: 600px;
+
+		.wprm-recipe-form-container {
+				margin-bottom: 15px;
+				vertical-align: top;
+		}
+
+		.wprm-recipe-form-container-halfs {
+				display: inline-block;
+				width: 50%;
+		}
+
+		.wprm-recipe-form-container-thirds {
+				display: inline-block;
+				width: 33.3%;
+		}
+
+		label {
+				display: block;
+				font-weight: bold;
+				margin-bottom: 5px;
+		}
+
+		input[type="text"],
+		input[type="number"] {
+				margin: 0;
+				width: 100%;
+				max-width: 120px;
+				height: 34px;
+				line-height: 34px;
+
+				&[type="number"] {
+						max-width: 65px;
+				}
+
+				&.select2_wprm-search__field {
+						height: 18px;
+						line-height: 18px;
+				}
+		}
+
+		select {
+				width: 100%;
+		}
+
+		textarea {
+				width: 100%;
+				resize: vertical;
+		}
+}
+@media only screen and (max-width: 480px) {
+		.wprm-recipe-form {
+				.wprm-recipe-form-container-halfs,
+				.wprm-recipe-form-container-thirds {
+						display: block;
+						width: 100%;
+				}
+		}
+}

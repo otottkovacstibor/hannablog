@@ -1,0 +1,120 @@
+#customize-controls #accordion-section-suevafree-customize-info.control-section .accordion-section-title, 
+#customize-controls #accordion-section-suevafree-customize-info.control-section .accordion-section-title:focus, 
+#customize-controls #accordion-section-suevafree-customize-info.control-section .accordion-section-title:hover, 
+#customize-controls #accordion-section-suevafree-customize-info.control-section.open .accordion-section-title, 
+#customize-controls #accordion-section-suevafree-customize-info.control-section:hover>.accordion-section-title { 
+	background-color: #ec7063 !important;
+    border-left-color: #d54e21;
+	color: #fff !important;
+}
+
+li#accordion-section-suevafree-customize-info h3.accordion-section-title:after { 
+	color: #fff !important;
+}
+
+a.getsueva ,
+a.getavana {
+	width:90%;
+	content:"plus";
+	position: relative;
+	top: -1px;
+	margin: 15px 0 0 0;
+	padding: 9px 12px !important;
+	font-size: 12px !important;
+	color: #ffffff !important;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	display:inline-block;
+	visibility:visible;
+	border: none !important;
+	outline: none !important;
+	text-decoration:none
+}
+
+a.getsueva {
+	background-color: #ec7063 !important;
+}
+
+a.getavana {
+	background-color: #2D3032 !important;
+	margin-top:5px
+}
+a.getsueva:hover ,
+a.getavana:hover {
+	color: #fff !important;
+	background-color: #d54e21 !important;
+}
+
+a.getsueva:hover ,
+a.getsueva:focus ,
+a.getsueva:active ,
+a.getavana:hover ,
+a.getavana:focus ,
+a.demobutton:active {
+	getavana: none !important;
+	outline: none !important;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+#sub-accordion-section-suevafree-customize-info .inside {
+    border-bottom: solid 1px #ddd;
+    padding-bottom: 1em;
+}
+
+#sub-accordion-section-suevafree-customize-info .inside:last-of-type {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+li#customize-control-suevafree-customize-info .purchase-button { 
+	position: relative;
+	top: -1px;
+	margin: 0;
+	padding: 6px 15px !important;
+	font-size: 12px !important;
+	color: #ffffff !important;
+	background-color: #ec7063 !important;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	-webkit-font-smoothing: subpixel-antialiased !important;
+	-webkit-transition:all .3s ease;
+	-moz-transition:all .3s ease;
+	-o-transition:all .3s ease;
+	display:inline-block;
+	visibility:visible;
+	border: none !important;
+	outline: none !important;
+	width:100%;
+	line-height: 30px;
+    height: 40px;
+	-webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+li#customize-control-suevafree-customize-info .purchase-button:after {
+    content: "\f345";
+    color: #fff;
+	font: 400 20px/1 dashicons;
+	line-height: 30px;
+    height: 40px;
+	float: right;
+}
+li#customize-control-suevafree-customize-info .purchase-button:hover {
+	color: #fff !important;
+	background-color: #333 !important;
+}
+
+li#customize-control-suevafree-customize-info .purchase-button:hover ,
+li#customize-control-suevafree-customize-info .purchase-button:focus ,
+li#customize-control-suevafree-customize-info .purchase-button:active {
+	border: none !important;
+	outline: none !important;
+	-webkit-box-shadow: none;
+    box-shadow: none;
+}

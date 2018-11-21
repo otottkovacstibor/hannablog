@@ -1,0 +1,26 @@
+version: '3.5'
+services:
+  hannablog:
+    image: wordpress
+    restart: always
+    container_name: hannablog
+    environment:
+      VIRTUAL_HOST: hannablog.oktibor.com
+      VIRTUAL_PORT: 80
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: "${MYSQL_USER}"
+      WORDPRESS_DB_PASSWORD: "${MYSQL_PASSWORD}"
+      WORDPRESS_DB_NAME: hannablog
+      WORDPRESS_TABLE_PREFIX: hanna_
+    volumes:
+      - ./wp-content:/var/www/html/wp-content
+      - ./.htaccess:/var/www/html/.htaccess
+    networks:
+      - nginx
+      - mysql
+
+networks:
+  nginx:
+   external: true
+  mysql:
+   external: true

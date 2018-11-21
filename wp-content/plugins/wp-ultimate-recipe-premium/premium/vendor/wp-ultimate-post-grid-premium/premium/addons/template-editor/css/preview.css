@@ -1,0 +1,19 @@
+html, body, .wpupg-keep-parent {
+  margin: 0 !important;
+  padding: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  background: none !important;
+  background-color: white !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  text-align: center; }
+
+.wpupg-keep-parent:before {
+  display: none !important; }
+
+.wpupg-grid {
+  margin: 0 auto !important; }
+
+.wpupg-grid.wpupg-mobile-preview {
+  width: 300px !important; }

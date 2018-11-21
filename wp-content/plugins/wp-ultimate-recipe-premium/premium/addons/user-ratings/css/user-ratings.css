@@ -1,0 +1,13 @@
+.wpurp-container .user-star-rating.user-can-vote i {
+  cursor: pointer; }
+
+html body .wpurp-recipe-stars .recipe-tooltip-content {
+  min-width: 120px !important; }
+  html body .wpurp-recipe-stars .recipe-tooltip-content .vote-attention-message {
+    display: none;
+    text-align: center; }
+  html body .wpurp-recipe-stars .recipe-tooltip-content .user-rating-votes,
+  html body .wpurp-recipe-stars .recipe-tooltip-content .user-rating-rating,
+  html body .wpurp-recipe-stars .recipe-tooltip-content .user-rating-current-rating {
+    font-weight: bold;
+    float: right; }

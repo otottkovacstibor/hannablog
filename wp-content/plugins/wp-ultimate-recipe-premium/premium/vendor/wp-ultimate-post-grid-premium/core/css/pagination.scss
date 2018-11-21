@@ -1,0 +1,38 @@
+.wpupg-pagination-term, .wpupg-pagination-button {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+}
+
+@keyframes wpupg-spinner {
+  to {transform: rotate(360deg);}
+}
+
+@-webkit-keyframes wpupg-spinner {
+  to {-webkit-transform: rotate(360deg);}
+}
+
+.wpupg-spinner {
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.wpupg-spinner:before {
+  content: 'Loading…';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin-top: -8px;
+  margin-left: -8px;
+}
+
+.wpupg-spinner:not(:required):before {
+  content: '';
+  border-radius: 50%;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid transparent;
+  animation: wpupg-spinner .6s linear infinite;
+  -webkit-animation: wpupg-spinner .6s linear infinite;
+}

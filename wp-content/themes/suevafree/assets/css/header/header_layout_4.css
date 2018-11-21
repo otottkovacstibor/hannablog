@@ -1,0 +1,515 @@
+/* ===============================================
+   HEADER
+   =============================================== */
+
+#header-wrapper { 
+	position:relative;
+	z-index:1001;
+	margin-bottom:50px
+}
+
+#header-wrapper.fixed-header { 
+	height:46px;
+}
+
+#header-wrapper.fixed-header #header { 
+	position:fixed;
+	text-align:left;
+	padding:0;
+	color:#616161;
+	width:100%;
+	background:#fff;
+	top:0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body.logged-in #header-wrapper.fixed-header #header { 
+	top:32px;
+}
+
+body.woocommerce-demo-store #header-wrapper.fixed-header #header { 
+	top:48px;
+}
+
+body.woocommerce-demo-store.logged-in #header-wrapper.fixed-header #header { 
+	top:80px;
+}
+
+body.customizer_active.logged-in #header-wrapper.fixed-header #header {
+	top:0;
+}
+
+p.demo_store {
+    box-shadow: none;
+}
+
+#top_sidebar ,
+#onepage_sidebar {
+	margin-top:-50px;
+}
+
+/* ===============================================
+   BREADCRUMB
+   =============================================== */
+
+#breadcrumb_wrapper {
+	width:100%; 
+	background:#eeeeee; 
+	margin-top:-50px; 
+	padding:25px 0; 
+	margin-bottom:50px;
+}
+
+#breadcrumb_wrapper ul#breadcrumb {
+	margin:0;
+	text-align:left;
+	font-size:11px !important;
+	padding:0;
+}
+
+#breadcrumb_wrapper ul#breadcrumb li { 
+	display:inline-block; 
+	line-height:1em;
+	font-size:11px !important;
+}
+
+#breadcrumb_wrapper ul#breadcrumb , 
+#breadcrumb_wrapper ul#breadcrumb li { 
+	color:inherit;
+}
+
+/* ===============================================
+   LOGO
+   =============================================== */
+
+#logo { 
+	position:relative; 
+	padding:0;
+	line-height:90px;
+	max-height:90px;
+} 
+
+#logo a.logo { 
+	color:#333; 
+	text-decoration:none; 
+	text-align:center;
+	-webkit-transition: color .3s ease;
+	-moz-transition: color .3s ease;
+	-ms-transition: color .3s ease;
+	-o-transition: color .3s ease;
+	transition: color .3s ease;
+} 
+
+#logo a.logo:hover { 
+	text-decoration:none;
+	color:#d14a2b;
+	border-bottom:none;
+}
+
+#logo a.logo span {
+	display:block;
+	text-align:center;
+	margin:0;
+	line-height:1.6em;
+	margin-top:15px;
+} 
+
+#logo img {
+	padding:5px 0;
+	max-height:80px
+} 
+
+@media screen and (min-width : 992px) {	
+
+	/* ===============================================
+	   MAIN MENU
+	   =============================================== */
+	
+	.suevafree-menu { 
+		text-align:right; 
+		position:relative; 
+		width:100%;
+		height:90px;
+	}
+	.suevafree-menu ul { 
+		list-style:none; 
+		margin:0; 
+		display:inline-block;
+	}
+	.suevafree-menu ul li {
+		float:left; 
+		position:relative; 
+		display:block;
+		text-align:right;
+		font-size:inherit
+	}
+	.suevafree-menu ul li a   { 
+		text-decoration:none; 
+		display:block; 
+		padding:35px 10px;
+		z-index:1; 
+		color:#919191; 
+		-webkit-transition: color .3s linear;
+		-moz-transition: color .3s linear;
+		-ms-transition: color .3s linear;
+		-o-transition: color .3s linear;
+		transition: color .3s linear;
+	}
+	
+	.suevafree-menu ul li a:hover,
+	.suevafree-menu li:hover > a,
+	.suevafree-menu ul li.current-menu-item > a, 
+	.suevafree-menu ul li.current_page_item > a, 
+	.suevafree-menu ul li.current-menu-parent > a, 
+	.suevafree-menu ul li.current_page_ancestor > a, 
+	.suevafree-menu ul li.current-menu-ancestor > a { 
+		color:#d14a2b;
+	}
+	
+	
+	.suevafree-menu .sf-sub-indicator { 
+		padding:0 0 0 10px; 
+		float:right; 
+		font-size:8px;
+	}
+	
+	.suevafree-menu ul ul { 
+		display:none; 
+		position: absolute; 
+		top:90px; 
+		left:0; 
+		width:100%;
+		min-width:190px;
+		z-index:1001;
+		margin:0;
+		padding:0;
+		background:#fff; 
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		-moz-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		-webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	}
+	 
+	.suevafree-menu ul ul li { 
+		position:relative; 
+		margin:0;
+		width:100%;
+		min-width:190px;
+		padding:0;
+		line-height:1.2em;
+	}
+	
+	.suevafree-menu ul ul li a { 
+		text-decoration:none; 
+		text-align:left; 
+		display:block; 
+		padding:14px 14px 0 14px;
+		margin:0;
+		text-transform:inherit; 
+		text-shadow:inherit; 
+		font-weight:300;
+		font-size:12px;
+		color:#616161; 
+	}
+	
+	.suevafree-menu ul ul li:last-of-type a { 
+		padding:14px;
+	}
+	
+	.suevafree-menu ul ul li a:hover, 
+	.suevafree-menu ul ul li a:hover, 
+	.suevafree-menu ul ul li.current-menu-item > a,
+	.suevafree-menu ul ul li.current_page_item > a, 
+	.suevafree-menu ul ul li.current_page_ancestor > a, 
+	.suevafree-menu ul ul li.current_page_ancestor > a, 
+	.suevafree-menu ul ul li.current-menu-ancestor > a { 
+		color:#d14a2b;
+		background:none !important
+	}
+
+	.suevafree-menu ul ul li ul { 
+		top:0px !important; 
+		left:190px; 
+	}
+	
+	.suevafree-menu ul ul li ul:before { 
+		display:none;
+	}
+
+}
+
+@media screen and (max-width : 992px) {	
+	
+	/* ===============================================
+	   MOBILE MENU
+	   =============================================== */
+	
+	.suevafree-mobile-menu {
+		display:block ;
+		position:relative;
+		padding:0; 
+		width:100%;
+	}
+	
+	.suevafree-mobile-menu ul { 
+		list-style:none; 
+		margin:0; 
+		display:block;
+		width:100%;
+		border:none;
+		text-align:left;
+	}
+	
+	.suevafree-mobile-menu ul li {
+		position:relative; 
+		display:block;
+		padding:0 !important;
+		text-align:left;
+	}
+	
+	.suevafree-mobile-menu ul li:last-of-type {
+		border-bottom:none;
+	}
+	
+	.suevafree-mobile-menu ul li:after {
+		display:none;
+		visibility:hidden;
+	}
+	
+	.suevafree-mobile-menu ul li a { 
+		text-decoration:none; 
+		display:block; 
+		z-index:1; 
+		padding:6px 0;
+		font-size:16px; 
+		position:relative;
+		cursor:pointer;
+		line-height:1.8em;
+		color:#fff;
+		-webkit-transition: color .3s linear;
+		-moz-transition: color .3s linear;
+		-ms-transition: color .3s linear;
+		-o-transition: color .3s linear;
+		transition: color .3s linear;
+	}
+	
+	.suevafree-mobile-menu ul li a:hover,
+	.suevafree-mobile-menu li:hover > a,
+	.suevafree-mobile-menu ul li a:hover,
+	.suevafree-mobile-menu li:hover > a,
+	.suevafree-mobile-menu ul li.current-menu-item > a, 
+	.suevafree-mobile-menu ul li.current_page_item > a, 
+	.suevafree-mobile-menu ul li.current-menu-parent > a, 
+	.suevafree-mobile-menu ul li.current_page_ancestor > a, 
+	.suevafree-mobile-menu ul li.current-menu-ancestor > a { 
+		color:#d14a2b;
+	}
+	
+	.suevafree-mobile-menu .sub-menu, 
+	.suevafree-mobile-menu .children { 
+		display:none; 
+		margin:0 !important; 
+		z-index:9999;
+		padding:15px 0;
+	}
+	
+	.suevafree-mobile-menu li li a,
+	.suevafree-mobile-menu li li li a { 
+		text-decoration:none; 
+		border-top:none;
+		font-size:12px
+	}
+	
+	.suevafree-mobile-menu .sf-sub-indicator {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		margin-top: -14px;
+		font-size: 9px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+}
+
+/* ===============================================
+   SCROLL SIDEBAR
+   =============================================== */
+
+.mobile-navigation {
+	padding:14px 0;
+	position:relative;
+	cursor:pointer;
+	float:left;
+	display:none;
+	visibility:hidden;
+}
+
+.mobile-menu-open i {
+	color:#616161;
+}
+
+.mobilemenu-box {
+	padding:0 50px 50px 50px;
+	position:relative;
+}
+
+#mobile-wrapper {
+ 	left: 0;
+ 	top: 0;
+ 	bottom: 0;
+ 	height: 100%;
+ 	position: fixed;
+	z-index:999999;
+}
+
+body.logged-in #mobile-wrapper #mobile-scroll {
+	top:32px;
+}
+
+#mobile-wrapper #mobile-scroll,
+body.logged-in.customizer_active #mobile-wrapper #mobile-scroll {
+	left:-300px; 
+	width:300px;
+	overflow:hidden;
+	background:#2D3032; 
+	position:fixed; 
+	display:block; 
+	height:100%;  
+	padding:25px 0; 
+	top:0;
+	-webkit-transition: left .6s ease;
+	-moz-transition: left .6s ease;
+	-ms-transition: left .6s ease;
+	-o-transition: left .6s ease;
+	transition: left .6s ease;
+}
+
+body.overlay-active #wrapper {
+	margin-right:8px;
+}
+
+body.overlay-active #header {
+	padding-right:8px;
+}
+
+body.overlay-active #mobile-wrapper #mobile-scroll ,
+body.logged-in.customizer_active.overlay-active #mobile-wrapper #mobile-scroll {
+	left:0;
+}
+
+#mobile-wrapper #mobile-scroll .mobile-navigation {
+	text-align:left;
+	float:none;
+}
+
+#mobile-wrapper #mobile-scroll .mobile-navigation i {
+	color:#fff;
+}
+
+#overlay-body {
+	position: fixed;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	visibility:hidden;
+	display:none;
+	opacity: 0.9;
+	filter: alpha(opacity=90);
+	cursor:pointer;
+	overflow: hidden; 
+	z-index:9999
+}
+
+#overlay-body.visible {
+	visibility:visible;
+	display:block;
+}
+
+body.page-template-template-one-page #overlay-body.visible {
+    visibility: hidden;
+	display: none;
+}
+
+body.overlay-active.page-template-template-one-page #wrapper {
+	margin-right:0;
+}
+
+@media screen and (min-width : 0px) and (max-width : 992px)  {	
+
+	#logo {
+		text-align: center;
+	}
+	
+	body.logged-in #header-wrapper.fixed-header #header , 
+	#header-wrapper.fixed-header #header {
+		position:relative;
+		top:0;
+	}
+
+	.mobile-navigation {
+		display: block;
+		visibility: visible;
+		width: 100%;
+		text-align: center;
+		float: none;
+	}
+
+	body.scroll_header #header-wrapper { 
+		position:relative;
+		height:auto;
+		margin-bottom: inherit;
+	}
+	
+	body.scroll_header #header-wrapper .right {
+		padding-left: inherit; 
+	}
+	
+	body.scroll_header.logged-in #header { 
+		top: inherit;
+	}
+
+	body.scroll_header .content,
+	body.scroll_header .masonry-container,
+	body.scroll_header #header_sidebar,
+	body.scroll_header.single .product-wrapper,
+	body.scroll_header .products-list{
+		margin-top:0;
+	}
+	
+	body.scroll_header #header { 
+		position:relative;
+		background:none;
+		top: inherit;
+		box-shadow: none;
+		-moz-box-shadow: none;
+		-webkit-box-shadow: none;
+	}
+
+	body.scroll_header #top_sidebar ,
+	body.scroll_header #onepage_sidebar {
+		margin-top:0;
+	}
+
+	#logo {
+		padding: 0;
+	}
+	
+	.suevafree-general-menu {
+		height:inherit;
+	}
+
+	.suevafree-general-menu ul {
+		visibility:hidden;
+		display:none;
+	}
+
+	.suevafree-mobile-menu { 
+		margin-bottom:50px;
+	}
+
+}

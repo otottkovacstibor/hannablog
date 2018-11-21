@@ -1,0 +1,481 @@
+/* Navbar
+-----------------------------------------------------------------------------*/
+
+.navbar {
+    margin-bottom: 0;
+
+    .navbar-brand:hover, .navbar-brand:focus {
+        color: #999999;
+    }
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+    margin-top: 52px;
+    width: 100%;
+    min-height: 100%;
+}
+.middle:after {
+    display: table;
+    clear: both;
+    content: '';
+}
+.container {
+    width: 100%;
+    overflow: hidden;
+}
+.content {
+    margin: 0 250px;
+    padding: 1px 10px;
+    min-height: 100%;
+}
+
+#alerts-container {
+    margin-top: 20px;
+}
+
+/* Panels
+-----------------------------------------------------------------------------*/
+
+.panel {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+}
+
+.panel-heading {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.panel-body {
+    padding: 0;
+}
+
+.panel-group {
+    margin: 0;
+
+    .panel {
+        margin-top: 0 !important;
+    }
+
+    .panel, .panel-heading, .panel-title, .panel-body {
+        border-radius: 0;
+        border: 0;
+    }
+
+    .panel-heading {
+        padding: 7px 15px;
+        cursor: pointer;
+
+        .panel-title {
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+}
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 250px;
+
+    margin-top: 52px;
+    padding: 10px;
+
+    overflow-y: scroll;
+}
+
+#panel-building .panel-group .panel-body {
+    padding: 10px;
+}
+
+.lib-block {
+    cursor: move;
+
+    width: 75%;
+    min-height: 25px;
+    line-height: 25px;
+    margin: 5px auto;
+
+    box-sizing: border-box;
+
+    border: 1px solid #295c83;
+    background-color: #428bca;
+    color: white;
+
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+
+/* Right Sidebar
+-----------------------------------------------------------------------------*/
+.right-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 250px;
+
+    margin-top: 52px;
+    padding: 10px;
+
+    overflow-y: scroll;
+}
+
+.block-actions {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#panel-properties {
+    .panel-body {
+        p {
+            margin: 10px;
+        }
+
+        .panel-body {
+            padding: 0 10px;
+
+            .form-group:first-child {
+                margin-top: 10px;
+            }
+
+            label {
+                font-weight: bold;
+            }
+
+            .input-group, .btn {
+                width: 100%;
+            }
+        }
+    }
+}
+
+textarea {
+    resize: vertical;
+}
+
+.redactor_dropdown, #redactor_modal {
+    z-index: 2000 !important;
+}
+
+.property {
+    clear: both;
+    margin-top: 10px;
+}
+
+.property label {
+    float: left;
+    width: 115px;
+}
+
+.property input {
+    margin: 0;
+}
+
+.property textarea {
+    width: 238px;
+    resize: vertical;
+}
+
+#stop-editing {
+    margin-top: 15px;
+}
+
+
+/* Container
+-----------------------------------------------------------------------------*/
+
+.post-container-page {
+    border: 1px #ccc dashed;
+    margin: 10px auto;
+}
+
+.post-container {
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    width: 100%;
+    min-height: 200px;
+
+    padding: 0 10px;
+}
+
+.block {
+    display: inline-block;
+    border: 1px dashed gray;
+    box-sizing: border-box;
+    cursor: move;
+
+    margin: 10px 0;
+    padding: 0 10px;
+
+    &.table, &.rows, &.columns {
+        display: table;
+        width: 100%;
+        min-height: 30px;
+    }
+
+    &.box {
+        tbody, tr {
+            display: block;
+        }
+    }
+}
+
+table.block {
+    padding: 0;
+    border-collapse: separate;
+    border-spacing: 0;
+
+    td {
+        vertical-align: top;
+    }
+}
+
+.modal-condition {
+    margin-bottom: 10px;
+}
+
+.link-danger {
+    color: darkred;
+
+    &:hover {
+        color: darkred;
+    }
+}
+
+.dropzone {
+    border: 1px dashed #ccc;
+    width: 100%;
+    height: 20px;
+    padding: 0 10px;
+}
+
+.dropzone.deleted {
+    display: none;
+}
+
+.editing {
+    border: 2px solid #068eff;
+}
+
+.over {
+    border: 2px solid #ff0028;
+}
+
+/* Blocks
+-----------------------------------------------------------------------------*/
+.rows {
+
+}
+
+/* Preview
+-----------------------------------------------------------------------------*/
+
+.preview-button-container {
+    text-align: center;
+    margin-bottom: 10px;
+
+    button {
+        margin-top: 5px;
+    }
+}
+
+#preview-container {
+    min-height: 500px;
+
+    #preview-frame {
+        width: 100%;
+        min-height: 500px;
+        border: 0;
+    }
+}
+
+
+#floatingCirclesG{
+    margin: 0 auto;
+    position:relative;
+    width:64px;
+    height:64px;
+    -moz-transform:scale(0.6);
+    -webkit-transform:scale(0.6);
+    -ms-transform:scale(0.6);
+    -o-transform:scale(0.6);
+    transform:scale(0.6);
+}
+
+.f_circleG{
+    position:absolute;
+    background-color:#FFFFFF;
+    height:12px;
+    width:12px;
+    -moz-border-radius:6px;
+    -moz-animation-name:f_fadeG;
+    -moz-animation-duration:0.88s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -webkit-border-radius:6px;
+    -webkit-animation-name:f_fadeG;
+    -webkit-animation-duration:0.88s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -ms-border-radius:6px;
+    -ms-animation-name:f_fadeG;
+    -ms-animation-duration:0.88s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -o-border-radius:6px;
+    -o-animation-name:f_fadeG;
+    -o-animation-duration:0.88s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    border-radius:6px;
+    animation-name:f_fadeG;
+    animation-duration:0.88s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+}
+
+#frotateG_01{
+    left:0;
+    top:26px;
+    -moz-animation-delay:0.33s;
+    -webkit-animation-delay:0.33s;
+    -ms-animation-delay:0.33s;
+    -o-animation-delay:0.33s;
+    animation-delay:0.33s;
+}
+
+#frotateG_02{
+    left:8px;
+    top:8px;
+    -moz-animation-delay:0.44s;
+    -webkit-animation-delay:0.44s;
+    -ms-animation-delay:0.44s;
+    -o-animation-delay:0.44s;
+    animation-delay:0.44s;
+}
+
+#frotateG_03{
+    left:26px;
+    top:0;
+    -moz-animation-delay:0.55s;
+    -webkit-animation-delay:0.55s;
+    -ms-animation-delay:0.55s;
+    -o-animation-delay:0.55s;
+    animation-delay:0.55s;
+}
+
+#frotateG_04{
+    right:8px;
+    top:8px;
+    -moz-animation-delay:0.66s;
+    -webkit-animation-delay:0.66s;
+    -ms-animation-delay:0.66s;
+    -o-animation-delay:0.66s;
+    animation-delay:0.66s;
+}
+
+#frotateG_05{
+    right:0;
+    top:26px;
+    -moz-animation-delay:0.77s;
+    -webkit-animation-delay:0.77s;
+    -ms-animation-delay:0.77s;
+    -o-animation-delay:0.77s;
+    animation-delay:0.77s;
+}
+
+#frotateG_06{
+    right:8px;
+    bottom:8px;
+    -moz-animation-delay:0.88s;
+    -webkit-animation-delay:0.88s;
+    -ms-animation-delay:0.88s;
+    -o-animation-delay:0.88s;
+    animation-delay:0.88s;
+}
+
+#frotateG_07{
+    left:26px;
+    bottom:0;
+    -moz-animation-delay:0.99s;
+    -webkit-animation-delay:0.99s;
+    -ms-animation-delay:0.99s;
+    -o-animation-delay:0.99s;
+    animation-delay:0.99s;
+}
+
+#frotateG_08{
+    left:8px;
+    bottom:8px;
+    -moz-animation-delay:1.1s;
+    -webkit-animation-delay:1.1s;
+    -ms-animation-delay:1.1s;
+    -o-animation-delay:1.1s;
+    animation-delay:1.1s;
+}
+
+@-moz-keyframes f_fadeG{
+    0%{
+        background-color:#003947}
+
+    100%{
+        background-color:#FFFFFF}
+
+}
+
+@-webkit-keyframes f_fadeG{
+    0%{
+        background-color:#003947}
+
+    100%{
+        background-color:#FFFFFF}
+
+}
+
+@-ms-keyframes f_fadeG{
+    0%{
+        background-color:#003947}
+
+    100%{
+        background-color:#FFFFFF}
+
+}
+
+@-o-keyframes f_fadeG{
+    0%{
+        background-color:#003947}
+
+    100%{
+        background-color:#FFFFFF}
+
+}
+
+@keyframes f_fadeG{
+    0%{
+        background-color:#003947}
+
+    100%{
+        background-color:#FFFFFF}
+
+}
+
+
+/* Debug
+-----------------------------------------------------------------------------*/
+#debug {
+    margin-top: 20px;
+}
+
+// Bootstrap fix
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

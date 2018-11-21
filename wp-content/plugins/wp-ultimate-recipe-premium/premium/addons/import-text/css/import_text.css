@@ -1,0 +1,82 @@
+#input-recipe {
+  width: 500px;
+  min-height: 100px; }
+
+.import-table {
+  width: 100%; }
+
+.import-table th {
+  text-align: left; }
+
+.import-table td {
+  vertical-align: top; }
+
+#define-regions-container td:first-child {
+  width: 10%; }
+
+#define-ingredient-lines td,
+#define-instruction-lines td {
+  width: 50%; }
+
+#define-ingredient-details td:nth-child(1),
+#define-ingredient-details td:nth-child(2) {
+  width: 15%; }
+
+#define-ingredient-details td:nth-child(3),
+#define-ingredient-details td:nth-child(4) {
+  width: 35%; }
+
+#define-ingredient-details input {
+  width: 100%; }
+
+#regions-text {
+  max-width: 600px; }
+
+#regions-buttons #region-title {
+  background: #F7977A; }
+
+#regions-text .region-title-highlight {
+  background: #F7977A; }
+
+#regions-buttons #region-description {
+  background: #6ECFF6; }
+
+#regions-text .region-description-highlight {
+  background: #6ECFF6; }
+
+#regions-buttons #region-ingredients {
+  background: #82CA9D; }
+
+#regions-text .region-ingredients-highlight {
+  background: #82CA9D; }
+
+#regions-buttons #region-instructions {
+  background: #FFF79A; }
+
+#regions-text .region-instructions-highlight {
+  background: #FFF79A; }
+
+#regions-buttons #region-notes {
+  background: #F49AC2; }
+
+#regions-text .region-notes-highlight {
+  background: #F49AC2; }
+
+#recipe_description,
+#recipe_notes,
+#raw_recipe_ingredients,
+#raw_recipe_instructions {
+  width: 500px; }
+
+#raw_recipe_ingredients_lines {
+  list-style: square; }
+
+#raw_recipe_instructions_lines {
+  margin-left: 0; }
+
+#raw_recipe_ingredients_lines li,
+#raw_recipe_instructions_lines li {
+  margin-bottom: 1px; }
+
+#recipe_instructions_output {
+  display: none; }

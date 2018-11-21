@@ -1,0 +1,40 @@
+#wpurp_user_submission_form table {
+  width: 100%; }
+
+#wpurp_user_submission_form td {
+  vertical-align: top !important; }
+
+#wpurp_user_submission_form h4 {
+  margin-top: 20px; }
+
+table#recipe-ingredients {
+  border-collapse: separate;
+  border-spacing: 2px; }
+
+.postbox input#title,
+.postbox textarea#recipe_description,
+table#recipe-instructions textarea,
+table#recipe-ingredients input {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+table#recipe-instructions .recipe_instructions_thumbnail,
+.postbox img.recipe_thumbnail {
+  max-height: 50px; }
+
+.wpurp-hide {
+  display: none; }
+
+textarea#recipe_notes {
+  margin-bottom: 10px;
+  width: 98%; }
+
+.ingredient-field-header td {
+  font-weight: bold;
+  padding-top: 10px; }
+
+.user-submissions-delete-recipe {
+  cursor: pointer;
+  margin-right: 5px; }

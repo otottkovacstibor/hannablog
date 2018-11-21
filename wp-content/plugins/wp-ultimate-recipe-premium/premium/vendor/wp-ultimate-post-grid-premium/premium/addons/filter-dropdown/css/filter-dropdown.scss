@@ -1,0 +1,26 @@
+.wpupg-filter-dropdown {
+  .select2wpupg {
+    font-size: 16px;
+    min-width: 200px;
+    margin: 0 5px 5px 0;
+    line-height: 1;
+
+    ul {
+      margin: 0;
+    }
+
+    li {
+      margin: 0;
+      line-height: 1.4;
+      list-style: none;
+
+      input {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+.select2wpupg-results {
+  font-size: 16px;
+}

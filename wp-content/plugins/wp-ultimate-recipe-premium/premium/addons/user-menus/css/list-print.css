@@ -1,0 +1,21 @@
+body {
+  text-align: center; }
+
+.wpurp-recipelist {
+  margin-bottom: 20px !important; }
+
+.wpurp-recipelist, .wpurp-shoppinglist {
+  border-collapse: collapse;
+  margin: 0px auto;
+  min-width: 50%;
+  text-align: left; }
+  .wpurp-recipelist td, .wpurp-shoppinglist td {
+    border-top: 1px solid #ccc;
+    padding: 2px 0; }
+    .wpurp-recipelist td:nth-child(1), .wpurp-shoppinglist td:nth-child(1) {
+      width: 80%; }
+    .wpurp-recipelist td:nth-child(2), .wpurp-shoppinglist td:nth-child(2) {
+      width: 20%; }
+  .wpurp-recipelist tr.ingredient-checked td, .wpurp-shoppinglist tr.ingredient-checked td {
+    text-decoration: line-through;
+    color: #999; }

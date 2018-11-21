@@ -1,0 +1,18 @@
+.wpurp-import {
+    li {
+        max-width: 600px;
+    }
+
+    ol {
+        li {
+            margin-bottom: 30px;
+
+            ul {
+                li {
+                    margin: 10px 0 0 20px;
+                    list-style: square;
+                }
+            }
+        }
+    }
+}

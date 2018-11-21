@@ -1,0 +1,10 @@
+.wpurp-container .recipe-tooltip-content.tooltip-force-display {
+  display: block !important; }
+.wpurp-container .recipe-tooltip-content .wpurp-meal-plan-button-text {
+  font-weight: bold !important; }
+.wpurp-container .recipe-tooltip-content input, .wpurp-container .recipe-tooltip-content select {
+  min-width: 200px !important;
+  margin-top: 10px !important;
+  border: 1px solid #ddd !important; }
+  .wpurp-container .recipe-tooltip-content input.wpurp-meal-plan-button-date, .wpurp-container .recipe-tooltip-content select.wpurp-meal-plan-button-date {
+    text-align: center !important; }

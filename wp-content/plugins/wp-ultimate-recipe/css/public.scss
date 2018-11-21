@@ -1,0 +1,121 @@
+html body .wpurp-container .recipe-tooltip-content {
+  display: none;
+
+  background-color: white !important;
+  border: 1px solid #333 !important;
+  padding: 5px !important;
+
+  z-index: 999 !important;
+
+  -moz-box-shadow: 2px 2px 11px #666 !important;
+  -webkit-box-shadow: 2px 2px 11px #666 !important;
+
+  text-align: left;
+  color: #222 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  font-weight: normal;
+
+  a {
+    text-decoration: underline;
+  }
+
+  .tooltip-alt {
+    display: none;
+  }
+}
+
+.wpurp-recipe-add-to-shopping-list.in-shopping-list, .wpurp-recipe-add-to-meal-plan.in-meal-plan{
+  opacity: 0.3;
+}
+
+.widget_wpurp_recipe_list_widget {
+  img {
+    margin-right: 5px;
+  }
+
+  a {
+    vertical-align: top;
+  }
+}
+
+// Loader
+.wpurp-loader {
+  display: inline-block;
+  width:37.333333333333336px;
+
+  div {
+    background-color:#EEEEEE;
+    float:left;
+    height:8px;
+    margin-left:4px;
+    width:8px;
+    -moz-animation-name:bounce_circleG;
+    -moz-animation-duration:2.0999999999999996s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-direction:linear;
+    -moz-border-radius:5px;
+    -webkit-animation-name:bounce_circleG;
+    -webkit-animation-duration:2.0999999999999996s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-direction:linear;
+    -webkit-border-radius:5px;
+    -ms-animation-name:bounce_circleG;
+    -ms-animation-duration:2.0999999999999996s;
+    -ms-animation-iteration-count:infinite;
+    -ms-animation-direction:linear;
+    -ms-border-radius:5px;
+    -o-animation-name:bounce_circleG;
+    -o-animation-duration:2.0999999999999996s;
+    -o-animation-iteration-count:infinite;
+    -o-animation-direction:linear;
+    -o-border-radius:5px;
+    animation-name:bounce_circleG;
+    animation-duration:2.0999999999999996s;
+    animation-iteration-count:infinite;
+    animation-direction:linear;
+    border-radius:5px;
+
+    &:nth-child(1) {
+      -moz-animation-delay:0.41999999999999993s;
+      -webkit-animation-delay:0.41999999999999993s;
+      -ms-animation-delay:0.41999999999999993s;
+      -o-animation-delay:0.41999999999999993s;
+      animation-delay:0.41999999999999993s;
+    }
+    &:nth-child(2) {
+      -moz-animation-delay:0.9799999999999999s;
+      -webkit-animation-delay:0.9799999999999999s;
+      -ms-animation-delay:0.9799999999999999s;
+      -o-animation-delay:0.9799999999999999s;
+      animation-delay:0.9799999999999999s;
+    }
+    &:nth-child(3) {
+      -moz-animation-delay:1.26s;
+      -webkit-animation-delay:1.26s;
+      -ms-animation-delay:1.26s;
+      -o-animation-delay:1.26s;
+      animation-delay:1.26s;
+    }
+  }
+}
+
+@-moz-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@-webkit-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@-ms-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@-o-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }

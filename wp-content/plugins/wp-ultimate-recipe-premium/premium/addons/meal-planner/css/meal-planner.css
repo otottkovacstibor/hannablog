@@ -1,0 +1,219 @@
+.wpurp-meal-plan * {
+  box-sizing: border-box; }
+
+.wpurp-meal-plan-add-recipe {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px; }
+
+.wpurp-meal-plan-add-recipe-container .wpurp-meal-plan-group-by-container {
+  font-size: 0.9em;
+  margin-bottom: 10px; }
+  .wpurp-meal-plan-add-recipe-container .wpurp-meal-plan-group-by-container a.wpurp-meal-plan-group-by {
+    text-decoration: none;
+    box-shadow: none; }
+  .wpurp-meal-plan-add-recipe-container .wpurp-meal-plan-group-by-container a.wpurp-meal-plan-group-by-selected {
+    font-weight: bold; }
+
+.wpurp-meal-plan-recipe-container {
+  display: none;
+  font-size: 0.9em;
+  margin-bottom: 10px; }
+  .wpurp-meal-plan-recipe-container .wpurp-meal-plan-recipe {
+    max-width: 200px; }
+  .wpurp-meal-plan-recipe-container .wpurp-meal-plan-recipe-placeholder {
+    display: none; }
+
+.wpurp-meal-plan-recipe {
+  position: relative;
+  border: 1px dashed #ddd;
+  padding: 3px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  min-height: 48px;
+  margin: 0 6px 6px 6px;
+  background-color: white; }
+  .wpurp-meal-plan-recipe:hover {
+    cursor: pointer;
+    border: 1px solid black; }
+  .wpurp-meal-plan-recipe.wpurp-recipe-selected {
+    border: 1px solid black;
+    background-color: #ddd; }
+  .wpurp-meal-plan-recipe img {
+    float: right;
+    margin: 3px;
+    max-width: 30px;
+    max-height: 40px; }
+
+.wpurp-meal-plan-recipe-placeholder {
+  border: 1px dashed black;
+  background-color: #ddd;
+  margin: 0 6px 6px 6px;
+  min-height: 45px; }
+
+.wpurp-meal-plan-calendar, .wpurp-meal-plan-shopping-list {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin: 0;
+  margin-bottom: 10px; }
+  .wpurp-meal-plan-calendar th, .wpurp-meal-plan-calendar td, .wpurp-meal-plan-shopping-list th, .wpurp-meal-plan-shopping-list td {
+    background-color: #fff;
+    color: black;
+    font-size: 1em;
+    padding: 6px;
+    vertical-align: middle; }
+    .wpurp-meal-plan-calendar th .wpurp-meal-plan-actions, .wpurp-meal-plan-calendar td .wpurp-meal-plan-actions, .wpurp-meal-plan-shopping-list th .wpurp-meal-plan-actions, .wpurp-meal-plan-shopping-list td .wpurp-meal-plan-actions {
+      float: right; }
+      .wpurp-meal-plan-calendar th .wpurp-meal-plan-actions i, .wpurp-meal-plan-calendar td .wpurp-meal-plan-actions i, .wpurp-meal-plan-shopping-list th .wpurp-meal-plan-actions i, .wpurp-meal-plan-shopping-list td .wpurp-meal-plan-actions i {
+        margin-left: 5px;
+        color: #555; }
+        .wpurp-meal-plan-calendar th .wpurp-meal-plan-actions i.wpurp-disabled, .wpurp-meal-plan-calendar td .wpurp-meal-plan-actions i.wpurp-disabled, .wpurp-meal-plan-shopping-list th .wpurp-meal-plan-actions i.wpurp-disabled, .wpurp-meal-plan-shopping-list td .wpurp-meal-plan-actions i.wpurp-disabled {
+          color: #aaa !important; }
+        .wpurp-meal-plan-calendar th .wpurp-meal-plan-actions i:hover, .wpurp-meal-plan-calendar td .wpurp-meal-plan-actions i:hover, .wpurp-meal-plan-shopping-list th .wpurp-meal-plan-actions i:hover, .wpurp-meal-plan-shopping-list td .wpurp-meal-plan-actions i:hover {
+          cursor: pointer;
+          color: black; }
+  .wpurp-meal-plan-calendar thead th, .wpurp-meal-plan-shopping-list thead th {
+    position: relative;
+    text-align: center;
+    border: 0;
+    line-height: 1.3em; }
+    .wpurp-meal-plan-calendar thead th.wpurp-meal-plan-date-weekend, .wpurp-meal-plan-shopping-list thead th.wpurp-meal-plan-date-weekend {
+      background-color: #ddd; }
+    .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date {
+      font-size: 0.7em;
+      font-weight: 300; }
+    .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date-readable, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date-readable {
+      font-size: 1.1em;
+      font-weight: 600; }
+    .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date-readable-numbers, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date-readable-numbers {
+      display: none; }
+    .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date-change, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date-change {
+      position: absolute;
+      top: 6px;
+      font-size: 16px;
+      color: #555; }
+      .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date-change.wpurp-meal-plan-date-prev, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date-change.wpurp-meal-plan-date-prev {
+        left: 6px; }
+      .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date-change.wpurp-meal-plan-date-next, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date-change.wpurp-meal-plan-date-next {
+        right: 6px; }
+      .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date-change.wpurp-disabled, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date-change.wpurp-disabled {
+        color: #aaa !important; }
+      .wpurp-meal-plan-calendar thead th .wpurp-meal-plan-date-change:hover, .wpurp-meal-plan-shopping-list thead th .wpurp-meal-plan-date-change:hover {
+        cursor: pointer;
+        color: black; }
+  .wpurp-meal-plan-calendar tbody td, .wpurp-meal-plan-shopping-list tbody td {
+    border: 1px solid #ddd; }
+  .wpurp-meal-plan-calendar tbody .wpurp-meal-plan-header td, .wpurp-meal-plan-calendar tbody .wpurp-shopping-list-group td, .wpurp-meal-plan-shopping-list tbody .wpurp-meal-plan-header td, .wpurp-meal-plan-shopping-list tbody .wpurp-shopping-list-group td {
+    background-color: #ddd;
+    line-height: 1em;
+    width: 100%; }
+  .wpurp-meal-plan-calendar tbody .wpurp-meal-plan-recipes td, .wpurp-meal-plan-calendar tbody .wpurp-shopping-list-ingredient td, .wpurp-meal-plan-shopping-list tbody .wpurp-meal-plan-recipes td, .wpurp-meal-plan-shopping-list tbody .wpurp-shopping-list-ingredient td {
+    line-height: 1.1em;
+    font-size: 0.9em;
+    border-bottom-color: white;
+    vertical-align: top;
+    height: 1.1em;
+    padding: 0;
+    padding-top: 6px; }
+  .wpurp-meal-plan-calendar tbody.wpurp-meal-plan-course-placeholder, .wpurp-meal-plan-shopping-list tbody.wpurp-meal-plan-course-placeholder {
+    display: none; }
+  .wpurp-meal-plan-calendar tbody.wpurp-meal-plan-selected-recipe .recipe-selected, .wpurp-meal-plan-calendar tbody.wpurp-meal-plan-selected-recipe .recipe-details-loader, .wpurp-meal-plan-shopping-list tbody.wpurp-meal-plan-selected-recipe .recipe-selected, .wpurp-meal-plan-shopping-list tbody.wpurp-meal-plan-selected-recipe .recipe-details-loader {
+    display: none; }
+  .wpurp-meal-plan-calendar tbody.wpurp-meal-plan-selected-recipe td, .wpurp-meal-plan-shopping-list tbody.wpurp-meal-plan-selected-recipe td {
+    width: 100%; }
+    .wpurp-meal-plan-calendar tbody.wpurp-meal-plan-selected-recipe td .wpurp-meal-plan-actions, .wpurp-meal-plan-shopping-list tbody.wpurp-meal-plan-selected-recipe td .wpurp-meal-plan-actions {
+      display: block; }
+  .wpurp-meal-plan-calendar tbody.wpurp-meal-plan-selected-recipe .wpurp-meal-plan-selected-recipe-details, .wpurp-meal-plan-shopping-list tbody.wpurp-meal-plan-selected-recipe .wpurp-meal-plan-selected-recipe-details {
+    display: none; }
+
+form.wpurp-meal-plan-form {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  min-width: 70%; }
+  form.wpurp-meal-plan-form .wpurp-meal-plan-form-message {
+    display: inline-block;
+    line-height: 27px;
+    font-size: 14px; }
+  form.wpurp-meal-plan-form input[type="text"].wpurp-meal-plan-input {
+    display: inline-block;
+    width: 100%;
+    max-width: 150px;
+    height: 27px;
+    padding: 3px;
+    margin: 0;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 0.8em;
+    vertical-align: top; }
+    form.wpurp-meal-plan-form input[type="text"].wpurp-meal-plan-input.wpurp-meal-plan-input-date {
+      max-width: 100px; }
+  form.wpurp-meal-plan-form select.wpurp-meal-plan-input-unit-system {
+    margin-left: 5px; }
+  form.wpurp-meal-plan-form button.wpurp-meal-plan-button {
+    width: 27px;
+    padding: 0;
+    margin: 0 0 0 5px; }
+
+button.wpurp-meal-plan-button {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0 6px;
+  border: 1px solid #555;
+  background-color: #ddd;
+  color: #555;
+  width: auto;
+  height: 27px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: none;
+  font-weight: 400; }
+  button.wpurp-meal-plan-button:hover, button.wpurp-meal-plan-button:focus {
+    cursor: pointer;
+    border-color: black;
+    background-color: #ddd;
+    color: black; }
+
+.wpurp-meal-plan-footer-actions {
+  min-height: 27px;
+  margin-bottom: 10px; }
+  .wpurp-meal-plan-footer-actions .wpurp-meal-plan-footer-actions-right {
+    float: right; }
+    .wpurp-meal-plan-footer-actions .wpurp-meal-plan-footer-actions-right button {
+      margin: 0 0 0 5px; }
+
+.wpurp-meal-plan-shopping-list-container {
+  display: none; }
+
+.wpurp-meal-plan-shopping-list th, .wpurp-meal-plan-shopping-list td {
+  width: 50%; }
+.wpurp-meal-plan-shopping-list th {
+  background-color: #ddd; }
+  .wpurp-meal-plan-shopping-list th .wpurp-meal-plan-actions {
+    display: block; }
+.wpurp-meal-plan-shopping-list tbody tr.ingredient-checked td {
+  text-decoration: line-through;
+  color: #999; }
+.wpurp-meal-plan-shopping-list tbody td {
+  border: 1px solid #ddd; }
+  .wpurp-meal-plan-shopping-list tbody td .wpurp-shopping-list-ingredient-checkbox {
+    max-width: 20px;
+    max-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right: 5px; }
+.wpurp-meal-plan-shopping-list tbody .wpurp-shopping-list-group td {
+  background-color: #ddd;
+  line-height: 1em;
+  width: 100%; }
+.wpurp-meal-plan-shopping-list tbody .wpurp-shopping-list-ingredient td {
+  padding: 6px;
+  border-bottom: 1px solid #ddd; }
+.wpurp-meal-plan-shopping-list tbody .wpurp-shopping-list-group-placeholder, .wpurp-meal-plan-shopping-list tbody .wpurp-shopping-list-ingredient-placeholder {
+  display: none; }
+
+.wpurp-meal-plan-desktop .wpurp-meal-plan-actions {
+  display: none; }

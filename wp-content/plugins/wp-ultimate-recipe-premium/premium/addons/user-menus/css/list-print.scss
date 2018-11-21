@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+}
+
+.wpurp-recipelist {
+    margin-bottom: 20px !important;
+}
+
+.wpurp-recipelist, .wpurp-shoppinglist {
+    border-collapse: collapse;
+    margin: 0px auto;
+    min-width: 50%;
+    text-align: left;
+
+    td {
+        border-top: 1px solid #ccc;
+        padding: 2px 0;
+
+        &:nth-child(1) { width: 80%; }
+        &:nth-child(2) { width: 20%; }
+    }
+
+    tr.ingredient-checked {
+        td {
+            text-decoration: line-through;
+            color: #999;
+        }
+    }
+}

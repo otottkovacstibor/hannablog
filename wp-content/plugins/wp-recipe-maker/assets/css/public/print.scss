@@ -1,0 +1,15 @@
+.wprm-print {
+  .wprm-recipe {
+		max-width: 750px;
+		margin: 0 auto;
+  }
+    
+  .wprm-recipe-print,
+  .wprm-recipe-jump,
+  .wprm-recipe-jump-video,
+  .wprm-recipe-pin,
+  .wprm-unit-conversion-container,
+  .wprm-recipe-video-container {
+		display: none !important;
+  }
+}

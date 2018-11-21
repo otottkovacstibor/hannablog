@@ -1,0 +1,28 @@
+.wpurp_notice .wpurp_notice_dismiss {
+  margin-top: 8px;
+  float: right; }
+
+.wpurp_notice h3 {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+
+.wpurp_notice p {
+  max-width: 600px; }
+
+.wpurp_notice #wpurp_drip_form_div {
+  margin-bottom: 5px; }
+  .wpurp_notice #wpurp_drip_form_div #email {
+    width: 300px; }
+
+.wpurp_license {
+  width: 100%; }
+  .wpurp_license th, .wpurp_license td {
+    vertical-align: middle; }
+  .wpurp_license .license_button {
+    float: right; }
+
+#partners_integrations_chicory_terms label {
+  margin-right: 0; }
+
+#partners_integrations_chicory_terms a {
+  vertical-align: middle; }

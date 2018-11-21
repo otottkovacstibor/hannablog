@@ -1,0 +1,106 @@
+SuevaFree WordPress Theme Documentation
+
+---------------------
+
+- Installation
+
+Decompress the “suevafree.zip” file, into the package, under “wp-content /themes” and then activate the theme from Appearance => Themes.
+As an alternative, go to Appearance => Themes => Add New => Upload Theme and choose“suevafree.zip” file.
+
+- Sample Data
+
+You need to download and extract the following archive with the sample data
+http://demo.themeinprogress.com/suevafree/suevafree-sample-data.zip
+
+Please follow these steps to import the sample data :
+
+1) Install and activate SuevaFree theme.
+2) Install and activate each required and recommended plugin from Appareance => Plugins
+2) These plugins must be enabled: SuevaFree Essential Kit, WooCommerce, Widget Importer & Exporter, Contact Form 7 and Instagram Slider Widget
+3) Go to Tools => Widget Importer & Exporter => Import and choose suevafree-widgets.wie
+4) Go to Tools => Import => WordPress and choose suevafree-export.xml
+5) Go to WooCommerce => Settings => Products => Display and set "Shop" as Shop page
+6) Go to Appareance => Menus and set “Main Menu” to Main Menu position and “One Page” to One Page menu position, from Theme locations option
+
+- One Page
+
+To create and manage the one page section, you can follow this videotutorial from the premium version of Sueva ( On the free version the portfolio section is not available) : 
+
+https://www.youtube.com/watch?v=5MzS-owky4Y
+
+1) Create a new page using the “One page” template.
+2) Add each widget under the “One page” sidebar area, from the WordPress customize section or the widget section.
+3) Create a new menu and choose “One page menu” as “Theme locations”
+4) Link each widget of your one page, adding a custom links item and using one-page-x as URL where x is the number of widget.
+
+For example:
+
+Widgets:						Custom Menu URL:
+
+1° Widget : SuevaFree Call To Action Widget		#one-page-1
+2° Widget : SuevaFree News Slideshow 			#one-page-2
+3° Widget : SuevaFree Testimonial Slideshow		#one-page-3
+4° Widget : SuevaFree Team Slideshow			#one-page-4 
+5° Widget : SuevaFree Counter Widget			NONE
+6° Widget : SuevaFree Contact Form Widget		#one-page-6
+
+You can use #one-page-0 URL to back to the top of your page.
+
+- Option panel
+
+When the theme is activated, you can manage Suevafree, from “Customize” section.
+
+- General Tab
+
+-- Load system.
+If you've some problems with the theme (for example a blank page), you can change the load system.
+
+-- Color Scheme.
+It is possible to choose up to 8 different styles that will replace any previously saved settings.
+
+-- Settings.
+You can decide if use, for example, the read more button, show the post author, the box shadow etc.
+
+-- Styles.
+You can add a custom css code. It is recommended that this feature be used only if absolutely necessary and if you know what will be modified.
+
+-- Layouts.
+You can decide the layout of each section, like the header or the footer.
+
+-- Header settings.
+You can replace the site name with an image as logo.
+
+-- Footer settings.
+From here, it is possible insert a text at the end of the site and add the links for the social networks
+
+--- Copyright text.
+Text displayed at the end of the site.
+
+--- Social networks.
+Insert the link; the icon of the relative social network will be displayed
+
+- Typography Tab
+
+-- Logo, Menu, Content and Headlines
+You can insert the font size for each section, logo (if it’s not an image), menu, content and headlines.
+
+- Background Image Tab
+It’s possible to set a full background image, from “Full image background” option.
+
+- Homepage
+Wordpress displays the last articles in the homepage. To use a static page that was previously created, in which the slides and other elements are present, go to “Settings” -> “Reading” and check off the “a static page” item by choosing the one previously created by the list
+
+- Menu
+It is possible to create and manage a custom menu with a drag and drop system. Go to http://codex.wordpress.org/Appearance_Menus_SubPanel. Once the main menu is created, select it in “Main menu”.
+
+- Theme Translation
+
+We suggest Poedit, to translate Suevafree. It’s available for free on poedit.net.
+
+Open Poedit, go to File > New from POT file and choose suevafree.pot , under suevafree/languages/ and choose your native language.
+
+When you’ve finished, upload bot files with your language code (for example it_IT.po and it_IT.mo ), under the language folder of Suevafree using a FTP client.
+
+- Premium Version
+
+If you need more features, you can found the premium version from this page: https://www.themeinprogress.com/sueva/

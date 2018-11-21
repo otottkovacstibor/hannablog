@@ -1,0 +1,80 @@
+# Translation of Plugins - WP Fastest Cache - Development (trunk) in Hungarian
+# This file is distributed under the same license as the Plugins - WP Fastest Cache - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2016-09-01 06:38:52+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0-alpha\n"
+"Language: hu\n"
+"Project-Id-Version: Plugins - WP Fastest Cache - Development (trunk)\n"
+
+#: wpFastestCache.php:1578
+msgid "Once Every 2 Hours"
+msgstr "2 óránként egyszer"
+
+#: wpFastestCache.php:1602
+msgid "Once Every 10 Days"
+msgstr "10 naponként egyszer"
+
+#. Author URI of the plugin/theme
+msgid "http://tr.linkedin.com/in/emrevona"
+msgstr "http://tr.linkedin.com/in/emrevona"
+
+#. Author of the plugin/theme
+msgid "Emre Vona"
+msgstr "Emre Vona"
+
+#. Description of the plugin/theme
+msgid "The simplest and fastest WP Cache system"
+msgstr "A legegyszerűbb és leggyorsabb WP Cache rendszer"
+
+#. Plugin URI of the plugin/theme
+msgid "http://wordpress.org/plugins/wp-fastest-cache/"
+msgstr "http://wordpress.org/plugins/wp-fastest-cache/"
+
+#. Plugin Name of the plugin/theme
+msgid "WP Fastest Cache"
+msgstr "WP Fastest Cache"
+
+#: wpFastestCache.php:1614
+msgid "Once a Year"
+msgstr "Évente egyszer"
+
+#: wpFastestCache.php:1608
+msgid "Once a Month"
+msgstr "Havonta egyszer"
+
+#: wpFastestCache.php:1596
+msgid "Once a Week"
+msgstr "Hetente egyszer"
+
+#: wpFastestCache.php:1590
+msgid "Once a Day"
+msgstr "Naponta egyszer"
+
+#: wpFastestCache.php:1584
+msgid "Once Every 6 Hours"
+msgstr "6 óránként egyszer"
+
+#: wpFastestCache.php:1572
+msgid "Once an Hour"
+msgstr "Óránként egyszer"
+
+#: wpFastestCache.php:1566
+msgid "Twice an Hour"
+msgstr "Kétszer óránként"
+
+#: wpFastestCache.php:1560
+msgid "Once Every 15 Minutes"
+msgstr "15 percenként egyszer"
+
+#: wpFastestCache.php:1554
+msgid "Once Every 5 Minutes"
+msgstr "5 percenként egyszer"
+
+#: wpFastestCache.php:1548
+msgid "Once Every 1 Minute"
+msgstr "Percenként egyszer"

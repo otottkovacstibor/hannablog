@@ -1,0 +1,105 @@
+.post-type-wpupg_grid #titlediv .inside {
+  display: none; }
+
+.select2wpupg li {
+  margin-bottom: 0; }
+  .select2wpupg li input {
+    margin: 0;
+    padding: 0; }
+
+#wpupg_no_taxonomies {
+  text-align: center; }
+
+.wpupg_form {
+  width: 100%;
+  border-collapse: collapse; }
+  .wpupg_form .wpupg_label_prefix {
+    float: left;
+    font-weight: bold; }
+  .wpupg_form td {
+    vertical-align: middle;
+    height: 45px; }
+    .wpupg_form td:nth-child(1) {
+      width: 20%;
+      text-align: right; }
+    .wpupg_form td:nth-child(2) {
+      width: 50%;
+      padding: 0 10px; }
+      .wpupg_form td:nth-child(2) input[type="text"], .wpupg_form td:nth-child(2) select {
+        width: 100%; }
+      .wpupg_form td:nth-child(2) .noUi-target {
+        margin: 0 10px; }
+      .wpupg_form td:nth-child(2) .noUi-handle {
+        background-color: #aaa; }
+    .wpupg_form td:nth-child(3) {
+      width: 30%;
+      font-size: 12px;
+      color: #666; }
+      .wpupg_form td:nth-child(3) input[type="text"] {
+        width: 50px; }
+  .wpupg_form .wpupg_divider td {
+    border-top: 1px solid #ddd; }
+  .wpupg_form .wpupg_radiobuttons td {
+    vertical-align: top;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+    .wpupg_form .wpupg_radiobuttons td input[type="radio"] {
+      margin: 0 5px 5px 0; }
+    .wpupg_form .wpupg_radiobuttons td label {
+      vertical-align: top; }
+  .wpupg_form .wp-color-result {
+    margin: 0; }
+  .wpupg_form .wp-picker-clear {
+    display: none; }
+  .wpupg_form .wp-picker-holder {
+    z-index: 10;
+    position: absolute; }
+
+#wpupg_form_isotope_filter_style td,
+#wpupg_form_pagination_style td {
+  width: 30%;
+  font-size: 13px;
+  color: #444;
+  text-align: left; }
+  #wpupg_form_isotope_filter_style td:nth-child(1),
+  #wpupg_form_pagination_style td:nth-child(1) {
+    width: 10%; }
+
+#wpupg_form_limit_posts thead {
+  font-weight: bold; }
+#wpupg_form_limit_posts #wpupg_rule_placeholder {
+  display: none; }
+#wpupg_form_limit_posts td {
+  text-align: left;
+  clear: both; }
+  #wpupg_form_limit_posts td .rule_container_wpupg_general_date {
+    width: 50%;
+    float: left; }
+  #wpupg_form_limit_posts td:nth-child(3) {
+    width: 25%; }
+  #wpupg_form_limit_posts td:nth-child(4) {
+    width: 5%;
+    text-align: center;
+    line-height: 18px; }
+    #wpupg_form_limit_posts td:nth-child(4) .wpupg_rule_delete {
+      cursor: pointer; }
+
+#wpupg_add_rule {
+  color: #00aa00;
+  font-weight: bold; }
+  #wpupg_add_rule:hover, #wpupg_add_rule:active, #wpupg_add_rule:visited {
+    color: #00aa00;
+    text-decoration: none; }
+
+.wpupg_filter_preview {
+  border-top: 1px dashed #999;
+  border-bottom: 1px dashed #999; }
+
+#wpupg_meta_box_premium_only {
+  display: none;
+  background-color: #FFCCCC;
+  border-color: #CC0000; }
+  #wpupg_meta_box_premium_only .handlediv {
+    color: #CC0000; }
+  #wpupg_meta_box_premium_only .hndle {
+    border-bottom-color: #FF9999; }

@@ -1,0 +1,30 @@
+// main: ../modal.scss
+.wprm-recipe-details-form {
+		input {
+				&#wprm-recipe-name {
+						max-width: 450px;
+				}
+
+				&#wprm-recipe-author-name,
+				&#wprm-recipe-author-link {
+						max-width: none;
+				}
+
+				&#wprm-recipe-calories {
+						max-width: 70px;
+				}
+		}
+
+		.wprm-recipe-image-preview {
+				max-width: 100px;
+
+				img {
+						max-width: 100%;
+						height: auto;
+				}
+		}
+
+		.wprm-recipe-summary-container {
+				clear: both;
+		}
+}

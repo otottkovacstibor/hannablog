@@ -1,0 +1,48 @@
+#wpurp_user_submission_form {
+
+  input {
+    max-width: 100%;
+  }
+
+  .select2-container {
+    min-width: 200px;
+    vertical-align: top !important;
+    margin: 0 5px 5px 0 !important;
+
+    letter-spacing: normal;
+
+    li.select2-search-field {
+      background: none !important;
+    }
+  }
+
+  .ingredient-group-stub,
+  .instruction-group-stub {
+      display: none;
+  }
+
+  .instruction-group-label,
+  .instruction-groups-disabled {
+      margin-left: 20px;
+  }
+
+  .ingredients_name_list {
+    width: 100%;
+  }
+
+  #recipe-ingredients img,
+  .instruction-group-delete img {
+      min-width: 16px !important;
+      min-height: 16px !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #wpurp_user_submission_form table td {
+    padding: 0;
+  }
+
+  .recipe-general-form-notes, #recipe-ingredients td, #recipe-instructions td {
+    display: block !important;
+  }
+}

@@ -1,0 +1,171 @@
+.post-type-wpupg_grid #titlediv .inside {
+  display: none;
+}
+
+.select2wpupg {
+  li {
+    margin-bottom: 0;
+    input {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+#wpupg_no_taxonomies {
+  text-align: center;
+}
+
+.wpupg_form {
+  width: 100%;
+  border-collapse: collapse;
+
+  .wpupg_label_prefix {
+    float: left;
+    font-weight: bold;
+  }
+
+  td {
+    vertical-align: middle;
+    height: 45px;
+
+    &:nth-child(1) {
+      width: 20%;
+      text-align: right;
+    }
+
+    &:nth-child(2) {
+      width: 50%;
+      padding: 0 10px;
+
+      input[type="text"], select {
+        width: 100%;
+      }
+
+      .noUi-target {
+        margin: 0 10px;
+      }
+
+      .noUi-handle {
+        background-color: #aaa;
+      }
+    }
+
+    &:nth-child(3) {
+      width: 30%;
+      font-size: 12px;
+      color: #666;
+
+      input[type="text"] {
+        width: 50px;
+      }
+    }
+  }
+
+  .wpupg_divider td {
+    border-top: 1px solid #ddd;
+  }
+
+  .wpupg_radiobuttons td {
+    vertical-align: top;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    input[type="radio"] {
+      margin: 0 5px 5px 0;
+    }
+
+    label {
+      vertical-align: top;
+    }
+  }
+
+  .wp-color-result {
+    margin: 0;
+  }
+
+  .wp-picker-clear {
+    display: none;
+  }
+
+  .wp-picker-holder {
+    z-index: 10;
+    position: absolute;
+  }
+}
+
+#wpupg_form_isotope_filter_style,
+#wpupg_form_pagination_style {
+  td {
+    width: 30%;
+    font-size: 13px;
+    color: #444;
+    text-align: left;
+
+    &:nth-child(1) {
+      width: 10%;
+    }
+  }
+}
+
+#wpupg_form_limit_posts {
+  thead {
+    font-weight: bold;
+  }
+
+  #wpupg_rule_placeholder {
+    display: none;
+  }
+
+  td {
+    text-align: left;
+    clear: both;
+
+    .rule_container_wpupg_general_date {
+      width: 50%;
+      float: left;
+    }
+
+    &:nth-child(3) {
+      width: 25%;
+    }
+    &:nth-child(4) {
+      width: 5%;
+      text-align: center;
+      line-height: 18px;
+
+      .wpupg_rule_delete {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+#wpupg_add_rule {
+  color: #00aa00;
+  font-weight: bold;
+
+  &:hover, &:active, &:visited {
+    color: #00aa00;
+    text-decoration: none;
+  }
+}
+
+.wpupg_filter_preview {
+  border-top: 1px dashed #999;
+  border-bottom: 1px dashed #999;
+}
+
+#wpupg_meta_box_premium_only {
+  display: none;
+  background-color: #FFCCCC;
+  border-color: #CC0000;
+
+  .handlediv {
+    color: #CC0000;
+  }
+
+  .hndle {
+    border-bottom-color: #FF9999;
+  }
+}

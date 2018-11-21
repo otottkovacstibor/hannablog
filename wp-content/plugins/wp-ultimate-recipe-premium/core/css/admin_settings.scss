@@ -1,0 +1,45 @@
+.wpurp_notice {
+    .wpurp_notice_dismiss {
+        margin-top: 8px;
+        float: right;
+    }
+
+    h3 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        max-width: 600px;
+    }
+
+    #wpurp_drip_form_div {
+        margin-bottom: 5px;
+
+        #email {
+            width: 300px;
+        }
+    }
+}
+
+.wpurp_license {
+    width: 100%;
+
+    th, td {
+        vertical-align: middle;
+    }
+
+    .license_button {
+        float: right;
+    }
+}
+
+#partners_integrations_chicory_terms {
+  label {
+    margin-right: 0;
+  }
+
+  a {
+    vertical-align: middle;
+  }
+}

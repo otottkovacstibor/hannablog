@@ -1,0 +1,99 @@
+#qt_content_wpurp_shortcode_generator {
+  width: 26px; }
+
+.reveal-modal-bg {
+  z-index: 10000; }
+
+.select2wpurp-drop {
+  z-index: 150008 !important; }
+
+#wpurp_shortcode_generator_modal {
+  z-index: 150000 !important; }
+
+.wpurp-getting-started-form .input-fields {
+  text-align: center; }
+  .wpurp-getting-started-form .input-fields label {
+    font-weight: bold;
+    font-size: 14px; }
+  .wpurp-getting-started-form .input-fields input {
+    width: 250px;
+    margin-left: 10px; }
+
+.wpurp-getting-started-form .input-buttons {
+  margin-top: 15px;
+  text-align: center; }
+  .wpurp-getting-started-form .input-buttons .button-primary {
+    margin-left: 5px; }
+
+.wpurp-loader {
+  display: inline-block;
+  width: 37.333333333333336px; }
+  .wpurp-loader div {
+    background-color: #EEEEEE;
+    float: left;
+    height: 8px;
+    margin-left: 4px;
+    width: 8px;
+    -moz-animation-name: bounce_circleG;
+    -moz-animation-duration: 2.0999999999999996s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: linear;
+    -moz-border-radius: 5px;
+    -webkit-animation-name: bounce_circleG;
+    -webkit-animation-duration: 2.0999999999999996s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: linear;
+    -webkit-border-radius: 5px;
+    -ms-animation-name: bounce_circleG;
+    -ms-animation-duration: 2.0999999999999996s;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-direction: linear;
+    -ms-border-radius: 5px;
+    -o-animation-name: bounce_circleG;
+    -o-animation-duration: 2.0999999999999996s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-direction: linear;
+    -o-border-radius: 5px;
+    animation-name: bounce_circleG;
+    animation-duration: 2.0999999999999996s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    border-radius: 5px; }
+    .wpurp-loader div:nth-child(1) {
+      -moz-animation-delay: 0.41999999999999993s;
+      -webkit-animation-delay: 0.41999999999999993s;
+      -ms-animation-delay: 0.41999999999999993s;
+      -o-animation-delay: 0.41999999999999993s;
+      animation-delay: 0.41999999999999993s; }
+    .wpurp-loader div:nth-child(2) {
+      -moz-animation-delay: 0.9799999999999999s;
+      -webkit-animation-delay: 0.9799999999999999s;
+      -ms-animation-delay: 0.9799999999999999s;
+      -o-animation-delay: 0.9799999999999999s;
+      animation-delay: 0.9799999999999999s; }
+    .wpurp-loader div:nth-child(3) {
+      -moz-animation-delay: 1.26s;
+      -webkit-animation-delay: 1.26s;
+      -ms-animation-delay: 1.26s;
+      -o-animation-delay: 1.26s;
+      animation-delay: 1.26s; }
+
+@-moz-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@-webkit-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@-ms-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@-o-keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }
+
+@keyframes bounce_circleG {
+  50% {
+    background-color: #000000; } }

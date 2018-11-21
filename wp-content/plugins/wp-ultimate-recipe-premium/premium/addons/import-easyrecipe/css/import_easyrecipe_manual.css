@@ -1,0 +1,12 @@
+img.radio-select-img-item {
+  border: solid 2px #dcdcdc;
+  height: 150px;
+  width: auto;
+  margin-right: 20px;
+  cursor: pointer; }
+
+img.radio-select-img-item:hover {
+  border: solid 2px #801118; }
+
+img.radio-select-img-item.item-checked {
+  border: solid 2px #d71e27; }

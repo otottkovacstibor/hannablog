@@ -1,0 +1,340 @@
+.wpurp-meal-plan {
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.wpurp-meal-plan-add-recipe {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 10px;
+}
+
+.wpurp-meal-plan-add-recipe-container {
+  .wpurp-meal-plan-group-by-container {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+
+    a.wpurp-meal-plan-group-by {
+      text-decoration: none;
+      box-shadow: none;
+    }
+
+    a.wpurp-meal-plan-group-by-selected {
+      font-weight: bold;
+    }
+  }
+}
+
+.wpurp-meal-plan-recipe-container {
+  display: none;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+
+  .wpurp-meal-plan-recipe {
+    max-width: 200px;
+  }
+
+  .wpurp-meal-plan-recipe-placeholder {
+    display: none;
+  }
+}
+
+.wpurp-meal-plan-recipe {
+  position: relative;
+  border: 1px dashed #ddd;
+  padding: 3px;
+  font-size: 0.9em;
+  line-height: 1.5em;
+  min-height: 48px;
+  margin: 0 6px 6px 6px;
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid black;
+  }
+
+  &.wpurp-recipe-selected {
+    border: 1px solid black;
+    background-color: #ddd;
+  }
+
+  img {
+    float: right;
+    margin: 3px;
+    max-width: 30px;
+    max-height: 40px;
+  }
+}
+
+.wpurp-meal-plan-recipe-placeholder {
+  border: 1px dashed black;
+  background-color: #ddd;
+  margin: 0 6px 6px 6px;
+  min-height: 45px;
+}
+
+.wpurp-meal-plan-calendar, .wpurp-meal-plan-shopping-list {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  margin: 0;
+  margin-bottom: 10px;
+
+  th, td {
+    background-color: #fff;
+    color: black;
+    font-size: 1em;
+    padding: 6px;
+    vertical-align: middle;
+
+    .wpurp-meal-plan-actions {
+      float: right;
+
+      i {
+        margin-left: 5px;
+        color: #555;
+
+        &.wpurp-disabled {
+          color: #aaa !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+    }
+  }
+
+  thead {
+    th {
+      position: relative;
+      text-align: center;
+      border: 0;
+      line-height: 1.3em;
+
+      &.wpurp-meal-plan-date-weekend {
+        background-color: #ddd;
+      }
+
+      .wpurp-meal-plan-date {
+        font-size: 0.7em;
+        font-weight: 300;
+      }
+
+      .wpurp-meal-plan-date-readable {
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+
+      .wpurp-meal-plan-date-readable-numbers {
+        display: none;
+      }
+
+      .wpurp-meal-plan-date-change {
+        position: absolute;
+        top: 6px;
+        font-size: 16px;
+        color: #555;
+
+        &.wpurp-meal-plan-date-prev {
+          left: 6px;
+        }
+
+        &.wpurp-meal-plan-date-next {
+          right: 6px;
+        }
+
+        &.wpurp-disabled {
+          color: #aaa !important;
+        }
+
+        &:hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+    }
+  }
+
+  tbody {
+    td {
+      border: 1px solid #ddd;
+    }
+
+    .wpurp-meal-plan-header td, .wpurp-shopping-list-group td {
+      background-color: #ddd;
+      line-height: 1em;
+      width: 100%;
+    }
+
+    .wpurp-meal-plan-recipes td, .wpurp-shopping-list-ingredient td {
+      line-height: 1.1em;
+      font-size: 0.9em;
+      border-bottom-color: white;
+      vertical-align: top;
+      height: 1.1em;
+      padding: 0;
+      padding-top: 6px;
+    }
+
+    &.wpurp-meal-plan-course-placeholder {
+      display: none;
+    }
+
+    &.wpurp-meal-plan-selected-recipe {
+      .recipe-selected, .recipe-details-loader {
+        display: none;
+      }
+
+      td {
+        width: 100%;
+
+        .wpurp-meal-plan-actions {
+          display: block;
+        }
+      }
+
+      .wpurp-meal-plan-selected-recipe-details {
+        display: none;
+      }
+    }
+  }
+}
+
+form.wpurp-meal-plan-form {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  min-width: 70%;
+
+  .wpurp-meal-plan-form-message {
+    display: inline-block;
+    line-height: 27px;
+    font-size: 14px;
+  }
+
+  input[type="text"].wpurp-meal-plan-input {
+    display: inline-block;
+    width: 100%;
+    max-width: 150px;
+    height: 27px;
+    padding: 3px;
+    margin: 0;
+    border: 1px solid #ddd;
+    background: white;
+    font-size: 0.8em;
+    vertical-align: top;
+
+    &.wpurp-meal-plan-input-date {
+      max-width: 100px;
+    }
+  }
+
+  select.wpurp-meal-plan-input-unit-system {
+    margin-left: 5px;
+  }
+
+  button.wpurp-meal-plan-button {
+    width: 27px;
+    padding: 0;
+    margin: 0 0 0 5px;
+  }
+}
+
+button.wpurp-meal-plan-button {
+  display: inline-block;
+  margin: 0 5px 0 0;
+  padding: 0 6px;
+  border: 1px solid #555;
+  background-color: #ddd;
+  color: #555;
+  width: auto;
+  height: 27px;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: top;
+  text-transform: none;
+  font-weight: 400;
+
+  &:hover, &:focus {
+    cursor: pointer;
+    border-color: black;
+    background-color: #ddd;
+    color: black;
+  }
+}
+
+.wpurp-meal-plan-footer-actions {
+  min-height: 27px;
+  margin-bottom: 10px;
+
+  .wpurp-meal-plan-footer-actions-right {
+    float: right;
+
+    button {
+      margin: 0 0 0 5px;
+    }
+  }
+}
+
+.wpurp-meal-plan-shopping-list-container {
+  display: none;
+}
+
+.wpurp-meal-plan-shopping-list {
+  th, td {
+    width: 50%;
+  }
+
+  th {
+    background-color: #ddd;
+
+    .wpurp-meal-plan-actions {
+      display: block;
+    }
+  }
+
+  tbody {
+    tr.ingredient-checked {
+      td {
+        text-decoration: line-through;
+        color: #999;
+      }
+    }
+
+    td {
+      border: 1px solid #ddd;
+
+      .wpurp-shopping-list-ingredient-checkbox {
+        max-width: 20px;
+        max-height: 20px;
+        margin: 0;
+        padding: 0;
+        margin-right: 5px;
+      }
+    }
+
+    .wpurp-shopping-list-group td {
+      background-color: #ddd;
+      line-height: 1em;
+      width: 100%;
+    }
+
+    .wpurp-shopping-list-ingredient td {
+      padding: 6px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .wpurp-shopping-list-group-placeholder, .wpurp-shopping-list-ingredient-placeholder {
+      display: none;
+    }
+  }
+}
+
+.wpurp-meal-plan-desktop .wpurp-meal-plan-actions {
+  display: none;
+}

@@ -1,0 +1,24 @@
+// main: ../modal.scss
+.wprm-recipe-notes-form {
+    .wprm-recipe-video-preview {
+        float: right;
+        max-width: 100px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .wprm-recipe-form-container {
+        clear: both;
+    }
+}
+@media only screen and (max-width: 480px) {
+    .wprm-recipe-notes-form {
+        .wprm-recipe-video-preview {
+            float: none;
+            margin: 10px auto;
+        }
+    }
+}

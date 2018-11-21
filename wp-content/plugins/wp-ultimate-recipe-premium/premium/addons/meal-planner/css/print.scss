@@ -1,0 +1,34 @@
+body {
+  font-family: Arial;
+}
+
+table {
+  width: 100%;
+
+  tr.ingredient-checked {
+    td {
+      text-decoration: line-through;
+      color: #999;
+
+      .wpurp-shopping-list-ingredient-checkbox {
+        display: none;
+      }
+    }
+  }
+
+  td {
+    width: 50%
+  }
+
+  th, .wpurp-shopping-list-group td {
+    font-weight: bold;
+  }
+
+  .wpurp-shopping-list-group td {
+    padding-top: 10px;
+  }
+
+  .wpurp-shopping-list-ingredient-checkbox {
+    display: none;
+  }
+}

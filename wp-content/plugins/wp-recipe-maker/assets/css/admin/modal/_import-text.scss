@@ -1,0 +1,41 @@
+// main: ../modal.scss
+
+.wprm-recipe-import-text-form {
+    .import-text-buttons {
+        margin-bottom: 10px;
+    }
+    
+    .import-text-step {
+        display: none;
+
+        &#import-text-step-input {
+            display: block;
+        }
+    }
+    
+    .import-text-input,
+    #import-text-highlight-sandbox {
+        margin-top: 10px;
+    }
+
+    #import-text-ingredient-groups,
+    #import-text-instruction-groups {
+        label {
+            display: inline;
+            font-weight: normal;
+        }
+    }
+
+    .import-text-group-warning {
+        margin-top: 10px;
+        display: none;
+    }
+
+    #import-text-highlight-sandbox {
+        display: none;
+        max-height: 400px;
+        overflow: scroll;
+        padding: 10px;
+        border: 1px dashed #999;
+    }
+}

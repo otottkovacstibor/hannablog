@@ -1,0 +1,153 @@
+.wpupg-clear {
+    float: none;
+    clear: both;
+}
+
+.wpupg-meta {
+    display: none;
+}
+
+html body.rtl .wpupg-container {
+    text-align: right;
+}
+
+html body .wpupg-container {
+    position: relative;
+    float: left;
+    text-align: left;
+    font-size: 14px;
+
+    span:not(.wpupg-show-on-hover) {
+        display: inline-block;
+    }
+
+    &.wpupg-hovering {
+        span.wpupg-show-on-hover {
+          display: inline-block;
+        }
+    }
+
+    * {
+        border: 0;
+
+        -webkit-margin: 0;
+        -moz-margin: 0;
+        margin: 0;
+
+        -webkit-padding: 0;
+        -moz-padding: 0;
+        padding: 0;
+
+        background: none;
+
+        -webkit-border-radius: 0px;
+        -moz-border-radius:    0px;
+        border-radius:         0px;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow:    none;
+        box-shadow:         none;
+
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+
+        color: inherit;
+        font-size: inherit;
+        line-height: 1.4;
+        font-weight: normal;
+    }
+
+    b, strong {
+        font-weight: bold;
+    }
+
+    hr {
+        background-color: #ccc !important;
+    }
+
+    // Reset CSS as best as possible (based on normalize.css)
+    .wpupg-paragraph {
+        h1 {
+            font-size: 2em;
+            margin: 0.67em 0;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            margin: 0.83em 0;
+        }
+
+        h3 {
+            font-size: 1.17em;
+            margin: 1em 0;
+        }
+
+        h4 {
+            font-size: 1em;
+            margin: 1.33em 0;
+        }
+
+        h5 {
+            font-size: 0.83em;
+            margin: 1.67em 0;
+        }
+
+        h6 {
+            font-size: 0.75em;
+            margin: 2.33em 0;
+        }
+
+        p, pre {
+            margin: 1em 0;
+        }
+
+        code, kbd, pre, samp {
+            font-family: monospace, serif;
+            _font-family: 'courier new', monospace;
+            font-size: 1em;
+        }
+
+        blockquote {
+            margin: 1em 40px;
+        }
+
+        b, strong {
+            font-weight: bold;
+        }
+
+        dl, menu, ol, ul {
+            margin: 1em 0;
+        }
+
+        dd {
+            margin: 0 0 0 40px;
+        }
+
+        menu, ol, ul {
+            padding: 0 0 0 40px;
+        }
+
+        .aligncenter {
+            margin: 0 auto;
+        }
+    }
+
+    table {
+        table-layout: auto;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .wpupg-responsive-mobile, .wpupg-show-on-hover {
+        display: none;
+    }
+}

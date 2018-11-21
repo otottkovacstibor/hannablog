@@ -1,0 +1,85 @@
+.user-menus-title,
+.user-menus-select {
+  width: 100%;
+  max-width: 300px; }
+
+.user-menus-input-container {
+  width: 300px;
+  float: left; }
+
+.user-menus-servings-container {
+  float: right;
+  min-width: 200px;
+  text-align: right; }
+
+.user-menus-servings-general, .user-menus-servings-recipe {
+  margin-left: 10px;
+  padding: 2px;
+  width: 35px;
+  font-size: 1em; }
+
+.user-menus-servings-recipe {
+  float: right; }
+
+.user-menus-group-by-container {
+  clear: left;
+  margin-bottom: 10px !important; }
+
+a.user-menus-group-by {
+  text-decoration: none !important; }
+
+a.user-menus-group-by-selected {
+  font-weight: bold; }
+
+.user-menus-recipe, .user-menus-no-recipes {
+  line-height: 30px;
+  min-height: 30px;
+  padding-left: 20px;
+  border-left: 4px solid #37829e;
+  background: #f9f9f9; }
+  .user-menus-recipe .delete-recipe-button, .user-menus-no-recipes .delete-recipe-button {
+    margin-right: 5px;
+    cursor: pointer; }
+
+.user-menus-recipe {
+  cursor: move;
+  clear: both; }
+
+.user-menus-recipe:nth-child(odd) {
+  border-left-color: #2c5e74;
+  background: #f3f3f3; }
+
+.user-menus-no-recipes {
+  border-left-color: #742228; }
+
+.user-menus-recipes-delete-container {
+  height: 40px;
+  display: none;
+  -webkit-transition: background 500ms ease;
+  -moz-transition: background 500ms ease;
+  -ms-transition: background 500ms ease;
+  -o-transition: background 500ms ease;
+  transition: background 500ms ease;
+  background-color: #fff; }
+  .user-menus-recipes-delete-container.drop-hover {
+    background-color: #ffd4cd; }
+
+.user-menus-recipes-delete {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  height: 38px;
+  line-height: 40px;
+  border: 1px dashed #999; }
+
+.user-menus-buttons-container {
+  float: right; }
+
+table.user-menus-ingredients {
+  margin-top: 10px !important;
+  width: 100%; }
+  table.user-menus-ingredients th {
+    width: 50%; }
+  table.user-menus-ingredients tr.ingredient-checked td {
+    text-decoration: line-through;
+    color: #999; }

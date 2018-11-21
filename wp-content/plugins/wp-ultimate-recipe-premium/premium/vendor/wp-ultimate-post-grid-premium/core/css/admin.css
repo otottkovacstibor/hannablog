@@ -1,0 +1,21 @@
+#qt_content_wpupg_shortcode_generator {
+  width: 26px; }
+
+.reveal-modal {
+  z-index: 150000 !important; }
+
+.wpupg_notice .wpupg_notice_dismiss {
+  margin-top: 8px;
+  float: right; }
+.wpupg_notice h3 {
+  margin-top: 5px;
+  margin-bottom: 10px; }
+.wpupg_notice p {
+  max-width: 600px; }
+
+.wpupg_license {
+  width: 100%; }
+  .wpupg_license th, .wpupg_license td {
+    vertical-align: middle; }
+  .wpupg_license .license_button {
+    float: right; }

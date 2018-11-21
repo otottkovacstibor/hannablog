@@ -1,0 +1,3836 @@
+# Translation of WP Ultimate Recipe in Arabic
+# This file is distributed under the same license as the WP Ultimate Recipe package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-12-17 00:56:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: WP Ultimate Recipe\n"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:298
+msgid "Difficulty Level: Intermediate"
+msgstr "مستوى الصعوبة: متوسطة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:301
+msgid "Difficulty Level: Advanced"
+msgstr "مستوى الصعوبة: متقدم"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:295
+msgid "Difficulty Level: Easy"
+msgstr "مستوى الصعوبة: سهل"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:28
+msgid "Image"
+msgstr "صورة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:26
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:38
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:125
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:6
+msgid "Import Cooked"
+msgstr "استيراد cooked"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/add_to_meal_plan.php:28
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1673
+msgid "Add to Meal Plan:"
+msgstr "إضافة إلى خطة الوجبة:"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/add_to_meal_plan.php:29
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1680
+msgid "This recipe has been added to your Meal Plan"
+msgstr "تم إضافة هذه الوصفة \"خطة الوجبة\" الخاص بك"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/add_to_meal_plan.php:43
+msgid "Select Course to Add:"
+msgstr "حدد وجبة لإضافتها:"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:31
+msgid "Add Alternate Image"
+msgstr "إضافة صورة بديلة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:32
+msgid "Remove Alternate Image"
+msgstr "إزالة الصورة البديلة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:35
+msgid "(leave blank to use featured image)"
+msgstr "(اترك المساحة فارغة لاستخدام صورة مميزة)"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:157
+msgid "Theme"
+msgstr "قالب"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:198
+msgid "Alternate Image"
+msgstr "صورة بديلة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:199
+msgid "Ability to define an alternate image for the recipe."
+msgstr "القدرة على تحديد صورة بديلة للوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:232
+msgid "Ingredient Precision"
+msgstr "دقة المقدار"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:233
+msgid "Precision of decimal numbers for ingredient quantities after adjusting servings."
+msgstr "دقة الأرقام العشرية لكميات المكونات بعد ضبط الحصص."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:288
+msgid "Title attritube to be used for the recipe image."
+msgstr "Title attritube لاستخدامها في صورة الوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:307
+msgid "Recipe Image Alt"
+msgstr "صورة الوصفه  Alt"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:308
+msgid "Alt attritube to be used for the recipe image."
+msgstr "Alt attritube لاستخدامها لصورة الوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:312
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:352
+msgid "Use media attachment alt"
+msgstr "استخدام مرفقات الوسائط alt"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:328
+msgid "Title attritube to be used for instruction images."
+msgstr "Title attritube لاستخدامها في صور الخطوات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:347
+msgid "Instruction Images Alt"
+msgstr "Alt صور التعليمات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:348
+msgid "Alt attritube to be used for instruction images."
+msgstr "Alt attritube لاستخدامها لصور التعليمات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1575
+msgid "Meal Planner"
+msgstr "مخطط الوجبات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1581
+msgid "Access"
+msgstr "الوصول"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1609
+msgid "Enable Meal Planner for"
+msgstr "تمكين مخطط الوجبات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1632
+msgid "Disabled Text"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1633
+msgid "Text to be shown when the Meal Planner is disabled for a visitor."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1642
+msgid "Add to Meal Plan Button"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1648
+msgid "Show add to meal plan button for"
+msgstr "إظهار زر إضافة إلى مخطط الوجبات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1692
+msgid "Appearance"
+msgstr "المظهر"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1698
+msgid "Number of Days on Desktop"
+msgstr "عدد الأيام في سطح المكتب"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1707
+msgid "Number of Days on Tablet"
+msgstr "عدد الأيام في الكمبيوتر اللوحي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1716
+msgid "Number of Days on Mobile"
+msgstr "عدد الأيام في الجوال"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1725
+msgid "Date Format"
+msgstr "صيغة التاريخ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1726
+msgid "Use PHP Date String"
+msgstr "Use PHP Date String"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1732
+msgid "Default Courses"
+msgstr "وجبات افتراضية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1733
+msgid "Default courses to show in the menu."
+msgstr "وجبات افتراضية لتظهر في القائمة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1740
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1741
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1758
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/meal-planner.php:392
+msgid "Lunch"
+msgstr "الغداء"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1748
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1749
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1759
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/meal-planner.php:393
+msgid "Dinner"
+msgstr "العشاء"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1765
+msgid "Recipe Details Template"
+msgstr "قالب تفاصيل الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1766
+msgid "The template to use for recipe details."
+msgstr "القالب المراد استخدامه للحصول على تفاصيل الوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2547
+msgid "Show Rating in Overview"
+msgstr "إظهار التقييم في النظرة العامة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2548
+msgid "Show the recipe rating on the recipe overview page."
+msgstr "إظهار تقييم الوصفه على صفحة نظرة عامة للوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:122
+msgid "Import Cooked recipes"
+msgstr "استيراد وصفات cooked"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:152
+#: wp-ultimate-recipe-premium/premium/addons/import-xml-ingredients/import-xml-ingredients.php:26
+#: wp-ultimate-recipe-premium/premium/addons/import-xml-ingredients/import-xml-ingredients.php:38
+#: wp-ultimate-recipe-premium/premium/addons/import-xml-ingredients/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-xml-ingredients/templates/before_importing.php:16
+msgid "Import XML Ingredients"
+msgstr "استيراد مكونات XML"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:277
+msgid "Recipe Image"
+msgstr "صورة الوصفة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:452
+msgid "Difficulty"
+msgstr "الصعوبة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:466
+msgid "Video"
+msgstr "فيديو"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/meal-planner.php:106
+msgid "Do you want to remove this entire course?"
+msgstr "هل تريد إزالة هذه الوجبة؟"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/meal-planner.php:107
+msgid "Do you want to remove this recipe from the menu?"
+msgstr "هل تريد إزالة هذه الوصفة من القائمة؟"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/calendar.php:45
+msgid "Today"
+msgstr "اليوم"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/calendar.php:47
+msgid "Tomorrow"
+msgstr "غداً"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/calendar.php:113
+msgid "Click on a recipe for more details"
+msgstr "انقر على وصفة لمزيد من التفاصيل"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/calendar.php:113
+msgid "Selected Recipe:"
+msgstr "الوصفة المختارة:"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/calendar.php:123
+msgid "Add Course"
+msgstr "إضافة وجبة"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/calendar.php:125
+msgid "Generate Shopping List"
+msgstr "إنشاء قائمة تسوق"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/meal-planner.php:49
+msgid "Drag recipe to your menu:"
+msgstr "اسحب الوصفة إلى القائمة الخاصة بك:"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/shopping-list.php:19
+msgid "Add Ingredient"
+msgstr "إضافة مقدار"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/shopping-list.php:21
+msgid "Print"
+msgstr "طباعة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:256
+msgid "Display Options:"
+msgstr "إعدادات العرض:"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:261
+msgid "Display in Label"
+msgstr "عرض في ملصقة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:264
+msgid "Not required when displaying nutritional information per serving in the label."
+msgstr "غير مطلوب عند عرض المعلومات الغذائية لكل حصة في ملصق."
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:265
+msgid "Leave blank to display per serving in the label."
+msgstr "اتركه فارغاً لعرض لكل تقديمة في ملصق."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:65
+msgid "Are you sure you want to delete this recipe:"
+msgstr "هل أنت متأكد من أنك تريد حذف هذه الوصفة:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:249
+msgid "Use Hyphens for Ranges"
+msgstr "استخدام الواصلات للمدى"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:250
+msgid "A hyphen in your quantity will be treated as a range."
+msgstr "واصلة في الكمية الخاصة بك سوف يعامل كمجموعة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:938
+msgid "Links"
+msgstr "الروابط"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:955
+msgid "Tag Links"
+msgstr "وسم الروابط"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:956
+msgid "Links to be used in the tag list."
+msgstr "ارتباطات ليتم استخدامها في قائمة الوسوم."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:960
+msgid "No tag links"
+msgstr "لا توجد روابط للوسم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:964
+msgid "Only link to archive page"
+msgstr "فقط اربط إلى صفحة الأرشيف"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:984
+msgid "tag page"
+msgstr "وسم الصفحة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1008
+msgid "Add the nofollow attribute to custom tag links."
+msgstr "إضافة السمة nofollow إلى روابط المكون المخصص."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1340
+msgid "Allow users to delete their own recipes"
+msgstr "السماح للمستخدمين بحذف الوصفات الخاصة بها"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1341
+msgid "Show a delete button when users are editing their own recipes from the front-end."
+msgstr "إظهار زر حذف عند تحرير المستخدمين الوصفات الخاصة بهم من الواجهة الأمامية."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2253
+msgid "Display Unit"
+msgstr "وحدة العرض"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2261
+msgid "Kilojoules"
+msgstr "كيلوجول"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2487
+msgid "Ignore Ingredient IDs"
+msgstr "تجاهل معرفات المكون"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2488
+msgid "Can be useful when using content copy plugins."
+msgstr "يمكن أن تكون مفيدة عند استخدام إضافات نسخ المحتوى."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2494
+msgid "Disable Ingredient Autocomplete"
+msgstr "تعطيل الإكمال التلقائي للعنصر"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2495
+msgid "Disable the ingredient suggestions when entering them in the recipe form."
+msgstr "قم بتعطيل اقتراحات المكون عند إدخالها في الوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2534
+msgid "Performance"
+msgstr "الأداء"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2540
+msgid "Show Thumbnails in Overview"
+msgstr "إظهار الصور المصغرة في النظرة العامة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2541
+msgid "Show the recipe thumbnails on the recipe overview page."
+msgstr "إظهار صور الوصفة المصغرة على صفحة نظرة عامة على الوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:269
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:319
+msgid "Specific Serving Size"
+msgstr "حجم حصة محدد"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:374
+msgid "Limit to posts from Grid"
+msgstr "يقتصر فقط على المنشورات من شبكة الوصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:32
+msgid "Send your visitors to a specific link when clicking on an term."
+msgstr "إرسال زوار موقعك على ارتباط معين عند النقر فوق كصطلح."
+
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:11
+msgid "From"
+msgstr "من"
+
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:12
+msgid "to"
+msgstr "إلى"
+
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:27
+msgid "Quick select"
+msgstr "اختيار سريع"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:33
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:38
+msgid "Currently importing"
+msgstr "حاليا يقوم بالاستيراد"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:52
+msgid "Energy"
+msgstr "الطاقة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:54
+msgid "Energy from Fat"
+msgstr "الطاقة من الدهون"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:71
+msgid "Amount Per"
+msgstr "الكمية  لكل"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:260
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/widgets/nutrition_label_widget.php:68
+msgid "Serving Size"
+msgstr "حجم الحصة"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license.php:37
+msgid "Activate your license key to receive automatic updates."
+msgstr "تنشيط مفتاح الترخيص الخاص بك الحصول على التحديثات التلقائية."
+
+#: wp-ultimate-recipe-premium/premium/helpers/license.php:38
+msgid "Activate now"
+msgstr "تنشيط الآن"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license.php:39
+msgid "Get a License"
+msgstr "الحصول على ترخيص"
+
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:182
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:303
+msgid "minute"
+msgstr "دقيقة"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/add_to_shopping_list.php:37
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1949
+msgid "Add to Shopping List"
+msgstr "إضافة إلى قائمة التسوق"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/add_to_shopping_list.php:38
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1956
+msgid "This recipe is in your Shopping List"
+msgstr "هذا الوصفة في \"قائمة التسوق\" الخاصة بك"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/favorite.php:36
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2209
+msgid "Add to your Favorite Recipes"
+msgstr "إضافة إلى \"الوصفات المفضلة لديك\""
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/favorite.php:37
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2216
+msgid "This recipe is in your Favorite Recipes"
+msgstr "هذا الوصفة في \"الوصفات المفضلة لديك\""
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/functionality/print_button.php:30
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:220
+msgid "Print Recipe"
+msgstr "طباعة الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:184
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:305
+msgid "hours"
+msgstr "ساعات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:218
+msgid "Print Button Tooltip"
+msgstr "تلميح الأدوات زر الطباعة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:219
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1672
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1679
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1948
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1955
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2208
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2215
+msgid "Text to show when someone hovers over the button."
+msgstr "النص الذي يظهر عندما يحوم شخص فوق الزر."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:706
+msgid "Show the Yum button."
+msgstr "إظهار زر يمي."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1887
+msgid "Enable Delete Button"
+msgstr "تمكين زر \"حذف\""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1888
+msgid "Users can delete their own saved menus."
+msgstr "يمكن للمستخدمين حذف القوائم المحفوظة الخاصة بهم."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1790
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1903
+msgid "Show Ingredient Notes"
+msgstr "إظهار ملاحظات المكون"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1791
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1904
+msgid "Ingredients with different notes will be handled as different ingredients."
+msgstr "سيتم معالجة المكونات مع ملاحظات مختلفة كالمكونات المختلفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1918
+msgid "Add to Shopping List Button"
+msgstr "إضافة إلى زر قائمة التسوق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1947
+msgid "Add to Shopping List Button Tooltip"
+msgstr "إضافة تلميح الأدوات إلى قائمة زر للتسوق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1671
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1678
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1954
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2214
+msgid "Tooltip after adding"
+msgstr "تلميح بعد الإضافة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1685
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1961
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2221
+msgid "You can use HTML to link to the relevant page in the tooltips:"
+msgstr "يمكنك استخدام HTML للارتباط بصفحة ذات الصلة في تلميحات الأدوات:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2103
+msgid "Include Recipe List"
+msgstr "تشمل قائمة الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2104
+msgid "Include of list of the recipes in the menu when printing the shopping list."
+msgstr "تشمل قائمة بالوصفات في القائمة عند طباعة قائمة التسوق."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2207
+msgid "Favorite Recipes Button Tooltip"
+msgstr " زر تلميح الأدوات الوصفات المفضلة لديك"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2279
+msgid "Required role or capability"
+msgstr "مطلوب الدور أو القدرة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2280
+msgid "Only users with this role or capability can edit the Nutritional Information."
+msgstr "يمكن للمستخدمين فقط مع هذا الدور أو القدرة على تحرير \"المعلومات الغذائية\"."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:113
+msgid "Delete Menu"
+msgstr "حذف القائمة"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:106
+msgid "Show Images"
+msgstr "إظهار الصور"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:305
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:337
+msgid "Instruction Step Image"
+msgstr "صورة تعليمات الخطوة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:287
+msgid "Recipe Image Title"
+msgstr "عنوان صورة الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:296
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:316
+msgid "Use recipe title"
+msgstr "استخدام عنوان الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:656
+msgid "Connect your recipes to leading online grocers with the Chicory \"get ingredients\" button."
+msgstr "ربط الوصفات لمحلات البقالة الرائدة على الانترنت بواسطة \"زر الحصول على المكونات\"."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:666
+msgid "I agree to Chicory's"
+msgstr "أنا أوافق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:666
+msgid "terms of use"
+msgstr "شروط الاستخدام"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:674
+msgid "You need to agree to Chicory's terms of use if you want the button to show up."
+msgstr "تحتاج إلى توافق على شروط الاستخدام إذا كنت تريد أن يظهر الزر."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:858
+msgid "Fields"
+msgstr "الحقول"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:859
+msgid "Fields to show in the User Submission form."
+msgstr "الحقول لإظهار في نموذج \"إرسال المستخدم\"."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1334
+msgid "Allow visitors to preview their submission"
+msgstr "السماح للزوار بمعاينة ما أرسلوه"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1356
+msgid "Required Fields"
+msgstr "الحقول المطلوبة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1357
+msgid "Fields that are required to fill in."
+msgstr "الحقول المطلوب ملؤها."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1375
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1381
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:127
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:326
+msgid "Security Question"
+msgstr "سؤال الأمان"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1382
+msgid "Use a security question to prevent spam."
+msgstr "استخدام سؤال الأمان لمنع البريد المزعج."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1388
+msgid "Question"
+msgstr "سؤال"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1389
+msgid "The question your visitors have to answer."
+msgstr "السؤال الذي يجب على الزوار الإجابة عليه"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1399
+msgid "Answer"
+msgstr "الإجابة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1400
+msgid "The correct answer to that question."
+msgstr "الإجابة الصحيحة على هذا السؤال."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1479
+msgid "Approval Rules"
+msgstr "الموافقة على القواعد"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1485
+msgid "Auto approve"
+msgstr "الموافقة التلقائية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1509
+msgid "Auto approve specific users"
+msgstr "الموافقة التلقائية على مستخدمين محددين"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1510
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1524
+msgid "Publish recipes from these users immediately on submission."
+msgstr "نشر الوصفات من هؤلاء المستخدمين فورا عند تقديمها."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1523
+msgid "Auto approve users with role or capability"
+msgstr "الموافقة التلقائية على مستخدمين ذوي أدوار أو قدرات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2308
+msgid "Import order"
+msgstr "أمر استيراد"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2312
+msgid "Import oldest recipes first"
+msgstr "استيراد وصفات الأقدم أولاً"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2316
+msgid "Import latest recipes first"
+msgstr "استيراد وصفات الأحدث أولاً"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:157
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/import-fdx.php:26
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/import-fdx.php:38
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/templates/before_importing.php:15
+msgid "Import FDX"
+msgstr "استيراد FDX"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:278
+msgid "guests"
+msgstr "الضيوف"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:359
+msgid "List of submissions by currently logged in user with edit ability"
+msgstr "قائمة بالوصفات المرسلة من قبل مستخدم سجل دخوله حاليا لديه القدرة على التحرير"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:135
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:345
+msgid "Preview"
+msgstr "معاينة"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:335
+msgid "Please fill in these required fields:"
+msgstr "يرجى تعبئة هذه الحقول المطلوبة:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1238
+msgid "Backwards Compatibility"
+msgstr "توافقية مع إصدارات أقدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1797
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1974
+msgid "Consolidate Ingredients"
+msgstr "دمج المكونات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1798
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1975
+msgid "Convert units to be able to consolidate ingredients into 1 line."
+msgstr "تحويل الوحدات لتكون قادر على دمج المكونات في السطر 1."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:258
+msgid "Manage Recipe Grids"
+msgstr "إدارة معرض الوصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/template-editor/templates/parser.php:515
+msgid "Please set a Preview Recipe in the settings first."
+msgstr "الرجاء تعيين \"وصفه معاينة\" في الإعدادات أولاً."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:274
+msgid "Images"
+msgstr "صور"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:327
+msgid "Instruction Images Title"
+msgstr "صورة تعليمات الخطوة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:292
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:332
+msgid "Use media attachment title"
+msgstr "استخدام عنوان الوسائط المرفقة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:336
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:356
+msgid "Use instruction text"
+msgstr "استخدام نص التعليمات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:437
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1007
+msgid "Use Nofollow"
+msgstr "استخدام Nofollow"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:438
+msgid "Add the nofollow attribute to custom ingredient links."
+msgstr "إضافة السمة nofollow إلى روابط المكون المخصص."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1565
+msgid "Use Media Manager"
+msgstr "استخدام مدير الوسائط"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1566
+msgid "Let logged in users use the Media Manager to upload images"
+msgstr "السماح للمستخدمين المسجلين باستخدام \"مدير الوسائط\" لتحميل الصور"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2167
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:451
+msgid "Favorite Recipes"
+msgstr "الوصفات المفضلة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2191
+msgid "Use the following shortcode to display the list of favorite recipes:"
+msgstr "استخدم shortcode  التالي لعرض قائمة بوصفات المفضلة لديك:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2201
+msgid "Enable Button"
+msgstr "تمكين زر"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:454
+msgid "List logged in user's Favorite Recipes"
+msgstr "إظهار قائمة الوصفات المفضلة للمستخدم المسجل"
+
+#: wp-ultimate-recipe-premium/premium/addons/favorite-recipes/favorite-recipes.php:87
+msgid "You don't have any favorite recipes."
+msgstr "لا يوجد لديك أي وصفات مفضلة."
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:29
+msgid "Without Nutritional Information"
+msgstr "بدون المعلومات الغذائية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:32
+msgid "With Nutritional Information"
+msgstr "مع المعلومات الغذائية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1417
+msgid "Allow Multiselect"
+msgstr "السماح باختيار متعدد"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1418
+msgid "Allow users to select multiple terms per category."
+msgstr "السماح للمستخدمين بتحديد شروط متعددة في كل فئة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2272
+msgid "Show Notice"
+msgstr "إظهار إشعار"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2273
+msgid "Show notice to update Nutritional Information after updating a recipe."
+msgstr "إظهار إشعار لتحديث \"المعلومات الغذائية\" بعد استكمال وصفه."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2480
+msgid "Use Yandex metadata"
+msgstr "استخدام بيانات التعريف ياندكس"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2481
+msgid "Add a resultPhoto meta field for Yandex."
+msgstr "إضافة حقل ميتا ريسولت فوتو لياندكس."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:58
+msgid "Visitor"
+msgstr "زائر"
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:10
+msgid "Optional plural version of this ingredient."
+msgstr "إصدار الجمع الاختياري لهذا العنصر."
+
+#: wp-ultimate-recipe-premium/core/helpers/notices.php:30
+msgid "other notices ignored"
+msgstr "تجاهل أية إشعارات أخرى"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:147
+#: wp-ultimate-recipe-premium/premium/addons/import-xml/import-xml.php:26
+#: wp-ultimate-recipe-premium/premium/addons/import-xml/import-xml.php:38
+#: wp-ultimate-recipe-premium/premium/addons/import-xml/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-xml/templates/before_importing.php:15
+msgid "Import XML"
+msgstr "استيراد XML"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:162
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/export-xml.php:91
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/export-xml.php:103
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:36
+msgid "Export XML"
+msgstr "تصدير XML"
+
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/export-xml.php:114
+msgid "You haven't selected any recipes to export."
+msgstr "أنت لم تقم بتحديد أي وصفات التصدير."
+
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/export-xml.php:134
+msgid "Download XML"
+msgstr "تحميل XML"
+
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:5
+msgid "Select recipes"
+msgstr "حدد وصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:55
+msgid "Select"
+msgstr "إختر"
+
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:27
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:57
+msgid "None"
+msgstr "لا شيء"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:57
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:89
+msgid "Lines starting with a ! will be starting a new group."
+msgstr "الأسطر التي تبدأ ب! سوف تبدأ مجموعة جديدة."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:43
+msgid "Set group for selected ingredients"
+msgstr "تعيين مجموعة للمكونات المختارة"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/partner/bigoven.php:16
+msgid "BigOven - Save recipe or add to grocery list"
+msgstr "BigOven--حفظ وصفه أو إضافة إلى قائمة البقالة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:643
+msgid "Partner Integrations"
+msgstr "تكامل مع شريك"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:692
+msgid "Show save recipe to BigOven button."
+msgstr "إظهار زر حفظ الوصفة إلى Bigoven."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:699
+msgid "Show save recipe to Food Fanatic button."
+msgstr "إظهار زر حفظ الوصفة \"Food Fanatic\"."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:132
+msgid "Import RecipeCard recipes"
+msgstr "استيراد وصفات ريسيبيكارد"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:26
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:38
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/before_importing.php:44
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:6
+msgid "Import RecipeCard"
+msgstr "استيراد ريسيبيكارد"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:289
+msgid "Adapted"
+msgstr "تكيف"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:290
+msgid "Adapted Link"
+msgstr "الارتباط المعدلة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:547
+msgid "Include Font Awesome"
+msgstr "تضمين Font Awesome"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:548
+msgid "You can disable this if your theme already includes Font Awesome."
+msgstr "يمكنك تعطيل هذا إذا كان الثيم الخاص بك يتضمن بالفعل \"Font Awesome\"."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1347
+msgid "After-submission text"
+msgstr "النص بعد انتهاء التسليم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1348
+msgid "Text to be shown after a user has submitted a recipe."
+msgstr "النص الذي سيظهر بعد قيام المستخدم بتسليم وصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1348
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1633
+msgid "HTML can be used."
+msgstr "ويمكن استخدام HTML."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1452
+msgid "Hide Category Terms"
+msgstr "إخفاء شروط الفئة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1465
+msgid "Hide Tag Terms"
+msgstr "إخفاء شروط الوسم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1924
+msgid "Show add to shopping list button for"
+msgstr "عرض إضافة زر قائمة التسوق إلى"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:242
+msgid "Premium only"
+msgstr "المميز فقط"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:387
+msgid "List Menus by user"
+msgstr "ترتيب القوائم حسب المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:160
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:397
+msgid "Currently logged in user"
+msgstr "تسجيل الدخول المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1981
+msgid "Unit System Dropdown"
+msgstr "قائمة منسدلة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1982
+msgid "Users can use a dropdown to select the unit system they want."
+msgstr "يمكن للمستخدمين استخدام من القائمة منسدلة لتحديد نظام الوحدة التي يريدونها."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1989
+msgid "Default Unit System"
+msgstr "نظام الوحدة الافتراضي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2013
+msgid "Number of unit systems displayed in the shopping list."
+msgstr "عدد من أنظمة الوحدة المعروضة في قائمة التسوق."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2603
+msgid "Print Recipe CSS"
+msgstr "طباعة الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2610
+msgid "Print Shopping List CSS"
+msgstr "طباعة قائمة التسوق"
+
+#: wp-ultimate-recipe-premium/premium/vendor/EDD/EDD_SL_Plugin_Updater.php:323
+msgid "Error"
+msgstr "خطأ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:517
+msgid "Mobile"
+msgstr "الجوال"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:554
+msgid "Output Inline CSS"
+msgstr "إخراج CSS مضمنة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:555
+msgid "When disabled the Template Editor will not output any inline CSS."
+msgstr "عند تعطيل محرر القالب سوف لن يتم إخراج أي CSS مضمنة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:561
+msgid "Use base CSS"
+msgstr "استخدام CSS قاعدة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:562
+msgid "When disabled the base CSS file will not be included."
+msgstr "عند تعطيل القاعدة لن يتم تضمين ملف CSS."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:633
+msgid "Disable Recipe Archive"
+msgstr "تعطيل أرشيف الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:634
+msgid "Make sure to flush your permalinks after changing this setting."
+msgstr "تأكد من مسح برملينكس الخاص بك بعد تغيير هذا الإعداد."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:735
+msgid "Language"
+msgstr "اللغة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:741
+msgid "Available languages can be found over here:"
+msgstr "يمكن الاطلاع على اللغات المتوفرة هنا:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1910
+msgid "Show Checkboxes"
+msgstr "إظهار خانات الاختيار"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1911
+msgid "Show checkboxes in the shopping list to cross items of the list."
+msgstr "إظهار خانات الاختيار في قائمة التسوق عبر العناصر الموجودة في القائمة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2555
+msgid "Assets"
+msgstr "الأصول"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2561
+msgid "Use minified assets"
+msgstr "استخدام أصول مصغرة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2562
+msgid "Use minified assets to improve page load speed."
+msgstr "استخدام أصول مصغرة لتحسين سرعة تحميل الصفحة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2568
+msgid "Generate minified assets"
+msgstr "استخدام أصول مصغرة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2569
+msgid "Generate minified assets on the fly."
+msgstr "توليد أصول مصغرة على الطاير."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2575
+msgid "Minified assets directory"
+msgstr "دليل الأصول مصغرة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2576
+msgid "Directory to generate the minified assets to. Should be writable."
+msgstr "دليل توليد الأصول المصغرة. وينبغي أن تكون قابلة للكتابة."
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:19
+msgid "Hide link"
+msgstr "إخفاء الرابط"
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:20
+msgid "Don't use a link in the ingredients list for this ingredient."
+msgstr "لا تستخدم ارتباط في قائمة المكونات لهذا المكونر."
+
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/import-easyrecipe.php:46
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/import-easyrecipe.php:58
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:84
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:6
+msgid "Import EasyRecipe"
+msgstr "استيراد إيسي ريسيبي"
+
+#: wp-ultimate-recipe-premium/core/helpers/cache.php:82
+msgid "Private"
+msgstr "خاص"
+
+#: wp-ultimate-recipe-premium/core/helpers/cache.php:96
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_whitelist.php:129
+msgid "n/a"
+msgstr "لاينطبق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:127
+msgid "Import EasyRecipe recipes"
+msgstr "استيراد وصفات إيسي ريسيبي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:268
+msgid "Reset Cache"
+msgstr "إعادة تعيين ذاكرة التخزين المؤقت"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/import-easyrecipe.php:458
+msgid "Nutritional Serving Size"
+msgstr "حجم الحصة الغذائية"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:92
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/before_importing.php:52
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/before_importing.php:52
+msgid "Unable to import"
+msgstr "غير قادر على استيراد"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:93
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/before_importing.php:53
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/before_importing.php:53
+msgid "We are unable to import these posts or pages automatically:"
+msgstr "نحن غير قادر على استيراد هذه الوظائف أو الصفحات تلقائياً:"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:23
+msgid "You should select two distinct tags"
+msgstr "يجب عليك تحديد اثنين من الوسمs المميزة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:152
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:46
+msgid "Featured Image"
+msgstr "صورة مميزة "
+
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:79
+msgid "No featured image"
+msgstr "لا توجد صورة مميزة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2301
+msgid "Generic ingredient units"
+msgstr "الوحدات المقدار العامة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2302
+msgid "Generic ingredient units to recognize while importing. Separate with a ;"
+msgstr "الوحدات المقادير العامة الاعتراف أثناء استيراد. منفصلة مع :"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2328
+msgid "Import From"
+msgstr "استيراد من:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:142
+msgid "Import Ziplist recipes"
+msgstr "استيراد وصفات زيبليست"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:14
+msgid "clove"
+msgstr "قرنفل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:15
+msgid "cloves"
+msgstr "القرنفل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:16
+msgid "leave"
+msgstr "ورقة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:17
+msgid "leaves"
+msgstr "أوراق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:18
+msgid "slice"
+msgstr "شريحة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:19
+msgid "slices"
+msgstr "شرائح"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:20
+msgid "piece"
+msgstr "قطعة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:21
+msgid "pieces"
+msgstr "قطع"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:22
+msgid "pinch"
+msgstr "رشة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:23
+msgid "pinches"
+msgstr "رشات"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/import-ziplist.php:26
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/import-ziplist.php:38
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/before_importing.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/before_importing.php:44
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:6
+msgid "Import Ziplist"
+msgstr "استيراد زيبليست"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:291
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/import-ziplist.php:320
+msgid "Yield"
+msgstr "تقدم"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:5
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:5
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/templates/before_importing.php:5
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/before_importing.php:5
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:5
+#: wp-ultimate-recipe-premium/premium/addons/import-xml-ingredients/templates/before_importing.php:5
+#: wp-ultimate-recipe-premium/premium/addons/import-xml/templates/before_importing.php:5
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/before_importing.php:5
+msgid "Before importing"
+msgstr "قبل الاستيراد"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:12
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:31
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:12
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:12
+msgid "There are no recipes left to import"
+msgstr "عدد وصفات باقية للاستيراد:"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:14
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:33
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:14
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:14
+msgid "Number of recipes left to import:"
+msgstr "عدد الوصفات الباقية للاستيراد:"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:54
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:134
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:54
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:60
+msgid "Import this Recipe"
+msgstr "استيراد هذه الوصفة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:55
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:135
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:55
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:61
+msgid "Feel free to stop at anytime and come back later for the rest of the recipes."
+msgstr "لا تتردد في التوقف في أي وقت، وأن تأتي لاحقاً لبقية الوصفات."
+
+#: wp-ultimate-recipe-premium/core/helpers/faq.php:24
+msgid "FAQ"
+msgstr "الأسئلة الأكثر شيوعاً"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:126
+msgid "Followed by the nutrition label:"
+msgstr "متبوعة بوسم التغذية:"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_meta_box.php:46
+msgid "Add Recipe Box"
+msgstr "إضافة صندوق وصفة جديد"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_save.php:105
+msgid "Update the Nutritional Information"
+msgstr "تحديث المعلومات الغذائية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:466
+msgid "RSS Feed"
+msgstr "RSS تغذية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:471
+msgid "Recipe Posts"
+msgstr "تدوينات الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:497
+msgid "Recipe Shortcode"
+msgstr "Shortcode الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:504
+msgid "Output the recipe shortcode in RSS feeds?"
+msgstr "إخفاء Shortcode الوصفة في تغذية RSS"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:902
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1438
+msgid "Hide Custom Tags"
+msgstr "إخفاء الوسوم المخصصة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:903
+msgid "Do not show these tags in the Recipe Box."
+msgstr "لا تظهر هذه الوسمs في \"صندوق الوصفة\"."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1439
+msgid "Hide these tags on the user submission page."
+msgstr "إخفاء هذه الوسمs عند قيام المستخدم بتقديم الصفحة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2090
+msgid "Print Options"
+msgstr "خيارات الطباعة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2096
+msgid "Print Shopping List Button"
+msgstr "زر طباعة قائمة التسوق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2097
+msgid "Show a button to print the shopping list."
+msgstr "إظهار زر لطباعة قائمة التسوق."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2110
+msgid "Print Menu Button"
+msgstr "زر طباعة القائمة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2111
+msgid "Show a button to print the entire menu (Shopping list and recipes)."
+msgstr "إظهار زر لطباعة القائمة بأكملها (قائمة التسوق والوصفات)."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:247
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/widgets/nutrition_label_widget.php:43
+msgid "Nutrition Label"
+msgstr "وسم التغذية:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:274
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:324
+msgid "Alignment"
+msgstr "انحياز"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:278
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:328
+msgid "Left"
+msgstr "يسار"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:282
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:332
+msgid "Center"
+msgstr "وسط"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:286
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:336
+msgid "Right"
+msgstr "يمين"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:290
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:340
+msgid "Inline"
+msgstr "مضمن"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2230
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/nutritional-information.php:121
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:2
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:82
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:202
+msgid "Nutritional Information"
+msgstr "المعلومات الغذائية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/nutritional-information.php:142
+msgid "Add Nutrition Label"
+msgstr "إضافة وسم التغذية:"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:65
+msgid "Nutrition Facts"
+msgstr "معلومات غذائية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:74
+msgid "Amount Per Serving"
+msgstr "في الحصة الواحدة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2257
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:58
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:144
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:274
+msgid "Calories"
+msgstr "من السعرات الحرارية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:60
+msgid "Calories from Fat"
+msgstr "الكالوري من الدهون"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:88
+msgid "% Daily Value"
+msgstr "القيمة اليومية %"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:92
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:156
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:286
+msgid "Total Fat"
+msgstr "إجمالي الدهون"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:97
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:160
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:290
+msgid "Saturated Fat"
+msgstr "الدهون المشبعة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:103
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:172
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:302
+msgid "Trans Fat"
+msgstr "الدهون المتحولة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:108
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:164
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:294
+msgid "Polyunsaturated Fat"
+msgstr "الدهون الغير المشبعة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:113
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:168
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:298
+msgid "Monounsaturated Fat"
+msgstr "الدهون الأحادية غير المشبعة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:119
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:145
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:275
+msgid "Cholesterol"
+msgstr "الكولسترول"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:125
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:149
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:279
+msgid "Sodium"
+msgstr "الصوديوم"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:131
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:153
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:283
+msgid "Potassium"
+msgstr "البوتاسيوم"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:137
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:148
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:278
+msgid "Total Carbohydrates"
+msgstr "إجمالي الكربوهيدرات"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:142
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:157
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:287
+msgid "Dietary Fiber"
+msgstr "الألياف الغذائية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:148
+msgid "Sugars"
+msgstr "السكريات"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:154
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:152
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:282
+msgid "Protein"
+msgstr "البروتين"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:163
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:165
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:295
+msgid "Vitamin A"
+msgstr "فيتامين (أ)"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:169
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:169
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:299
+msgid "Vitamin C"
+msgstr "فيتامين (ج)"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:175
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:173
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:303
+msgid "Calcium"
+msgstr "الكالسيوم"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:181
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:181
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:311
+msgid "Iron"
+msgstr "الحديد"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:187
+msgid "Percent Daily Values are based on a 2000 calorie diet. "
+msgstr "تستند القيمة اليومية على أساس 2000 سعرة حرارية في النظام الغذائي."
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/label.php:192
+msgid "There is no Nutrition Label for this recipe yet."
+msgstr "لا توجد \"تسمية غذائية\" لهذه الوصفة بعد."
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:100
+msgid "Get Nutritional Data"
+msgstr "الحصول على البيانات الغذائية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:111
+msgid "Find"
+msgstr "بحث"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:112
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:178
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:237
+msgid "Close"
+msgstr "إغلاق"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:123
+msgid "Reference serving"
+msgstr "مرجعية الحصة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:129
+msgid "Metric quantity"
+msgstr "الكمية المترية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:161
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:291
+msgid "Sugar"
+msgstr "السكر"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:165
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:169
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:173
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:181
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:295
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:299
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:303
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:311
+msgid "Daily Value"
+msgstr "القيمة اليومية %"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:177
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:307
+msgid "Save"
+msgstr "حفظ"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:209
+msgid "Calculate Recipe Nutritonal Information"
+msgstr "حساب المعلومات الغذائية للوصفة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:218
+msgid "Ingredient servings:"
+msgstr "حصص المكون:"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:236
+msgid "Calculate"
+msgstr "حساب"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:270
+msgid "Data for 1 serving:"
+msgstr "البيانات ل 1 حصة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:308
+msgid "Clear"
+msgstr "مسح"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/widgets/nutrition_label_widget.php:9
+msgid "WPURP Nutrition Label"
+msgstr "WPURP وسم التغذية"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/widgets/nutrition_label_widget.php:11
+msgid "Display the Nutrition Label of a recipe."
+msgstr "عرض \"الوسم الغذائي\" للوصفة."
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/widgets/nutrition_label_widget.php:58
+msgid "Recipe shown on recipe page"
+msgstr "الوصفة ظهرة على صفحة الوصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:148
+msgid "Print Menu"
+msgstr "طباعة القائمة"
+
+#: wp-ultimate-recipe-premium/premium/vendor/EDD/EDD_SL_Plugin_Updater.php:176
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a>."
+msgstr "هناك إصدار جديد من%1$s متاحة. <a href=\\\"%2$s\\\" class=\\\"thickbox\\\" title=\\\"%3$s\\\">مشاهدة النسخة %4$s  التفاصيل</a> ."
+
+#: wp-ultimate-recipe-premium/premium/vendor/EDD/EDD_SL_Plugin_Updater.php:183
+msgid "There is a new version of %1$s available. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">View version %3$s details</a> or <a href=\"%4$s\">update now</a>."
+msgstr "هناك نسخة جديدة من%1$s متاحة. <a target=\"_blank\" class=\"thickbox\" href=\"%2$s\">مشاهدة النسخة٪ 3 $ S تفاصيل</a> أو <a href=\"%4$s\">التحديث الآن</a> ."
+
+#: wp-ultimate-recipe-premium/premium/vendor/EDD/EDD_SL_Plugin_Updater.php:323
+msgid "You do not have permission to install plugin updates"
+msgstr "لم يكن لديك إذن لتثبيت تحديثات الإضافة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:242
+msgid "Use Fractions"
+msgstr "استخدام الكسور"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:243
+msgid "Use fractions after adjusting, even if the original quantity wasn't one."
+msgstr "استخدام الكسور بعد التعديل، حتى إذا لم تكن الكمية الأصلية واحداً."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1130
+msgid "Rounding Ratings"
+msgstr "تقريب التقييمات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1131
+msgid "Round the ratings presented in the metadata."
+msgstr "قرب التقييمات المقدمة في بيانات التعريف."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1139
+msgid "Round up to nearest half"
+msgstr "التقريب إلى أقرب نصف"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1143
+msgid "Round up to nearest integer"
+msgstr "التقريب إلى أقرب عدد صحيح"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1558
+msgid "Restrict Media Library Access"
+msgstr "تقييد الوصول إلى مكتبة الوسائط"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1559
+msgid "Only show media library for editors and up"
+msgstr "عرض مكتبة الوسائط فقط للمحررين وفوق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:463
+msgid "Display a random menu"
+msgstr "عرض قائمة عشوائية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:467
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:486
+msgid "Select a menu to display"
+msgstr "اختيار قائمة للعرض"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1551
+msgid "Email administrator"
+msgstr "مدير البريد الالكتروني"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1552
+msgid "Send an email notification when a new recipe is submitted."
+msgstr "إرسال تنبيه بواسطة البريد الالكتروني عند استلام وصفة جديدة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:186
+msgid "(separate slugs with ;)"
+msgstr "(فصل slugs مع ;)"
+
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:9
+msgid "WPURP Recipe Search"
+msgstr "بحث وصفة WPURP"
+
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:11
+msgid "A customizable Recipe Search widget."
+msgstr "ودج قابل للتعديل لبحث الوصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:64
+msgid "Recipe Search"
+msgstr "بحث الوصفة"
+
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/widgets/nutrition_label_widget.php:52
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:81
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:75
+msgid "Title:"
+msgstr "العنوان:"
+
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:89
+msgid "filter"
+msgstr "فلتر:"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:9
+msgid "WPURP Recipe List"
+msgstr "قائمة وصفة WPURP"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:11
+msgid "Make a list of your latest, highest rated, ... recipes."
+msgstr "اصنع قائمة بأحدث وأعلى"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:57
+msgid "Our Recipes"
+msgstr "وصفاتنا"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:66
+msgid "Recipe Title"
+msgstr "عنوان الوصفة"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:67
+msgid "Recipe Rating"
+msgstr "تقييم الوصفة"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:70
+msgid "ascending"
+msgstr "تصاعدي"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:71
+msgid "descending"
+msgstr "تنازلي"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:79
+msgid "Order By"
+msgstr "ترتيب حسب"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:90
+msgid "Order"
+msgstr "ترتيب"
+
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:101
+msgid "Number of recipes to show"
+msgstr "عدد الوصفات التي تظهر"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:390
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:295
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/custom-fields.php:18
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page.php:4
+msgid "Custom Fields"
+msgstr "حقول مخصصة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:132
+msgid "RSS Feed Template"
+msgstr "تملبت تغذية RSS"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:133
+msgid "The default template to use for RSS feeds."
+msgstr "التملبت الافتراضي لاستخدامه لتغذية RSS"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:814
+msgid "Recipe Fields"
+msgstr "حقول الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:831
+msgid "Custom Recipe Fields"
+msgstr "حقول الوصفة المخصصة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:852
+msgid "Show Custom Fields in User Submission form"
+msgstr "إظهار حقول مخصصة في فورم الارسال بواسطة المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:53
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:55
+msgid "Manage custom recipe fields"
+msgstr "إدارة حقول الوصفة المخصصة"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/custom-fields.php:30
+msgid "Current Custom Fields"
+msgstr "الحقول المخصصة الحالية"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/custom-fields.php:31
+msgid "Add new Custom Field"
+msgstr "إضافة حقل مخصص جديد"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_form.php:1
+msgid "Create custom fields for your recipes."
+msgstr "اصنع حقول مخصصة لوصفتك"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_form.php:9
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_list.php:9
+msgid "Key"
+msgstr "مفتاح"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_form.php:12
+msgid "(e.g. recipe_chef)"
+msgstr "(مثل recipe_chef)"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_form.php:12
+msgid "Make sure this is unique!"
+msgstr "تأكد من أن هذه فريدة من نوعها!"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_form.php:19
+msgid "(e.g. Recipe Chef)"
+msgstr "(مثل وصفه الشيف)"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_form.php:25
+msgid "Add new field"
+msgstr "إضافة حقل جديد"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_list.php:1
+msgid "Do you really want to delete this custom field?"
+msgstr "هل تريد حذف هذا الحقل المخصص حقاً؟"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:115
+msgid "Easily add shortcodes"
+msgstr "بسهولة إضافة shortcodes"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:116
+msgid "Click on the <strong>chef's hat</strong> in the visual editor toolbar to easily <strong>add recipes and functionality</strong> to any post or page."
+msgstr "انقر فوق <strong>قبعة الطاهي</strong> في شريط أدوات محرر visual لسهولة <strong>إضافة وصفات والأداء الوظيفي</strong> لأي تدوينة أو صفحة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1264
+msgid "The Multi-Select, Match All and Parents match Children setting has been moved to the shortcode and can now be changed per Recipe Grid."
+msgstr "تحديد متعدد، وتطابق الكل و الأصل مع الفروع في الإعدادات تم نقله إلى shortcode ويمكن الآن تغييره لكل \"شبكة وصفة\"."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:263
+msgid "Recalculate Recipe Grid Terms"
+msgstr "إعادة حساب شروط شبكة الوصفات"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:51
+msgid "Recipe Notes"
+msgstr "ملاحظات الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:126
+msgid "required"
+msgstr "المطلوبة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:191
+msgid "Select an ingredient"
+msgstr "إختر مكون أو مقدار"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:124
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/shopping-list.php:5
+msgid "Quantity"
+msgstr "الكمية"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:26
+msgid "Your recipes"
+msgstr "وصفاتك"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:27
+msgid "Everything regarding your recipes can be handled over here. Just click on 'Recipes' to create one, edit one or change your settings."
+msgstr "يمكن معالجة كل شيء بخصوص الوصفات الخاصة بك هنا. فقط اضغط على 'وصفات' إنشاء أو تحرير أو تغيير الإعدادات الخاصة بك."
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:49
+msgid "If it's your first time here, it's a good idea to check out the <strong>Demo Recipe</strong>. But make sure to take a look at the <strong>settings page</strong> later. Plenty of things can be customized to your liking."
+msgstr "إذا كانت هي المرة الأولى هنا، أنها لفكرة جيدة للتحقق من <strong>وصفة العرض</strong>. ولكن تأكد من أن نلقي نظرة على <strong>صفحة الإعدادات</strong> في وقت لاحق. الكثير من الأمور التي يمكن تخصيصها قد ترضيك."
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:70
+msgid "Important!"
+msgstr "مهم!"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:71
+msgid "Make sure to enter your ingredients as indicated: the quantity in the first field, unit in the second, the actual ingredient in the third and notes in the last."
+msgstr "تأكد من إدخال المكونات الخاصة بك كما هو مبين: الكمية الموجودة في الحقل الأول، الوحدة في الثاني، المكون الفعلي في الثالث، والملاحظات في الأخير."
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:72
+msgid "You want to name your ingredients consistently as this name will be used to link recipes, use the notes field to specify things about an ingredient."
+msgstr "تريد تسمية المكونات الخاصة بك دائماً كما سيتم استخدام هذا الاسم لربط الوصفات، استخدم حقل \"الملاحظات\" لتحديد الأمور حول العنصر."
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:93
+msgid "Need help?"
+msgstr "أتحتاج مساعدة؟"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:94
+msgid "You can contact us directly from this settings page <strong>if you have any questions or suggestions</strong>. Just click on the green 'Support' tab on the right side of the screen."
+msgstr "يمكنك الاتصال بنا مباشرة من صفحة الإعدادات. <strong>إذا كان لديك أية أسئلة أو اقتراحات</strong>. فقط انقر فوق وسم التبويب 'الدعم' على الجانب الأيمن من الشاشة."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:21
+msgid "This must be the best demo recipe I have ever seen. I could eat this every single day."
+msgstr "يجب أن تكون هذه أفضل وصفة شاهدتها. ويمكنني تناول هذا كل يوم."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:24
+msgid "people"
+msgstr "أشخاص"
+
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:184
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:305
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:30
+msgid "hour"
+msgstr "ساعة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:120
+msgid "Use this section for whatever you like."
+msgstr "استخدم هذا القسم لكل ما تريد."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:133
+msgid "Demo Recipe"
+msgstr "وصفة تجريبية"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:123
+msgid "Use this like normal post content. The recipe will automatically be included at the end of the post, or wherever you place the shortcode:"
+msgstr "استخدم هذا مثل محتوى التدوينة العادي. سيتم تلقائياً إدراج الوصفة في نهاية هذه التدوينة، أو أينما وضعت ال shortcode:"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:123
+msgid "This text will appear below your recipe."
+msgstr "سوف يظهر هذا النص أدنى الوصفة الخاصة بك."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:24
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:40
+msgid "Template Editor"
+msgstr "محرر القالب"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:54
+msgid "Preview Recipe"
+msgstr "معاينة الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:55
+msgid "This recipe will be used for the preview in the editor."
+msgstr "سيتم استخدام هذه الوصفة للمعاينة في المحرر."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:72
+msgid "Default Templates"
+msgstr "التمبليتات الافتراضية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:79
+msgid "The default template to use for recipes."
+msgstr "القالب الافتراضي لاستخدامه في الوصفات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:97
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2118
+msgid "The default template to use for printed recipes."
+msgstr "القالب الافتراضي لاستخدامه لطباعة الوصفات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:114
+msgid "Recipe Grid Template"
+msgstr "قالب شبكة الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:115
+msgid "The default template to use for recipes in the Recipe Grid."
+msgstr "القالب الافتراضي لاستخدامه لوصفات في \"شبكة الوصفات\"."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:212
+msgid "Functionality"
+msgstr "الوظيفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:446
+msgid "Print Version"
+msgstr "طباعة معلومات الإصدار"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:540
+msgid "Force CSS style"
+msgstr "فرض نمط CSS"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:541
+msgid "This ensures maximum compatibility with most themes. Can be disabled for advanced usage."
+msgstr "وهذا يضمن أقصى قدر من التوافق مع معظم الثيمات. يمكن تعطيله للاستخدام المتقدم."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:523
+msgid "Responsive Breakpoint"
+msgstr "نقطة توقفقابلة للاستجابة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:524
+msgid "The width of the recipe box at which will be switched to the mobile version."
+msgstr "عرض مربع الوصفة التي سوف تتحول إلى نسخة الجوال."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:573
+msgid "Recipe Archive"
+msgstr "أرشيف الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1301
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1599
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1831
+msgid "Use the following shortcode to display the front-end form:"
+msgstr "استخدام shortcode التالي لعرض نموذج الواجهة الأمامية:"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1544
+msgid "Can only select existing ingredients"
+msgstr "يمكن فقط اختيار المكونات الموجودة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1545
+msgid "When enabled visitors will only be able to select from a list of existing ingredients."
+msgstr "عند التمكين سيكون الزائر فقط قادراً على تحديد من قائمة مكونات الموجودة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2473
+msgid "Remove recipe slug"
+msgstr "إزالة slug الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2474
+msgid "Make sure your slugs are unique across posts, pages and recipes! Your archive page will still be available."
+msgstr "تأكد من slugs الخاص بك فريدة من نوعها عبر التدوينات وصفحات والوصفات! صفحة أرشيفك ستظل متاحة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2502
+msgid "Shortcode Editor"
+msgstr "محرر Shortcode"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2516
+msgid "Show shortcode editor for"
+msgstr "إظهار محرر shortcode ل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2517
+msgid "Where do you want to be able to insert recipes with the shortcode editor?"
+msgstr "أين تريد أن تكون قادراً على إدخال وصفات مع محرر shortcode ؟"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:95
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:97
+msgid "Open the Template Editor"
+msgstr "فتح محرر القالب"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:252
+msgid "Reset Demo Recipe"
+msgstr "إعادة تعيين وصفة العرض"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:13
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:48
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:83
+msgid "Template"
+msgstr "قالب"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:1
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:1
+msgid "Do you really want to delete this taxonomy?"
+msgstr "هل تريد حقاً أن حذف هذه الفئة؟"
+
+#: wp-ultimate-recipe-premium/premium/addons/template-editor/template-editor.php:87
+msgid "Image Manager"
+msgstr "مدير الصور"
+
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:62
+msgid "Clone Recipe"
+msgstr "استنساخ الوصفة"
+
+#: wp-ultimate-recipe-premium/wp-ultimate-recipe-premium.php:106
+msgid "You need to deactivate the free WP Ultimate Recipe plugin before activating the Premium version. WP Ultimate Recipe Premium is a stand-alone plugin since version 2. You won't lose any settings or recipes when deactivating."
+msgstr "أنت  بحاجة إلى تعطيل الإضافة المجانية قبل تنشيط الإصدار المتميز. الاصدار المميز مستقل منذ الإصدار 2. لن تفقد أية إعدادات أو وصفات عند إلغاء تنشيط."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:96
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2117
+msgid "Print Template"
+msgstr "طباعة القالب"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:457
+msgid "Title Text"
+msgstr "نص العنوان"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:458
+msgid "Title of the new webpage that opens."
+msgstr "عنوان صفحة الويب الجديدة التي يتم فتحها."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1120
+msgid "Minimum # Votes"
+msgstr "# الحد الأدنى من الأصوات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1121
+msgid "Minimum number of votes needed before sharing the rating as metadata used by Google and other search engines."
+msgstr "الحد الأدنى لعدد الأصوات اللازمة قبل مشاركة الفئة كبيانات التعريف التي يستخدمها جوجل ومحركات البحث الأخرى."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2589
+msgid "Custom Code"
+msgstr "كود مخصص"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2596
+msgid "Public CSS"
+msgstr "CSS العامة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:26
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:4
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:73
+msgid "Import ReciPress"
+msgstr "استيراد ريسيبريس"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/import-text.php:109
+msgid "Add New from Text"
+msgstr "إضافة جديدة من نص"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/import-fdx.php:65
+#: wp-ultimate-recipe-premium/premium/addons/import-text/import-text.php:134
+#: wp-ultimate-recipe-premium/premium/addons/import-xml/import-xml.php:64
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:235
+msgid "Untitled"
+msgstr "بدون عنوان"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:3
+msgid "Add New Recipe from text"
+msgstr "إضافة \"وصفة جديدة\" من نص"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:4
+msgid "This is function is still in beta version. Any feedback is welcome!"
+msgstr "هذه الوظيفة لا تزال في النسخة التجريبية. أي مراجعة ستكون موضع ترحيب!"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:5
+msgid "Plain Text Recipe Input"
+msgstr "إدخال وصفة بنص عادي"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:6
+msgid "Paste your recipe in this input field."
+msgstr "قم بلصق وصفتك في حقل الإدخال هذا."
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:8
+msgid "Define Recipe Regions"
+msgstr "خدد مناطق الوصفة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:9
+msgid "Highlight a section in your recipe and click the corresponding button to define it."
+msgstr "ظلل مقطع في الوصفة الخاصة بك وانقر فوق الزر المقابل لتعريفه."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:127
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:47
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:127
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:47
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:19
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:49
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:81
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:53
+msgid "Notes"
+msgstr "ملاحظات"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:73
+msgid "Ingredient Details"
+msgstr "تفاصيل المقدار"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:57
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:74
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:89
+msgid "Tip"
+msgstr "تلميح"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:74
+msgid "Only unit aliases defined in the settings will be recognized."
+msgstr "سيتم التعرف على الأسماء المستعارة للالوحدات المعرفة في الإعدادات فقط."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:125
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:45
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:125
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:45
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:79
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:51
+msgid "Unit"
+msgstr "وحدة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:91
+msgid "Separate instructions with an empty line"
+msgstr "افصل التعليمات بواسطة سطر فارغ"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:92
+msgid "Every line is a separate instruction"
+msgstr "كل سطر هو خطوة منفصلة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:108
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/meal-planner.php:16
+msgid "Add Recipe"
+msgstr "إضافة وصفة"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:35
+msgid "You"
+msgstr "أنت"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/user-ratings.php:50
+msgid "Are you sure you want to reset the rating for this recipe? This will set the votes and rating to 0."
+msgstr "هل أنت متأكد من أنك تريد إعادة ضبط تقييم هذه الوصفة؟ سيتم تعيين هذا التقييم والتصويت إلى 0."
+
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:55
+msgid "reset"
+msgstr "إعادة ضبط"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:180
+msgid "When converting to a unit the alias defined below will be shown. The singular form will be shown when the amount is 1, the plural otherwise."
+msgstr "عند التحويل إلى وحدة الأسماء المستعارة المحددة أدناه. سيظهر بصيغة المفرد عندما تكون الكمية 1، الجمع سيكون خلاف ذلك."
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:193
+msgid "Singular"
+msgstr "المفرد"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:214
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:9
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:36
+msgid "Plural"
+msgstr "الجمع"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:234
+msgid "Alias to convert to"
+msgstr "اسم مستعار لتحويل إلى"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1864
+msgid "Enable user menus save function for"
+msgstr "تمكين وظيفة حفظ قوائم المستخدم ل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1990
+msgid "Unit system to use for the shopping list feature."
+msgstr "نظام الوحدات القياس المستخدمة في ميزة قائمة التسوق."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:73
+msgid "(e.g. 20 minutes, 1-2 hours, ...)"
+msgstr "(مثلاً 20 دقيقة، 1-2 ساعات،...)"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:275
+msgid "The menu can be edited from the front end:"
+msgstr "يمكن تحرير القائمة من الواجهة  الأمامية:"
+
+#: wp-ultimate-recipe-premium/core/helpers/plugin_action_link.php:13
+msgid "More information"
+msgstr "معلومات إضافية"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:386
+msgid "US Customary"
+msgstr "US Customary"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:390
+msgid "US Legal"
+msgstr "القانون الأمريكي"
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:25
+msgid "Use this to group ingredients in the shopping list."
+msgstr "استخدم هذا لجمع العناصر في قائمة التسوق."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:42
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:26
+msgid "Vegetables"
+msgstr "الخضروات"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:147
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:179
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1198
+msgid "Unit Aliases"
+msgstr "الأسماء المستعارة للالوحدات"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:148
+msgid "Use a semicolon to separate unit aliases. For example: "
+msgstr "استخدم الفاصلة منقوطة لفصل الأسماء المستعارة للوحدة. على سبيل المثال:"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:169
+msgid " Units"
+msgstr " الوحدات"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:250
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1193
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1968
+msgid "Unit Systems"
+msgstr "نظام الوحدات"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:256
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2012
+msgid "Number of Systems"
+msgstr "عدد من الأنظمة"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:257
+msgid "Number of unit systems for your visitors to choose from."
+msgstr "عدد من أنظمة الوحدات القياس التي يمكن للزوار الاختيار من بينها."
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:266
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:272
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:278
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:288
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:298
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:410
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2026
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2047
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2068
+msgid "Unit System"
+msgstr "نظام الوحدات"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:321
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:327
+msgid "Universal Units"
+msgstr "الوحدات العالمية"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:328
+msgid "These units are considered universal to all systems and will not be converted."
+msgstr "هذه الوحدات تعتبر عالمية لجميع النظم ولن يتم تحويلها."
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:367
+msgid " units"
+msgstr " الوحدات"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:378
+msgid "Cup Type"
+msgstr "نوع الكوب"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:431
+msgid "US Imperial"
+msgstr "US Imperial"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:256
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1894
+msgid "Default Servings"
+msgstr "الحصص الافتراضية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:257
+msgid "Default number of servings to use when none specified."
+msgstr "عدد الحصص لاستخدامها عندما لا يتم تحديد الحصص بشكل افتراضي."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:66
+msgid "Add Recipes"
+msgstr "إضافة وصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/meal-planner.php:42
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:88
+msgid "alphabet"
+msgstr "هجائي"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:99
+msgid "No recipes in your menu yet"
+msgstr "لا توجد وصفات في القائمة الخاصة بك حتى الآن"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:140
+msgid "Save Menu"
+msgstr "حفظ القائمة"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:144
+msgid "Print Shopping List"
+msgstr "طباعة قائمة التسوق"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:2
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:137
+msgid "Ingredient Groups"
+msgstr "مجموعات المقادير"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/shopping-list.php:19
+msgid "Add Group"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:58
+msgid "Ungrouped"
+msgstr "فك التجميع"
+
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/meal-planner.php:243
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:411
+msgid "Other"
+msgstr "آخر"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1245
+msgid "Use the [ultimate-recipe-grid] shortcode to display the Recipe Grid."
+msgstr "استخدام [ultimate-recipe-grid] shortcode لعرض \"شبكة الوصفات\"."
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:8
+msgid "License Key"
+msgstr "مفتاح الترخيص"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:11
+msgid "Enter your license key"
+msgstr "إدخال مفتاح الترخيص الخاص بك"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:13
+msgid "active"
+msgstr "نشط"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:15
+msgid "invalid"
+msgstr "غير صالح"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:19
+msgid "Change License"
+msgstr "تغيير الترخيص"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:382
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:429
+msgid "Metric"
+msgstr "متري"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2466
+msgid "Recipes in admin posts"
+msgstr "الوصفات في تدوينات المدير"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2467
+msgid "Show recipes in admin posts overview when acting as posts."
+msgstr "إظهار الوصفات في النظرة العامة لتدوينات المدير عندما تتصرف كندوينة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1157
+msgid "Unit Conversion"
+msgstr "تحويل الوحدات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1184
+msgid "Allow Conversion"
+msgstr "السماح بتحويل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1185
+msgid "Allow your visitors to switch between Imperial and Metric units."
+msgstr "السماح للزائرين للتبديل بين الوحدات المترية والإمبريالي."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:156
+msgid "Limit Author"
+msgstr "حدود المؤلف"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:39
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:27
+msgid "Units"
+msgstr " الوحدات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2459
+msgid "Recipes act as posts"
+msgstr "وصفات تعمل كتدوينات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2460
+msgid "Recipes act like normal posts. For example: they show up on your front page."
+msgstr "وصفات تتصرف مثل التدوينات العادية. فعلى سبيل المثال: أنها تظهر على الصفحة الرئيسية الخاصة بك."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1113
+msgid "Show indicator"
+msgstr "إظهار مؤشر"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1114
+msgid "Attract attention to the possibility to vote."
+msgstr "جذب الانتباه إلى إمكانية التصويت."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:23
+msgid "(leave blank to use post title)"
+msgstr "(اتركه فارغاً لاستخدام العنوان التدوينة)"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1206
+msgid "Recipe Grid"
+msgstr "شبكة الوصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:38
+msgid "Rate this recipe!"
+msgstr "قيم هذه الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1094
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1135
+msgid "Disabled"
+msgstr "تعطيل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1098
+msgid "Only logged in users can rate recipes"
+msgstr "يمكن فقط للمستخدمين الذين تم تسجيل دخولهم تقييم الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1102
+msgid "Everyone can rate recipes"
+msgstr "بإمكان الجميع تقييم الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_save.php:125
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:276
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:83
+msgid "Categories"
+msgstr "الفئات"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:31
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:14
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:37
+msgid "Link"
+msgstr "رابط"
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:15
+msgid "Send your visitors to a specific link when clicking on an ingredient."
+msgstr "إرسال زوار موقعك على ارتباط معين عند النقر فوق مقدار."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:82
+msgid "Manage custom recipe tags"
+msgstr "إدارة وسمs الوصفة المخصصة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:280
+msgid "Clickable Images"
+msgstr "صور قابلة للنقر"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:281
+msgid "Best used in combination with a lightbox plugin."
+msgstr "أفضل استخدام عند الاقتران مع إضافة لايتبوكس."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:375
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:945
+msgid "Custom links are only available in "
+msgstr "الارتباطات المخصصة متوفرة فقط في"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:385
+msgid "Ingredient Links"
+msgstr "روابط المقدار"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:386
+msgid "Links to be used in the ingredient list."
+msgstr "ارتباطات لاستخدامها في قائمة المقادير."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:390
+msgid "No ingredient links"
+msgstr "لا روابط للمقدار"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:394
+msgid "Only link to ingredient archive page"
+msgstr "فقط اربط إلى صفحة أرشيف المقادير"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:398
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:968
+msgid "Custom link if provided, otherwise archive page"
+msgstr "ارتباط مخصص إذا قدم، وإلا أرشيف الصفحة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:402
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:972
+msgid "Custom links if provided, otherwise no link"
+msgstr "ارتباط مخصص إذا قدم، وإلا لا رابط"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:413
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:983
+msgid "Custom Links"
+msgstr "روابط مخصصة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:414
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:984
+msgid "Custom links can be added on the "
+msgstr "يمكن إضافة ارتباطات مخصصة في"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:414
+msgid "ingredients page"
+msgstr "صفحة المقادير"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:418
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:988
+msgid "Open in the current tab/window"
+msgstr "فتح في وسم التبويب/الإطار الحالي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:422
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:992
+msgid "Open in a new tab/window"
+msgstr "فتح في وسم تبويب/نافذة جديدة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:715
+msgid "Recipe Sharing"
+msgstr "مشاركة الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:727
+msgid "Enable Sharing"
+msgstr "تمكين المشاركة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:728
+msgid "Show sharing buttons."
+msgstr "إظهار أزرار المشاركة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:769
+msgid "Default text to share"
+msgstr "النص الافتراضي للمشاركة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:787
+msgid "Use %title% as a placeholder for the recipe title."
+msgstr "استخدم %title% كعنصر نائب لعنوان الوصفة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:888
+msgid "Custom Recipe Tags"
+msgstr "وسمs الوصفة المخصصة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:917
+msgid "WordPress Categories & Tags"
+msgstr "WordPress Categories & وسمs"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:930
+msgid "Show Recipes in Archives"
+msgstr "إظهار الوصفات في الأرشيف"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:931
+msgid "Show recipes in the WP Categories and Tags archives."
+msgstr "إظهار الوصفات في تصنيفات وردبريس وأرشيف الوسوم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:512
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:627
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:846
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1015
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1531
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2439
+msgid "Advanced"
+msgstr "متقدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1033
+msgid "Categories will only show up as tags in the recipe if they have a parent category. For example: a \"Courses\" parent category with \"Main Dish\" and \"Dessert\" as child categories assigned to your recipes."
+msgstr "الفئات فقط ستظهر ك وسوم في الوصفة إذا كان لديهم فئة رئيسي. فعلى سبيل المثال: فئة رئيسي \"وجبات\" مع \"طبق الرئيسي\" و \"الحلوى\" كفئةات فرعية معينة للوصفات الخاصة بك."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1043
+msgid "Show Categories in Recipe"
+msgstr "إظهار الفئات في الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1044
+msgid "Use WP categories as if they are tags for their parent category."
+msgstr "استخدام فئات كما لو كانت وسوم للفئة الأصل الخاصة بهم."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1424
+msgid "User Submitted Categories"
+msgstr "فئات قدمها المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1425
+msgid "Allow users to assign categories when submitting recipes."
+msgstr "السماح للمستخدمين بتعيين فئات عند تقديم وصفات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1431
+msgid "User Submitted Tags"
+msgstr "وسوم قدمها المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1432
+msgid "Allow users to assign tags when submitting recipes."
+msgstr "السماح للمستخدمين بتعيين الوسوم عند تقديم الوصفات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1050
+msgid "Show Categories Filter"
+msgstr "إظهار تصفية الفئات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1051
+msgid "Users can see the categories when filtering."
+msgstr "يمكن للمستخدمين مشاهدة الفئات عند التصفية."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1057
+msgid "Show Tags Filter"
+msgstr "إظهار تصفية الوسوم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1058
+msgid "Users can see the tags when filtering."
+msgstr "يمكن للمستخدمين مشاهدة الوسوم عند التصفية."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1067
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1090
+msgid "User Ratings"
+msgstr "تقييمات المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:108
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:133
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:158
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:237
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:254
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:274
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:24
+msgid "Group"
+msgstr "مجموعة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:110
+msgid "Main Ingredients"
+msgstr "المقادير الرئيسية"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:110
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:238
+msgid "(this label is not shown)"
+msgstr "(لا تظهر هذه التسمية)"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:222
+msgid "Add an ingredient group"
+msgstr "إضافة مجموعة مقادير"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:238
+msgid "Main Instructions"
+msgstr "التعليمات/الخطوات الرئيسية"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:359
+msgid "Add an instruction group"
+msgstr "إضافة مجموعة تعليمات"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:53
+msgid "Share this Recipe"
+msgstr "شارك هذه الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_save.php:126
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:284
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:84
+msgid "Tags"
+msgstr "الوسوم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:139
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/meal-planner.php:26
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:77
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:7
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:72
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:80
+msgid "Category"
+msgstr "فئة"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:33
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:52
+msgid "Votes"
+msgstr "أصوات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:137
+msgid "Import ReciPress recipes"
+msgstr "استيراد وصفات ريسيبريس"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:923
+msgid "Use Categories and Tags"
+msgstr "استخدام الفئات والوسوم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:924
+msgid "Use the default WP Categories and Tags to organize your recipes."
+msgstr "استخدام الفئات الافتراضية والوسوم لتنظيم الوصفات الخاصة بك."
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:45
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:84
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:283
+msgid "Passive Time"
+msgstr "الوقت الإجمالي"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:7
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:7
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/templates/before_importing.php:7
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/before_importing.php:7
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:7
+#: wp-ultimate-recipe-premium/premium/addons/import-xml-ingredients/templates/before_importing.php:7
+#: wp-ultimate-recipe-premium/premium/addons/import-xml/templates/before_importing.php:7
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/before_importing.php:7
+msgid "It's a good idea to backup your WP database before using the import feature."
+msgstr "أنها لفكرة جيدة أن تقوم بعمل نسخ احتياطي لقاعدة البيانات الخاص بك قبل استخدام ميزة الاستيراد."
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:19
+msgid "recipes are about to be imported to"
+msgstr "الوصفات على وشك أن تكون مستوردة إلى"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:19
+msgid "Are you sure you want to do this?"
+msgstr "هل أنت متأكد أنك تريد أن تفعل هذا؟"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:54
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:72
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:90
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/before_importing.php:108
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:54
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/before_importing.php:69
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:28
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:43
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:58
+msgid "Select a recipe tag"
+msgstr "حدد وسم الوصفة"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:45
+msgid "You should activate this plugin:"
+msgstr "يجب أن تقوم بتنشيط هذه الإضافة:"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:18
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:59
+msgid "You should select a new tag for the imported recipes"
+msgstr "يجب عليك اختيار وسم جديد للوصفات المستوردة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:7
+msgid "Display a random recipe"
+msgstr "عرض وصفة عشوائية"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:25
+msgid "The user menus archive can be found at"
+msgstr "يمكن الاطلاع على أرشيف قوائم المستخدم في"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:19
+msgid "The recipe archive can be found at"
+msgstr "يمكن الاطلاع على أرشيف الوصفات في"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:786
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1032
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1244
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1263
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1300
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1598
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1830
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2190
+msgid "Important"
+msgstr "مهم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1277
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:352
+msgid "User Submission"
+msgstr "إرسالات المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:882
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1411
+msgid "Recipe Tags"
+msgstr "وسوم الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1841
+msgid "Enable user menus for"
+msgstr "تمكين قوائم المستخدم ل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_shortcode.php:18
+msgid "Shortcodes"
+msgstr "Shortcodes"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:45
+msgid "Manage Tags"
+msgstr "إدارة الوسوم"
+
+#: wp-ultimate-recipe-premium/core/static/drip_form.php:3
+msgid "Are you sure you want to dismiss this notice? (Make sure you have saved your changes first!)"
+msgstr "هل أنت متأكد من أنك تريد إغلاق هذا الإشعار؟ (تأكد من قيامك بحفظ التغييرات الخاصة بك أولاً!)"
+
+#: wp-ultimate-recipe-premium/core/static/drip_form.php:3
+#: wp-ultimate-recipe-premium/core/static/getting_started_notice.php:3
+msgid "Hide this message"
+msgstr "إخفاء هذه الرسالة"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/bootstrap.php:88
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:364
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:389
+msgid "Successful"
+msgstr "ناجِح"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/bootstrap.php:99
+msgid "Unauthorized function"
+msgstr "وظيفة غير مصرح بها"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox.php:35
+msgid "[Development Mode] "
+msgstr "[وضعية التطوير]"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox.php:566
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox/alchemy.php:493
+msgid "Remove"
+msgstr "إزالة"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox.php:588
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox/alchemy.php:515
+msgid "Add More"
+msgstr "أضف المزيد"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:47
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:48
+msgid "Vafpress Options"
+msgstr "خيارات Vafpress"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:61
+msgid "Option Key is required"
+msgstr "مفتاح الخيارات مطلوب"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:63
+msgid "Template Array/File is required"
+msgstr "قالب مصفوفة/ملف مطلوب"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:65
+msgid "Page Slug is required"
+msgstr "Slug الصفحة مطلوب"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:167
+msgid "Development Mode is Active, options' values won't be saved into database."
+msgstr "وضعية التطوير مفعلة , خيارات القيم لن تخزن في قاعدة البيانات"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:306
+msgid "Can not be empty"
+msgstr "لا يمكن أن يكون فارغاً"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:331
+msgid "Invalid data"
+msgstr "بيانات غير صالحة"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:394
+msgid "Unverified Access"
+msgstr "دخول غير متحقق منه"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:460
+msgid "Invalid template supplied"
+msgstr "تم تزويد قالب غير صالح"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:473
+msgid "Utility"
+msgstr "أداة"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:479
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:13
+msgid "Restore Default"
+msgstr "استعادة الحالة الافتراضية"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:488
+msgid "Export/Import"
+msgstr "تصدير/ استراد"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/shortcodegenerator.php:263
+msgid "Insert"
+msgstr "إدراج"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/shortcodegenerator.php:264
+msgid "Cancel"
+msgstr "إلغاء"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option/control/set.php:359
+msgid "Saving successful"
+msgstr "تم الحفظ  بنجاح"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option/control/set.php:370
+msgid "Saving failed"
+msgstr "لقد فشلت عملية الحفظ"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option/control/set.php:376
+msgid "No changes made"
+msgstr "لم يتم اي تغيير"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:13
+msgid "Value needs to be Alphabet"
+msgstr "القيمة لا بد ان تكون من الحروف"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:14
+msgid "Value needs to be Alphanumeric"
+msgstr "القيمة لا بد ان تكون من الحروف و الارقام"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:15
+msgid "Value needs to be Numeric"
+msgstr "القيمة لابد ان تكون رقمية"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:16
+msgid "Value needs to be Valid Email"
+msgstr "القيمة لابد ان تكون بريد الكتروني صالح"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:17
+msgid "Value needs to be Valid URL"
+msgstr "القيمة لابد ان تكون URL  صالح"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:18
+msgid "Length needs to be less than {0} characters"
+msgstr "الطول يحتاج ان يكون اقل من {0}  رموز"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:19
+msgid "Length needs to be more than {0} characters"
+msgstr "الطول يحتاج ان يكون اكثر من {0} رموز"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:20
+msgid "Select no more than {0} items"
+msgstr "حدد ما لا يزيد عن {0} عناصر"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:21
+msgid "Select at least {0} items"
+msgstr "حدد على الأقل {0} عناصر"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:22
+msgid "This is required"
+msgstr "هذا المطلوب"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:29
+msgid "Import succeed, option page will be refreshed.."
+msgstr "الاستعادة تمت بنجاح, سيتم تحديث صفحة الخيارات."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:30
+msgid "Import failed"
+msgstr "فشل الاستيراد"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:31
+msgid "Export succeed, copy the JSON formatted options"
+msgstr "التصدير تم بنجاح , انسخ خيارات تنسيق ال JSON"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:32
+msgid "Export failed"
+msgstr "فشل التصدير."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:33
+msgid "Restoration succeed, option page will be refreshed.."
+msgstr "الاستعادة تمت بنجاح, سيتم تحديث صفحة الخيارات."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:34
+msgid "Options identical to default"
+msgstr "خيارات مطابقة للافتراضي"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:35
+msgid "Restoration failed"
+msgstr "فشلت الاستعادة"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:43
+msgid "Select option(s)"
+msgstr "اختر خيار(ات)"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:45
+msgid "Select an Icon"
+msgstr "اختر ايقونة"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/control/upload.php:5
+msgid "Choose File"
+msgstr "اختر ملف"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:4
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:14
+msgid "Import"
+msgstr "استيراد"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2295
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:7
+msgid "Import Options"
+msgstr "خيارات الاستيراد"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:27
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:37
+msgid "Export"
+msgstr "تصدير"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:30
+msgid "Export Options"
+msgstr "خيارات التصدير"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:4
+msgid "Restore Default Options"
+msgstr "استعادة الخيارات الافتراضية"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:7
+msgid "Restore options to initial default values."
+msgstr "استعادة الخيارات للقيم الافتراضية الأولية."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:14
+msgid "** Please make sure you have already make a backup data of your current settings. Once you click this button, your current settings will be gone."
+msgstr "رجاءً تأكد بأنك قمت بعمل نسخة احتياطية لاعدادتك الحالية. عندما تضغط على هذا الزر, ستخسر اعدادتك الحالية ."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:69
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:84
+msgid "Save Changes"
+msgstr "حفظ التغييرات"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:70
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:85
+msgid "Saving Now"
+msgstr "يقوم بالحفظ الآن"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:93
+msgid "This option panel is built using <a href=\"http://vafpress.com/vafpress-framework\">Vafpress Framework %s</a> powered by <a href=\"http://vafpress.com\">Vafpress</a>"
+msgstr "لوحة الخيارات هذه قد تم بناؤها مستخدمة <a href=\"http://vafpress.com/vafpress-framework\">Vafpress Framework</a> powered by <a href=\"http://vafpress.com\">Vafpress</a>"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1162
+msgid "General Settings"
+msgstr "الاعدادات العامة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:579
+msgid "Recipe Archive Pages"
+msgstr "صفحات أرشيف الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:477
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:503
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:585
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:89
+msgid "Display"
+msgstr "عرض"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:481
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:589
+msgid "Only the excerpt"
+msgstr "فقط المقتطفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:485
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:593
+msgid "The entire recipe"
+msgstr "الوصفة كاملة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:163
+msgid "Display Thumbnail"
+msgstr "عرض الصورة المصغرة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:619
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2157
+msgid "404 error/page not found?"
+msgstr "خطأ 404 - لم يتم العثور على الصفحة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:620
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2158
+msgid "Try"
+msgstr "حاول"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:620
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2158
+msgid "flushing your permalinks"
+msgstr "تنظيف permalinks الخاص بك"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:19
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:78
+msgid "Recipe Template"
+msgstr "قالب الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:31
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:776
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:822
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1022
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1080
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1174
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1219
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1290
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1588
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1820
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2180
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2243
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2335
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2420
+msgid "These features are only available in "
+msgstr "تتوفر هذه الميزات فقط في"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1245
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1301
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1599
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1831
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2191
+msgid "The shortcode can be added to any page or post."
+msgstr "يمكن إضافة shortcode إلى أي صفحة أو تدوينة."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1311
+msgid "Allow submissions from"
+msgstr "السماح بفورم الارسال"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1315
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1490
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1613
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1652
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1845
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1868
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1928
+msgid "Nobody"
+msgstr "لا أحد"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1315
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1613
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1652
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1845
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1868
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1928
+msgid "disabled"
+msgstr "معطل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2289
+msgid "Import Recipes"
+msgstr "استيراد وصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2412
+msgid "Export Recipes"
+msgstr "تصدير وصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:29
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:64
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:250
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:300
+msgid "Select a recipe to display"
+msgstr "حدد وصفة لتعرضها"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:29
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:250
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:467
+msgid "Ordered by date added"
+msgstr "ترتيب حسب تاريخ الإضافة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:64
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:300
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:486
+msgid "Ordered by title"
+msgstr "ترتيب حسب العنوان"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:101
+msgid "Recipe Index"
+msgstr "فهرس الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:104
+msgid "Basic Recipe Index"
+msgstr "فهرس الوصفات الأساسي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:110
+msgid "Show headers"
+msgstr "إظهار headers"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:121
+msgid "Extended Recipe Index"
+msgstr "مؤشر تمديد الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:121
+msgid "WP Ultimate Recipe Premium only"
+msgstr "WP Ultimate Recipe Premium only"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:127
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/meal-planner.php:42
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:88
+msgid "Group by"
+msgstr "تجميع بواسطة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:173
+msgid "Limit by"
+msgstr "حد بواسطة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:186
+msgid "Limit by values"
+msgstr "حد بواسطة القيم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:203
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:421
+msgid "Date Added"
+msgstr "تاريخ الإضافة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:207
+msgid "Random"
+msgstr "عشوائي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:217
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:431
+msgid "Sort order"
+msgstr "فرز حسب"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:221
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:435
+msgid "Ascending"
+msgstr "تصاعدي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:225
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:439
+msgid "Descending"
+msgstr "تنازلي"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:235
+msgid "Max number of recipes"
+msgstr "الحد الأقصى لعدد الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:355
+msgid "User Submissions form"
+msgstr "نموذج الارسال للمستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:368
+msgid "User Menus form"
+msgstr "نموذج قوائم المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:164
+msgid "Thumbnail position depends on the theme you use"
+msgstr "يعتمد موضع المصغرات على الثيم الذي تستخدمه"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:168
+msgid "Never"
+msgstr "أبداً"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:172
+msgid "Only on archive pages"
+msgstr "فقط على صفحات الأرشيف"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:176
+msgid "Only on recipe pages"
+msgstr "فقط على صفحات الوصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:180
+msgid "Always"
+msgstr "دائما"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_list.php:33
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:45
+msgid "Delete"
+msgstr "حذف"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:59
+msgid "Do you really want to reset the taxonomies? All custom tags will be deleted."
+msgstr "هل تريد حقاً إعادة تعيين الفئات؟ سيتم حذف كافة وسمs المخصصة."
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:62
+msgid "Reset to defaults"
+msgstr "إعادة تعيين الافتراضيات"
+
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:171
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:356
+msgid "No recipes found."
+msgstr "لا توجد وصفات"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:44
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:124
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:44
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:78
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:50
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:159
+msgid "Amount"
+msgstr "الكمية"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:114
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:39
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:117
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:159
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:174
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:238
+msgid "New"
+msgstr "جديد"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:108
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:42
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:111
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:153
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:168
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:55
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:241
+msgid "Search"
+msgstr "بحث"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:118
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:43
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:44
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:121
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:163
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:178
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:242
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:243
+msgid "No"
+msgstr "لا"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:118
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:43
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:121
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:163
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:178
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:242
+msgid "found."
+msgstr "وجِد."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:44
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:243
+msgid "found in trash."
+msgstr "وجدت في سلة المهملات."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:45
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:244
+msgid "Parent"
+msgstr "Parent"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:109
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:112
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:154
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:169
+msgid "Popular"
+msgstr "شائعة"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:110
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:113
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:155
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:170
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:16
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:27
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:28
+msgid "All"
+msgstr "الكل"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:112
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:115
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:157
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:172
+msgid "Update"
+msgstr "تحديث"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:114
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:13
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:15
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:117
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:159
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:131
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_form.php:16
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_list.php:12
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:174
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:13
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:15
+msgid "Name"
+msgstr "الاسم"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:115
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:118
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:160
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:175
+msgid "Separate"
+msgstr "يفْصل"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:115
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:118
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:160
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:175
+msgid "with commas"
+msgstr "بفواصل"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:116
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:119
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:161
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:176
+msgid "Add or remove"
+msgstr "إضافة أو إزالة"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:117
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:120
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:162
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:177
+msgid "Choose from the most used"
+msgstr "اختر من بين الأكثر استخداماً"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:45
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:64
+msgid "Custom Taxonomies"
+msgstr "فئةات مخصصة"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page.php:4
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:64
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page.php:4
+msgid "Custom Tags"
+msgstr "وسوم مخصصة"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:57
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:76
+msgid "Current Recipe Tags"
+msgstr "وسم الحالي للوصفة"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:58
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:77
+msgid "Add new Recipe Tag"
+msgstr "إضافة وسم جديد للوصفة"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:9
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:143
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:9
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/meal-planner.php:30
+#: wp-ultimate-recipe-premium/premium/addons/recipe-search/widgets/recipe_search_widget.php:76
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:11
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:86
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:94
+msgid "Tag"
+msgstr "وسم"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:20
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:12
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:20
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:12
+msgid "Singular Name"
+msgstr "الاسم المفرد"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:27
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:18
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:604
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2136
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2142
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:27
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:18
+msgid "Slug"
+msgstr "Slug"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:21
+#: wp-ultimate-recipe-premium/premium/addons/custom-fields/templates/page_list.php:15
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:21
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:79
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:29
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:95
+msgid "Actions"
+msgstr "إجراءات"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:1
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:1
+msgid "Create custom tags for your recipes."
+msgstr "إنشاء وسوم مخصصة للوصفات الخاصة بك."
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:8
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:8
+msgid "Currently editing tag: "
+msgstr "حاليا تحرير الوسم:"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:16
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:16
+msgid "(e.g. Courses)"
+msgstr "(مثل الوجبات)"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:23
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:23
+msgid "(e.g. Course)"
+msgstr "(مثال الوجبة)"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:30
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:30
+msgid "(e.g. http://www.yourwebsite.com/course/)"
+msgstr "(مثل http://www.yourwebsite.com/course/)"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:37
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:36
+msgid "Add new tag"
+msgstr "إضافة وسم جديد"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:38
+msgid "Adding new tags is only possible in"
+msgstr "إضافة وسمs جديدة ممكن فقط في"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:41
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:38
+msgid "Edit tag"
+msgstr "تحرير وسم"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:42
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:39
+msgid "Cancel Edit"
+msgstr "إلغاء التحرير"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:187
+msgid "tbsp"
+msgstr "ملعقة طعام"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:207
+msgid "olive oil"
+msgstr "زيت زيتون"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:211
+msgid "extra virgin"
+msgstr "بكر"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:279
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:289
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:299
+msgid "Custom"
+msgstr "مخصص"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:226
+msgid "Menus"
+msgstr "قوائم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:473
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:492
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:227
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:265
+msgid "Menu"
+msgstr "قائمة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1784
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:460
+msgid "Shopping List"
+msgstr "قائمة التسوق"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1807
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:365
+msgid "User Menus"
+msgstr "قوائم المستخدم"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1319
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1494
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1617
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1656
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1849
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1872
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1932
+msgid "Guests and registered users"
+msgstr "الضيوف "
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1323
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1498
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1621
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1660
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1853
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1876
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1936
+msgid "Registered users only"
+msgstr "المستخدمون المسجلون فقط"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:535
+msgid "Sorry, the site administrator has disabled user menus."
+msgstr "آسف، المسؤول عن الموقع بتعطيل القوائم المستخدم."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:540
+msgid "Sorry, only registered users may create menus."
+msgstr "عذراً، فقط المستخدمين المسجلين يمكنهم إنشاء قوائم."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:191
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:413
+msgid "Sort by"
+msgstr "فرز حسب"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1486
+msgid "Publish recipe immediately on submission."
+msgstr "نشر الوصفة فورا عند تقديمها."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:104
+msgid "Sorry, the site administrator has disabled recipe submissions."
+msgstr "آسف، المسؤول عن الموقع قام بتعطيل إارسال الوصفات."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:117
+msgid "Sorry, only registered users may submit recipes."
+msgstr "عذراً، فقط المستخدمين المسجلين يمكنهم تقديم الوصفات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:276
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:7
+msgid "Recipe title"
+msgstr "عنوان الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:278
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:15
+msgid "Your name"
+msgstr "اسمك"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:24
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:17
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:70
+msgid "Featured image"
+msgstr "الصورة المميزة"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:33
+msgid "Add Featured Image"
+msgstr "إضافة صورة مميزة"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:34
+msgid "Remove Featured Image"
+msgstr "إزالة  صورة مميزة"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:137
+msgid "Submit"
+msgstr "إرسال"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1351
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:383
+msgid "Recipe submitted! Thank you, your recipe is now awaiting moderation."
+msgstr "تم إرسال الوصفة ، شكراً لك ، وصفتك تنتظر المراجعة الآن."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:280
+msgid "Anonymous"
+msgstr "مجهول"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:135
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:199
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:393
+#: wp-ultimate-recipe-premium/premium/addons/export-xml/templates/before_importing.php:15
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/import-easyrecipe.php:444
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:288
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:21
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:72
+msgid "Author"
+msgstr "المؤلف"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:20
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:451
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:195
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:417
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:15
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:37
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:71
+msgid "Title"
+msgstr "عنوان"
+
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:90
+#: wp-ultimate-recipe-premium/premium/helpers/widgets/recipe_list_widget.php:65
+msgid "Date"
+msgstr "التاريخ"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:367
+msgid "Recipe notes"
+msgstr "ملاحظات الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:16
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:685
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:721
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1073
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1167
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1212
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1283
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1813
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2173
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2236
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:33
+msgid "General"
+msgstr "عام"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:41
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:279
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:16
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:43
+msgid "Description"
+msgstr "وصف"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:54
+#: wp-ultimate-recipe-premium/core/helpers/recipe_save.php:95
+msgid "star"
+msgstr "نجمة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:54
+#: wp-ultimate-recipe-premium/core/helpers/recipe_save.php:95
+msgid "stars"
+msgstr "نجوم"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:35
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:37
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:61
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:280
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:83
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:91
+msgid "Servings"
+msgstr "عدد الحصص"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:65
+msgid "(e.g. 2 people, 3 loafs, ...)"
+msgstr "(مثل أشخاص  2، 3 رغيف،...)"
+
+#: wp-ultimate-recipe-premium/core/helpers/migration/1_0_9_free_text_times.php:14
+#: wp-ultimate-recipe-premium/core/helpers/migration/1_0_9_free_text_times.php:17
+#: wp-ultimate-recipe-premium/core/helpers/migration/1_0_9_free_text_times.php:20
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:182
+#: wp-ultimate-recipe-premium/core/helpers/models/recipe.php:303
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:26
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:28
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:250
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/import-cooked.php:255
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/import-easyrecipe.php:225
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/import-easyrecipe.php:230
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/import-easyrecipe.php:238
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/import-fdx.php:81
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/import-fdx.php:83
+#: wp-ultimate-recipe-premium/premium/addons/import-fdx/import-fdx.php:85
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:141
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:146
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/import-recipecard.php:154
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:173
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:174
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:175
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/import-ziplist.php:204
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/import-ziplist.php:209
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/import-ziplist.php:217
+msgid "minutes"
+msgstr "دقائق"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:94
+msgid "Don't forget that you can tag your recipe with <strong>Courses</strong> and <strong>Cuisines</strong> by using the boxes on the right. Use the <strong>featured image</strong> if you want a photo of the finished dish."
+msgstr "لا تنسى أنه يمكنك وضع الوسم الخاص بك للوصفه مع <strong>الوجبات</strong> و <strong>المطابخ</strong> باستخدام المربعات على اليمين. استخدم <strong>الصورة المميزة</strong> إذا كنت تريد الصورة النهائية للطبق."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:219
+msgid "Add an ingredient"
+msgstr "إضافة مقدار"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:225
+msgid "<strong>Use the TAB key</strong> while adding ingredients, it will automatically create new fields. <strong>Don't worry about empty lines</strong>, these will be ignored."
+msgstr "<strong>استخدام المفتاح TAB</strong> أثناء إضافة المكونات، فإنه سيقوم تلقائياً بإنشاء حقول جديدة. <strong>لا تقلق بشأن خطوط فارغة</strong>، سيتم تجاهل هذه."
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:49
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:230
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:18
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:88
+msgid "Instructions"
+msgstr "خطوات التحضير"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:316
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:345
+msgid "Add Image"
+msgstr "إضافة صورة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:317
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:346
+msgid "Remove Image"
+msgstr "إزالة صورة"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:356
+msgid "Add an instruction"
+msgstr "أضف تعليمات"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:362
+msgid "<strong>Use the TAB key</strong> while adding instructions, it will automatically create new fields. <strong>Don't worry about empty lines</strong>, these will be ignored."
+msgstr "<strong>استخدام المفتاح TAB</strong> أثناء إضافة التعليمات، فإنه سيقوم تلقائياً بإنشاء حقول جديدة. <strong>لا تقلق بشأن خطوط فارغة</strong>، سيتم تجاهل هذه."
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:41
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:69
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:281
+msgid "Prep Time"
+msgstr "مدة التحضير"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:43
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:77
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:282
+msgid "Cook Time"
+msgstr "مدة الطهي"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:55
+msgid "Powered by"
+msgstr "مدعومة من قبل"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:48
+msgid "Recipe Settings"
+msgstr "إعدادات الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/plugin_action_link.php:12
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:14
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:55
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:56
+msgid "Settings"
+msgstr "إعدادات"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:207
+msgid "Recipe Box"
+msgstr "صندوق الوصفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:225
+msgid "Adjustable Servings"
+msgstr "حصص قابلة للتعديل"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:226
+msgid "Allow users to dynamically adjust the servings of recipes."
+msgstr "السماح للمستخدمين بضبط الحصص في الوصفات."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:266
+msgid "Link to plugin"
+msgstr "ربط للإضافة"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:267
+msgid "Show a link to the plugin website as a little thank you."
+msgstr "إظهار ارتباط بموقع الاضافة كعربون شكر لنا."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:20
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:4
+msgid "Recipes"
+msgstr "وصفات"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_meta_box.php:60
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:21
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:192
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:2445
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:35
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:70
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:256
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:306
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:11
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/widgets/nutrition_label_widget.php:56
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:91
+msgid "Recipe"
+msgstr "وصفة"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:113
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:35
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:36
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:116
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:158
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:173
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:234
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:235
+msgid "Add New"
+msgstr "أضف جديد"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:111
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:42
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:37
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:38
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:114
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:156
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:171
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:42
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:101
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:236
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:237
+msgid "Edit"
+msgstr "تحرير"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:40
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:41
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:239
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:240
+msgid "View"
+msgstr "مشاهدة"
+
+#: wp-ultimate-recipe-premium/core/helpers/shortcodes/index_shortcode.php:51
+#: wp-ultimate-recipe-premium/premium/helpers/shortcodes/extended_index_shortcode.php:163
+msgid "You have to create a recipe first, check the 'Recipes' menu on the left."
+msgstr "يجب عليك أولاً إنشاء وصفة، تحقق من قائمة 'الوصفات' على اليسار."
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:47
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:102
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:67
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:368
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:35
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:120
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:34
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:17
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:56
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:40
+msgid "Ingredients"
+msgstr "المقادير"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:126
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:67
+#: wp-ultimate-recipe-premium/premium/addons/import-cooked/templates/manual_import.php:46
+#: wp-ultimate-recipe-premium/premium/addons/import-easyrecipe/templates/manual_import.php:126
+#: wp-ultimate-recipe-premium/premium/addons/import-recipecard/templates/manual_import.php:46
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:80
+#: wp-ultimate-recipe-premium/premium/addons/import-ziplist/templates/manual_import.php:52
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/templates/shopping-list.php:4
+#: wp-ultimate-recipe-premium/premium/addons/nutritional-information/templates/settings.php:76
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:158
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:172
+msgid "Ingredient"
+msgstr "مقدار"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:68
+msgid "Courses"
+msgstr "وجبات"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:68
+msgid "Course"
+msgstr "وجبة"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:74
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1736
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1737
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1757
+#: wp-ultimate-recipe-premium/premium/addons/meal-planner/meal-planner.php:391
+msgid "Breakfast"
+msgstr "إفطار"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:75
+msgid "Appetizer"
+msgstr "مقبلات"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:76
+msgid "Soup"
+msgstr "شوربة"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:77
+msgid "Main Course"
+msgstr "وجبة رئيسية"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:78
+msgid "Side Dish"
+msgstr "طبق جانبي"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:79
+msgid "Salad"
+msgstr "سلطة"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:80
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1752
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1753
+msgid "Dessert"
+msgstr "حلى"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:81
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1744
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1745
+msgid "Snack"
+msgstr "وجبة خفيفة"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:82
+msgid "Drinks"
+msgstr "مشروبات"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:69
+msgid "Cuisines"
+msgstr "مطابخ"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:69
+msgid "Cuisine"
+msgstr "مطبخ"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:84
+msgid "French"
+msgstr "فرنسي"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:85
+msgid "Italian"
+msgstr "إيطالي"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:86
+msgid "Mediterranean"
+msgstr "البحرالمتوسط"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:87
+msgid "Indian"
+msgstr "هندي"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:88
+msgid "Chinese"
+msgstr "صيني"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:394
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:89
+msgid "Japanese"
+msgstr "ياباني"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:90
+msgid "American"
+msgstr "أمريكي"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:91
+msgid "Mexican"
+msgstr "مكسيكي"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:47
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:34
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:25
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:58
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:77
+msgid "Rating"
+msgstr "تقييم"

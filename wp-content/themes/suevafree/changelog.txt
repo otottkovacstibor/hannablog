@@ -1,0 +1,552 @@
+SuevaFree Changelog
+
+- Version 3.6.2 - Released: 01.11.2018
+
+-- Added  : WooCommerce linkable product thumbnails 
+-- Fixed  : WooCommerce product thumbnails rotate function on hover (if enabled)
+
+- Version 3.6.1 - Released: 28.10.2018
+
+-- Updated : WooCommerce templates.
+
+- Version 3.6.0 - Released: 18.10.2018
+
+-- Fixed  : Menu transition for sub items on header layout 1 and 2
+
+- Version 3.5.9 - Released: 03.10.2018
+
+-- Fixed  : Site description on header layout 2
+-- Edit   : CSS code optimized
+
+- Version 3.5.8 - Released: 31.08.2018
+
+-- Added  : Gutenberg support 
+-- Edit   : Option panel layout
+-- Edit   : Code optimized
+
+- Version 3.5.7 - Released: 06.08.2018
+
+-- Updated : WooCommerce templates.
+
+- Version 3.5.6 - Released: 01.08.2018
+
+-- Fixed  : Skype button.
+-- Fixed  : Clear the options for Skype, email and WhatsApp buttons.
+
+- Version 3.5.5 - Released: 07.07.2018
+
+-- Edit  : Code optimized.
+
+- Version 3.5.4 - Released: 29.05.2018
+
+-- Updated : WooCommerce templates.
+-- Edit  : Code optimized.
+
+- Version 3.5.3 - Released: 19.04.2018
+
+-- Fixed : WooCommerce product header on mobile version. 
+-- Fixed : Children items on mobile menu. 
+-- Edit  : Code optimized.
+
+- Version 3.5.2 - Released: 17.04.2018
+
+-- Fixed : Blank space when there are no social links on the footer. 
+-- Edit  : Code optimized.
+
+- Version 3.5.1 - Released: 26.03.2018
+
+-- Updated : One page template.
+-- Edit  : Code optimized.
+
+- Version 3.5.0 - Released: 09.03.2018
+
+-- Fixed  : Search keys on poedit files.
+-- Updated : Italian translation.
+-- Edit  : Code optimized.
+
+- Version 3.4.9 - Released: 25.02.2018
+
+-- Fixed  : Notice on WooCommerce checkout form.
+
+- Version 3.4.8 - Released: 20.02.2018
+
+-- Updated : WooCommerce templates.
+-- Edit  : Code optimized.
+
+- Version 3.4.7 - Released: 17.02.2018
+
+-- Updated : Italian translation.
+-- Edit  : Code optimized.
+
+- Version 3.4.6 - Released: 01.02.2018
+
+-- Fixed : Shop page issues generated after the downgrade of the official WooCommerce version (from 3.3.0 to 3.2.7)
+-- Fixed : Cart page issues generated after the downgrade of the official WooCommerce version (from 3.3.0 to 3.2.7)
+
+- Version 3.4.5 - Released: 01.02.2018
+
+-- Fixed : WooCommerce shop layout.
+-- Fixed : WooCommerce page template option.
+-- Edit  : Code optimized.
+
+- Version 3.4.4 - Released: 30.01.2018
+
+-- Updated : WooCommerce templates.
+-- Edit  : Code optimized.
+
+- Version 3.4.3 - Released: 24.01.2018
+
+-- Removed : Custom CSS SuevaFree option (Replaced with Additional CSS option)
+-- Edit  : Code optimized.
+
+- Version 3.4.2 - Released: 16.01.2018
+
+-- Added  : Option to manage the alignment of page titles. 
+-- Added  : Option to manage the content alignment of pages. 
+
+- Version 3.4.1 - Released: 05.01.2018
+
+-- Fixed  : Alignment of titles and post details. 
+-- Fixed  : Content alignment of posts and pages. 
+-- Fixed  : Alignment of read more button. 
+-- Fixed  : Contact form 7 alignment.
+
+- Version 3.4.0 - Released: 04.01.2018
+
+-- Added  : Option to manage the alignment of titles and post details. 
+-- Added  : Option to manage the content alignment of posts and pages. 
+-- Added  : Option to manage the alignment of read more button. 
+-- Fixed  : Mobile drop-down menu on the header layouts 1, 2 and 3
+-- Edit   : Code optimized.
+
+- Version 3.3.9 - Released: 26.12.2017
+
+-- Edit  : Code optimized.
+
+- Version 3.3.8 - Released: 16.12.2017
+
+-- Fixed : VK social icon
+-- Fixed : Slack social icon
+-- Fixed : Vimeo social icon
+-- Fixed : Spotify social icon
+
+- Version 3.3.7 - Released: 04.12.2017
+
+-- Fixed : Fixed header on mobile devices
+-- Edit  : Code optimized.
+
+- Version 3.3.6 - Released: 02.12.2017
+
+-- Tested with WordPress 4.9.1
+-- Edit  : Code optimized.
+
+- Version 3.3.5 - Released: 23.11.2017
+
+-- Edit  : Code optimized.
+
+- Version 3.3.4 - Released: 08.11.2017
+
+-- Fixed : Minimal layout => single product => box border
+-- Fixed : Minimal layout => header cart => remove button => border color
+-- Fixed : Italian translation
+
+- Version 3.3.3 - Released: 04.11.2017
+
+-- Updated : WooCommerce header cart.
+
+- Version 3.3.2 - Released: 15.10.2017
+
+-- Updated : WooCommerce templates.
+
+- Version 3.3.1 - Released: 13.10.2017
+
+-- Added : Telegram button.
+
+- Version 3.3.0 - Released: 05.10.2017
+
+-- Removed : Option to disable the header text.
+
+- Version 3.2.9 - Released: 04.10.2017
+
+-- Edit  : Code optimized.
+-- Edit  : Data sanitization optimized.
+
+- Version 3.2.8 - Released: 01.10.2017
+
+-- Fixed : Back to top button.
+-- Updated : jQuery.scrollTo plugin.
+-- Added : Portuguese Brazilian translation (Thanks to Higork, higork@zoho.com)
+
+- Version 3.2.7 - Released: 27.09.2017
+
+-- Fixed : Featured image box shadow.
+
+- Version 3.2.6 - Released: 10.09.2017
+
+-- Fixed : Search results page, error message on the breadcrumb.
+
+- Version 3.2.5 - Released: 08.08.2017
+
+-- Fixed : Search results page, error message on the breadcrumb.
+
+- Version 3.2.4 - Released: 31.07.2017
+
+-- Moved : SuevaFree sample data, please see our documentation.
+-- Added : readme.txt file.
+
+- Version 3.2.3 - Released: 30.07.2017
+
+-- Fixed : Default header image.
+-- Fixed : Header image on header layout 5.
+-- Edit  : Code optimized.
+
+- Version 3.2.2 - Released: 24.07.2017
+
+-- Fixed : Featured image on WooCommerce cart page.
+-- Edit  : Code optimized.
+
+- Version 3.2.1 - Released: 11.07.2017
+
+-- Fixed : Header layout 5, logo text at mouse hover.
+-- Edit  : Code optimized.
+
+- Version 3.2.0 - Released: 30.06.2017
+
+-- Updated : WooCommerce templates.
+
+- Version 3.1.9 - Released: 13.06.2017
+
+-- Updated : Italian translation.
+-- Fixed : Notices inside the customize section
+-- Edit  : Code optimized.
+
+- Version 3.1.8 - Released: 31.05.2017
+
+-- Edit  : Code optimized.
+
+- Version 3.1.7 - Released: 30.05.2017
+
+-- Added : Option to manage the resolution of each thumbnail. (You need to regenerate all featured images using a free plugin like Regenerate Thumbnails)
+-- Optimized : Display all thumbnails and all slides with the correct resolution instead of the full resolution on each section, like the homepage, single page or categories.
+-- Edit  : Code optimized.
+
+- Version 3.1.6 - Released: 19.05.2017
+
+-- Fixed : Double border using the minimal layout
+-- Edit  : Code optimized.
+
+- Version 3.1.5 - Released: 09.05.2017
+
+-- Fixed : WooCommerce add to cart button for grouped products.
+-- Edit  : Code optimized.
+
+- Version 3.1.4 - Released: 22.04.2017
+
+-- Updated : WooCommerce 3.4 templates.
+
+- Version 3.1.3 - Released: 09.04.2017
+
+-- Updated : WooCommerce 3.0 templates.
+-- Edit  : Code optimized.
+
+- Version 3.1.2 - Released: 05.04.2017
+
+-- Added : Optional breadcrumb on the header layout 4.
+-- Fixed : WooCommerce layout issues.
+-- Updated : WooCommerce templates.
+-- Updated : Italian translation.
+-- Edit  : Code optimized.
+
+- Version 3.1.1 - Released: 01.04.2017
+
+-- Added : New footer layout.
+-- Edit  : Code optimized.
+
+- Version 3.1.0 - Released: 22.03.2017
+
+-- Fixed : Layout errors on WooCommerce warnings.
+
+- Version 3.0.9 - Released: 19.03.2017
+
+-- Fixed : Layout errors on WooCommerce warnings.
+-- Edit  : Code optimized.
+
+- Version 3.0.8 - Released: 28.02.2017
+
+-- Fixed : Masonry bug on mobile version.
+
+- Version 3.0.7 - Released: 20.02.2017
+
+-- Fixed : Issue between the custom excerpt and the more tag.
+
+- Version 3.0.6 - Released: 06.02.2017
+
+-- Edit  : Code optimized.
+
+- Version 3.0.5 - Released: 24.01.2017
+
+-- Fixed : Read more issue on the aside posts and one page section.
+-- Edit  : Code optimized.
+
+- Version 3.0.4 - Released: 15.01.2017
+
+-- Fixed : Issue between SuevaFree and the sharing function of Jetpack plugin.
+-- Added : New read more layout.
+
+- Version 3.0.3 - Released: 10.01.2017
+
+-- Fixed : Pagination on post and pages.
+-- Fixed : Children menu items position.
+
+- Version 3.0.2 - Released: 06.01.2017
+
+-- Fixed : Color scheme issue.
+
+- Version 3.0.1 - Released: 06.01.2017
+
+-- Optimized : Vertical menu on mobile version and header 5 layout.
+-- Updated: Theme screenshot.
+
+- Version 3.0.0 - Released: 22.12.2016
+
+-- Important : Each child theme (Including Sneak Lite and Polar Lite)  must be adapted.
+-- Important : Many features of SuevaFree theme (like shortcodes, custom widget) were moved under SuevaFree Essential Kit plugin.
+-- Important : You must enable SuevaFree Essential Kit plugin (Available on WordPress.org), after the installation.
+-- Added: One Page section.
+-- Added: Videotutorial to manage the one page section.
+-- Added: New optional layout for Link, Aside and Quote posts.
+-- Added: 4 new header layouts.
+-- Added: 1 new footer layout.
+-- Added: 1 new layout for post details.
+-- Added: Team, Service and Testimonial section.
+-- Added: Call to action widget.
+-- Added: Testimonials widget.
+-- Added: Team widget.
+-- Added: Service widget.
+-- Added: Contact Form 7 widget.
+-- Added: Counter widget.
+-- Added: Counter shortcode.
+-- Added: Top sidebar area (Full width).
+-- Added: Full bottom sidebar area (Full width).
+-- Added: Nicescroll feature.
+-- Added: Option to remove the featured image rotation, at hover.
+-- Added: Option to remove the white triange on featured image.
+-- Added: Option to disable the post informations.
+-- Added: Titles weight and text transform for the titles and menus.
+-- Updated: WooCoomerce templates.
+-- Updated : Font Awesome icon pack.
+-- Edit  : Code optimized.
+
+- Version 2.2.7 - Released: 06.12.2016
+
+-- Added : Soundcloud, Spotify, Slack and VK social icons.
+-- Updated : Font Awesome icon pack.
+
+- Version 2.2.6 - Released: 26.11.2016
+
+-- Edit : Code optimized.
+
+- Version 2.2.5 - Released: 29.10.2016
+
+-- Edit : Code optimized.
+
+- Version 2.2.4 - Released: 30.09.2016
+
+-- Updated : TGM Plugin Activation.
+-- Fixed : WooCommerce messages.
+-- Edit : Code optimized.
+
+- Version 2.2.3 - Released: 25.09.2016
+
+-- Fixed : Cart page margin.
+-- Edit  : Code optimized.
+
+- Version 2.2.1 - Released: 10.08.2016
+
+-- Updated : WooCommerce templates.
+
+- Version 2.2.0 - Released: 08.07.2016
+
+-- Updated : Font Awesome icon pack.
+
+- Version 2.1.9 - Released: 23.06.2016
+
+-- Updated : WooCommerce templates.
+
+- Version 2.1.8 - Released: 19.06.2016
+
+-- Fixed : WooCommerce dashboard layout on mobile devices.
+
+- Version 2.1.7 - Released: 15.06.2016
+
+-- Updated : WooCommerce templates.
+-- Updated : Layout of WooCommerce account dashboard.
+
+- Version 2.1.6 - Released: 25.05.2016
+
+-- Updated : Font Awesome icon pack (Including the new Instagram icon).
+
+- Version 2.1.5 - Released: 26.04.2016
+
+-- Added : Optional minimal layout.
+
+- Version 2.1.4 - Released: 25.04.2016
+
+-- Added : Masonry Layout.
+-- Added : New page width option.
+-- Added : Blog thumbnail height option.
+-- Added : Image post format.
+-- Fixed : Issue with Archive layout
+
+- Version 2.1.3 - Released: 14.04.2016
+
+-- Removed: Custom admin logo ( You can use ‘WIP Custom Login’ plugin, available on WordPress.org )
+
+- Version 2.1.1 - Released: 29.03.2016
+
+-- Fixed: Search widget layout.
+-- Added: Black theme skin.
+
+- Version 2.0.9 - Released: 09.03.2016
+
+-- Fixed: "Show categories & subcategories" option on shop page.
+-- Fixed: Single product layout, without the reviews.
+-- Updated: WooCommerce templates.
+
+- Version 2.0.8 - Released: 22.02.2016
+
+-- Fixed: Home and posts layout.
+
+- Version 2.0.6 - Released: 10.02.2016
+
+-- Added: New social icons ( Instagram, Deviantart, Github, Xing, Dribbble, Dropbox and WhatsApp )
+-- Fixed: Issue with Skype and Email social buttons.
+
+- Version 2.0.3 - Released: 09.02.2016
+
+-- Fixed: Image as logo mobile issue.
+-- Added: WooCommerce header cart.
+-- Updated: Font Awesome icons.
+-- Edit  : Code optimized.
+
+- Version 2.0.2 - Released: 06.02.2016
+
+-- Added: WooCommerce support.
+-- Added: WooCommerce header cart.
+-- Updated: Font Awesome icons.
+-- Edit  : Code optimized.
+
+- Version 2.0.0 - Released: 04.02.2016
+
+-- Important : New Bootstrap framework version (3.3.5).
+-- Important : Each child theme (Like Sneak or Polar Lite ) must be adapted.
+-- Added: Custom container width (from the option panel).
+-- Added: New menu layout (from the option panel).
+-- Added: Contact Form 7 support.
+-- Edit  : Code optimized.
+
+- Version 1.4.3 - Released: 18.01.2016
+
+-- Added : Support section on Customize.
+-- Added : Missed italian translations.
+
+- Version 1.4.2 - Released: 29.12.2015
+
+-- Replaced : Menu, Titles and Content font.
+
+- Version 1.4.1 - Released: 18.12.2015
+
+-- Optimized : Embed videos.
+
+- Version 1.4.0 - Released: 07.12.2015
+
+-- Fixed : Comment section for pages.
+
+- Version 1.3.9 - Released: 05.12.2015
+
+-- Added : Left or right sidebar, for the search results.
+
+- Version 1.3.8 - Released: 21.10.2015
+
+-- Added : Back to top button.
+
+- Version 1.3.7 - Released: 11.09.2015
+
+-- Important : Issue with “Read More” button, is now fixed.
+
+- Version 1.3.0 - Released: 04.05.2015
+
+-- Added : Option panel moved under WordPress Customizer
+-- Edit : Code optimized.
+-- Fixed : Archives title
+-- Fixed : Excerpt under archive pages
+-- Fixed: Correct tag title for the post titles.
+
+- Version 1.2.7.7 - Released: 13.04.2015
+
+-- Updated : Option panel layout.
+
+- Version 1.2.7.6 - Released: 16.03.2015
+
+-- Fixed : Gallery items with caption, for mobile version.
+
+- Version 1.2.7.5 - Released: 09.03.2015
+
+-- Fixed : Tag title with the older versions of WordPress.
+
+- Version 1.2.7.4 - Released: 06.03.2015
+
+-- Fixed : Gallery items with caption.
+-- Added : Wordpress tag title support.
+
+- Version 1.2.7.1 - Released: 23.02.2015
+
+-- Added : Post author.
+
+- Version 1.2.7.1 - Released: 15.02.2015
+
+-- Added : New post formats (image, chat and status post format).
+
+- Version 1.2.6.9 - Released: 26.09.2014
+
+-- Added : New default skin.
+
+- Version 1.2.6.8 - Released: 16.05.2014
+
+-- Fixed : Text formatting with the tag more.
+
+- Version 1.2.6.7 - Released: 16.05.2014
+
+-- Added: Display or hide the read more button, from the option panel.
+-- Fixed: Problem with long submenu items
+
+- Version 1.2.6.6 - Released: 25.03.2014
+
+-- Fixed: wrong fonts of some classes
+
+- Version 1.2.6.5 - Released: 05.03.2014
+
+-- Fixed: Compatibility between the tag more and the intro text, generated automatically from Wordpress.
+
+- Version 1.2.6.2 - Released: 17.12.2013
+
+-- Fixed: home and category sidebar were reversed.
+
+- Version 1.2.6 - Released: 28.11.2013
+
+-- Added : Change font size for contents, from option panel.
+
+- Version 1.2.0 - Released: 24.10.2013
+
+-- Added : Post formats
+-- Code Optimized
+
+- Version 1.1.6 - Released: 01.10.2013
+
+-- Added : Blog sidebar for Homepage.
+
+- Version 1.1.5 - Released: 21.09.2013
+
+-- Fixed : Correct view for images with captions for responsive version.
+-- Fixed : Css code optimized.
+-- Fixed : Background colors from option panel.

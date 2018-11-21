@@ -1,0 +1,46 @@
+// main: ../modal.scss
+.wprm-shortcode-builder {
+		.wprm-shortcode-builder-container {
+				margin-bottom: 15px;
+				vertical-align: top;
+		}
+
+		.wprm-shortcode-builder-container-halfs {
+				display: inline-block;
+				width: 50%;
+		}
+
+		.wprm-shortcode-builder-container-thirds {
+				display: inline-block;
+				width: 33.3%;
+		}
+
+		label {
+				display: block;
+				font-weight: bold;
+				margin-bottom: 5px;
+		}
+
+		.wprm-shortcode-builder-helper {
+				margin-left: 5px;
+				font-size: 0.8em;
+				font-style: italic;
+		}
+
+		input {
+				margin: 0;
+				width: 100%;
+				max-width: 250px;
+				height: 34px;
+				line-height: 34px;
+
+				&.select2_wprm-search__field {
+						height: 18px;
+						line-height: 18px;
+				}
+		}
+
+		select {
+				width: 250px;
+		}
+}

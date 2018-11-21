@@ -1,0 +1,2072 @@
+# Translation of WP Ultimate Recipe in Hindi
+# This file is distributed under the same license as the WP Ultimate Recipe package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2014-03-30 15:53:13+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/0.1\n"
+"Project-Id-Version: WP Ultimate Recipe\n"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:204
+msgid "Recalculate Recipe Grid Terms"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:47
+msgid "Recipe Notes"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:107
+msgid "required"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:172
+msgid "Select an ingredient"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:105
+msgid "Quantity"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:24
+msgid "Your recipes"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:25
+msgid "Everything regarding your recipes can be handled over here. Just click on 'Recipes' to create one, edit one or change your settings."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:47
+msgid "If it's your first time here, it's a good idea to check out the <strong>Demo Recipe</strong>. But make sure to take a look at the <strong>settings page</strong> later. Plenty of things can be customized to your liking."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:68
+msgid "Important!"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:69
+msgid "Make sure to enter your ingredients as indicated: the quantity in the first field, unit in the second, the actual ingredient in the third and notes in the last."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:70
+msgid "You want to name your ingredients consistently as this name will be used to link recipes, use the notes field to specify things about an ingredient."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:91
+msgid "Need help?"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:92
+msgid "You can contact us directly from this settings page <strong>if you have any questions or suggestions</strong>. Just click on the green 'Support' tab on the right side of the screen."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:21
+msgid "This must be the best demo recipe I have ever seen. I could eat this every single day."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:24
+msgid "people"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:30
+msgid "hour"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:120
+msgid "Use this section for whatever you like."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:125
+msgid "Demo Recipe"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:126
+msgid "Use this like normal post content. The recipe will automatically be included at the end of the post, or wherever you place the shortcode:"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:126
+msgid "This text will appear below your recipe."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:41
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:57
+msgid "Template Editor"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:71
+msgid "Preview Recipe"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:72
+msgid "This recipe will be used for the preview in the editor."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:89
+msgid "Default Templates"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:96
+msgid "The default template to use for recipes."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:114
+msgid "The default template to use for printed recipes."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:131
+msgid "Recipe Grid Template"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:132
+msgid "The default template to use for recipes in the Recipe Grid."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:156
+msgid "Functionality"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:265
+msgid "Print Version"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:296
+msgid "Force CSS style"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:297
+msgid "This ensures maximum compatibility with most themes. Can be disabled for advanced usage."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:303
+msgid "Responsive Breakpoint"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:304
+msgid "The width of the recipe box at which will be switched to the mobile version."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:318
+msgid "Recipe Archive"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:797
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:888
+msgid "Use the following shortcode to display the front-end form:"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:861
+msgid "Can only select existing ingredients"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:862
+msgid "When enabled visitors will only be able to select from a list of existing ingredients."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1052
+msgid "Remove recipe slug"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1053
+msgid "Make sure your slugs are unique across posts, pages and recipes! Your archive page will still be available."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1060
+msgid "Shortcode Editor"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1066
+msgid "Show shortcode editor for"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1067
+msgid "Where do you want to be able to insert recipes with the shortcode editor?"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:81
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:83
+msgid "Open the Template Editor"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:199
+msgid "Reset Demo Recipe"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:13
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:48
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:83
+msgid "Template"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:1
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:1
+msgid "Do you really want to delete this taxonomy?"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/template-editor/template-editor.php:80
+msgid "Image Manager"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:53
+msgid "Clone Recipe"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/wp-ultimate-recipe-premium.php:93
+msgid "You need to deactivate the free WP Ultimate Recipe plugin before activating the Premium version. WP Ultimate Recipe Premium is a stand-alone plugin since version 2. You won't lose any settings or recipes when deactivating."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:113
+msgid "Print Template"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:276
+msgid "Title Text"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:277
+msgid "Title of the new webpage that opens."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:628
+msgid "Minimum # Votes"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:629
+msgid "Minimum number of votes needed before sharing the rating as metadata used by Google and other search engines."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1086
+msgid "Custom Code"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1093
+msgid "Public CSS"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1100
+msgid "Print CSS"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:14
+msgid "Import ReciPress"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/import-text.php:91
+msgid "Add New from Text"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/import-text.php:116
+msgid "Untitled"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:3
+msgid "Add New Recipe from text"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:4
+msgid "This is function is still in beta version. Any feedback is welcome!"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:5
+msgid "Plain Text Recipe Input"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:6
+msgid "Paste your recipe in this input field."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:8
+msgid "Define Recipe Regions"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:9
+msgid "Highlight a section in your recipe and click the corresponding button to define it."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:108
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:19
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:49
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:80
+msgid "Notes"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:72
+msgid "Ingredient Details"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:73
+msgid "Tip"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:73
+msgid "Only unit aliases defined in the settings will be recognized."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:106
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:78
+msgid "Unit"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:89
+msgid "Separate instructions with an empty line"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:90
+msgid "Every line is a separate instruction"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:106
+msgid "Add Recipe"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:39
+msgid "You"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/user-ratings.php:54
+msgid "Are you sure you want to reset the rating for this recipe? This will set the votes and rating to 0."
+msgstr ""
+
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:46
+msgid "reset"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:180
+msgid "When converting to a unit the alias defined below will be shown. The singular form will be shown when the amount is 1, the plural otherwise."
+msgstr "एक इकाई को परिवर्तित करते समय नीचे परिभाषित उर्फ दिखाया जाएगा. राशि अन्यथा, बहुवचन 1 जब विलक्षण रूप में दिखाया जाएगा."
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:193
+msgid "Singular"
+msgstr "एकवचन"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:214
+msgid "Plural"
+msgstr "बहुवचन"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:234
+msgid "Alias to convert to"
+msgstr "कन्वर्ट करने के लिए उर्फ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:921
+msgid "Enable user menus save function for"
+msgstr "उपयोगकर्ता मेनू के लिए समारोह बचाने सक्षम"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:675
+msgid "User Menus unit system"
+msgstr "प्रयोक्ता मेनू इकाई प्रणाली"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:676
+msgid "Unit system to use for the shopping list feature."
+msgstr "खरीदारी की सूची सुविधा के लिए उपयोग करने के लिए इकाई प्रणाली."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:56
+msgid "(e.g. 20 minutes, 1-2 hours, ...)"
+msgstr "(उदाहरण के लिए 20 मिनट, 1-2 घंटे, ...)"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:286
+msgid "Allow filtering by"
+msgstr "फ़िल्टरिंग की अनुमति"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:176
+msgid "The menu can be edited from the front end:"
+msgstr "मेनू सामने के छोर से संपादित किया जा सकता है:"
+
+#: wp-ultimate-recipe-premium/core/helpers/plugin_action_link.php:13
+msgid "More information"
+msgstr "अधिक जानकारी"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:386
+msgid "US Customary"
+msgstr "अमेरिका प्रथागत"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:390
+msgid "US Legal"
+msgstr "अमेरिका कानूनी"
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:15
+msgid "Use this to group ingredients in the shopping list."
+msgstr "खरीदारी की सूची में समूह सामग्री के लिए इसका उपयोग करें."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:7
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:16
+msgid "Vegetables"
+msgstr "सब्जियां"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:147
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:179
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:704
+msgid "Unit Aliases"
+msgstr "यूनिट नामः"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:148
+msgid "Use a semicolon to separate unit aliases. For example: "
+msgstr "इकाई फर्जी नाम अलग करने के लिए एक अर्धविराम का प्रयोग करें. उदाहरण के लिए:"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:169
+msgid " Units"
+msgstr "मात्रक"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:250
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:699
+msgid "Unit Systems"
+msgstr "इकाई पद्धति"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:256
+msgid "Number of Systems"
+msgstr "सिस्टम की संख्या"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:257
+msgid "Number of unit systems for your visitors to choose from."
+msgstr "यूनिट सिस्टम की संख्या आपके दर्शकों के चुनने के लिए"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:266
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:272
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:278
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:288
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:298
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:410
+msgid "Unit System"
+msgstr "इकाई पद्धति"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:321
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:327
+msgid "Universal Units"
+msgstr "यूनिवर्सल इकाई"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:328
+msgid "These units are considered universal to all systems and will not be converted."
+msgstr "इन इकाइयों के सभी प्रणालियों के लिए सार्वभौमिक माना जाता है और परिवर्तित नहीं किया जाएगा."
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:367
+msgid " units"
+msgstr "मात्रक"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:378
+msgid "Cup Type"
+msgstr "कप का प्रकार"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:431
+msgid "US Imperial"
+msgstr "यूएस इम्पीरियल"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:169
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:944
+msgid "Default Servings"
+msgstr "डिफ़ॉल्ट सर्विंग्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:170
+msgid "Default number of servings to use when none specified."
+msgstr "कोई भी निर्दिष्ट का उपयोग करें जब सर्विंग्स की संख्या."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:23
+msgid "My New Menu"
+msgstr "मेरा नया मेनू"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:24
+msgid "Add Recipes"
+msgstr "व्यंजन विधि जोड़ें"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:65
+msgid "alphabet"
+msgstr "वर्णमाला"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:73
+msgid "No recipes in your menu yet"
+msgstr "अभी तक अपने मेनू में व्यंजन मौजूद नहीं है"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:76
+msgid "Drop a recipe here to remove it"
+msgstr "इसे हटाने के लिए यहां एक नुस्खा गिरा दो"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:105
+msgid "Save Menu"
+msgstr "मेनू  सुरक्षित करें"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:107
+msgid "Print Shopping List"
+msgstr "खरीददारी सूची प्रिंट करें"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:2
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:102
+msgid "Ingredient Groups"
+msgstr "संघटक समूह"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:8
+msgid "Add Group"
+msgstr "समूह जोड़ें "
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/ingredient-groups.php:19
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:116
+msgid "Ungrouped"
+msgstr "असमूहीकृत"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:280
+msgid "Other"
+msgstr "अन्य"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:736
+msgid "Use the [ultimate-recipe-grid] shortcode to display the Recipe Grid."
+msgstr "पकाने की विधि ग्रिड को दिखाने के लिए [ultimate-recipe-grid] शोर्टकोड का उपयोग करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:754
+msgid "Multi-Select"
+msgstr "बहु चयन"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:755
+msgid "Allow visitors to select multiple values for a tag or category."
+msgstr "आगंतुकों को एक टैग या वर्ग के लिए अनेक मान का चयन करने की अनुमति दें."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:761
+msgid "Match All"
+msgstr "सभी को मैच करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:762
+msgid "Recipes will only match if they match all selections."
+msgstr "वे सभी चयन मैच अगर व्यंजनों केवल मैच होगा."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:768
+msgid "Parents match Children"
+msgstr "अभिभावकों के लिए बच्चों से मेल"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:769
+msgid "Selecting a parent will also match recipes with a child category or tag of that parent."
+msgstr "अभिभावक के चयन करने पर, व्यंजन उसकी बच्चे श्रेणी या अभिभावक के टैग के साथ मैच होगा"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:8
+msgid "License Key"
+msgstr "लाइसेंस कुंजी"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:11
+msgid "Enter your license key"
+msgstr "अपनी लाइसेंस कुंजी दर्ज करें"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:13
+msgid "active"
+msgstr "सक्रिय"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:15
+msgid "invalid"
+msgstr "अमान्य"
+
+#: wp-ultimate-recipe-premium/premium/helpers/license_form.php:19
+msgid "Change License"
+msgstr "लाइसेंस बदलें "
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:382
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:429
+msgid "Metric"
+msgstr "मीटरी"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1045
+msgid "Recipes in admin posts"
+msgstr "व्यवस्थापक पदों में व्यंजनों"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1046
+msgid "Show recipes in admin posts overview when acting as posts."
+msgstr "व्यंजनों को Admin Posts अवलोकन में दिखाएँ जब व्यंजन विधि Posts की तरह काम करते हैं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:641
+msgid "Unit Conversion"
+msgstr "इकाई रूपांतरण"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:668
+msgid "Allow Conversion"
+msgstr "रूपांतरण की अनुमति"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:669
+msgid "Allow your visitors to switch between Imperial and Metric units."
+msgstr "अपने आगंतुकों इंपीरियल और मीट्रिक इकाइयों के बीच स्विच करने की अनुमति."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:148
+msgid "Limit Author"
+msgstr "लेखक को सीमित करे"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:34
+msgid "Units"
+msgstr "मात्रा"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1038
+msgid "Recipes act as posts"
+msgstr "व्यंजन विधि Posts की तरह काम करते हैं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1039
+msgid "Recipes act like normal posts. For example: they show up on your front page."
+msgstr "व्यंजन विधि सामान्य Posts की तरह काम करते हैं. उदाहरण के लिए: वे अपने पहले पन्ने पर दिखाई देंगें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:621
+msgid "Show indicator"
+msgstr "सूचक दिखाएँ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:622
+msgid "Attract attention to the possibility to vote."
+msgstr "वोट करने के लिए संभावना की ओर ध्यान आकर्षित करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:19
+msgid "(leave blank to use post title)"
+msgstr "(पोस्ट टाइटल के लिये खाली छोड़े)"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:712
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:243
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:246
+msgid "Recipe Grid"
+msgstr "पाक विधि ग्रिड"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:261
+msgid "Recipe Title Only"
+msgstr "पाक विधि शीर्षक केवल"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:265
+msgid "Recipe Card with photo"
+msgstr "पाक विधि फोटो के साथ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:275
+msgid "Exclude recipes without a photo"
+msgstr "फोटो के बिना व्यंजनों को शामिल न करें"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:42
+msgid "Rate this recipe!"
+msgstr "विधि को रेट करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:602
+msgid "Disabled"
+msgstr "निर्योग्य"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:606
+msgid "Only logged in users can rate recipes"
+msgstr "केवल लॉग कर चुके उपयोगकर्ताओं व्यंजनों को रेट कर सकते हैं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:610
+msgid "Everyone can rate recipes"
+msgstr "हर कोई व्यंजनों को रेट कर सकते हैं"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_save.php:100
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:177
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:73
+msgid "Categories"
+msgstr "श्रेणियाँ"
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:9
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:26
+msgid "Link"
+msgstr "लिंक"
+
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:10
+msgid "Send your visitors to a specific link when clicking on an ingredient."
+msgstr "अपने आगंतुकों को एक विशिष्ट लिंक पर भेजें जब वह संघटक पे क्लिक करता है"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:42
+msgid "Manage custom recipe tags"
+msgstr "कस्टम विधि टैग को प्रबंधन करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:179
+msgid "Clickable Images"
+msgstr "क्लिक करने योग्य तस्वीर"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:180
+msgid "Best used in combination with a lightbox plugin."
+msgstr "इसका उपयोग lightbox प्लगइन के साथ करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:201
+msgid "Custom links are only available in "
+msgstr "कस्टम लिंक्स में ही उपलब्ध हैं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:211
+msgid "Ingredient Links"
+msgstr "सामग्री लिंकस"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:212
+msgid "Links to be used in the ingredient list."
+msgstr "संघटक सूची में प्रयोग की जाने वाली लिंक."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:216
+msgid "No ingredient links"
+msgstr "सामग्री लिंक उपस्थित नहीं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:220
+msgid "Only link to ingredient archive page"
+msgstr "केवल संग्रह पृष्ठ घटक के लिए लिंक"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:224
+msgid "Custom link if provided, otherwise archive page"
+msgstr "कस्टम प्रदान की लिंक हैं, अन्यथा संग्रह पृष्ठ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:228
+msgid "Custom links if provided, otherwise no link"
+msgstr "कस्टम लिंक प्रदान की हैं, अन्यथा कोई लिंक नही"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:239
+msgid "Custom Links"
+msgstr "अपनी खुद की लिंकस"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:240
+msgid "Custom links can be added on the "
+msgstr "कस्टम लिंक पर जोड़ा जा सकता है"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:240
+msgid "ingredients page"
+msgstr "सामग्री पेज"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:244
+msgid "Open in the current tab/window"
+msgstr "वर्तमान टैब / विंडो में खोलें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:248
+msgid "Open in a new tab/window"
+msgstr "एक नए टैब / विंडो में खोलें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:402
+msgid "Recipe Sharing"
+msgstr "नुस्खा साझा"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:414
+msgid "Enable Sharing"
+msgstr "सक्षम वितरण "
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:415
+msgid "Show sharing buttons."
+msgstr "साझा बटन दिखाएँ."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:422
+msgid "Default text to share"
+msgstr "साझा करने के लिए टेक्स्ट"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:440
+msgid "Use %title% as a placeholder for the recipe title."
+msgstr "पाक विधि शीर्षक के लिए %title% प्लेसहोल्डर का प्रयोग करें."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:450
+msgid "Twitter"
+msgstr "ट्विटर"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:457
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:473
+msgid "Custom Recipe Tags"
+msgstr "कस्टम टैग पकाने की विधि के लिये"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:488
+msgid "WordPress Categories & Tags"
+msgstr "वर्डप्रेस श्रेणियाँ और टैग"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:501
+msgid "Show Recipes in Archives"
+msgstr "अभिलेखागार में व्यंजनों को दिखाएँ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:502
+msgid "Show recipes in the WP Categories and Tags archives."
+msgstr "WP श्रेणियों और टैग अभिलेखागार में व्यंजनों को दिखाएं."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:285
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:290
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:509
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1018
+msgid "Advanced"
+msgstr "विकसित"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:527
+msgid "Categories will only show up as tags in the recipe if they have a parent category. For example: a \"Courses\" parent category with \"Main Dish\" and \"Dessert\" as child categories assigned to your recipes."
+msgstr "वे एक माता पिता के वर्ग है अगर श्रेणियाँ केवल नुस्खा में टैग के रूप में दिखाई देगा. उदाहरण के लिए: \"मुख्य पकवान\" और अपने व्यंजनों को सौंपा बच्चा श्रेणियों के रूप में \"मिठाई\" के साथ एक \"पाठ्यक्रम\" जनक श्रेणी."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:537
+msgid "Show Categories in Recipe"
+msgstr "पकाने की विधि में श्रेणियाँ दिखाएँ "
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:538
+msgid "Use WP categories as if they are tags for their parent category."
+msgstr "WP श्रेणियों का उपयोग करें जेसे वे अपने पैरेंट वर्ग के टैग हैं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:544
+msgid "User Submitted Categories"
+msgstr "उपयोगकर्ता प्रस्तुत श्रेणियाँ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:545
+msgid "Allow users to assign categories when submitting recipes."
+msgstr "उपयोगकर्ताओं को श्रेणियां आवंटित करने की अनुमति जब वे व्यंजनों को सबमिट करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:551
+msgid "User Submitted Tags"
+msgstr "उपयोगकर्ता प्रस्तुत टैग"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:552
+msgid "Allow users to assign tags when submitting recipes."
+msgstr "व्यंजनों सबमिट करने पर, ​​उपयोगकर्ताओं को टैग आवंटित करने की अनुमति दें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:558
+msgid "Show Categories Filter"
+msgstr "श्रेणियाँ फ़िल्टर दिखाएँ"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:559
+msgid "Users can see the categories when filtering."
+msgstr "उपयोगकर्ता श्रेणियों को देख सकते हैं, जब ​फ़िल्टरिंग हो रही हो "
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:565
+msgid "Show Tags Filter"
+msgstr "टैग फ़िल्टर दिखाएँ "
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:566
+msgid "Users can see the tags when filtering."
+msgstr "उपयोगकर्ता टैग देख सकते हैं, जब ​​फ़िल्टरिंग हो रही हो"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:575
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:598
+msgid "User Ratings"
+msgstr "उपयोगकर्ता रेटिंग"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:89
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:114
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:139
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:216
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:233
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:253
+#: wp-ultimate-recipe-premium/premium/helpers/ingredient_metadata.php:14
+msgid "Group"
+msgstr "समूह"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:91
+msgid "Main Ingredients"
+msgstr "मुख्य सामग्री"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:91
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:217
+msgid "(this label is not shown)"
+msgstr "(येह लेबल नहीं दिखेगा)"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:203
+msgid "Add an ingredient group"
+msgstr "सामग्री सामग्री जोड़े"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:217
+msgid "Main Instructions"
+msgstr "मुख्य निर्देश"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:328
+msgid "Add an instruction group"
+msgstr "निर्देश समूह जोड़ें"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:49
+msgid "Share this Recipe"
+msgstr "यह नुस्खा साझा करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_save.php:101
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:185
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:74
+msgid "Tags"
+msgstr "टैग"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:290
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:314
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:5
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:46
+msgid "Category"
+msgstr "श्रेणी"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:37
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:43
+msgid "Votes"
+msgstr "वोट"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:109
+msgid "Import ReciPress recipes"
+msgstr "ReciPress व्यंजनों को आयात करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:494
+msgid "Use Categories and Tags"
+msgstr "श्रेणियों और टैग का प्रयोग करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:495
+msgid "Use the default WP Categories and Tags to organize your recipes."
+msgstr "अपने व्यंजनों को व्यवस्थित करने के लिए डिफ़ॉल्ट WP श्रेणियों और टैग का प्रयोग करें."
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:41
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:67
+msgid "Passive Time"
+msgstr "निष्क्रिय समय"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:17
+msgid "It's a good idea to backup your WP database before using the import feature."
+msgstr "यह आयात सुविधा का उपयोग करने से पहले अपने WP डेटाबेस का बैकअप लेना एक अच्छा विचार है."
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:18
+msgid "recipes are about to be imported to"
+msgstr "व्यंजनों को आयात किया जाने वाला है"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:18
+msgid "Are you sure you want to do this?"
+msgstr "क्या आप ऐसा करना चाहते हैं?"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:24
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:33
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:42
+msgid "New tag for"
+msgstr "नई टैग"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:27
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:36
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:45
+msgid "Select a recipe tag"
+msgstr "एक नुस्खा टैग चुने"
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:33
+msgid "You should activate this plugin:"
+msgstr "आप इस प्लगइन सक्रिय करें "
+
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:47
+msgid "You should select a new tag for the imported recipes"
+msgstr "आप आयातित व्यंजनों के लिए एक नए टैग का चयन करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:7
+msgid "Display a random recipe"
+msgstr "एक यादृच्छिक नुस्खा प्रदर्शित करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:20
+msgid "The user menus archive can be found at"
+msgstr "उपयोगकर्ता मेनू संग्रह में पाया जा सकता है"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_whitelist.php:14
+msgid "The recipe archive can be found at"
+msgstr "नुस्खा संग्रह में पाया जा सकता है"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:439
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:526
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:735
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:796
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:887
+msgid "Important"
+msgstr "महत्वपूर्ण"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:778
+msgid "User Submission"
+msgstr "उपयोगकर्ता सबमिशन"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:467
+msgid "Recipe Tags"
+msgstr "नुस्खा टैग"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:898
+msgid "Enable user menus for"
+msgstr "उपयोगकर्ता मेनू सक्षम करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:830
+msgid "Auto approve submissions from"
+msgstr "प्रस्तुतियाँ को स्वत मंजूरी दें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_shortcode.php:18
+msgid "Shortcodes"
+msgstr "शॉर्ट कोड"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:45
+msgid "Manage Tags"
+msgstr "टैग को प्रबंधन करे"
+
+#: wp-ultimate-recipe-premium/core/static/drip_form.php:3
+msgid "Are you sure you want to dismiss this notice? (Make sure you have saved your changes first!)"
+msgstr "क्या आप इस नोटिस को खारिज करना चाहते हैं? (आप पहले अपने परिवर्तनों को बचा लें!)"
+
+#: wp-ultimate-recipe-premium/core/static/drip_form.php:3
+msgid "Hide this message"
+msgstr "इस संदेश को छुपाएं"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/bootstrap.php:88
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:357
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:382
+msgid "Successful"
+msgstr "सफल"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/bootstrap.php:99
+msgid "Unauthorized function"
+msgstr "अनधिकृत समारोह"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox.php:35
+msgid "[Development Mode] "
+msgstr "[Development Mode] "
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox.php:564
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox/alchemy.php:493
+msgid "Remove"
+msgstr "हटाये"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox.php:586
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/metabox/alchemy.php:515
+msgid "Add More"
+msgstr "अधिक जोड़ें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:47
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:48
+msgid "Vafpress Options"
+msgstr "Vafpress विकल्प"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:54
+msgid "Option Key is required"
+msgstr "विकल्प कुंजी की आवश्यकता है"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:56
+msgid "Template Array/File is required"
+msgstr "टेम्पलेट Array / फ़ाइल की आवश्यकता है"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:58
+msgid "Page Slug is required"
+msgstr "पृष्ठ स्लग आवश्यक है"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:160
+msgid "Development Mode is Active, options' values won't be saved into database."
+msgstr "डेवलपमेंट मोड एक्टिव है,  विकल्प 'मूल्यों डेटाबेस में सहेजा नहीं जाएगा"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:299
+msgid "Can not be empty"
+msgstr "खाली नहीं हो सकता"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:324
+msgid "Invalid data"
+msgstr "अमान्य डेटा"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:387
+msgid "Unverified Access"
+msgstr "असत्यापित अभिगम"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:453
+msgid "Invalid template supplied"
+msgstr "अवैध टेम्पलेट की आपूर्ति की"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:466
+msgid "Utility"
+msgstr "उपयोगिता"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:472
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:13
+msgid "Restore Default"
+msgstr "डिफ़ॉल्ट पुनर्स्थापित"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option.php:481
+msgid "Export/Import"
+msgstr "निर्यात / आयात"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/shortcodegenerator.php:260
+msgid "Insert"
+msgstr "डालें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/shortcodegenerator.php:261
+msgid "Cancel"
+msgstr "रद्द करें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option/control/set.php:359
+msgid "Saving successful"
+msgstr "डेटा सुरक्षित सफल"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option/control/set.php:370
+msgid "Saving failed"
+msgstr "डेटा सुरक्षा असफल"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/classes/option/control/set.php:376
+msgid "No changes made"
+msgstr "कोई परिवर्तन नहीं"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:13
+msgid "Value needs to be Alphabet"
+msgstr "मूल्य वर्णमाला होने की जरूरत"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:14
+msgid "Value needs to be Alphanumeric"
+msgstr "मूल्य अक्षरांकीय होने की जरूरत"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:15
+msgid "Value needs to be Numeric"
+msgstr "मूल्य संख्यात्मक होने की जरूरत"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:16
+msgid "Value needs to be Valid Email"
+msgstr "मूल्य मान्य ईमेल होने की जरूरत"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:17
+msgid "Value needs to be Valid URL"
+msgstr "मूल्य मान्य URL होने की जरूरत"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:18
+msgid "Length needs to be less than {0} characters"
+msgstr "लंबाई {0} अक्षर से भी कम होने की जरूरत"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:19
+msgid "Length needs to be more than {0} characters"
+msgstr "लंबाई {0} वर्णों से अधिक होने की जरूरत"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:20
+msgid "Select no more than {0} items"
+msgstr "{0} आइटम से अधिक न चुनें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:21
+msgid "Select at least {0} items"
+msgstr "कम से कम {0} आइटम्स का चयन करे"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:22
+msgid "This is required"
+msgstr "यह आवश्यक है"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:29
+msgid "Import succeed, option page will be refreshed.."
+msgstr "आयात सफल, विकल्प पृष्ठ ताजा हो जाएगा .."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:30
+msgid "Import failed"
+msgstr "आयात विफल रहा"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:31
+msgid "Export succeed, copy the JSON formatted options"
+msgstr "निर्यात सफल, JSON स्वरूपित विकल्पों को कॉपी करे"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:32
+msgid "Export failed"
+msgstr "निर्यात विफल रहा"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:33
+msgid "Restoration succeed, option page will be refreshed.."
+msgstr "बहाली सफल, विकल्प पृष्ठ ताजा हो जाएगा.."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:34
+msgid "Options identical to default"
+msgstr "विकल्प डिफ़ॉल्ट के समान"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:35
+msgid "Restoration failed"
+msgstr "बहाली विफल रहा"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:43
+msgid "Select option(s)"
+msgstr "विकल्प (ओं) का चयन"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/config/messages.php:45
+msgid "Select an Icon"
+msgstr "आइकन चुनें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/control/upload.php:5
+msgid "Choose File"
+msgstr "फ़ाइल चुनें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:4
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:14
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:16
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/templates/import_recipress.php:52
+msgid "Import"
+msgstr "आयात"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:7
+msgid "Import Options"
+msgstr "आयात के विकल्प"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:27
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:37
+msgid "Export"
+msgstr "निर्यात"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/impexp.php:30
+msgid "Export Options"
+msgstr "निर्यात विकल्प"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:4
+msgid "Restore Default Options"
+msgstr "मूलभूत विकल्पों को पुनर्स्थापित"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:7
+msgid "Restore options to initial default values."
+msgstr "मूलभूत मूल्यों प्रारंभिक विकल्पों को पुनर्स्थापित."
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/restore.php:14
+msgid "** Please make sure you have already make a backup data of your current settings. Once you click this button, your current settings will be gone."
+msgstr "** कृपया आप पहले से ही अपने वर्तमान सेटिंग्स का डेटा बैकअप कर लें, इस बटन पे क्लिक करने पर अपके वर्तमान सेटिंग्स चले जायेंगें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:69
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:84
+msgid "Save Changes"
+msgstr "परिवर्तन सहेजें"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:70
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:85
+msgid "Saving Now"
+msgstr "अब सुरक्षित हो रहा है"
+
+#: wp-ultimate-recipe-premium/core/vendor/vafpress/views/option/set.php:93
+msgid "This option panel is built using <a href=\"http://vafpress.com/vafpress-framework\">Vafpress Framework %s</a> powered by <a href=\"http://vafpress.com\">Vafpress</a>"
+msgstr "This option panel is built using <a href=\"http://vafpress.com/vafpress-framework\">Vafpress Framework %s</a> powered by <a href=\"http://vafpress.com\">Vafpress</a>"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:13
+msgid "Latest News"
+msgstr "नवीनतम समाचार"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:19
+msgid "Changelog"
+msgstr "चेंजलॉग"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:646
+msgid "General Settings"
+msgstr "सामान्य सेटिंग्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:324
+msgid "Recipe Archive Pages"
+msgstr "नुस्खा संग्रह पृष्ठों"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:330
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:257
+msgid "Display"
+msgstr "प्रदर्शन"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:334
+msgid "Only the excerpt"
+msgstr "केवल अंश"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:338
+msgid "The entire recipe"
+msgstr "पूरे नुस्खा"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:349
+msgid "Display Thumbnail"
+msgstr "थंबनेल प्रदर्शित"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:392
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:968
+msgid "404 error/page not found?"
+msgstr "404 त्रुटि / पृष्ठ नहीं मिला?"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:393
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:969
+msgid "Try"
+msgstr "कोशिश"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:393
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:969
+msgid "flushing your permalinks"
+msgstr "अापके permalinks का flushing हो रहा हेे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:36
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:95
+msgid "Recipe Template"
+msgstr "पकाने की विधि टेम्पलेट"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:48
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:429
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:516
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:588
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:658
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:725
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:786
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:877
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:984
+msgid "These features are only available in "
+msgstr "इन सुविधाओं में ही उपलब्ध हैं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:736
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:797
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:888
+msgid "The shortcode can be added to any page or post."
+msgstr "shortcode किसी भी पृष्ठ या पोस्ट करने के लिए जोड़ा जा सकता है."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:807
+msgid "Allow submissions from"
+msgstr "प्रस्तुतियाँ की अनुमति"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:811
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:835
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:902
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:925
+msgid "Nobody"
+msgstr "कोई नहीं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:811
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:902
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:925
+msgid "disabled"
+msgstr "निर्योग्य"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:976
+msgid "Import Recipes"
+msgstr "व्यंजनों को आयात करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1010
+msgid "Coming Soon"
+msgstr "जल्द ही आ रहा है"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1011
+msgid "This feature is coming soon for "
+msgstr "इस सुविधा के लिए जल्द ही आ रहा है"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1003
+msgid "Export Recipes"
+msgstr "व्यंजनों को निर्यात करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1108
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1116
+msgid "FAQ & Support"
+msgstr "पूछे जाने वाले प्रश्न और सहायता"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1115
+msgid "Need more help?"
+msgstr "अधिक मदद चाहिए?"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:29
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:64
+msgid "Select a recipe to display"
+msgstr "प्रदर्शित करने के लिए एक नुस्खा चुने"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:29
+msgid "Ordered by date added"
+msgstr "तारीख के हिसाब से"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:64
+msgid "Ordered by title"
+msgstr "शीर्षक के हिसाब से"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:101
+msgid "Recipe Index"
+msgstr "पकाने की विधि सूचकांक"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:104
+msgid "Basic Recipe Index"
+msgstr "बुनियादी नुस्खा सूचकांक"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:110
+msgid "Show headers"
+msgstr "दिखाएँ हेडर"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:121
+msgid "Extended Recipe Index"
+msgstr "विस्तारित पकाने की विधि सूचकांक"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:121
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:233
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:237
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:246
+msgid "WP Ultimate Recipe Premium only"
+msgstr "WP Ultimate Recipe Premium only"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:127
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:65
+msgid "Group by"
+msgstr "समूह द्वारा"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:161
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:310
+msgid "Limit by"
+msgstr "सीमा द्वारा"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:174
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:331
+msgid "Limit by values"
+msgstr "सीमा मानों द्वारा "
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:191
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:348
+msgid "Date Added"
+msgstr "तिथि जोड़े गए"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:195
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:356
+msgid "Random"
+msgstr "रैंडम"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:205
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:366
+msgid "Sort order"
+msgstr "क्रम को सॉर्ट करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:209
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:370
+msgid "Ascending"
+msgstr "आरोही"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:213
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:374
+msgid "Descending"
+msgstr "Descending"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:223
+msgid "Max number of recipes"
+msgstr "व्यंजनों की अधिकतम संख्या"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:230
+msgid "User Interaction"
+msgstr "उपयोगकर्ता बातचीत"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:233
+msgid "User Submissions form"
+msgstr "प्रयोक्ता प्रविष्टियों फार्म"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:237
+msgid "User Menus form"
+msgstr "प्रयोक्ता मेनू फार्म"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:350
+msgid "Thumbnail position depends on the theme you use"
+msgstr "थंबनेल स्थिति आप उपयोग विषय पर निर्भर करता है"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:354
+msgid "Never"
+msgstr "कभी नहीं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:358
+msgid "Only on archive pages"
+msgstr "केवल पुरालेख पन्ने पर"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:362
+msgid "Only on recipe pages"
+msgstr "केवल नुस्खा पन्ने पर"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:366
+msgid "Always"
+msgstr "हमेशा"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:45
+msgid "Delete"
+msgstr "हटाएँ"
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:59
+msgid "Do you really want to reset the taxonomies? All custom tags will be deleted."
+msgstr "आप वास्तव में taxonomies रीसेट करना चाहते हैं? सभी कस्टम टैग को हटा दिया जाएगा."
+
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:62
+msgid "Reset to defaults"
+msgstr "रीसेट"
+
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:199
+#: wp-ultimate-recipe-premium/premium/addons/recipe-grid/recipe-grid.php:203
+msgid "No recipes found."
+msgstr "कोइ व्यंजन नहीं मिला."
+
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:77
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:113
+msgid "Amount"
+msgstr "मात्रा"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:114
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:37
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:94
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:135
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:154
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:142
+msgid "New"
+msgstr "नई"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:108
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:40
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:88
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:129
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:148
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:145
+msgid "Search"
+msgstr "खोज"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:118
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:41
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:42
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:98
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:139
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:158
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:146
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:147
+msgid "No"
+msgstr "नहीं"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:118
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:41
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:98
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:139
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:158
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:146
+msgid "found."
+msgstr "मिल गाया"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:42
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:147
+msgid "found in trash."
+msgstr "कचरे में पाया गया."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:43
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:148
+msgid "Parent"
+msgstr "जनक"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:109
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:89
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:130
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:149
+msgid "Popular"
+msgstr "लोक"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:110
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:90
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:131
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:150
+msgid "All"
+msgstr "सब"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:112
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:92
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:133
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:152
+msgid "Update"
+msgstr "अद्यतन"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:114
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:13
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:15
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:94
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:135
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:131
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:252
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:154
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:13
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:15
+msgid "Name"
+msgstr "नाम"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:115
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:95
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:136
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:155
+msgid "Separate"
+msgstr "अलग"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:115
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:95
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:136
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:155
+msgid "with commas"
+msgstr "अल्पविराम के साथ"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:116
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:96
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:137
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:156
+msgid "Add or remove"
+msgstr "जोड़ें या निकालें"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:117
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:97
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:138
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:157
+msgid "Choose from the most used"
+msgstr "सबसे अधिक इस्तेमाल से चुनें"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:45
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:46
+msgid "Custom Taxonomies"
+msgstr "कस्टम taxonomies"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page.php:4
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:46
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page.php:4
+msgid "Custom Tags"
+msgstr "कस्टम टैग"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:57
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:58
+msgid "Current Recipe Tags"
+msgstr "मान पकाने की विधि टैग"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:58
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:59
+msgid "Add new Recipe Tag"
+msgstr "नया नुस्खा टैग जोडें"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:9
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:294
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:318
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:9
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:9
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:55
+msgid "Tag"
+msgstr "टैग"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:20
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:12
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:20
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:12
+msgid "Singular Name"
+msgstr "विलक्षण नाम"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:27
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:18
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:377
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:953
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:27
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:18
+msgid "Slug"
+msgstr "Slug"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_list.php:21
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_list.php:21
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:24
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:84
+msgid "Actions"
+msgstr "Actions"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:1
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:1
+msgid "Create custom tags for your recipes."
+msgstr "अपने व्यंजनों के लिए कस्टम टैग बनाएँ."
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:8
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:8
+msgid "Currently editing tag: "
+msgstr "वर्तमान में टैग संपादन:"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:16
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:16
+msgid "(e.g. Courses)"
+msgstr "(उदाहरण के लिए कोर्स)"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:23
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:23
+msgid "(e.g. Course)"
+msgstr "(उदाहरण के लिए कोर्स)"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:30
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:30
+msgid "(e.g. http://www.yourwebsite.com/course/)"
+msgstr "(उदाहरण के लिए http://www.yourwebsite.com/course/)"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:37
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:36
+msgid "Add new tag"
+msgstr "नए टैग जोडें"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:38
+msgid "Adding new tags is only possible in"
+msgstr "नए टैग जोड़ना ही संभव है"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:41
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:38
+msgid "Edit tag"
+msgstr "टैग संपादित करें"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/templates/page_form.php:42
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/templates/page_form.php:39
+msgid "Cancel Edit"
+msgstr "संपादन रद्द करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:168
+msgid "tbsp"
+msgstr "tbsp"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:188
+msgid "olive oil"
+msgstr "जैतून का तेल"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:192
+msgid "extra virgin"
+msgstr "extra virgin"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:279
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:289
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:299
+msgid "Custom"
+msgstr "अपनी खुद की"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:130
+msgid "Menus"
+msgstr "मेनू"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:131
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:166
+msgid "Menu"
+msgstr "मेनू"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:869
+msgid "User Menus"
+msgstr "उपयोगकर्ता मेनू"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:815
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:839
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:906
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:929
+msgid "Guests and registered users"
+msgstr "मेहमान और पंजीकृत उपयोगकर्ताओं"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:819
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:843
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:910
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:933
+msgid "Registered users only"
+msgstr "केवल पंजीकृत उपयोगकर्ताओं के लिए"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:389
+msgid "Sorry, the site administrator has disabled user menus."
+msgstr "क्षमा करें, साइट व्यवस्थापक उपयोगकर्ता मेनू अक्षम कर दिया है."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:394
+msgid "Sorry, only registered users may create menus."
+msgstr "क्षमा करें, केवल मेनू बना सकते हैं."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:179
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:336
+msgid "Sort by"
+msgstr "क्रमबद्ध करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:831
+msgid "Publish recipe immediately on submission."
+msgstr "नुस्खा प्रकाशित करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:854
+msgid "Submission form CSS"
+msgstr "CSS फार्म जमा करे"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:855
+msgid "Add basic CSS styles to the frontend form."
+msgstr "बुनियादी CSS शैली frontend फार्म मे जोदे"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:72
+msgid "Sorry, the site administrator has disabled recipe submissions."
+msgstr "क्षमा करें, साइट व्यवस्थापक नुस्खा प्रस्तुतियाँ अक्षम कर दिया है."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:85
+msgid "Sorry, only registered users may submit recipes."
+msgstr "क्षमा करें, केवल व्यंजनों जमा कर सकता है."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:4
+msgid "Recipe title"
+msgstr "पकाने की विधि शीर्षक"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:10
+msgid "Your name"
+msgstr "आपका नाम"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:16
+msgid "Featured image"
+msgstr "विशेष रुप से छवि"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:21
+msgid "Add Featured Image"
+msgstr "विशेष रुप से छवि जोड़ें"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:22
+msgid "Remove Featured Image"
+msgstr "विशेष रुप से प्रदर्शित छवि निकालें"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/templates/public_recipe_form.php:68
+msgid "Submit"
+msgstr "सबमिट"
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:155
+msgid "Recipe submitted! Thank you, your recipe is now awaiting moderation."
+msgstr "पकाने की विधि प्रस्तुत! अपने नुस्खा प्रकाशित किया गया है, धन्यवाद."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:157
+msgid "Recipe submitted! Thank you, your recipe has been published."
+msgstr "पकाने की विधि प्रस्तुत! अपने नुस्खा प्रकाशित किया गया है, धन्यवाद."
+
+#: wp-ultimate-recipe-premium/premium/addons/user-submissions/user-submissions.php:187
+msgid "Anonymous"
+msgstr "गुमनाम"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:135
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:187
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:344
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:16
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:62
+msgid "Author"
+msgstr "लेखक"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:16
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:270
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:183
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:340
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:15
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:37
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:61
+msgid "Title"
+msgstr "शीर्षक"
+
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:80
+msgid "Date"
+msgstr "तिथि"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:334
+msgid "Recipe notes"
+msgstr "पकाने की विधि के नोट्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:12
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:408
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:581
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:651
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:718
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:33
+msgid "General"
+msgstr "सामान्य"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:24
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:16
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:43
+msgid "Description"
+msgstr "विवरण"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:37
+msgid "star"
+msgstr "सितारा"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:37
+msgid "stars"
+msgstr "सितारे"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:35
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:44
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:60
+msgid "Servings"
+msgstr "सर्विंग"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:48
+msgid "(e.g. 2 people, 3 loafs, ...)"
+msgstr "(उदाहरण के लिए 2 लोगों, 3 loafs, ...)"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/layout/container.php:32
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/layout/container.php:33
+#: wp-ultimate-recipe-premium/core/helpers/migration/1_0_9_free_text_times.php:14
+#: wp-ultimate-recipe-premium/core/helpers/migration/1_0_9_free_text_times.php:17
+#: wp-ultimate-recipe-premium/core/helpers/migration/1_0_9_free_text_times.php:20
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:26
+#: wp-ultimate-recipe-premium/core/helpers/recipe_demo.php:28
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:160
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:161
+#: wp-ultimate-recipe-premium/premium/addons/import-recipress/import-recipress.php:162
+msgid "minutes"
+msgstr "मिनट"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:77
+msgid "Don't forget that you can tag your recipe with <strong>Courses</strong> and <strong>Cuisines</strong> by using the boxes on the right. Use the <strong>featured image</strong> if you want a photo of the finished dish."
+msgstr "आप <strong> </strong> पाठ्यक्रम और <strong> व्यंजनों सही पर बॉक्स का उपयोग करके </strong> के साथ अपने नुस्खा टैग कर सकते हैं कि मत भूलना. आप समाप्त पकवान की एक तस्वीर चाहते हैं <strong> छपा छवि </strong> का प्रयोग करें."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:200
+msgid "Add an ingredient"
+msgstr "एक घटक जोड़ें"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:206
+msgid "<strong>Use the TAB key</strong> while adding ingredients, it will automatically create new fields. <strong>Don't worry about empty lines</strong>, these will be ignored."
+msgstr "सामग्री को जोड़ते समय <strong> TAB कुंजी </strong> का प्रयोग करें, यह स्वचालित रूप से नए क्षेत्रों बनाएगा. <strong> खाली लाइनों </strong>, इन नजरअंदाज कर दिया जाएगा के बारे में चिंता मत करो."
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:45
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:209
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:18
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:87
+msgid "Instructions"
+msgstr "निर्देश"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:286
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:306
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:314
+msgid "Add Image"
+msgstr "छवि जोड़ें"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:287
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:315
+msgid "Remove Image"
+msgstr "छवि को हटाएँ"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:325
+msgid "Add an instruction"
+msgstr "अनुदेश जोड़ें"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:331
+msgid "<strong>Use the TAB key</strong> while adding instructions, it will automatically create new fields. <strong>Don't worry about empty lines</strong>, these will be ignored."
+msgstr "निर्देशों को जोड़ते समय <strong> TAB कुंजी </strong> का प्रयोग करें, यह स्वचालित रूप से नए क्षेत्रों बनाएगा. <strong> खाली लाइनों </strong>, इन नजरअंदाज कर दिया जाएगा के बारे में चिंता मत करो."
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:37
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:52
+msgid "Prep Time"
+msgstr "तैयारी का समय"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:39
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:60
+msgid "Cook Time"
+msgstr "पकाने का समय"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:51
+msgid "Powered by"
+msgstr "संचालित द्वारा"
+
+#: wp-ultimate-recipe-premium/core/helpers/admin_tour.php:46
+msgid "Recipe Settings"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/plugin_action_link.php:12
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:8
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:33
+#: wp-ultimate-recipe-premium/core/helpers/vafpress_menu.php:34
+msgid "Settings"
+msgstr "सेटिंग्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:151
+msgid "Recipe Box"
+msgstr ""
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:162
+msgid "Adjustable Servings"
+msgstr "समायोज्य सर्विंग्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:163
+msgid "Allow users to dynamically adjust the servings of recipes."
+msgstr "उपयोगकर्ताओं को गतिशील बनाने की विधि के सर्विंग समायोजित करने की अनुमति."
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:186
+msgid "Link to plugin"
+msgstr "प्लगइन करने के लिए लिंक"
+
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:187
+msgid "Show a link to the plugin website as a little thank you."
+msgstr "एक छोटे से धन्यवाद के रूप में प्लगइन वेबसाइट पर एक लिंक दिखाएँ."
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:20
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:4
+msgid "Recipes"
+msgstr "पाक विधि"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_meta_box.php:37
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:21
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:1024
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:35
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:70
+msgid "Recipe"
+msgstr "पाक विधि"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:113
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:33
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:34
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:93
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:134
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:153
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:138
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:139
+msgid "Add New"
+msgstr "नया जोड़े"
+
+#: wp-ultimate-recipe-premium/core/addons/basic-custom-taxonomies/basic-custom-taxonomies.php:111
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:35
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:36
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:91
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:132
+#: wp-ultimate-recipe-premium/premium/addons/custom-taxonomies/custom-taxonomies.php:151
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:140
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:141
+msgid "Edit"
+msgstr "संपादित करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:38
+#: wp-ultimate-recipe-premium/core/helpers/recipe_post_type.php:39
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:143
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/user-menus.php:144
+msgid "View"
+msgstr "जाँच करें"
+
+#: wp-ultimate-recipe-premium/core/helpers/shortcodes/index_shortcode.php:51
+#: wp-ultimate-recipe-premium/premium/helpers/shortcodes/extended_index_shortcode.php:155
+msgid "You have to create a recipe first, check the 'Recipes' menu on the left."
+msgstr "पहले एक नुस्खा की रचना करे, बाईं तरफ 'व्यंजनों' मेनू की जाँच करें"
+
+#: wp-ultimate-recipe-premium/core/addons/custom-templates/templates/general/title.php:43
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:83
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:47
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_menu_options.php:194
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:17
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:56
+msgid "Ingredients"
+msgstr " सामग्रीयॉ"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:107
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:47
+#: wp-ultimate-recipe-premium/premium/addons/import-text/templates/import_text.php:79
+#: wp-ultimate-recipe-premium/premium/addons/user-menus/templates/user-menus.php:112
+msgid "Ingredient"
+msgstr " सामग्री"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:48
+msgid "Courses"
+msgstr "कोर्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:48
+msgid "Course"
+msgstr "कोर्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:54
+msgid "Breakfast"
+msgstr "नाश्ता"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:55
+msgid "Appetizer"
+msgstr "क्षुधावर्धक"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:56
+msgid "Soup"
+msgstr "सूप"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:57
+msgid "Main Course"
+msgstr "मेन कोर्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:58
+msgid "Side Dish"
+msgstr "साइड डिश"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:59
+msgid "Salad"
+msgstr " सलाद"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:60
+msgid "Dessert"
+msgstr ""
+"डिज़र्ट\n"
+"मिठाई"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:61
+msgid "Snack"
+msgstr "नाश्ता"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:62
+msgid "Drinks"
+msgstr "ड्रिंक्स"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:49
+msgid "Cuisines"
+msgstr "कुसाइन"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:49
+msgid "Cuisine"
+msgstr "कुसाइन"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:64
+msgid "French"
+msgstr "फ्रेंच"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:65
+msgid "Italian"
+msgstr "इतावली"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:66
+msgid "Mediterranean"
+msgstr "मेडिटेरेनियन"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:67
+msgid "Indian"
+msgstr "भारतीय"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:68
+msgid "Chinese"
+msgstr "चीनी"
+
+#: wp-ultimate-recipe-premium/core/helpers/ingredient_units.php:394
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:69
+msgid "Japanese"
+msgstr "जापानी"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:70
+msgid "American"
+msgstr "अमेरिकी"
+
+#: wp-ultimate-recipe-premium/core/helpers/taxonomies.php:71
+msgid "Mexican"
+msgstr "मेक्सिकन"
+
+#: wp-ultimate-recipe-premium/core/helpers/recipe_form.php:30
+#: wp-ultimate-recipe-premium/core/helpers/vafpress/vafpress_shortcode_options.php:352
+#: wp-ultimate-recipe-premium/premium/addons/user-ratings/templates/user_rating.php:38
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:20
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:49
+#: wp-ultimate-recipe-premium/premium/helpers/recipe_columns.php:67
+msgid "Rating"
+msgstr "रेटिंग"

@@ -1,0 +1,30 @@
+body {
+  font-family: "Open Sans", arial, sans-serif;
+  font-size: 1em;
+}
+
+#wpurp-meal-plan-shopping-list-mobile-tip {
+  font-size: 0.8em;
+  color: #999;
+  margin-bottom: 10px;
+  display: none;
+}
+
+table {
+  width: 100%;
+
+  tr.ingredient-checked {
+    td {
+      text-decoration: line-through;
+      color: #999;
+    }
+  }
+
+  th, .wpurp-shopping-list-group td {
+    font-weight: bold;
+  }
+
+  .wpurp-shopping-list-group td {
+    padding-top: 10px;
+  }
+}

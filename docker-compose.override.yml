@@ -1,0 +1,17 @@
+version: '3.5'
+services:
+  hannablog:
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    environment:
+      - WORDPRESS_DB_HOST=paris.oktibor.com:3307
+      - WORDPRESS_DB_NAME=hannablog_local
+    volumes:
+      - ./.htaccess.local:/var/www/html/.htaccess
+
+networks:
+  nginx:
+   external: false
+  mysql:
+   external: false

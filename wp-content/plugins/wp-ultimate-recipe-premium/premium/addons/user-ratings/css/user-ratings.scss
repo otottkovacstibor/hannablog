@@ -1,0 +1,21 @@
+.wpurp-container {
+    .user-star-rating.user-can-vote i {
+        cursor: pointer;
+    }
+}
+
+html body .wpurp-recipe-stars .recipe-tooltip-content {
+    min-width: 120px !important;
+
+    .vote-attention-message {
+        display: none;
+        text-align: center;
+    }
+
+    .user-rating-votes,
+    .user-rating-rating,
+    .user-rating-current-rating {
+        font-weight: bold;
+        float: right;
+    }
+}

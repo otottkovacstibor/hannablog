@@ -1,0 +1,94 @@
+.wpurp-ingredients-nutritional {
+    .column-ingredient  { width: 25%; }
+    .column-actions     { width: 25%; }
+    .column-nutritional { width: 50%; }
+
+    .nutritional-panel-row {
+        padding: 0;
+    }
+
+    .nutritional-panel {
+        display: none;
+        padding: 10px;
+
+        background-color: #eee;
+        border-bottom: 1px solid #0074a2;
+
+        .get-nutritional, .get-nutritional-results, .edit-nutritional {
+            display: none;
+        }
+
+        .get-nutritional-results {
+            table {
+                border-collapse: collapse;
+                width: 100%;
+
+                tr {
+                    &:nth-child(2n) {
+                        background-color: #ddd;
+                    }
+                }
+
+                td {
+                    vertical-align: middle;
+                    padding: 2px 5px;
+
+                    &:nth-child(1) { width: 5%; }
+                    &:nth-child(2) { width: 30%; }
+                    &:nth-child(3) { width: 15%; }
+                    &:nth-child(4) { width: 50%; }
+                }
+            }
+        }
+
+        .edit-nutritional {
+            table {
+                tr:first-child {
+                    td {
+                        font-weight: bold;
+                        background-color: #ddd;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wpurp-recipe-nutritional {
+    .calculate-recipe-row {
+        padding: 0;
+    }
+
+    .calculate-recipe-panel {
+        display: none;
+        padding: 10px;
+
+        background-color: #eee;
+        border-bottom: 1px solid #0074a2;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        td {
+            vertical-align: middle;
+            padding: 2px 5px;
+            width: 33%;
+
+            input {
+                width: 75px;
+
+                &.wide {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    table.nutritional-data {
+        td {
+            width: 25%;
+        }
+    }
+}

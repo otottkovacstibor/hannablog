@@ -1,0 +1,14 @@
+.wprm-spacer {
+    display: block !important;
+    background: none !important;
+    font-size: 0;
+    line-height: 0;
+
+    width: 100%;
+    height: 10px;
+}
+
+// Hide consecutive spacers.
+.wprm-spacer + .wprm-spacer {
+    display: none !important;
+}
