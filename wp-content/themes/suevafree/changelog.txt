@@ -1,5 +1,9 @@
 SuevaFree Changelog
 
+- Version 3.6.3 - Released: 22.11.2018
+
+-- Updated : WooCommerce templates.
+
 - Version 3.6.2 - Released: 01.11.2018
 
 -- Added  : WooCommerce linkable product thumbnails 
