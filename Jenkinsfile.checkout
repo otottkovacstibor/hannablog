@@ -2,11 +2,17 @@ node {
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([cron('@daily')])])
     
     ws('/disk/docker/hannablog') {
+        def isChanged = sh(script: "git status --porcelain", returnStdout: true).trim()
+        if (!isChanged) {
+            currentBuild.result = 'SUCCESS'
+            return
+        }
+
         ansiColor('xterm') {
             stage('Commit') {
                 Date date = new Date()
                 String datePart = date.format("yyyy-MM-dd HH:mm:ss")
-                sh("git commit -a -m 'Sync ${datePart} [skip ci]' || exit 0")
+                sh("git commit -a -m 'Sync ${datePart} [skip ci]'")
             }
             stage('Push') {
                 sshagent(['oktibor-ci']) {
