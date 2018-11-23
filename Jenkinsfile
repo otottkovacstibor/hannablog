@@ -1,4 +1,6 @@
 node('master') {
+  properties([buildDiscarder(logRotator(numToKeepStr: '5')), [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/Tibi02/hannablog'], pipelineTriggers([githubPush()])])
+  
   ws('/disk/docker/hannablog') {
     stage('Git checkout') {
       ansiColor('xterm') {
