@@ -1,0 +1,18 @@
+node {
+    properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([cron('@daily')])])
+    
+    ws('/disk/docker/hannablog') {
+        ansiColor('xterm') {
+            stage('Commit') {
+                Date date = new Date()
+                String datePart = date.format("yyyy-MM-dd HH:mm:ss")
+                sh("git commit -a -m 'Sync ${datePart} [skip ci]' || exit 0")
+            }
+            stage('Push') {
+                sshagent(['oktibor-ci']) {
+                    sh('git push origin master')
+                }
+            }
+        }
+    }
+}
