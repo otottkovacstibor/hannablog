@@ -118,6 +118,10 @@
 						if(!preg_match("/\/$/", $_SERVER["REQUEST_URI"])){
 							if(defined('WPFC_CACHE_QUERYSTRING') && WPFC_CACHE_QUERYSTRING){
 							
+							}else if(preg_match("/gclid\=/i", $this->cacheFilePath)){
+								
+							}else if(preg_match("/fbclid\=/i", $this->cacheFilePath)){
+
 							}else if(preg_match("/utm_(source|medium|campaign|content|term)/i", $this->cacheFilePath)){
 
 							}else{
@@ -130,7 +134,7 @@
 				}
 			}
 			
-			$this->remove_google_analytics_paramters();
+			$this->remove_url_paramters();
 
 			// to decode path if it is not utf-8
 			if($this->cacheFilePath){
@@ -138,9 +142,25 @@
 			}
 		}
 
-		public function remove_google_analytics_paramters(){
+		public function remove_url_paramters(){
+			$action = false;
+
+			//to remove query strings for cache if Google Click Identifier are set
+			if(preg_match("/gclid\=/i", $this->cacheFilePath)){
+				$action = true;
+			}
+
+			//to remove query strings for cache if facebook parameters are set
+			if(preg_match("/fbclid\=/i", $this->cacheFilePath)){
+				$action = true;
+			}
+
 			//to remove query strings for cache if google analytics parameters are set
 			if(preg_match("/utm_(source|medium|campaign|content|term)/i", $this->cacheFilePath)){
+				$action = true;
+			}
+
+			if($action){
 				if(strlen($_SERVER["REQUEST_URI"]) > 1){ // for the sub-pages
 
 					$this->cacheFilePath = preg_replace("/\/*\?.+/", "", $this->cacheFilePath);
@@ -374,6 +394,8 @@
 					if($create_cache){
 						$this->startTime = microtime(true);
 
+
+						add_action('wp', array($this, "detect_current_page_type"));
 						add_action('get_footer', array($this, "detect_current_page_type"));
 						add_action('get_footer', array($this, "wp_print_scripts_action"));
 
@@ -761,6 +783,10 @@
 				// jsFileLocation:"//domain.com/wp-content/plugins/revslider/public/assets/js/"
 				// </script>
 				$content = preg_replace_callback("/(jsFileLocation)\s*\:[\"\']([^\"\']+)[\"\']/i", array($this, 'cdn_replace_urls'), $content);
+
+
+				// <form data-product_variations="[{&quot;src&quot;:&quot;//domain.com\/img.jpg&quot;}]">
+				$content = preg_replace_callback("/data-product_variations\=[\"\'][^\"\']+[\"\']/i", array($this, 'cdn_replace_urls'), $content);
 			}
 
 			return $content;
@@ -831,7 +857,7 @@
 			$name = "";
 			
 			foreach ($arr as $tag_key => $tag_value){
-				$tmp = preg_replace("/\?.*/", "", $tag_value["href"]); //to remove version number
+				$tmp = preg_replace("/(\.css|\.js)\?.*/", "$1", $tag_value["href"]); //to remove version number
 				$name = $name.$tmp;
 			}
 			

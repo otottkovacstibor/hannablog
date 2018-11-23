@@ -1,10 +1,10 @@
 === WP Fastest Cache ===
 Contributors: emrevona
 Donate link: http://profiles.wordpress.org/emrevona/
-Tags: cache, performance, wp-cache, total cache, super cache
+Tags: cache, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 4.9
-Stable tag: 0.8.8.6
+Stable tag: 0.8.8.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,6 +102,17 @@ Wpfc does not support Wordpress Multisite yet.
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.8.7 =
+* to fix error which is Undefined index: SERVER_PORT
+* to prevent running preload when cache is disabled
+* to change saving options and notice system
+* to replace image urls of woocommerce variable with cdn-url
+* to fix url() problem for data:font/opentype
+* to add add_action('wp') for detection current page type
+* to support non-latin characters for clearing category cache
+* to show cache if the url contains “fbclid” (Facebook Click Identifier)
+* to show cache if the url contains “gclid” (Google Click Identifier)
 
 = 0.8.8.6 =
 * to show single clear cache button for the pages

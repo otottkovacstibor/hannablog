@@ -10,9 +10,6 @@
 		public function __construct(){
 			$this->options = $this->getOptions();
 			
-			//to call like that because on WP Multisite current_user_can() cannot get the user
-			add_action('admin_init', array($this, "optionsPageRequest"));
-
 			$this->setCronJobSettings();
 			$this->addButtonOnEditor();
 			add_action('admin_enqueue_scripts', array($this, 'addJavaScript'));
@@ -116,7 +113,7 @@
 					include_once ABSPATH."wp-includes/pluggable.php";
 
 					if(is_multisite()){
-						$this->systemMessage = array("The plugin does not work with Multisite", "error");
+						$this->notify(array("The plugin does not work with Multisite", "error"));
 						return 0;
 					}
 
@@ -214,6 +211,11 @@
 
 		public function saveOption(){
 			unset($_POST["wpFastestCachePage"]);
+			unset($_POST["option_page"]);
+			unset($_POST["action"]);
+			unset($_POST["_wpnonce"]);
+			unset($_POST["_wp_http_referer"]);
+			
 			$data = json_encode($_POST);
 			//for optionsPage() $_POST is array and json_decode() converts to stdObj
 			$this->options = json_decode($data);
@@ -243,6 +245,8 @@
 					}
 				}
 			}
+
+			$this->notify($this->systemMessage);
 		}
 
 		public function checkCachePathWriteable(){
@@ -298,7 +302,7 @@
 			// }
 
 			if(!file_exists($path.".htaccess")){
-				if(isset($_SERVER["SERVER_SOFTWARE"]) && $_SERVER["SERVER_SOFTWARE"] && preg_match("/nginx/i", $_SERVER["SERVER_SOFTWARE"])){
+				if(isset($_SERVER["SERVER_SOFTWARE"]) && $_SERVER["SERVER_SOFTWARE"] && (preg_match("/iis/i", $_SERVER["SERVER_SOFTWARE"]) || preg_match("/nginx/i", $_SERVER["SERVER_SOFTWARE"]))){
 					//
 				}else{
 					return array("<label>.htaccess was not found</label> <a target='_blank' href='http://www.wpfastestcache.com/warnings/htaccess-was-not-found/'>Read More</a>", "error");
@@ -374,10 +378,10 @@
 
 				file_put_contents($path.".htaccess", $htaccess);
 			}else{
-				return array("Options have been saved", "success");
+				return array("Options have been saved", "updated");
 				//return array(".htaccess is not writable", "error");
 			}
-			return array("Options have been saved", "success");
+			return array("Options have been saved", "updated");
 
 		}
 
@@ -808,8 +812,6 @@
 		}
 
 		public function optionsPage(){
-			$this->systemMessage = count($this->systemMessage) > 0 ? $this->systemMessage : $this->getSystemMessage();
-
 			$wpFastestCacheCombineCss = isset($this->options->wpFastestCacheCombineCss) ? 'checked="checked"' : "";
 			$wpFastestCacheGoogleFonts = isset($this->options->wpFastestCacheGoogleFonts) ? 'checked="checked"' : "";
 			$wpFastestCacheGzip = isset($this->options->wpFastestCacheGzip) ? 'checked="checked"' : "";
@@ -873,9 +875,9 @@
 			<div class="wrap">
 
 				<h2>WP Fastest Cache Options</h2>
-				<?php if($this->systemMessage){ ?>
-					<div style="display:block !important;" class="updated <?php echo $this->systemMessage[1]."-wpfc"; ?>" id="message"><p><?php echo $this->systemMessage[0]; ?></p></div>
-				<?php } ?>
+				
+				<?php settings_errors("wpfc-notice"); ?>
+
 				<div class="tabGroup">
 					<?php
 						$tabs = array(array("id"=>"wpfc-options","title"=>"Settings"),
@@ -907,7 +909,9 @@
 					?>
 				    <br>
 				    <div class="tab1" style="padding-left:10px;">
-						<form method="post" name="wp_manager">
+						<form method="post" name="wp_manager" action="options.php">
+							<?php settings_fields( 'wpfc-group' ); ?>
+
 							<input type="hidden" value="options" name="wpFastestCachePage">
 							<div class="questionCon">
 								<div class="question">Cache System</div>
@@ -1254,7 +1258,14 @@
 																"tr" => "Türkçe"
 															);
 											foreach($lang_array as $lang_array_key => $lang_array_value){
-												$option_selected = ($this->options->wpFastestCacheLanguage == $lang_array_key) ? 'selected="selected"' : "";
+												if(isset($this->options->wpFastestCacheLanguage) && $this->options->wpFastestCacheLanguage == $lang_array_key){
+													$option_selected = 'selected="selected"';
+												}else if($lang_array_key == "eng"){
+													$option_selected = 'selected="selected"';
+												}else{
+													$option_selected = "";
+												}
+
 												echo '<option '.$option_selected.' value="'.$lang_array_key.'">'.$lang_array_value.'</option>';
 											}
 										?>
@@ -1325,7 +1336,8 @@
 			   				}
 				   		?>
 				   		<h2 id="delete-cache-h2" style="padding-left:20px;padding-bottom:10px;">Delete Cache</h2>
-				    	<form method="post" name="wp_manager" class="delete-line">
+				    	<form method="post" name="wp_manager" class="delete-line" action="options.php">
+							<?php settings_fields( 'wpfc-group' ); ?>
 				    		<input type="hidden" value="deleteCache" name="wpFastestCachePage">
 				    		<div class="questionCon qsubmit left">
 				    			<div class="submit"><input type="submit" value="Delete Cache" class="button-primary"></div>
@@ -1337,7 +1349,8 @@
 				    			</div>
 				    		</div>
 				   		</form>
-				   		<form method="post" name="wp_manager" class="delete-line" style="height: 120px;">
+				   		<form method="post" name="wp_manager" class="delete-line" style="height: 120px;" action="options.php">
+				   			<?php settings_fields( 'wpfc-group' ); ?>
 				    		<input type="hidden" value="deleteCssAndJsCache" name="wpFastestCachePage">
 				    		<div class="questionCon qsubmit left">
 				    			<div class="submit"><input type="submit" value="Delete Cache and Minified CSS/JS" class="button-primary"></div>

@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.8.6
+Version: 0.8.8.7
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -277,6 +277,14 @@ GNU General Public License for more details.
 						//for cache
 						$this->cache();
 					}
+				}
+			}
+		}
+
+		public function notify($message = array()){
+			if(isset($message[0]) && $message[0]){
+				if(function_exists("add_settings_error")){
+					add_settings_error('wpfc-notice', esc_attr( 'settings_updated' ), $message[0], $message[1]);
 				}
 			}
 		}
@@ -629,9 +637,25 @@ GNU General Public License for more details.
 			}
 		}
 
+		public function tmp_saveOption(){
+			if(!empty($_POST)){
+				if(isset($_POST["wpFastestCachePage"])){
+					include_once('inc/admin.php');
+					$wpfc = new WpFastestCacheAdmin();
+					$wpfc->optionsPageRequest();
+				}
+			}
+		}
+
+		public function register_mysettings(){
+			register_setting('wpfc-group', 'wpfc-group', array($this, 'tmp_saveOption'));
+		}
+
 		public function register_my_custom_menu_page(){
 			if(function_exists('add_menu_page')){ 
 				add_menu_page("WP Fastest Cache Settings", "WP Fastest Cache", 'manage_options', "wpfastestcacheoptions", array($this, 'optionsPage'), plugins_url("wp-fastest-cache/images/icon-32x32.png"));
+				add_action('admin_init', array($this, 'register_mysettings'));
+
 				wp_enqueue_style("wp-fastest-cache", plugins_url("wp-fastest-cache/css/style.css"), array(), time(), "all");
 			}
 						
@@ -902,6 +926,7 @@ GNU General Public License for more details.
 			if(preg_match("/^http/", $url)){
 				$path = preg_replace("/https?\:\/\/[^\/]+/i", "", $url);
 				$path = trim($path, "/");
+				$path = urldecode($path);
 
 				// to remove the cache of tag/cat
 				@unlink($this->getWpContentDir()."/cache/all/".$path."/index.html");
@@ -1037,7 +1062,7 @@ GNU General Public License for more details.
 			if($created_tmpWpfc && $cache_deleted && $minifed_deleted){
 				do_action('wpfc_delete_cache');
 				
-				$this->systemMessage = array("All cache files have been deleted","success");
+				$this->notify(array("All cache files have been deleted", "updated"));
 
 				if($this->isPluginActive("wp-fastest-cache-premium/wpFastestCachePremium.php")){
 					include_once $this->get_premium_path("logs.php");
@@ -1046,7 +1071,7 @@ GNU General Public License for more details.
 					$log->action();
 				}
 			}else{
-				$this->systemMessage = array("Permissions Problem: <a href='http://www.wpfastestcache.com/warnings/delete-cache-problem-related-to-permission/' target='_blank'>Read More</a>", "error", array("light_box" => "delete_cache_permission_error"));
+				$this->notify(array("Permissions Problem: <a href='http://www.wpfastestcache.com/warnings/delete-cache-problem-related-to-permission/' target='_blank'>Read More</a>", "error"));
 			}
 
 			// for ajax request
@@ -1136,10 +1161,15 @@ GNU General Public License for more details.
 
 		public function create_preload_cache(){
 			if($data = get_option("WpFastestCachePreLoad")){
+				$this->options = $this->getOptions();
+
+				if(!isset($this->options->wpFastestCacheStatus)){
+					die("Cache System must be enabled");
+				}
+
+
 				$count_posts = wp_count_posts("post");
 				$count_pages = wp_count_posts('page');
-
-				$this->options = $this->getOptions();
 
 				$pre_load = json_decode($data);
 
@@ -1845,7 +1875,10 @@ GNU General Public License for more details.
 						}
 					}
 
-					if(preg_match("/\{\"concatemoji\"\:\"[^\"]+\"\}/i", $matches[0])){
+					if(preg_match("/data-product_variations\=[\"\'][^\"\']+[\"\']/i", $matches[0])){
+						$matches[0] = preg_replace("/(http(s?)\:)?".preg_quote("\/\/", "/")."(www\.)?/i", "", $matches[0]);
+						$matches[0] = preg_replace("/".preg_quote($cdn->originurl, "/")."/i", $cdnurl, $matches[0]);
+					}else if(preg_match("/\{\"concatemoji\"\:\"[^\"]+\"\}/i", $matches[0])){
 						$matches[0] = preg_replace("/(http(s?)\:)?".preg_quote("\/\/", "/")."(www\.)?/i", "", $matches[0]);
 						$matches[0] = preg_replace("/".preg_quote($cdn->originurl, "/")."/i", $cdnurl, $matches[0]);
 					}else if(isset($matches[2]) && preg_match("/".preg_quote($cdn->originurl, "/")."/", $matches[2])){

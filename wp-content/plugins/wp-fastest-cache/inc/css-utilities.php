@@ -401,7 +401,9 @@
 		public function newImgPath($matches){
 			$matches[1] = trim($matches[1]);
 			
-			if(preg_match("/data\:image\/svg\+xml/", $matches[1])){
+			if(preg_match("/data\:font\/opentype/i", $matches[1])){
+				$matches[1] = $matches[1];
+			}else if(preg_match("/data\:image\/svg\+xml/i", $matches[1])){
 				$matches[1] = $matches[1];
 			}else{
 				$matches[1] = str_replace(array("\"","'"), "", $matches[1]);
