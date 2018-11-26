@@ -193,7 +193,7 @@ class WPRM_SC_Nutrition_Label extends WPRM_Template_Shortcode {
 				foreach ( $nutrition_fields as $field => $options ) {
 					if ( isset( $nutrition[ $field ] ) && false !== $nutrition[ $field ] && ( WPRM_Settings::get( 'nutrition_label_zero_values' ) || $nutrition[ $field ] ) ) {
 						$field_output = '<span class="wprm-nutrition-label-text-nutrition-container">';
-						$field_output .= '<span class="wprm-nutrition-label-text-nutrition-label  wprm-block-text-' . $atts['label_style'] . '" style="color: ' . $atts['label_color'] . '">' . $options['label']. $atts['label_separator'] . '</span>';
+						$field_output .= '<span class="wprm-nutrition-label-text-nutrition-label  wprm-block-text-' . $atts['label_style'] . '" style="color: ' . $atts['label_color'] . '">' . __( $options['label'] , 'wp-recipe-maker-premium' ) . $atts['label_separator'] . '</span>';
 						$field_output .= '<span class="wprm-nutrition-label-text-nutrition-value" style="color: ' . $atts['value_color'] . '">' . $nutrition[ $field ] . '</span>';
 						$field_output .= '<span class="wprm-nutrition-label-text-nutrition-unit" style="color: ' . $atts['value_color'] . '">' . $options['unit'] . '</span>';
 						$field_output .= '</span>';

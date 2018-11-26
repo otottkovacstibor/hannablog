@@ -16,7 +16,6 @@ export default class Block extends Component {
             fullShortcode: '',
             html: '',
             loading: false,
-            loadingQueued: false,
             blockMode: 'edit',
         }
     }
@@ -45,33 +44,17 @@ export default class Block extends Component {
     }
 
     updatePreview() {
-        if ( this.state.loading ) {
-            // Already loading. Set another one for the queue;
-            if ( ! this.state.loadingQueued ) {
+        this.setState({
+            loading: true,
+        });
+
+        API.previewShortcode( this.props.shortcode.uid, this.state.fullShortcode )
+            .then((data) => {
                 this.setState({
-                    loadingQueued: true,
+                    html: data.hasOwnProperty( this.props.shortcode.uid ) ? data[ this.props.shortcode.uid ] : '',
+                    loading: false,
                 });
-            }
-        } else {
-            // Not loading right now, start loading.
-            this.setState({
-                loading: true,
-                loadingQueued: false,
             });
-
-            API.previewShortcode( this.state.fullShortcode )
-                .then((json) => {
-                    this.setState({
-                        html: json && json.success ? json.data.html : '',
-                        loading: false,
-                    });
-
-                    // Another one in the queue? Update again!
-                    if(this.state.loadingQueued) {
-                        this.updatePreview();
-                    }
-                });
-        }
     }
 
     getBlockProperties(shortcode = this.props.shortcode) {

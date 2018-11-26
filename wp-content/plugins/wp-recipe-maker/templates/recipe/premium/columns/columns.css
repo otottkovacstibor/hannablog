@@ -4,7 +4,6 @@
 	border-color: #aaaaaa; /* wprm_border type=color */
 	border-radius: 0px; /* wprm_border_radius type=size */
 	padding: 10px;
-	margin: 20px 0;
 }
 .wprm-recipe-template-columns-name-stars-container {
 	display: flex;

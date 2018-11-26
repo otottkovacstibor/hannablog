@@ -26,7 +26,7 @@ registerBlockType( 'wp-recipe-maker/nutrition-label', {
                     id: {
                         type: 'number',
                         shortcode: ( { named: { id = '' } } ) => {
-                            return id.replace( 'id', '' );
+                            return parseInt( id.replace( 'id', '' ) );
                         },
                     },
                     align: {

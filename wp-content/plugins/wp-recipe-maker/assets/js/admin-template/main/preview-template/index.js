@@ -8,6 +8,7 @@ import '../../../../../../wp-recipe-maker-premium/assets/css/public/nutrition-la
 import '../../../../../../wp-recipe-maker-premium/assets/css/public/servings-changer.scss';
 
 import Helpers from '../../general/Helpers';
+import Loader from '../../general/Loader';
 import Block from './Block';
 import AddBlocks from '../../menu/AddBlocks';
 import RemoveBlocks from '../../menu/RemoveBlocks';
@@ -111,25 +112,28 @@ export default class PreviewTemplate extends Component {
         }
 
         // Get HTML with shortcodes replaced by blocks.
-        const parsedHtml = Parser(htmlToParse, {
-            replace: function(domNode) {
-                if (domNode.name == 'wprm-replace-shortcode-with-block') {
-                    const recipeId = this.state.recipe ? this.state.recipe.id : false;
-
-                    return <Block
-                                recipeId={ recipeId }
-                                shortcode={ shortcodes[ domNode.attribs.uid ] }
-                                shortcodes={ shortcodes }
-                                onBlockPropertyChange={ this.onBlockPropertyChange.bind(this) }
-                                onBlockPropertiesChange={ this.onBlockPropertiesChange.bind(this) }
-                                editingBlock={this.state.editingBlock}
-                                onChangeEditingBlock={this.onChangeEditingBlock.bind(this)}
-                                hoveringBlock={this.state.hoveringBlock}
-                                onChangeHoveringBlock={this.onChangeHoveringBlock.bind(this)}
-                            />;
-                }
-            }.bind(this)
-        });
+        let parsedHtml = <Loader/>;
+        try {
+            parsedHtml = Parser(htmlToParse, {
+                replace: function(domNode) {
+                    if (domNode.name == 'wprm-replace-shortcode-with-block') {
+                        const recipeId = this.state.recipe ? this.state.recipe.id : false;
+    
+                        return <Block
+                                    recipeId={ recipeId }
+                                    shortcode={ shortcodes[ domNode.attribs.uid ] }
+                                    shortcodes={ shortcodes }
+                                    onBlockPropertyChange={ this.onBlockPropertyChange.bind(this) }
+                                    onBlockPropertiesChange={ this.onBlockPropertiesChange.bind(this) }
+                                    editingBlock={this.state.editingBlock}
+                                    onChangeEditingBlock={this.onChangeEditingBlock.bind(this)}
+                                    hoveringBlock={this.state.hoveringBlock}
+                                    onChangeHoveringBlock={this.onChangeHoveringBlock.bind(this)}
+                                />;
+                    }
+                }.bind(this)
+            });
+        } catch ( error ) {}
 
         return {
             htmlMap: htmlToParse,

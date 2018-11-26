@@ -40,4 +40,24 @@ jQuery(document).ready(function($) {
         posts_total = wprm_tools.posts.length;
 		handle_posts();
 	}
+
+	// Reset settings
+	jQuery('#tools_reset_settings').on('click', function(e) {
+		e.preventDefault();
+
+		if ( confirm( 'Are you sure you want to reset all settings?' ) ) {
+			var data = {
+				action: 'wprm_reset_settings',
+				security: wprm_admin.nonce,
+			};
+		
+			jQuery.post(wprm_admin.ajax_url, data, function(out) {
+				if (out.success) {
+					window.location = out.data.redirect;
+				} else {
+					alert( 'Something went wrong.' );
+				}
+			}, 'json');
+		}
+	});
 });

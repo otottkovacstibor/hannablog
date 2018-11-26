@@ -137,7 +137,7 @@ class WPRM_Assets {
 	 */
 	public static function block_assets() {
 		wp_enqueue_style( 'wprm-blocks', WPRM_URL . 'dist/blocks.css', array(), WPRM_VERSION, 'all' );
-		wp_enqueue_script( 'wprm-blocks', WPRM_URL . 'dist/blocks.js', array( 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components' ), WPRM_VERSION );
+		wp_enqueue_script( 'wprm-blocks', WPRM_URL . 'dist/blocks.js', array( 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ), WPRM_VERSION );
 		wp_enqueue_style( 'wprm-public', WPRM_URL . 'dist/public-' . WPRM_Settings::get( 'recipe_template_mode' ) . '.css', array(), WPRM_VERSION, 'all' );
 	}
 

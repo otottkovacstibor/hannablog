@@ -35,7 +35,7 @@ registerBlockType( 'wp-recipe-maker/recipe', {
                     id: {
                         type: 'number',
                         shortcode: ( { named: { id = '' } } ) => {
-                            return id.replace( 'id', '' );
+                            return parseInt( id.replace( 'id', '' ) );
                         },
                     },
                     template: {

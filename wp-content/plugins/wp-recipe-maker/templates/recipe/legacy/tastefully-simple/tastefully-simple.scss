@@ -94,6 +94,8 @@
 		float: right;
 		max-width: 40%;
 		text-align: right;
+		position: relative;
+		z-index: 1;
 
 		.wprm-recipe-rating {
 			margin-bottom: 5px;
@@ -202,6 +204,13 @@
 
 	.wprm-unit-conversion-container {
 		margin-top: 10px;
+	}
+
+	.wprm-recipe-ingredients,
+	.wprm-recipe-instructions {
+		br {
+			display: none;
+		}
 	}
 
 	.wprm-recipe-instructions {

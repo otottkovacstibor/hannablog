@@ -22,7 +22,7 @@ registerBlockType( 'wp-recipe-maker/jump-to-video', {
                     id: {
                         type: 'number',
                         shortcode: ( { named: { id = '' } } ) => {
-                            return id.replace( 'id', '' );
+                            return parseInt( id.replace( 'id', '' ) );
                         },
                     },
                     text: {

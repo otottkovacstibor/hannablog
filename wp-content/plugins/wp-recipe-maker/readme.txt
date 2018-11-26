@@ -115,6 +115,11 @@ Yes! We pride ourselves on offering awesome support and almost always answer sup
 
 == Changelog ==
 
+= 4.0.7 =
+* Fix: Gutenberg 4.5.1 compatibility
+* Fix: Convert to Gutenberg blocks for recipe shortcodes
+* Fix: Translations in "Simple" nutrition label
+
 = 4.0.6 =
 * Fix: Prevent z-index problems in legacy templates
 * Fix: Preview of some shortcodes in the Template Editor
@@ -602,6 +607,9 @@ Yes! We pride ourselves on offering awesome support and almost always answer sup
 * Feature: Fallback recipe when the plugin is disabled
 
 == Upgrade notice ==
+
+= 4.0.7 =
+Update required when using Gutenberg
 
 = 4.0.6 =
 Fix some template issues

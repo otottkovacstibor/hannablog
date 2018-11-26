@@ -12,3 +12,11 @@
 .wprm-spacer + .wprm-spacer {
     display: none !important;
 }
+// But not in text using the clean_paragraphs function.
+.wprm-recipe-summary,
+.wprm-recipe-instruction-text,
+.wprm-recipe-notes { 
+    .wprm-spacer {
+        display: block !important;
+    }
+}

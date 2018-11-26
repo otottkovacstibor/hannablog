@@ -4,8 +4,7 @@
 	border-color: #aaaaaa; /* wprm_border type=color */
 	border-radius: 0px; /* wprm_border_radius type=size */
 	padding: 0 10px 10px 10px;
-	margin: 20px 0;
-	max-width: 600px;
+	max-width: 600px; /* wprm_max_width type=size */
 }
 .wprm-recipe-template-poster-image-container {
 	position: relative;
