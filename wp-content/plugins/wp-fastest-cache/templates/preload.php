@@ -1,9 +1,9 @@
 <style type="text/css">
 	div[id^="wpfc-modal-preload"] .wiz-input-cont{
 		margin-top: 0 !important;
-		margin-bottom: 5px !important;
+		margin-bottom: 10px !important;
 		float: left !important;
-		width: 40% !important;
+		width: 108px !important;
 	}
 	.wiz-input-cont label{
 		margin-right: 0 !important;
@@ -28,7 +28,7 @@
 		</div>
 		<div class="window-content-wrapper" style="padding: 15px;">
 			<div class="window-content" style="z-index: 1000; height: auto; position: relative; display: inline-block; width: 100%;">
-				<div class="wiz-input-cont" style="margin-right: 5px;">
+				<div class="wiz-input-cont" style="padding-right: 8px;margin-right: 10px;">
 					<label class="mc-input-label" style="margin-right: 5px;"><input type="checkbox" <?php echo $wpFastestCachePreload_homepage; ?> id="wpFastestCachePreload_homepage" name="wpFastestCachePreload_homepage"></label>
 					<label for="wpFastestCachePreload_homepage">Homepage</label>
 				</div>
@@ -36,7 +36,7 @@
 					<label class="mc-input-label" style="margin-right: 5px;"><input type="checkbox" <?php echo $wpFastestCachePreload_post; ?> id="wpFastestCachePreload_post" name="wpFastestCachePreload_post"></label>
 					<label for="wpFastestCachePreload_post">Posts</label>
 				</div>
-				<div class="wiz-input-cont" style="margin-right: 5px;">
+				<div class="wiz-input-cont" style="padding-right: 8px;margin-right: 10px;">
 					<label class="mc-input-label" style="margin-right: 5px;"><input type="checkbox" <?php echo $wpFastestCachePreload_category; ?> id="wpFastestCachePreload_category" name="wpFastestCachePreload_category"></label>
 					<label for="wpFastestCachePreload_category">Categories</label>
 				</div>
@@ -44,7 +44,7 @@
 					<label class="mc-input-label" style="margin-right: 5px;"><input type="checkbox" <?php echo $wpFastestCachePreload_page; ?> id="wpFastestCachePreload_page" name="wpFastestCachePreload_page"></label>
 					<label for="wpFastestCachePreload_page">Pages</label>
 				</div>
-				<div class="wiz-input-cont" style="margin-right: 5px;">
+				<div class="wiz-input-cont" style="padding-right: 8px;margin-right: 10px;">
 					<label class="mc-input-label" style="margin-right: 5px;"><input type="checkbox" <?php echo $wpFastestCachePreload_tag; ?> id="wpFastestCachePreload_tag" name="wpFastestCachePreload_tag"></label>
 					<label for="wpFastestCachePreload_tag">Tags</label>
 				</div>
@@ -53,7 +53,12 @@
 					<label for="wpFastestCachePreload_attachment">Attachments</label>
 				</div>
 
-				<div class="wiz-input-cont" style="width: 91% !important;margin-bottom: 5px !important;">
+				<div class="wiz-input-cont" style="width: 91% !important;margin-bottom: 10px !important;">
+					<label class="mc-input-label" style="margin-right: 5px;"><input type="checkbox" <?php echo $wpFastestCachePreload_customposttypes; ?> id="wpFastestCachePreload_customposttypes" name="wpFastestCachePreload_customposttypes"></label>
+					<label for="wpFastestCachePreload_customposttypes">Custom Post Types</label>
+				</div>
+
+				<div class="wiz-input-cont" style="width: 91% !important;margin-bottom: 10px !important;">
 					<label class="mc-input-label" style="float:left;">
 						<table id="wpfc-form-spinner-preload" class="wpfc-form-spinner" cellpadding="0" cellspacing="0" border="0" height="20" width="70" style="border: 1px solid rgb(204, 204, 204); border-collapse: collapse; background: rgb(255, 255, 255);">
 							<tbody>

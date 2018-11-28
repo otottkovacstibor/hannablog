@@ -856,6 +856,7 @@
 			$wpFastestCachePreload_homepage = isset($this->options->wpFastestCachePreload_homepage) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_post = isset($this->options->wpFastestCachePreload_post) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_category = isset($this->options->wpFastestCachePreload_category) ? 'checked="checked"' : "";
+			$wpFastestCachePreload_customposttypes = isset($this->options->wpFastestCachePreload_customposttypes) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_page = isset($this->options->wpFastestCachePreload_page) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_tag = isset($this->options->wpFastestCachePreload_tag) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_attachment = isset($this->options->wpFastestCachePreload_attachment) ? 'checked="checked"' : "";
@@ -881,8 +882,7 @@
 				<div class="tabGroup">
 					<?php
 						$tabs = array(array("id"=>"wpfc-options","title"=>"Settings"),
-									  array("id"=>"wpfc-deleteCache","title"=>"Delete Cache"),
-									  array("id"=>"wpfc-cacheTimeout","title"=>"Cache Timeout"));
+									  array("id"=>"wpfc-deleteCache","title"=>"Delete Cache"));
 						
 						array_push($tabs, array("id"=>"wpfc-imageOptimisation","title"=>"Image Optimization"));
 						array_push($tabs, array("id"=>"wpfc-premium","title"=>"Premium"));
@@ -1335,6 +1335,9 @@
 			   					<?php
 			   				}
 				   		?>
+
+				   		<div class="exclude_section_clear" style=" margin-left: 3%; width: 95%; margin-bottom: 20px; margin-top: 0;"><div></div></div>
+
 				   		<h2 id="delete-cache-h2" style="padding-left:20px;padding-bottom:10px;">Delete Cache</h2>
 				    	<form method="post" name="wp_manager" class="delete-line" action="options.php">
 							<?php settings_fields( 'wpfc-group' ); ?>
@@ -1371,9 +1374,11 @@
 					   				$logs->printLogs();
 				   				}
 				   		?>
-				    </div>
-				    <div class="tab3">
-				    	<h2 style="padding-bottom:10px;padding-left:20px;float:left;">Timeout Rules</h2>
+
+				   		<div class="exclude_section_clear" style=" margin-left: 3%; width: 95%; margin-bottom: 12px; margin-top: 0;"><div></div></div>
+
+
+				   		<h2 style="padding-bottom:10px;padding-left:20px;float:left;">Timeout Rules</h2>
 
 				    	<!-- samples start: clones -->
 				    	<div class="wpfc-timeout-rule-line" style="display:none;">
@@ -1480,6 +1485,14 @@
 					    		} ?>
 				    	</script>
 				    </div>
+
+
+				    
+				    <div class="tab3" style="display:none;"> </div>
+
+
+
+
 				    <?php if(class_exists("WpFastestCacheImageOptimisation")){ ?>
 					    <div class="tab4">
 					    	<h2 style="padding-left:20px;padding-bottom:10px;">Optimize Image Tool</h2>

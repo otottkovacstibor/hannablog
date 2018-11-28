@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 4.9
-Stable tag: 0.8.8.7
+Stable tag: 0.8.8.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,6 +102,12 @@ Wpfc does not support Wordpress Multisite yet.
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.8.8 =
+* to move "cache timeout" to under "delete cache" tab [<a target="_blank" href="https://www.wpfastestcache.com/features/cache-timeout-page/">Details</a>]
+* to prevent clearing cache after Ninja Form is submitted
+* <strong>[FEATURE]</strong> Preload for custom post types
+* to fix PHP Fatal error: Call to undefined function add_settings_error()
 
 = 0.8.8.7 =
 * to fix error which is Undefined index: SERVER_PORT
