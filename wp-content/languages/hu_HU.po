@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-07 01:29:29+0000\n"
+"PO-Revision-Date: 2018-12-09 13:41:41+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -498,7 +498,7 @@ msgstr "szöveg"
 
 #: wp-includes/js/dist/block-library.js:1822
 msgid "Start with the building block of all narrative."
-msgstr ""
+msgstr "Mindig egy blokkal kezdődik."
 
 #: wp-includes/js/dist/block-library.js:1681
 msgid "Drop Cap"
@@ -563,7 +563,7 @@ msgstr "Média terület"
 
 #: wp-includes/js/dist/block-library.js:9327
 msgid "Set media and words side-by-side for a richer layout."
-msgstr ""
+msgstr "Állítsd egymás mellé a médiát és szöveget a szebb összeállításért."
 
 #: wp-includes/js/dist/block-library.js:9326
 msgid "Media & Text"
@@ -1288,7 +1288,7 @@ msgstr "Ezt a blokkot csak egyszer lehet felhasználni."
 
 #: wp-includes/js/dist/edit-post.js:986
 msgid "Transform into:"
-msgstr ""
+msgstr "Alakítsd át a következőre:"
 
 #: wp-includes/js/dist/edit-post.js:974
 msgid "Find original"
@@ -1406,7 +1406,7 @@ msgstr "Szerkesztő közzététel"
 
 #: wp-includes/js/dist/edit-post.js:3372
 msgid "Display the selected text in a monospaced font."
-msgstr ""
+msgstr "A kijelölt részt mutasd monospace betűtípussal."
 
 #: wp-includes/js/dist/edit-post.js:3369
 msgid "Add a strikethrough to the selected text."
@@ -1439,11 +1439,11 @@ msgstr "Szövegformázás"
 #. translators: The forward-slash character. e.g. '/'.
 #: wp-includes/js/dist/edit-post.js:3347
 msgid "Forward-slash"
-msgstr ""
+msgstr "Perjel"
 
 #: wp-includes/js/dist/edit-post.js:3344
 msgid "Change the block type after adding a new paragraph."
-msgstr ""
+msgstr "Változtasd meg a blokkot miután egy bekezdést kezdesz."
 
 #: wp-includes/js/dist/edit-post.js:3341
 msgid "Insert a new block after the selected block(s)."
@@ -1739,7 +1739,7 @@ msgstr "Hagyjuk úgy, ahogyan van"
 
 #: wp-includes/js/dist/editor.js:24008
 msgid "The content of your post doesn’t match the template assigned to your post type."
-msgstr ""
+msgstr "A bejegyzésed tartalma nem egyezik meg a sablonhoz használt bejegyzés típussal."
 
 #: wp-includes/js/dist/editor.js:23999
 msgid "Resetting the template may result in loss of content, do you want to continue?"
@@ -2063,7 +2063,7 @@ msgstr "Egy másik felhasználó átvette az irányítást a bejegyzés fölött
 #. translators: %s: user's display name
 #: wp-includes/js/dist/editor.js:25478
 msgid "%s now has editing control of this post. Don’t worry, your changes up to this moment have been saved."
-msgstr ""
+msgstr "%s most szerkeszti a bejegyzést. Ne aggódj, a változtasok mentésre kerülnek."
 
 #: wp-includes/js/dist/editor.js:25474
 msgid "Avatar"
@@ -2314,15 +2314,15 @@ msgstr "Blokk navigáció"
 #: wp-includes/js/dist/editor.js:15515
 msgid "Move %1$d block from position %2$d down by one place"
 msgid_plural "Move %1$d blocks from position %2$d down by one place"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Mozgasd a(z) %1$d blokkot a(z) %2$d alá"
+msgstr[1] "Mozgasd a(z) %1$d blokkokat a(z) %2$d alá"
 
 #. translators: 1: Number of selected blocks, 2: Position of selected blocks
 #: wp-includes/js/dist/editor.js:15510
 msgid "Move %1$d block from position %2$d up by one place"
 msgid_plural "Move %1$d blocks from position %2$d up by one place"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "Mozgasd a(z) %1$d blokkot a(z) %2$d fölé"
+msgstr[1] "Mozgasd a(z) %1$d blokkokat a(z) %2$d fölé"
 
 #: wp-includes/js/dist/editor.js:15505
 msgid "Blocks cannot be moved down as they are already at the bottom"
@@ -2341,7 +2341,7 @@ msgstr "%s blokk a tartalom elején van, és nem lehet följebb mozgatni."
 #. selected block, 3: New position
 #: wp-includes/js/dist/editor.js:15475
 msgid "Move %1$s block from position %2$d up to position %3$d"
-msgstr ""
+msgstr "Mozgasd a(z) %1$s blokkot a(z) %2$d pozícióból a következő pozícióba: %3$d"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
 #: wp-includes/js/dist/editor.js:15469
@@ -2352,7 +2352,7 @@ msgstr "%s blokk a tartalom végén van, és nem lehet lejjebb mozgatni."
 #. selected block, 3: New position
 #: wp-includes/js/dist/editor.js:15463
 msgid "Move %1$s block from position %2$d down to position %3$d"
-msgstr ""
+msgstr "Mozgasd a(z) %1$s blokkot a(z) %2$d pozícióból a következő pozícióba: %3$d"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
 #: wp-includes/js/dist/editor.js:15457
@@ -2668,8 +2668,8 @@ msgstr "Nincs találat."
 #: wp-includes/js/dist/components.js:31801 wp-includes/js/dist/editor.js:22951
 msgid "%d result found, use up and down arrow keys to navigate."
 msgid_plural "%d results found, use up and down arrow keys to navigate."
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%d találat, a fel és le nyíl segítségével lehet navigálni."
+msgstr[1] "%d találat, a fel és le nyíl segítségével lehet navigálni."
 
 #: wp-includes/post.php:252 wp-includes/js/dist/editor.js:12938
 msgid "Block updated."
@@ -2796,7 +2796,7 @@ msgstr "Blokkok keresése"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:171
 msgid "Whether the theme supports responsive embedded content."
-msgstr ""
+msgstr "A sablon támogatja a beágyazott tartalmat."
 
 #. translators: %s: duration
 #: wp-includes/script-loader.php:553
@@ -2805,7 +2805,7 @@ msgstr "mostantól %s"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:194
 msgid "Limit result set to themes assigned one or more statuses."
-msgstr ""
+msgstr "Az eredmény meghatározása egy vagy több kijelölt státusz esetén."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:166
 msgid "Whether the theme supports post thumbnails."
@@ -2829,11 +2829,11 @@ msgstr "Érvénytelen típus paraméter."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:299
 msgid "Limit results to items of one or more object subtypes."
-msgstr ""
+msgstr "Az eredmény meghatározása egy vagy több objektum altípus esetén."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:292
 msgid "Limit results to items of an object type."
-msgstr ""
+msgstr "Az eredmények limitálása egy objektum típusánál."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php:256
 msgid "Object subtype."
@@ -2858,7 +2858,7 @@ msgstr "Ez a felhasználó közzétehet szűrés nélküli HTML kódot és JavaS
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2073
 msgid "Version of the content block format used by the object."
-msgstr ""
+msgstr "A tartalmom blokk verziójának használata az objektum által."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:1959
 msgid "Slug automatically generated from the object title."
