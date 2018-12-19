@@ -1,5 +1,10 @@
 SuevaFree Changelog
 
+- Version 3.6.4 - Released: 18.12.2018
+
+-- Fixed : #prettyPhoto additional tag in page url opening a WordPress gallery
+-- Tested with WordPress 5.0.2
+
 - Version 3.6.3 - Released: 22.11.2018
 
 -- Updated : WooCommerce templates.

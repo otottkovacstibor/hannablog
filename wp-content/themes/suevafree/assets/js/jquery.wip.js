@@ -346,6 +346,7 @@ jQuery.noConflict()(function($){
 			theme:'pp_default',
 			show_title:false,
 			overlay_gallery: false,
+			deeplinking: false,
 			social_tools: false
 		});
 	
