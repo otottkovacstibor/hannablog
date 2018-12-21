@@ -76,7 +76,7 @@ class Cookie_Law_Info {
 		} 
 		else 
 		{
-			$this->version = '1.7.1';
+			$this->version = '1.7.2';
 		}
 		$this->plugin_name = 'cookie-law-info';
 
@@ -84,6 +84,7 @@ class Cookie_Law_Info {
 		$this->set_locale();
 		$this->define_admin_hooks();
 		$this->define_public_hooks();
+		$this->define_thrid_party_hooks();
 		//$this->cli_patches();
 	}
 
@@ -127,6 +128,13 @@ class Cookie_Law_Info {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-cookie-law-info-public.php';
+
+
+		/**
+		 * The class responsible for adding compatibility to third party plugins
+		 * 
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'third-party/class-cookie-law-info-third-party.php';
 
 		$this->loader = new Cookie_Law_Info_Loader();
 
@@ -207,6 +215,21 @@ class Cookie_Law_Info {
   		$this->loader->add_action('wp_head',$plugin_public,'include_user_accepted_cookielawinfo');
   		$this->loader->add_action('wp_footer',$plugin_public,'include_user_accepted_cookielawinfo_in_body');
 	}
+
+
+	/**
+	 * Register all of the hooks related to the Third party plugin compatibility
+	 * of the plugin.
+	 *
+	 * @since    1.7.2
+	 * @access   public
+	 */
+	public function define_thrid_party_hooks() 
+	{
+		$plugin_third_party = new Cookie_Law_Info_Third_Party();
+		$plugin_third_party->register_scripts();
+	}
+	
 
 	/**
 	 * Run the loader to execute all of the hooks with WordPress.

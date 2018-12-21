@@ -482,12 +482,12 @@ var CLI=
 	    if(this.settings.widget_position=='left')
 	    {
 	    	cli_elm.css({
-	        	'left':'15px','bottom':'15px','top':'auto'
+	        	'left':'15px','right':'auto','bottom':'15px','top':'auto'
 	    	});
 	    }else
 	    {
 	    	cli_elm.css({
-	        	'right':'15px','bottom':'15px','top':'auto'
+	        	'left':'auto','right':'15px','bottom':'15px','top':'auto'
 	    	});
 	    }
 	    if(a)

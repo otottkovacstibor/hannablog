@@ -3,8 +3,8 @@ Contributors: webtoffee,markwt
 Donate link: https://www.webtoffee.com/plugins/ 
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
-Tested up to: 4.9.8
-Stable tag: 1.7.1
+Tested up to: 5.0.2
+Stable tag: 1.7.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -171,6 +171,12 @@ See http://cookielawinfo.com for more information on what is required.
 4. Header (with custom styles)
 
 == Changelog ==
+
+= 1.7.2 =
+
+* Tested ok with Wordpress version 5.0.2
+* Compatibility added for Pixelyoursite plugin
+
 
 = 1.7.1 =
 
@@ -342,6 +348,7 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.7.1 =
+= 1.7.2 =
 
-* Cookie notice as `Widget` option added
+* Tested ok with Wordpress version 5.0.2
+* Compatibility added for Pixelyoursite plugin

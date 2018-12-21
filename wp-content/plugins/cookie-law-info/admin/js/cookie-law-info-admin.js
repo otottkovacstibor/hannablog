@@ -150,7 +150,7 @@
 		//=====================
 		function cli_scroll_accept_er()
 		{	
-			if($('[name="as_popup_field"]:checked').val()=='true' && $('[name="popup_overlay_field"]:checked').val()=='true' && $('[name="scroll_close_field"]:checked').val()=='true')
+			if($('[name="cookie_bar_as_field"] option:selected').val()=='popup' && $('[name="popup_overlay_field"]:checked').val()=='true' && $('[name="scroll_close_field"]:checked').val()=='true')
 			{
 				$('.cli_scroll_accept_er').show();
 				//$('label[for="scroll_close_field"]').css({'color':'red'});
@@ -161,7 +161,10 @@
 			}
 		}
 		cli_scroll_accept_er();
-		$('[name="as_popup_field"], [name="popup_overlay_field"], [name="scroll_close_field"]').click(function(){
+		$('[name="cookie_bar_as_field"]').change(function(){
+			cli_scroll_accept_er();
+		});
+		$('[name="popup_overlay_field"], [name="scroll_close_field"]').click(function(){
 			cli_scroll_accept_er();
 		});
 		//=====================
