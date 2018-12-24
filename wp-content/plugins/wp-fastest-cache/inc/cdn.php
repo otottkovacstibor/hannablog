@@ -77,7 +77,7 @@
 												"X-Auth-Key" => $key,
 												"Content-Type" => "application/json"
 												),
-								'body' => '{"value":2073600}'
+								'body' => '{"value":16070400}'
 								);
 
 				$response = wp_remote_request('https://api.cloudflare.com/client/v4/zones/'.$zoneid.'/settings/browser_cache_ttl', $header);

@@ -81,20 +81,19 @@
 			if($this->isMobile() && isset($this->options->wpFastestCacheMobile)){
 				if(class_exists("WpFcMobileCache") && isset($this->options->wpFastestCacheMobileTheme)){
 					$wpfc_mobile = new WpFcMobileCache();
-					$this->cacheFilePath = $this->getWpContentDir()."/cache/".$wpfc_mobile->get_folder_name()."".$_SERVER["REQUEST_URI"];
+					$this->cacheFilePath = $this->getWpContentDir("/cache/wpfc-mobile-cache").$_SERVER["REQUEST_URI"];
 				}
 			}else{
 				if($this->isPluginActive('gtranslate/gtranslate.php')){
 					if(isset($_SERVER["HTTP_X_GT_LANG"])){
-						//$this->cacheFilePath = $this->getWpContentDir()."/cache/all/".$_SERVER["HTTP_X_GT_LANG"];
-						$this->cacheFilePath = $this->getWpContentDir()."/cache/all/".$_SERVER["HTTP_X_GT_LANG"].$_SERVER["REQUEST_URI"];
+						$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["HTTP_X_GT_LANG"].$_SERVER["REQUEST_URI"];
 					}else if(isset($_SERVER["REDIRECT_URL"]) && $_SERVER["REDIRECT_URL"] != "/index.php"){
-						$this->cacheFilePath = $this->getWpContentDir()."/cache/all/".$_SERVER["REDIRECT_URL"];
+						$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["REDIRECT_URL"];
 					}else if(isset($_SERVER["REQUEST_URI"])){
-						$this->cacheFilePath = $this->getWpContentDir()."/cache/all/".$_SERVER["REQUEST_URI"];
+						$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["REQUEST_URI"];
 					}
 				}else{
-					$this->cacheFilePath = $this->getWpContentDir()."/cache/all/".$_SERVER["REQUEST_URI"];
+					$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["REQUEST_URI"];
 				}
 			}
 

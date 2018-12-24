@@ -458,6 +458,8 @@
 			
 			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "WhatsApp", "editable" : false});
 
+			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "Twitterbot", "editable" : false});
+
 
 			if(typeof this.rules != "undefined" && this.rules && this.rules.length > 0){
 				jQuery.each(self.rules, function(i, e){

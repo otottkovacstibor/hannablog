@@ -3,8 +3,8 @@ Contributors: emrevona
 Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
-Tested up to: 4.9
-Stable tag: 0.8.8.8
+Tested up to: 5.0
+Stable tag: 0.8.8.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,6 +102,14 @@ Wpfc does not support Wordpress Multisite yet.
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.8.9 =
+* to fix url with replacing cdn-url on data-product_variations attribute
+* to increase browser cache time from 3 months to 4 months
+* to fix bug on language dropdown [<a target="_blank" href="https://wordpress.org/support/topic/bug-with-language-setting/">Details</a>]
+* to increase the value of Cloudflare Browser Cache Expiration to 6 months
+* to exclude Twitterbot user-agent
+* to fix PHP Warning: file_exists(): open_basedir restriction in effect
 
 = 0.8.8.8 =
 * to move "cache timeout" to under "delete cache" tab [<a target="_blank" href="https://www.wpfastestcache.com/features/cache-timeout-page/">Details</a>]
