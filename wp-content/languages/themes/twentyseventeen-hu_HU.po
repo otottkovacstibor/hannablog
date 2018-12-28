@@ -27,7 +27,7 @@ msgstr "Lábrész"
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr ""
 
-#: functions.php:324 sidebar.php:18
+#: sidebar.php:18 functions.php:324
 msgid "Blog Sidebar"
 msgstr "Blog oldalsáv"
 
@@ -164,8 +164,8 @@ msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:63 functions.php:192
-#: template-parts/navigation/navigation-top.php:12
+#: template-parts/navigation/navigation-top.php:12 functions.php:63
+#: functions.php:192
 msgid "Top Menu"
 msgstr "Felső menü"
 
@@ -221,12 +221,12 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: functions.php:372 template-parts/page/content-front-page.php:40
 #: template-parts/page/content-front-page-panels.php:43
-#: template-parts/post/content-image.php:59
+#: template-parts/page/content-front-page.php:40
+#: template-parts/post/content-audio.php:83 template-parts/post/content.php:56
 #: template-parts/post/content-gallery.php:70
-#: template-parts/post/content.php:56 template-parts/post/content-video.php:82
-#: template-parts/post/content-audio.php:83
+#: template-parts/post/content-video.php:82
+#: template-parts/post/content-image.php:59 functions.php:372
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
 
@@ -244,10 +244,10 @@ msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #: template-parts/page/content-page.php:25
-#: template-parts/post/content-image.php:64
+#: template-parts/post/content-audio.php:88 template-parts/post/content.php:61
 #: template-parts/post/content-gallery.php:75
-#: template-parts/post/content.php:61 template-parts/post/content-video.php:87
-#: template-parts/post/content-audio.php:88
+#: template-parts/post/content-video.php:87
+#: template-parts/post/content-image.php:64
 msgid "Pages:"
 msgstr "Oldal:"
 
@@ -297,7 +297,7 @@ msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr ""
 
-#: search.php:45 archive.php:47 index.php:52
+#: archive.php:47 search.php:45 index.php:52
 msgid "Page"
 msgstr "Oldal"
 
@@ -309,11 +309,11 @@ msgstr "A keresett oldal nem található."
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Úgy tűnik, ezen a helyen nem található amit kerestünk. Talán egy újabb keresés segíthetne."
 
-#: search.php:43 archive.php:45 index.php:50
+#: archive.php:45 search.php:43 index.php:50
 msgid "Previous page"
 msgstr "Előző oldal"
 
-#: search.php:44 archive.php:46 index.php:51
+#: archive.php:46 search.php:44 index.php:51
 msgid "Next page"
 msgstr "Következő oldal"
 

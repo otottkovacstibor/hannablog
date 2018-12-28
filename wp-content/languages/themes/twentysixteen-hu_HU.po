@@ -64,14 +64,14 @@ msgid "Dark Gray"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: template-parts/content.php:28 inc/template-tags.php:184
+#: inc/template-tags.php:184 template-parts/content.php:28
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
 
 #. translators: %s: Name of current post
-#: template-parts/content.php:49 template-parts/content-page.php:37
-#: template-parts/content-search.php:28 template-parts/content-search.php:43
-#: template-parts/content-single.php:45 image.php:84
+#: image.php:84 template-parts/content.php:49
+#: template-parts/content-single.php:45 template-parts/content-search.php:28
+#: template-parts/content-search.php:43 template-parts/content-page.php:37
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\"> \"%s\"</span> szerkesztése"
 
@@ -244,8 +244,8 @@ msgctxt "Used before full size attachment link."
 msgid "Full size"
 msgstr "Teljes méret"
 
-#: template-parts/content.php:33 template-parts/content-page.php:23
-#: template-parts/content-single.php:25 image.php:56
+#: image.php:56 template-parts/content.php:33
+#: template-parts/content-single.php:25 template-parts/content-page.php:23
 msgid "Pages:"
 msgstr "Oldal:"
 
@@ -313,11 +313,11 @@ msgstr "on"
 msgid "Sidebar"
 msgstr "Oldalsáv"
 
-#: functions.php:89 header.php:62
+#: header.php:62 functions.php:89
 msgid "Social Links Menu"
 msgstr "Közösségi hivatkozások menü"
 
-#: functions.php:88 header.php:51
+#: header.php:51 functions.php:88
 msgid "Primary Menu"
 msgstr "Elsődleges menü"
 
@@ -337,17 +337,17 @@ msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] "&ldquo;%2$s&rdquo; bejegyzéshez %1$s hozzászólás"
 msgstr[1] "&ldquo;%2$s&rdquo; bejegyzéshez %1$s hozzászólás"
 
-#: archive.php:51 template-parts/content.php:37
-#: template-parts/content-page.php:27 template-parts/content-single.php:29
-#: search.php:39 index.php:48 image.php:60
+#: index.php:48 archive.php:51 search.php:39 image.php:60
+#: template-parts/content.php:37 template-parts/content-single.php:29
+#: template-parts/content-page.php:27
 msgid "Page"
 msgstr "Oldal"
 
-#: archive.php:50 search.php:38 index.php:47
+#: index.php:47 archive.php:50 search.php:38
 msgid "Next page"
 msgstr "Következő oldal"
 
-#: archive.php:49 search.php:37 index.php:46
+#: index.php:46 archive.php:49 search.php:37
 msgid "Previous page"
 msgstr "Előző oldal"
 
