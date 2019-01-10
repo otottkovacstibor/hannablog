@@ -1,8 +1,8 @@
 #cookie-law-info-bar {
 	/*border: 0; */
-	font-size: 10pt;
+	font-size: 12pt;
 	margin: 0 auto;
-	padding: 10px 10px;
+	padding: 13px 10px;
 	position: absolute;
 	text-align: center;
 	box-sizing: border-box;
@@ -11,6 +11,7 @@
 	box-shadow:rgba(0,0,0,.5) 0px 5px 50px;
 	display: none;
 	left:0px;
+	font-weight:300;
 }
 #cookie-law-info-again {
 	font-size: 10pt;
@@ -28,11 +29,9 @@
 /** Buttons (http://papermashup.com/demos/css-buttons) */
 .cli-plugin-button, .cli-plugin-button:visited {
 	display: inline-block;
-	padding: 8px 16px 8px;
+	padding:10px 16px 10px;
 	color: #fff;
 	text-decoration: none;
-	-moz-border-radius: 4px;
-	-webkit-border-radius: 4px;
 	position: relative;
 	cursor: pointer;
 	margin-left: 0px;
@@ -40,6 +39,7 @@
 }
 .cli-plugin-main-link {
 	margin-left:0px;
+	font-weight: 550; text-decoration: underline;
 }
 .cli-plugin-button:hover {
 	background-color: #111;
@@ -51,7 +51,7 @@
 }
 .cli-plugin-button, .cli-plugin-button:visited,
 	.medium.cli-plugin-button, .medium.cli-plugin-button:visited {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 500;
 	line-height: 1;
 }
