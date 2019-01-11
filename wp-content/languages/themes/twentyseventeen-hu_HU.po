@@ -23,51 +23,51 @@ msgstr "Twenty Seventeen"
 msgid "Footer"
 msgstr "Lábrész"
 
-#: functions.php:326
+#: functions.php:338
 msgid "Add widgets here to appear in your sidebar on blog posts and archive pages."
 msgstr ""
 
-#: sidebar.php:18 functions.php:324
+#: sidebar.php:18 functions.php:336
 msgid "Blog Sidebar"
 msgstr "Blog oldalsáv"
 
-#: template-parts/navigation/navigation-top.php:27
+#: template-parts/navigation/navigation-top.php:31
 #: template-parts/header/site-branding.php:34
 msgid "Scroll down to content"
 msgstr "Görgetés a tartalomhoz"
 
-#: functions.php:168
+#: functions.php:179
 msgctxt "Theme starter content"
 msgid "Coffee"
 msgstr "Kávé"
 
-#: functions.php:164
+#: functions.php:175
 msgctxt "Theme starter content"
 msgid "Sandwich"
 msgstr "Szendvics"
 
-#: functions.php:160
+#: functions.php:171
 msgctxt "Theme starter content"
 msgid "Espresso"
 msgstr "Espresso"
 
-#: inc/custom-header.php:120
+#: inc/custom-header.php:128
 msgid "Pause background video"
 msgstr "Háttér videó szüneteltetése"
 
-#: inc/custom-header.php:119
+#: inc/custom-header.php:127
 msgid "Play background video"
 msgstr "Háttér videó lejátszása"
 
-#: inc/template-tags.php:150
+#: inc/template-tags.php:151
 msgid "Front Page Section %1$s Placeholder"
 msgstr "Felhasználói oldal szekció %1$s helyhordozó"
 
-#: inc/customizer.php:80
+#: inc/customizer.php:109
 msgid "When the two-column layout is assigned, the page title is in one column and content is in the other."
 msgstr "Amennyiben kétoszlopos elrendezést választunk, az oldal címsora az egyik oszlop, a tartalom a másik oszlop."
 
-#: single.php:32
+#: single.php:34
 msgid "Next Post"
 msgstr "Következő bejegyzés"
 
@@ -75,21 +75,21 @@ msgstr "Következő bejegyzés"
 msgid "Posts"
 msgstr "Bejegyzések"
 
-#: inc/template-tags.php:88
+#: inc/template-tags.php:89
 msgid "Tags"
 msgstr "Címkék"
 
-#: inc/template-tags.php:84
+#: inc/template-tags.php:85
 msgid "Categories"
 msgstr "Kategóriák"
 
 #. translators: used between list items, there is a space after the comma
-#: inc/template-tags.php:65
+#: inc/template-tags.php:66
 msgid ", "
 msgstr ", "
 
 #. translators: %s: post date
-#: inc/template-tags.php:51
+#: inc/template-tags.php:52
 msgid "<span class=\"screen-reader-text\">Posted on</span> %s"
 msgstr "<span class=\"screen-reader-text\">Beküldve:</span> %s"
 
@@ -106,98 +106,98 @@ msgstr "Adjunk meg egy SVG ikon fájlnevet."
 msgid "Please define default parameters in the form of an array."
 msgstr ""
 
-#: inc/customizer.php:108
+#: inc/customizer.php:143
 msgid "Select pages to feature in each area from the dropdowns. Add an image to a section by setting a featured image in the page editor. Empty sections will not be displayed."
 msgstr ""
 
 #. translators: %d is the front page section number
-#: inc/customizer.php:107
+#: inc/customizer.php:142
 msgid "Front Page Section %d Content"
 msgstr "Felhasználói oldal szekció %d tartalom"
 
-#: inc/customizer.php:83 inc/customizer.php:132
+#: inc/customizer.php:112 inc/customizer.php:171
 msgid "Two Column"
 msgstr "Kettő oszlop"
 
-#: inc/customizer.php:82 inc/customizer.php:131
+#: inc/customizer.php:111 inc/customizer.php:170
 msgid "One Column"
 msgstr "Egy oszlop"
 
-#: inc/customizer.php:77
+#: inc/customizer.php:106
 msgid "Page Layout"
 msgstr "Oldal elrendezés"
 
-#: inc/customizer.php:66
+#: inc/customizer.php:89
 msgid "Theme Options"
 msgstr "Sablon beállítások"
 
-#: inc/customizer.php:50
+#: inc/customizer.php:64
 msgid "Custom"
 msgstr "Egyéni"
 
-#: inc/customizer.php:48
+#: inc/customizer.php:62
 msgid "Light"
 msgstr "Világos"
 
-#: inc/customizer.php:46
+#: inc/customizer.php:60
 msgid "Color Scheme"
 msgstr "Színséma"
 
-#: inc/custom-header.php:49
+#: inc/custom-header.php:56
 msgid "Default Header Image"
 msgstr "Alapértelmezett fejrész-kép"
 
-#: functions.php:344
+#: functions.php:360
 msgid "Footer 2"
 msgstr "2. lábrész"
 
-#: functions.php:336 functions.php:346
+#: functions.php:350 functions.php:362
 msgid "Add widgets here to appear in your footer."
 msgstr "A lábrészben történő megjelenítéshez itt hozzunk létre widgeteket."
 
-#: functions.php:334
+#: functions.php:348
 msgid "Footer 1"
 msgstr "1. lábrész"
 
-#: functions.php:278
+#: functions.php:289
 msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "on"
 
-#: template-parts/navigation/navigation-top.php:12 functions.php:63
-#: functions.php:192
+#: functions.php:64 functions.php:203
+#: template-parts/navigation/navigation-top.php:12
 msgid "Top Menu"
 msgstr "Felső menü"
 
-#: comments.php:60
+#: comments.php:62
 msgid "Reply"
 msgstr "Válasz"
 
-#: template-parts/post/content-none.php:27
+#: template-parts/post/content-none.php:28
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Úgy tűnik, nem találtuk meg amit kerestünk. :) Talán, egy újabb keresés segíthetne..."
 
-#: search.php:50
+#: search.php:54
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Elnézést, nem találunk a keresési feltételekhez igazodó eredményt. Másik kulcsszóval, kifejezéssel újra kellene kezdeni egy keresést."
 
-#: template-parts/post/content-none.php:23
+#: template-parts/post/content-none.php:24
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Készen állunk az első bejegyzés közzétételére? <a href=\"%1$s\">Kezdőlépések</a>."
 
-#: template-parts/post/content-none.php:17 search.php:21
+#: search.php:21 template-parts/post/content-none.php:17
 msgid "Nothing Found"
 msgstr "Nincs megfelelő találat"
 
-#: single.php:31
+#: single.php:33
 msgid "Previous Post"
 msgstr "Korábbi bejegyzés"
 
-#: single.php:31 comments.php:66
+#: single.php:33 comments.php:71
 msgid "Previous"
 msgstr "Előző"
 
-#: single.php:32 comments.php:67
+#: single.php:34 comments.php:72
 msgid "Next"
 msgstr "Következő"
 
@@ -221,33 +221,33 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #. translators: %s: Name of current post
-#: template-parts/page/content-front-page-panels.php:43
-#: template-parts/page/content-front-page.php:40
-#: template-parts/post/content-audio.php:83 template-parts/post/content.php:56
-#: template-parts/post/content-gallery.php:70
-#: template-parts/post/content-video.php:82
-#: template-parts/post/content-image.php:59 functions.php:372
+#: functions.php:390 template-parts/post/content-gallery.php:71
+#: template-parts/post/content.php:57 template-parts/post/content-image.php:61
+#: template-parts/post/content-audio.php:84
+#: template-parts/post/content-video.php:83
+#: template-parts/page/content-front-page.php:42
+#: template-parts/page/content-front-page-panels.php:45
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
 
-#: inc/customizer.php:49
+#: inc/customizer.php:63
 msgid "Dark"
 msgstr "Sötét"
 
-#: inc/back-compat.php:39 inc/back-compat.php:51 inc/back-compat.php:66
+#: inc/back-compat.php:39 inc/back-compat.php:52 inc/back-compat.php:70
 msgid "Twenty Seventeen requires at least WordPress version 4.7. You are running version %s. Please upgrade and try again."
 msgstr "A Twenty Sixteen használatához minimálisan a WordPress 4.7 verziója szükséges. Ezen a honlapon a %s verzió üzemel. A frissítést követően próbáljuk újra."
 
 #. translators: %s: Name of current post
-#: inc/template-tags.php:116
+#: inc/template-tags.php:117
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: template-parts/page/content-page.php:25
-#: template-parts/post/content-audio.php:88 template-parts/post/content.php:61
-#: template-parts/post/content-gallery.php:75
-#: template-parts/post/content-video.php:87
-#: template-parts/post/content-image.php:64
+#: template-parts/post/content-gallery.php:78
+#: template-parts/post/content.php:64 template-parts/post/content-image.php:68
+#: template-parts/post/content-audio.php:91
+#: template-parts/post/content-video.php:90
+#: template-parts/page/content-page.php:26
 msgid "Pages:"
 msgstr "Oldal:"
 
@@ -259,15 +259,15 @@ msgstr "Menü"
 msgid "Skip to content"
 msgstr "Tartalomhoz"
 
-#: functions.php:458
+#: functions.php:482
 msgid "Collapse child menu"
 msgstr "Almenü összezárása"
 
-#: functions.php:457
+#: functions.php:481
 msgid "Expand child menu"
 msgstr "Almenü szétnyitása"
 
-#: functions.php:64 functions.php:203
+#: functions.php:65 functions.php:214
 msgid "Social Links Menu"
 msgstr "Közösségi hivatkozások menü"
 
@@ -275,16 +275,16 @@ msgstr "Közösségi hivatkozások menü"
 msgid "Proudly powered by %s"
 msgstr "Köszönjük %s!"
 
-#: footer.php:25
+#: footer.php:26
 msgid "Footer Social Links Menu"
 msgstr "Lábrész közösségi hivatkozások menü"
 
-#: comments.php:75
+#: comments.php:82
 msgid "Comments are closed."
 msgstr "A hozzászólások jelenleg nem engedélyezettek ezen a részen."
 
 #. translators: 1: number of comments, 2: post title
-#: comments.php:40
+#: comments.php:41
 msgctxt "comments title"
 msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
@@ -292,12 +292,12 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. translators: %s: post title
-#: comments.php:36
+#: comments.php:37
 msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
 msgstr ""
 
-#: archive.php:47 search.php:45 index.php:52
+#: index.php:54 archive.php:50 search.php:47
 msgid "Page"
 msgstr "Oldal"
 
@@ -309,11 +309,11 @@ msgstr "A keresett oldal nem található."
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Úgy tűnik, ezen a helyen nem található amit kerestünk. Talán egy újabb keresés segíthetne."
 
-#: archive.php:45 search.php:43 index.php:50
+#: index.php:52 archive.php:48 search.php:45
 msgid "Previous page"
 msgstr "Előző oldal"
 
-#: archive.php:46 search.php:44 index.php:51
+#: index.php:53 archive.php:49 search.php:46
 msgid "Next page"
 msgstr "Következő oldal"
 

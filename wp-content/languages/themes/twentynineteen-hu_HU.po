@@ -12,8 +12,8 @@ msgstr ""
 "Project-Id-Version: Themes - Twenty Nineteen\n"
 
 #. Description of the theme
-msgid "A new Gutenberg-ready theme."
-msgstr "Az új, Guttenberghez felkészített sablon."
+msgid "Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes."
+msgstr ""
 
 #. Theme Name of the theme
 msgid "Twenty Nineteen"
@@ -43,7 +43,7 @@ msgstr "A Twenty Nineteen használatához legalább a WordPress 4.7 verziója sz
 msgid "Back"
 msgstr "Vissza"
 
-#: inc/template-functions.php:208
+#: inc/template-functions.php:209
 msgid "More"
 msgstr "Bővebben"
 
@@ -168,9 +168,9 @@ msgstr "Felső menü"
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
 
-#: image.php:52 template-parts/content/content.php:49
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content.php:49
 #: template-parts/content/content-single.php:40
-#: template-parts/content/content-page.php:27
 msgid "Pages:"
 msgstr "Oldal:"
 
@@ -288,10 +288,10 @@ msgstr "Címketár:"
 msgid "Category Archives: "
 msgstr "Kategória tár:"
 
-#. translators: %s: Name of current post. Only visible to screen readers.
 #. translators: %s: Name of current post. Only visible to screen readers
-#: inc/template-tags.php:120 template-parts/content/content-page.php:41
-#: template-parts/header/entry-header.php:32
+#. translators: %s: Name of current post. Only visible to screen readers.
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztése"
 
@@ -350,20 +350,20 @@ msgstr "Egy jó hozzászólás jó lenne"
 msgid "Join the Conversation"
 msgstr "Csatlakozás a társalgáshoz"
 
-#: classes/class-twentynineteen-walker-comment.php:92
+#: classes/class-twentynineteen-walker-comment.php:100
 msgid "Your comment is awaiting moderation."
 msgstr "A hozzászólás rendszer-moderációra várakozik."
 
-#: classes/class-twentynineteen-walker-comment.php:87
+#: classes/class-twentynineteen-walker-comment.php:95
 msgid "Edit"
 msgstr "Szerkesztés"
 
 #. translators: 1: comment date, 2: comment time
-#: classes/class-twentynineteen-walker-comment.php:79
+#: classes/class-twentynineteen-walker-comment.php:87
 msgid "%1$s at %2$s"
 msgstr "%1$s - %2$s"
 
-#: classes/class-twentynineteen-walker-comment.php:59
+#: classes/class-twentynineteen-walker-comment.php:67
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">szerint:</span>"
 

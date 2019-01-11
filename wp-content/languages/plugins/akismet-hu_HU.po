@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-Spam - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-07-15 12:22:19+0000\n"
+"PO-Revision-Date: 2019-01-04 16:32:35+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -160,7 +160,7 @@ msgstr "<a href=\"%s\">Függőben lévő hozzászólások ellenőrzése</a>?"
 msgid "Akismet is now protecting your site from spam. Happy blogging!"
 msgstr "Az Akismet mostantól kezdve védi a weboldalt a spam hozzászólásoktól. Nyugodt és kellemes alkotást a weben!"
 
-#. Description of the plugin/theme
+#. Description of the plugin
 msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key."
 msgstr "A milliók által használt Akismet talán a világon a legjobb megoldás a <strong>weboldal spam hozzászólásainak védelmére</strong>, akkor is védelmet biztosít, amikor a weboldal gazdája éppen szundikál. Első lépésként kapcsoljuk be az Akismet bővítményt, majd az Akismet beállítási oldalán állítsuk be az API kulcsot."
 
@@ -216,8 +216,7 @@ msgstr "Nincs ellenőrzésre váró hozzászólás. Az Akismet csak a függőben
 msgid "Checking for Spam"
 msgstr "Spam-keresés folyamatban"
 
-#. #-#-#-#-#  akismet-code.pot (Akismet Anti-Spam 4.1)  #-#-#-#-#
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
 #: class.akismet-admin.php:114 class.akismet-admin.php:117
 msgid "Akismet Anti-Spam"
 msgstr "Akismet Anti-Spam"
@@ -373,7 +372,7 @@ msgstr "A hozzászólás fennakadt a wp_blacklist_check listán."
 
 #: class.akismet-admin.php:590
 msgid "Akismet cleared this comment."
-msgstr "Az Akismet megtisztította ezt a hozzászólást."
+msgstr "Akismet ellenőrizte ezt a hozzászólást."
 
 #: class.akismet-admin.php:597
 msgid "%s reported this comment as spam."
@@ -445,7 +444,7 @@ msgid_plural "Spam in the <a href=\"%1$s\">spam folder</a> older than %2$d days 
 msgstr[0] "A spam a<a href=\"%1$s\">spam tárolóban</a> 1 napnál idősebb, és automatikusan törlésre került."
 msgstr[1] "A spam a<a href=\"%1$s\">spam tárolóban</a> %2$d napnál idősebb, és automatikusan törlésre került."
 
-#. Plugin URI of the plugin/theme
+#. Plugin URI of the plugin
 msgid "https://akismet.com/"
 msgstr "http://akismet.com/"
 
@@ -529,11 +528,11 @@ msgstr "Az Akismet-et sokkal több oldalon van használatban, mint amit a Pro fe
 msgid "You&#8217;re using your Akismet key on more sites than your Pro subscription allows."
 msgstr "Ez az Akismet kulcs több oldalon van használatban, mint amennyit a Pro feliratkozás lehetővé tesz."
 
-#. Author URI of the plugin/theme
+#. Author URI of the plugin
 msgid "https://automattic.com/wordpress-plugins/"
 msgstr "http://automattic.com/wordpress-plugins/"
 
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "Automattic"
 msgstr "Automattic"
 
