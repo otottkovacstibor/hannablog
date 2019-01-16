@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development - Administration - Network Admin package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-05 08:39:52+0000\n"
+"PO-Revision-Date: 2019-01-15 20:37:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -362,7 +362,7 @@ msgstr "Törölt"
 #: wp-admin/network/site-info.php:174
 msgctxt "site"
 msgid "Spam"
-msgstr "spam"
+msgstr "Spam"
 
 #: wp-admin/includes/class-wp-ms-sites-list-table.php:39
 #: wp-admin/network/site-info.php:173
@@ -725,7 +725,7 @@ msgstr "Nyelv beállításai"
 
 #: wp-admin/network/settings.php:202
 msgid "Allow site administrators to add new users to their site via the \"Users &rarr; Add New\" page"
-msgstr "Engedélyezi a honlap adminisztrátoroknak egy új felhasználó hozzáadását a \"Felhasználók &rarr; Új hozzáadása\" oldalukon keresztül."
+msgstr "Engedélyezi a honlap adminisztrátoroknak egy új felhasználó hozzáadását a \"Felhasználók &rarr; Új hozzáadása\" oldalukon keresztül"
 
 #: wp-admin/network/sites.php:32
 msgid "Dashboard leads to the Dashboard for that site."
