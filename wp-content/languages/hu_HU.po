@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-10 20:02:59+0000\n"
+"PO-Revision-Date: 2019-01-17 19:20:16+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1735,7 +1735,7 @@ msgstr "Halványlila"
 
 #: wp-includes/js/dist/editor.js:33481
 msgid "Additional CSS Class"
-msgstr "További CSS-osztály"
+msgstr "Egyedi CSS osztály"
 
 #: wp-includes/js/dist/editor.js:33385
 msgid "Anchors lets you link directly to a section on a page."
@@ -6916,7 +6916,7 @@ msgstr "CSS ismeretek"
 
 #: wp-includes/class-wp-customize-manager.php:5305
 msgid "Additional CSS"
-msgstr "További CSS"
+msgstr "Egyedi CSS"
 
 #: wp-includes/class-wp-customize-manager.php:5199
 msgid "Scroll with Page"
