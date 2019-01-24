@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.8.9
+Version: 0.8.9.0
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -729,17 +729,32 @@ GNU General Public License for more details.
 		protected function getWpContentDir($path = false){
 			/*
 			Sample Paths;
+
+			/cache/
+
 			/cache/all/
 			/cache/all
 			/cache/all/page
 			/cache/all/index.html
+
+			/cache/wpfc-minified
+
+			/cache/wpfc-widget-cache
 
 			/cache/wpfc-mobile-cache/
 			/cache/wpfc-mobile-cache/page
 			/cache/wpfc-mobile-cache/index.html
 			
 			/cache/tmpWpfc
+			/cache/tmpWpfc/
 			/cache/tmpWpfc/mobile_
+			/cache/tmpWpfc/m
+			/cache/tmpWpfc/w
+
+			
+			/cache/testWpFc/
+
+			/cache/all/testWpFc/
 			*/
 			if($path){
 				return WPFC_WP_CONTENT_DIR.$path;
@@ -767,7 +782,7 @@ GNU General Public License for more details.
 		// }
 
 		public function deleteWidgetCache(){
-			$widget_cache_path = $this->getWpContentDir()."/cache/wpfc-widget-cache";
+			$widget_cache_path = $this->getWpContentDir("/cache/wpfc-widget-cache");
 			
 			if(is_dir($widget_cache_path)){
 				if(!is_dir($this->getWpContentDir("/cache/tmpWpfc"))){
@@ -776,7 +791,7 @@ GNU General Public License for more details.
 					}
 				}
 
-				if(@rename($widget_cache_path, $this->getWpContentDir()."/cache/tmpWpfc/w".time())){
+				if(@rename($widget_cache_path, $this->getWpContentDir("/cache/tmpWpfc/w").time())){
 					//DONE
 				}
 			}
@@ -936,8 +951,8 @@ GNU General Public License for more details.
 			}
 		}
 
-		public function delete_cache_of_term($term_id){
-			$term = get_term($term_id);
+		public function delete_cache_of_term($term_taxonomy_id){
+			$term = get_term_by("term_taxonomy_id", $term_taxonomy_id);
 
 			if(!$term || is_wp_error($term)){
 				return false;
@@ -1032,7 +1047,7 @@ GNU General Public License for more details.
 			$minifed_deleted = false;
 
 			$cache_path = $this->getWpContentDir("/cache/all");
-			$minified_cache_path = $this->getWpContentDir()."/cache/wpfc-minified";
+			$minified_cache_path = $this->getWpContentDir("/cache/wpfc-minified");
 
 			if(class_exists("WpFcMobileCache")){
 
@@ -1065,7 +1080,7 @@ GNU General Public License for more details.
 			$this->deleteWidgetCache();
 
 			if(is_dir($cache_path)){
-				if(@rename($cache_path, $this->getWpContentDir()."/cache/tmpWpfc/".time())){
+				if(@rename($cache_path, $this->getWpContentDir("/cache/tmpWpfc/").time())){
 					delete_option("WpFastestCacheHTML");
 					delete_option("WpFastestCacheHTMLSIZE");
 					delete_option("WpFastestCacheMOBILE");
@@ -1079,7 +1094,7 @@ GNU General Public License for more details.
 
 			if($minified){
 				if(is_dir($minified_cache_path)){
-					if(@rename($minified_cache_path, $this->getWpContentDir()."/cache/tmpWpfc/m".time())){
+					if(@rename($minified_cache_path, $this->getWpContentDir("/cache/tmpWpfc/m").time())){
 						delete_option("WpFastestCacheCSS");
 						delete_option("WpFastestCacheCSSSIZE");
 						delete_option("WpFastestCacheJS");
@@ -1188,7 +1203,7 @@ GNU General Public License for more details.
 						foreach ((array)$files as $file) {
 							$mobile_file = str_replace("/cache/all/", "/cache/wpfc-mobile-cache/", $file);
 							
-							@rename($file, $this->getWpContentDir()."/cache/tmpWpfc/".time());
+							@rename($file, $this->getWpContentDir("/cache/tmpWpfc/").time());
 							@rename($mobile_file, $this->getWpContentDir("/cache/tmpWpfc/mobile_").time());
 						}
 				}else if($rule->prefix == "exact"){
@@ -1508,26 +1523,32 @@ GNU General Public License for more details.
 		}
 
 		public function current_url(){
-			if(defined('WP_CLI')){
-				$_SERVER["SERVER_NAME"] = isset($_SERVER["SERVER_NAME"]) ? $_SERVER["SERVER_NAME"] : "";
-				$_SERVER["SERVER_PORT"] = isset($_SERVER["SERVER_PORT"]) ? $_SERVER["SERVER_PORT"] : 80;
-			}
+			global $wp;
+		    $current_url = home_url($_SERVER['REQUEST_URI']);
+
+		    return $current_url;
+
+
+			// if(defined('WP_CLI')){
+			// 	$_SERVER["SERVER_NAME"] = isset($_SERVER["SERVER_NAME"]) ? $_SERVER["SERVER_NAME"] : "";
+			// 	$_SERVER["SERVER_PORT"] = isset($_SERVER["SERVER_PORT"]) ? $_SERVER["SERVER_PORT"] : 80;
+			// }
 			
-		    $pageURL = 'http';
+		 //    $pageURL = 'http';
 		 
-		    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on'){
-		        $pageURL .= 's';
-		    }
+		 //    if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on'){
+		 //        $pageURL .= 's';
+		 //    }
 		 
-		    $pageURL .= '://';
+		 //    $pageURL .= '://';
 		 
-		    if($_SERVER['SERVER_PORT'] != '80'){
-		        $pageURL .= $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];
-		    }else{
-		        $pageURL .= $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
-		    }
+		 //    if($_SERVER['SERVER_PORT'] != '80'){
+		 //        $pageURL .= $_SERVER['SERVER_NAME'].':'.$_SERVER['SERVER_PORT'].$_SERVER['REQUEST_URI'];
+		 //    }else{
+		 //        $pageURL .= $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+		 //    }
 		 
-		    return $pageURL;
+		 //    return $pageURL;
 		}
 
 		public function wpfc_load_plugin_textdomain(){

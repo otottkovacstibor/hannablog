@@ -119,6 +119,8 @@
 
 					if(current_user_can('manage_options')){
 						if($_POST["wpFastestCachePage"] == "options"){
+							$this->exclude_urls();
+
 							$this->saveOption();
 						}else if($_POST["wpFastestCachePage"] == "deleteCache"){
 							$this->deleteCache();
@@ -129,6 +131,46 @@
 						}
 					}else{
 						die("Forbidden");
+					}
+				}
+			}
+		}
+
+		public function exclude_urls(){
+			// to exclude wishlist url of YITH WooCommerce Wishlist
+			if($this->isPluginActive('yith-woocommerce-wishlist/init.php')){
+				$wishlist_page_id = get_option("yith_wcwl_wishlist_page_id");
+				$permalink = urldecode(get_permalink($wishlist_page_id));
+
+				if(preg_match("/https?:\/\/[^\/]+\/(.+)/", $permalink, $out)){
+					$url = trim($out[1], "/");
+				}
+			}
+
+
+			if($url){
+				$rules_std = array();
+				$rules_json = get_option("WpFastestCacheExclude");
+
+				$new_rule = new stdClass;
+				$new_rule->prefix = "exact";
+				$new_rule->content = $url;
+				$new_rule->type = "page";
+
+
+				if($rules_json === false){
+					array_push($rules_std, $new_rule);
+					add_option("WpFastestCacheExclude", json_encode($rules_std), null, "yes");
+				}else{
+					$rules_std = json_decode($rules_json);
+
+					if(!is_array($rules_std)){
+						$rules_std = array();
+					}
+
+					if(!in_array($new_rule, $rules_std)){
+						array_push($rules_std, $new_rule);
+						update_option("WpFastestCacheExclude", json_encode($rules_std));
 					}
 				}
 			}
@@ -252,15 +294,15 @@
 		public function checkCachePathWriteable(){
 			$message = array();
 
-			if(!is_dir($this->getWpContentDir()."/cache/")){
-				if (@mkdir($this->getWpContentDir()."/cache/", 0755, true)){
+			if(!is_dir($this->getWpContentDir("/cache/"))){
+				if (@mkdir($this->getWpContentDir("/cache/"), 0755, true)){
 					//
 				}else{
 					array_push($message, "- /wp-content/cache/ is needed to be created");
 				}
 			}else{
-				if (@mkdir($this->getWpContentDir()."/cache/testWpFc/", 0755, true)){
-					rmdir($this->getWpContentDir()."/cache/testWpFc/");
+				if (@mkdir($this->getWpContentDir("/cache/testWpFc/"), 0755, true)){
+					rmdir($this->getWpContentDir("/cache/testWpFc/"));
 				}else{
 					array_push($message, "- /wp-content/cache/ permission has to be 755");
 				}
@@ -273,8 +315,8 @@
 					array_push($message, "- /wp-content/cache/all/ is needed to be created");
 				}
 			}else{
-				if (@mkdir($this->getWpContentDir()."/cache/all/testWpFc/", 0755, true)){
-					rmdir($this->getWpContentDir()."/cache/all/testWpFc/");
+				if (@mkdir($this->getWpContentDir("/cache/all/testWpFc/"), 0755, true)){
+					rmdir($this->getWpContentDir("/cache/all/testWpFc/"));
 				}else{
 					array_push($message, "- /wp-content/cache/all/ permission has to be 755");
 				}	
@@ -998,6 +1040,7 @@
 							<?php 
 								$tester_arr_mobile = array(
 									"tr-TR",
+									"tr",
 									"berkatan.com",
 									"yenihobiler.com",
 									"hobiblogu.com",

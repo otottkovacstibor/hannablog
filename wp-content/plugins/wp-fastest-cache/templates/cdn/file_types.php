@@ -16,6 +16,7 @@
                         "png",
                         "svg",
                         "ttf",
+                        "webm",
                         "woff",
                         "woff2"
                         );
