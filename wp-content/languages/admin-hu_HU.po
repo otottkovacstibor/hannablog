@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-10 19:53:45+0000\n"
+"PO-Revision-Date: 2019-01-25 11:24:59+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3925,14 +3925,6 @@ msgctxt "timezone date format"
 msgid "Y-m-d H:i:s"
 msgstr "Y.m.d. H:i:s"
 
-#: wp-admin/includes/class-wp-automatic-updater.php:846
-msgid ""
-"UPDATE LOG\n"
-"=========="
-msgstr ""
-"NAPLÓ FRISSÍTÉSE\n"
-"==============="
-
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
 #: wp-admin/includes/misc.php:1191
@@ -3970,6 +3962,19 @@ msgstr ""
 "###SITENAME###\n"
 "###SITEURL###"
 
+#: wp-admin/includes/class-wp-automatic-updater.php:846
+msgid ""
+"UPDATE LOG\n"
+"=========="
+msgstr ""
+"NAPLÓ FRISSÍTÉSE\n"
+"==============="
+
+#: wp-admin/includes/revision.php:208 wp-admin/includes/revision.php:250
+msgctxt "revision date short format"
+msgid "j M @ H:i"
+msgstr "m-d  H:i"
+
 #: wp-admin/includes/class-wp-automatic-updater.php:828
 msgid ""
 "BETA TESTING?\n"
@@ -3993,11 +3998,6 @@ msgstr ""
 " * vagy, ha kényelmesebbnek tartjuk, írjunk egy hibajelentést ide:: https://core.trac.wordpress.org/\n"
 "\n"
 "Thanks! -- The WordPress Team"
-
-#: wp-admin/includes/revision.php:208 wp-admin/includes/revision.php:250
-msgctxt "revision date short format"
-msgid "j M @ H:i"
-msgstr "m-d  H:i"
 
 #: wp-admin/includes/ms.php:356
 msgid "Site Upload Space Quota"
@@ -5769,10 +5769,6 @@ msgstr "Lejjebb meg kell adni az adatbázis kapcsolat tulajdonságait. Ha nem va
 msgid "Welcome to WordPress!"
 msgstr "Üdvözlet a WordPress-csapattól!"
 
-#: wp-admin/plugin-install.php:90
-msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
-msgstr "Ha tudjuk mit szeretnénk, a Keresés a legjobb módja. A Keresés képernyőn lehetőség van a WordPress.org bővítménytárban keresi kifejezések, szerzők, vagy címkék alapján. Lehetőségünk van a bővítménytárban keresni népszerű címkék szerint is. A nagyobb méretű címke azt jelenti, hogy sok bővítményt láttak el ezzel a címkével."
-
 #: wp-admin/includes/dashboard.php:1577
 msgid "or, <a href=\"%s\">change your theme completely</a>"
 msgstr "vagy <a href=\"%s\">változtassuk meg a sablonunkat teljesen</a>"
@@ -5780,6 +5776,10 @@ msgstr "vagy <a href=\"%s\">változtassuk meg a sablonunkat teljesen</a>"
 #: wp-admin/includes/plugin-install.php:331 wp-admin/theme-install.php:191
 msgid "Get Favorites"
 msgstr "Kedvencekhez"
+
+#: wp-admin/plugin-install.php:90
+msgid "If you know what you&#8217;re looking for, Search is your best bet. The Search screen has options to search the WordPress Plugin Directory for a particular Term, Author, or Tag. You can also search the directory by selecting popular tags. Tags in larger type mean more plugins have been labeled with that tag."
+msgstr "Ha tudjuk mit szeretnénk, a Keresés a legjobb módja. A Keresés képernyőn lehetőség van a WordPress.org bővítménytárban keresi kifejezések, szerzők, vagy címkék alapján. Lehetőségünk van a bővítménytárban keresni népszerű címkék szerint is. A nagyobb méretű címke azt jelenti, hogy sok bővítményt láttak el ezzel a címkével."
 
 #: wp-admin/options-reading.php:31 wp-admin/options-reading.php:111
 #: wp-admin/options-reading.php:112 wp-admin/install.php:184
@@ -7074,6 +7074,11 @@ msgstr "<strong>Fogd-és-vidd</strong> - A dobozokat a fogd-és-vidd módszerrel
 msgid "Version %s"
 msgstr "%s verzió"
 
+#: wp-admin/comment.php:149 wp-admin/theme-editor.php:279
+#: wp-admin/plugins.php:316 wp-admin/plugins.php:322
+msgid "Caution:"
+msgstr "Figyelem:"
+
 #: wp-admin/options-reading.php:37 wp-admin/edit-tags.php:263
 #: wp-admin/link-manager.php:65 wp-admin/options-writing.php:44
 #: wp-admin/includes/ms.php:995 wp-admin/my-sites.php:46
@@ -7094,11 +7099,6 @@ msgstr "%s verzió"
 #: wp-admin/export.php:53 wp-admin/custom-header.php:122
 msgid "For more information:"
 msgstr "További információk:"
-
-#: wp-admin/comment.php:149 wp-admin/theme-editor.php:279
-#: wp-admin/plugins.php:316 wp-admin/plugins.php:322
-msgid "Caution:"
-msgstr "Figyelem:"
 
 #: wp-admin/includes/class-wp-terms-list-table.php:461
 #: wp-admin/includes/class-wp-users-list-table.php:428
@@ -7121,6 +7121,18 @@ msgid_plural "Update Available <span class=\"count\">(%s)</span>"
 msgstr[0] "Frissítés <span class=\"count\">(%s)</span>"
 msgstr[1] "Frissítés <span class=\"count\">(%s)</span>"
 
+#. translators: %s: Theme author name
+#: wp-admin/includes/class-wp-themes-list-table.php:216
+#: wp-admin/includes/theme.php:655
+#: wp-admin/includes/class-wp-plugins-list-table.php:772
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:488
+#: wp-admin/includes/class-wp-theme-install-list-table.php:308
+#: wp-admin/includes/class-wp-theme-install-list-table.php:412
+#: wp-admin/themes.php:274 wp-admin/themes.php:407 wp-admin/themes.php:462
+#: wp-admin/theme-install.php:264 wp-admin/theme-install.php:319
+msgid "By %s"
+msgstr "Szerző: %s"
+
 #. translators: %s: plugin name
 #: wp-admin/includes/class-wp-links-list-table.php:82
 #: wp-admin/includes/class-wp-links-list-table.php:318
@@ -7140,18 +7152,6 @@ msgstr[1] "Frissítés <span class=\"count\">(%s)</span>"
 #: wp-admin/edit-tag-form.php:264
 msgid "Delete"
 msgstr "Törlés"
-
-#. translators: %s: Theme author name
-#: wp-admin/includes/class-wp-themes-list-table.php:216
-#: wp-admin/includes/theme.php:655
-#: wp-admin/includes/class-wp-plugins-list-table.php:772
-#: wp-admin/includes/class-wp-plugin-install-list-table.php:488
-#: wp-admin/includes/class-wp-theme-install-list-table.php:308
-#: wp-admin/includes/class-wp-theme-install-list-table.php:412
-#: wp-admin/themes.php:274 wp-admin/themes.php:407 wp-admin/themes.php:462
-#: wp-admin/theme-install.php:264 wp-admin/theme-install.php:319
-msgid "By %s"
-msgstr "Szerző: %s"
 
 #: wp-admin/includes/class-wp-users-list-table.php:399
 #: wp-admin/user-edit.php:395
@@ -11054,10 +11054,6 @@ msgstr "Csoportos szerkesztés"
 msgid "&mdash; No Change &mdash;"
 msgstr "&mdash; Nincs változás &mdash;"
 
-#: wp-admin/includes/class-wp-users-list-table.php:324 wp-admin/export.php:169
-msgid "Posts"
-msgstr "Bejegyzés"
-
 #: wp-admin/includes/file.php:1112 wp-admin/includes/file.php:1233
 msgid "Incompatible Archive."
 msgstr "Inkompatibilis archívum."
@@ -11793,6 +11789,10 @@ msgstr "Ismeretlen tevékenység."
 #: wp-admin/comment.php:126
 msgid "You are about to approve the following comment:"
 msgstr "Biztosan elfogadjuk ezt a hozzászólást:"
+
+#: wp-admin/includes/class-wp-users-list-table.php:324 wp-admin/export.php:169
+msgid "Posts"
+msgstr "Bejegyzések"
 
 #: wp-admin/includes/media.php:2456 wp-admin/includes/nav-menu.php:361
 #: wp-admin/includes/nav-menu.php:649

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.0.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-01-17 19:20:16+0000\n"
+"PO-Revision-Date: 2019-01-25 12:14:51+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -5636,7 +5636,7 @@ msgstr "Yelp"
 #: wp-includes/theme.php:1967
 msgctxt "Theme starter content"
 msgid "Categories"
-msgstr "Kategória"
+msgstr "Kategóriák"
 
 #: wp-includes/theme.php:1979
 msgctxt "Theme starter content"
@@ -8042,11 +8042,11 @@ msgstr "<strong>HIBA</strong>: Érvénytelen felhasználónév."
 
 #: wp-includes/taxonomy.php:531
 msgid "Categories list"
-msgstr "Kategória lista"
+msgstr "Kategórialista"
 
 #: wp-includes/taxonomy.php:531
 msgid "Tags list"
-msgstr "Címke lista"
+msgstr "Címkelista"
 
 #: wp-includes/taxonomy.php:530
 msgid "Categories list navigation"
@@ -12667,7 +12667,7 @@ msgstr "A fáj túl nagy méretű a honlapon engedélyezett mérethez képest."
 #: wp-includes/taxonomy.php:513
 msgctxt "taxonomy general name"
 msgid "Categories"
-msgstr "Kategória"
+msgstr "Kategóriák"
 
 #: wp-includes/taxonomy.php:517
 msgid "All Tags"
@@ -13062,7 +13062,7 @@ msgstr[1] "%d sablon frissítése"
 #. translators: 1: Number of updates available to WordPress
 #: wp-includes/update.php:622
 msgid "%d WordPress Update"
-msgstr "WordPress %d frissítés"
+msgstr "%d WordPress frissítés"
 
 #: wp-signup.php:760
 msgid "If you do not activate your site within two days, you will have to sign up again."
@@ -14788,7 +14788,7 @@ msgstr "Védett hozzászólás: megtekintéséhez meg kell adni a jelszót."
 #. translators: Comments feed title. 1: Post title
 #: wp-includes/feed-rss2-comments.php:38
 msgid "Comments on: %s"
-msgstr "Hozzászólás: %s"
+msgstr "Hozzászólások ehhez: %s"
 
 #. translators: Comment author title. 1: Comment author name
 #: wp-includes/feed-rss2-comments.php:83 wp-includes/feed-atom-comments.php:84
@@ -14803,7 +14803,7 @@ msgstr "%2$s hozzászólása (%1$s)"
 #. translators: Comments feed title. 1: Site name
 #: wp-includes/feed-rss2-comments.php:44 wp-includes/feed-atom-comments.php:39
 msgid "Comments for %s"
-msgstr "Hozzászólások: %s"
+msgstr "Hozzászólások ehhez: %s"
 
 #. translators: Comments feed title. 1: Site name, 2: Search query
 #: wp-includes/feed-rss2-comments.php:41 wp-includes/feed-atom-comments.php:36
@@ -15086,7 +15086,7 @@ msgstr "%s hozzászólás"
 
 #: wp-includes/category-template.php:1135
 msgid "Tags: "
-msgstr "Címke: "
+msgstr "Címkék: "
 
 #. translators: %s: login URL
 #: wp-includes/comment-template.php:2243
@@ -15733,7 +15733,7 @@ msgstr "Cél"
 #: wp-includes/js/dist/block-library.js:6625
 #: wp-includes/js/dist/block-library.js:6677
 msgid "Categories"
-msgstr "Kategória"
+msgstr "Kategóriák"
 
 #: wp-includes/script-loader.php:1469 wp-includes/class-wp-editor.php:1124
 #: wp-includes/js/dist/editor.js:28441
