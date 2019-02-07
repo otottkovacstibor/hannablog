@@ -1,13 +1,13 @@
 node('master') {
+  def git
   try {
     properties([buildDiscarder(logRotator(numToKeepStr: '5')), [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/Tibi02/hannablog'], pipelineTriggers([githubPush()])])
-
+    
     ws('/disk/docker/hannablog') {
       stage('Git checkout') {
         ansiColor('xterm') {
-          def git = checkout([$class: 'GitSCM', branches: [[name: '*/master']], browser: [$class: 'GithubWeb', repoUrl: 'https://github.com/Tibi02/hannablog'], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'MessageExclusion', excludedMessage: 'skip ci'], [$class: 'LocalBranch', localBranch: 'master']], userRemoteConfigs: [[credentialsId: 'oktibor-ci', url: 'git@github.com:Tibi02/hannablog.git']]])
-          println git
-          githubNotify(account: 'Tibi02', context: 'Deploy', repo: 'hannablog', status: 'PENDING')
+          git = checkout([$class: 'GitSCM', branches: [[name: '*/master']], browser: [$class: 'GithubWeb', repoUrl: 'https://github.com/Tibi02/hannablog'], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'MessageExclusion', excludedMessage: 'skip ci'], [$class: 'LocalBranch', localBranch: 'master']], userRemoteConfigs: [[credentialsId: 'oktibor-ci', url: 'git@github.com:Tibi02/hannablog.git']]])
+          setGithubStatus('PENDING')
           sh('chown -R www-data:www-data .')
         }
       }
@@ -26,8 +26,13 @@ node('master') {
         }
       }
     }
-    githubNotify(account: 'Tibi02', context: 'Deploy', repo: 'hannablog', status: 'SUCCESS')
+
+    setGithubStatus('SUCCESS')
   } catch(e) {
-    githubNotify(account: 'Tibi02', context: 'Deploy', repo: 'hannablog', status: 'FAILURE')
+    setGithubStatus('FAILURE')
   }
+}
+
+def setGithubStatus(status) {
+  githubNotify(account: 'Tibi02', repo: 'hannablog', context: 'Deploy', sha: git.GIT_COMMIT, credentialsId: 'oktibor-ci-github', status: status)
 }
