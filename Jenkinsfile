@@ -2,12 +2,11 @@ node('master') {
   def git
   try {
     properties([buildDiscarder(logRotator(numToKeepStr: '5')), [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/Tibi02/hannablog'], pipelineTriggers([githubPush()])])
-    
+    setBuildStatus('PENDING')
     ws('/disk/docker/hannablog') {
       stage('Git checkout') {
         ansiColor('xterm') {
           git = checkout([$class: 'GitSCM', branches: [[name: '*/master']], browser: [$class: 'GithubWeb', repoUrl: 'https://github.com/Tibi02/hannablog'], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'MessageExclusion', excludedMessage: 'skip ci'], [$class: 'LocalBranch', localBranch: 'master']], userRemoteConfigs: [[credentialsId: 'oktibor-ci', url: 'git@github.com:Tibi02/hannablog.git']]])
-          setGithubStatus('PENDING', git.GIT_COMMIT)
           sh('chown -R www-data:www-data .')
         }
       }
@@ -27,12 +26,22 @@ node('master') {
       }
     }
 
-    setGithubStatus('SUCCESS', git.GIT_COMMIT)
+    setBuildStatus('SUCCESS')
   } catch(e) {
-    setGithubStatus('FAILURE', git.GIT_COMMIT)
+    setBuildStatus('FAILURE')
   }
 }
 
 def setGithubStatus(status, commitId) {
   githubNotify(account: 'Tibi02', repo: 'hannablog', context: 'Deploy', sha: commitId, credentialsId: 'oktibor-ci-github', status: status)
+}
+
+void setBuildStatus(String status) {
+  step([
+      $class: "GitHubCommitStatusSetter",
+      reposSource: [$class: "ManuallyEnteredRepositorySource", url: "https://github.com/Tibi02/hannablog"],
+      contextSource: [$class: "ManuallyEnteredCommitContextSource", context: "ci/jenkins/deploy"],
+      errorHandlers: [[$class: "ChangingBuildStatusErrorHandler", result: "UNSTABLE"]],
+      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: build.description, state: status]] ]
+  ]);
 }
