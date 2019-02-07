@@ -2,7 +2,8 @@ node('master') {
   def git
   try {
     properties([buildDiscarder(logRotator(numToKeepStr: '5')), [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/Tibi02/hannablog'], pipelineTriggers([githubPush()])])
-    setBuildStatus('PENDING')
+    setBuildStatus('Build started', 'PENDING')
+    println currentBuild
     ws('/disk/docker/hannablog') {
       stage('Git checkout') {
         ansiColor('xterm') {
@@ -26,9 +27,9 @@ node('master') {
       }
     }
 
-    setBuildStatus('SUCCESS')
+    setBuildStatus('Build complete', 'SUCCESS')
   } catch(e) {
-    setBuildStatus('FAILURE')
+    setBuildStatus('Build failed', 'FAILURE')
   }
 }
 
@@ -36,12 +37,12 @@ def setGithubStatus(status, commitId) {
   githubNotify(account: 'Tibi02', repo: 'hannablog', context: 'Deploy', sha: commitId, credentialsId: 'oktibor-ci-github', status: status)
 }
 
-void setBuildStatus(String status) {
+void setBuildStatus(String message, String status) {
   step([
       $class: "GitHubCommitStatusSetter",
       reposSource: [$class: "ManuallyEnteredRepositorySource", url: "https://github.com/Tibi02/hannablog"],
       contextSource: [$class: "ManuallyEnteredCommitContextSource", context: "ci/jenkins/deploy"],
       errorHandlers: [[$class: "ChangingBuildStatusErrorHandler", result: "UNSTABLE"]],
-      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: build.description, state: status]] ]
+      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: message, state: status]] ]
   ]);
 }
