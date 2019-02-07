@@ -7,7 +7,7 @@ node('master') {
       stage('Git checkout') {
         ansiColor('xterm') {
           git = checkout([$class: 'GitSCM', branches: [[name: '*/master']], browser: [$class: 'GithubWeb', repoUrl: 'https://github.com/Tibi02/hannablog'], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'MessageExclusion', excludedMessage: 'skip ci'], [$class: 'LocalBranch', localBranch: 'master']], userRemoteConfigs: [[credentialsId: 'oktibor-ci', url: 'git@github.com:Tibi02/hannablog.git']]])
-          setGithubStatus('PENDING')
+          setGithubStatus('PENDING', git.GIT_COMMIT)
           sh('chown -R www-data:www-data .')
         }
       }
@@ -27,12 +27,12 @@ node('master') {
       }
     }
 
-    setGithubStatus('SUCCESS')
+    setGithubStatus('SUCCESS', git.GIT_COMMIT)
   } catch(e) {
-    setGithubStatus('FAILURE')
+    setGithubStatus('FAILURE', git.GIT_COMMIT)
   }
 }
 
-def setGithubStatus(status) {
-  githubNotify(account: 'Tibi02', repo: 'hannablog', context: 'Deploy', sha: git.GIT_COMMIT, credentialsId: 'oktibor-ci-github', status: status)
+def setGithubStatus(status, commitId) {
+  githubNotify(account: 'Tibi02', repo: 'hannablog', context: 'Deploy', sha: commitId, credentialsId: 'oktibor-ci-github', status: status)
 }
