@@ -3,7 +3,7 @@
     <?php 
 	
 		do_action('suevafree_archive_title');
-		do_action('suevafree_masonry', suevafree_setting('suevafree_category_layout'), 'col-md-12'); 
+		do_action('suevafree_masonry', esc_attr(suevafree_setting('suevafree_category_layout')), 'col-md-12'); 
 		
 	?>
 

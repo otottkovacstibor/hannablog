@@ -39,9 +39,7 @@ if( !class_exists( 'suevafree_customize' ) ) {
 			$file_dir = get_template_directory_uri() . "/core/admin/assets/";
 
 			if ( $pagenow == 'post.php' || $pagenow == 'post-new.php' || $pagenow == 'edit.php' ) {
-
 				wp_enqueue_style( 'wp-color-picker' ); 
-			
 			}
 
 			wp_enqueue_style ( 'suevafree-panel',  $file_dir . 'css/panel.css' ); 

@@ -25,7 +25,7 @@ if (!function_exists('suevafree_testimonial_format_function')) {
 	
 	?>
 		
-        <div class="post-article post-details <?php echo suevafree_setting('suevafree_post_align', '') . ' ' . suevafree_setting('suevafree_title_align', ''); ?>">
+        <div class="post-article post-details <?php echo esc_attr(suevafree_setting('suevafree_post_align', '')) . ' ' . esc_attr(suevafree_setting('suevafree_title_align', '')); ?>">
         
             <?php 
             

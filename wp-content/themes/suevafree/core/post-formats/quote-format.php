@@ -19,8 +19,8 @@ if (!function_exists('suevafree_quote_format_function')) {
         <div class="post-article quote">
             
             <i class="fa fa-quote-left"></i>
-            <blockquote> <p> <?php echo esc_attr(suevafree_postmeta( 'suevafree_quote_text' )); ?> </p> </blockquote>
-            <p><?php echo esc_attr(suevafree_postmeta( 'suevafree_quote_author' )); ?></p>
+            <blockquote> <p> <?php echo esc_html(suevafree_postmeta( 'suevafree_quote_text' )); ?> </p> </blockquote>
+            <p><?php echo esc_html(suevafree_postmeta( 'suevafree_quote_author' )); ?></p>
             
         </div>
 

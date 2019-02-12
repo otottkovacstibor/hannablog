@@ -157,7 +157,7 @@ if( !class_exists( 'suevafree_metaboxes' ) ) {
 						
 						<div class="input-right">
 						
-							<input name="<?php echo esc_attr($field['id']); ?>" id="<?php echo esc_attr($field['id']); ?>" type="<?php echo esc_attr($field['type']); ?>" value="<?php if ( suevafree_postmeta( $field['id']) != "") { echo esc_html(suevafree_postmeta( $field['id'])); } ?>" />
+							<input name="<?php echo esc_attr($field['id']); ?>" id="<?php echo esc_attr($field['id']); ?>" type="<?php echo esc_attr($field['type']); ?>" value="<?php if ( suevafree_postmeta( $field['id']) != "") { echo esc_attr(suevafree_postmeta( $field['id'])); } ?>" />
 							
 						</div>
 						

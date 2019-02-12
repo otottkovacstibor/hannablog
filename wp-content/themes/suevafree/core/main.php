@@ -169,109 +169,6 @@ if (!function_exists('suevafree_postmeta')) {
 }
 
 /*-----------------------------------------------------------------------------------*/
-/* REQUIRE */
-/*-----------------------------------------------------------------------------------*/ 
-
-if (!function_exists('suevafree_require')) {
-
-	function suevafree_require($folder) {
-	
-		if (isset($folder)) : 
-		
-			$dir = get_template_directory() . $folder ;  
-				
-			$files = scandir($dir);  
-				  
-			foreach ($files as $key => $value) {  
-
-				if ( !in_array($value,array(".DS_Store",".","..") ) && !strstr( $value, '._' ) ) { 
-						
-					if ( !is_dir( $dir . $value) ) { 
-							
-						require_once $dir . $value;
-						
-					} 
-					
-				} 
-
-			}  
-				
-		
-		endif;
-		
-	}
-
-}
-
-/*-----------------------------------------------------------------------------------*/
-/* SCRIPTS */
-/*-----------------------------------------------------------------------------------*/ 
-
-if (!function_exists('suevafree_enqueue_script')) {
-
-	function suevafree_enqueue_script($folder) {
-	
-		if ( isset($folder) ) : 
-	
-			$dir = get_template_directory() . $folder ;  
-				
-			$files = scandir($dir);  
-				  
-			foreach ($files as $key => $value) {  
-
-				if ( !in_array($value,array(".DS_Store",".","..") ) && !strstr( $value, '._' ) ) { 
-						
-					if ( !is_dir( $dir . $value ) && strstr ( $value, 'js' )) { 
-							
-						wp_enqueue_script( 'suevafree-' . str_replace('.js','',$value), get_template_directory_uri() . $folder . "/" . $value , array('jquery'), FALSE, TRUE ); 
-						
-					} 
-					
-				} 
-
-			}  
-
-		endif;
-	
-	}
-
-}
-
-/*-----------------------------------------------------------------------------------*/
-/* STYLES */
-/*-----------------------------------------------------------------------------------*/ 
-
-if (!function_exists('suevafree_enqueue_style')) {
-
-	function suevafree_enqueue_style($folder) {
-	
-		if (isset($folder)) : 
-	
-			$dir = get_template_directory() . $folder ;  
-				
-			$files = scandir($dir);  
-				  
-			foreach ($files as $key => $value) {  
-
-				if ( !in_array($value,array(".DS_Store",".","..") ) && !strstr( $value, '._' ) ) { 
-						
-					if ( !is_dir( $dir . $value ) && strstr ( $value, 'css' )) { 
-						
-						wp_enqueue_style( 'suevafree-' . str_replace('.css','',$value), get_template_directory_uri() . $folder . "/" . $value ); 
-						
-					} 
-					
-				} 
-
-			}  
-			
-		endif;
-	
-	}
-
-}
-
-/*-----------------------------------------------------------------------------------*/
 /* ALLOWED PROTOCOLS */
 /*-----------------------------------------------------------------------------------*/ 
 
@@ -351,7 +248,7 @@ if (!function_exists('suevafree_body_classes_function')) {
 		
 		if ( suevafree_setting('suevafree_footer_layout') <> '' ) :
 				
-			$classes[] = esc_html(suevafree_setting('suevafree_footer_layout'));
+			$classes[] = esc_attr(suevafree_setting('suevafree_footer_layout'));
 	
 		endif;
 		
@@ -481,8 +378,8 @@ if (!function_exists('suevafree_template')) {
 
 		if ( suevafree_is_woocommerce_active('is_woocommerce') && ( suevafree_is_woocommerce_active('is_product_category') || suevafree_is_woocommerce_active('is_product_tag') ) && suevafree_setting('suevafree_woocommerce_category_layout') ) {
 		
-			$span = $template[suevafree_setting('suevafree_woocommerce_category_layout')];
-			$sidebar =  suevafree_setting('suevafree_woocommerce_category_layout');
+			$span = $template[esc_attr(suevafree_setting('suevafree_woocommerce_category_layout'))];
+			$sidebar =  esc_attr(suevafree_setting('suevafree_woocommerce_category_layout'));
 
 		} else if ( suevafree_is_woocommerce_active('is_woocommerce') && is_search() && suevafree_postmeta('suevafree_template') ) {
 					
@@ -639,15 +536,15 @@ if (!function_exists('suevafree_customize_excerpt_more')) {
 				),
 			);
 	
-			$class = 'button ' . suevafree_setting('suevafree_readmore_layout');
+			$class = 'button ' . esc_attr(suevafree_setting('suevafree_readmore_layout'));
 			$button = esc_html__('Read More','suevafree');
-			$container = 'class="read-more ' . suevafree_setting('suevafree_readmore_align') . '"';
+			$container = 'class="read-more ' . esc_attr(suevafree_setting('suevafree_readmore_align')) . '"';
 	
 			if ( suevafree_setting('suevafree_readmore_layout') == "default" || !suevafree_setting('suevafree_readmore_layout') ) : 
 			
 				$class = 'button default';
 				$button = esc_html__('Read More','suevafree');
-				$container = 'class="read-more ' . suevafree_setting('suevafree_readmore_align') . '"';
+				$container = 'class="read-more ' . esc_attr(suevafree_setting('suevafree_readmore_align')) . '"';
 	
 			else :
 	
@@ -836,7 +733,12 @@ if (!function_exists('suevafree_scripts_styles')) {
 
 	function suevafree_scripts_styles() {
 	
-		suevafree_enqueue_style('/assets/css');
+		wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), '3.3.7' );
+		wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css', array(), '4.7.0' );
+		wp_enqueue_style('prettyPhoto', get_template_directory_uri() . '/assets/css/prettyPhoto.css', array(), '3.1.6' );
+		wp_enqueue_style('suevafree-minimal-layout', get_template_directory_uri() . '/assets/css/minimal-layout.css', array(), '1.0.0' );
+		wp_enqueue_style('suevafree-template', get_template_directory_uri() . '/assets/css/template.css', array(), '1.0.0' );
+		wp_enqueue_style('suevafree-woocommerce', get_template_directory_uri() . '/assets/css/woocommerce.css', array(), '1.0.0' );
 
 		$fonts_args = array(
 			'family' =>	str_replace('|', '%7C','Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic|Raleway:400,800,900,700,600,500,300,200,100|Allura'),
@@ -845,27 +747,33 @@ if (!function_exists('suevafree_scripts_styles')) {
 		
 		wp_enqueue_style( 'suevafree_google_fonts', add_query_arg ( $fonts_args, "https://fonts.googleapis.com/css" ), array(), null );
 
-		$header_layout = suevafree_setting( 'suevafree_header_layout', 'header_layout_1');
+		$header_layout = esc_attr(suevafree_setting( 'suevafree_header_layout', 'header_layout_1'));
 		wp_enqueue_style( 'suevafree-' . $header_layout , get_template_directory_uri() . '/assets/css/header/' . $header_layout . '.css' ); 
 
 		if ( get_theme_mod('suevafree_skin') ) 
 			wp_enqueue_style( 'suevafree-' . get_theme_mod('suevafree_skin') , get_template_directory_uri() . '/assets/skins/' . get_theme_mod('suevafree_skin') . '.css' ); 
 		
-		wp_enqueue_script( "jquery-ui-core", array('jquery'));
-		wp_enqueue_script( "jquery-ui-tabs", array('jquery'));
-		wp_enqueue_script( "masonry", array('jquery') );
-
-		suevafree_enqueue_script('/assets/js');
+		wp_enqueue_script('jquery-ui-core', array('jquery'));
+		wp_enqueue_script('jquery-ui-tabs', array('jquery'));
+		wp_enqueue_script('masonry', array('jquery') );
+		
+		wp_enqueue_script('jquery-easing', get_template_directory_uri() . '/assets/js/jquery.easing.js' , array('jquery'), '1.3', TRUE ); 
+		wp_enqueue_script('imagesLoaded', get_template_directory_uri() . '/assets/js/imagesloaded.js' , array('jquery'), '4.1.4', TRUE ); 
+		wp_enqueue_script('jquery-nicescroll', get_template_directory_uri() . '/assets/js/jquery.nicescroll.js' , array('jquery'), '3.7.6', TRUE ); 
+		wp_enqueue_script('jquery.scrollTo', get_template_directory_uri() . '/assets/js/jquery.scrollTo.js' , array('jquery'), '2.1.2', TRUE ); 
+		wp_enqueue_script('prettyPhoto', get_template_directory_uri() . '/assets/js/prettyPhoto.js' , array('jquery'), '3.1.4', TRUE ); 
+		wp_enqueue_script('tinynav', get_template_directory_uri() . '/assets/js/tinynav.js' , array('jquery'), '1.1', TRUE ); 
+		wp_enqueue_script('tipsy', get_template_directory_uri() . '/assets/js/tipsy.js' , array('jquery'), '1.0.0a', TRUE ); 
+		wp_enqueue_script('touchSwipe.js', get_template_directory_uri() . '/assets/js/touchSwipe.js' , array('jquery'), '1.6.18', TRUE ); 
+		wp_enqueue_script('suevafree-template', get_template_directory_uri() . '/assets/js/template.js' , array('jquery'), '1.0.0', TRUE ); 
 	
 		if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
+
+		wp_enqueue_script('suevafree-html5shiv', get_template_directory_uri().'/assets/scripts/html5shiv.js', FALSE, '3.7.3');
+		wp_script_add_data('suevafree-html5shiv', 'conditional', 'IE 8' );
 		
-		wp_enqueue_script('jquery');
-		 
-		wp_enqueue_script ( 'suevafree-html5', get_template_directory_uri().'/assets/scripts/html5.js');
-		wp_script_add_data ( 'suevafree-html5', 'conditional', 'IE 8' );
-		
-		wp_enqueue_script ( 'suevafree-selectivizr', get_template_directory_uri().'/assets/scripts/selectivizr-min.js');
-		wp_script_add_data ( 'suevafree-selectivizr', 'conditional', 'IE 8' );
+		wp_enqueue_script('suevafree-selectivizr', get_template_directory_uri().'/assets/scripts/selectivizr.js', FALSE, '1.0.3b');
+		wp_script_add_data('suevafree-selectivizr', 'conditional', 'IE 8' );
 
 	}
 
@@ -893,7 +801,6 @@ if (!function_exists('suevafree_setup')) {
 		add_theme_support( 'automatic-feed-links' );
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'woocommerce' );
-
 		add_theme_support( 'title-tag' );
 
 		add_theme_support( 'custom-background', array(
@@ -931,9 +838,9 @@ if (!function_exists('suevafree_setup')) {
 		
 		);
 		
-		add_image_size( 'suevafree_thumbnail_s',  suevafree_setting('suevafree_thumbnail_s_width', '360'),  suevafree_setting('suevafree_thumbnail_s_height', '182'), TRUE ); 
-		add_image_size( 'suevafree_thumbnail_l',  suevafree_setting('suevafree_thumbnail_l_width', '750'),  suevafree_setting('suevafree_thumbnail_l_height', '379'), TRUE ); 
-		add_image_size( 'suevafree_thumbnail',    suevafree_setting('suevafree_thumbnail_width', '1170'),   suevafree_setting('suevafree_thumbnail_height', '690'), TRUE ); 
+		add_image_size( 'suevafree_thumbnail_s',  esc_attr(suevafree_setting('suevafree_thumbnail_s_width', '360')),  esc_attr(suevafree_setting('suevafree_thumbnail_s_height', '182')), TRUE ); 
+		add_image_size( 'suevafree_thumbnail_l',  esc_attr(suevafree_setting('suevafree_thumbnail_l_width', '750')),  esc_attr(suevafree_setting('suevafree_thumbnail_l_height', '379')), TRUE ); 
+		add_image_size( 'suevafree_thumbnail',    esc_attr(suevafree_setting('suevafree_thumbnail_width', '1170')),   esc_attr(suevafree_setting('suevafree_thumbnail_height', '690')), TRUE ); 
 
 		add_image_size( 'suevafree_large', 449,304, TRUE ); 
 		add_image_size( 'suevafree_medium', 290,220, TRUE ); 
@@ -942,15 +849,57 @@ if (!function_exists('suevafree_setup')) {
 		register_nav_menu('main-menu', esc_html__('Main menu', 'suevafree'));
 		register_nav_menu('one-page-menu', esc_html__('One Page menu', 'suevafree'));
 
-		suevafree_require('/core/post-formats/');
-		suevafree_require('/core/templates/header/');
-		suevafree_require('/core/templates/content/');
-		suevafree_require('/core/templates/sidebar/');
-		suevafree_require('/core/templates/footer/');
-		suevafree_require('/core/includes/');
-		suevafree_require('/core/admin/customize/');
-		suevafree_require('/core/functions/');
-		suevafree_require('/core/metaboxes/');
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/aside-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/default-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/image-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/link-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/page-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/product-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/quote-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/service-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/team-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/post-formats/testimonial-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/breadcrumb.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/header-layout-1.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/header-layout-2.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/header-layout-3.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/header-layout-4.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/header-layout-5.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/logo-layout.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/mobile-menu.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/header/scroll-sidebar.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/after-content.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/archive-title.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/before-content.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/masonry.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/post-details.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/post-format.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/post-thumbnail.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/post-title.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/content/search-title.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/sidebar/bottom-sidebar.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/sidebar/footer-sidebar.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/sidebar/header-sidebar.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/sidebar/onepage-sidebar.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/sidebar/side-sidebar.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/sidebar/top-sidebar.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/footer/copyright.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/footer/pagination.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/templates/footer/social_buttons.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/includes/class-customize.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/includes/class-metaboxes.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/includes/class-notice.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/includes/class-plugin-activation.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/admin/customize/customize.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/functions/function-required-plugins.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/functions/function-style.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/functions/function-widgets.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/functions/function-woocommerce.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/metaboxes/post.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/metaboxes/product.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/metaboxes/service.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/metaboxes/team.php' );
+		require_once( trailingslashit( get_template_directory() ) . '/core/metaboxes/testimonial.php' );
 
 	}
 

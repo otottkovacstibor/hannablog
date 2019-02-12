@@ -51,12 +51,6 @@ if (!function_exists('suevafree_required_plugins')) {
 				'required'  => false,
 			),
 
-			array(
-				'name'      => 'Instagram Slider Widget',
-				'slug'      => 'instagram-slider-widget',
-				'required'  => false,
-			)
-
 		);
 	
 		tgmpa( $plugins );
