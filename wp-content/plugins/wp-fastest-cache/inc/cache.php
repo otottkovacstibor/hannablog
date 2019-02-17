@@ -736,6 +736,9 @@
 
 					if($this->cacheFilePath){
 						$this->createFolder($this->cacheFilePath, $content);
+
+						
+						do_action('wpfc_is_cacheable_action');
 					}
 
 					return $content."<!-- need to refresh to see cached version -->";

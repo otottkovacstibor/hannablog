@@ -3,7 +3,7 @@ Contributors: alexvtn
 Tags: blog, custom-background, custom-colors, custom-header, custom-logo, custom-menu, e-commerce, featured-images, flexible-header, footer-widgets, post-formats, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns, three-columns, grid-layout, photography
 Requires at least: 4.0
 Tested up to: 5.0.3
-Stable tag: 3.6.5
+Stable tag: 3.6.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,12 @@ SuevaFree WordPress Theme, Copyright 2019 ThemeinProgress.
 SuevaFree is distributed under the terms of the GPLv2 or later
 
 == Changelog ==
+
+= 3.6.6 =
+Release date - February, 16 - 2019
+
+* Updated - readme.txt file
+* Edit  - Code optimized.
 
 = 3.6.5 =
 Release date - February, 09 - 2019
@@ -726,9 +732,6 @@ prettyPhoto By Stephane Caron - http://www.no-margin-for-errors.com/projects/pre
 
 jQuery Easing By George McGinley Smith - http://gsgd.co.uk/sandbox/jquery/easing/
 * jquery.easing.js v1.3 - Licensed under BSD License ( Applies to jquery.easing.js file in /suevafree/assets/js/ )
-
-imagesLoaded By desandro - https://imagesloaded.desandro.com/
-* imagesloaded.js v4.1.4 - Licensed under MIT license ( Applies to imagesLoaded.js file in /suevafree/assets/js/ )
 
 prettyPhoto By Stephane Caron - http://www.no-margin-for-errors.com
 * prettyPhoto.js v3.1.4 - Licensed under MIT license ( Applies to prettyPhoto.js file in /suevafree/assets/js/ )

@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.9.0
+Version: 0.8.9.1
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -584,7 +584,10 @@ GNU General Public License for more details.
 					if($url["path"] == "/"){
 						$this->rm_folder_recursively($this->getWpContentDir("/cache/all/index.html"));
 					}else{
-						$this->rm_folder_recursively($this->getWpContentDir("/cache/all").$url["path"]);
+						// to prevent changing path with ../ or with another method
+						if($url["path"] == realpath(".".$url["path"])){
+							$this->rm_folder_recursively($this->getWpContentDir("/cache/all").$url["path"]);
+						}
 					}
 				}
 			}
