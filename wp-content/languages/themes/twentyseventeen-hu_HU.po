@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Seventeen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-08-03 08:50:45+0000\n"
+"PO-Revision-Date: 2019-02-18 21:43:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -164,8 +164,8 @@ msgctxt "Libre Franklin font: on or off"
 msgid "on"
 msgstr "on"
 
-#: functions.php:64 functions.php:203
-#: template-parts/navigation/navigation-top.php:12
+#: template-parts/navigation/navigation-top.php:12 functions.php:64
+#: functions.php:203
 msgid "Top Menu"
 msgstr "Felső menü"
 
@@ -185,7 +185,7 @@ msgstr "Elnézést, nem találunk a keresési feltételekhez igazodó eredményt
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Készen állunk az első bejegyzés közzétételére? <a href=\"%1$s\">Kezdőlépések</a>."
 
-#: search.php:21 template-parts/post/content-none.php:17
+#: template-parts/post/content-none.php:17 search.php:21
 msgid "Nothing Found"
 msgstr "Nincs megfelelő találat"
 
@@ -218,15 +218,15 @@ msgstr "Keresés a következő kifejezésre:"
 
 #: search.php:19
 msgid "Search Results for: %s"
-msgstr ""
+msgstr "%s kifejezésre történő keresés eredménye"
 
 #. translators: %s: Name of current post
-#: functions.php:390 template-parts/post/content-gallery.php:71
-#: template-parts/post/content.php:57 template-parts/post/content-image.php:61
-#: template-parts/post/content-audio.php:84
-#: template-parts/post/content-video.php:83
-#: template-parts/page/content-front-page.php:42
 #: template-parts/page/content-front-page-panels.php:45
+#: template-parts/page/content-front-page.php:42
+#: template-parts/post/content-audio.php:84 template-parts/post/content.php:57
+#: template-parts/post/content-gallery.php:71
+#: template-parts/post/content-video.php:83
+#: template-parts/post/content-image.php:61 functions.php:390
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
 
@@ -241,13 +241,13 @@ msgstr "A Twenty Sixteen használatához minimálisan a WordPress 4.7 verziója 
 #. translators: %s: Name of current post
 #: inc/template-tags.php:117
 msgid "Edit<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
+msgstr "<span class=\"screen-reader-text\">\"%s\"</span> szerkesztése"
 
-#: template-parts/post/content-gallery.php:78
-#: template-parts/post/content.php:64 template-parts/post/content-image.php:68
-#: template-parts/post/content-audio.php:91
-#: template-parts/post/content-video.php:90
 #: template-parts/page/content-page.php:26
+#: template-parts/post/content-audio.php:91 template-parts/post/content.php:64
+#: template-parts/post/content-gallery.php:78
+#: template-parts/post/content-video.php:90
+#: template-parts/post/content-image.php:68
 msgid "Pages:"
 msgstr "Oldal:"
 
@@ -288,16 +288,16 @@ msgstr "A hozzászólások jelenleg nem engedélyezettek ezen a részen."
 msgctxt "comments title"
 msgid "%1$s Reply to &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s Replies to &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%1$s hozzászólás &ldquo;%2$s&rdquo; bejegyzéshez"
+msgstr[1] "%1$s hozzászólás &ldquo;%2$s&rdquo; bejegyzéshez"
 
 #. translators: %s: post title
 #: comments.php:37
 msgctxt "comments title"
 msgid "One Reply to &ldquo;%s&rdquo;"
-msgstr ""
+msgstr "Egy hozzászólás &ldquo;%s&rdquo; bejegyzéshez"
 
-#: index.php:54 archive.php:50 search.php:47
+#: archive.php:50 search.php:47 index.php:54
 msgid "Page"
 msgstr "Oldal"
 
@@ -309,11 +309,11 @@ msgstr "A keresett oldal nem található."
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Úgy tűnik, ezen a helyen nem található amit kerestünk. Talán egy újabb keresés segíthetne."
 
-#: index.php:52 archive.php:48 search.php:45
+#: archive.php:48 search.php:45 index.php:52
 msgid "Previous page"
 msgstr "Előző oldal"
 
-#: index.php:53 archive.php:49 search.php:46
+#: archive.php:49 search.php:46 index.php:53
 msgid "Next page"
 msgstr "Következő oldal"
 
