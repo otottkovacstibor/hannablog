@@ -76,7 +76,7 @@ class Cookie_Law_Info {
 		} 
 		else 
 		{
-			$this->version = '1.7.3';
+			$this->version = '1.7.4';
 		}
 		$this->plugin_name = 'cookie-law-info';
 
@@ -378,6 +378,7 @@ class Cookie_Law_Info {
 			'button_2_button_size' 			=> 'medium',
 			'button_2_url_type'				=>'url',
 			'button_2_page'					=>get_option('wp_page_for_privacy_policy') ? get_option('wp_page_for_privacy_policy') : 0,
+			'button_2_hidebar'					=>true,
 	            
 	        'button_3_text'					=> 'Reject',
 			'button_3_url' 					=> '#',
@@ -462,6 +463,7 @@ class Cookie_Law_Info {
 	    'button_2_button_hover'     => (self::su_hex_shift( $settings['button_2_button_colour'], 'down', 20 )),
 	    'button_2_link_colour'      => $settings['button_2_link_colour'],
 	    'button_2_as_button'      => $settings['button_2_as_button'],
+	    'button_2_hidebar'		 =>$settings['button_2_hidebar'],
 	    'button_3_button_colour'    => $settings['button_3_button_colour'],
 	    'button_3_button_hover'     => (self::su_hex_shift( $settings['button_3_button_colour'], 'down', 20 )),
 	    'button_3_link_colour'      => $settings['button_3_link_colour'],
@@ -530,6 +532,7 @@ class Cookie_Law_Info {
 			case 'button_1_as_button':
 			case 'button_2_new_win':
 			case 'button_2_as_button':
+			case 'button_2_hidebar':
 	        case 'button_3_new_win':
 			case 'button_3_as_button':
 	        case 'button_4_new_win':
@@ -741,41 +744,63 @@ class Cookie_Law_Info {
 				'class' => array(),
 				'title' => array(),
 				'target' => array(),
-				'rel' => array()
+				'rel' => array(),
+				'style' => array()
 			),
 			'b' => array(),
 			'br' => array(
 				'id' => array(),
-				'class' => array()
+				'class' => array(),
+				'style' => array()
 			),
 			'div' => array(
 				'id' => array(),
-				'class' => array()
+				'class' => array(),
+				'style' => array()
 			),
 			'em' => array (
 				'id' => array(),
-				'class' => array()
+				'class' => array(),
+				'style' => array()
 			),
 			'i' => array(),
 			'img' => array(
 				'src' => array(),
 				'id' => array(),
 				'class' => array(),
-				'alt' => array()
+				'alt' => array(),
+				'style' => array()				
 			),
 			'p' => array (
 				'id' => array(),
-				'class' => array()
+				'class' => array(),
+				'style' => array()
 			),
 			'span' => array(
 				'id' => array(),
-				'class' => array()
+				'class' => array(),
+				'style' => array()
 			),
 			'strong' => array(
 				'id' => array(),
-				'class' => array()
+				'class' => array(),
+				'style' => array()
 			),
+			'label' => array(
+				'id' => array(),
+				'class' => array(),
+				'style' => array()
+			)
 		);
+		$html5_tags=array('article','section','aside','details','figcaption','figure','footer','header','main','mark','nav','summary','time');
+		foreach($html5_tags as $html5_tag)
+		{
+			$allowed_html[$html5_tag]=array(
+				'id' => array(),
+				'class' => array(),
+				'style' => array()
+			);
+		}
 		return $allowed_html;
 	}
 

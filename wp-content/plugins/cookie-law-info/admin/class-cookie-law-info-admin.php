@@ -46,7 +46,9 @@ class Cookie_Law_Info_Admin {
 	 * admin module list, Module folder and main file must be same as that of module name
 	 * Please check the `admin_modules` method for more details
 	 */
-	private $modules=array();
+	private $modules=array(
+		'cli-policy-generator'
+	);
 
 	public static $existing_modules=array();
 

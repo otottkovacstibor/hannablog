@@ -14,6 +14,11 @@ var CLI_Cookie={
         {
             host_name=window.location.hostname;
             document.cookie = name + "=" + value + expires + "; path=/; domain=."+host_name+";";
+            if(host_name.indexOf("www")!=1)
+			{  
+			   var host_name_withoutwww=host_name.replace('www','');
+			   document.cookie = name + "=" + value + expires + "; path=/; domain="+host_name_withoutwww+";";
+			}
             host_name=host_name.substring(host_name.lastIndexOf(".", host_name.lastIndexOf(".")-1));
             document.cookie = name + "=" + value + expires + "; path=/; domain="+host_name+";";
         }
@@ -64,7 +69,7 @@ var CLI=
 	    this.bar_elm=jQuery(this.settings.notify_div_id);
 	    this.showagain_elm = jQuery(this.settings.showagain_div_id);
 
-        //buttons
+        /* buttons */
         this.main_button=jQuery('.cli-plugin-main-button');
         this.main_link = jQuery('.cli-plugin-main-link');
         this.reject_link = jQuery('.cookie_action_close_header_reject');
@@ -79,10 +84,21 @@ var CLI=
         this.attachDelete();
         this.attachEvents();
         this.configButtons();
-        if(this.settings.scroll_close === true) 
+        var cli_hidebar_on_readmore=this.hideBarInReadMoreLink();
+        if(this.settings.scroll_close===true && cli_hidebar_on_readmore===false) 
         {
         	window.addEventListener("scroll",CLI.closeOnScroll, false);
     	}
+	},
+	hideBarInReadMoreLink:function()
+	{
+		if(CLI.settings.button_2_hidebar===true && this.main_link.length>0 && this.main_link.hasClass('cli-minimize-bar'))
+		{
+			this.hideHeader();
+			this.showagain_elm.slideDown(this.settings.animate_speed_show);
+			return true;
+		}
+		return false;
 	},
 	attachEvents:function()
 	{
@@ -101,7 +117,6 @@ var CLI=
 				CLI.reject_close();
 				new_window=CLI.settings.button_3_new_win ? true : false;
 			}
-			CLI.saveLog(button_action);
 			if(open_link)
 			{
                 if(new_window)
@@ -113,26 +128,6 @@ var CLI=
                 }  
             }
 		});
-	},
-	saveLog:function(button_action)
-	{
-		if(CLI.settings.logging_on)
-		{
-			jQuery.ajax({
-	            url: log_object.ajax_url,
-	            type: 'POST',
-	            data:{
-	                action: 'wt_log_visitor_action',
-	                wt_clicked_button_id: '',
-	                wt_user_action:button_action,
-	                cookie_list:CLI_Cookie.getallcookies()
-	            },
-	            success:function (response)
-	            {
-	               
-	            }
-	        });
-		}
 	},
 	attachDelete:function()
 	{
@@ -147,7 +142,7 @@ var CLI=
 	},
 	configButtons:function()
 	{
-	    //[cookie_button]
+	    /*[cookie_button] */
 	    this.main_button.css('color',this.settings.button_1_link_colour);
 	    if(this.settings.button_1_as_button) 
 	    {
@@ -159,7 +154,7 @@ var CLI=
 	        });
 	    }
 
-	    //[cookie_link]	    
+	    /* [cookie_link] */    
 	    this.main_link.css('color',this.settings.button_2_link_colour);
 	    if(this.settings.button_2_as_button) 
 	    {
@@ -172,7 +167,7 @@ var CLI=
 	    }
 
 
-	    //[cookie_reject]	    
+	    /* [cookie_reject] */	    
 	    this.reject_link.css('color',this.settings.button_3_link_colour);
 	    if(this.settings.button_3_as_button) 
 	    {
@@ -197,8 +192,9 @@ var CLI=
 		if(!CLI_Cookie.exists(CLI_ACCEPT_COOKIE_NAME)) 
 		{
 	        this.displayHeader();
-	    } else {
-	        this.bar_elm.hide();
+	    }else
+	    {
+	        this.hideHeader();
 	    }
 	    if(this.settings.show_once_yn) 
 	    {
@@ -245,7 +241,7 @@ var CLI=
     		this.showagain_config.width='auto';
     	}
 	    var cli_defw=cli_winw>400 ? 500 : cli_winw-20;
-	    if(CLI_COOKIEBAR_AS_POPUP) //cookie bar as popup
+	    if(CLI_COOKIEBAR_AS_POPUP) /* cookie bar as popup */
 	    {
 	    	var sa_pos=this.settings.popup_showagain_position;
 	    	var sa_pos_arr=sa_pos.split('-');
@@ -345,7 +341,10 @@ var CLI=
         {
             this.bar_elm.hide();
         }
-        this.showagain_elm.slideDown(this.settings.animate_speed_show);
+        if(this.settings.showagain_tab) 
+        {
+        	this.showagain_elm.slideDown(this.settings.animate_speed_show);
+        }
         if(this.settings.accept_close_reload === true) 
         {
             this.reload_current_page();
@@ -367,7 +366,10 @@ var CLI=
         {
             this.bar_elm.hide();
         }
-        this.showagain_elm.slideDown(this.settings.animate_speed_show);
+        if(this.settings.showagain_tab) 
+        {
+        	this.showagain_elm.slideDown(this.settings.animate_speed_show);
+        }
         if(this.settings.reject_close_reload === true) 
         {
             this.reload_current_page();
@@ -446,13 +448,19 @@ var CLI=
 		}    
     },
     hideHeader:function()
-    {       
-        if(this.settings.notify_animate_show) 
+    {      
+        if(this.settings.showagain_tab) 
         {
-            this.showagain_elm.slideDown(this.settings.animate_speed_show);
-        } else {
-            this.showagain_elm.show();
-        }
+	        if(this.settings.notify_animate_show) 
+	        {
+	            this.showagain_elm.slideDown(this.settings.animate_speed_show);
+	        } else {
+	            this.showagain_elm.show();
+	        }
+    	}else
+    	{
+    		this.showagain_elm.hide();
+    	}
         this.bar_elm.slideUp(this.settings.animate_speed_show);
         this.hidePopupOverlay();
     },
@@ -477,7 +485,7 @@ var CLI=
 	    var cli_winw=cli_win.width();
 	    var cli_defw=cli_winw>400 ? 300 : cli_winw-30;
 	    cli_elm.css({
-	        'width':cli_defw,'height':'auto','max-height':cli_winh,'padding':'25px 15px','overflow':'auto','position':'fixed'
+	        'width':cli_defw,'height':'auto','max-height':cli_winh,'padding':'25px 15px','overflow':'auto','position':'fixed','box-sizing':'border-box'
 	    });
 	    if(this.settings.widget_position=='left')
 	    {
