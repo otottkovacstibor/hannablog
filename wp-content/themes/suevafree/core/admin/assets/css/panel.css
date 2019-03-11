@@ -145,6 +145,7 @@ h2.maintitle.features {
 .suevafree-notice .suevafree-noticedescription {
 	float:left;
 	font-size:14px;
+	max-width: 60%;
 }
 
 .suevafree-notice .button {
