@@ -89,6 +89,10 @@
             <li><?php echo __('Customized privacy overview','cookie-law-info'); ?></li>
             <li><?php echo __('Cookie bar preview in admin settings page','cookie-law-info'); ?></li>
             <li><?php echo __('Advanced support for cache plugins','cookie-law-info'); ?></li>
+            <li><?php echo __('Cookie bar theme customizer for banner/ widgets/ popup','cookie-law-info'); ?></li>
+
+
+            
             
         </ul>
         <br/>

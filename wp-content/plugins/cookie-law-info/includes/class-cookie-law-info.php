@@ -76,7 +76,7 @@ class Cookie_Law_Info {
 		} 
 		else 
 		{
-			$this->version = '1.7.4';
+			$this->version = '1.7.6';
 		}
 		$this->plugin_name = 'cookie-law-info';
 
@@ -378,7 +378,7 @@ class Cookie_Law_Info {
 			'button_2_button_size' 			=> 'medium',
 			'button_2_url_type'				=>'url',
 			'button_2_page'					=>get_option('wp_page_for_privacy_policy') ? get_option('wp_page_for_privacy_policy') : 0,
-			'button_2_hidebar'					=>true,
+			'button_2_hidebar'					=>false,
 	            
 	        'button_3_text'					=> 'Reject',
 			'button_3_url' 					=> '#',
@@ -408,7 +408,7 @@ class Cookie_Law_Info {
 			'notify_div_id' 				=> '#cookie-law-info-bar',
 			'notify_position_horizontal'	=> 'right',	// left | right
 			'notify_position_vertical'		=> 'bottom', // 'top' = header | 'bottom' = footer
-			'notify_message'				=> addslashes ( 'This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish.[cookie_button] [cookie_link]'),
+			'notify_message'				=> addslashes ( 'This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish.[cookie_button margin="5px"][cookie_reject margin="5px"] [cookie_link margin="5px"]'),
 			'scroll_close'                  => false,
 			'scroll_close_reload'           => false,
 	        'accept_close_reload'           => false,
