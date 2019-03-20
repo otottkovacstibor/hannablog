@@ -4,8 +4,16 @@
 		private $tags = array();
 		private $except = "";
 		private $wpfc;
+		private $cache_wpfc_minified = "";
 
 		public function __construct($wpfc, $html){
+			if(is_multisite()){
+				$this->cache_wpfc_minified = "cache/".$_SERVER['HTTP_HOST']."/wpfc-minified";
+			}else{
+				$this->cache_wpfc_minified = "cache/wpfc-minified";
+			}
+
+
 			$this->wpfc = $wpfc;
 			$this->html = $html;
 			$this->set_except_tags();
@@ -94,8 +102,8 @@
 						$combined_name = $this->wpfc->create_name($group_value);
 						$combined_link = "";
 
-						$cachFilePath = WPFC_WP_CONTENT_DIR."/cache/wpfc-minified/".$combined_name;
-						$cssLink = str_replace(array("http:", "https:"), "", WPFC_WP_CONTENT_URL)."/cache/wpfc-minified/".$combined_name;
+						$cachFilePath = WPFC_WP_CONTENT_DIR."/".$this->cache_wpfc_minified."/".$combined_name;
+						$cssLink = str_replace(array("http:", "https:"), "", WPFC_WP_CONTENT_URL)."/".$this->cache_wpfc_minified."/".$combined_name;
 
 						if(is_dir($cachFilePath)){
 							if($cssFiles = @scandir($cachFilePath, 1)){
@@ -333,8 +341,8 @@
 			$this->url = $url;
 			$md5 = $this->wpfc->create_name($url);
 
-			$cachFilePath = WPFC_WP_CONTENT_DIR."/cache/wpfc-minified/".$md5;
-			$cssLink = WPFC_WP_CONTENT_URL."/cache/wpfc-minified/".$md5;
+			$cachFilePath = WPFC_WP_CONTENT_DIR."/".$this->cache_wpfc_minified."/".$md5;
+			$cssLink = WPFC_WP_CONTENT_URL."/".$this->cache_wpfc_minified."/".$md5;
 
 			if(is_dir($cachFilePath)){
 				if($cssFiles = @scandir($cachFilePath, 1)){

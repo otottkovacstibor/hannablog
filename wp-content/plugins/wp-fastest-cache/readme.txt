@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 5.1
-Stable tag: 0.8.9.1
+Stable tag: 0.8.9.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,6 +102,15 @@ Wpfc does not support Wordpress Multisite yet.
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.9.2 =
+* to clear cache of author page after update/insert post
+* to fix PHP Notice: Undefined offset: -1 in  wp-fastest-cache/inc/js-utilities.php  on line 47.
+* to fix PHP Fatal error: Function name must be a string in /public_html/wp-content/plugins/wp-fastest-cache/inc/preload.php on line 316
+* to support MultiSite (Beta) [<a target="_blank" href="https://www.wpfastestcache.com/blog/multi-site/">Details</a>]
+* to enable gzip for x-font/ttf
+* to prevent replace urls with cdn-url if the url has already been replaced with cdn.shortpixel.ai
+
 
 = 0.8.9.1 =
 * to disable webp image extension if cloudflare subscription is free

@@ -112,9 +112,13 @@
 					include_once ABSPATH."wp-includes/capabilities.php";
 					include_once ABSPATH."wp-includes/pluggable.php";
 
-					if(is_multisite()){
-						$this->notify(array("The plugin does not work with Multisite", "error"));
-						return 0;
+					if(defined("WPFC_MULTI_SITE_BETA") && WPFC_MULTI_SITE_BETA){
+						//nothing
+					}else{
+						if(is_multisite()){
+							$this->notify(array("The plugin does not work with Multisite", "error"));
+							return 0;
+						}
 					}
 
 					if(current_user_can('manage_options')){
@@ -599,6 +603,7 @@
 		  				"AddOutputFilterByType DEFLATE application/javascript"."\n".
 		  				"AddOutputFilterByType DEFLATE application/x-javascript"."\n".
 		  				"AddOutputFilterByType DEFLATE application/x-font-ttf"."\n".
+		  				"AddOutputFilterByType DEFLATE x-font/ttf"."\n".
 						"AddOutputFilterByType DEFLATE application/vnd.ms-fontobject"."\n".
 						"AddOutputFilterByType DEFLATE font/opentype font/ttf font/eot font/otf"."\n".
 		  				"</IfModule>"."\n";
@@ -756,7 +761,12 @@
 					"</ifModule>"."\n".
 					"</FilesMatch>"."\n".
 					"# END WpFastestCache"."\n";
-			return preg_replace("/\n+/","\n", $data);
+
+			if(is_multisite()){
+				return "";
+			}else{
+				return preg_replace("/\n+/","\n", $data);
+			}
 		}
 
 		public function http_condition_rule(){
@@ -893,6 +903,7 @@
 			$wpFastestCacheLazyLoad = isset($this->options->wpFastestCacheLazyLoad) ? 'checked="checked"' : "";
 			$wpFastestCacheLazyLoad_keywords = isset($this->options->wpFastestCacheLazyLoad_keywords) ? $this->options->wpFastestCacheLazyLoad_keywords : "";
 			$wpFastestCacheLazyLoad_placeholder = isset($this->options->wpFastestCacheLazyLoad_placeholder) ? $this->options->wpFastestCacheLazyLoad_placeholder : "default";
+			$wpFastestCacheLazyLoad_exclude_full_size_img = isset($this->options->wpFastestCacheLazyLoad_exclude_full_size_img) ? 'checked="checked"' : "";
 
 
 			$wpFastestCacheLBC = isset($this->options->wpFastestCacheLBC) ? 'checked="checked"' : "";
@@ -1276,6 +1287,8 @@
 										<div class="inputCon">
 											<input type="hidden" value="<?php echo $wpFastestCacheLazyLoad_placeholder; ?>" id="wpFastestCacheLazyLoad_placeholder" name="wpFastestCacheLazyLoad_placeholder">
 											<input type="hidden" value="<?php echo $wpFastestCacheLazyLoad_keywords; ?>" id="wpFastestCacheLazyLoad_keywords" name="wpFastestCacheLazyLoad_keywords">
+											<input type="hidden" value="<?php echo $wpFastestCacheLazyLoad_exclude_full_size_img; ?>" id="wpFastestCacheLazyLoad_exclude_full_size_img" name="wpFastestCacheLazyLoad_exclude_full_size_img">
+											
 											<input type="checkbox" <?php echo $wpFastestCacheLazyLoad; ?> id="wpFastestCacheLazyLoad" name="wpFastestCacheLazyLoad"><label for="wpFastestCacheLazyLoad">Load images and iframes when they enter the browsers viewport</label>
 										</div>
 										<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/lazy-load-reduce-http-request-and-page-load-time/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
@@ -1571,88 +1584,7 @@
 					    </div>
 				    <?php }else{ ?>
 						<div class="tab4" style="">
-							<div style="z-index:9999;width: 160px; height: 60px; position: absolute; margin-left: 254px; margin-top: 74px; color: white;">
-								<div style="font-family:sans-serif;font-size:13px;text-align: center; border-radius: 5px; float: left; background-color: rgb(51, 51, 51); color: white; width: 147px; padding: 20px 50px;">
-									<label>Only available in Premium version</label>
-								</div>
-							</div>
-							<h2 style="opacity: 0.3;padding-left:20px;padding-bottom:10px;">Optimize Image Tool</h2>
-							<div id="container-show-hide-image-list" style="opacity: 0.3;float: right; padding-right: 20px; cursor: pointer;">
-								<span id="show-image-list">Show Images</span>
-								<span id="hide-image-list" style="display:none;">Hide Images</span>
-							</div>
-							<div style="opacity: 0.3;width:100%;float:left;" id="wpfc-image-static-panel">
-								<div style="float: left; width: 100%;">
-									<div style="float:left;padding-left: 22px;padding-right:15px;">
-										<div style="display: inline-block;">
-											<div style="width: 150px; height: 150px; position: relative; border-top-left-radius: 150px; border-top-right-radius: 150px; border-bottom-right-radius: 150px; border-bottom-left-radius: 150px; background-color: #ffcc00;">
-												
-
-												<div style="position: absolute; top: 0px; left: 0px; width: 150px; height: 150px; border-top-left-radius: 150px; border-top-right-radius: 150px; border-bottom-right-radius: 150px; border-bottom-left-radius: 150px; clip: rect(0px 150px 150px 75px);">
-													<div style="position: absolute; top: 0px; left: 0px; width: 150px; height: 150px; border-radius: 150px; clip: rect(0px, 75px, 150px, 0px); transform: rotate(109.62deg); background-color: rgb(255, 165, 0); border-spacing: 109.62px;" id="wpfc-pie-chart-little"></div>
-												</div>
-
-
-												<div style="display:none;position: absolute; top: 0px; left: 0px; width: 150px; height: 150px; border-top-left-radius: 150px; border-top-right-radius: 150px; border-bottom-right-radius: 150px; border-bottom-left-radius: 150px; clip: rect(0px 150px 150px 25px); -webkit-transform: rotate(0deg); transform: rotate(0deg);" id="wpfc-pie-chart-big-container-first">
-													<div style="position: absolute; top: 0px; left: 0px; width: 150px; height: 150px; border-top-left-radius: 150px; border-top-right-radius: 150px; border-bottom-right-radius: 150px; border-bottom-left-radius: 150px; clip: rect(0px 75px 150px 0px); -webkit-transform: rotate(180deg); transform: rotate(180deg); background-color: #FFA500;"></div>
-												</div>
-												<div style="display:none;position: absolute; top: 0px; left: 0px; width: 150px; height: 150px; border-top-left-radius: 150px; border-top-right-radius: 150px; border-bottom-right-radius: 150px; border-bottom-left-radius: 150px; clip: rect(0px 150px 150px 75px); -webkit-transform: rotate(180deg); transform: rotate(180deg);" id="wpfc-pie-chart-big-container-second-right">
-													<div style="position: absolute; top: 0px; left: 0px; width: 150px; height: 150px; border-top-left-radius: 150px; border-top-right-radius: 150px; border-bottom-right-radius: 150px; border-bottom-left-radius: 150px; clip: rect(0px 75px 150px 0px); -webkit-transform: rotate(90deg); transform: rotate(90deg); background-color: #FFA500;" id="wpfc-pie-chart-big-container-second-left"></div>
-												</div>
-
-											</div>
-											<div style="width: 114px;height: 114px;margin-top: -133px;background-color: white;margin-left: 18px;position: absolute;border-radius: 150px;">
-												<p style="text-align:center;margin:27px 0 0 0;color: black;">Succeed</p>
-												<p style="text-align: center; font-size: 18px; font-weight: bold; font-family: verdana; margin: -2px 0px 0px; color: black;" id="wpfc-optimized-statics-percent" class="">30.45</p>
-												<p style="text-align:center;margin:0;color: black;">%</p>
-											</div>
-										</div>
-									</div>
-									<div style="float: left;padding-left:12px;" id="wpfc-statics-right">
-										<ul style="list-style: none outside none;float: left;">
-											<li>
-												<div style="background-color: rgb(29, 107, 157);width:15px;height:15px;float:left;margin-top:4px;border-radius:5px;"></div>
-												<div style="float:left;padding-left:6px;">All</div>
-												<div style="font-size: 14px; font-weight: bold; color: black; float: left; width: 65%; margin-left: 5px;" id="wpfc-optimized-statics-total_image_number" class="">7196</div>
-											</li>
-											<li>
-												<div style="background-color: rgb(29, 107, 157);width:15px;height:15px;float:left;margin-top:4px;border-radius:5px;"></div>
-												<div style="float:left;padding-left:6px;">Pending</div>
-												<div style="font-size: 14px; font-weight: bold; color: black; float: left; width: 65%; margin-left: 5px;" id="wpfc-optimized-statics-pending" class="">5002</div>
-											</li>
-											<li>
-												<div style="background-color: #FF0000;width:15px;height:15px;float:left;margin-top:4px;border-radius:5px;"></div>
-												<div style="float:left;padding-left:6px;">Errors</div>
-												<div style="font-size: 14px; font-weight: bold; color: black; float: left; width: 65%; margin-left: 5px;" id="wpfc-optimized-statics-error" class="">3</div>
-											</li>
-										</ul>
-										<ul style="list-style: none outside none;float: left;">
-											<li>
-												<div style="background-color: rgb(61, 207, 60);width:15px;height:15px;float:left;margin-top:4px;border-radius:5px;"></div>
-												<div style="float:left;padding-left:6px;"><span>Optimized Images</span></div>
-												<div style="font-size: 14px; font-weight: bold; color: black; float: left; width: 65%; margin-left: 5px;" id="wpfc-optimized-statics-optimized" class="">2191</div>
-											</li>
-
-											<li>
-												<div style="background-color: rgb(61, 207, 60);width:15px;height:15px;float:left;margin-top:4px;border-radius:5px;"></div>
-												<div style="float:left;padding-left:6px;"><span>Total Reduction</span></div>
-												<div style="font-size: 14px; font-weight: bold; color: black; float: left; width: 80%; margin-left: 5px;" id="wpfc-optimized-statics-reduction" class="">78400.897</div>
-											</li>
-											<li></li>
-										</ul>
-
-										<ul style="list-style: none outside none;float: left;">
-											<li>
-												<h1 style="margin-top:0;float:left;">Credit: <span style="display: inline-block; height: 16px; width: auto;min-width:25px;" id="wpfc-optimized-statics-credit" class="">9910</span></h1>
-												<span id="buy-image-credit">More</span>
-											</li>
-											<li>
-												<input type="submit" class="button-primary" value="Optimize All" id="wpfc-optimize-images-button" style="width:100%;height:110px;">
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
+							<?php include(WPFC_MAIN_PATH."templates/sample_img_list.html"); ?> 
 						</div>
 				    <?php } ?>
 				    <div class="tab5">
@@ -1717,15 +1649,23 @@
 							    					<span>Purchased</span>
 							    				</button>
 						    				<?php }else{ ?>
-							    				<form action="https://api.wpfastestcache.net/paypal/buypremium/" method="post">
-							    					<input type="hidden" name="ip" value="<?php echo $_SERVER["REMOTE_ADDR"]; ?>">
-							    					<input type="hidden" name="wpfclang" value="<?php echo isset($this->options->wpFastestCacheLanguage) ? esc_attr($this->options->wpFastestCacheLanguage) : ""; ?>">
-							    					<input type="hidden" name="bloglang" value="<?php echo get_bloginfo('language'); ?>">
-							    					<input type="hidden" name="hostname" value="<?php echo str_replace(array("http://", "www."), "", $_SERVER["HTTP_HOST"]); ?>">
-								    				<button id="wpfc-buy-premium-button" type="submit" class="wpfc-btn primaryCta" style="width:200px;">
-								    					<span>Buy</span>
-								    				</button>
-							    				</form>
+
+						    					<?php if(is_multisite()){ ?>
+						    						<button id="wpfc-buy-premium-button" type="submit" class="wpfc-btn primaryCta" style="width:200px;background-color:red;border-color:red;">
+						    							<span>Not Available<br>for<br>Multi-Site</span>
+						    						</button>
+						    					<?php }else{ ?>
+							    					<form action="https://api.wpfastestcache.net/paypal/buypremium/" method="post">
+								    					<input type="hidden" name="ip" value="<?php echo $_SERVER["REMOTE_ADDR"]; ?>">
+								    					<input type="hidden" name="wpfclang" value="<?php echo isset($this->options->wpFastestCacheLanguage) ? esc_attr($this->options->wpFastestCacheLanguage) : ""; ?>">
+								    					<input type="hidden" name="bloglang" value="<?php echo get_bloginfo('language'); ?>">
+								    					<input type="hidden" name="hostname" value="<?php echo str_replace(array("http://", "www."), "", $_SERVER["HTTP_HOST"]); ?>">
+									    				<button id="wpfc-buy-premium-button" type="submit" class="wpfc-btn primaryCta" style="width:200px;">
+									    					<span>Buy</span>
+									    				</button>
+								    				</form>
+						    					<?php } ?>
+
 						    			<?php } ?>
 					    			<?php } ?>
 

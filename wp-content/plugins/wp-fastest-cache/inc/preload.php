@@ -61,7 +61,7 @@
 			}
 		}
 
-		public static function create_preload_cache($options, $wpfc_remote_get){
+		public static function create_preload_cache($options){
 			if($data = get_option("WpFastestCachePreLoad")){
 				if(!isset($options->wpFastestCacheStatus)){
 					die("Cache System must be enabled");
@@ -313,7 +313,7 @@
 							$user_agent = "WP Fastest Cache Preload iPhone Mobile Bot";
 						}
 
-						if($wpfc_remote_get($arr["url"], $user_agent)){
+						if($GLOBALS["wp_fastest_cache"]->wpfc_remote_get($arr["url"], $user_agent)){
 							$status = "<strong style=\"color:lightgreen;\">OK</strong>";
 						}else{
 							$status = "<strong style=\"color:red;\">ERROR</strong>";
