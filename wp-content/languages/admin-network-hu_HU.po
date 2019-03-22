@@ -492,7 +492,7 @@ msgid "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\">Doc
 msgstr "<a href=\"https://codex.wordpress.org/Network_Admin_Settings_Screen\" target=\"_blank\">Hálózat beállításai dokumentáció</a>"
 
 #. translators: 1: site url, 2: server error message
-#: wp-admin/network/upgrade.php:96
+#: wp-admin/network/upgrade.php:97
 msgid "Warning! Problem updating %1$s. Your server may not be able to connect to sites running on it. Error message: %2$s"
 msgstr "Figyelem! A(z) %1$s frissítése során problémába ütköztünk. A szerver nem képes kapcsolódni a futtató weboldal(ak)hoz. Hibaüzenet: %2$s"
 
@@ -619,7 +619,7 @@ msgstr "Itt tudunk:"
 msgid "Welcome to your Network Admin. This area of the Administration Screens is used for managing all aspects of your Multisite Network."
 msgstr "Üdvözlet a Hálózat Adminisztrátorától! Ez a kezelő központ területe, amely minden vonatkozásban saját, több honlapos hálózatunk kezelésére szolgál."
 
-#: wp-admin/network/upgrade.php:137
+#: wp-admin/network/upgrade.php:138
 msgid "WordPress has been updated! Before we send you on your way, we need to individually upgrade the sites in your network."
 msgstr "A WordPress frissítése megtörtént. Mielőtt nekilátnánk a munkának, frissíteni kell az egyes honlapokat is a hálózaton."
 
@@ -630,7 +630,7 @@ msgstr ""
 "Kattintsunk a Hálózat frissítése gombra, amelynek hatására a hálózat minden egyes oldala frissülni fog, egyidejűleg öt oldal, és ellenőrzi, hogy minden adatbázis frissítésre került."
 
 #: wp-admin/network/upgrade.php:15 wp-admin/network/upgrade.php:42
-#: wp-admin/network/upgrade.php:141 wp-admin/network/menu.php:34
+#: wp-admin/network/upgrade.php:142 wp-admin/network/menu.php:34
 msgid "Upgrade Network"
 msgstr "Hálózat frissítése"
 
@@ -1080,7 +1080,7 @@ msgstr "Az új honlap beállítások alapértelmezett értékeket tartalmaznak a
 msgid "The following words are reserved for use by WordPress functions and cannot be used as blog names: %s"
 msgstr "A következő szavak WordPress funkciók számára van fenntartva, ezért nem lehetnek blog nevek: %s"
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "If your browser doesn&#8217;t start loading the next page automatically, click this link:"
 msgstr "Amennyiben a böngésző nem kezdi el tölteni a következő oldalt automatikusan, akkor kattintás erre a hivatkozásra:"
 
@@ -1184,7 +1184,7 @@ msgstr "Első bejegyzés az új honlapon."
 msgid "The author of the first comment on a new site."
 msgstr "Első hozzászólás szerzője egy új honlapon."
 
-#: wp-admin/network/upgrade.php:72
+#: wp-admin/network/upgrade.php:73
 msgid "All done!"
 msgstr "Minden elkészült!"
 
@@ -1232,7 +1232,7 @@ msgstr "Hiányzó email cím."
 msgid "Missing or invalid site address."
 msgstr "Hiányzó, vagy nem szabványos honlap cím."
 
-#: wp-admin/network/upgrade.php:121
+#: wp-admin/network/upgrade.php:122
 msgid "Next Sites"
 msgstr "Következő honlap"
 
