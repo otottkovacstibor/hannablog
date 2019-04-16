@@ -59,7 +59,7 @@ msgstr "Akismet adatvédelmi értesítés"
 msgid "Privacy"
 msgstr "Adatvédelem"
 
-#: class.akismet.php:1423
+#: class.akismet.php:1414
 msgid "This site uses Akismet to reduce spam. <a href=\"%s\" target=\"_blank\" rel=\"nofollow noopener\">Learn how your comment data is processed</a>."
 msgstr "Ez a weboldal az Akismet szolgáltatását használja a spam kiszűrésére.  <a href=\"%s\" target=\"_blank\">Tudjunk meg többet arról, hogyan dolgozzák fel a hozzászólásunk adatait.</a>."
 
@@ -96,7 +96,7 @@ msgstr "12 karakter hosszúságú Akismet kulcs, amely az akismet.com/get oldalr
 msgid "(%1$s%)"
 msgstr "(%1$s%)"
 
-#: class.akismet.php:226
+#: class.akismet.php:231
 msgid "Comment discarded."
 msgstr "Eldobott hozzászólás."
 
@@ -221,7 +221,7 @@ msgstr "Spam-keresés folyamatban"
 msgid "Akismet Anti-Spam"
 msgstr "Akismet Anti-Spam"
 
-#: class.akismet.php:507
+#: class.akismet.php:512
 msgid "Comment not found."
 msgstr "Nem találtunk hozzászólást."
 
@@ -512,11 +512,11 @@ msgstr "Csendesen eltünteti a legrosszabb spam-eket, így soha sem találkozunk
 msgid "Choose to either discard the worst spam automatically or to always put all spam in spam folder."
 msgstr "Válasszuk bármelyiket a spam-ek automatikus törléséhez, vagy a spam tárolóba helyezéséhez."
 
-#: views/config.php:128 class.akismet-admin.php:244
+#: class.akismet-admin.php:244 views/config.php:128
 msgid "Strictness"
 msgstr "Szigor"
 
-#: views/config.php:105 class.akismet-admin.php:243
+#: class.akismet-admin.php:243 views/config.php:105
 msgid "Comments"
 msgstr "Hozzászólások"
 
@@ -640,11 +640,11 @@ msgstr[1] ""
 msgid "Past six months"
 msgstr "Az elmúlt hat hónapban"
 
-#: class.akismet.php:1268
+#: class.akismet.php:1273
 msgid "Please <a href=\"%1$s\">upgrade WordPress</a> to a current version, or <a href=\"%2$s\">downgrade to version 2.4 of the Akismet plugin</a>."
 msgstr "<a href=\"%1$s\">Frissítsük a WordPress.t</a> az aktuális verzióra, vagy <a href=\"%2$s\">használjuk az Akismet bővítmény 2.4-es verzióját</a>."
 
-#: class.akismet.php:1268
+#: class.akismet.php:1273
 msgid "Akismet %s requires WordPress %s or higher."
 msgstr "Az Akismet %s használatához WordPress %s, vagy frissebb verzió szükséges."
 
@@ -779,7 +779,7 @@ msgstr "További információk:"
 msgid "The subscription status - active, cancelled or suspended"
 msgstr "A fiók állapota - aktív, lemondott vagy felfüggesztett"
 
-#: views/config.php:203 class.akismet-admin.php:256
+#: class.akismet-admin.php:256 views/config.php:203
 msgid "Status"
 msgstr "Állapot"
 
@@ -787,11 +787,11 @@ msgstr "Állapot"
 msgid "The Akismet subscription plan"
 msgstr "Akismet tagság"
 
-#: views/config.php:196 class.akismet-admin.php:255
+#: class.akismet-admin.php:255 views/config.php:196
 msgid "Subscription Type"
 msgstr "Tagság típusa"
 
-#: views/config.php:188 class.akismet-admin.php:252
+#: class.akismet-admin.php:252 views/config.php:188
 msgid "Account"
 msgstr "Fiók"
 
@@ -807,12 +807,12 @@ msgstr "Az elfogadott hozzászólások számának megjelenítése minden hozzás
 msgid "Enter/remove an API key."
 msgstr "API kulcs megadás/eltávolítása"
 
-#: views/config.php:70 class.akismet-admin.php:242
+#: class.akismet-admin.php:242 views/config.php:70
 msgid "API Key"
 msgstr "API kulcs"
 
-#: views/config.php:60 class.akismet-admin.php:107 class.akismet-admin.php:239
-#: class.akismet-admin.php:658
+#: class.akismet-admin.php:107 class.akismet-admin.php:239
+#: class.akismet-admin.php:658 views/config.php:60
 msgid "Settings"
 msgstr "Beállítások"
 

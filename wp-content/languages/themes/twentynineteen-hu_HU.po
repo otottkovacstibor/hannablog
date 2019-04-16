@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Nineteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2018-12-05 09:06:41+0000\n"
+"PO-Revision-Date: 2019-03-01 10:02:33+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -293,7 +293,7 @@ msgstr "Kategória tár:"
 #: template-parts/content/content-page.php:41
 #: template-parts/header/entry-header.php:32 inc/template-tags.php:120
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztése"
+msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztés"
 
 #: header.php:24
 msgid "Skip to content"

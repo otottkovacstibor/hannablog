@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WIP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-10 15:52+0100\n"
-"PO-Revision-Date: 2019-03-10 15:52+0100\n"
+"POT-Creation-Date: 2019-04-14 19:46+0200\n"
+"PO-Revision-Date: 2019-04-14 19:46+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -73,7 +73,7 @@ msgctxt "Comment field textarea."
 msgid "Comment"
 msgstr "Comentário"
 
-#: core/admin/customize/customize.php:13 core/includes/class-notice.php:74
+#: core/admin/customize/customize.php:13 core/includes/class-notice.php:77
 msgid "Upgrade to Sueva Premium"
 msgstr "Atualizar para Sueva Premium"
 
@@ -1234,7 +1234,7 @@ msgstr "Esta barra será exibida no final do seu conteúdo."
 msgid "Upgrade to Sueva Premium."
 msgstr "Atualizar para Sueva Premium."
 
-#: core/includes/class-customize.php:398 core/includes/class-notice.php:69
+#: core/includes/class-customize.php:398 core/includes/class-notice.php:72
 msgid ""
 "Upgrade to the premium version of Sueva, to enable 600+ Google Fonts, "
 "Unlimited sidebars, Portfolio section and much more."
@@ -1319,7 +1319,7 @@ msgstr "Assine nossa newsletter"
 msgid "Download our free WordPress themes"
 msgstr "Baixe nossos temas WordPress gratuitos"
 
-#: core/includes/class-notice.php:70
+#: core/includes/class-notice.php:73
 #: core/includes/class-plugin-activation.php:400
 msgid "Dismiss this notice"
 msgstr "Fechar este aviso"
@@ -1415,14 +1415,14 @@ msgid "Return to Required Plugins Installer"
 msgstr "Voltar para o Instalador de Plugins Necessários"
 
 #: core/includes/class-plugin-activation.php:391
-#: core/includes/class-plugin-activation.php:838
-#: core/includes/class-plugin-activation.php:2544
-#: core/includes/class-plugin-activation.php:3591
+#: core/includes/class-plugin-activation.php:841
+#: core/includes/class-plugin-activation.php:2547
+#: core/includes/class-plugin-activation.php:3594
 msgid "Return to the Dashboard"
 msgstr "Retornal para o Painel"
 
 #: core/includes/class-plugin-activation.php:392
-#: core/includes/class-plugin-activation.php:3170
+#: core/includes/class-plugin-activation.php:3173
 msgid "Plugin activated successfully."
 msgstr "Plugin ativado com sucesso."
 
@@ -1460,19 +1460,19 @@ msgid "Please contact the administrator of this site for help."
 msgstr ""
 "Por favor entre em contato com o administrador deste site para obter ajuda."
 
-#: core/includes/class-plugin-activation.php:521
+#: core/includes/class-plugin-activation.php:524
 msgid "This plugin needs to be updated to be compatible with your theme."
 msgstr "Este plugin precisa ser atualizado para ser compatível com seu tema."
 
-#: core/includes/class-plugin-activation.php:522
+#: core/includes/class-plugin-activation.php:525
 msgid "Update Required"
 msgstr "Atualização Necessária"
 
-#: core/includes/class-plugin-activation.php:639
+#: core/includes/class-plugin-activation.php:642
 msgid "Set the parent_slug config variable instead."
 msgstr "Defina a variável de configuração parent_slug."
 
-#: core/includes/class-plugin-activation.php:945
+#: core/includes/class-plugin-activation.php:948
 msgid ""
 "The remote plugin package does not contain a folder with the desired slug "
 "and renaming did not work."
@@ -1480,8 +1480,8 @@ msgstr ""
 "Este pacote de plugin remoto não contém uma pasta com o slug desejado e "
 "renomear não está funcionando."
 
-#: core/includes/class-plugin-activation.php:945
 #: core/includes/class-plugin-activation.php:948
+#: core/includes/class-plugin-activation.php:951
 msgid ""
 "Please contact the plugin provider and ask them to package their plugin "
 "according to the WordPress guidelines."
@@ -1489,7 +1489,7 @@ msgstr ""
 "Por favor entre em contato com o fornecedor do plugin e peça que o plugin "
 "seja empacotado de acordo com os padrões do WordPress."
 
-#: core/includes/class-plugin-activation.php:948
+#: core/includes/class-plugin-activation.php:951
 msgid ""
 "The remote plugin package consists of more than one file, but the files are "
 "not packaged in a folder."
@@ -1497,186 +1497,186 @@ msgstr ""
 "O pacote remoto do plugin consiste de mais de um arquivo mas os arquivos não "
 "estão empacotados em uma pasta."
 
-#: core/includes/class-plugin-activation.php:1132
-#: core/includes/class-plugin-activation.php:2959
+#: core/includes/class-plugin-activation.php:1135
+#: core/includes/class-plugin-activation.php:2962
 msgctxt "plugin A *and* plugin B"
 msgid "and"
 msgstr "e"
 
-#: core/includes/class-plugin-activation.php:1993
+#: core/includes/class-plugin-activation.php:1996
 #, php-format
 msgid "TGMPA v%s"
 msgstr "TGMPA v%s"
 
-#: core/includes/class-plugin-activation.php:2284
+#: core/includes/class-plugin-activation.php:2287
 msgid "Required"
 msgstr "Necessário"
 
-#: core/includes/class-plugin-activation.php:2287
+#: core/includes/class-plugin-activation.php:2290
 msgid "Recommended"
 msgstr "Recomendado"
 
-#: core/includes/class-plugin-activation.php:2303
+#: core/includes/class-plugin-activation.php:2306
 msgid "WordPress Repository"
 msgstr "Repositório do WordPress"
 
-#: core/includes/class-plugin-activation.php:2306
+#: core/includes/class-plugin-activation.php:2309
 msgid "External Source"
 msgstr "Fonte Externa"
 
-#: core/includes/class-plugin-activation.php:2309
+#: core/includes/class-plugin-activation.php:2312
 msgid "Pre-Packaged"
 msgstr "Pré-embalado"
 
-#: core/includes/class-plugin-activation.php:2326
+#: core/includes/class-plugin-activation.php:2329
 msgid "Not Installed"
 msgstr "Não Instalado"
 
-#: core/includes/class-plugin-activation.php:2330
+#: core/includes/class-plugin-activation.php:2333
 msgid "Installed But Not Activated"
 msgstr "Instalado Mas Não Ativado"
 
-#: core/includes/class-plugin-activation.php:2332
+#: core/includes/class-plugin-activation.php:2335
 msgid "Active"
 msgstr "Ativo"
 
-#: core/includes/class-plugin-activation.php:2338
+#: core/includes/class-plugin-activation.php:2341
 msgid "Required Update not Available"
 msgstr "A atualização necessária não está disponível"
 
-#: core/includes/class-plugin-activation.php:2341
+#: core/includes/class-plugin-activation.php:2344
 msgid "Requires Update"
 msgstr "Atualização Necessária"
 
-#: core/includes/class-plugin-activation.php:2344
+#: core/includes/class-plugin-activation.php:2347
 msgid "Update recommended"
 msgstr "Atualização recomendada"
 
-#: core/includes/class-plugin-activation.php:2353
+#: core/includes/class-plugin-activation.php:2356
 #, php-format
 msgctxt "Install/Update Status"
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
-#: core/includes/class-plugin-activation.php:2493
+#: core/includes/class-plugin-activation.php:2496
 msgctxt "as in: \"version nr unknown\""
 msgid "unknown"
 msgstr "desconhecido"
 
-#: core/includes/class-plugin-activation.php:2501
+#: core/includes/class-plugin-activation.php:2504
 msgid "Installed version:"
 msgstr "Versão instalada:"
 
-#: core/includes/class-plugin-activation.php:2509
+#: core/includes/class-plugin-activation.php:2512
 msgid "Minimum required version:"
 msgstr "Versão mínima exigida:"
 
-#: core/includes/class-plugin-activation.php:2521
+#: core/includes/class-plugin-activation.php:2524
 msgid "Available version:"
 msgstr "Versão disponível:"
 
-#: core/includes/class-plugin-activation.php:2544
+#: core/includes/class-plugin-activation.php:2547
 msgid "No plugins to install, update or activate."
 msgstr "Nenhum plugin para instalar, atualizar ou ativar."
 
-#: core/includes/class-plugin-activation.php:2558
+#: core/includes/class-plugin-activation.php:2561
 msgid "Plugin"
 msgstr "Plugin"
 
-#: core/includes/class-plugin-activation.php:2559
+#: core/includes/class-plugin-activation.php:2562
 msgid "Source"
 msgstr "Fonte"
 
-#: core/includes/class-plugin-activation.php:2560
+#: core/includes/class-plugin-activation.php:2563
 msgid "Type"
 msgstr "Tipo"
 
-#: core/includes/class-plugin-activation.php:2564
+#: core/includes/class-plugin-activation.php:2567
 msgid "Version"
 msgstr "Versão"
 
-#: core/includes/class-plugin-activation.php:2565
+#: core/includes/class-plugin-activation.php:2568
 msgid "Status"
 msgstr "Status"
 
-#: core/includes/class-plugin-activation.php:2614
+#: core/includes/class-plugin-activation.php:2617
 #, php-format
 msgid "Install %2$s"
 msgstr "Instalar %2$s"
 
-#: core/includes/class-plugin-activation.php:2619
+#: core/includes/class-plugin-activation.php:2622
 #, php-format
 msgid "Update %2$s"
 msgstr "Atualizar %2$s"
 
-#: core/includes/class-plugin-activation.php:2625
+#: core/includes/class-plugin-activation.php:2628
 #, php-format
 msgid "Activate %2$s"
 msgstr "Ativar %2$s"
 
-#: core/includes/class-plugin-activation.php:2695
+#: core/includes/class-plugin-activation.php:2698
 msgid "Upgrade message from the plugin author:"
 msgstr "Mensagem de atualização do autor do plugin:"
 
-#: core/includes/class-plugin-activation.php:2728
+#: core/includes/class-plugin-activation.php:2731
 msgid "Install"
 msgstr "Instalar"
 
-#: core/includes/class-plugin-activation.php:2734
+#: core/includes/class-plugin-activation.php:2737
 msgid "Update"
 msgstr "Atualizar"
 
-#: core/includes/class-plugin-activation.php:2737
+#: core/includes/class-plugin-activation.php:2740
 msgid "Activate"
 msgstr "Ativar"
 
-#: core/includes/class-plugin-activation.php:2768
+#: core/includes/class-plugin-activation.php:2771
 msgid "No plugins were selected to be installed. No action taken."
 msgstr ""
 "Nenhum plugin foi selecionado para instalação. Nenhuma ação foi realizada."
 
-#: core/includes/class-plugin-activation.php:2770
+#: core/includes/class-plugin-activation.php:2773
 msgid "No plugins were selected to be updated. No action taken."
 msgstr ""
 "Nenhum plugin foi selecionado para atualização. Nenhuma ação foi realizada."
 
-#: core/includes/class-plugin-activation.php:2811
+#: core/includes/class-plugin-activation.php:2814
 msgid "No plugins are available to be installed at this time."
 msgstr "Nenhum plugin está disponível para instalação agora."
 
-#: core/includes/class-plugin-activation.php:2813
+#: core/includes/class-plugin-activation.php:2816
 msgid "No plugins are available to be updated at this time."
 msgstr "Nenhum plugin está disponível para atualização agora."
 
-#: core/includes/class-plugin-activation.php:2919
+#: core/includes/class-plugin-activation.php:2922
 msgid "No plugins were selected to be activated. No action taken."
 msgstr ""
 "Nenhum plugin foi selecionado para ativação. Nenhuma ação foi realizada."
 
-#: core/includes/class-plugin-activation.php:2945
+#: core/includes/class-plugin-activation.php:2948
 msgid "No plugins are available to be activated at this time."
 msgstr "Nenhum plugin está disponível para ativação agora."
 
-#: core/includes/class-plugin-activation.php:3169
+#: core/includes/class-plugin-activation.php:3172
 msgid "Plugin activation failed."
 msgstr "Falha na ativação do plugin."
 
-#: core/includes/class-plugin-activation.php:3509
+#: core/includes/class-plugin-activation.php:3512
 #, php-format
 msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr "Atualizando Plugin %1$s (%2$d/%3$d)"
 
-#: core/includes/class-plugin-activation.php:3512
+#: core/includes/class-plugin-activation.php:3515
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr "Um erro ocorreu ao instalar %1$s: <strong>%2$s</strong>."
 
-#: core/includes/class-plugin-activation.php:3514
+#: core/includes/class-plugin-activation.php:3517
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr "A instalação de %1$s falhou."
 
-#: core/includes/class-plugin-activation.php:3518
+#: core/includes/class-plugin-activation.php:3521
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
@@ -1684,31 +1684,31 @@ msgstr ""
 "O processo de instalação e ativação está começando. Este processo pode levar "
 "um tempo então por favor, seja paciente."
 
-#: core/includes/class-plugin-activation.php:3520
+#: core/includes/class-plugin-activation.php:3523
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr "%1$s instalado e ativado com sucesso."
 
-#: core/includes/class-plugin-activation.php:3520
-#: core/includes/class-plugin-activation.php:3528
+#: core/includes/class-plugin-activation.php:3523
+#: core/includes/class-plugin-activation.php:3531
 msgid "Show Details"
 msgstr "Mostrar Detalhes"
 
-#: core/includes/class-plugin-activation.php:3520
-#: core/includes/class-plugin-activation.php:3528
+#: core/includes/class-plugin-activation.php:3523
+#: core/includes/class-plugin-activation.php:3531
 msgid "Hide Details"
 msgstr "Ocultar Detalhes"
 
-#: core/includes/class-plugin-activation.php:3521
+#: core/includes/class-plugin-activation.php:3524
 msgid "All installations and activations have been completed."
 msgstr "Todas as instalações e ativações foram terminadas."
 
-#: core/includes/class-plugin-activation.php:3523
+#: core/includes/class-plugin-activation.php:3526
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr "Instalando e Ativando o Plugin %1$s (%2$d/%3$d)"
 
-#: core/includes/class-plugin-activation.php:3526
+#: core/includes/class-plugin-activation.php:3529
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
@@ -1716,137 +1716,146 @@ msgstr ""
 "O processo de instalação está começando. Este processo pode levar um tempo "
 "então por favor, seja paciente."
 
-#: core/includes/class-plugin-activation.php:3528
+#: core/includes/class-plugin-activation.php:3531
 #, php-format
 msgid "%1$s installed successfully."
 msgstr "%1$s instalado com sucesso."
 
-#: core/includes/class-plugin-activation.php:3529
+#: core/includes/class-plugin-activation.php:3532
 msgid "All installations have been completed."
 msgstr "Todas as instalações foram terminadas."
 
-#: core/includes/class-plugin-activation.php:3531
+#: core/includes/class-plugin-activation.php:3534
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr "Instalando Plugin %1$s (%2$d/%3$d)"
 
-#: core/main.php:59
+#: core/main.php:40
+msgid "You need to update your PHP version to run this theme."
+msgstr ""
+
+#: core/main.php:43
+#, php-format
+msgid "Actual version is: %1$s, required version is: %2$s."
+msgstr ""
+
+#: core/main.php:107
 #, php-format
 msgid "Category: %s"
 msgstr "Categoria: %s"
 
-#: core/main.php:61
+#: core/main.php:109
 #, php-format
 msgid "Tag: %s"
 msgstr "Tag: %s"
 
-#: core/main.php:63
+#: core/main.php:111
 #, php-format
 msgid "Author: %s"
 msgstr "Autor: %s"
 
-#: core/main.php:65
+#: core/main.php:113
 #, php-format
 msgid "Year: %s"
 msgstr "Ano: %s"
 
-#: core/main.php:65
+#: core/main.php:113
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: core/main.php:67
+#: core/main.php:115
 #, php-format
 msgid "Month: %s"
 msgstr "Mês: %s"
 
-#: core/main.php:67
+#: core/main.php:115
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: core/main.php:69
+#: core/main.php:117
 #, php-format
 msgid "Day: %s"
 msgstr "Dia: %s"
 
-#: core/main.php:69
+#: core/main.php:117
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr "F j, Y"
 
-#: core/main.php:72
+#: core/main.php:120
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "Asides"
 
-#: core/main.php:74
+#: core/main.php:122
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "Galerias"
 
-#: core/main.php:76
+#: core/main.php:124
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "Imagens"
 
-#: core/main.php:78
+#: core/main.php:126
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "Videos"
 
-#: core/main.php:80
+#: core/main.php:128
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "Quotes"
 
-#: core/main.php:82
+#: core/main.php:130
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "Links"
 
-#: core/main.php:84
+#: core/main.php:132
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "Status"
 
-#: core/main.php:86
+#: core/main.php:134
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "Audio"
 
-#: core/main.php:88
+#: core/main.php:136
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "Chats"
 
-#: core/main.php:91
+#: core/main.php:139
 #, php-format
 msgid "Archives: %s"
 msgstr "Arquivos: %s"
 
-#: core/main.php:94
+#: core/main.php:142
 #, php-format
 msgid "%1$s: %2$s"
 msgstr "%1$s: %2$s"
 
-#: core/main.php:536 core/main.php:542
+#: core/main.php:584 core/main.php:590
 msgid "Read More"
 msgstr "Leia Mais"
 
-#: core/main.php:647
+#: core/main.php:695
 msgid "Article"
 msgstr "Artigo"
 
-#: core/main.php:805
+#: core/main.php:853
 msgid "Default image"
 msgstr "Imagem Default"
 
-#: core/main.php:840
+#: core/main.php:888
 msgid "Main menu"
 msgstr "Menu principal"
 
-#: core/main.php:841
+#: core/main.php:889
 msgid "One Page menu"
 msgstr "Menu Página Única"
 

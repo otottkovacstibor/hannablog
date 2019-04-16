@@ -5,6 +5,54 @@
  * It is also available at this URL: http://www.gnu.org/licenses/gpl-3.0.txt
  */
 
+define( 'SUEVAFREE_MIN_PHP_VERSION', '5.3' );
+
+/*-----------------------------------------------------------------------------------*/
+/* Switches back to the previous theme if the minimum PHP version is not met */
+/*-----------------------------------------------------------------------------------*/ 
+
+if ( ! function_exists( 'suevafree_check_php_version' ) ) {
+
+	function suevafree_check_php_version() {
+	
+		if ( version_compare( PHP_VERSION, SUEVAFREE_MIN_PHP_VERSION, '<' ) ) {
+			add_action( 'admin_notices', 'suevafree_min_php_not_met_notice' );
+			switch_theme( get_option( 'theme_switched' ));
+			return false;
+	
+		};
+	}
+
+	add_action( 'after_switch_theme', 'suevafree_check_php_version' );
+
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* An error notice that can be displayed if the Minimum PHP version is not met */
+/*-----------------------------------------------------------------------------------*/ 
+
+if ( ! function_exists( 'suevafree_min_php_not_met_notice' ) ) {
+
+	function suevafree_min_php_not_met_notice() {
+		?>
+		<div class="notice notice-error is_dismissable">
+			<p>
+				<?php esc_html_e('You need to update your PHP version to run this theme.', 'suevafree' ); ?><br />
+				<?php
+				printf(
+					esc_html__( 'Actual version is: %1$s, required version is: %2$s.', 'suevafree' ),
+					PHP_VERSION,
+					SUEVAFREE_MIN_PHP_VERSION
+				);
+				?>
+			</p>
+		</div>
+		<?php
+	
+	}
+	
+}
+
 /*-----------------------------------------------------------------------------------*/
 /* Woocommerce is active */
 /*-----------------------------------------------------------------------------------*/ 
