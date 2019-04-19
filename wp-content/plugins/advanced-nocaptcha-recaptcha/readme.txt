@@ -3,8 +3,8 @@ Contributors: shamim51
 Tags: recaptcha,nocaptcha,invisible,no captcha,bot,spam,captcha,woocommerce captcha,woocommerce nocaptcha, woocommerce,widget,plugin,sidebar,shortcode,page,posts,comments,google,bbpress,multisite,multiple
 Donate link: https://www.paypal.me/hasanshamim
 Requires at least: 4.4
-Tested up to: 5.1
-Stable tag: 4.3
+Tested up to: 5.1.1
+Stable tag: 4.4
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,6 +17,8 @@ Show noCaptcha or invisible captcha in Comment Form (after Comment textarea befo
 
 * **Allow multiple captcha in same page.**
 * **Allow conditional login captcha** (you can set after how many failed login attempts login captcha will show)
+
+> [For **Advanced noCaptcha & invisible Captcha PRO** click here](https://www.shamimsplugins.com/products/advanced-nocaptcha-and-invisible-captcha-pro/?utm_campaign=wordpress&utm_source=readme_pro&utm_medium=description)
 
 = Show noCaptcha on =
 
@@ -81,6 +83,12 @@ To show noCaptcha use [anr_nocaptcha g-recaptcha-response]
 8. Advanced noCaptcha reCaptcha Setup Instruction
 
 == Changelog ==
+
+= 4.4 =
+
+* PRO version released
+* anr_verify_captcha_pre filter added
+* anr_get_option filter added
 
 = 4.3 =
 

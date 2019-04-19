@@ -13,7 +13,7 @@ class ANR_Settings {
 
 	function actions_filters() {
 		add_action( 'admin_init', array( $this, 'admin_init' ) );
-		add_filter( 'plugin_action_links', array( $this, 'add_settings_link' ), 10, 2 );
+		add_filter( 'plugin_action_links_' . plugin_basename( ANR_PLUGIN_FILE ), array( $this, 'add_settings_link' ) );
 
 		if ( is_multisite() ) {
 			$same_settings = apply_filters( 'anr_same_settings_for_all_sites', false );
@@ -227,6 +227,16 @@ class ANR_Settings {
 				'desc'       => __( 'If JavaScript is a requirement for your site, we advise that you do NOT check this.', 'advanced-nocaptcha-recaptcha' ),
 			),
 		);
+		if ( ! class_exists( 'ANR_Pro' ) ) :
+			$fields['pro_notice'] = array(
+				'section_id' => 'forms',
+				'type'       => 'html',
+				'std'        => '<div class="notice notice-success inline">
+					<p>To support development of "Advanced noCaptcha & invisible Captcha" plugin please purchase PRO version. <a class="button button-secondary" href="https://www.shamimsplugins.com/products/advanced-nocaptcha-and-invisible-captcha-pro/">View Details</a></p>
+				</div>',
+			);
+		endif;
+		
 		return apply_filters( 'anr_settings_fields', $fields );
 	}
 
@@ -268,6 +278,16 @@ class ANR_Settings {
 					$attrib
 				);
 				break;
+			case 'textarea':
+					printf( '<textarea id="%1$s" class="%2$s" name="anr_admin_options[%3$s]" placeholder="%4$s" %5$s >%6$s</textarea>',
+						esc_attr( $field['id'] ),
+						esc_attr( $field['class'] ),
+						esc_attr( $field['id'] ),
+						isset( $field['placeholder'] ) ? esc_attr( $field['placeholder'] ) : '',
+						$attrib,
+						esc_textarea( $value )
+					);
+					break;
 			case 'checkbox':
 				printf( '<input type="hidden" name="anr_admin_options[%s]" value="" />', esc_attr( $field['id'] ) );
 				printf(
@@ -313,6 +333,9 @@ class ANR_Settings {
 				}
 				printf( '</select>' );
 				break;
+			case 'html':
+				echo $field['std'];
+				break;
 
 			default:
 				printf( __( 'No hook defined for %s', 'advanced-nocaptcha-recaptcha' ), esc_html( $field['type'] ) );
@@ -353,9 +376,8 @@ class ANR_Settings {
 			}
 			anr_update_option( $value );
 
-			if ( ! count( get_settings_errors() ) ) {
-				add_settings_error( 'anr_admin_options', 'settings_updated', __( 'Settings saved.' ), 'updated' );
-			}
+			wp_safe_redirect( admin_url( 'options-general.php?page=anr-admin-settings&updated=true' ) );
+			exit;
 		}
 		?>
 		<div class="wrap">
@@ -364,8 +386,8 @@ class ANR_Settings {
 				<div id="post-body" class="metabox-holder columns-2">
 					<div id="post-body-content">
 						<div id="tab_container">
-							<?php settings_errors(); ?>
-							<form method="post" action="<?php echo esc_attr( wp_unslash( $_SERVER['REQUEST_URI'] ) ); ?>">
+							<?php settings_errors( 'anr_admin_options' ); ?>
+							<form method="post" action="<?php echo esc_attr( admin_url( 'options-general.php?page=anr-admin-settings' ) ); ?>">
 								<?php
 								settings_fields( 'anr_admin_options' );
 								do_settings_sections( 'anr_admin_options' );
@@ -386,7 +408,7 @@ class ANR_Settings {
 	}
 
 	function anr_admin_sidebar() {
-			return '<div class="postbox">
+			$return = '<div class="postbox">
 					<h3 class="hndle" style="text-align: center;">
 						<span>' . __( 'Plugin Author', 'advanced-nocaptcha-recaptcha' ) . '</span>
 					</h3>
@@ -401,6 +423,23 @@ class ANR_Settings {
 					</div>
 				</div>
 			</div>';
+			if ( ! class_exists( 'ANR_Pro' ) ) :
+			$return .= '<div class="postbox">
+					<h3 class="hndle" style="text-align: center;">
+						<span>' . __( 'Support Development', 'advanced-nocaptcha-recaptcha' ) . '</span>
+					</h3>
+
+					<div class="inside">
+						<div style="text-align: center; margin: auto">
+						<a style="text-decoration:none;" href="https://www.shamimsplugins.com/products/advanced-nocaptcha-and-invisible-captcha-pro/">To support development of "Advanced noCaptcha & invisible Captcha" plugin please purchase
+						<div style="font-size:24px;color:red;margin:10px;">PRO</div>
+						version only for USD 10</a>
+						<p><a class="button button-secondary" href="https://www.shamimsplugins.com/products/advanced-nocaptcha-and-invisible-captcha-pro/">View Details</a></p>
+					</div>
+				</div>
+			</div>';
+		endif;
+		return $return;
 	}
 
 	function instruction_page() {
@@ -441,13 +480,10 @@ class ANR_Settings {
 	}
 
 
-	function add_settings_link( $links, $file ) {
+	function add_settings_link( $links ) {
 		// add settings link in plugins page
-		$plugin_file = 'advanced-nocaptcha-recaptcha/advanced-nocaptcha-recaptcha.php';
-		if ( $file == $plugin_file ) {
-			$settings_link = '<a href="' . admin_url( 'options-general.php?page=anr-admin-settings' ) . '">' . __( 'Settings', 'advanced-nocaptcha-recaptcha' ) . '</a>';
-			array_unshift( $links, $settings_link );
-		}
+		$settings_link = '<a href="' . admin_url( 'options-general.php?page=anr-admin-settings' ) . '">' . __( 'Settings', 'advanced-nocaptcha-recaptcha' ) . '</a>';
+		array_unshift( $links, $settings_link );
 		return $links;
 	}
 

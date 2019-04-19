@@ -80,10 +80,13 @@ function anr_get_option( $option, $default = '', $section = 'anr_admin_options' 
 	}
 
 	if ( isset( $options[ $option ] ) ) {
-		return $options[ $option ];
+		$value      = $options[ $option ];
+		$is_default = false;
+	} else {
+		$value      = $default;
+		$is_default = true;
 	}
-
-	return $default;
+	return apply_filters( 'anr_get_option', $value, $option, $default, $is_default );
 }
 
 function anr_update_option( $options, $value = '', $section = 'anr_admin_options' ) {
@@ -174,13 +177,19 @@ function anr_captcha_form_field( $echo = false ) {
 function anr_verify_captcha( $response = false ) {
 	$secre_key  = trim( anr_get_option( 'secret_key' ) );
 	$remoteip = $_SERVER['REMOTE_ADDR'];
+	
+	if ( false === $response ) {
+		$response = isset( $_POST['g-recaptcha-response'] ) ? $_POST['g-recaptcha-response'] : '';
+	}
+	
+	$pre_check = apply_filters( 'anr_verify_captcha_pre', null, $response );
+	
+	if ( null !== $pre_check ) {
+		return $pre_check;
+	}
 
 	if ( ! $secre_key ) { // if $secre_key is not set
 		return true;
-	}
-
-	if ( false === $response ) {
-		$response = isset( $_POST['g-recaptcha-response'] ) ? $_POST['g-recaptcha-response'] : '';
 	}
 
 	if ( ! $response || ! $remoteip ) {
