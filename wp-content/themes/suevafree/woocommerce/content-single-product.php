@@ -12,10 +12,12 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.4.0
+ * @version 3.6.0
  */
 
 defined( 'ABSPATH' ) || exit;
+
+global $product;
 
 /**
  * Hook: woocommerce_before_single_product.
@@ -44,7 +46,7 @@ if ( post_password_required() ) {
 	 }
 ?>
 
-<div id="product-<?php the_ID(); ?>" <?php wc_product_class(); ?>>
+<div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<div class="product-content">
     

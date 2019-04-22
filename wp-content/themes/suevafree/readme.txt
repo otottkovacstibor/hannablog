@@ -3,7 +3,7 @@ Contributors: alexvtn
 Tags: blog, custom-background, custom-colors, custom-header, custom-logo, custom-menu, e-commerce, featured-images, flexible-header, footer-widgets, post-formats, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns, three-columns, grid-layout, photography
 Requires at least: 4.0
 Tested up to: 5.1.1
-Stable tag: 3.6.9
+Stable tag: 3.7.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,12 @@ SuevaFree WordPress Theme, Copyright 2019 ThemeinProgress.
 SuevaFree is distributed under the terms of the GPLv2 or later
 
 == Changelog ==
+
+= 3.7.0 =
+Release date - April, 20 - 2019
+
+* Updated - WooCommerce templates
+* Updated - Readme.txt file
 
 = 3.6.9 =
 Release date - April, 14 - 2019
@@ -775,7 +781,10 @@ HTML5 Shiv By @afarkas @jdalton @jon_neal @rem - https://github.com/aFarkas/html
 selectivizr By Keith Clark - https://github.com/keithclark/selectivizr
 * selectivizr.js v1.0.3b - Licensed under MIT license ( Applies to selectivizr.js file in /suevafree/assets/scripts/ )
 
-The following scripts and styles are coded by me and they are released under MIT license
+TGM Plugin Activation By Thomas Griffin, Gary Jones, Juliette Reinders Folmer - http://tgmpluginactivation.com
+* class-plugin-activation.php v2.6.1 - Licensed under GPL2 license ( Applies to class-plugin-activation.php file in /suevafree/core/includes/ )
+
+The following scripts and styles are self created and they are released under MIT license
 
 * /suevafree/assets/skins/cyan.css
 * /suevafree/assets/skins/orange.css
@@ -796,7 +805,7 @@ The following scripts and styles are coded by me and they are released under MIT
 * /suevafree/assets/css/woocommerce.css
 * /suevafree/assets/js/template.js
 
-The following images are created by me and they are released under CC0 license
+The following images are self created and they are released under CC0 license
 
 * /suevafree/assets/images/background/paper.jpg
 * /suevafree/assets/images/icons/scotch-left.png
