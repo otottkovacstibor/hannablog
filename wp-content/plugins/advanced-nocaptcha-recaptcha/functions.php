@@ -66,6 +66,20 @@ function anr_plugin_update_32( $prev_version ) {
 	}
 }
 
+add_action( 'anr_plugin_update', 'anr_plugin_update_51' );
+
+function anr_plugin_update_51( $prev_version ) {
+	if ( version_compare( $prev_version, '5.1', '<' ) ) {
+		$options = [];
+		if ( 'invisible' === anr_get_option( 'size' ) ) {
+			$options['size']            = 'normal';
+			$options['captcha_version'] = 'v2_invisible';
+		}
+
+		anr_update_option( $options );
+	}
+}
+
 function anr_get_option( $option, $default = '', $section = 'anr_admin_options' ) {
 
 	if ( is_multisite() ) {
@@ -132,8 +146,8 @@ function anr_translation() {
 
 function anr_login_enqueue_scripts() {
 
-	if ( ! anr_get_option( 'remove_css' ) && 'normal' === anr_get_option( 'size', 'normal' ) ) {
-		wp_enqueue_style( 'anr-login-style', ANR_PLUGIN_URL . 'style/style.css' );
+	if ( ! anr_get_option( 'remove_css' ) && 'normal' === anr_get_option( 'size', 'normal' ) && 'v2_checkbox' === anr_get_option( 'captcha_version', 'v2_checkbox' ) ) {
+		wp_enqueue_style( 'anr-login-style', ANR_PLUGIN_URL . 'assets/css/style.css' );
 	}
 }
 
@@ -177,6 +191,7 @@ function anr_captcha_form_field( $echo = false ) {
 function anr_verify_captcha( $response = false ) {
 	$secre_key  = trim( anr_get_option( 'secret_key' ) );
 	$remoteip = $_SERVER['REMOTE_ADDR'];
+	$verify = false;
 	
 	if ( false === $response ) {
 		$response = isset( $_POST['g-recaptcha-response'] ) ? $_POST['g-recaptcha-response'] : '';
@@ -193,7 +208,7 @@ function anr_verify_captcha( $response = false ) {
 	}
 
 	if ( ! $response || ! $remoteip ) {
-		return false;
+		return $verify;
 	}
 
 	$url = 'https://www.google.com/recaptcha/api/siteverify';
@@ -210,22 +225,23 @@ function anr_verify_captcha( $response = false ) {
 		)
 	);
 
-	if ( is_wp_error( $request ) ) {
-		return false;
-	}
-
 	// get the request response body
 	$request_body = wp_remote_retrieve_body( $request );
 	if ( ! $request_body ) {
-		return false;
+		return $verify;
 	}
 
 		$result = json_decode( $request_body, true );
 	if ( isset( $result['success'] ) && true == $result['success'] ) {
-		return true;
+		if ( 'v3' === anr_get_option( 'captcha_version' ) ) {
+			$score = isset( $result['score'] ) ? $result['score'] : 0;
+			$verify = anr_get_option( 'score', '0.5' ) <= $score;
+		} else {
+			$verify = true;
+		}
 	}
 
-		return false;
+	return apply_filters( 'anr_verify_captcha', $verify, $result, $response );
 }
 
 add_filter( 'shake_error_codes', 'anr_add_shake_error_codes' );

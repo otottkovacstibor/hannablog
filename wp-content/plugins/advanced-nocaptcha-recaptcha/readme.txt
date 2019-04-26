@@ -1,10 +1,10 @@
-=== Advanced noCaptcha & invisible Captcha ===
+=== Advanced noCaptcha & invisible Captcha (v2 & v3) ===
 Contributors: shamim51
-Tags: recaptcha,nocaptcha,invisible,no captcha,bot,spam,captcha,woocommerce captcha,woocommerce nocaptcha, woocommerce,widget,plugin,sidebar,shortcode,page,posts,comments,google,bbpress,multisite,multiple
+Tags: recaptcha,nocaptcha,invisible,no captcha,bot,spam,captcha,woocommerce captcha,woocommerce nocaptcha, woocommerce,widget,plugin,sidebar,shortcode,page,posts,comments,google,bbpress,multisite,multiple,v2,v3
 Donate link: https://www.paypal.me/hasanshamim
 Requires at least: 4.4
 Tested up to: 5.1.1
-Stable tag: 4.4
+Stable tag: 5.2
 Requires PHP: 5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -64,12 +64,15 @@ Yes. this plugin is translate ready. But If your language is not available you c
 = Can i show multiple captcha in same page? =
 Yes. You can show unlimited number of captcha in same page.
 
-= How to set Invisible captcha? =
-Make sure to obtain key for invisible captcha from google. Go to Dashboard > Settings > Advanced noCaptcha & invisible captcha > Size ( Set as Invisible )
+= How to load reCaptcha v3 script only when there is form in that page? =
+Loading v3 script in All Pages help google for analytics. If you want to load script only when there is form in that page please go to Dashboard > Settings > Advanced noCaptcha & invisible Captcha > v3 Script Load and set to "Form Pages".
+If you are not using v3 then script will only load when there is form in that page. no settings required.
 
 = How to set captcha in contact form 7? =
 To show noCaptcha use [anr_nocaptcha g-recaptcha-response]
 
+= How to login if i am locked out? =
+You can access your file via FTP or file manager and rename "advanced-nocaptcha-recaptcha" folder to something else. Then login as normal. Then rename back this folder.
 
 == Screenshots ==
 
@@ -83,6 +86,12 @@ To show noCaptcha use [anr_nocaptcha g-recaptcha-response]
 8. Advanced noCaptcha reCaptcha Setup Instruction
 
 == Changelog ==
+
+= 5.2 =
+
+* Now support reCaptcha v3 also
+* Fix: invisible captcha sometimes was not working
+* anr_verify_captcha filter added
 
 = 4.4 =
 
