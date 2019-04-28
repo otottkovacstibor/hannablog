@@ -12,6 +12,12 @@ services:
       WORDPRESS_DB_PASSWORD: "${MYSQL_PASSWORD}"
       WORDPRESS_DB_NAME: hannablog
       WORDPRESS_TABLE_PREFIX: hanna_
+      WORDPRESS_CONFIG_EXTRA: |-
+          // Use X-Forwarded-For HTTP Header to Get Visitor's Real IP Address
+          if (isset( $_SERVER['HTTP_X_FORWARDED_FOR'])) {
+               $http_x_headers = explode(',', $_SERVER['HTTP_X_FORWARDED_FOR']);
+               $_SERVER['REMOTE_ADDR'] = $http_x_headers[0];
+          }
     volumes:
       - ./wp-content:/var/www/html/wp-content
       - ./.htaccess:/var/www/html/.htaccess
