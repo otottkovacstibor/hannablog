@@ -7,14 +7,15 @@ services:
     environment:
       VIRTUAL_HOST: hannablog.oktibor.com
       VIRTUAL_PORT: 80
+      WORDPRESS_CONFIG_EXTRA: "require_once('wp-config-extra.php');"
       WORDPRESS_DB_HOST: mysql
       WORDPRESS_DB_USER: "${MYSQL_USER}"
       WORDPRESS_DB_PASSWORD: "${MYSQL_PASSWORD}"
       WORDPRESS_DB_NAME: hannablog
       WORDPRESS_TABLE_PREFIX: hanna_
-      WORDPRESS_CONFIG_EXTRA: "if (isset($$_SERVER['HTTP_X_FORWARDED_FOR'])) { $$http_x_headers = explode(',', $$_SERVER['HTTP_X_FORWARDED_FOR']); $$_SERVER['REMOTE_ADDR'] = $$http_x_headers[0];}"
     volumes:
       - ./wp-content:/var/www/html/wp-content
+      - ./wp-config-extra.php:/var/www/html/wp-config-extra.php
       - ./.htaccess:/var/www/html/.htaccess
     networks:
       - nginx
