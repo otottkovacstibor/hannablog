@@ -449,7 +449,7 @@
 					//"\/product"
 					//"\/product-category"
 
-					array_push($list, "\/cart", "\/checkout", "\/receipt", "\/confirmation", "\/wc-api\/");
+					array_push($list, "\/cart\/?$", "\/checkout", "\/receipt", "\/confirmation", "\/wc-api\/");
 				}
 			}
 

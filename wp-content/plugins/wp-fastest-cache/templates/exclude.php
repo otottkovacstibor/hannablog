@@ -351,7 +351,11 @@
 				}else if(type == "useragent"){
 					return "User-Agent: " + request_uri;
 				}else if(type == "cookie"){
-					return "Cookie: " + request_uri;
+					if(content == "Admin"){
+						return "Caching has been disabled for " + b_start + "Admin" + b_end + " users";
+					}else{
+						return "Cookie: " + request_uri;
+					}
 				}
 
 		},
@@ -500,13 +504,13 @@
 			self.add_item(new Date().getTime(), {"type" : "page", "prefix" : "exact", "content" : "wp-login.php", "editable" : false});
 			//self.add_item(new Date().getTime(), {"prefix" : "startwith", "content" : "wp-content", "editable" : false});
 			self.add_item(new Date().getTime(), {"type" : "page", "prefix" : "startwith", "content" : "wp-admin", "editable" : false});
-			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "facebookexternalhit", "editable" : false});
-
-			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "LinkedInBot", "editable" : false});
 			
+			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "facebookexternalhit", "editable" : false});
+			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "LinkedInBot", "editable" : false});
 			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "WhatsApp", "editable" : false});
-
 			self.add_item(new Date().getTime(), {"type" : "useragent", "prefix" : "contain", "content" : "Twitterbot", "editable" : false});
+
+			self.add_item(new Date().getTime(), {"type" : "cookie", "prefix" : "contain", "content" : "Admin", "editable" : false});
 
 
 			if(typeof this.rules != "undefined" && this.rules && this.rules.length > 0){

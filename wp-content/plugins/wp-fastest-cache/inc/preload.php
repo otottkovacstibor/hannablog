@@ -1,5 +1,7 @@
 <?php
 	class PreloadWPFC{
+		private static $exclude_rules = false;
+
 		public static function set_preload($slug){
 			$preload_arr = array();
 
@@ -120,25 +122,25 @@
 
 					if($where_query){
 						$where_query = preg_replace("/(\s*OR\s*)$/", "", $where_query);
-					}
+			    		
+			    		$recent_custom_posts = $wpdb->get_results("SELECT SQL_CALC_FOUND_ROWS  ".$wpdb->prefix."posts.ID FROM ".$wpdb->prefix."posts  WHERE 1=1  AND (".$where_query.") AND ((".$wpdb->prefix."posts.post_status = 'publish'))  ORDER BY ".$wpdb->prefix."posts.ID DESC LIMIT ".$pre_load->customposttypes.", ".$number, ARRAY_A);
 
-		    		$recent_custom_posts = $wpdb->get_results("SELECT SQL_CALC_FOUND_ROWS  ".$wpdb->prefix."posts.ID FROM ".$wpdb->prefix."posts  WHERE 1=1  AND (".$where_query.") AND ((".$wpdb->prefix."posts.post_status = 'publish'))  ORDER BY ".$wpdb->prefix."posts.ID DESC LIMIT ".$pre_load->customposttypes.", ".$number, ARRAY_A);
+			    		if(count($recent_custom_posts) > 0){
+			    			foreach ($recent_custom_posts as $key => $post) {
+			    				if($mobile_theme){
+			    					array_push($urls, array("url" => get_permalink($post["ID"]), "user-agent" => "mobile"));
+			    					$number--;
+			    				}
 
-		    		if(count($recent_custom_posts) > 0){
-		    			foreach ($recent_custom_posts as $key => $post) {
-		    				if($mobile_theme){
-		    					array_push($urls, array("url" => get_permalink($post["ID"]), "user-agent" => "mobile"));
+		    					array_push($urls, array("url" => get_permalink($post["ID"]), "user-agent" => "desktop"));
 		    					$number--;
-		    				}
 
-	    					array_push($urls, array("url" => get_permalink($post["ID"]), "user-agent" => "desktop"));
-	    					$number--;
-
-		    				$pre_load->customposttypes = $pre_load->customposttypes + 1;
-		    			}
-		    		}else{
-		    			$pre_load->customposttypes = -1;
-		    		}
+			    				$pre_load->customposttypes = $pre_load->customposttypes + 1;
+			    			}
+			    		}else{
+			    			$pre_load->customposttypes = -1;
+			    		}
+					}
 				}
 
 
@@ -313,11 +315,19 @@
 							$user_agent = "WP Fastest Cache Preload iPhone Mobile Bot";
 						}
 
-						if($GLOBALS["wp_fastest_cache"]->wpfc_remote_get($arr["url"], $user_agent)){
-							$status = "<strong style=\"color:lightgreen;\">OK</strong>";
+
+						if(self::is_excluded($arr["url"])){
+							$status = "<strong style=\"color:blue;\">Excluded</strong>";
 						}else{
-							$status = "<strong style=\"color:red;\">ERROR</strong>";
+							if($GLOBALS["wp_fastest_cache"]->wpfc_remote_get($arr["url"], $user_agent)){
+								$status = "<strong style=\"color:lightgreen;\">OK</strong>";
+							}else{
+								$status = "<strong style=\"color:red;\">ERROR</strong>";
+							}
 						}
+
+
+
 
 						echo $status." ".$arr["url"]." (".$arr["user-agent"].")<br>";
 					}
@@ -374,6 +384,44 @@
 			if(isset($_GET) && isset($_GET["type"])  && $_GET["type"] == "preload"){
 				die();
 			}
+		}
+
+		public static function is_excluded($url){
+			$request_url = parse_url($url, PHP_URL_PATH);
+			$request_url = urldecode(trim($request_url, "/"));
+
+			if(!$request_url){
+				return false;
+			}
+
+
+			if(self::$exclude_rules === false){
+				if($json_data = get_option("WpFastestCacheExclude")){
+					self::$exclude_rules = json_decode($json_data);
+				}else{
+					self::$exclude_rules = array();
+				}
+			}
+
+			foreach((array)self::$exclude_rules as $key => $value){
+				if($value->prefix == "exact"){
+					if(strtolower($value->content) == strtolower($request_url)){
+						return true;	
+					}
+				}else{
+					if($value->prefix == "startwith"){
+						$preg_match_rule = "^".preg_quote($value->content, "/");
+					}else if($value->prefix == "contain"){
+						$preg_match_rule = preg_quote($value->content, "/");
+					}
+
+					if(preg_match("/".$preg_match_rule."/i", $request_url)){
+						return true;
+					}
+				}
+			}
+
+			return false;
 		}
 	}
 ?>

@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 5.1
-Stable tag: 0.8.9.2
+Stable tag: 0.8.9.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -25,7 +25,7 @@ Cache system generates a static html file and saves. Other users reach to static
 Setup of this plugin is so easy. You don't need to modify the .htacces file. It will be modified automatically.
 
 <h4>Multisite Support</h4>
-Wpfc does not support Wordpress Multisite yet.
+Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastestcache.com/blog/multi-site/">Details</a>]
 
 <h4>Features</h4>
 
@@ -102,6 +102,14 @@ Wpfc does not support Wordpress Multisite yet.
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.9.3 =
+* to exclude urls on preload
+* to add exclude rule for admin cookie as default
+* to prevent replace urls with cdn-url if the url has already been replaced with Jetpack
+* to fix replacing origin-url with cdn-url for data-product_variations attribute
+* to fix "Database Syntax Error" [<a target="_blank" href="https://wordpress.org/support/topic/database-syntax-error-2/">Details</a>]
+* refactoring of read_file()
 
 = 0.8.9.2 =
 * to clear cache of author page after update/insert post

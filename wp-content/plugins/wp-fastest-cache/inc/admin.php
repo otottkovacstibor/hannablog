@@ -1303,10 +1303,16 @@
 								<?php }else{ ?>
 									<div class="questionCon update-needed">
 										<div class="question">Lazy Load</div>
-										<div class="inputCon"><input type="checkbox" id="wpFastestCacheLazyLoad" name="wpFastestCacheLazyLoad"><label for="wpFastestCacheLazyLoad">Lazy Load</label></div>
+										<div class="inputCon"><input type="checkbox" id="wpFastestCacheLazyLoad" name="wpFastestCacheLazyLoad"><label for="wpFastestCacheLazyLoad">Load images and iframes when they enter the browsers viewport</label></div>
 										<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/lazy-load-reduce-http-request-and-page-load-time/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
 									</div>
 								<?php } ?>
+							<?php }else{ ?>
+								<div class="questionCon disabled">
+									<div class="question">Lazy Load</div>
+									<div class="inputCon"><input type="checkbox" id="wpFastestCacheLazyLoad" name="wpFastestCacheLazyLoad"><label for="wpFastestCacheLazyLoad">Load images and iframes when they enter the browsers viewport</label></div>
+									<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/lazy-load-reduce-http-request-and-page-load-time/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
+								</div>
 							<?php } ?>
 							
 
@@ -2216,6 +2222,12 @@
 
 				<script type="text/javascript">
 					jQuery("div.questionCon.disabled").click(function(e){
+						if(e.target.tagName == "IMG"){
+							if(e.target.src.match(/info\.png/)){
+								return;
+							}
+						}
+
 						if(typeof window.wpfc.tooltip != "undefined"){
 							clearTimeout(window.wpfc.tooltip);
 						}
@@ -2269,6 +2281,14 @@
 					jQuery("#wpFastestCacheMobile").click(function(e){
 						if(jQuery("#wpFastestCacheMobileTheme").is(':checked')){
 							jQuery(this).attr('checked', true);
+						}
+					});
+
+					//if "Lazy Load" has been selected both "Mobile" and "Mobile Theme" options enabled
+					jQuery("#wpFastestCacheLazyLoad").click(function(e){
+						if(jQuery(this).is(':checked')){
+							jQuery("#wpFastestCacheMobile").attr('checked', true);
+							jQuery("#wpFastestCacheMobileTheme").attr('checked', true);
 						}
 					});
 				});
