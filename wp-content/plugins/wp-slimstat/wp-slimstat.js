@@ -165,7 +165,7 @@ var SlimStat = {
 
 		expiration = new Date();
 		expiration.setTime( expiration.getTime() + 31536000000 );
-		document.cookie = "slimstat_optout_tracking=" + cookie_value + ";expires=" + expiration.toGMTString();
+		document.cookie = "slimstat_optout_tracking=" + cookie_value + ";path=" + SlimStatParams.baseurl + ";expires=" + expiration.toGMTString();
 
 		event.target.parentNode.parentNode.removeChild( event.target.parentNode );
 	},
@@ -425,12 +425,17 @@ var SlimStat = {
 		var to_not_track = ( "undefined" != typeof SlimStatParams.outbound_classes_rel_href_to_not_track && SlimStatParams.outbound_classes_rel_href_to_not_track ) ? SlimStatParams.outbound_classes_rel_href_to_not_track.split( ',' ) : [];
 
 		for ( var i = 0; i < all_links.length; i++ ) {
+			// SVG and other objects using the A tag should not be considered
+			if ( typeof all_links[ i ].href != "string" ) {
+				continue;
+			}
+
 			// Types
 			// 0: external
 			// 1: download
 			// 2: internal (track coordinates only)
 
-			linktype = ( all_links[ i ].href && ( all_links[ i ].hostname == location.hostname || all_links[ i ].href.indexOf( '://' ) == -1 ) || all_links[ i ].href.indexOf( 'javascript:' ) == -1 ) ? 2 : 0;
+			linktype = ( all_links[ i ].hostname == location.hostname || all_links[ i ].href.indexOf( '://' ) == -1 || all_links[ i ].href.indexOf( 'javascript:' ) == -1 ) ? 2 : 0;
 			tracking = 1;
 
 			// Do not track links with given class names...

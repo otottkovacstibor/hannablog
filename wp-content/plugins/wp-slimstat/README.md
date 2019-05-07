@@ -6,17 +6,11 @@ Text Domain: wp-slimstat
 **Requires at least:** 3.8  
 Requires PHP: 5.2
 **Tested up to:** 5.1  
-**Stable tag:** 4.7.9  
+**Stable tag:** 4.8  
 
 
 ## Description 
 The leading web analytics plugin for WordPress. Track returning customers and registered users, monitor Javascript events, detect intrusions, analyze email campaigns. Thousands of WordPress sites are already using it.
-
-
-### Feature Spotlight
-Click on the preview here below to watch an introductory video to our plugin.
-
-[![Introduction to Slimstat Analytics](https://img.youtube.com/vi/zEKP9yC8x6g/maxresdefault.jpg)](https://youtu.be/zEKP9yC8x6g)
 
 
 ### Main features 
@@ -55,7 +49,7 @@ Slimstat is available in multiple languages: English, Belarusian (UStarCash), Ch
 
 ### Requirements 
 * WordPress 3.8+
-* PHP 5.2+ (or 5.5+ if you use the Browscap data file)
+* PHP 5.2+ (or 7.1+ if you use the Browscap data file)
 * MySQL 5.0.3+
 * At least 40 MB of free web space
 * At least 5 MB of free DB space
@@ -78,13 +72,34 @@ Slimstat is available in multiple languages: English, Belarusian (UStarCash), Ch
 
 
 ## Frequently Asked Questions 
-Our knowledge base is available on our [support center](http://docs.wp-slimstat.com/) website.
+Our knowledge base is available on our [support center](https://docs.wp-slimstat.com/) website.
 
 
 ## Changelog 
 
+### 4.8 
+* [Note] Now that we have a cleaner foundation to build on, it's time to start introducing new reports and new ways to segment your audience and the traffic they generate. While our users test the latest changes and updates (to confirm that the foundation is indeed solid and bug-free), we are hard at work implementing the first batch of new reports. Some of them will be made available in the free version, while others will be added to our premium add-on, [User Overview](http://www.wp-slimstat.com/downloads/user-overview/). And we need your help! If you think that a specific report should be added to Slimstat, please do not hesitate to let us know!
+* [Note] Worried about the recent [news regarding jQuery vulnerabilities](https://www.zdnet.com/article/popular-jquery-javascript-library-impacted-by-prototype-pollution-flaw/)? Slimstat doesn't use jQuery as a dependency, so you can sleep tight knowing that your website will not be affected.
+* [Update] [AmCharts](https://www.amcharts.com/javascript-charts/), the library used to render all of our charts, has been updated to version 4. This new release is not backward compatible, so the code to integrate it with Slimstat had to be completely rewritten. Please let us know if you notice any issues.
+* [Update] [Plugin Update Checker](https://github.com/YahnisElsts/plugin-update-checker), the library we use to check if a new version of our premium add-ons is available for download, has been update to version 4.6.
+* [Update] If you're using our partner's CDN functionality (JsDelivr) to load the tracker, their link is now always loaded over HTTPS for added security.
+* [Update] Switched the Add-on Update checker URL to HTTPS, for added security (thank you, Peter).
+* [Update] Changed the protocol of all the URLs used within Slimstat, including references to our documentation, to HTTPS.
+* [Update] Added icon to geolocate Originating IP addresses, when detected.
+* [Fix] The optout cookie path was not being set correctly (thank you, [ralfkerkhoff](https://wordpress.org/support/topic/opt-out-cookie-per-page/)).
+* [Fix] Google seems to be using a new User Agent string for its "mobile" crawler, which was causing Slimstat from incorrectly identifying visits as coming from mobile devices, instead of bots (thank you, Ron).
+* [Fix] An error was being returned if SVG elements were using the A tag on a page (thank you, [snaphappyme](https://wordpress.org/support/topic/uncaught-typeerror-all_linksn-href-indexof/)).
+* [Fix] A bug was causing Slimstat to incorrectly geolocate visits to websites behind a Cloudflare load balancer. Please update the IP Address Fix add-on as well.
+* [Fix] Tweaked the formula to determine your website bounce rate, and updated the associated description to better reflect the underlying calculations.
+
+
+### 4.7.9.1 
+* [Fix] It turns out the new [Browscap Library](https://github.com/slimstat/browscap-db) we introduced requires PHP 7.x, not 5.6 as stated in their documentation. Added some code to prevent fatal errors for those still using an older version of PHP.
+
+
 ### 4.7.9 
 * [Note] Jason is back! Apologies for the radio silence in the last few months, due to personal reasons. Please know that this plugin is still very much alive and kicking. I'm working on cleaning up my development environment, updating the Git repository and streamlining coding workflows. I'm catching up on past and new feature requests and pending bugfixes. As always, thank you for your continued support.
+* [Note] Happy birthday, Slimstat: April 2019 marks your 9th year in the [WordPress repository](https://plugins.trac.wordpress.org/changeset/227217) and your 13th year overall. Not many plugins out there can brag about that!
 * [Update] Our optimized fork of the Browscap Library is now available as a public Github repository. Slimstat will now check for updates on Github directly, which streamlines our deployment workflow. Feel free to contact us if you experience any issues with the new data file.
 
 

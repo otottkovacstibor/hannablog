@@ -3,18 +3,28 @@
 class slim_browser {
 	public static $browser = array();
 	public static $browscap_autoload_path = '';
+	public static $browscap_local_version = 0;
 
 	public static function init() {
 		self::$browser = array(
 			'browser' => 'Default Browser',
 			'browser_version' => '',
-			'browser_type' => 1,
+			'browser_type' => 0,
 			'platform' => 'unknown',
 			'user_agent' => self::_get_user_agent()
 		);
 
 		// Path to the Browscap data and library
 		self::$browscap_autoload_path = wp_slimstat::$upload_dir . '/browscap-db-master/composer/autoload_real.php';
+		
+		// Determine the local version of the data file
+		self::$browscap_local_version = @file_get_contents( wp_slimstat::$upload_dir . '/browscap-db-master/version.txt' );
+		if ( false === self::$browscap_local_version ) {
+			wp_slimstat::slimstat_save_options();
+			return array( 4, __( 'The Browscap Library could not be opened on your filesystem. Please check your server permissions and try again.', 'wp-slimstat' ) );
+		}
+
+		self::$browscap_local_version = intval( filter_var( self::$browscap_local_version, FILTER_SANITIZE_NUMBER_INT ) );
 
 		if ( file_exists( self::$browscap_autoload_path ) && version_compare( PHP_VERSION, '7.1', '>=' ) ) {
 			self::update_browscap_database( false );
@@ -47,8 +57,8 @@ class slim_browser {
 	 * Downloads the Browscap User Agent database from our repository
 	 */
 	public static function update_browscap_database( $_force_download = false ) {
-		if ( version_compare( PHP_VERSION, '5.5', '<' ) ) {
-			return array( 1, __( 'This library requires at least PHP 5.5. Please ask your service provider to upgrade your server accordingly.', 'wp-slimstat' ) );
+		if ( version_compare( PHP_VERSION, '7.1', '<' ) ) {
+			return array( 1, __( 'This library requires at least PHP 7.1. Please ask your service provider to upgrade your server accordingly.', 'wp-slimstat' ) );
 		}
 
 		if ( defined( 'DOING_AJAX' ) && DOING_AJAX ) {
@@ -65,7 +75,6 @@ class slim_browser {
 		}
 
 		$download_remote_file = $_force_download;
-		$local_version = 0;
 		$current_timestamp = intval( date( 'U' ) );
 		$browscap_zip = wp_slimstat::$upload_dir . '/browscap-db.zip';
 
@@ -93,21 +102,6 @@ class slim_browser {
 				// No matter what the outcome is, we'll check again in one week
 				wp_slimstat::$settings[ 'browscap_last_modified' ] = $current_timestamp;
 
-				// Find the version of the local data file
-				$handle = @fopen( self::$browscap_autoload_path, "rb" );
-				if ( false === $handle ) {
-					wp_slimstat::slimstat_save_options();
-					return array( 4, __( 'The Browscap Library could not be opened on your filesystem. Please check your server permissions and try again.', 'wp-slimstat' ) );
-				}
-
-				while ( ( $buffer = @fgets( $handle, 4096 ) ) !== false ) {
-					if ( strpos( $buffer, 'source_version' ) !== false ) {
-						$local_version = intval( filter_var( $buffer, FILTER_SANITIZE_NUMBER_INT ) );
-						break;
-					}
-				}
-
-				fclose( $handle );
 
 				// Now check the version number on the server
 				$response = wp_remote_get( 'https://raw.githubusercontent.com/slimstat/browscap-db/master/version.txt' );
@@ -117,7 +111,7 @@ class slim_browser {
 				}
 
 				$remote_version = intval( wp_remote_retrieve_body( $response ) );
-				$download_remote_file = ( $local_version < $remote_version );
+				$download_remote_file = ( self::$browscap_local_version < $remote_version );
 			}
 			else {
 				return array( 0, __( 'Your version of the library does not need to be updated.', 'wp-slimstat' ) );
@@ -152,14 +146,13 @@ class slim_browser {
 
 			wp_filesystem();
 
-			// Delete the existing folder, if there
+			// Delete the existing folder, if present
 			$GLOBALS[ 'wp_filesystem' ]->rmdir( dirname( self::$browscap_autoload_path ) . '/', true );
 
 			// We're ready to unzip the file
 			$unzip_done = unzip_file( $browscap_zip, wp_slimstat::$upload_dir );
 
 			if ( !$unzip_done || !file_exists( self::$browscap_autoload_path ) ) {
-				//@unlink( $browscap_zip );
 				$GLOBALS[ 'wp_filesystem' ]->rmdir( dirname( self::$browscap_autoload_path ) . '/', true );
 				wp_slimstat::$settings[ 'browscap_last_modified' ] = $current_timestamp;
 				wp_slimstat::slimstat_save_options();
