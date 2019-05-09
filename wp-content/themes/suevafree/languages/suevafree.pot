@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WIP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-14 19:45+0200\n"
+"POT-Creation-Date: 2019-05-08 18:25+0200\n"
 "PO-Revision-Date: 2015-09-11 19:05+0100\n"
 "Last-Translator: Alessandro Vellutini <vellutini@hotmail.it>\n"
 "Language-Team: \n"
@@ -1910,6 +1910,10 @@ msgstr ""
 msgid "Website url."
 msgstr ""
 
+#: core/templates/content/after-content.php:28
+msgid "Tags:"
+msgstr ""
+
 #: core/templates/content/before-content.php:84
 msgid "On "
 msgstr ""
@@ -2070,78 +2074,78 @@ msgstr ""
 msgid "If you have a coupon code, please apply it below."
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:37
+#: woocommerce/single-product-reviews.php:36
 msgid "Reviews"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:59
+#: woocommerce/single-product-reviews.php:58
 msgid "There are no reviews yet."
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:72
+#: woocommerce/single-product-reviews.php:71
 msgid "Add a review"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:72
+#: woocommerce/single-product-reviews.php:71
 #, php-format
 msgid "Be the first to review &ldquo;%s&rdquo;"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:73
+#: woocommerce/single-product-reviews.php:72
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:76
+#: woocommerce/single-product-reviews.php:75
 msgid "Name"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:78
+#: woocommerce/single-product-reviews.php:77
 msgid "Email"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:81
+#: woocommerce/single-product-reviews.php:80
 msgid "Submit"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:87
+#: woocommerce/single-product-reviews.php:86
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a review."
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:91
+#: woocommerce/single-product-reviews.php:90
 msgid "Your Rating"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:92
+#: woocommerce/single-product-reviews.php:91
 msgid "Rate&hellip;"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:93
+#: woocommerce/single-product-reviews.php:92
 msgid "Perfect"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:94
+#: woocommerce/single-product-reviews.php:93
 msgid "Good"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:95
+#: woocommerce/single-product-reviews.php:94
 msgid "Average"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:96
+#: woocommerce/single-product-reviews.php:95
 msgid "Not that bad"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:97
+#: woocommerce/single-product-reviews.php:96
 msgid "Very Poor"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:101
+#: woocommerce/single-product-reviews.php:100
 msgid "Your review"
 msgstr ""
 
-#: woocommerce/single-product-reviews.php:109
+#: woocommerce/single-product-reviews.php:108
 msgid ""
 "Only logged in customers who have purchased this product may leave a review."
 msgstr ""

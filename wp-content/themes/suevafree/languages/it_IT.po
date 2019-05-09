@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WIP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-04-14 19:46+0200\n"
-"PO-Revision-Date: 2019-04-14 19:46+0200\n"
+"POT-Creation-Date: 2019-05-08 18:25+0200\n"
+"PO-Revision-Date: 2019-05-08 18:25+0200\n"
 "Last-Translator: Alessandro Vellutini <vellutini@hotmail.it>\n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -2027,6 +2027,10 @@ msgstr "Sito web"
 msgid "Website url."
 msgstr "Sito web"
 
+#: core/templates/content/after-content.php:28
+msgid "Tags:"
+msgstr "Tags:"
+
 #: core/templates/content/before-content.php:84
 msgid "On "
 msgstr "In "
@@ -2189,78 +2193,78 @@ msgstr "Clicca qui per inserire il tuo codice"
 msgid "If you have a coupon code, please apply it below."
 msgstr "Se disponi di un codice promozionale, inseriscilo di seguito."
 
-#: woocommerce/single-product-reviews.php:37
+#: woocommerce/single-product-reviews.php:36
 msgid "Reviews"
 msgstr "Recensioni"
 
-#: woocommerce/single-product-reviews.php:59
+#: woocommerce/single-product-reviews.php:58
 msgid "There are no reviews yet."
 msgstr "Non ci sono ancora recensioni"
 
-#: woocommerce/single-product-reviews.php:72
+#: woocommerce/single-product-reviews.php:71
 msgid "Add a review"
 msgstr "Aggiungi una revisione"
 
-#: woocommerce/single-product-reviews.php:72
+#: woocommerce/single-product-reviews.php:71
 #, php-format
 msgid "Be the first to review &ldquo;%s&rdquo;"
 msgstr "Sii il primo a recensire &ldquo;%s&rdquo;"
 
-#: woocommerce/single-product-reviews.php:73
+#: woocommerce/single-product-reviews.php:72
 #, php-format
 msgid "Leave a Reply to %s"
 msgstr "Lascia una risposta a %s"
 
-#: woocommerce/single-product-reviews.php:76
+#: woocommerce/single-product-reviews.php:75
 msgid "Name"
 msgstr "Nome"
 
-#: woocommerce/single-product-reviews.php:78
+#: woocommerce/single-product-reviews.php:77
 msgid "Email"
 msgstr "Email"
 
-#: woocommerce/single-product-reviews.php:81
+#: woocommerce/single-product-reviews.php:80
 msgid "Submit"
 msgstr "Invia"
 
-#: woocommerce/single-product-reviews.php:87
+#: woocommerce/single-product-reviews.php:86
 #, php-format
 msgid "You must be <a href=\"%s\">logged in</a> to post a review."
 msgstr "Devi essere <a href=“%s”>loggato</a> per lasciare il tuo voto."
 
-#: woocommerce/single-product-reviews.php:91
+#: woocommerce/single-product-reviews.php:90
 msgid "Your Rating"
 msgstr "La tua valutazione"
 
-#: woocommerce/single-product-reviews.php:92
+#: woocommerce/single-product-reviews.php:91
 msgid "Rate&hellip;"
 msgstr "Valutazione&hellip;"
 
-#: woocommerce/single-product-reviews.php:93
+#: woocommerce/single-product-reviews.php:92
 msgid "Perfect"
 msgstr "Perfetto"
 
-#: woocommerce/single-product-reviews.php:94
+#: woocommerce/single-product-reviews.php:93
 msgid "Good"
 msgstr "Ottimo"
 
-#: woocommerce/single-product-reviews.php:95
+#: woocommerce/single-product-reviews.php:94
 msgid "Average"
 msgstr "Media"
 
-#: woocommerce/single-product-reviews.php:96
+#: woocommerce/single-product-reviews.php:95
 msgid "Not that bad"
 msgstr "Non così male"
 
-#: woocommerce/single-product-reviews.php:97
+#: woocommerce/single-product-reviews.php:96
 msgid "Very Poor"
 msgstr "Molto povero"
 
-#: woocommerce/single-product-reviews.php:101
+#: woocommerce/single-product-reviews.php:100
 msgid "Your review"
 msgstr "Il tuo voto"
 
-#: woocommerce/single-product-reviews.php:109
+#: woocommerce/single-product-reviews.php:108
 msgid ""
 "Only logged in customers who have purchased this product may leave a review."
 msgstr ""

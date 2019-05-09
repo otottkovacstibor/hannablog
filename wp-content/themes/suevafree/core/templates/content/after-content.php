@@ -25,7 +25,7 @@ if (!function_exists('suevafree_after_content_function')) {
 		
 			the_content();
 	
-			the_tags( '<footer class="line"><span class="entry-info"><strong>Tags:</strong> ', ', ', '</span></footer>' );
+			the_tags( '<footer class="line"><span class="entry-info"><strong>' . esc_html__( 'Tags:', 'suevafree' ) . '</strong> ', ', ', '</span></footer>' );
 	
 			if ( ( !suevafree_setting('suevafree_view_comments') || suevafree_setting('suevafree_view_comments') == "on" ) && comments_open() ) : 
 	

@@ -11,4 +11,12 @@
 
 <body <?php body_class(); ?>>
 
-<?php do_action( 'suevafree_' . esc_attr(suevafree_setting( 'suevafree_header_layout', 'header_layout_1')), 'one-page-menu', 'one-page-menu' ); ?>
+<?php 
+
+if ( function_exists('wp_body_open') ) {
+	wp_body_open();
+}
+
+do_action( 'suevafree_' . esc_attr(suevafree_setting( 'suevafree_header_layout', 'header_layout_1')), 'one-page-menu', 'one-page-menu' );
+
+?>
