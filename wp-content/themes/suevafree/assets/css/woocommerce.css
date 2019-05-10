@@ -1382,3 +1382,17 @@ body.disable_box_shadow.woocommerce nav.woocommerce-pagination ul li span {
 	}
 
 }
+
+@media screen and (min-width : 0) and (max-width : 600px) {	
+
+	.woocommerce #reviews #comments ol.commentlist li .comment-text,
+	.woocommerce #reviews #comments ol.commentlist li .comment-avatar {
+		width: 100%;
+	}
+
+	.woocommerce #reviews #comments ol.commentlist li .comment-avatar {
+		margin-bottom:25px;
+	}
+
+}
+

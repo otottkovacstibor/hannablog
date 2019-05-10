@@ -2464,14 +2464,14 @@ body.disable_box_shadow .suevafree-pagination span {
 	   COMMENTS 
 	   ============================================= */
 
-	.children li {
-		margin-left:0;
-	}
-	
 	.comment-avatar img {
 		margin-right:15px;
 	}
-	
+
+	.commentlist .children li {
+		margin-left:15px;
+	}
+
 	.comment-text {
 		margin:0;
 		float:none;
@@ -2582,6 +2582,24 @@ body.disable_box_shadow .suevafree-pagination span {
 	}
 	.post-container .quote blockquote p {
 		font-size: 16px;
+	}
+
+}
+
+@media screen and (min-width : 0) and (max-width : 600px) {	
+
+	.comment-container,
+	.woocommerce .woocommerce-tabs .comment_container{
+		padding: 25px;
+	}
+
+	.comment-avatar {
+		float:none;
+		margin-bottom: 25px;
+	}
+	
+	.comment-avatar img {
+		float:none;
 	}
 
 }
