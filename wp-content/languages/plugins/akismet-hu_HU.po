@@ -512,11 +512,11 @@ msgstr "Csendesen eltünteti a legrosszabb spam-eket, így soha sem találkozunk
 msgid "Choose to either discard the worst spam automatically or to always put all spam in spam folder."
 msgstr "Válasszuk bármelyiket a spam-ek automatikus törléséhez, vagy a spam tárolóba helyezéséhez."
 
-#: class.akismet-admin.php:244 views/config.php:128
+#: views/config.php:128 class.akismet-admin.php:244
 msgid "Strictness"
 msgstr "Szigor"
 
-#: class.akismet-admin.php:243 views/config.php:105
+#: views/config.php:105 class.akismet-admin.php:243
 msgid "Comments"
 msgstr "Hozzászólások"
 
@@ -779,7 +779,7 @@ msgstr "További információk:"
 msgid "The subscription status - active, cancelled or suspended"
 msgstr "A fiók állapota - aktív, lemondott vagy felfüggesztett"
 
-#: class.akismet-admin.php:256 views/config.php:203
+#: views/config.php:203 class.akismet-admin.php:256
 msgid "Status"
 msgstr "Állapot"
 
@@ -787,11 +787,11 @@ msgstr "Állapot"
 msgid "The Akismet subscription plan"
 msgstr "Akismet tagság"
 
-#: class.akismet-admin.php:255 views/config.php:196
+#: views/config.php:196 class.akismet-admin.php:255
 msgid "Subscription Type"
 msgstr "Tagság típusa"
 
-#: class.akismet-admin.php:252 views/config.php:188
+#: views/config.php:188 class.akismet-admin.php:252
 msgid "Account"
 msgstr "Fiók"
 
@@ -807,12 +807,12 @@ msgstr "Az elfogadott hozzászólások számának megjelenítése minden hozzás
 msgid "Enter/remove an API key."
 msgstr "API kulcs megadás/eltávolítása"
 
-#: class.akismet-admin.php:242 views/config.php:70
+#: views/config.php:70 class.akismet-admin.php:242
 msgid "API Key"
 msgstr "API kulcs"
 
-#: class.akismet-admin.php:107 class.akismet-admin.php:239
-#: class.akismet-admin.php:658 views/config.php:60
+#: views/config.php:60 class.akismet-admin.php:107 class.akismet-admin.php:239
+#: class.akismet-admin.php:658
 msgid "Settings"
 msgstr "Beállítások"
 

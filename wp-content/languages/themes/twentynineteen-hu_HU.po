@@ -65,19 +65,19 @@ msgctxt "primary color"
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: functions.php:170
+#: functions.php:166
 msgid "White"
 msgstr "Fehér"
 
-#: functions.php:165
+#: functions.php:161
 msgid "Light Gray"
 msgstr "Világosszürke"
 
-#: functions.php:160
+#: functions.php:156
 msgid "Dark Gray"
 msgstr "sötétszürke"
 
-#: functions.php:155
+#: functions.php:151
 msgid "Secondary"
 msgstr "Másodlagos"
 
@@ -126,11 +126,11 @@ msgstr "Teljes méret"
 msgid "Page"
 msgstr "Oldal"
 
-#: functions.php:194
+#: functions.php:190
 msgid "Add widgets here to appear in your footer."
 msgstr "A lábrészben megjelenó widgeteket itt adjuk hozzá."
 
-#: template-parts/footer/footer-widgets.php:12 functions.php:192
+#: functions.php:188 template-parts/footer/footer-widgets.php:12
 msgid "Footer"
 msgstr "Lábrész"
 
@@ -168,9 +168,9 @@ msgstr "Felső menü"
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
 
+#: image.php:52 template-parts/content/content-page.php:27
 #: template-parts/content/content.php:49
-#: template-parts/content/content-page.php:27
-#: template-parts/content/content-single.php:40 image.php:52
+#: template-parts/content/content-single.php:40
 msgid "Pages:"
 msgstr "Oldal:"
 
@@ -295,15 +295,15 @@ msgstr "Kategória tár:"
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztés"
 
-#: header.php:24
+#: header.php:25
 msgid "Skip to content"
 msgstr "Tartalomhoz"
 
-#: template-parts/header/site-branding.php:46 functions.php:61
+#: functions.php:61 template-parts/header/site-branding.php:46
 msgid "Social Links Menu"
 msgstr "Közösségi hivatkozások menü"
 
-#: functions.php:59 functions.php:150
+#: functions.php:59 functions.php:146
 msgid "Primary"
 msgstr "Elsődleges"
 
@@ -350,20 +350,20 @@ msgstr "Egy jó hozzászólás jó lenne"
 msgid "Join the Conversation"
 msgstr "Csatlakozás a társalgáshoz"
 
-#: classes/class-twentynineteen-walker-comment.php:100
+#: classes/class-twentynineteen-walker-comment.php:99
 msgid "Your comment is awaiting moderation."
 msgstr "A hozzászólás rendszer-moderációra várakozik."
 
-#: classes/class-twentynineteen-walker-comment.php:95
+#: classes/class-twentynineteen-walker-comment.php:94
 msgid "Edit"
 msgstr "Szerkesztés"
 
 #. translators: 1: comment date, 2: comment time
-#: classes/class-twentynineteen-walker-comment.php:87
+#: classes/class-twentynineteen-walker-comment.php:86
 msgid "%1$s at %2$s"
 msgstr "%1$s - %2$s"
 
-#: classes/class-twentynineteen-walker-comment.php:67
+#: classes/class-twentynineteen-walker-comment.php:66
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">szerint:</span>"
 
@@ -375,13 +375,13 @@ msgstr "Úgy tűnik, ezen a helyen nem található amit kerestünk. Talán egy �
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "A keresett oldal nem található."
 
+#. Theme URI of the theme
+msgid "https://wordpress.org/themes/twentynineteen/"
+msgstr ""
+
 #. Author of the theme
 msgid "the WordPress team"
 msgstr "WordPress Magyarország Közösség"
-
-#. Theme URI of the theme
-msgid "https://github.com/WordPress/twentynineteen"
-msgstr "https://github.com/WordPress/twentynineteen"
 
 #. Author URI of the theme
 #: footer.php:25
