@@ -6,11 +6,15 @@ Text Domain: wp-slimstat
 **Requires at least:** 3.8  
 Requires PHP: 5.2
 **Tested up to:** 5.1  
-**Stable tag:** 4.8  
+**Stable tag:** 4.8.1  
 
 
 ## Description 
 The leading web analytics plugin for WordPress. Track returning customers and registered users, monitor Javascript events, detect intrusions, analyze email campaigns. Thousands of WordPress sites are already using it.
+
+
+### Feature Spotlight 
+[youtube https://www.youtube.com/watch?v=zEKP9yC8x6g]
 
 
 ### Main features 
@@ -75,7 +79,31 @@ Slimstat is available in multiple languages: English, Belarusian (UStarCash), Ch
 Our knowledge base is available on our [support center](https://docs.wp-slimstat.com/) website.
 
 
+## Screenshots 
+### 1. **Overview** - Your website traffic at a glance
+[missing image]
+
+### 2. **Activity Log** - A real-time view of your visitors' whereabouts
+[missing image]
+
+### 3. **Settings** - Plenty of options to customize the plugin's behavior
+[missing image]
+
+### 4. **Interactive World Map** - See where your visitors are coming from
+[missing image]
+
+### 5. **Responsive layout** - Keep an eye on your reports on the go
+[missing image]
+
+
+
 ## Changelog 
+
+### 4.8.1 
+* [Update] Async mode will now serialize concurrent requests to the backend to optimize performance and reduce server load.
+* [Fix] Addressed a remote XSS vulnerability disclosed by Sucuri/GoDaddy.
+* [Fix] Charts were displaying the wrong label for certain values (thank you, Alex).
+
 
 ### 4.8 
 * [Note] Now that we have a cleaner foundation to build on, it's time to start introducing new reports and new ways to segment your audience and the traffic they generate. While our users test the latest changes and updates (to confirm that the foundation is indeed solid and bug-free), we are hard at work implementing the first batch of new reports. Some of them will be made available in the free version, while others will be added to our premium add-on, [User Overview](http://www.wp-slimstat.com/downloads/user-overview/). And we need your help! If you think that a specific report should be added to Slimstat, please do not hesitate to let us know!

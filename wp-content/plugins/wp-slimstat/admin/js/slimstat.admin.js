@@ -26,7 +26,8 @@ jQuery( function() {
 	// Reload a report's data if it is (re)activated via the checkbox under Screen Options
 	jQuery( 'input.hide-postbox-tog[id^=slim_p]' ).on( 'click.postboxes', function () {
 		if ( jQuery( this ).prop( "checked" ) && jQuery( '#' + jQuery( this ).val() ).length ) {
-			SlimStatAdmin.refresh_report( jQuery( this ).val() );
+			refresh = SlimStatAdmin.refresh_report( jQuery( this ).val(), true );
+			refresh();
 		}
 	});
 
@@ -44,7 +45,8 @@ jQuery( function() {
 			}
 		}
 
-		SlimStatAdmin.refresh_report( id );
+		refresh = SlimStatAdmin.refresh_report( id, true );
+		refresh();
 		
 		// Remove any temporary filters set here above
 		jQuery( '.slimstat-temp-filter' ).remove();
@@ -57,8 +59,10 @@ jQuery( function() {
 
 	// Asynchronous reports are loaded dynamically after the page loads
 	if ( SlimStatAdminParams.async_load == 'on' ) {
+		var base = jQuery.when({});
 		jQuery( 'div[id^=slim_]' ).each( function() {
-			SlimStatAdmin.refresh_report( jQuery( this ).attr( 'id' ) );
+			jQuery( '#' + jQuery( this ).attr( 'id' ) + ' .inside' ).html( '<p class="loading"><i class="slimstat-font-spin4 animate-spin"></i></p>' );
+			base = base.then( SlimStatAdmin.refresh_report( jQuery( this ).attr( 'id' ), true ) );
 		} );
 	}
 
@@ -408,37 +412,50 @@ var SlimStatAdmin = {
 			window.setTimeout( "SlimStatAdmin.refresh_countdown();", 1000 );
 		}
 	},
-	
-	refresh_report: function( id ) {
-		var inner_content = '#' + id + ' .inside';
-		jQuery( inner_content ).html( '<p class="loading"><i class="slimstat-font-spin4 animate-spin"></i></p>' );
-		data = {
-			action: 'slimstat_load_report',
-			security: jQuery( '#meta-box-order-nonce' ).val(),
-			page: SlimStatAdmin.get_current_tab(),
-			report_id: id
-		};
 
-		// Append the data from the hidden form
-		filters_input = jQuery( '#slimstat-filters-form .slimstat-post-filter' ).toArray();
-		for ( i in filters_input ) {
-			data[ filters_input[ i ][ 'name' ] ] = filters_input[ i ][ 'value' ];
+	refresh_report: function( id, show_wheel ) {
+		return function() {
+			var inner_content = '#' + id + ' .inside';
+			var defer = jQuery.Deferred();
+
+			if ( show_wheel ) {
+				jQuery( '#' + id + ' .inside' ).html( '<p class="loading"><i class="slimstat-font-spin4 animate-spin"></i></p>' );
+			}
+
+			data = {
+				action: 'slimstat_load_report',
+				security: jQuery( '#meta-box-order-nonce' ).val(),
+				page: SlimStatAdmin.get_current_tab(),
+				report_id: id
+			};
+
+			// Append the data from the hidden form
+			filters_input = jQuery( '#slimstat-filters-form .slimstat-post-filter' ).toArray();
+			for ( i in filters_input ) {
+				data[ filters_input[ i ][ 'name' ] ] = filters_input[ i ][ 'value' ];
+			}
+
+			jQuery.ajax( { method: 'POST', url: ajaxurl, data: data } )
+				.done( function( response ) {
+					// Charts don't play nice with the "fade" animation we have for the other reports
+					if ( id.indexOf( '_01' ) > 0 ) {
+						jQuery( inner_content ).html( response );
+					}
+					else{
+						jQuery( inner_content ).fadeOut( 500, function() { jQuery( this ).html( response ).fadeIn( 500 ); } );
+
+						// If we are refreshing the Activity Log, let's reset the countdown timer
+						if ( id == 'slim_p7_02' ) {
+							SlimStatAdmin._refresh_timer = SlimStatAdminParams.refresh_interval;
+						}
+					}
+				} )
+				.complete( function() {
+					defer.resolve();
+				} );
+
+			return defer.promise();
 		}
-
-		jQuery.post( ajaxurl, data, function( response ) {
-			// Charts don't play nice with the "fade" animation we have for the other reports
-			if ( id.indexOf( '_01' ) > 0 ) {
-				jQuery( inner_content ).html( response );
-			}
-			else{
-				jQuery( inner_content ).fadeOut( 500, function() { jQuery( this ).html( response ).fadeIn( 500 ); } );
-
-				// If we are refreshing the Activity Log, let's reset the countdown timer
-				if ( id == 'slim_p7_02' ) {
-					SlimStatAdmin._refresh_timer = SlimStatAdminParams.refresh_interval;
-				}
-			}
-		} );
 	},
 
 	get_query_string_filters: function( url ) {
