@@ -598,14 +598,17 @@ if (!function_exists('suevafree_customize_excerpt_more')) {
 	
 			endif;
 		
-			if ( $pos=strpos($post->post_content, '<!--more-->') && !has_excerpt( $post->ID )): 
-			
-				$content = substr(apply_filters( 'the_content', get_the_content()), 0, -5);
+			if ( 
+				( $pos=strpos($post->post_content, '<!--more-->') ) && 
+				!has_excerpt($post->ID)
+			): 
+				
+				$content = apply_filters( 'the_content', get_the_content());
 			
 			else:
-			
+				
 				$content = $excerpt;
-	
+		
 			endif;
 	
 			return $content. '<a '. wp_kses($container, $allowed) . ' href="' . esc_url(get_permalink($post->ID)) . '" title="'.esc_attr__('Read More','suevafree').'"> <span class="'.esc_attr($class).'">'.$button.'</span></a>';
