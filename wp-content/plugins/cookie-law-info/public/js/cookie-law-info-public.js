@@ -73,7 +73,8 @@ var CLI=
         this.main_button=jQuery('.cli-plugin-main-button');
         this.main_link = jQuery('.cli-plugin-main-link');
         this.reject_link = jQuery('.cookie_action_close_header_reject');
-        this.delete_link=jQuery(".cookielawinfo-cookie-delete");
+		    this.delete_link=jQuery(".cookielawinfo-cookie-delete");
+	    	this.settings_button=jQuery('.cli_settings_button');
 
         if(this.settings.cookie_bar_as=='popup')
     	{
@@ -83,7 +84,8 @@ var CLI=
         this.toggleBar();
         this.attachDelete();
         this.attachEvents();
-        this.configButtons();
+		    this.configButtons();
+		
         var cli_hidebar_on_readmore=this.hideBarInReadMoreLink();
         if(this.settings.scroll_close===true && cli_hidebar_on_readmore===false) 
         {
@@ -128,6 +130,148 @@ var CLI=
                 }  
             }
 		});
+		this.settingsPopUp();
+		this.settingsTabbedAccordion();
+		this.toggleUserPreferenceCheckBox();
+	},
+	toggleUserPreferenceCheckBox:function()
+	{
+    	jQuery('.cli-user-preference-checkbox').each(function(){
+        	if(jQuery(this).is(':checked'))
+        	{
+        		CLI_Cookie.set('cookielawinfo-'+jQuery(this).attr('data-id'),'yes',CLI_ACCEPT_COOKIE_EXPIRE);
+        	}else
+        	{
+        	    CLI_Cookie.set('cookielawinfo-'+jQuery(this).attr('data-id'),'no',CLI_ACCEPT_COOKIE_EXPIRE);	
+        	}
+        });
+    	jQuery('.cli-user-preference-checkbox').click(function(){
+        	if(jQuery(this).is(':checked'))
+        	{
+        		CLI_Cookie.set('cookielawinfo-'+jQuery(this).attr('data-id'),'yes',CLI_ACCEPT_COOKIE_EXPIRE);
+        	}else
+        	{
+        	    CLI_Cookie.set('cookielawinfo-'+jQuery(this).attr('data-id'),'no',CLI_ACCEPT_COOKIE_EXPIRE);	
+        	}
+        });
+	},
+	settingsPopUp:function()
+	{	
+		jQuery('.cli_settings_button').click(function (e) {
+			e.preventDefault();
+			jQuery('#cliSettingsPopup').addClass("cli-show").css({'opacity':0}).animate({'opacity':1});
+			jQuery('#cliSettingsPopup').removeClass('cli-blowup cli-out').addClass("cli-blowup");
+			jQuery('body').addClass("cli-modal-open");
+			jQuery(".cli-settings-overlay").addClass("cli-show");
+			jQuery("#cookie-law-info-bar").css({'opacity':.1});
+			if(!jQuery('.cli-settings-mobile').is(':visible'))
+			{
+				jQuery('#cliSettingsPopup').find('.cli-nav-link:eq(0)').click();
+			}
+	    });
+		jQuery('#cliModalClose').click(function(){
+			CLI.settingsPopUpClose();
+		});
+		jQuery("#cliSettingsPopup").click(function(e){
+			if(!(document.getElementsByClassName('cli-modal-dialog')[0].contains(e.target)))
+			{
+				CLI.settingsPopUpClose();
+			}
+		});
+		jQuery('.cli_enable_all_btn').click(function(){
+			var cli_toggle_btn = jQuery(this);
+			var enable_text = cli_toggle_btn.attr('data-enable-text');
+			var disable_text= cli_toggle_btn.attr('data-disable-text');
+			if(cli_toggle_btn.hasClass('cli-enabled')){
+				CLI.disableAllCookies();
+				cli_toggle_btn.html(enable_text);
+			}
+			else
+			{
+				CLI.enableAllCookies();
+				cli_toggle_btn.html(disable_text);
+
+			}
+			jQuery(this).toggleClass('cli-enabled');
+		});
+		
+		this.privacyReadmore();
+	},
+	settingsTabbedAccordion:function()
+	{
+		jQuery(".cli-tab-header").on("click", function(e) {
+			if(!(jQuery(e.target).hasClass('cli-slider') || jQuery(e.target).hasClass('cli-user-preference-checkbox')))
+			{
+				if (jQuery(this).hasClass("cli-tab-active")) {
+					jQuery(this).removeClass("cli-tab-active");
+					jQuery(this)
+					  .siblings(".cli-tab-content")
+					  .slideUp(200);
+
+				  } else {
+					jQuery(".cli-tab-header").removeClass("cli-tab-active");
+					jQuery(this).addClass("cli-tab-active");
+					jQuery(".cli-tab-content").slideUp(200);
+					jQuery(this)
+					  .siblings(".cli-tab-content")
+					  .slideDown(200);
+				  }
+			}	
+		  });
+	},
+	settingsPopUpClose:function()
+	{
+		jQuery('#cliSettingsPopup').removeClass('cli-show');
+		jQuery('#cliSettingsPopup').addClass('cli-out');
+		jQuery('body').removeClass("cli-modal-open");
+        jQuery(".cli-settings-overlay").removeClass("cli-show");
+        jQuery("#cookie-law-info-bar").css({'opacity':1});
+	},
+	privacyReadmore:function()
+	{	
+		var el= jQuery('.cli-privacy-content .cli-privacy-content-text'),
+		clone= el.clone(),
+		originalHtml= clone.html(),
+		originalHeight= el.outerHeight(),
+		Trunc = {
+		addReadmore:function(textBlock)
+		{	
+			if(textBlock.text().length > 250)
+			{
+				jQuery('.cli-privacy-readmore').show();
+			}
+		},
+		truncateText : function( textBlock ) {            
+			while (textBlock.text().length > 250 ) 
+			{
+				textBlock.text(function(index, text) {
+				return text.replace(/\W*\s(\S)*$/, '...');
+				});
+			}
+		},     
+		replaceText: function ( textBlock, original ){
+			return textBlock.html(original).height(originalHeight);      
+		}  
+		
+		};
+		Trunc.addReadmore(el);
+		Trunc.truncateText(el);
+		jQuery('a.cli-privacy-readmore').click(function(e){
+			e.preventDefault();
+			if(jQuery('.cli-privacy-overview').hasClass('cli-collapsed'))
+			{	
+				Trunc.truncateText(el);
+				jQuery('.cli-privacy-overview').removeClass('cli-collapsed');
+				el.css('height', '100%');
+			}
+			else
+			{
+				jQuery('.cli-privacy-overview').addClass('cli-collapsed');
+				Trunc.replaceText(el, originalHtml);
+			}
+			
+			
+		});
 	},
 	attachDelete:function()
 	{
@@ -165,8 +309,6 @@ var CLI=
                 jQuery(this).css('background-color',CLI.settings.button_2_button_colour);
             });
 	    }
-
-
 	    /* [cookie_reject] */	    
 	    this.reject_link.css('color',this.settings.button_3_link_colour);
 	    if(this.settings.button_3_as_button) 
@@ -176,6 +318,17 @@ var CLI=
 	            jQuery(this).css('background-color',CLI.settings.button_3_button_hover);
 	        },function () {
 	            jQuery(this).css('background-color',CLI.settings.button_3_button_colour);
+	        });
+		}
+		/* [cookie_settings] */	    
+	    this.settings_button.css('color',this.settings.button_4_link_colour);
+	    if(this.settings.button_4_as_button) 
+	    {
+	        this.settings_button.css('background-color',this.settings.button_4_button_colour);
+	        this.settings_button.hover(function () {
+	            jQuery(this).css('background-color',CLI.settings.button_4_button_hover);
+	        },function () {
+	            jQuery(this).css('background-color',CLI.settings.button_4_button_colour);
 	        });
 	    }
 	},

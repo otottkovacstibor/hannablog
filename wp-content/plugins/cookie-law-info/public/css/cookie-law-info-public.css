@@ -104,7 +104,6 @@
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding;
 	background-clip: padding-box;
-	border:20px solid rgba(0,0,0,0.5) !important;
 	-webkit-border-radius:30px;
 	-moz-border-radius:30px;
 	border-radius:30px;

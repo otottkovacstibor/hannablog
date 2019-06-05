@@ -57,7 +57,7 @@ table.cookielawinfo-winter caption {text-align: left; text-transform: uppercase;
 table.cookielawinfo-winter thead th {background: #3A4856; padding: 15px 10px; color: #fff; text-align: left; font-weight: normal;}
 table.cookielawinfo-winter tbody {border-left: 1px solid #EAECEE; border-right: 1px solid #EAECEE;}
 table.cookielawinfo-winter tbody {border-bottom: 1px solid #EAECEE;}
-table.cookielawinfo-winter tbody td, table.cookielawinfo-winter tbody th {padding: 10px; background: url("../images/td_back.gif") repeat-x; text-align: left;}
+table.cookielawinfo-winter tbody td, table.cookielawinfo-winter tbody th {padding: 10px; background: url("../../images/td_back.gif") repeat-x; text-align: left;}
 table.cookielawinfo-winter tbody tr {background: #F3F5F7;}
 table.cookielawinfo-winter tbody tr.odd {background: #F0F2F4;}
 table.cookielawinfo-winter tbody  tr:hover {background: #EAECEE; color: #111;}
@@ -65,55 +65,16 @@ table.cookielawinfo-winter tfoot td, table.cookielawinfo-winter tfoot th, table.
 
 /** 27/05/2013: responsive table by Mark Wiltshire */
 @media(max-width:800px) {
-        /* cookielawinfo responsive tables when smaller */
-/*        table.cookielawinfo-winter, table.cookielawinfo-winter thead,
-        table.cookielawinfo-winter tbody, table.cookielawinfo-winter th,
-        table.cookielawinfo-winter td, table.cookielawinfo-winter tr,
-        th.cookielawinfo-column-1, td.cookielawinfo-column-1,
-        th.cookielawinfo-column-2, td.cookielawinfo-column-2,
-        th.cookielawinfo-column-3, td.cookielawinfo-column-3,
-        th.cookielawinfo-column-4, td.cookielawinfo-column-4,
-        tr.cookielawinfo-row{
-                display:block;
-        }*/
-
-        /* Hide table headers (but not display: none;, for accessibility) */
-        table.cookielawinfo-winter thead tr {
-                position: absolute;
-                top: -9999px;
-                left: -9999px;
+        table.cookielawinfo-row-cat-table td, table.cookielawinfo-row-cat-table th
+        {
+          width:23%;
+          font-size:12px;
+          word-wrap: break-word;
+        }       
+        table.cookielawinfo-row-cat-table .cookielawinfo-column-4, table.cookielawinfo-row-cat-table .cookielawinfo-column-4
+        {
+          width:45%;
         }
-        table.cookielawinfo-winter tr { border: 1px solid #ccc; }
-        table.cookielawinfo-winter td ,
-        table.cookielawinfo-winter td.cookielawinfo-column-1, 
-        table.cookielawinfo-winter td.cookielawinfo-column-2,
-        table.cookielawinfo-winter td.cookielawinfo-column-3, 
-        table.cookielawinfo-winter td.cookielawinfo-column-4 {
-                /* Behave  like a "row" */
-                border: none;
-                border-bottom: 1px solid #eee;
-                position: relative;
-                padding-left: 50%;
-                width: 50%;
-        }
-        tr.cookielawinfo-row {
-                padding-right: 1.2em;
-        }
-        table.cookielawinfo-winter td:before {
-                /* Now like a table header */
-                position: absolute;
-                /* Top/left values mimic padding */
-                top: 1.5em;
-                left: 0.5em;
-                width: 45%;
-                padding-right: 1em;
-                white-space: nowrap;
-        }
-        /* label the data */
-        table.cookielawinfo-winter td:nth-of-type(1):before { content: "COOKIE"; }
-        table.cookielawinfo-winter td:nth-of-type(2):before { content: "TYPE"; }
-        table.cookielawinfo-winter td:nth-of-type(3):before { content: "DURATION"; }
-        table.cookielawinfo-winter td:nth-of-type(4):before { content: "DESCRIPTION"; }
 }
 
 .cookielawinfo-row-cat-title{
@@ -127,3 +88,4 @@ table.cookielawinfo-winter tfoot td, table.cookielawinfo-winter tfoot th, table.
     width: 99%;
     margin-left: 5px;
 }
+

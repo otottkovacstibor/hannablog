@@ -3,8 +3,8 @@ Contributors: webtoffee,markwt
 Donate link: https://www.webtoffee.com/plugins/ 
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
-Tested up to: 5.1.1
-Stable tag: 1.7.6
+Tested up to: 5.2
+Stable tag: 1.7.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -171,6 +171,15 @@ See http://cookielawinfo.com for more information on what is required.
 4. Header (with custom styles)
 
 == Changelog ==
+
+= 1.7.7 =
+
+* Introduced new cookie settings popup option
+* Added a shortcode [cookie_settings] to control settings
+* Option to add descriptions for both necessary and non-necessary cookies
+* Tested ok with WP 5.2
+* [Bug fix] Responsive styling issues for cookie audit table winter theme
+
 
 = 1.7.6 =
 
@@ -374,8 +383,10 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.7.6 =
+= 1.7.7 =
 
-* Updated translation files for German, Danish, French, Dutch & Spanish
-* Added support for Portuguese
-* [Bug fix] [cookie_audit] shortcode conflict with heading
+* Introduced new cookie settings popup option
+* Added a shortcode [cookie_settings] to control settings
+* Option to add descriptions for both necessary and non-necessary cookies
+* Tested ok with WP 5.2
+* [Bug fix] Responsive styling issues for cookie audit table winter theme

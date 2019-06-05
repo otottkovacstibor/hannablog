@@ -44,11 +44,13 @@ class Cookie_Law_Info_Shortcode {
         add_shortcode( 'cookie_audit',array($this,'cookielawinfo_table_shortcode'));           // a shortcode [cookie_audit style="winter"]
         add_shortcode( 'cookie_accept',array($this,'cookielawinfo_shortcode_accept_button'));      // a shortcode [cookie_accept (colour="red")]
         add_shortcode( 'cookie_reject',array($this,'cookielawinfo_shortcode_reject_button'));      // a shortcode [cookie_reject (colour="red")]
+        add_shortcode( 'cookie_settings',array($this,'cookielawinfo_shortcode_settings_button'));      // a shortcode [cookie_settings]
         add_shortcode( 'cookie_link',array($this,'cookielawinfo_shortcode_more_link'));            // a shortcode [cookie_link]
         add_shortcode( 'cookie_button',array($this,'cookielawinfo_shortcode_main_button'));        // a shortcode [cookie_button]
         add_shortcode('cookie_after_accept',array($this,'cookie_after_accept_shortcode'));
         add_shortcode('user_consent_state',array($this,'user_consent_state_shortcode'));
         add_shortcode('webtoffee_powered_by',array($this,'wf_powered_by'));
+        
 	}
 
     /*
@@ -189,7 +191,7 @@ class Cookie_Law_Info_Shortcode {
             'orderby' => 'title'
         );
         $posts = get_posts($args);
-        $ret = '<table class="cookielawinfo-' . $style . '"><thead><tr>';
+        $ret = '<table class="cookielawinfo-row-cat-table cookielawinfo-' . $style . '"><thead><tr>';
         if(in_array('cookie',$columns))
         {
             $ret .= '<th class="cookielawinfo-column-1">'.__('Cookie', 'cookie-law-info').'</th>';
@@ -319,7 +321,39 @@ class Cookie_Law_Info_Shortcode {
         $link_tag .= $classr . '  data-cli_action="reject"'.$margin_style.'>' . stripslashes(__($settings['button_3_text'],'cookie-law-info')) . '</a>';
         return $link_tag;
     }
+    /*
+    *   Cookie Settings Button Shortcode
+    *   @since 1.7.7
+    */
+    public function cookielawinfo_shortcode_settings_button( $atts ) 
+    {   
+        extract(shortcode_atts(array(
+            'margin' => '',
+        ), $atts ));
+        $margin_style=$margin!="" ? ' style="margin:'.$margin.';" ' : '';
+        $defaults =Cookie_Law_Info::get_default_settings();
+        $settings =wp_parse_args(Cookie_Law_Info::get_settings(),$defaults);
+        $settings['button_4_url']="#";
+        $settings['button_4_action']='#cookie_action_settings';
+        $settings['button_4_new_win']=false;
+        $classr = '';
+        if( $settings['button_4_as_button'] ) 
+        {
+            $classr= ' class="' . $settings['button_4_button_size'] . ' cli-plugin-button cli-plugin-main-button cli_settings_button"';
+        }
+        else 
+        {
+            $classr= 'class="cli_settings_button" ';
+        }
 
+        //adding custom style
+        $url_s = ( $settings['button_4_action'] == "CONSTANT_OPEN_URL" && $settings['button_4_url'] != "#" ) ? "href='$settings[button_4_url]'" : "";
+        $link_tag = '';
+        $link_tag .= '<a ' . $url_s;
+        $link_tag .= ( $settings['button_4_new_win'] ) ? ' target="_blank" ' : '' ;
+        $link_tag .= $classr . ' '.$margin_style.'>' . stripslashes( $settings['button_4_text'] ) . '</a>';
+        return $link_tag;           
+    }
     /** Returns HTML for a generic button */
     public function cookielawinfo_shortcode_more_link( $atts ) {
         return $this->cookielawinfo_shortcode_button_DRY_code('button_2',$atts);

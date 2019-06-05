@@ -9,8 +9,19 @@
             <key name="button_2_url" />
             <key name="button_3_text" />
             <key name="button_3_url" />
+            <key name="button_4_text" />
             <key name="showagain_text" />
     	</key>
+        <key name="cookielawinfo_privacy_overview_content_settings">
+            <key name="privacy_overview_content" />
+            <key name="privacy_overview_title" />
+        </key>
+        <key name="cookielawinfo_thirdparty_settings">
+            <key name="thirdparty_description" />
+        </key>
+        <key name="cookielawinfo_necessary_settings">
+            <key name="necessary_description" />
+        </key>
 	</admin-texts>
     <custom-types>
      <custom-type translate="1">cookielawinfo</custom-type>

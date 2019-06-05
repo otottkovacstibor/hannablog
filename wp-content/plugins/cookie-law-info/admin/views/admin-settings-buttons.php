@@ -9,6 +9,7 @@ if ( ! defined( 'WPINC' ) ) {
     <ul class="cli_sub_tab">
         <li style="border-left:none; padding-left: 0px;" data-target="accept-button"><a><?php _e('Accept Button', 'cookie-law-info'); ?></a></li>
         <li data-target="reject-button"><a><?php _e('Reject Button', 'cookie-law-info'); ?></a></li>
+        <li data-target="settings-button"><a><?php _e('Settings Button', 'cookie-law-info'); ?></a></li>
         <li data-target="read-more-button"><a><?php _e('Read More Link', 'cookie-law-info'); ?></a></li>
     </ul>
 
@@ -157,7 +158,49 @@ if ( ! defined( 'WPINC' ) ) {
                 </tr>
             </table><!-- end custom button -->
         </div>
-    
+        <div class="cli_sub_tab_content" data-id="settings-button">
+            <h3><?php _e('Settings Button', 'cookie-law-info'); ?> <code>[cookie_settings]</code></h3>
+            <table class="form-table" >
+                <tr valign="top">
+                    <th scope="row"><label for="button_4_text_field"><?php _e('Text', 'cookie-law-info'); ?></label></th>
+                    <td>
+                        <input type="text" name="button_4_text_field" value="<?php echo stripslashes($the_options['button_4_text']) ?>" />
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row"><label for="button_4_link_colour_field"><?php _e('Text colour', 'cookie-law-info'); ?></label></th>
+                    <td>
+                        <?php
+                            echo '<input type="text" name="button_4_link_colour_field" id="cli-colour-link-button-4" value="' . $the_options['button_4_link_colour'] . '" class="my-color-field" />';
+                        ?>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row"><label for="button_4_as_button_field"><?php _e('Show as', 'cookie-law-info'); ?></label></th>
+                    <td>
+                        <input type="radio" id="button_4_as_button_field_yes" name="button_4_as_button_field" class="styled cli_form_toggle" cli_frm_tgl-target="cli_settings_type" value="true" <?php echo ( $the_options['button_4_as_button'] == true ) ? ' checked="checked"' : ' '; ?> /><?php _e('Button', 'cookie-law-info'); ?>
+                               
+                        <input type="radio" id="button_4_as_button_field_no" name="button_4_as_button_field" class="styled cli_form_toggle" cli_frm_tgl-target="cli_settings_type" value="false" <?php echo ( $the_options['button_4_as_button'] == false ) ? ' checked="checked"' : ''; ?> /><?php _e('Link', 'cookie-law-info'); ?>
+                    </td>
+                </tr>
+                <tr valign="top" cli_frm_tgl-id="cli_settings_type" cli_frm_tgl-val="true">
+                    <th scope="row"><label for="button_4_button_colour_field"><?php _e('Background colour', 'cookie-law-info'); ?></label></th>
+                    <td>
+                        <?php
+                            echo '<input type="text" name="button_4_button_colour_field" id="cli-colour-btn-button-4" value="' . $the_options['button_4_button_colour'] . '" class="my-color-field" />';
+                        ?>
+                    </td>
+                </tr>
+                <tr valign="top">
+                    <th scope="row"><label for="button_4_button_size_field"><?php _e('Size', 'cookie-law-info'); ?></label></th>
+                    <td>
+                        <select name="button_4_button_size_field" class="vvv_combobox">
+                            <?php $this->print_combobox_options($this->get_button_sizes(), $the_options['button_4_button_size']); ?>
+                        </select>
+                    </td>
+                </tr>
+            </table><!-- end custom button -->
+        </div>
         <div class="cli_sub_tab_content" data-id="read-more-button">
             <h3><?php _e('Read More Link', 'cookie-law-info'); ?> <code>[cookie_link]</code></h3>
             <p><?php _e('This button/link can be used to provide a link out to your Privacy & Cookie Policy. You can customise it any way you like.', 'cookie-law-info'); ?></p>

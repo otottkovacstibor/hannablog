@@ -98,7 +98,7 @@
 			            type: 'POST',
 			            success:function(data) 
 			            {
-			            	data=JSON.parse(data); console.log(data);
+			            	data=JSON.parse(data);
 			            	CLI_pg.onPrg=false;
 			            	$('.cli_pg_footer a').css({'opacity':1,'cursor':'pointer'});
 							if(data.response===true)

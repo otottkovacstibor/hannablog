@@ -76,7 +76,7 @@ class Cookie_Law_Info {
 		} 
 		else 
 		{
-			$this->version = '1.7.6';
+			$this->version = '1.7.7';
 		}
 		$this->plugin_name = 'cookie-law-info';
 
@@ -211,9 +211,9 @@ class Cookie_Law_Info {
 
 		//below hook's functions needs update
 		$this->loader->add_action( 'init',$plugin_public,'other_plugin_compatibility');
-  		$this->loader->add_action( 'wp_footer',$plugin_public,'cookielawinfo_inject_cli_script');
-  		$this->loader->add_action('wp_head',$plugin_public,'include_user_accepted_cookielawinfo');
-  		$this->loader->add_action('wp_footer',$plugin_public,'include_user_accepted_cookielawinfo_in_body');
+		$this->loader->add_action( 'wp_footer',$plugin_public,'cookielawinfo_inject_cli_script');
+		$this->loader->add_action('wp_head',$plugin_public,'include_user_accepted_cookielawinfo');
+		$this->loader->add_action('wp_footer',$plugin_public,'include_user_accepted_cookielawinfo_in_body');
 	}
 
 
@@ -359,7 +359,8 @@ class Cookie_Law_Info {
 			'background_url' 				=> '',
 			'border' 						=> '#b1a6a6c2',
 			'border_on'						=> true,
-			'button_1_text'					=> 'Accept',
+			'bar_style'				=> array(),
+			'button_1_text'					=> 'ACCEPT',
 			'button_1_url' 					=> '#',
 			'button_1_action' 				=> '#cookie_action_close_header',
 			'button_1_link_colour' 			=> '#fff',
@@ -367,6 +368,7 @@ class Cookie_Law_Info {
 			'button_1_as_button' 			=> true,
 			'button_1_button_colour' 		=> '#000',
 			'button_1_button_size' 			=> 'medium',
+			'button_1_style'				=> array(),
 	            
 			'button_2_text' 				=> 'Read More',
 			'button_2_url' 					=> get_site_url(),
@@ -379,6 +381,7 @@ class Cookie_Law_Info {
 			'button_2_url_type'				=>'url',
 			'button_2_page'					=>get_option('wp_page_for_privacy_policy') ? get_option('wp_page_for_privacy_policy') : 0,
 			'button_2_hidebar'					=>false,
+			'button_2_style'				=> array(),
 	            
 	        'button_3_text'					=> 'Reject',
 			'button_3_url' 					=> '#',
@@ -388,15 +391,17 @@ class Cookie_Law_Info {
 			'button_3_as_button' 			=> true,
 			'button_3_button_colour' 		=> '#000',
 			'button_3_button_size' 			=> 'medium',
-	            
-	        'button_4_text'					=> 'Settings',
+			'button_3_style'				=> array(),
+
+	        'button_4_text'					=> 'Cookie settings',
 			'button_4_url' 					=> '#',
 			'button_4_action' 				=> '#cookie_action_settings',
-			'button_4_link_colour' 			=> '#fff',
+			'button_4_link_colour' 			=> '#62a329',
 			'button_4_new_win' 				=> false,
-			'button_4_as_button' 			=> true,
+			'button_4_as_button' 			=> false,
 			'button_4_button_colour' 		=> '#000',
 			'button_4_button_size' 			=> 'medium',
+			'button_4_style'				=> array(),
 	            
 			'font_family' 					=> 'inherit', // Pick the family, not the easy name (see helper function below)
 			'header_fix'                    => false,
@@ -408,7 +413,7 @@ class Cookie_Law_Info {
 			'notify_div_id' 				=> '#cookie-law-info-bar',
 			'notify_position_horizontal'	=> 'right',	// left | right
 			'notify_position_vertical'		=> 'bottom', // 'top' = header | 'bottom' = footer
-			'notify_message'				=> addslashes ( 'This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish.[cookie_button margin="5px"][cookie_reject margin="5px"] [cookie_link margin="5px"]'),
+			'notify_message'				=> addslashes ( 'This website uses cookies to improve your experience. We\'ll assume you\'re ok with this, but you can opt-out if you wish. [cookie_settings margin="5px 20px 5px 20px"][cookie_button margin="5px"]'),
 			'scroll_close'                  => false,
 			'scroll_close_reload'           => false,
 	        'accept_close_reload'           => false,

@@ -272,14 +272,13 @@ table.wc_emails .wc-email-settings-table-status .tips,table.cli_script_items .wc
     height:34px;
 }
 .notify_msg{ position:fixed; width:300px; padding:15px; color:#fff; right:60px; top:0px; opacity:0; box-shadow:0px 2px 2px #ccc; border-radius:5px;}
-.cli-indent-15{  }
 .cli-indent-15 th{ padding-left: 15px; }
 .cli_notify_table{ height:60px;}
 .cookie-law-info-form-container{
     padding:15px;
     background: #fff; box-shadow:0px 2px 2px #ccc;
 }
-.cli_non_necessary_form label{ width:100%; display: inline-block; font-weight: bold; margin-bottom: 10px; margin-top: 15px;  }
+.cli-admin-table label{ width:100%; display: inline-block; font-weight: bold; margin-bottom: 10px; margin-top: 15px;  }
 .cli_non_necessary_form .cli_form_help{ color: #aaa; font-style: italic; font-weight:250; font-size: 12px; }
 .cli_settings_left{ width:63%;float: left; margin-bottom: 25px; }
 .cli_settings_right{ width:33%; float: left; padding-left:25px;}

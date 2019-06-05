@@ -25,7 +25,10 @@ if ( ! defined( 'WPINC' ) ) {
             	<li><div style="font-weight: bold;">[cookie_reject]</div>
             		<?php _e('This is the cookie reject button shortcode.', 'cookie-law-info'); ?>
             	</li>
-
+                <li>
+                <div style="font-weight: bold;">[cookie_settings]</div>
+                <?php _e('This is the cookie settings button rendering shortcode.', 'cookie-law-info'); ?>
+                </li>
             	<li><div style="font-weight: bold;">[cookie_link]</div>
             		<?php _e('This is the "read more" link you customise above.', 'cookie-law-info'); ?>
             	</li>

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-03-14 10:03+0530\n"
-"PO-Revision-Date: 2019-03-14 10:24+0530\n"
+"POT-Creation-Date: 2019-05-02 12:28+0530\n"
+"PO-Revision-Date: 2019-05-02 12:29+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -153,8 +153,8 @@ msgstr "Uw cookiewetinfo-balk is uitgeschakeld"
 
 #: admin/views/admin-settings-advanced.php:9
 msgid ""
-"Sometimes themes apply settings that clash with plugins. If that happens, "
-"try adjusting these settings."
+"Sometimes themes apply settings that clash with plugins. If that happens, try "
+"adjusting these settings."
 msgstr ""
 "Soms passen thema's instellingen toe die botsen met plug-ins. Als dat "
 "gebeurt, probeer dan deze instellingen aan te passen."
@@ -174,8 +174,7 @@ msgstr "Weet je zeker dat je al je instellingen wilt verwijderen?"
 #: admin/views/admin-settings-advanced.php:26
 msgid "Warning: this will actually delete your current settings."
 msgstr ""
-"Waarschuwing: hiermee worden uw huidige instellingen daadwerkelijk "
-"verwijderd."
+"Waarschuwing: hiermee worden uw huidige instellingen daadwerkelijk verwijderd."
 
 #: admin/views/admin-settings-buttons.php:10
 msgid "Accept Button"
@@ -493,9 +492,9 @@ msgid ""
 "As per latest GDPR policies it is required to take an explicit consent for "
 "the cookies. Use this option with discretion especially if you serve EU"
 msgstr ""
-"Volgens nieuwste GDPR beleid is het verplicht te nemen van een "
-"uitdrukkelijke toestemming voor de cookies. Gebruik deze optie met "
-"discretie, vooral als je EU dienen"
+"Volgens nieuwste GDPR beleid is het verplicht te nemen van een uitdrukkelijke "
+"toestemming voor de cookies. Gebruik deze optie met discretie, vooral als je "
+"EU dienen"
 
 #: admin/views/admin-settings-general.php:155
 msgid "This option will not work along with `Popup overlay`."
@@ -614,8 +613,7 @@ msgid ""
 "recommended to use these inside the cookie bar itself."
 msgstr ""
 "Deze shortcodes kunnen worden gebruikt in pagina's en berichten op uw "
-"website. Het is niet aan te raden om deze in de koekjesbalk zelf te "
-"gebruiken."
+"website. Het is niet aan te raden om deze in de koekjesbalk zelf te gebruiken."
 
 #: admin/views/admin-settings-help.php:69
 #, fuzzy
@@ -712,8 +710,8 @@ msgstr "Toegestane kortingscodes: zie het tabblad Helpgids"
 #: admin/views/admin-settings-messagebar.php:25
 #, fuzzy
 msgid ""
-"Examples: \"We use cookies on this website [cookie_accept] to find out how "
-"to delete cookies [cookie_link].\""
+"Examples: \"We use cookies on this website [cookie_accept] to find out how to "
+"delete cookies [cookie_link].\""
 msgstr ""
 "Voorbeelden: \"Wij gebruiken cookies op deze website [cookie_accept] om "
 "erachter te komen hoe het verwijderen van cookies [cookie_link].\""
@@ -997,6 +995,10 @@ msgstr "Beheer uw toestemming."
 msgid "Delete Cookies"
 msgstr "Hoe Cookies Verwijderen"
 
+#: public/modules/shortcode/shortcode.php:178
+msgid "No records found"
+msgstr "Geen verslagen gevonden"
+
 #: public/modules/shortcode/shortcode.php:199
 #, fuzzy
 msgid "Type"
@@ -1135,9 +1137,9 @@ msgstr "Looptijd"
 
 #, fuzzy
 #~ msgid ""
-#~ "If you just want a standard green \"Accept\" button that closes the "
-#~ "header and nothing more, use this shortcode. It is already styled, you "
-#~ "don't need to customise it."
+#~ "If you just want a standard green \"Accept\" button that closes the header "
+#~ "and nothing more, use this shortcode. It is already styled, you don't need "
+#~ "to customise it."
 #~ msgstr ""
 #~ "Als u alleen een standaard groene \"Accept\" -knop wilt die de koptekst "
 #~ "sluit en niets meer, gebruikt u deze shortcode. Het is al gestileerd, je "
@@ -1146,8 +1148,8 @@ msgstr "Looptijd"
 #, fuzzy
 #~ msgid "Careful to use the British spelling of \"colour\" for the attribute."
 #~ msgstr ""
-#~ "Voorzichtig moet worden gebruikt de Britse spelling van \"kleur\" voor "
-#~ "het kenmerk."
+#~ "Voorzichtig moet worden gebruikt de Britse spelling van \"kleur\" voor het "
+#~ "kenmerk."
 
 #, fuzzy
 #~ msgid "This is the cookie settings button rendering shortcode."

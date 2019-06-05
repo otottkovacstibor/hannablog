@@ -73,7 +73,7 @@
 			var elm=$(this).children('li').eq(0);
 			elm.click();
 		});
-		$('#cli_non-ncessary_form').submit(function(e){
+		$('.cookie-sensitivity-form').submit(function(e){
 			e.preventDefault();
 			var data=$(this).serialize();
 			var url=$(this).attr('action');
@@ -84,18 +84,18 @@
 			$.ajax({
 				url:url,
 				type:'POST',
-				data:data+'&cli_non-necessary_ajax_update=1',
+				data:data,
 				success:function(data)
 				{
 					spinner.css({'visibility':'hidden'});
 					submit_btn.css({'opacity':'1','cursor':'pointer'}).prop('disabled',false);
-					cli_notify_msg.success(cli_non_necessary_success_message);
+					cli_notify_msg.success(cli_success_message);
 				},
 				error:function () 
 				{
 					spinner.css({'visibility':'hidden'});
 					submit_btn.css({'opacity':'1','cursor':'pointer'}).prop('disabled',false);
-					cli_notify_msg.error(cli_non_necessary_error_message);
+					cli_notify_msg.error(cli_error_message);
 				}
 			});
 		});
