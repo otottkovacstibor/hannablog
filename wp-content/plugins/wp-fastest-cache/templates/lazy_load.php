@@ -64,7 +64,7 @@
 </div>
 <script type="text/javascript">
 	jQuery("#wpFastestCacheLazyLoad").click(function(){
-		if(typeof jQuery(this).attr("checked") != "undefined"){
+		if(jQuery(this).is(':checked')){
 			if(jQuery("div[id^='wpfc-modal-lazyload-']").length === 0){
 				Wpfc_New_Dialog.dialog("wpfc-modal-lazyload", {close: function(){
 					Wpfc_New_Dialog.clone.find("div.window-content input").each(function(){

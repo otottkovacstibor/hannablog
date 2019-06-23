@@ -935,6 +935,7 @@
 			$wpFastestCachePreload_post = isset($this->options->wpFastestCachePreload_post) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_category = isset($this->options->wpFastestCachePreload_category) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_customposttypes = isset($this->options->wpFastestCachePreload_customposttypes) ? 'checked="checked"' : "";
+			$wpFastestCachePreload_customTaxonomies = isset($this->options->wpFastestCachePreload_customTaxonomies) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_page = isset($this->options->wpFastestCachePreload_page) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_tag = isset($this->options->wpFastestCachePreload_tag) ? 'checked="checked"' : "";
 			$wpFastestCachePreload_attachment = isset($this->options->wpFastestCachePreload_attachment) ? 'checked="checked"' : "";
@@ -2204,11 +2205,11 @@
 			</script>
 			<script type="text/javascript">
 				jQuery("#wpFastestCachePreload").click(function(){
-					if(typeof jQuery(this).attr("checked") != "undefined"){
+					if(jQuery(this).is(':checked')){
 						if(jQuery("div[id^='wpfc-modal-preload-']").length === 0){
 							Wpfc_New_Dialog.dialog("wpfc-modal-preload", {close: function(){
 								Wpfc_New_Dialog.clone.find("div.window-content input").each(function(){
-									if(typeof jQuery(this).attr("checked") != "undefined"){
+									if(jQuery(this).is(':checked')){
 										jQuery("div.tab1 div[template-id='wpfc-modal-preload'] div.window-content input[name='" + jQuery(this).attr("name") + "']").attr("checked", true);
 									}else{
 										jQuery("div.tab1 div[template-id='wpfc-modal-preload'] div.window-content input[name='" + jQuery(this).attr("name") + "']").attr("checked", false);

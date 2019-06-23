@@ -69,7 +69,7 @@
 </div>
 <script type="text/javascript">
 	jQuery("#wpFastestCacheUpdatePost").click(function(){
-		if(typeof jQuery(this).attr("checked") != "undefined"){
+		if(jQuery(this).is(':checked')){
 			if(jQuery("div[id^='wpfc-modal-updatepost-']").length === 0){
 				Wpfc_New_Dialog.dialog("wpfc-modal-updatepost", {close: function(){
 					Wpfc_New_Dialog.clone.find("div.window-content input").each(function(){

@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 5.2
-Stable tag: 0.8.9.4
+Stable tag: 0.8.9.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,9 +18,9 @@ You can find more information on our web site (<a href="http://www.wpfastestcach
 
 This plugin creates static html files from your dynamic WordPress blog.
 When a page is rendered, php and mysql are used. Therefore, system needs RAM and CPU. 
-If many visitors come to a site, system uses lots of RAM and CPU so page is rendered so slowly. 
-In this case, you need a cache system not to render page again and again.
-Cache system generates a static html file and saves. Other users reach to static html page.
+If many visitors come to a site, system uses lots of RAM and CPU so page is rendered so slowly. In this case, you need a cache system not to render page again and again. Cache system generates a static html file and saves. Other users reach to static html page.
+<br><br>
+In addition, the site speed is used in Google’s search ranking algorithm so cache plugins that can improve your page load time will also improve your SEO ranking.
 <br><br>
 Setup of this plugin is so easy. You don't need to modify the .htacces file. It will be modified automatically.
 
@@ -102,6 +102,14 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.9.5 =
+* to check the page is 404 or not with http_response_code() if is_404() does not work
+* <strong>[FEATURE]</strong> to add Custom Taxonomies on the preload feature
+* <strong>[FEATURE]</strong> to show statistics of Preload
+* to replace urls which have data-img-url attribute with cdn-url
+* <strong>[FEATURE]</strong> to add WP-CLI command for clearing cache [<a target="_blank" href="https://www.wpfastestcache.com/features/wp-cli-commands/">Details</a>]
+* refactoring of is_amp()
 
 = 0.8.9.4 =
 * to clear cache of parent categories after clearing category cache [<a target="_blank" href="https://wordpress.org/support/topic/cache-of-mother-categories-not-auto-deleting/">Details</a>]

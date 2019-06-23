@@ -587,7 +587,7 @@
 				return $buffer."<!-- wp-login.php -->";
 			}else if($this->hasContactForm7WithCaptcha($buffer)){
 				return $buffer."<!-- This page was not cached because ContactForm7's captcha -->";
-			}else if(is_404() || preg_match("/<title>404\sNot\sFound<\/title>/", $buffer)){
+			}else if((function_exists("http_response_code") && (http_response_code() === 404)) || is_404() || preg_match("/<title>404\sNot\sFound<\/title>/", $buffer)){
 				return $buffer;
 			}else if($this->ignored($buffer)){
 				return $buffer;
@@ -764,7 +764,7 @@
 
 		public function cdn_rewrite($content){
 			if($this->cdn){
-				$content = preg_replace_callback("/(srcset|src|href|data-cvpsrc|data-cvpset|data-thumb|data-bg-url|data-large_image|data-lazyload|data-source-url|data-srcsmall|data-srclarge|data-srcfull|data-slide-img|data-lazy-original)\s{0,2}\=[\'\"]([^\'\"]+)[\'\"]/i", array($this, 'cdn_replace_urls'), $content);
+				$content = preg_replace_callback("/(srcset|src|href|data-img-url|data-cvpsrc|data-cvpset|data-thumb|data-bg-url|data-large_image|data-lazyload|data-source-url|data-srcsmall|data-srclarge|data-srcfull|data-slide-img|data-lazy-original)\s{0,2}\=[\'\"]([^\'\"]+)[\'\"]/i", array($this, 'cdn_replace_urls'), $content);
 
 				//url()
 				$content = preg_replace_callback("/(url)\(([^\)\>]+)\)/i", array($this, 'cdn_replace_urls'), $content);
@@ -959,6 +959,10 @@
 
 			if(preg_match("/^amp/", $request_uri) || preg_match("/\/amp\//", $request_uri) || preg_match("/amp$/", $request_uri)){
 				if(preg_match("/<html[^\>]+amp[^\>]*>/i", $content)){
+					return true;
+				}
+
+				if(preg_match("/<html[^\>]+\⚡[^\>]*>/i", $content)){
 					return true;
 				}
 			}
