@@ -29,7 +29,7 @@ if (!function_exists('suevafree_product_format_function')) {
 		endif;
 					
 		$html .= '<div class="product-content '.$contentclass.'">';
-		$html .= '<h3 class="product-title"><a href="'.get_permalink($post->ID).'">'.get_the_title().'</a></h3>';
+		$html .= '<h3 class="product-title"><a href="'.esc_url(get_permalink($post->ID)).'">'.esc_html(get_the_title()).'</a></h3>';
 								
 		if ( suevafree_postmeta( '_sale_price' ) ) :	
 											

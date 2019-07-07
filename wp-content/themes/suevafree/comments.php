@@ -41,7 +41,7 @@ if ( have_comments() && post_password_required() == false ) :
             	<header class="comment-author">
                 
                     <span class="author"><cite><?php printf( esc_html__('%s','suevafree'), get_comment_author_link());?> </cite> </span>
-                    <time datetime="<?php echo get_comment_date("c")?>" class="comment-date">  
+                    <time datetime="<?php echo esc_attr(get_comment_date())?>" class="comment-date">  
                     <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ) ?>"><?php printf(esc_html__('%1$s at %2$s','suevafree'), get_comment_date(),  get_comment_time()) ?></a> - 
                     <?php comment_reply_link(array_merge( $args, array('depth' => $depth, 'max_depth' => $args['max_depth']))) ?>
                     <?php edit_comment_link(esc_html__('(Edit)','suevafree')) ?>

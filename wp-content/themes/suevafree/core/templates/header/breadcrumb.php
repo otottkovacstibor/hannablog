@@ -37,11 +37,11 @@ if (!function_exists('suevafree_get_breadcrumb_function')) {
 					
 								} elseif (is_singular('post') && !is_attachment()) {
 									
-									echo "<li>" . the_category(' </li> / <li> ') . '</li> / <li> ' . get_the_title() . '</li>';
+									echo "<li>" . the_category(' </li> / <li> ') . '</li> / <li> ' . esc_html(get_the_title()) . '</li>';
 						
 								} elseif ( is_page() ) {
 									
-									echo "<li>" . get_the_title() . '</li>';
+									echo "<li>" . esc_html(get_the_title()) . '</li>';
 						
 								} else if ( suevafree_get_archive_title()) {
 								
@@ -58,15 +58,19 @@ if (!function_exists('suevafree_get_breadcrumb_function')) {
 								
 								} else if ( is_attachment() ) {
 					
-									echo "<li>" . __( 'Attachment: ', 'suevafree' ) . get_the_title() . "</li>";
+									echo "<li>" . __( 'Attachment: ', 'suevafree' ) . esc_html(get_the_title()) . "</li>";
 						
-								} else if ( is_singular('portfolio') ) {
+								} else if ( is_singular('team') ) {
 					
-									echo "<li>" . __( 'Portfolio: ', 'suevafree' ) . get_the_title() . "</li>";
+									echo "<li>" . __( 'Team: ', 'suevafree' ) . esc_html(get_the_title()) . "</li>";
 								
-								} else if ( is_singular('testimonials') ) {
+								} else if ( is_singular('service') ) {
 					
-									echo "<li>" . __( 'Testimonial: ', 'suevafree' ) . get_the_title() . "</li>";
+									echo "<li>" . __( 'Service: ', 'suevafree' ) . esc_html(get_the_title()) . "</li>";
+								
+								} else if ( is_singular('testimonial') ) {
+					
+									echo "<li>" . __( 'Testimonial: ', 'suevafree' ) . esc_html(get_the_title()) . "</li>";
 								
 								} 
 						

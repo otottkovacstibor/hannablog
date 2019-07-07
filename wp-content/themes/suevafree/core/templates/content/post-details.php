@@ -17,7 +17,7 @@ if (!function_exists('suevafree_post_details_function')) {
 		
 			<div class="entry-info">
 		   
-				<span><i class="fa fa-clock-o"></i><?php echo get_the_date(); ?></span>
+				<span><i class="fa fa-clock-o"></i><?php echo esc_html(get_the_date()); ?></span>
                 
 				<?php 
 				

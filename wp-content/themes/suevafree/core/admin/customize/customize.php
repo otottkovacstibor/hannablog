@@ -481,6 +481,22 @@ if (!function_exists('suevafree_customize_panel_function')) {
 			
 			array(
 				
+				'label' => esc_html__( 'Drop cap','suevafree'),
+				'description' => esc_html__( 'Do you want to enable the drop cap?','suevafree'),
+				'id' => 'suevafree_enable_dropcap',
+				'type' => 'select',
+				'section' => 'settings_section',
+				'options' => array (
+				   'off' => esc_html__( 'No','suevafree'),
+				   'on' => esc_html__( 'Yes','suevafree'),
+				),
+				
+				'std' => 'off',
+			
+			),
+			
+			array(
+				
 				'label' => esc_html__( 'Back to top button.','suevafree'),
 				'description' => esc_html__( 'Do you want to display a button to back on the top of the site?','suevafree'),
 				'id' => 'suevafree_view_back_to_top',

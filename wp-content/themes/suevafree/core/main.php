@@ -320,6 +320,12 @@ if (!function_exists('suevafree_body_classes_function')) {
 	
 		endif;
 		
+		if ( suevafree_setting('suevafree_enable_dropcap') == "on" ) :
+				
+			$classes[] = 'enable_dropcap';
+	
+		endif;
+		
 		return $classes;
 	
 	}
@@ -811,11 +817,11 @@ if (!function_exists('suevafree_scripts_styles')) {
 	
 		if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 
-		wp_enqueue_script('suevafree-html5shiv', get_template_directory_uri().'/assets/scripts/html5shiv.js', FALSE, '3.7.3');
-		wp_script_add_data('suevafree-html5shiv', 'conditional', 'IE 8' );
+		wp_enqueue_script('html5shiv', get_template_directory_uri().'/assets/scripts/html5shiv.js', FALSE, '3.7.3');
+		wp_script_add_data('html5shiv', 'conditional', 'IE 8' );
 		
-		wp_enqueue_script('suevafree-selectivizr', get_template_directory_uri().'/assets/scripts/selectivizr.js', FALSE, '1.0.3b');
-		wp_script_add_data('suevafree-selectivizr', 'conditional', 'IE 8' );
+		wp_enqueue_script('selectivizr', get_template_directory_uri().'/assets/scripts/selectivizr.js', FALSE, '1.0.3b');
+		wp_script_add_data('selectivizr', 'conditional', 'IE 8' );
 
 	}
 

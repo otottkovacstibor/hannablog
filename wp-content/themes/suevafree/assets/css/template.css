@@ -816,6 +816,15 @@ post-article blockquote p {
 	margin:0 	
 }
 
+body.enable_dropcap .post-article.post-details-1 .line + p:first-letter ,
+body.enable_dropcap .post-article.post-details-2 .entry-date + p:first-letter ,
+body.enable_dropcap .post-article.post-details-3 .title + p:first-letter {
+	float:left;
+	font-size:46px;
+	line-height:46px; 
+	margin:5px 10px 5px 0;
+}
+
 /* ===============================================
    ASIDE POSTS
    =============================================== */

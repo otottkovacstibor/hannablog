@@ -17,11 +17,11 @@ if (!function_exists('suevafree_post_title_function')) {
 		
 			if ( $type == "blog" ) { 
 		
-				echo '<h3 class="title"><a href="' . get_permalink($post->ID) . '">' . $title . '</a></h3>';
+				echo '<h3 class="title"><a href="' . esc_url(get_permalink($post->ID)) . '">' . esc_html($title) . '</a></h3>';
 		
 			} else if ( $type == "single" ) {
 				
-				echo '<h1 class="title">' . $title .'</h1>';
+				echo '<h1 class="title">' . esc_html($title) .'</h1>';
 	
 			}
 	

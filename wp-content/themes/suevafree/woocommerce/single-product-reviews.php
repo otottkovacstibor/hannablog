@@ -31,7 +31,7 @@ if ( ! comments_open() ) {
 		<h3 class="woocommerce-Reviews-title comments"><?php
 			if ( get_option( 'woocommerce_enable_review_rating' ) === 'yes' && ( $count = $product->get_review_count() ) ) {
 				/* translators: 1: reviews count 2: product name */
-				printf( esc_html( _n( '%1$s review for %2$s', '%1$s reviews for %2$s', $count, 'suevafree' ) ), esc_html( $count ), '<span>' . get_the_title() . '</span>' );
+				printf( esc_html( _n( '%1$s review for %2$s', '%1$s reviews for %2$s', $count, 'suevafree' ) ), esc_html( $count ), '<span>' . esc_html(get_the_title()) . '</span>' );
 			} else {
 				esc_html_e( 'Reviews', 'suevafree' );
 			}
