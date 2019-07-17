@@ -127,7 +127,7 @@ if ( ! defined( 'WPINC' ) ) {
                         <select name="button_3_action_field" id="cli-plugin-button-3-action" class="vvv_combobox cli_form_toggle" cli_frm_tgl-target="cli_reject_action">
                             <?php
                                 $action_list = $this->get_js_actions();
-                                $action_list['Close Header'] = '#cookie_action_close_header_reject';
+                                $action_list['close_header']['value'] = '#cookie_action_close_header_reject';
                                 $this->print_combobox_options($action_list, $the_options['button_3_action']);
                             ?>
                         </select>

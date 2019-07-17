@@ -54,11 +54,11 @@ $all_pages=get_pages($args_for_get_pages);
         <div class="nav-tab-wrapper wp-clearfix cookie-law-info-tab-head">
             <?php
             $tab_head_arr=array(
-                'cookie-law-info-general'=>'General',
-                'cookie-law-info-message-bar'=>'Customise Cookie Bar',
-                'cookie-law-info-buttons'=>'Customise Buttons',
-                'cookie-law-info-advanced'=>'Advanced',
-                'cookie-law-info-help'=>'Help Guide'
+                'cookie-law-info-general'=> __('General','cookie-law-info'),
+                'cookie-law-info-message-bar'=>__('Customise Cookie Bar','cookie-law-info'),
+                'cookie-law-info-buttons'=>__('Customise Buttons','cookie-law-info'),
+                'cookie-law-info-advanced'=>__('Advanced','cookie-law-info'),
+                'cookie-law-info-help'=>__('Help Guide','cookie-law-info'),
             );
             Cookie_Law_Info::generate_settings_tabhead($tab_head_arr);
             ?>

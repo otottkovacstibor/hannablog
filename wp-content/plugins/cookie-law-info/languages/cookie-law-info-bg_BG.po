@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-05-02 11:36+0530\n"
-"PO-Revision-Date: 2019-05-02 11:37+0530\n"
+"POT-Creation-Date: 2019-07-16 11:33+0530\n"
+"PO-Revision-Date: 2019-07-16 11:34+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.12\n"
+"X-Generator: Poedit 2.2.3\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -26,30 +26,131 @@ msgstr "Настройките на Cookie Law"
 msgid "Non-necessary Cookie"
 msgstr "Експортна бисквитка"
 
-#: admin/class-cookie-law-info-admin.php:183
+#: admin/class-cookie-law-info-admin.php:160
+#: admin/class-cookie-law-info-admin.php:161
+msgid "Necessary Cookie"
+msgstr "Необходима бисквитка"
+
+#: admin/class-cookie-law-info-admin.php:168
+#: admin/class-cookie-law-info-admin.php:169
+#: admin/partials/cookie-law-info-privacy_overview.php:54
+msgid "Privacy Overview"
+msgstr "Заглавие на общността за поверителност"
+
+#: admin/class-cookie-law-info-admin.php:206
 msgid "Settings"
 msgstr "Настройки"
 
-#: admin/class-cookie-law-info-admin.php:184
+#: admin/class-cookie-law-info-admin.php:207
 msgid "Support"
 msgstr "Съпорт"
 
-#: admin/class-cookie-law-info-admin.php:185
+#: admin/class-cookie-law-info-admin.php:208
 msgid "Premium Upgrade"
 msgstr "Premium Upgrade"
 
-#: admin/class-cookie-law-info-admin.php:225
-#: admin/class-cookie-law-info-admin.php:276
+#: admin/class-cookie-law-info-admin.php:250
+#: admin/class-cookie-law-info-admin.php:296
+#: admin/class-cookie-law-info-admin.php:341
+#: admin/partials/cookie-law-info-privacy_overview.php:29
 msgid "Settings Updated."
-msgstr "Обновени настройки"
+msgstr "Обновени настройки."
 
-#: admin/class-cookie-law-info-admin.php:253
+#: admin/class-cookie-law-info-admin.php:318
 msgid "You do not have sufficient permission to perform this operation"
 msgstr "Нямате достатъчно разрешение да изпълнявате тази операция"
 
-#: admin/class-cookie-law-info-admin.php:291
+#: admin/class-cookie-law-info-admin.php:356
 msgid "ERROR MIGRATING SETTINGS (ERROR: 2)"
 msgstr "ГРЕШКИ ЗА ИЗМЕРВАНЕ НА ГРЕШКИТЕ (ГРЕШКА: 2)"
+
+#: admin/class-cookie-law-info-admin.php:374
+msgid "Cookie ID"
+msgstr "ID на „бисквитката“"
+
+#: admin/class-cookie-law-info-admin.php:375
+msgid "Cookie Type"
+msgstr "Тип на бисквитката"
+
+#: admin/class-cookie-law-info-admin.php:376
+msgid "Cookie Duration"
+msgstr "Продължителност на бисквитките"
+
+#: admin/class-cookie-law-info-admin.php:377
+msgid "Cookie Sensitivity"
+msgstr "Чувствителност на бисквитките"
+
+#: admin/class-cookie-law-info-admin.php:627
+msgid "Close Header"
+msgstr "Затваряне на заглавието"
+
+#: admin/class-cookie-law-info-admin.php:631
+msgid "Open URL"
+msgstr "Отваряне на URL адрес"
+
+#: admin/class-cookie-law-info-admin.php:644
+msgid "Extra Large"
+msgstr "Много голям"
+
+#: admin/class-cookie-law-info-admin.php:648
+msgid "Large"
+msgstr "Голям"
+
+#: admin/class-cookie-law-info-admin.php:652
+msgid "Medium"
+msgstr "Cреда"
+
+#: admin/class-cookie-law-info-admin.php:656
+msgid "Small"
+msgstr "Mалък"
+
+#: admin/class-cookie-law-info-admin.php:670
+msgid "Default theme font"
+msgstr "Шрифт на тема по подразбиране"
+
+#: admin/class-cookie-law-info-admin.php:674
+msgid "Sans Serif"
+msgstr "Sans Serif"
+
+#: admin/class-cookie-law-info-admin.php:678
+msgid "Serif"
+msgstr "Serif"
+
+#: admin/class-cookie-law-info-admin.php:682
+msgid "Arial"
+msgstr "Arial"
+
+#: admin/class-cookie-law-info-admin.php:686
+msgid "Arial Black"
+msgstr "Arial Black"
+
+#: admin/class-cookie-law-info-admin.php:690
+msgid "Georgia, serif"
+msgstr "Georgia, serif"
+
+#: admin/class-cookie-law-info-admin.php:694
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#: admin/class-cookie-law-info-admin.php:698
+msgid "Lucida"
+msgstr "Lucida"
+
+#: admin/class-cookie-law-info-admin.php:702
+msgid "Tahoma"
+msgstr "Tahoma"
+
+#: admin/class-cookie-law-info-admin.php:706
+msgid "Times New Roman"
+msgstr "Times New Roman"
+
+#: admin/class-cookie-law-info-admin.php:710
+msgid "Trebuchet"
+msgstr "Trebuchet"
+
+#: admin/class-cookie-law-info-admin.php:714
+msgid "Verdana"
+msgstr "Verdana"
 
 #: admin/modules/cli-policy-generator/classes/class-policy-generator-ajax.php:21
 msgid "Unable to handle your request."
@@ -77,7 +178,7 @@ msgstr "Генератор на политики"
 
 #: admin/modules/cli-policy-generator/cli-policy-generator.php:132
 msgid "Success"
-msgstr "успех"
+msgstr "Yспех"
 
 #: admin/modules/cli-policy-generator/views/policy-generator.php:25
 msgid "Sample heading"
@@ -97,12 +198,14 @@ msgstr "Добави нов"
 
 #: admin/modules/cli-policy-generator/views/policy-generator.php:53
 msgid "Heading"
-msgstr "заглавие"
+msgstr "Заглавие"
 
 #: admin/modules/cli-policy-generator/views/policy-generator.php:57
-#: public/modules/shortcode/shortcode.php:207
+#: admin/views/admin_necessary_cookie.php:27
+#: admin/views/admin_non_necessary_cookie.php:34
+#: public/modules/shortcode/shortcode.php:209
 msgid "Description"
-msgstr "описание"
+msgstr "Описание"
 
 #: admin/modules/cli-policy-generator/views/policy-generator.php:65
 msgid ""
@@ -126,22 +229,24 @@ msgid "Live preview"
 msgstr "Предварителен преглед на живо"
 
 #: admin/partials/cookie-law-info-admin_settings.php:25
+#: admin/views/admin_necessary_cookie.php:14
 #: admin/views/admin_non_necessary_cookie.php:14
 msgid "Settings updated."
 msgstr "Параметрите са обновени."
 
 #: admin/partials/cookie-law-info-admin_settings.php:26
+#: admin/views/admin_necessary_cookie.php:15
 #: admin/views/admin_non_necessary_cookie.php:15
 msgid "Unable to update Settings."
-msgstr "Актуализиране на настройките"
+msgstr "Актуализиране на настройките."
 
 #: admin/partials/cookie-law-info-admin_settings.php:27
 msgid "Settings reset to defaults."
-msgstr "Изтрийте настройките и нулирайте"
+msgstr "Изтрийте настройките и нулирайте."
 
 #: admin/partials/cookie-law-info-admin_settings.php:28
 msgid "Unable to reset settings."
-msgstr "Актуализиране на настройките"
+msgstr "Актуализиране на настройките."
 
 #: admin/partials/cookie-law-info-admin_settings.php:39
 msgid "Your Cookie Law Info bar is switched on"
@@ -150,6 +255,40 @@ msgstr "Информационната лента за Cookie Law е включ�
 #: admin/partials/cookie-law-info-admin_settings.php:47
 msgid "Your Cookie Law Info bar is switched off"
 msgstr "Вашата бисквитка закон информационната лента е изключен"
+
+#: admin/partials/cookie-law-info-admin_settings.php:57
+msgid "General"
+msgstr "Основни"
+
+#: admin/partials/cookie-law-info-admin_settings.php:58
+msgid "Customise Cookie Bar"
+msgstr "Персонализирайте бисквитка Бар"
+
+#: admin/partials/cookie-law-info-admin_settings.php:59
+msgid "Customise Buttons"
+msgstr "Персонализиране на бутоните"
+
+#: admin/partials/cookie-law-info-admin_settings.php:60
+msgid "Advanced"
+msgstr "Напреднал"
+
+#: admin/partials/cookie-law-info-admin_settings.php:61
+msgid "Help Guide"
+msgstr "Ръководство за помощ"
+
+#: admin/partials/cookie-law-info-privacy_overview.php:61
+msgid "Privacy Overview Title"
+msgstr "Заглавие на общността за поверителност"
+
+#: admin/partials/cookie-law-info-privacy_overview.php:67
+#: admin/partials/cookie-law-info-privacy_overview.php:82
+msgid "This will be shown in the settings visible for user on consent screen."
+msgstr ""
+"Това ще се покаже в настройките, видими за екрана на потребител на съгласие."
+
+#: admin/partials/cookie-law-info-privacy_overview.php:90
+msgid "Save Settings"
+msgstr "Запазване на настройките"
 
 #: admin/views/admin-settings-advanced.php:9
 msgid ""
@@ -180,20 +319,25 @@ msgid "Accept Button"
 msgstr "Приемете бутона"
 
 #: admin/views/admin-settings-buttons.php:11
-#: admin/views/admin-settings-buttons.php:91
+#: admin/views/admin-settings-buttons.php:92
 msgid "Reject Button"
 msgstr "Бутон за отхвърляне"
 
 #: admin/views/admin-settings-buttons.php:12
 #: admin/views/admin-settings-buttons.php:162
+msgid "Settings Button"
+msgstr "Бутон за настройки"
+
+#: admin/views/admin-settings-buttons.php:13
+#: admin/views/admin-settings-buttons.php:205
 msgid "Read More Link"
 msgstr "Препратка - Прочети повече"
 
-#: admin/views/admin-settings-buttons.php:18
+#: admin/views/admin-settings-buttons.php:19
 msgid "Main Button"
 msgstr "Главен бутон"
 
-#: admin/views/admin-settings-buttons.php:19
+#: admin/views/admin-settings-buttons.php:20
 msgid ""
 "This button/link can be customised to either simply close the cookie bar, or "
 "follow a link. You can also customise the colours and styles, and show it as "
@@ -203,68 +347,74 @@ msgstr ""
 "лентата на бисквитката, или следвате връзка. Можете също да персонализирате "
 "цветовете и стилове и да го показват като връзка или бутон."
 
-#: admin/views/admin-settings-buttons.php:22
-#: admin/views/admin-settings-buttons.php:94
-#: admin/views/admin-settings-buttons.php:176
+#: admin/views/admin-settings-buttons.php:23
+#: admin/views/admin-settings-buttons.php:95
+#: admin/views/admin-settings-buttons.php:165
+#: admin/views/admin-settings-buttons.php:219
 msgid "Text"
 msgstr "Текст"
 
-#: admin/views/admin-settings-buttons.php:28
-#: admin/views/admin-settings-buttons.php:100
-#: admin/views/admin-settings-buttons.php:182
+#: admin/views/admin-settings-buttons.php:29
+#: admin/views/admin-settings-buttons.php:101
+#: admin/views/admin-settings-buttons.php:171
+#: admin/views/admin-settings-buttons.php:225
 msgid "Text colour"
 msgstr "Цвят на текста"
 
-#: admin/views/admin-settings-buttons.php:36
-#: admin/views/admin-settings-buttons.php:108
-#: admin/views/admin-settings-buttons.php:190
+#: admin/views/admin-settings-buttons.php:37
+#: admin/views/admin-settings-buttons.php:109
+#: admin/views/admin-settings-buttons.php:179
+#: admin/views/admin-settings-buttons.php:233
 msgid "Show as"
-msgstr "Бисквитката ще се появи в:"
+msgstr "Покажете като"
 
-#: admin/views/admin-settings-buttons.php:38
-#: admin/views/admin-settings-buttons.php:110
-#: admin/views/admin-settings-buttons.php:192
+#: admin/views/admin-settings-buttons.php:39
+#: admin/views/admin-settings-buttons.php:111
+#: admin/views/admin-settings-buttons.php:181
+#: admin/views/admin-settings-buttons.php:235
 msgid "Button"
 msgstr "Бутон"
 
-#: admin/views/admin-settings-buttons.php:40
-#: admin/views/admin-settings-buttons.php:112
-#: admin/views/admin-settings-buttons.php:194
+#: admin/views/admin-settings-buttons.php:41
+#: admin/views/admin-settings-buttons.php:113
+#: admin/views/admin-settings-buttons.php:183
+#: admin/views/admin-settings-buttons.php:237
 msgid "Link"
 msgstr "Връзка"
 
-#: admin/views/admin-settings-buttons.php:44
-#: admin/views/admin-settings-buttons.php:116
-#: admin/views/admin-settings-buttons.php:198
+#: admin/views/admin-settings-buttons.php:45
+#: admin/views/admin-settings-buttons.php:117
+#: admin/views/admin-settings-buttons.php:187
+#: admin/views/admin-settings-buttons.php:241
 msgid "Background colour"
 msgstr "Цвят на фона"
 
-#: admin/views/admin-settings-buttons.php:53
-#: admin/views/admin-settings-buttons.php:124
+#: admin/views/admin-settings-buttons.php:54
+#: admin/views/admin-settings-buttons.php:125
 msgid "Action"
 msgstr "Действие"
 
-#: admin/views/admin-settings-buttons.php:61
-#: admin/views/admin-settings-buttons.php:136
-#: admin/views/admin-settings-buttons.php:209
-#: admin/views/admin-settings-buttons.php:216
+#: admin/views/admin-settings-buttons.php:62
+#: admin/views/admin-settings-buttons.php:137
+#: admin/views/admin-settings-buttons.php:252
+#: admin/views/admin-settings-buttons.php:259
 msgid "URL"
 msgstr "URL"
 
-#: admin/views/admin-settings-buttons.php:64
-#: admin/views/admin-settings-buttons.php:139
+#: admin/views/admin-settings-buttons.php:65
+#: admin/views/admin-settings-buttons.php:140
 msgid "Button will only link to URL if Action = Open URL"
 msgstr "Бутон само ще линк към URL, ако действие = показват URL"
 
-#: admin/views/admin-settings-buttons.php:69
-#: admin/views/admin-settings-buttons.php:144
+#: admin/views/admin-settings-buttons.php:70
+#: admin/views/admin-settings-buttons.php:145
 msgid "Open URL in new window?"
-msgstr "Отвори в нов прозорец"
+msgstr "Отваряте ли URL в нов прозорец?"
 
-#: admin/views/admin-settings-buttons.php:71
-#: admin/views/admin-settings-buttons.php:146
-#: admin/views/admin-settings-buttons.php:260
-#: admin/views/admin-settings-buttons.php:267
+#: admin/views/admin-settings-buttons.php:72
+#: admin/views/admin-settings-buttons.php:147
+#: admin/views/admin-settings-buttons.php:303
+#: admin/views/admin-settings-buttons.php:310
 #: admin/views/admin-settings-general.php:57
 #: admin/views/admin-settings-general.php:89
 #: admin/views/admin-settings-general.php:136
@@ -274,13 +424,14 @@ msgstr "Отвори в нов прозорец"
 #: admin/views/admin-settings-general.php:246
 #: admin/views/admin-settings-general.php:253
 #: admin/views/admin-settings-messagebar.php:51
+#: admin/views/admin_non_necessary_cookie.php:28
 msgid "Yes"
 msgstr "Да"
 
-#: admin/views/admin-settings-buttons.php:73
-#: admin/views/admin-settings-buttons.php:147
-#: admin/views/admin-settings-buttons.php:261
-#: admin/views/admin-settings-buttons.php:268
+#: admin/views/admin-settings-buttons.php:74
+#: admin/views/admin-settings-buttons.php:148
+#: admin/views/admin-settings-buttons.php:304
+#: admin/views/admin-settings-buttons.php:311
 #: admin/views/admin-settings-general.php:58
 #: admin/views/admin-settings-general.php:90
 #: admin/views/admin-settings-general.php:137
@@ -290,16 +441,18 @@ msgstr "Да"
 #: admin/views/admin-settings-general.php:247
 #: admin/views/admin-settings-general.php:254
 #: admin/views/admin-settings-messagebar.php:52
+#: admin/views/admin_non_necessary_cookie.php:29
 msgid "No"
 msgstr "Не"
 
-#: admin/views/admin-settings-buttons.php:80
-#: admin/views/admin-settings-buttons.php:151
-#: admin/views/admin-settings-buttons.php:272
+#: admin/views/admin-settings-buttons.php:81
+#: admin/views/admin-settings-buttons.php:152
+#: admin/views/admin-settings-buttons.php:195
+#: admin/views/admin-settings-buttons.php:315
 msgid "Size"
 msgstr "Размер"
 
-#: admin/views/admin-settings-buttons.php:163
+#: admin/views/admin-settings-buttons.php:206
 msgid ""
 "This button/link can be used to provide a link out to your Privacy & Cookie "
 "Policy. You can customise it any way you like."
@@ -308,41 +461,41 @@ msgstr ""
 "правилата Ви за поверителност и бисквитки. Можете да го персонализирате по "
 "ваш начин."
 
-#: admin/views/admin-settings-buttons.php:168
+#: admin/views/admin-settings-buttons.php:211
 msgid "Click"
 msgstr "Кликнете"
 
-#: admin/views/admin-settings-buttons.php:168
+#: admin/views/admin-settings-buttons.php:211
 msgid "here"
 msgstr "тук"
 
-#: admin/views/admin-settings-buttons.php:168
+#: admin/views/admin-settings-buttons.php:211
 msgid " to generate content for Cookie Policy page."
-msgstr "да генерирате съдържание за страницата „Правила за бисквитките“."
+msgstr " да генерирате съдържание за страницата „Правила за бисквитките“."
 
-#: admin/views/admin-settings-buttons.php:207
+#: admin/views/admin-settings-buttons.php:250
 msgid "URL or Page?"
 msgstr "URL или страница?"
 
-#: admin/views/admin-settings-buttons.php:211
-#: admin/views/admin-settings-buttons.php:222
+#: admin/views/admin-settings-buttons.php:254
+#: admin/views/admin-settings-buttons.php:265
 msgid "Page"
-msgstr "страница"
+msgstr "Страница"
 
-#: admin/views/admin-settings-buttons.php:225
+#: admin/views/admin-settings-buttons.php:268
 msgid "Select One"
 msgstr "Избери един"
 
-#: admin/views/admin-settings-buttons.php:250
+#: admin/views/admin-settings-buttons.php:293
 msgid "The currently selected page does not exist. Please select a new page."
 msgstr ""
 "В момента избраната страница не съществува. Моля, изберете нова страница."
 
-#: admin/views/admin-settings-buttons.php:258
+#: admin/views/admin-settings-buttons.php:301
 msgid "Minimize Cookie Bar in this page/URL?"
 msgstr "Намаляване на лентата с бисквитки в тази страница / URL адрес?"
 
-#: admin/views/admin-settings-buttons.php:265
+#: admin/views/admin-settings-buttons.php:308
 msgid "Open in new window?"
 msgstr "Отвори в нов прозорец?"
 
@@ -350,12 +503,12 @@ msgstr "Отвори в нов прозорец?"
 #: admin/views/admin-settings-general.php:15
 #: admin/views/admin-settings-messagebar.php:8
 msgid "Cookie Bar"
-msgstr "Автоматично скривай бисквитка бар след закъснение?"
+msgstr "Бар за бисквитки"
 
 #: admin/views/admin-settings-general.php:10
 #: admin/views/admin-settings-general.php:164
 msgid "Show Again Tab"
-msgstr "Използвайте Показвай раздела?"
+msgstr "Показване на раздела отново"
 
 #: admin/views/admin-settings-general.php:11
 #: admin/views/admin-settings-general.php:230
@@ -380,7 +533,7 @@ msgstr "Бар за бисквитките като"
 
 #: admin/views/admin-settings-general.php:33
 msgid "Banner"
-msgstr "знаме"
+msgstr "Банер"
 
 #: admin/views/admin-settings-general.php:36
 msgid "Popup"
@@ -392,7 +545,19 @@ msgstr "Widget"
 
 #: admin/views/admin-settings-general.php:45
 msgid "Position"
-msgstr "позиция"
+msgstr "Позиция"
+
+#: admin/views/admin-settings-general.php:48
+#: admin/views/admin-settings-general.php:181
+#: admin/views/admin-settings-general.php:184
+msgid "Left"
+msgstr "Ляво"
+
+#: admin/views/admin-settings-general.php:49
+#: admin/views/admin-settings-general.php:180
+#: admin/views/admin-settings-general.php:183
+msgid "Right"
+msgstr "Дясно"
 
 #: admin/views/admin-settings-general.php:55
 msgid "Add overlay?"
@@ -459,9 +624,7 @@ msgstr "На кожа"
 #: admin/views/admin-settings-general.php:122
 #: admin/views/admin-settings-general.php:125
 msgid "Disappear"
-msgstr ""
-"Включете тази отметка, ако искате KPresenter автоматично да слага тирета, "
-"когато открие съответствие в рамката. Това не е включено по подразбиране."
+msgstr "Изчезва"
 
 #: admin/views/admin-settings-general.php:134
 msgid "Auto-hide(Accept) cookie bar after delay?"
@@ -505,16 +668,6 @@ msgstr "Използвайте Показвай раздела?"
 #: admin/views/admin-settings-general.php:192
 msgid "Tab Position"
 msgstr "Позиция на означение"
-
-#: admin/views/admin-settings-general.php:180
-#: admin/views/admin-settings-general.php:183
-msgid "Right"
-msgstr "Дясно"
-
-#: admin/views/admin-settings-general.php:181
-#: admin/views/admin-settings-general.php:184
-msgid "Left"
-msgstr "Ляво"
 
 #: admin/views/admin-settings-general.php:199
 msgid "Bottom Right"
@@ -561,7 +714,7 @@ msgid "Shortcodes"
 msgstr "Кратък код"
 
 #: admin/views/admin-settings-help.php:10
-#: admin/views/admin-settings-help.php:100
+#: admin/views/admin-settings-help.php:103
 msgid "Help Links"
 msgstr "Помощни връзки"
 
@@ -588,18 +741,22 @@ msgid "This is the cookie reject button shortcode."
 msgstr "Това е shortcode бутон за отхвърляне на бисквитки."
 
 #: admin/views/admin-settings-help.php:30
+msgid "This is the cookie settings button rendering shortcode."
+msgstr "Това е оказване shortcode бисквитка настройки бутон."
+
+#: admin/views/admin-settings-help.php:33
 msgid "This is the \"read more\" link you customise above."
 msgstr "Това е \"Прочети повече\" връзка, можете да персонализирате по-горе."
 
-#: admin/views/admin-settings-help.php:33
+#: admin/views/admin-settings-help.php:36
 msgid "Setup margin for above buttons"
-msgstr ""
+msgstr "Поле за настройка за над бутоните"
 
-#: admin/views/admin-settings-help.php:62
+#: admin/views/admin-settings-help.php:65
 msgid "Other shortcodes"
 msgstr "Други кратки кодове"
 
-#: admin/views/admin-settings-help.php:63
+#: admin/views/admin-settings-help.php:66
 msgid ""
 "These shortcodes can be used in pages and posts on your website. It is not "
 "recommended to use these inside the cookie bar itself."
@@ -607,7 +764,7 @@ msgstr ""
 "Тези кратки кодове могат да се използват в страници и публикации на уебсайта "
 "Ви. Не се препоръчва да ги използвате в самата бисквитка."
 
-#: admin/views/admin-settings-help.php:69
+#: admin/views/admin-settings-help.php:72
 msgid ""
 "This prints out a nice table of cookies, in line with the guidance given by "
 "the ICO."
@@ -615,7 +772,7 @@ msgstr ""
 "Това отпечатва приятна таблица с бисквитки, в съответствие с указанията, "
 "дадени от ICO."
 
-#: admin/views/admin-settings-help.php:69
+#: admin/views/admin-settings-help.php:72
 msgid ""
 "You need to enter the cookies your website uses via the Cookie Law Info menu "
 "in your WordPress dashboard."
@@ -623,19 +780,19 @@ msgstr ""
 "Трябва да въведете \"бисквитките\", които уебсайтът Ви използва чрез менюто "
 "за информация за \"Бисквитките\" в таблото за управление на WordPress."
 
-#: admin/views/admin-settings-help.php:77
+#: admin/views/admin-settings-help.php:80
 msgid "Styles included"
 msgstr "Включени са стилове"
 
-#: admin/views/admin-settings-help.php:79
+#: admin/views/admin-settings-help.php:82
 msgid "Columns available"
 msgstr "Налични са графи"
 
-#: admin/views/admin-settings-help.php:79
+#: admin/views/admin-settings-help.php:82
 msgid "Will print all columns by default."
 msgstr "Ще се отпечатат всички колони по подразбиране."
 
-#: admin/views/admin-settings-help.php:83
+#: admin/views/admin-settings-help.php:86
 msgid ""
 "This shortcode will display a normal HTML link which when clicked, will "
 "delete the cookie set by Cookie Law Info (this cookie is used to remember "
@@ -645,35 +802,35 @@ msgstr ""
 "пакета \"бисквитки\", зададен от Cookie Law Info (тази \"бисквитка\" се "
 "използва, за да се запомни, че лентата на \"бисквитките\" е затворена)."
 
-#: admin/views/admin-settings-help.php:87
+#: admin/views/admin-settings-help.php:90
 msgid ""
 "Add any text you like- useful if you want e.g. another language to English."
 msgstr ""
 "Добавете текст, който харесвате - полезен, ако искате, напр. друг език на "
 "английски."
 
-#: admin/views/admin-settings-help.php:91
+#: admin/views/admin-settings-help.php:94
 msgid "Add content after accepting the cookie notice."
 msgstr "Добавете съдържание, след като сте приели известието за „бисквитките“."
 
-#: admin/views/admin-settings-help.php:104
-#: admin/views/admin-settings-help.php:107 admin/views/goto-pro.php:101
+#: admin/views/admin-settings-help.php:107
+#: admin/views/admin-settings-help.php:110 admin/views/goto-pro.php:103
 msgid "Documentation"
-msgstr "документация"
+msgstr "Документация"
 
-#: admin/views/admin-settings-help.php:105
+#: admin/views/admin-settings-help.php:108
 msgid "Refer to our documentation to set and get started"
 msgstr "Обърнете се към нашата документация, за да настроите и започнете"
 
-#: admin/views/admin-settings-help.php:112
+#: admin/views/admin-settings-help.php:115
 msgid "Help and Support"
 msgstr "Помощ и подкрепа"
 
-#: admin/views/admin-settings-help.php:113
+#: admin/views/admin-settings-help.php:116
 msgid "We would love to help you on any queries or issues."
 msgstr "Бихме искали да ви помогнем при всякакви въпроси или въпроси."
 
-#: admin/views/admin-settings-help.php:115
+#: admin/views/admin-settings-help.php:118
 msgid "Contact Us"
 msgstr "Свържете се с нас"
 
@@ -722,19 +879,24 @@ msgid "Font"
 msgstr "Шрифт"
 
 #: admin/views/admin-settings-save-button.php:12
-#: admin/views/admin_non_necessary_cookie.php:58
+#: admin/views/admin_necessary_cookie.php:40
+#: admin/views/admin_non_necessary_cookie.php:67
 msgid "Update Settings"
 msgstr "Актуализиране на настройките"
 
+#: admin/views/admin_necessary_cookie.php:20
+msgid "Necessary Cookie Settings"
+msgstr "Необходими настройки на бисквитките"
+
 #: admin/views/admin_non_necessary_cookie.php:20
 msgid "Non-necessary Cookie Settings"
-msgstr "Това е оказване shortcode бисквитка настройки бутон."
+msgstr "Не е необходима настройка на бисквитките"
 
 #: admin/views/admin_non_necessary_cookie.php:27
 msgid "Enable Non-necessary Cookie"
 msgstr "Давам възможност на Non необходим бисквитка"
 
-#: admin/views/admin_non_necessary_cookie.php:34
+#: admin/views/admin_non_necessary_cookie.php:42
 msgid ""
 "This script will be added to the page HEAD section if the above settings is "
 "enabled and user has give consent."
@@ -742,7 +904,7 @@ msgstr ""
 "Този скрипт ще бъдат добавени към страницата главата раздел, ако горните "
 "настройки е разрешен и потребителят има даде съгласие."
 
-#: admin/views/admin_non_necessary_cookie.php:39
+#: admin/views/admin_non_necessary_cookie.php:47
 msgid ""
 "Print scripts in the head tag on the front end if above cookie settings is "
 "enabled and user has given consent."
@@ -750,7 +912,7 @@ msgstr ""
 "Отпечатване скриптове в главата тагове на предния край, ако над бисквитка "
 "настройки е разрешен и потребителят е дал съгласие."
 
-#: admin/views/admin_non_necessary_cookie.php:46
+#: admin/views/admin_non_necessary_cookie.php:54
 msgid ""
 "This script will be added right after the BODY section if the above settings "
 "is enabled and user has given consent."
@@ -758,7 +920,7 @@ msgstr ""
 "Този скрипт ще се добавят веднага след тялото раздел Ако горните настройки е "
 "разрешен и потребителят е дал съгласие."
 
-#: admin/views/admin_non_necessary_cookie.php:49
+#: admin/views/admin_non_necessary_cookie.php:57
 msgid ""
 "Print scripts before the closing body tag on the front end if above cookie "
 "settings is enabled and user has given consent."
@@ -789,7 +951,7 @@ msgstr ""
 
 #: admin/views/goto-pro.php:60
 msgid "Would you like to:"
-msgstr "Искате ли да купите"
+msgstr "Би ли искал:"
 
 #: admin/views/goto-pro.php:62
 msgid "Use previous settings"
@@ -871,116 +1033,140 @@ msgstr ""
 "Настройка на темата за бар „Cookie“ за банер / приспособления / изскачащи "
 "прозорци"
 
-#: admin/views/goto-pro.php:106
+#: admin/views/goto-pro.php:93
+msgid "GDPR compliance with Google Tag Manager"
+msgstr "Съответствие на GDPR с Google Tag Manager"
+
+#: admin/views/goto-pro.php:94
+msgid "Javascript helper functions"
+msgstr "Помощни функции на Javascript"
+
+#: admin/views/goto-pro.php:108
 msgid "Like this plugin?"
 msgstr "Като тази приставка?"
 
-#: admin/views/goto-pro.php:107
+#: admin/views/goto-pro.php:109
 msgid "If you find this plugin useful please show your support and rate it"
 msgstr ""
 "Ако смятате, че тази приставка е полезна, моля, покажете подкрепата си и я "
 "оценете"
 
-#: admin/views/goto-pro.php:107
+#: admin/views/goto-pro.php:109
 msgid " on"
-msgstr "вкл"
+msgstr " за"
 
-#: admin/views/goto-pro.php:107
+#: admin/views/goto-pro.php:109
 msgid "  much appreciated!"
-msgstr "оценявам го!"
+msgstr " оценявам го!"
 
-#: public/class-cookie-law-info-public.php:159
+#: public/class-cookie-law-info-public.php:74
+msgid "Necessary"
+msgstr "Необходимо"
+
+#: public/class-cookie-law-info-public.php:75
+msgid "Non-necessary"
+msgstr "Non-необходимо"
+
+#: public/class-cookie-law-info-public.php:226
 msgid "GDPR Cookie Consent"
 msgstr "История на съгласието на GDPR"
 
-#: public/class-cookie-law-info-public.php:160
+#: public/class-cookie-law-info-public.php:227
 msgid "Cookie List"
 msgstr "Бисквитка списък"
 
-#: public/class-cookie-law-info-public.php:161
-#: public/modules/shortcode/shortcode.php:195
+#: public/class-cookie-law-info-public.php:228
+#: public/modules/shortcode/shortcode.php:197
 msgid "Cookie"
-msgstr "курабийка"
+msgstr "Kурабийка"
 
-#: public/class-cookie-law-info-public.php:162
+#: public/class-cookie-law-info-public.php:229
 msgid "Add New"
 msgstr "Добави"
 
-#: public/class-cookie-law-info-public.php:163
+#: public/class-cookie-law-info-public.php:230
 msgid "Add New Cookie Type"
-msgstr "Нищо не е намерено..."
+msgstr "Добавяне на нов тип „бисквитка“"
 
-#: public/class-cookie-law-info-public.php:164
+#: public/class-cookie-law-info-public.php:231
 msgid "Edit Cookie Type"
 msgstr "Редактиране на типа на бисквитка"
 
-#: public/class-cookie-law-info-public.php:165
+#: public/class-cookie-law-info-public.php:232
 msgid "New Cookie Type"
-msgstr "Нищо не е намерено..."
+msgstr "Нов тип „бисквитка“"
 
-#: public/class-cookie-law-info-public.php:166
+#: public/class-cookie-law-info-public.php:233
 msgid "View Cookie Type"
 msgstr "Тип изглед бисквитка"
 
-#: public/class-cookie-law-info-public.php:167
+#: public/class-cookie-law-info-public.php:234
 msgid "Search Cookies"
 msgstr "Търсене в бисквитки"
 
-#: public/class-cookie-law-info-public.php:168
+#: public/class-cookie-law-info-public.php:235
 msgid "Nothing found"
 msgstr "Нищо не е намерено"
 
-#: public/class-cookie-law-info-public.php:169
+#: public/class-cookie-law-info-public.php:236
 msgid "Nothing found in Trash"
 msgstr "Няма нищо в кошчето"
 
-#: public/modules/shortcode/shortcode.php:91
+#: public/modules/shortcode/shortcode.php:93
 msgid "Your current state:"
 msgstr "Текущото ви състояние:"
 
-#: public/modules/shortcode/shortcode.php:96
-msgid "Consent Accepted. "
+#: public/modules/shortcode/shortcode.php:98
+msgid "Consent Accepted."
 msgstr "Прието е съгласие."
 
-#: public/modules/shortcode/shortcode.php:99
+#: public/modules/shortcode/shortcode.php:101
 msgid "Consent rejected."
 msgstr "Съгласие се отхвърля."
 
-#: public/modules/shortcode/shortcode.php:103
+#: public/modules/shortcode/shortcode.php:105
 msgid "No consent given."
 msgstr "Не е дадено съгласие."
 
-#: public/modules/shortcode/shortcode.php:105
+#: public/modules/shortcode/shortcode.php:107
 msgid "Manage your consent."
 msgstr "Управлявайте вашето съгласие."
 
-#: public/modules/shortcode/shortcode.php:142
+#: public/modules/shortcode/shortcode.php:144
 msgid "Delete Cookies"
 msgstr "Изтриване на бисквитките"
 
-#: public/modules/shortcode/shortcode.php:178
+#: public/modules/shortcode/shortcode.php:180
 msgid "No records found"
-msgstr "не са намерени записи"
+msgstr "Hе са намерени записи"
 
-#: public/modules/shortcode/shortcode.php:199
+#: public/modules/shortcode/shortcode.php:201
 msgid "Type"
 msgstr "Тип"
 
-#: public/modules/shortcode/shortcode.php:203
+#: public/modules/shortcode/shortcode.php:205
 msgid "Duration"
-msgstr "продължителност"
+msgstr "Продължителност"
 
-#~ msgid "General"
-#~ msgstr "Основни"
+#: public/views/cookie-law-info_popup_content.php:4
+msgid "Always Enabled"
+msgstr "Винаги е активирано"
 
-#~ msgid "Customise Cookie Bar"
-#~ msgstr "Персонализирайте бисквитка Бар"
+#: public/views/cookie-law-info_popup_content.php:5
+msgid "Enabled"
+msgstr "Enabled"
 
-#~ msgid "Customise Buttons"
-#~ msgstr "Персонализиране на бутоните"
+#: public/views/cookie-law-info_popup_content.php:6
+msgid "Disabled"
+msgstr "Xора с увреждания"
 
-#~ msgid "Advanced"
-#~ msgstr "Напреднал"
+#: public/views/cookie-law-info_popup_content.php:7
+msgid "Show more"
+msgstr "Покажи повече"
+
+#: public/views/cookie-law-info_popup_content.php:7
+msgid "Show less"
+msgstr "Показване на по-малко"
 
 #~ msgid "Message Bar"
 #~ msgstr "Съобщение"
@@ -1080,9 +1266,6 @@ msgstr "продължителност"
 #~ msgid "Privacy & Cookies Policy"
 #~ msgstr "Поверителност & бисквитки на правилата"
 
-#~ msgid "Privacy Overview"
-#~ msgstr "Заглавие на общността за поверителност"
-
 #~ msgid "Priority: (Numeric - Higher the value, higher the priority)"
 #~ msgstr "Приоритет: (число - по-висока стойност, по-висока приоритетност)"
 
@@ -1172,9 +1355,6 @@ msgstr "продължителност"
 #~ msgid "Link Text"
 #~ msgstr "Текст за Препратката"
 
-#~ msgid "Link URL"
-#~ msgstr "Връзка /URL"
-
 #~ msgid "Open link in new window?"
 #~ msgstr "Да се отвори ли линка в нов прозорец?"
 
@@ -1190,17 +1370,11 @@ msgstr "продължителност"
 #~ msgid "Button Size"
 #~ msgstr "Размер на бутона"
 
-#~ msgid "Settings Button"
-#~ msgstr "Бутон за настройки"
-
 #~ msgid "Using the Shortcodes"
 #~ msgstr "Използване на кратките кодове"
 
 #~ msgid "The shortcodes are:"
 #~ msgstr "Използване на кратките кодове"
-
-#~ msgid "This is the cookie settings button rendering shortcode."
-#~ msgstr "Това е оказване shortcode бисквитка настройки бутон."
 
 #~ msgid "This prints out a nice table of cookies by category."
 #~ msgstr "Това отпечатва, хубава маса на \"бисквитки\" от категория."
@@ -1216,21 +1390,6 @@ msgstr "продължителност"
 
 #~ msgid "Licence"
 #~ msgstr "Лиценз"
-
-#~ msgid "Help Guide"
-#~ msgstr "ръководство"
-
-#~ msgid "Privacy Overview Title"
-#~ msgstr "Заглавие на общността за поверителност"
-
-#~ msgid ""
-#~ "This will be shown in the settings visible for user on consent screen."
-#~ msgstr ""
-#~ "Това ще се покаже в настройките, видими за екрана на потребител на "
-#~ "съгласие."
-
-#~ msgid "Save Settings"
-#~ msgstr "Запазване на настройките"
 
 #~ msgid "Licence Activation"
 #~ msgstr "Активиране на лиценз"
@@ -1267,9 +1426,6 @@ msgstr "продължителност"
 
 #~ msgid "Visited Date"
 #~ msgstr "Посетен дата"
-
-#~ msgid "Cookie Details"
-#~ msgstr "Подробно за бисквитката"
 
 #~ msgid "User ID"
 #~ msgstr "Потребителско ID"

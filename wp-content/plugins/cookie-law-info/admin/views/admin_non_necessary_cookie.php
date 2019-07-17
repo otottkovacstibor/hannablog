@@ -25,8 +25,8 @@ if ( ! defined( 'WPINC' ) ) {
                 <tr>
                     <td>
                         <label for="thirdparty_on_field"><?php echo __('Enable Non-necessary Cookie','cookie-law-info'); ?></label>
-                        <input type="radio" id="thirdparty_on_field_yes" name="thirdparty_on_field" class="styled" value="true" <?php echo ( filter_var($stored_options['thirdparty_on_field'], FILTER_VALIDATE_BOOLEAN) == true ) ? ' checked="checked" ' : ' '; ?> /> Yes
-                        <input type="radio" id="thirdparty_on_field_no" name="thirdparty_on_field" class="styled" value="false" <?php echo ( filter_var($stored_options['thirdparty_on_field'], FILTER_VALIDATE_BOOLEAN) == false ) ? ' checked="checked" ' : ''; ?> /> No
+                        <input type="radio" id="thirdparty_on_field_yes" name="thirdparty_on_field" class="styled" value="true" <?php echo ( filter_var($stored_options['thirdparty_on_field'], FILTER_VALIDATE_BOOLEAN) == true ) ? ' checked="checked" ' : ' '; ?> /><?php echo __('Yes','cookie-law-info');?>
+                        <input type="radio" id="thirdparty_on_field_no" name="thirdparty_on_field" class="styled" value="false" <?php echo ( filter_var($stored_options['thirdparty_on_field'], FILTER_VALIDATE_BOOLEAN) == false ) ? ' checked="checked" ' : ''; ?> /><?php echo __('No','cookie-law-info');?>
                     </td>
                 </tr>
                 <tr>

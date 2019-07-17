@@ -41,7 +41,8 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
 
             </div>
             <?php  
-            foreach ($this->cookie_categories as $key) 
+            $cookie_categories = self::get_cookie_categories();
+            foreach ($cookie_categories as $key => $value) 
             {   
                 $checked = false;
                 $cli_checked='';
@@ -64,17 +65,17 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                 else
                 {
                     $cli_switch=
-                    '<label class="cli-switch">
-                        <input type="checkbox" class="cli-user-preference-checkbox" data-id="checkbox-'.$key.'"'.$cli_checked.' />
-                        <span class="cli-slider" data-cli-enable="'.$cli_enable_text.'" data-cli-disable="'.$cli_disable_text.'"></span>                           
-                    </label>';
+                    '<div class="cli-switch">
+                        <input type="checkbox" id="checkbox-'.$key.'" class="cli-user-preference-checkbox" data-id="checkbox-'.$key.'" '.$cli_checked.' />
+                        <label for="checkbox-'.$key.'" class="cli-slider" data-cli-enable="'.$cli_enable_text.'" data-cli-disable="'.$cli_disable_text.'">'.$value.'</label>
+                    </div>';
                     $cli_cat_content=$third_party_cookie_options['thirdparty_description'];
                 }
             ?>
                 <div class="cli-tab-section">
                 <div class="cli-tab-header">
                     <a class="cli-nav-link cli-settings-mobile" data-target="<?php echo $key; ?>" data-toggle="cli-toggle-tab" >
-                        <?php echo $key ?> 
+                        <?php echo $value ?> 
                     </a>
                 <?php echo $cli_switch; ?>
                 </div>

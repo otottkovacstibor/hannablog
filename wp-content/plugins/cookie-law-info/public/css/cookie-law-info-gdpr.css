@@ -804,6 +804,7 @@ background: #ffffff;
 }
 .cli-switch .cli-slider {
     border-radius: 34px;
+    font-size:0;
 }
 .cli-switch .cli-slider:before {
     border-radius: 50%;

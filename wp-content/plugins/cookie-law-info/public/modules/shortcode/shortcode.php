@@ -95,14 +95,14 @@ class Cookie_Law_Info_Shortcode {
         {
             if($_COOKIE["viewed_cookie_policy"]=='yes')
             {
-                $html.=__('Consent Accepted. ','cookie-law-info');
+                $html.=' '.__('Consent Accepted.','cookie-law-info');
             }else
             {
-                $html.=__('Consent rejected.','cookie-law-info');
+                $html.=' '.__('Consent rejected.','cookie-law-info');
             }
         }else //no conset given
         {
-            $html.=__('No consent given.','cookie-law-info');
+            $html.=' '.__('No consent given.','cookie-law-info');
         }
         $html.=' <a class="cli_manage_current_consent" style="cursor:pointer;">'.__('Manage your consent.','cookie-law-info').'</a> </div>';
         return $html;

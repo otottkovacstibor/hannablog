@@ -52,10 +52,6 @@ class Cookie_Law_Info_Public {
 		'shortcode',
 		'visitor-report', //vistor report 
 	);
-	public $cookie_categories = array(
-		'necessary',
-		'non-necessary'
-	);
 	public static $existing_modules=array();
 
 	/**
@@ -72,7 +68,14 @@ class Cookie_Law_Info_Public {
 		$this->plugin_obj = $plugin_obj;
 		register_activation_hook(CLI_PLUGIN_FILENAME,array($this,'activator'));
 	}
-
+	public static function get_cookie_categories()
+	{
+		$cookie_categories = array(
+			'necessary'=>__('Necessary','cookie-law-info'),
+			'non-necessary' => __('Non-necessary','cookie-law-info'),
+		);
+		return $cookie_categories;
+	}
 	/**
 	* Set Default Privacy overview and Cookie Sensitivity Contents
 	*
@@ -119,12 +122,13 @@ class Cookie_Law_Info_Public {
 	* @since 1.7.7
 	*/
 	private function cli_set_category_cookies()
-	{
+	{	
+		$cookie_categories = self::get_cookie_categories();
 		$the_options = Cookie_Law_Info::get_settings();
 		if ( $the_options['is_on'] == true )
 		{	
 			
-			foreach ($this->cookie_categories as $key) 
+			foreach ($cookie_categories as $key) 
 			{ 
 				if(empty($_COOKIE["cookielawinfo-checkbox-$key"])) 
 				{	

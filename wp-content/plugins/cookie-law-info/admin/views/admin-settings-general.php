@@ -45,8 +45,8 @@ if ( ! defined( 'WPINC' ) ) {
 				    <th scope="row"><label for="widget_position_field"><?php _e('Position', 'cookie-law-info'); ?></label></th>
 				    <td>
 				        <select name="widget_position_field" id="widget_position_field" class="vvv_combobox">
-			                <option value="left">Left</option>
-			                <option value="right">Right</option>
+			                <option value="left"><?php echo __('Left','cookie-law-info')?></option>
+			                <option value="right"><?php echo __('Right','cookie-law-info')?></option>
 			            </select>
 				    </td>
 				</tr>
