@@ -97,16 +97,6 @@
 				}
 			}
 
-			//WPML language switch
-			//https://wpml.org/forums/topic/wpml-language-switch-wp-fastest-cache-issue/
-			$language_negotiation_type = apply_filters('wpml_setting', false, 'language_negotiation_type');
-			if ($this->isPluginActive('sitepress-multilingual-cms/sitepress.php') && 2 == $language_negotiation_type){
-			    $current_language = apply_filters('wpml_current_language', false);
-			    
-			    $this->cacheFilePath = str_replace('/cache/all/', '/cache/all/'.$current_language.'/', $this->cacheFilePath);
-			    $this->cacheFilePath = str_replace('/cache/wpfc-mobile-cache/', '/cache/wpfc-mobile-cache/'.$current_language.'/', $this->cacheFilePath);
-			}
-
 
 
 			$this->cacheFilePath = $this->cacheFilePath ? rtrim($this->cacheFilePath, "/")."/" : "";
@@ -140,6 +130,11 @@
 			// to decode path if it is not utf-8
 			if($this->cacheFilePath){
 				$this->cacheFilePath = urldecode($this->cacheFilePath);
+			}
+
+			// for security
+			if(preg_match("/\.{2,}/", $this->cacheFilePath)){
+				$this->cacheFilePath = false;
 			}
 		}
 
@@ -481,11 +476,11 @@
 						if(preg_match("/utm_(source|medium|campaign|content|term)/i", $request_url)){
 							return true;
 						}
-					}else if($buffer && isset($value->prefix) && $value->prefix && ($value->type == "page")){
+					}else if(isset($value->prefix) && $value->prefix && ($value->type == "page")){
 						$value->content = trim($value->content);
 						$value->content = trim($value->content, "/");
 
-						if(preg_match("/^(homepage|category|tag|post|page|archive|attachment)$/", $value->prefix)){
+						if($buffer && preg_match("/^(homepage|category|tag|post|page|archive|attachment)$/", $value->prefix)){
 							if(preg_match('/<\!--WPFC_PAGE_TYPE_'.$value->prefix.'-->/i', $buffer)){
 								return true;
 							} 

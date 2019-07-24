@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.9.5
+Version: 0.8.9.6
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -245,6 +245,11 @@ GNU General Public License for more details.
 					}
 				}else{
 					if(preg_match("/wpfc-minified\/([^\/]+)\/([^\/]+)/", $this->current_url(), $path)){
+						// for security
+						if(preg_match("/\.{2,}/", $this->current_url())){
+							die("May be Directory Traversal Attack");
+						}
+
 						if($sources = @scandir(WPFC_WP_CONTENT_DIR."/cache/wpfc-minified/".$path[1], 1)){
 							if(isset($sources[0])){
 								// $exist_url = str_replace($path[2], $sources[0], $this->current_url());
@@ -765,9 +770,11 @@ GNU General Public License for more details.
 			*/
 			
 			if($path){
-				if($current_language = apply_filters('wpml_current_language', false)){
-					//https://wpml.org/forums/topic/wpml-language-switch-wp-fastest-cache-issue/
-					$path = preg_replace("/(\/cache\/wpfc-widget-cache\/)(.+\.html)$/", "$1/$current_language-$2", $path);
+				//WPML language switch
+				//https://wpml.org/forums/topic/wpml-language-switch-wp-fastest-cache-issue/
+				$language_negotiation_type = apply_filters('wpml_setting', false, 'language_negotiation_type');
+				if(($language_negotiation_type == 2) && $this->isPluginActive('sitepress-multilingual-cms/sitepress.php')){
+				    $path = preg_replace("/\/cache\/(all|wpfc-mobile-cache)/", "/cache/".$_SERVER['HTTP_HOST']."/$1", $path);
 				}
 
 				if(is_multisite()){
@@ -925,31 +932,40 @@ GNU General Public License for more details.
 				$permalink = preg_replace("/__trashed\/(\d+)$/", "/$1", $permalink);
 
 				if(preg_match("/https?:\/\/[^\/]+\/(.+)/", $permalink, $out)){
+					$path = $this->getWpContentDir("/cache/all/").$out[1];
+					$mobile_path = $this->getWpContentDir("/cache/wpfc-mobile-cache/").$out[1];
 
-					//WPML language switch
-					//https://wpml.org/forums/topic/wpml-language-switch-wp-fastest-cache-issue/
-					if($this->isPluginActive('sitepress-multilingual-cms/sitepress.php')){
-						$current_language = apply_filters('wpml_current_language', false);
-
-						$path = $this->getWpContentDir("/cache/all/").$current_language."/".$out[1];
-						$mobile_path = $this->getWpContentDir("/cache/wpfc-mobile-cache/").$current_language."/".$out[1];
-					}else{
-						$path = $this->getWpContentDir("/cache/all/").$out[1];
-						$mobile_path = $this->getWpContentDir("/cache/wpfc-mobile-cache/").$out[1];
+					if($this->isPluginActive("wp-fastest-cache-premium/wpFastestCachePremium.php")){
+						include_once $this->get_premium_path("logs.php");
+						$log = new WpFastestCacheLogs("delete");
+						$log->action();
 					}
 
-					if(is_dir($path)){
-						if($this->isPluginActive("wp-fastest-cache-premium/wpFastestCachePremium.php")){
-							include_once $this->get_premium_path("logs.php");
-							$log = new WpFastestCacheLogs("delete");
-							$log->action();
-						}
+					$files = array();
 
-						$this->rm_folder_recursively($path);
+					if(is_dir($path)){
+						array_push($files, $path);
 					}
 
 					if(is_dir($mobile_path)){
-						$this->rm_folder_recursively($mobile_path);
+						array_push($files, $mobile_path);
+					}
+
+					if(defined('WPFC_CACHE_QUERYSTRING') && WPFC_CACHE_QUERYSTRING){
+						$files_with_query_string = glob($path."\?*");
+						$mobile_files_with_query_string = glob($mobile_path."\?*");
+
+						if(is_array($files_with_query_string) && (count($files_with_query_string) > 0)){
+							$files = array_merge($files, $files_with_query_string);
+						}
+
+						if(is_array($mobile_files_with_query_string) && (count($mobile_files_with_query_string) > 0)){
+							$files = array_merge($files, $mobile_files_with_query_string);
+						}
+					}
+
+					foreach((array)$files as $file){
+						$this->rm_folder_recursively($file);
 					}
 				}
 

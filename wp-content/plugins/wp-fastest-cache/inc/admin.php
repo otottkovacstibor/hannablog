@@ -683,6 +683,15 @@
 			$trailing_slash_rule = "";
 			$consent_cookie = "";
 
+			$language_negotiation_type = apply_filters('wpml_setting', false, 'language_negotiation_type');
+			if(($language_negotiation_type == 2) && $this->isPluginActive('sitepress-multilingual-cms/sitepress.php')){
+				$cache_path = '/cache/all/%{HTTP_HOST}/';
+				$disable_condition = true;
+			}else{
+				$cache_path = '/cache/all/';
+				$disable_condition = false;
+			}
+
 			if(isset($_POST["wpFastestCacheMobile"]) && $_POST["wpFastestCacheMobile"] == "on"){
 				$mobile = "RewriteCond %{HTTP_USER_AGENT} !^.*(".$this->getMobileUserAgents().").*$ [NC]"."\n";
 			}
@@ -725,17 +734,17 @@
 			
 
 			if(ABSPATH == "//"){
-				$data = $data."RewriteCond %{DOCUMENT_ROOT}/".WPFC_WP_CONTENT_BASENAME."/cache/all/$1/index.html -f"."\n";
+				$data = $data."RewriteCond %{DOCUMENT_ROOT}/".WPFC_WP_CONTENT_BASENAME.$cache_path."$1/index.html -f"."\n";
 			}else{
 				//WARNING: If you change the following lines, you need to update webp as well
-				$data = $data."RewriteCond %{DOCUMENT_ROOT}/".WPFC_WP_CONTENT_BASENAME."/cache/all/$1/index.html -f [or]"."\n";
+				$data = $data."RewriteCond %{DOCUMENT_ROOT}/".WPFC_WP_CONTENT_BASENAME.$cache_path."$1/index.html -f [or]"."\n";
 				// to escape spaces
 				$tmp_WPFC_WP_CONTENT_DIR = str_replace(" ", "\ ", WPFC_WP_CONTENT_DIR);
 
-				$data = $data."RewriteCond ".$tmp_WPFC_WP_CONTENT_DIR."/cache/all/".$this->getRewriteBase(true)."$1/index.html -f"."\n";
+				$data = $data."RewriteCond ".$tmp_WPFC_WP_CONTENT_DIR.$cache_path.$this->getRewriteBase(true)."$1/index.html -f"."\n";
 			}
 
-			$data = $data.'RewriteRule ^(.*) "/'.$this->getRewriteBase().WPFC_WP_CONTENT_BASENAME.'/cache/all/'.$this->getRewriteBase(true).'$1/index.html" [L]'."\n";
+			$data = $data.'RewriteRule ^(.*) "/'.$this->getRewriteBase().WPFC_WP_CONTENT_BASENAME.$cache_path.$this->getRewriteBase(true).'$1/index.html" [L]'."\n";
 			
 			//RewriteRule !/  "/wp-content/cache/all/index.html" [L]
 
