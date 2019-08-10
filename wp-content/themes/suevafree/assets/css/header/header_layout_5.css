@@ -193,6 +193,10 @@ body.logged-in.customizer_active.overlay-active #sidebar-wrapper #scroll-sidebar
 	right:0;
 }
 
+#sidebar-wrapper #scroll-sidebar .wrap {
+	z-index:999;
+}
+
 #sidebar-wrapper #scroll-sidebar .post-article {
 	background:#2D3032 ; 
 	border-bottom:solid 1px #444649;

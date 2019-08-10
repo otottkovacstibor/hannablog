@@ -17,6 +17,8 @@ if ( function_exists('wp_body_open') ) {
 	wp_body_open();
 }
 
-do_action( 'suevafree_' . esc_attr(suevafree_setting( 'suevafree_header_layout', 'header_layout_1')), 'one-page-menu', 'one-page-menu' );
-
 ?>
+
+<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'suevafree' ); ?></a>
+
+<?php do_action( 'suevafree_' . esc_attr(suevafree_setting( 'suevafree_header_layout', 'header_layout_1')), 'one-page-menu', 'one-page-menu' ); ?>

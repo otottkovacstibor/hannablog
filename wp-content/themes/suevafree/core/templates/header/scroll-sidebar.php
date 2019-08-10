@@ -16,51 +16,55 @@ if (!function_exists('suevafree_scroll_sidebar_function')) {
             <div id="scroll-sidebar" class="clearfix">
             
                 <div class="navigation"><i class="fa fa-times open"></i></div>	
-        
-                <div class="post-article widget-box">
+        		
+                <div class="wrap">
                 
-                    <h3 class="title"><?php esc_html_e( 'Menu','suevafree'); ?></h3>
+                    <div class="post-article widget-box">
                     
-                    <nav class="suevafree-menu suevafree-mobile-menu suevafree-vertical-menu">
-
-                        <?php
+                        <h3 class="title"><?php esc_html_e( 'Menu','suevafree'); ?></h3>
                         
-                            wp_nav_menu( 
+                        <nav class="suevafree-menu suevafree-mobile-menu suevafree-vertical-menu">
+    
+                            <?php
                             
-                                array(
-									'theme_location' => $theme_location,
-									'menu_class' => $menu_class,
-                                    'container' => 'false',
-                                    'menu_id' => 'widgetmenus',
-                                    'depth' => 3
-                                )
-                            
-                            ); 
-                        
-                        ?>
-                        
-                    </nav>
-                
-                </div>
-                
-                <div class="post-article">
-        			
-                    <div class="copyright">
-                            
-						<?php do_action('suevafree_copyright'); ?>
+                                wp_nav_menu( 
                                 
+                                    array(
+                                        'theme_location' => $theme_location,
+                                        'menu_class' => $menu_class,
+                                        'container' => 'false',
+                                        'menu_id' => 'widgetmenus',
+                                        'depth' => 3
+                                    )
+                                
+                                ); 
+                            
+                            ?>
+                            
+                        </nav>
+                    
                     </div>
-
-					<?php if ( suevafree_setting('suevafree_header_social_buttons') && suevafree_setting('suevafree_header_social_buttons') == "on" ) : ?>
-
-                        <div class="social-buttons">
+                    
+                    <div class="post-article">
+                        
+                        <div class="copyright">
                                 
-                            <?php do_action( 'suevafree_socials' ); ?>
-                                
+                            <?php do_action('suevafree_copyright'); ?>
+                                    
                         </div>
     
-					<?php endif; ?>
-
+                        <?php if ( suevafree_setting('suevafree_header_social_buttons') && suevafree_setting('suevafree_header_social_buttons') == "on" ) : ?>
+    
+                            <div class="social-buttons">
+                                    
+                                <?php do_action( 'suevafree_socials' ); ?>
+                                    
+                            </div>
+        
+                        <?php endif; ?>
+    
+                    </div>
+                
                 </div>
                 
             </div>

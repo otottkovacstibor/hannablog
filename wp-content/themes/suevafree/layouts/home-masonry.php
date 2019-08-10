@@ -1,4 +1,4 @@
-<div class="container masonry-container">
+<div id="content" class="container masonry-container">
 	
 	<?php 
 	

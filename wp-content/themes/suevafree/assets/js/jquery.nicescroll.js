@@ -28,7 +28,6 @@
   // globals
   var domfocus = false,
     mousefocus = false,
-    tabindexcounter = 0,
     ascrailcounter = 2000,
     globalmaxzindex = 0;
 
@@ -130,7 +129,8 @@
     preventmultitouchscrolling: true,
     disablemutationobserver: false,
     enableobserver: true,
-    scrollbarid: false
+    scrollbarid: false,
+    scrollCLass: false
   };
 
   var browserdetected = false;
@@ -876,6 +876,10 @@
         rail.attr('id', self.id);
         rail.addClass('nicescroll-rails nicescroll-rails-vr');
 
+        if (opt.scrollCLass) {
+            rail.addClass(opt.scrollCLass);
+        }
+
         var v, a, kp = ["left", "right", "top", "bottom"];  //**
         for (var n in kp) {
           a = kp[n];
@@ -968,6 +972,10 @@
           railh = $(_doc.createElement('div'));
           railh.attr('id', self.id + '-hr');
           railh.addClass('nicescroll-rails nicescroll-rails-hr');
+          if (opt.scrollCLass) {
+              railh.addClass(opt.scrollCLass);
+          }
+
           railh.height = Math.max(parseFloat(opt.cursorwidth), cursor.outerHeight());
           railh.css({
             height: railh.height + "px",
@@ -1819,9 +1827,6 @@
         }
 
         if (!self.ispage && !cap.cantouch && !(/HTML|^BODY/.test(self.win[0].nodeName))) {
-          if (!self.win.attr("tabindex")) self.win.attr({
-            "tabindex": ++tabindexcounter
-          });
 
           self.bind(self.win, "focus", function (e) {  // better using native events
             domfocus = (self.getTarget(e)).id || self.getTarget(e) || false;
@@ -2900,7 +2905,7 @@
       } else {
         hasparentscrollingphase = false;
         e.stopImmediatePropagation();
-        return e.preventDefault();
+        return e.currentTarget.blur();
       }
 
     }

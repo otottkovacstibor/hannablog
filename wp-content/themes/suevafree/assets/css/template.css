@@ -14,6 +14,10 @@ body {
     font-family: 'Raleway',Verdana, Geneva, sans-serif;
 }
 
+body.overlay-active {
+	overflow:hidden !important;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -201,11 +205,20 @@ video {
 }
 
 .screen-reader-text {
+	border: 0;
 	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
+	clip-path: inset(50%);
 	height: 1px;
-	width: 1px;
+	margin: -1px;
 	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+	-webkit-transition: none;
+	-moz-transition: none; 
+	-o-transition: none;
+	transition: none;
 }
 
 .screen-reader-text:focus {
@@ -213,19 +226,23 @@ video {
 	border-radius: 3px;
 	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
+	clip-path: none;
 	color: #21759b;
 	display: block;
 	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
+    font-weight: 600;
 	height: auto;
 	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
+    line-height: normal;
+    padding: 15px 23px 14px;
 	text-decoration: none;
 	top: 5px;
 	width: auto;
 	z-index: 100000;
+}
+
+#content[tabindex="-1"]:focus {
+	outline: 0;
 }
 
 /* ===============================================
@@ -1801,7 +1818,7 @@ img.aligncenter {
 }
 
 /* ===============================================
-   WORDPRESS GALLERY SHORTCODE
+   Gallery shortcode
    =============================================== */
 
 .gallery {
@@ -2558,6 +2575,14 @@ body.disable_box_shadow .suevafree-pagination span {
 
 	.title-right-align .entry-info span span {
 		padding-right: 0;
+	}
+
+
+	.masonry-item {
+		position: relative !important;
+		left: 0 !important;
+		top: 0 !important;
+		transform:none !important;
 	}
 
 }

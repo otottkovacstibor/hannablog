@@ -3,7 +3,7 @@ Contributors: alexvtn
 Tags: blog, custom-background, custom-colors, custom-header, custom-logo, custom-menu, e-commerce, featured-images, flexible-header, footer-widgets, post-formats, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns, three-columns, grid-layout, photography
 Requires at least: 4.0
 Tested up to: 5.2.2
-Stable tag: 3.7.5
+Stable tag: 3.7.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,12 @@ SuevaFree WordPress Theme, Copyright 2019 ThemeinProgress.
 SuevaFree is distributed under the terms of the GPLv2 or later
 
 == Changelog ==
+
+= 3.7.6 =
+Release date - August, 06 - 2019
+
+* Added - Skip links button
+* Edit - Code optimized
 
 = 3.7.5 =
 Release date - July, 05 - 2019

@@ -734,7 +734,7 @@ if (!function_exists('suevafree_customize_panel_function')) {
 			array( 
 
 				'title' => esc_html__( 'Alignment', 'suevafree'),
-				'description' => esc_html__( '', 'suevafree'),
+				'description' => esc_html__( 'Alignment', 'suevafree'),
 				'type' => 'section',
 				'id' => 'align_section',
 				'panel' => 'general_panel',

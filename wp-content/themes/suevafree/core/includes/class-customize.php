@@ -48,7 +48,11 @@ if( !class_exists( 'suevafree_customize' ) ) {
 			wp_enqueue_script( 'suevafree-on_off', $file_dir . 'js/on_off.js', array('jquery'),'1.0.0',TRUE ); 
 			wp_enqueue_script( "jquery-ui-core", array('jquery'));
 			wp_enqueue_script( "jquery-ui-tabs", array('jquery'));
-		  
+
+			if ( !get_option( 'suevafree-dismissed-notice') ) {
+				wp_enqueue_style ( 'suevafree-notice',  $file_dir . 'css/notice.css', array(), '1.0.0' ); 
+			}
+
 		}
 		
 		public function customize_scripts() {
@@ -454,7 +458,6 @@ if ( class_exists( 'WP_Customize_Control' ) ) {
                     <li><a class="button" href="<?php echo esc_url( 'https://wordpress.org/support/view/theme-reviews/'.get_stylesheet().'#postform' ); ?>" title="<?php esc_attr_e('Rate this Theme','suevafree');?>" target="_blank"><?php esc_html_e('Rate this Theme','suevafree');?></a></li>
                     <li><a class="button" href="<?php echo esc_url( 'https://www.facebook.com/WpInProgress' ); ?>" title="<?php esc_attr_e('Like on Facebook','suevafree');?>" target="_blank"><?php esc_html_e('Like on Facebook','suevafree');?></a></li>
                     <li><a class="button" href="<?php echo esc_url( 'http://eepurl.com/SknoL' ); ?>" title="<?php esc_attr_e('Subscribe our newsletter','suevafree');?>" target="_blank"><?php esc_html_e('Subscribe our newsletter','suevafree');?></a></li>
-                    <li><a class="button" href="<?php echo esc_url( 'https://wordpress.org/themes/author/alexvtn/' ); ?>" title="<?php esc_attr_e('Download our free WordPress themes','suevafree');?>" target="_blank"><?php esc_html_e('Download our free WordPress themes','suevafree');?></a></li>
                 
                 </ul>
     

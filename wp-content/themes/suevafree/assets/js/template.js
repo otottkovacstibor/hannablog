@@ -51,15 +51,51 @@ jQuery.noConflict()(function($){
 	$( window ).resize(suevafree_header);
 
 /* ===============================================
+   BODY NICESCROLL /
+   =============================================== */
+
+	function suevafree_bodynicescroll() {
+	
+		$("body.nicescroll").niceScroll({
+			cursorwidth: "12px",
+			background: "#fafafa",
+			cursorcolor: "#c1c1c1",
+			scrollspeed:100,
+			zindex:999999,
+			railpadding: {
+				top: 0,
+				left: 0,
+				bottom: 0,
+				right: 0
+			}
+		});
+	
+	}
+
+/* ===============================================
    HEADER /
    =============================================== */
 
 	$(window).load(function() {
 
-		$('body.nicescroll').niceScroll({ cursorcolor: '#c1c1c1', cursorwidth:'12px', background:'#fafafa', scrollspeed:100, zindex:999999 });
-	
-		$("#scroll-sidebar").niceScroll({smoothscroll: false});
-		$("#scroll-sidebar").getNiceScroll().hide();
+		suevafree_bodynicescroll();
+		
+		$("#scroll-sidebar").niceScroll(".wrap", {
+			cursorwidth: "5px",
+			cursorborder: "1px solid #333",
+			railpadding: {
+				top: 0,
+				left: 0,
+				bottom: 0,
+				right: 0
+			}
+		});
+
+		$('.suevafree-vertical-menu ul > li .sf-sub-indicator, .suevafree-vertical-menu ul > li > ul > li .sf-sub-indicator ').click(function(){
+			setTimeout(function(){
+			  $("#scroll-sidebar").getNiceScroll().resize();
+			}, 500);
+		});
 
 		var pw = $(window).width();
 		
@@ -68,6 +104,7 @@ jQuery.noConflict()(function($){
 			$('#overlay-body').fadeIn(600).addClass('visible');
 			$('body').addClass('overlay-active');
 			$('#wrapper').addClass('open-sidebar');
+			$("body.nicescroll").getNiceScroll().remove();
 
 		});
 
@@ -78,7 +115,8 @@ jQuery.noConflict()(function($){
 				$('#overlay-body').fadeOut(600);
 				$('body').removeClass('overlay-active');
 				$('#wrapper').removeClass('open-sidebar');
-		
+				suevafree_bodynicescroll();
+
 			});
 
 			$("#overlay-body").swipe({
@@ -88,7 +126,8 @@ jQuery.noConflict()(function($){
 					$('#overlay-body').fadeOut(600);
 					$('body').removeClass('overlay-active');
 					$('#wrapper').removeClass('open-sidebar');
-	
+					suevafree_bodynicescroll();
+				
 				},
 	
 				threshold:0
@@ -102,7 +141,8 @@ jQuery.noConflict()(function($){
 				$('#overlay-body').fadeOut(600);
 				$('body').removeClass('overlay-active');
 				$('#wrapper').removeClass('open-sidebar');
-		
+				suevafree_bodynicescroll();
+
 			});
 
 		}
@@ -130,8 +170,22 @@ jQuery.noConflict()(function($){
 	
 	$(window).load(function() {
 
-		$("#mobile-scroll").niceScroll({smoothscroll: false});
-		$("#mobile-scroll").getNiceScroll().hide();
+		$("#mobile-scroll").niceScroll(".mobilemenu-box", {
+			cursorwidth: "5px",
+			cursorborder: "1px solid #333",
+			railpadding: {
+				top: 0,
+				left: 0,
+				bottom: 0,
+				right: 0
+			}
+		});
+
+		$('.suevafree-vertical-menu ul > li .sf-sub-indicator, .suevafree-vertical-menu ul > li > ul > li .sf-sub-indicator ').click(function(){
+			setTimeout(function(){
+			  $("#mobile-scroll").getNiceScroll().resize();
+			}, 500);
+		});
 
 		var pw = $(window).width();
 		
@@ -140,6 +194,7 @@ jQuery.noConflict()(function($){
 			$('#overlay-body').fadeIn(600).addClass('visible');
 			$('body').addClass('overlay-active');
 			$('#wrapper').addClass('open-sidebar');
+			$("body.nicescroll").getNiceScroll().remove();
 
 		});
 
@@ -150,7 +205,8 @@ jQuery.noConflict()(function($){
 				$('#overlay-body').fadeOut(600);
 				$('body').removeClass('overlay-active');
 				$('#wrapper').removeClass('open-sidebar');
-		
+				suevafree_bodynicescroll();
+
 			});
 
 			$("#overlay-body").swipe({
@@ -160,7 +216,8 @@ jQuery.noConflict()(function($){
 					$('#overlay-body').fadeOut(600);
 					$('body').removeClass('overlay-active');
 					$('#wrapper').removeClass('open-sidebar');
-	
+					suevafree_bodynicescroll();
+
 				},
 	
 				threshold:0
@@ -173,6 +230,7 @@ jQuery.noConflict()(function($){
 				$('#overlay-body').fadeOut(600);
 				$('body').removeClass('overlay-active');
 				$('#wrapper').removeClass('open-sidebar');
+				suevafree_bodynicescroll();
 			});
 
 		}
@@ -283,12 +341,9 @@ jQuery.noConflict()(function($){
 	$(window).scroll(function() {
 		
 		if( $(window).scrollTop() > 400 ) {
-			
-				$('#back-to-top').fadeIn(500);
-			
-			} else {
-			
-				$('#back-to-top').fadeOut(500);
+			$('#back-to-top').fadeIn(500);
+		} else {
+			$('#back-to-top').fadeOut(500);
 		}
 		
 	});
@@ -304,26 +359,14 @@ jQuery.noConflict()(function($){
 
 	function suevafree_masonry() {
 
-		if ( $(window).width() >= 992 ) {
+		$('.masonry').imagesLoaded(function () {
 
-			$('.masonry').imagesLoaded(function () {
-
-				$('.masonry').masonry({
-					itemSelector: '.masonry-item',
-					isAnimated: true
-				});
-
-			});
-	
-		} else {
-
-			$('.masonry').imagesLoaded(function () {
-
-				$('.masonry').masonry( 'destroy' );
-
+			$('.masonry').masonry({
+				itemSelector: '.masonry-item',
+				isAnimated: true
 			});
 
-		}
+		});
 
 	}
 
