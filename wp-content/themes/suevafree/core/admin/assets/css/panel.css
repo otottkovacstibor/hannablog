@@ -1,3 +1,12 @@
+/*
+ * SuevaFree panel css file
+ * https://www.themeinprogress.com
+ *
+ * Copyright 2019, ThemeinProgress
+ * Licensed under MIT license
+ * https://opensource.org/licenses/mit-license.php
+ */
+
 
 /* ===============================================
    GENERALS
@@ -20,40 +29,6 @@ input[type=file]:hover ,
 input[type=file]:active ,
 input[type=file]:focus {
 	border:none !important;
-}
-
-/* ===============================================
-   tgmpa
-   =============================================== */
-
-#setting-error-tgmpa {
-	display:block;
-}
-
-.suevafree-tgmpa-message {
-	display: block; 
-	margin: 0.5em 0.5em 0 0; 
-	clear: both;
-}
-
-.suevafree-tgmpa-version {
-	float: right; 
-	padding: 0em 1.5em 0.5em 0;
-}
-
-.suevafree-tgmpa-title {
-	font-size: 23px; 
-	font-weight: 400; 
-	line-height: 29px; 
-	margin: 0; 
-	padding:9px 15px 4px 0;
-}
-
-.suevafree-update-php {
-	width: 100%; 
-	height: 98%; 
-	min-height: 850px; 
-	padding-top: 1px;
 }
 
 /* ===============================================

@@ -4,7 +4,7 @@ Donate link: https://www.webtoffee.com/plugins/
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
 Tested up to: 5.2
-Stable tag: 1.7.8
+Stable tag: 1.7.9
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -171,6 +171,12 @@ See http://cookielawinfo.com for more information on what is required.
 4. Header (with custom styles)
 
 == Changelog ==
+
+= 1.7.9 =
+
+* Fixed W3C Validation issues
+* [Bug fix] Hide non-necessary category on cookie settings popup if it is not enabled
+* [Bug fix] Translation issue with category cookies
 
 = 1.7.8 =
 
@@ -389,8 +395,8 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.7.8 =
+= 1.7.9 =
 
-* Fixed issues with translations
-* [user_consent_state] added missing space in user consent states
-* Fixed issues with web accessibility
+* Fixed W3C validation issues
+* [Bug fix] Hide non-necessary category on cookie settings popup if it is not enabled
+* [Bug fix] Translation issue with category cookies

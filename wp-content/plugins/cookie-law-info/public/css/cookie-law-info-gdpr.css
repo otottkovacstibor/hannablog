@@ -709,7 +709,7 @@ background: #ffffff;
 	z-index: 99999;
     transform: scale(0);
 	overflow: hidden;
-	outline: 0
+    outline: 0;
 }
 .cli-modal a {
 	text-decoration: none;
@@ -1108,6 +1108,7 @@ span.cli-necessary-caption {
 .cli-modal.cli-blowup {
     z-index: 999999;
     transform: scale(1);
+    
   }
   .cli-modal.cli-blowup .cli-modal-dialog {
     animation: blowUpModal 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;

@@ -49,10 +49,6 @@ if( !class_exists( 'suevafree_customize' ) ) {
 			wp_enqueue_script( "jquery-ui-core", array('jquery'));
 			wp_enqueue_script( "jquery-ui-tabs", array('jquery'));
 
-			if ( !get_option( 'suevafree-dismissed-notice') ) {
-				wp_enqueue_style ( 'suevafree-notice',  $file_dir . 'css/notice.css', array(), '1.0.0' ); 
-			}
-
 		}
 		
 		public function customize_scripts() {

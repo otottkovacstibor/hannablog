@@ -18,8 +18,11 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                 $privacy_overview_content=nl2br($privacy_overview_content); 
                 $privacy_overview_content = do_shortcode(stripslashes($privacy_overview_content));
                 $content_length=strlen(strip_tags($privacy_overview_content));
-                ?>
-                <h4><?php echo $overview_title; ?></h4>                                         
+                $overview_title = trim($overview_title);
+                if(isset($overview_title) === true && $overview_title !== '') {
+                    echo "<h4>".$overview_title."</h4>";    
+                }
+                ?>                                   
                 <div class="cli-privacy-content">
                     <p class="cli-privacy-content-text"><?php echo $privacy_overview_content;?></p>
                 </div>
@@ -71,21 +74,30 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                     </div>';
                     $cli_cat_content=$third_party_cookie_options['thirdparty_description'];
                 }
-            ?>
+            ?>  
+           
+            <?php 
+            $wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$third_party_cookie_options['thirdparty_on_field']);
+            if($key === "non-necessary" && $wt_cli_is_thirdparty_enabled == false)
+            {
+                echo '';
+            }
+            else
+            {?>
                 <div class="cli-tab-section">
-                <div class="cli-tab-header">
-                    <a class="cli-nav-link cli-settings-mobile" data-target="<?php echo $key; ?>" data-toggle="cli-toggle-tab" >
-                        <?php echo $value ?> 
-                    </a>
-                <?php echo $cli_switch; ?>
-                </div>
-                <div class="cli-tab-content">
-                    <div class="cli-tab-pane cli-fade" data-id="<?php echo $key; ?>">
-                        <p><?php echo do_shortcode($cli_cat_content, 'cookielawinfo-category' ); ?></p>
+                    <div class="cli-tab-header">
+                        <a class="cli-nav-link cli-settings-mobile" data-target="<?php echo $key; ?>" data-toggle="cli-toggle-tab" >
+                            <?php echo $value ?> 
+                        </a>
+                    <?php echo $cli_switch; ?>
+                    </div>
+                    <div class="cli-tab-content">
+                        <div class="cli-tab-pane cli-fade" data-id="<?php echo $key; ?>">
+                            <p><?php echo do_shortcode($cli_cat_content, 'cookielawinfo-category' ); ?></p>
+                        </div>
                     </div>
                 </div>
-                </div>
-            <?php  } ?>
+            <?php }  } ?>
            
         </div>
     </div> 

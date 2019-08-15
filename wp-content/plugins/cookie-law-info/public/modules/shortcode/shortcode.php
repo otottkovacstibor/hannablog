@@ -190,6 +190,11 @@ class Cookie_Law_Info_Shortcode {
             'order' => 'ASC',
             'orderby' => 'title'
         );
+        global $sitepress;
+        if(function_exists('icl_object_id') && $sitepress) //wpml enabled
+        {
+            $args['suppress_filters']=false;
+        }
         $posts = get_posts($args);
         $ret = '<table class="cookielawinfo-row-cat-table cookielawinfo-' . $style . '"><thead><tr>';
         if(in_array('cookie',$columns))

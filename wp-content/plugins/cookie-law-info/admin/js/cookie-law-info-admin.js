@@ -73,32 +73,6 @@
 			var elm=$(this).children('li').eq(0);
 			elm.click();
 		});
-		$('.cookie-sensitivity-form').submit(function(e){
-			e.preventDefault();
-			var data=$(this).serialize();
-			var url=$(this).attr('action');
-			var spinner=$(this).find('.spinner');
-			var submit_btn=$(this).find('input[type="submit"]');
-			spinner.css({'visibility':'visible'});
-			submit_btn.css({'opacity':'.5','cursor':'default'}).prop('disabled',true);
-			$.ajax({
-				url:url,
-				type:'POST',
-				data:data,
-				success:function(data)
-				{
-					spinner.css({'visibility':'hidden'});
-					submit_btn.css({'opacity':'1','cursor':'pointer'}).prop('disabled',false);
-					cli_notify_msg.success(cli_success_message);
-				},
-				error:function () 
-				{
-					spinner.css({'visibility':'hidden'});
-					submit_btn.css({'opacity':'1','cursor':'pointer'}).prop('disabled',false);
-					cli_notify_msg.error(cli_error_message);
-				}
-			});
-		});
 		$('#cli_settings_form').submit(function(e){
 			var submit_action=$('#cli_update_action').val();
 			if(submit_action=='delete_all_settings')
