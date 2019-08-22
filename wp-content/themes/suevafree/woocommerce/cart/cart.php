@@ -12,7 +12,7 @@
  *
  * @see     https://docs.woocommerce.com/document/template-structure/
  * @package WooCommerce/Templates
- * @version 3.5.0
+ * @version 3.7.0
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -164,7 +164,9 @@ do_action( 'woocommerce_before_cart' ); ?>
             </div>
         
         </div>
-    
+
+        <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
+
         <div class="col-md-4 cart-total">
         
             <div class="cart-collaterals">
