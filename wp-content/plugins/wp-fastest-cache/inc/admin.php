@@ -487,10 +487,18 @@
 			if($webp){
 				$basename = "$1.webp";
 
-				// this part for sub-directory installation
-				// site_url() and home_url() must be the same
+				/* 
+					This part for sub-directory installation
+					WordPress Address (URL): site_url() 
+					Site Address (URL): home_url()
+				*/
 				if(preg_match("/https?\:\/\/[^\/]+\/(.+)/", site_url(), $siteurl_base_name)){
 					if(preg_match("/https?\:\/\/[^\/]+\/(.+)/", home_url(), $homeurl_base_name)){
+						/*
+							site_url() return http://example.com/sub-directory
+							home_url() returns http://example.com/sub-directory
+						*/
+
 						$homeurl_base_name[1] = trim($homeurl_base_name[1], "/");
 						$siteurl_base_name[1] = trim($siteurl_base_name[1], "/");
 
@@ -499,6 +507,13 @@
 								$basename = $homeurl_base_name[1]."/".$basename;
 							}
 						}
+					}else{
+						/*
+							site_url() return http://example.com/sub-directory
+							home_url() returns http://example.com/
+						*/
+						$siteurl_base_name[1] = trim($siteurl_base_name[1], "/");
+						$basename = $siteurl_base_name[1]."/".$basename;
 					}
 				}
 

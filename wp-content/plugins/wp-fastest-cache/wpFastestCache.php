@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.9.6
+Version: 0.8.9.7
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -118,10 +118,18 @@ GNU General Public License for more details.
 			//add_action('init', array($this, "nonce_timeout"));
 
 			// to clear cache after new Woocommerce orders
-			add_action( 'woocommerce_checkout_order_processed', array($this, 'clear_cache_after_woocommerce_checkout_order_processed'), 1, 1);
+			add_action('woocommerce_checkout_order_processed', array($this, 'clear_cache_after_woocommerce_checkout_order_processed'), 1, 1);
 
 			// kk Star Ratings: to clear the cache of the post after voting
-			add_action( 'kksr_rate', array($this, 'clear_cache_on_kksr_rate'));
+			add_action('kksr_rate', array($this, 'clear_cache_on_kksr_rate'));
+
+			// Elementor: to clear cache after Maintenance Mode activation/deactivation
+			add_action('elementor/maintenance_mode/mode_changed', array($this, 'deleteCache'));
+
+			// clearing cache hooks
+			add_action("wpfc_clear_all_cache", array($this, 'deleteCache'), 10, 1);
+			add_action("wpfc_clear_post_cache_by_id", array($this, 'singleDeleteCache'), 10, 2);
+
 
 			// to clear cache after ajax request by other plugins
 			if(isset($_POST["action"])){
@@ -774,7 +782,7 @@ GNU General Public License for more details.
 				//https://wpml.org/forums/topic/wpml-language-switch-wp-fastest-cache-issue/
 				$language_negotiation_type = apply_filters('wpml_setting', false, 'language_negotiation_type');
 				if(($language_negotiation_type == 2) && $this->isPluginActive('sitepress-multilingual-cms/sitepress.php')){
-				    $path = preg_replace("/\/cache\/(all|wpfc-mobile-cache)/", "/cache/".$_SERVER['HTTP_HOST']."/$1", $path);
+				    $path = preg_replace("/\/cache\/(all|wpfc-minified|wpfc-widget-cache|wpfc-mobile-cache)/", "/cache/".$_SERVER['HTTP_HOST']."/$1", $path);
 				}
 
 				if(is_multisite()){
@@ -871,14 +879,15 @@ GNU General Public License for more details.
 
 		protected function commentHooks(){
 			//it works when the status of a comment changes
-			add_filter ('wp_set_comment_status', array($this, 'singleDeleteCache'));
+			add_action('wp_set_comment_status', array($this, 'singleDeleteCache'), 10, 1);
 
 			//it works when a comment is saved in the database
-			add_filter ('comment_post', array($this, 'detectNewComment'));
+			add_action('comment_post', array($this, 'detectNewComment'), 10, 2);
 		}
 
-		public function detectNewComment($comment_id){
-			if(current_user_can( 'manage_options') || !get_option('comment_moderation')){
+		public function detectNewComment($comment_id, $comment_approved){
+			// if(current_user_can( 'manage_options') || !get_option('comment_moderation')){
+			if($comment_approved === 1){
 				$this->singleDeleteCache($comment_id);
 			}
 		}
@@ -1437,13 +1446,13 @@ GNU General Public License for more details.
 			$schedules['everyminute'] = array(
 			    'interval' => 60*1,
 			    'display' => __( 'Once Every 1 Minute' ),
-			    'wpfc' => false
+			    'wpfc' => true
 		    );
 
 			$schedules['everyfiveminute'] = array(
 			    'interval' => 60*5,
 			    'display' => __( 'Once Every 5 Minutes' ),
-			    'wpfc' => false
+			    'wpfc' => true
 		    );
 
 		   	$schedules['everyfifteenminute'] = array(
@@ -1530,15 +1539,21 @@ GNU General Public License for more details.
 			    'wpfc' => true
 		    );
 
-		    $schedules['weekly'] = array(
+		    $schedules['everysevendays'] = array(
 			    'interval' => 60*60*24*7,
-			    'display' => __( 'Once a Week' ),
+			    'display' => __( 'Once Every 7 Days' ),
 			    'wpfc' => true
 		    );
 
 		    $schedules['everytendays'] = array(
 			    'interval' => 60*60*24*10,
 			    'display' => __( 'Once Every 10 Days' ),
+			    'wpfc' => true
+		    );
+
+		    $schedules['everyfifteendays'] = array(
+			    'interval' => 60*60*24*15,
+			    'display' => __( 'Once Every 15 Days' ),
 			    'wpfc' => true
 		    );
 
@@ -1788,6 +1803,16 @@ GNU General Public License for more details.
 	// Load WP CLI command(s) on demand.
 	if ( defined( 'WP_CLI' ) && WP_CLI ) {
 	    require_once "inc/cli.php";
+	}
+	
+	function wpfc_clear_all_cache($minified = false){
+		do_action("wpfc_clear_all_cache", $minified);
+	}
+
+	function wpfc_clear_post_cache_by_id($post_id = false){
+		if($post_id){
+			do_action("wpfc_clear_post_cache_by_id", false, $post_id);
+		}
 	}
 
 	$GLOBALS["wp_fastest_cache"] = new WpFastestCache();
