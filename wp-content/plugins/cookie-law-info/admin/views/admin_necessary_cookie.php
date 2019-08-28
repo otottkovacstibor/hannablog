@@ -4,6 +4,9 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 ?>
+<?php 
+$wt_cli_necessary_description =  isset($stored_options['necessary_description']) ? $stored_options['necessary_description'] : '';
+?>
 <style>
     .vvv_textbox{
         height: 150px;
@@ -26,7 +29,7 @@ if ( ! defined( 'WPINC' ) ) {
                     <td>
                        <label for="necessary_description"><?php echo __('Description','cookie-law-info');?></label>
                         <textarea name="necessary_description" class="vvv_textbox"><?php
-                        echo apply_filters('format_to_edit', stripslashes($stored_options['necessary_description']));
+                        echo apply_filters('format_to_edit', stripslashes($wt_cli_necessary_description));
                         ?></textarea>
                     </td>
                 </tr>

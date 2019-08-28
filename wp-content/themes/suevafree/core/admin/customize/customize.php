@@ -910,17 +910,6 @@ if (!function_exists('suevafree_customize_panel_function')) {
 
 			array( 
 
-				'label' => esc_html__( 'Google Url','suevafree'),
-				'description' => esc_html__( 'Insert Google Url (leave empty if you want to hide the button)','suevafree'),
-				'id' => 'suevafree_footer_google_button',
-				'type' => 'url',
-				'section' => 'footer_section',
-				'std' => '',
-
-			),
-
-			array( 
-
 				'label' => esc_html__( 'Linkedin Url','suevafree'),
 				'description' => esc_html__( 'Insert Linkedin Url (leave empty if you want to hide the button)','suevafree'),
 				'id' => 'suevafree_footer_linkedin_button',

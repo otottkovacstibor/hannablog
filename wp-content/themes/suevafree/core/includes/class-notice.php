@@ -79,7 +79,7 @@ if( !class_exists( 'suevafree_admin_notice' ) ) {
                     
             	<p>
             	
-            		<a class="button button-primary" target="_blank" href="<?php echo esc_url( 'https://www.themeinprogress.com/sueva/?ref=2&campaign=sueva-notice' ); ?>" class="button"><?php esc_html_e( 'Upgrade to Sueva Premium', 'suevafree' ); ?></a>
+            		<a target="_blank" href="<?php echo esc_url( 'https://www.themeinprogress.com/sueva/?ref=2&campaign=sueva-notice' ); ?>" class="button button-primary"><?php esc_html_e( 'Upgrade to Sueva Premium', 'suevafree' ); ?></a>
                 
             	</p>
 

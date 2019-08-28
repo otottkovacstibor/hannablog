@@ -12,16 +12,33 @@
 if (!function_exists('suevafree_copyright_function')) {
 
 	function suevafree_copyright_function() {
-		
-		if ( suevafree_setting('suevafree_copyright_text')) :
 
-			echo '<p>' . stripslashes(suevafree_setting('suevafree_copyright_text')) . '</p>';
+?>
 
-		else:
+		<p>
+
+			<?php 
 		
-			echo '<p>Copyright ' . get_bloginfo("name") . ' ' . date_i18n("Y") . ' - Theme by <a href="'.esc_url('https://www.themeinprogress.com/').'" target="_blank">ThemeinProgress</a></p>';
-			
-		endif;
+				if ( suevafree_setting('suevafree_copyright_text')) :
+							
+					echo wp_filter_post_kses(suevafree_setting('suevafree_copyright_text'));
+								
+				else:
+							
+					esc_html_e('Copyright ', 'suevafree');
+					echo esc_html(get_bloginfo('name'));
+					echo esc_html( date_i18n( __( ' Y', 'suevafree' )));
+							
+				endif;
+							
+			?>
+
+			<a href="<?php echo esc_url('https://www.themeinprogress.com/'); ?>" target="_blank"><?php printf( esc_html__( ' | Theme by %s', 'suevafree' ), 'ThemeinProgress' ); ?></a>
+			<a href="<?php echo esc_url('http://wordpress.org/'); ?>" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'suevafree' ); ?>" rel="generator"><?php printf( esc_html__( ' | Proudly powered by %s', 'suevafree' ), 'WordPress' ); ?></a>
+                            
+		</p>
+
+<?php
 		
 	}
 	

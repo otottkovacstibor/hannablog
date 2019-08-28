@@ -282,6 +282,8 @@ table.wc_emails .wc-email-settings-table-status .tips,table.cli_script_items .wc
 .cli_non_necessary_form .cli_form_help{ color: #aaa; font-style: italic; font-weight:250; font-size: 12px; }
 .cli_settings_left{ width:63%;float: left; margin-bottom: 25px; }
 .cli_settings_right{ width:33%; float: left; padding-left:25px;}
+.cli_privacy_overview_form label{ width:100%; display: inline-block; font-weight: bold; margin-bottom: 10px; margin-top: 15px;  }
+.cli_privacy_overview_form .cli_form_help{ color: #aaa; font-style: italic; font-weight:250; font-size: 12px; }
 .cli_form_help{ color: #aaa; font-style: italic; font-weight:250; font-size: 12px; display: inline-block; width: 100%; }
 .cli_form_er{ color:red; font-style: italic; font-weight:300; font-size: 12px; display: inline-block; width: 100%;}
 .cli_scroll_accept_er{ display: none; }

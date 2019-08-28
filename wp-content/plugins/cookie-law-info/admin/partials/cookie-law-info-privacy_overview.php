@@ -32,9 +32,8 @@ if (isset($_POST['update_privacy_overview_content_settings_form'])) {
 $stored_options = get_option('cookielawinfo_privacy_overview_content_settings', array(
    'privacy_overview_content' => '','privacy_overview_title' => '',
 ));
-$privacy_title = $stored_options['privacy_overview_title'];
-$privacy_content = $stored_options['privacy_overview_content'];
-
+$privacy_title = isset($stored_options['privacy_overview_title']) ? $stored_options['privacy_overview_title'] : '';
+$privacy_content = isset($stored_options['privacy_overview_content']) ? $stored_options['privacy_overview_content'] : '';
 ?>
 <style>
     .vvv_textbox{

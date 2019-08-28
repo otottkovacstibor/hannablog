@@ -13,9 +13,9 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
         <div class="cli-col-12 cli-align-items-stretch cli-px-0">
             <div class="cli-privacy-overview">
                 <?php  
-                $overview_title = $overview['privacy_overview_title'];
-                $privacy_overview_content = $overview['privacy_overview_content'] ;
-                $privacy_overview_content=nl2br($privacy_overview_content); 
+                $overview_title=isset($overview['privacy_overview_title']) ? $overview['privacy_overview_title'] : '';
+                $privacy_overview_content = isset($overview['privacy_overview_content']) ? $overview['privacy_overview_content'] : '';
+                $privacy_overview_content = nl2br($privacy_overview_content); 
                 $privacy_overview_content = do_shortcode(stripslashes($privacy_overview_content));
                 $content_length=strlen(strip_tags($privacy_overview_content));
                 $overview_title = trim($overview_title);
@@ -63,7 +63,7 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                 {   
                     $cli_switch='
                     <span class="cli-necessary-caption">'.$cli_always_enable_text.'</span> ';
-                    $cli_cat_content=$necessary_cookie_options['necessary_description'];
+                    $cli_cat_content=isset($necessary_cookie_options['necessary_description']) ? $necessary_cookie_options['necessary_description'] : '';
                 }
                 else
                 {
@@ -72,12 +72,13 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                         <input type="checkbox" id="checkbox-'.$key.'" class="cli-user-preference-checkbox" data-id="checkbox-'.$key.'" '.$cli_checked.' />
                         <label for="checkbox-'.$key.'" class="cli-slider" data-cli-enable="'.$cli_enable_text.'" data-cli-disable="'.$cli_disable_text.'">'.$value.'</label>
                     </div>';
-                    $cli_cat_content=$third_party_cookie_options['thirdparty_description'];
+                    $cli_cat_content=isset($third_party_cookie_options['thirdparty_description']) ? $third_party_cookie_options['thirdparty_description'] : '';
                 }
             ?>  
            
             <?php 
-            $wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$third_party_cookie_options['thirdparty_on_field']);
+            $thirdparty_on_field=isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
+            $wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
             if($key === "non-necessary" && $wt_cli_is_thirdparty_enabled == false)
             {
                 echo '';

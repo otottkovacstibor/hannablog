@@ -87,7 +87,7 @@ class Cookie_Law_Info_Public {
 		$necessary_settings = get_option('cookielawinfo_necessary_settings');
 		$thirdparty_settings = get_option('cookielawinfo_thirdparty_settings');
 		$privacy_defaults = array(
-			'privacy_overview_content' => 'This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are as essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.','privacy_overview_title' => 'Privacy Overview'
+			'privacy_overview_content' => 'This website uses cookies to improve your experience while you navigate through the website. Out of these cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the website. We also use third-party cookies that help us analyze and understand how you use this website. These cookies will be stored in your browser only with your consent. You also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on your browsing experience.','privacy_overview_title' => 'Privacy Overview'
 		); 
 		$thirdparty_defaults = array(
 			'thirdparty_on_field' => true,
@@ -123,10 +123,14 @@ class Cookie_Law_Info_Public {
 	*/
 	public function cli_set_category_cookies()
 	{	
+		$temp = array();
+		
 		$cookie_categories = self::get_cookie_categories();
 		$the_options = Cookie_Law_Info::get_settings();
-		$third_party_cookie_options=get_option('cookielawinfo_thirdparty_settings');
-		$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$third_party_cookie_options['thirdparty_on_field']);
+		$thirdparty_on_field = false;
+		$third_party_cookie_options = get_option('cookielawinfo_thirdparty_settings');
+		$thirdparty_on_field = isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
+		$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
 		if ( $the_options['is_on'] == true )
 		{	
 			
@@ -349,16 +353,17 @@ class Cookie_Law_Info_Public {
 	     if($the_options['is_on'] == true && !is_admin()) 
 	     {
 			$third_party_cookie_options=get_option('cookielawinfo_thirdparty_settings');
-			$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$third_party_cookie_options['thirdparty_on_field']);
 	        if(!empty($third_party_cookie_options))
-	        {
-	           if($wt_cli_is_thirdparty_enabled == true && isset($_COOKIE['viewed_cookie_policy']))
-	           {
-	               if($_COOKIE['viewed_cookie_policy']=='yes' && $_COOKIE["cookielawinfo-checkbox-non-necessary"] =='yes')
-	               {                   
-	            		echo $third_party_cookie_options['thirdparty_head_section'];
-	               }
-	           }	           
+	        {	
+				$thirdparty_on_field = isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
+				$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
+				if($wt_cli_is_thirdparty_enabled == true && isset($_COOKIE['viewed_cookie_policy']))
+				{
+					if($_COOKIE['viewed_cookie_policy']=='yes' && $_COOKIE["cookielawinfo-checkbox-non-necessary"] =='yes')
+					{   
+						echo (isset($third_party_cookie_options['thirdparty_head_section'])) ? $third_party_cookie_options['thirdparty_head_section'] : '';
+					}
+				}	           
 	       	}
 	     }
 	}
@@ -370,14 +375,15 @@ class Cookie_Law_Info_Public {
 	    if($the_options['is_on'] == true && !is_admin()) 
 	    {	        
 			$third_party_cookie_options=get_option('cookielawinfo_thirdparty_settings');
-			$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$third_party_cookie_options['thirdparty_on_field']);
 	        if(!empty($third_party_cookie_options))
 	        {	
+				$thirdparty_on_field = isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
+				$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
 		        if($wt_cli_is_thirdparty_enabled == true  && isset($_COOKIE['viewed_cookie_policy']))
 		        {		
 	               if($_COOKIE['viewed_cookie_policy'] == 'yes' && $_COOKIE["cookielawinfo-checkbox-non-necessary"] =='yes')
 	               {                   
-	               		echo $third_party_cookie_options['thirdparty_body_section'];
+						echo (isset($third_party_cookie_options['thirdparty_body_section'])) ? $third_party_cookie_options['thirdparty_body_section'] : '';
 	               }
 		        }		           
 		    }

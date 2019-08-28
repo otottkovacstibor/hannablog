@@ -4,7 +4,7 @@ Donate link: https://www.webtoffee.com/plugins/
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
 Tested up to: 5.2
-Stable tag: 1.7.9
+Stable tag: 1.8.0
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -86,35 +86,6 @@ This section describes how to install the plugin and get it working.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Go to "Cookie Law Info / Cookie Law Settings" to configure the banner with your own text, colours and styles
 
-To set up your Privacy & Cookie Policy Page:
-
-1. Add descriptions of the cookies your site uses. Go to "Cookie Law Info / Add New".
-2. Add a new page called e.g. Privacy and Cookie Policy
-3. Add the [cookie_audit] shortcode to your Privacy & Cookie Policy Page
-
-Cookie table shortcode usage:
-
-	[cookie_audit]
-	[cookie_audit style="winter"]
-	[cookie_audit not_shown_message="No records found"]
-	[cookie_audit style="winter" not_shown_message="Not found"]
-	
-	Parameters:
-	
-	style (optional) - choose one of several table styles included with the plugin. Styles included: simple, classic, modern, rounded, elegant, winter (styles are cAsE sensitive). Default style applied: classic.
-	not_shown_message (optional) - if no cookie records are found, display this text. Default is blank (i.e. no message shown).
-	
-
-Delete header cookie usage:
-
-	[delete_cookies]
-	[delete_cookies linktext="delete cookies"]
-	
-	Parameters:
-	
-	linktext (optional) - the text shown in the link. Default is "Delete Cookies".
-
-
 == Frequently Asked Questions ==
 
 There's a lot of help available on the main plugin website. See:
@@ -171,6 +142,10 @@ See http://cookielawinfo.com for more information on what is required.
 4. Header (with custom styles)
 
 == Changelog ==
+
+= 1.8.0 =
+
+* [Bug fix] Warning fixes
 
 = 1.7.9 =
 
@@ -395,8 +370,6 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.7.9 =
+= 1.8.0 =
 
-* Fixed W3C validation issues
-* [Bug fix] Hide non-necessary category on cookie settings popup if it is not enabled
-* [Bug fix] Translation issue with category cookies
+* [Bug fix] Warning fixes
