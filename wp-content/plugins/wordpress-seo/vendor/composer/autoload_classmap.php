@@ -662,6 +662,7 @@ return array(
     'Yoast_I18n_WordPressOrg_v3' => $vendorDir . '/yoast/i18n-module/src/i18n-wordpressorg-v3.php',
     'Yoast_I18n_v3' => $vendorDir . '/yoast/i18n-module/src/i18n-v3.php',
     'Yoast_Input_Select' => $baseDir . '/admin/views/class-yoast-input-select.php',
+    'Yoast_Input_Validation' => $baseDir . '/admin/class-yoast-input-validation.php',
     'Yoast_License_Manager' => $vendorDir . '/yoast/license-manager/class-license-manager.php',
     'Yoast_Modal' => $baseDir . '/deprecated/class-yoast-modal.php',
     'Yoast_Network_Admin' => $baseDir . '/admin/class-yoast-network-admin.php',

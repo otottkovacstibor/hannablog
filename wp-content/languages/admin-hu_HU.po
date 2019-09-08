@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.2.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-06-19 12:36:52+0000\n"
+"PO-Revision-Date: 2019-08-24 13:15:57+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -92,7 +92,7 @@ msgid "Improvements for Everyone"
 msgstr "Fejlesztések mindenkinek"
 
 #: wp-admin/about.php:154
-msgid "This administrator-focused update will let you safely fix or manage fatal errors without requiring developer time. It features better handling of the so-called “white screen of death”, and a way to enter recovery mode, which pauses error-causing plugins or themes."
+msgid "This administrator-focused update will let you safely fix or manage fatal errors without requiring a developer. It features better handling of the so-called “white screen of death”, and a way to enter recovery mode, which pauses error-causing plugins or themes."
 msgstr ""
 
 #: wp-admin/about.php:153
@@ -499,15 +499,15 @@ msgstr ""
 
 #: wp-admin/includes/class-wp-debug-data.php:1231
 msgid "Total size is not available. Some errors were encountered when determining the size of your installation."
-msgstr ""
+msgstr "A teljes méret nem érhető el. Néhány hiba történt a telepítés méretének meghatározásakor."
 
 #: wp-admin/includes/class-wp-debug-data.php:1180
 msgid "The size cannot be calculated. The directory is not accessible. Usually caused by invalid permissions."
-msgstr ""
+msgstr "A méret nem számítható ki. A könyvtár nem érhető el. Általában érvénytelen jogosultságok okozzák."
 
 #: wp-admin/includes/class-wp-debug-data.php:218
 msgid "These settings alter where and how parts of WordPress are loaded."
-msgstr ""
+msgstr "Ezek a beállítások megváltoztatják, hol és hogyan töltődnek be a WordPress egyes részei."
 
 #. translators: %s: number of items with no issues
 #: wp-admin/site-health.php:132 wp-admin/js/site-health.js:72
@@ -664,6 +664,8 @@ msgstr "A HTTP lekérdezések tiltva vannak"
 #: wp-admin/includes/class-wp-site-health.php:1571
 msgid "It is possible for site maintainers to block all, or some, communication to other sites and services. If set up incorrectly, this may prevent plugins and themes from working as intended."
 msgstr ""
+"A webhelykarbantartók képesek blokkolni a kommunikációt, vagy annak egy részét más\n"
+"webhelyekkel és szolgáltatásokkal. Helytelen beállítások esetén ez megakadályozhatja a a sablonok és bővítmények tervezett működését."
 
 #: wp-admin/includes/class-wp-site-health.php:1563
 msgid "HTTP requests seem to be working as expected"
@@ -683,7 +685,7 @@ msgstr ""
 
 #: wp-admin/includes/class-wp-site-health.php:1482
 msgid "Background updates may not be working properly"
-msgstr ""
+msgstr "Előfordulhat, hogy a háttérfrissítések nem működnek megfelelően"
 
 #: wp-admin/includes/class-wp-site-health.php:1474
 msgid "Background updates are not working as expected"
@@ -741,7 +743,7 @@ msgstr "A webhely képes biztonságosan kapcsolatot létesíteni külső szolgá
 
 #: wp-admin/includes/class-wp-site-health.php:1346
 msgid "Securely communicating between servers are needed for transactions such as fetching files, conducting sales on store sites, and much more."
-msgstr ""
+msgstr "A szerverek közötti biztonságos kommunikáció szükséges egyes tranzakciókhoz, mint például fájlok lekérése, áruházi értékesítés, és még sok más."
 
 #: wp-admin/includes/class-wp-site-health.php:1289
 msgid "Read more about why you should use HTTPS"
@@ -992,7 +994,7 @@ msgstr "A bővítmények a lehető legfrissebbek."
 
 #: wp-admin/includes/class-wp-site-health.php:260
 msgid "You are currently running the latest version of WordPress available, keep it up!"
-msgstr ""
+msgstr "Jelenleg a WordPress legfrissebb verziója fut, csak így tovább!"
 
 #. translators: %s: The current version of WordPress installed on this site.
 #: wp-admin/includes/class-wp-site-health.php:254
@@ -1049,17 +1051,17 @@ msgstr "Várjunk..."
 #. translators: %s: Name of the filter used.
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:442
 msgid "WordPress security and maintenance releases are blocked by the %s filter."
-msgstr ""
+msgstr "A(z) %s szűrő blokkolja a WordPress biztonsági és karbantartási frissítéseit."
 
 #. translators: %s: Name of the constant used.
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:431
 msgid "WordPress security and maintenance releases are blocked by %s."
-msgstr ""
+msgstr "A(z) %s blokkolja a WordPress biztonsági és karbantartási frissítéseit."
 
 #. translators: %s: Name of the filter used.
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:411
 msgid "WordPress development updates are blocked by the %s filter."
-msgstr ""
+msgstr "A(z) %s szűrő blokkolja a WordPress fejlesztői frissítéseit."
 
 #. translators: %s: Name of the constant used.
 #: wp-admin/includes/class-wp-site-health-auto-updates.php:400
@@ -1696,7 +1698,7 @@ msgstr "PHP frissítés szükséges"
 
 #: wp-admin/includes/plugin.php:2319
 msgid "You can find more details and make changes on the Plugins screen."
-msgstr ""
+msgstr "További információ és beállítások a Bővítmények képernyőn."
 
 #: wp-admin/includes/plugin.php:2318
 msgid "One or more plugins failed to load properly."
@@ -1822,7 +1824,7 @@ msgstr "%s újraindítása"
 
 #: wp-admin/includes/theme.php:908
 msgid "You can find more details and make changes on the Themes screen."
-msgstr ""
+msgstr "További információ és beállítások a Sablonok képernyőn."
 
 #: wp-admin/includes/theme.php:907
 msgid "One or more themes failed to load properly."
@@ -1920,7 +1922,7 @@ msgstr "Új WordPress felhasználóként a <a href=\"%s\">Vezérlőpult</a> rés
 #. translators: first page content
 #: wp-admin/includes/upgrade.php:296
 msgid "The XYZ Doohickey Company was founded in 1971, and has been providing quality doohickeys to the public ever since. Located in Gotham City, XYZ employs over 2,000 people and does all kinds of awesome things for the Gotham community."
-msgstr "A <strong><a href=\"https://nyiltweb.hu\" target=\"_blank\">Nyílt Web Alapítvány</a></strong>t a <strong><a href=\"https://wphu.org\" target=\"_blank\">WordPress Magyarország</a> Közösség</strong> hozta létre, hogy a magyarországi mikro-, kis- és középvállalkozások, non-profit szervezetek, civil szervezetek, oktatási és kulturális intézmények internetes jelenlétét, megjelenését támogassa és felzárkóztassa a nyílt forrású internetes eszközökkel.<br>Mindenkit szeretettel látnak, aki a kitűzött célokkal egyetért, és azokat támogatni kívánja bármilyen módon.."
+msgstr "Az XYZ Bigyó Vállalatot 1971-ben alapították, azóta gyártja a legjobb minőségű bigyókat. A cég központja Budapesten található, ahol több mint 2000 embert foglalkoztatnak, valamint számos közösségi és jótékonysági programban is aktívan résztvesznek."
 
 #. translators: first page content
 #: wp-admin/includes/upgrade.php:291
@@ -1930,7 +1932,7 @@ msgstr "...vagy valami egészen más:"
 #. translators: first page content
 #: wp-admin/includes/upgrade.php:286
 msgid "Hi there! I'm a bike messenger by day, aspiring actor by night, and this is my website. I live in Los Angeles, have a great dog named Jack, and I like pi&#241;a coladas. (And gettin' caught in the rain.)"
-msgstr "Helló Olvasók!<br>Nappal biciklis pizzafutár vagy, éjszaka pedig egy törekvő színész-tanonc, ez pedig az én weboldalam.<br>Budapesten élek, és van egy csodálatos német juhész kutyám, aki Velorex névre hallgat. Kedvenc koktélom a Piña Colada, de a Mojitot is nagyon kedvelem (De, azért az igazi nedű: egy bársonyos vörösbor.)"
+msgstr "Helló Olvasók!<br>Nappal biciklis pizzafutár vagyok, éjszaka pedig egy törekvő színész-tanonc, ez pedig az én weboldalam.<br>Budapesten élek és van egy csodálatos német juhász kutyám, aki Velorex névre hallgat. Kedvenc koktélom a Piña Colada, de a Mojitot is nagyon kedvelem. (De, azért az igazi nedű: egy bársonyos vörösbor.)"
 
 #. translators: first page content
 #: wp-admin/includes/upgrade.php:281
@@ -3982,7 +3984,7 @@ msgstr "<strong>Közzététel</strong> - A közzététel dobozban a bejegyzés k
 #. translators: %s: edit page url
 #: wp-admin/user-new.php:300
 msgid "User has been added to your site. <a href=\"%s\">Edit user</a>"
-msgstr "A felhasználó hozzáadásra került a honlapunkhoz.<a href=\"%s\">Felhasználó szerkesztése</a>"
+msgstr "A felhasználó hozzáadásra került a honlapunkhoz. <a href=\"%s\">Felhasználó szerkesztése</a>"
 
 #. translators: %s: new email
 #: wp-admin/user-edit.php:506
