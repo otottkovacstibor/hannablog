@@ -13,7 +13,7 @@
 }
 
 #wp-admin-bar-wpfc-toolbar-parent > .ab-empty-item::before{
-	content: url("../images/icon-24x24.png");
+	content: url("../images/icon.svg");
 }
 
 #wp-admin-bar-wpfc-toolbar-parent .ab-empty-item:hover{

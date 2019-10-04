@@ -114,8 +114,10 @@ div.questionCon.qsubmit{
 }
 /* for lef panel */
 #toplevel_page_wpfastestcacheoptions img{
-    padding: 0 !important;
-    margin-left: 5px !important;
+    margin-top: -7px !important;
+    width: 30px !important;
+/*    padding: 0 !important;
+    margin-left: 5px !important;*/
 }
 #toplevel_page_wpfastestcacheoptions div.wp-menu-name{
     margin-left: 0 !important;

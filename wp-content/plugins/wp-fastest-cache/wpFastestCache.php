@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.9.7
+Version: 0.8.9.8
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -669,7 +669,7 @@ GNU General Public License for more details.
 
 		public function register_my_custom_menu_page(){
 			if(function_exists('add_menu_page')){ 
-				add_menu_page("WP Fastest Cache Settings", "WP Fastest Cache", 'manage_options', "wpfastestcacheoptions", array($this, 'optionsPage'), plugins_url("wp-fastest-cache/images/icon-32x32.png"));
+				add_menu_page("WP Fastest Cache Settings", "WP Fastest Cache", 'manage_options', "wpfastestcacheoptions", array($this, 'optionsPage'), plugins_url("wp-fastest-cache/images/icon.svg"));
 				add_action('admin_init', array($this, 'register_mysettings'));
 
 				wp_enqueue_style("wp-fastest-cache", plugins_url("wp-fastest-cache/css/style.css"), array(), time(), "all");
@@ -733,9 +733,11 @@ GNU General Public License for more details.
 		}
 
 		private function cache(){
-			include_once('inc/cache.php');
-			$wpfc = new WpFastestCacheCreateCache();
-			$wpfc->createCache();
+			if(isset($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST']){
+				include_once('inc/cache.php');
+				$wpfc = new WpFastestCacheCreateCache();
+				$wpfc->createCache();
+			}
 		}
 
 		protected function slug(){
@@ -883,6 +885,15 @@ GNU General Public License for more details.
 
 			//it works when a comment is saved in the database
 			add_action('comment_post', array($this, 'detectNewComment'), 10, 2);
+
+			// it work when a commens is updated
+			add_action('edit_comment', array($this, 'detectEditComment'), 10, 2);
+		}
+
+		public function detectEditComment($comment_id, $comment_data){
+			if($comment_data["comment_approved"] == 1){
+				$this->singleDeleteCache($comment_id);
+			}
 		}
 
 		public function detectNewComment($comment_id, $comment_approved){
@@ -973,6 +984,11 @@ GNU General Public License for more details.
 						}
 					}
 
+					// to clear cache of /feed
+					if(preg_match("/https?:\/\/[^\/]+\/(.+)/", get_feed_link(), $feed_out)){
+						array_push($files, $this->getWpContentDir("/cache/all/").$feed_out[1]);
+					}
+
 					foreach((array)$files as $file){
 						$this->rm_folder_recursively($file);
 					}
@@ -1032,6 +1048,10 @@ GNU General Public License for more details.
 				// to remove the cache of the pages
 				$this->rm_folder_recursively($this->getWpContentDir("/cache/all/").$path."/page");
 				$this->rm_folder_recursively($this->getWpContentDir("/cache/wpfc-mobile-cache/").$path."/page");
+
+				// to remove the cache of the feeds
+				$this->rm_folder_recursively($this->getWpContentDir("/cache/all/").$path."/feed");
+				$this->rm_folder_recursively($this->getWpContentDir("/cache/wpfc-mobile-cache/").$path."/feed");
 			}
 
 			if($term->parent > 0){
