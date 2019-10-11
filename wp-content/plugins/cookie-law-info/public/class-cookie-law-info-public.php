@@ -76,6 +76,17 @@ class Cookie_Law_Info_Public {
 		);
 		return $cookie_categories;
 	}
+	public static function wt_cli_check_thirdparty_state()
+	{
+		
+		$wt_cli_default_state = false;
+		
+		$third_party_cookie_options = get_option('cookielawinfo_thirdparty_settings');
+		$wt_cli_default_state_field =  isset($third_party_cookie_options['third_party_default_state']) ? $third_party_cookie_options['third_party_default_state'] : true;
+		$wt_cli_default_state = Cookie_Law_Info::sanitise_settings('third_party_default_state',$wt_cli_default_state_field);
+
+		return $wt_cli_default_state;
+	}
 	/**
 	* Set Default Privacy overview and Cookie Sensitivity Contents
 	*
@@ -91,6 +102,7 @@ class Cookie_Law_Info_Public {
 		); 
 		$thirdparty_defaults = array(
 			'thirdparty_on_field' => true,
+			'third_party_default_state' => true,
 			'thirdparty_description'=> 'Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.',
 			'thirdparty_head_section' => '',
 			'thirdparty_body_section' => '',
@@ -131,6 +143,11 @@ class Cookie_Law_Info_Public {
 		$third_party_cookie_options = get_option('cookielawinfo_thirdparty_settings');
 		$thirdparty_on_field = isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
 		$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
+		$wt_non_necessary_cookie_value = 'yes';
+		if(! self::wt_cli_check_thirdparty_state())
+		{
+			$wt_non_necessary_cookie_value = 'no';
+		}
 		if ( $the_options['is_on'] == true )
 		{	
 			
@@ -138,14 +155,22 @@ class Cookie_Law_Info_Public {
 			{ 	
 				if(empty($_COOKIE["cookielawinfo-checkbox-$key"])) 
 				{	
-					if($key === 'non-necessary' && $wt_cli_is_thirdparty_enabled == false) {
+					if($key === 'non-necessary' ) {
 
-						return false;
+						if($wt_cli_is_thirdparty_enabled == false) {
 
+							return false;
+
+						}
+						else
+						{	
+							
+							@setcookie("cookielawinfo-checkbox-$key",$wt_non_necessary_cookie_value,time()+3600,'/');
+						}
 					}
 					else {
 
-						@setcookie("cookielawinfo-checkbox-$key",'yes',time()+3600,'/');	
+						@setcookie("cookielawinfo-checkbox-$key",'yes',time()+3600,'/');
 
 					}
 					

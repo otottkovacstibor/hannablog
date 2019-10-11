@@ -1006,7 +1006,8 @@ color:inherit;
     border-radius: 50%;
 	padding: 10px;
 	background: transparent;
-	border:none;
+    border:none;
+    min-width: 40px;
 }
 .cli-tab-container h4 {
 	font-family: inherit;
@@ -1014,13 +1015,19 @@ color:inherit;
     margin-bottom: 15px;
 	margin:10px 0;
 }
-.cli-tab-container p {
+#cliSettingsPopup .cli-tab-section-container {
+    padding-top: 12px;
+}
+.cli-tab-container p ,.cli-privacy-content-text{
     font-size: 14px;
     line-height: 1.4;
-    margin-bottom: 18px;
     margin-top: 0;
     padding: 0;
     color: #000;
+}
+.wt-cli-privacy
+{
+    display:none;
 }
 .cli-tab-content
 {
@@ -1045,7 +1052,8 @@ color:inherit;
     right: 50px;
 	color: #000;
 	font-size:12px;
-	text-align:right;
+    text-align:right;
+    min-width: 60px;
 }
 .cli-switch input:checked + .cli-slider:after
 {
@@ -1060,7 +1068,7 @@ a.cli-privacy-readmore {
     font-size: 12px;
     padding-top: 12px;
     display: inline-block;
-    padding-bottom: 12px;
+    padding-bottom: 0;
     cursor: pointer;
     color:#000;
     text-decoration: underline;

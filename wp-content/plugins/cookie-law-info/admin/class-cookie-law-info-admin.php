@@ -216,6 +216,7 @@ class Cookie_Law_Info_Admin {
 	    wp_enqueue_style($this->plugin_name);
 	    wp_enqueue_script($this->plugin_name);
 		$options = array('thirdparty_on_field',
+			'third_party_default_state',
 			'thirdparty_description',
 	        'thirdparty_head_section',
 	        'thirdparty_body_section',
@@ -224,6 +225,7 @@ class Cookie_Law_Info_Admin {
 	    // Get options:
 	    $stored_options = get_option('cookielawinfo_thirdparty_settings', array(
 			'thirdparty_on_field' => false,
+			'third_party_default_state' => true,
 			'thirdparty_description'=> '',
 	        'thirdparty_head_section' => '',
 	        'thirdparty_body_section' => '',
@@ -259,6 +261,7 @@ class Cookie_Law_Info_Admin {
 
 	    $stored_options = get_option('cookielawinfo_thirdparty_settings', array(
 			'thirdparty_on_field' => false,
+			'third_party_default_state' => true,
 			'thirdparty_description'=> '',
 	        'thirdparty_head_section' => '',
 	        'thirdparty_body_section' => '',

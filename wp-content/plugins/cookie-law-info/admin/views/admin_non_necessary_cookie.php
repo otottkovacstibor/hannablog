@@ -10,6 +10,8 @@ $wt_cli_non_necessary_description =  isset($stored_options['thirdparty_descripti
 $wt_cli_non_necessary_head_scripts =  isset($stored_options['thirdparty_head_section']) ? $stored_options['thirdparty_head_section'] : '';
 $wt_cli_non_necessary_body_scripts =  isset($stored_options['thirdparty_body_section']) ? $stored_options['thirdparty_body_section'] : '';
 $wt_cli_non_necessary_enabled =  isset($stored_options['thirdparty_on_field']) ? $stored_options['thirdparty_on_field'] : false;
+$wt_cli_default_state =  isset($stored_options['third_party_default_state']) ? $stored_options['third_party_default_state'] : true;
+
 ?>
 <style>
     .vvv_textbox{
@@ -34,6 +36,16 @@ $wt_cli_non_necessary_enabled =  isset($stored_options['thirdparty_on_field']) ?
                         <label for="thirdparty_on_field"><?php echo __('Enable Non-necessary Cookie','cookie-law-info'); ?></label>
                         <input type="radio" id="thirdparty_on_field_yes" name="thirdparty_on_field" class="styled" value="true" <?php echo ( filter_var($wt_cli_non_necessary_enabled, FILTER_VALIDATE_BOOLEAN) == true ) ? ' checked="checked" ' : ' '; ?> /><?php echo __('Yes','cookie-law-info');?>
                         <input type="radio" id="thirdparty_on_field_no" name="thirdparty_on_field" class="styled" value="false" <?php echo ( filter_var($wt_cli_non_necessary_enabled, FILTER_VALIDATE_BOOLEAN) == false ) ? ' checked="checked" ' : ''; ?> /><?php echo __('No','cookie-law-info');?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="third_party_default_state"><?php echo __('Default state','cookie-law-info'); ?></label>
+                        <input type="radio" id="third_party_default_state_yes" name="third_party_default_state" class="styled" value="true" <?php echo ( filter_var($wt_cli_default_state, FILTER_VALIDATE_BOOLEAN) == true ) ? ' checked="checked" ' : ' '; ?> /><?php echo __('Enabled','cookie-law-info');?>
+                        <input type="radio" id="third_party_default_state_no" name="third_party_default_state" class="styled" value="false" <?php echo ( filter_var($wt_cli_default_state, FILTER_VALIDATE_BOOLEAN) == false ) ? ' checked="checked" ' : ''; ?> /><?php echo __('Disabled','cookie-law-info');?>
+                        <span class="cli_form_help">
+                            <?php echo __('If you enable this option, the category toggle button will be in the active state for cookie consent.','cookie-law-info'); ?> <br />
+                        </span>
                     </td>
                 </tr>
                 <tr>

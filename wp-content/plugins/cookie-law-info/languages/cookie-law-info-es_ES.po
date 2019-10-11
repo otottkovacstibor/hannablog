@@ -1,15 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-07-16 10:44+0530\n"
-"PO-Revision-Date: 2019-07-16 10:48+0530\n"
+"POT-Creation-Date: 2019-10-07 16:34+0530\n"
+"PO-Revision-Date: 2019-10-07 16:35+0530\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2.3\n"
+"X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-KeywordsList: __;_e\n"
@@ -33,122 +33,122 @@ msgstr "Galleta necesaria"
 
 #: admin/class-cookie-law-info-admin.php:168
 #: admin/class-cookie-law-info-admin.php:169
-#: admin/partials/cookie-law-info-privacy_overview.php:54
+#: admin/partials/cookie-law-info-privacy_overview.php:53
 msgid "Privacy Overview"
 msgstr "Descripción general de privacidad"
 
-#: admin/class-cookie-law-info-admin.php:206
+#: admin/class-cookie-law-info-admin.php:207
 msgid "Settings"
 msgstr "Ajustes"
 
-#: admin/class-cookie-law-info-admin.php:207
+#: admin/class-cookie-law-info-admin.php:208
 msgid "Support"
 msgstr "Soporte"
 
-#: admin/class-cookie-law-info-admin.php:208
+#: admin/class-cookie-law-info-admin.php:209
 msgid "Premium Upgrade"
 msgstr "Actualización premium"
 
-#: admin/class-cookie-law-info-admin.php:250
-#: admin/class-cookie-law-info-admin.php:296
-#: admin/class-cookie-law-info-admin.php:341
+#: admin/class-cookie-law-info-admin.php:253
+#: admin/class-cookie-law-info-admin.php:300
+#: admin/class-cookie-law-info-admin.php:345
 #: admin/partials/cookie-law-info-privacy_overview.php:29
 msgid "Settings Updated."
 msgstr "Ajustes actualizados."
 
-#: admin/class-cookie-law-info-admin.php:318
+#: admin/class-cookie-law-info-admin.php:322
 msgid "You do not have sufficient permission to perform this operation"
 msgstr "No tienes suficientes permisos para realizar esta operación"
 
-#: admin/class-cookie-law-info-admin.php:356
+#: admin/class-cookie-law-info-admin.php:360
 msgid "ERROR MIGRATING SETTINGS (ERROR: 2)"
 msgstr "CONFIGURACIÓN DE ERROR MIGRANTE (ERROR: 2)"
 
-#: admin/class-cookie-law-info-admin.php:374
+#: admin/class-cookie-law-info-admin.php:378
 msgid "Cookie ID"
 msgstr "ID de cookie"
 
-#: admin/class-cookie-law-info-admin.php:375
+#: admin/class-cookie-law-info-admin.php:379
 msgid "Cookie Type"
 msgstr "Tipo de cookie"
 
-#: admin/class-cookie-law-info-admin.php:376
+#: admin/class-cookie-law-info-admin.php:380
 msgid "Cookie Duration"
 msgstr "Duración de la cookie"
 
-#: admin/class-cookie-law-info-admin.php:377
+#: admin/class-cookie-law-info-admin.php:381
 msgid "Cookie Sensitivity"
 msgstr "Sensibilidad a las galletas"
 
-#: admin/class-cookie-law-info-admin.php:627
+#: admin/class-cookie-law-info-admin.php:631
 msgid "Close Header"
 msgstr "Cerrar encabezado"
 
-#: admin/class-cookie-law-info-admin.php:631
+#: admin/class-cookie-law-info-admin.php:635
 msgid "Open URL"
 msgstr "Abrir URL"
 
-#: admin/class-cookie-law-info-admin.php:644
+#: admin/class-cookie-law-info-admin.php:648
 msgid "Extra Large"
 msgstr "Extra grande"
 
-#: admin/class-cookie-law-info-admin.php:648
+#: admin/class-cookie-law-info-admin.php:652
 msgid "Large"
 msgstr "Grande"
 
-#: admin/class-cookie-law-info-admin.php:652
+#: admin/class-cookie-law-info-admin.php:656
 msgid "Medium"
 msgstr "Medio"
 
-#: admin/class-cookie-law-info-admin.php:656
+#: admin/class-cookie-law-info-admin.php:660
 msgid "Small"
 msgstr "Pequeña"
 
-#: admin/class-cookie-law-info-admin.php:670
+#: admin/class-cookie-law-info-admin.php:674
 msgid "Default theme font"
 msgstr "Fuente de tema por defecto"
 
-#: admin/class-cookie-law-info-admin.php:674
+#: admin/class-cookie-law-info-admin.php:678
 msgid "Sans Serif"
 msgstr "Sans Serif"
 
-#: admin/class-cookie-law-info-admin.php:678
+#: admin/class-cookie-law-info-admin.php:682
 msgid "Serif"
 msgstr "Serif"
 
-#: admin/class-cookie-law-info-admin.php:682
+#: admin/class-cookie-law-info-admin.php:686
 msgid "Arial"
 msgstr "Arial"
 
-#: admin/class-cookie-law-info-admin.php:686
+#: admin/class-cookie-law-info-admin.php:690
 msgid "Arial Black"
 msgstr "Arial Black"
 
-#: admin/class-cookie-law-info-admin.php:690
+#: admin/class-cookie-law-info-admin.php:694
 msgid "Georgia, serif"
 msgstr "Georgia, serif"
 
-#: admin/class-cookie-law-info-admin.php:694
+#: admin/class-cookie-law-info-admin.php:698
 msgid "Helvetica"
 msgstr "Helvetica"
 
-#: admin/class-cookie-law-info-admin.php:698
+#: admin/class-cookie-law-info-admin.php:702
 msgid "Lucida"
 msgstr "Lucida"
 
-#: admin/class-cookie-law-info-admin.php:702
+#: admin/class-cookie-law-info-admin.php:706
 msgid "Tahoma"
 msgstr "Tahoma"
 
-#: admin/class-cookie-law-info-admin.php:706
+#: admin/class-cookie-law-info-admin.php:710
 msgid "Times New Roman"
 msgstr "Times New Roman"
 
-#: admin/class-cookie-law-info-admin.php:710
+#: admin/class-cookie-law-info-admin.php:714
 msgid "Trebuchet"
 msgstr "Trebuchet"
 
-#: admin/class-cookie-law-info-admin.php:714
+#: admin/class-cookie-law-info-admin.php:718
 msgid "Verdana"
 msgstr "Verdana"
 
@@ -201,9 +201,9 @@ msgid "Heading"
 msgstr "Título"
 
 #: admin/modules/cli-policy-generator/views/policy-generator.php:57
-#: admin/views/admin_necessary_cookie.php:27
-#: admin/views/admin_non_necessary_cookie.php:34
-#: public/modules/shortcode/shortcode.php:209
+#: admin/views/admin_necessary_cookie.php:30
+#: admin/views/admin_non_necessary_cookie.php:53
+#: public/modules/shortcode/shortcode.php:214
 msgid "Description"
 msgstr "Descripción"
 
@@ -228,14 +228,14 @@ msgid "Live preview"
 msgstr "Vista previa en vivo"
 
 #: admin/partials/cookie-law-info-admin_settings.php:25
-#: admin/views/admin_necessary_cookie.php:14
-#: admin/views/admin_non_necessary_cookie.php:14
+#: admin/views/admin_necessary_cookie.php:17
+#: admin/views/admin_non_necessary_cookie.php:23
 msgid "Settings updated."
 msgstr "Preferencias actualizadas."
 
 #: admin/partials/cookie-law-info-admin_settings.php:26
-#: admin/views/admin_necessary_cookie.php:15
-#: admin/views/admin_non_necessary_cookie.php:15
+#: admin/views/admin_necessary_cookie.php:18
+#: admin/views/admin_non_necessary_cookie.php:24
 msgid "Unable to update Settings."
 msgstr "No se puede actualizar la configuración."
 
@@ -268,6 +268,7 @@ msgid "Customise Buttons"
 msgstr "Personalizar botones"
 
 #: admin/partials/cookie-law-info-admin_settings.php:60
+#: admin/views/admin-settings-advanced.php:8
 msgid "Advanced"
 msgstr "Ajustes"
 
@@ -275,18 +276,18 @@ msgstr "Ajustes"
 msgid "Help Guide"
 msgstr "Guía de ayuda"
 
-#: admin/partials/cookie-law-info-privacy_overview.php:61
+#: admin/partials/cookie-law-info-privacy_overview.php:60
 msgid "Privacy Overview Title"
 msgstr "Título de la descripción de privacidad"
 
-#: admin/partials/cookie-law-info-privacy_overview.php:67
-#: admin/partials/cookie-law-info-privacy_overview.php:82
+#: admin/partials/cookie-law-info-privacy_overview.php:66
+#: admin/partials/cookie-law-info-privacy_overview.php:81
 msgid "This will be shown in the settings visible for user on consent screen."
 msgstr ""
 "Esto se mostrará en la configuración visible para el usuario en la pantalla "
 "de consentimiento."
 
-#: admin/partials/cookie-law-info-privacy_overview.php:90
+#: admin/partials/cookie-law-info-privacy_overview.php:89
 msgid "Save Settings"
 msgstr "Guardar ajustes"
 
@@ -298,19 +299,19 @@ msgstr ""
 "Algunas veces, los temas aplican configuraciones que chocan con los "
 "complementos. Si eso sucede, intente ajustar estas configuraciones."
 
-#: admin/views/admin-settings-advanced.php:23
+#: admin/views/admin-settings-advanced.php:13
 msgid "Reset all values"
 msgstr "Reiniciar todos los valores"
 
-#: admin/views/admin-settings-advanced.php:25
+#: admin/views/admin-settings-advanced.php:15
 msgid "Delete settings and reset"
 msgstr "Borrar ajustes y restablecer"
 
-#: admin/views/admin-settings-advanced.php:25
+#: admin/views/admin-settings-advanced.php:15
 msgid "Are you sure you want to delete all your settings?"
 msgstr "¿estás seguro de que desea borrar todas las imágenes?"
 
-#: admin/views/admin-settings-advanced.php:26
+#: admin/views/admin-settings-advanced.php:16
 msgid "Warning: this will actually delete your current settings."
 msgstr "ADVERTENCIA: esto realmente borra la configuración actual."
 
@@ -424,7 +425,7 @@ msgstr "¿Abrir enlace en una nueva pestaña?"
 #: admin/views/admin-settings-general.php:246
 #: admin/views/admin-settings-general.php:253
 #: admin/views/admin-settings-messagebar.php:51
-#: admin/views/admin_non_necessary_cookie.php:28
+#: admin/views/admin_non_necessary_cookie.php:37
 msgid "Yes"
 msgstr "Sí"
 
@@ -441,7 +442,7 @@ msgstr "Sí"
 #: admin/views/admin-settings-general.php:247
 #: admin/views/admin-settings-general.php:254
 #: admin/views/admin-settings-messagebar.php:52
-#: admin/views/admin_non_necessary_cookie.php:29
+#: admin/views/admin_non_necessary_cookie.php:38
 msgid "No"
 msgstr "No"
 
@@ -880,24 +881,48 @@ msgid "Font"
 msgstr "Fuente"
 
 #: admin/views/admin-settings-save-button.php:12
-#: admin/views/admin_necessary_cookie.php:40
-#: admin/views/admin_non_necessary_cookie.php:67
+#: admin/views/admin_necessary_cookie.php:43
+#: admin/views/admin_non_necessary_cookie.php:86
 msgid "Update Settings"
 msgstr "Actualizar ajustes"
 
-#: admin/views/admin_necessary_cookie.php:20
+#: admin/views/admin_necessary_cookie.php:23
 msgid "Necessary Cookie Settings"
 msgstr "Configuraciones de cookies necesarias"
 
-#: admin/views/admin_non_necessary_cookie.php:20
+#: admin/views/admin_non_necessary_cookie.php:29
 msgid "Non-necessary Cookie Settings"
 msgstr "Configuraciones de cookies no necesarias"
 
-#: admin/views/admin_non_necessary_cookie.php:27
+#: admin/views/admin_non_necessary_cookie.php:36
 msgid "Enable Non-necessary Cookie"
 msgstr "Habilitar la cookie no necesaria"
 
-#: admin/views/admin_non_necessary_cookie.php:42
+#: admin/views/admin_non_necessary_cookie.php:43
+#, fuzzy
+#| msgid "Default theme font"
+msgid "Default state"
+msgstr "Fuente de tema por defecto"
+
+#: admin/views/admin_non_necessary_cookie.php:44
+#: public/views/cookie-law-info_popup_content.php:5
+msgid "Enabled"
+msgstr "Habilitado"
+
+#: admin/views/admin_non_necessary_cookie.php:45
+#: public/views/cookie-law-info_popup_content.php:6
+msgid "Disabled"
+msgstr "Discapacitado"
+
+#: admin/views/admin_non_necessary_cookie.php:47
+msgid ""
+"If you enable this option, the category toggle button will be in the active "
+"state for cookie consent."
+msgstr ""
+"Si habilita esta opción, el botón de alternar categoría estará en el estado "
+"activo para el consentimiento de cookies."
+
+#: admin/views/admin_non_necessary_cookie.php:61
 msgid ""
 "This script will be added to the page HEAD section if the above settings is "
 "enabled and user has give consent."
@@ -905,7 +930,7 @@ msgstr ""
 "Esta secuencia de comandos se agregará a la página HEAD si la configuración "
 "anterior está habilitada y el usuario ha dado su consentimiento."
 
-#: admin/views/admin_non_necessary_cookie.php:47
+#: admin/views/admin_non_necessary_cookie.php:66
 msgid ""
 "Print scripts in the head tag on the front end if above cookie settings is "
 "enabled and user has given consent."
@@ -914,7 +939,7 @@ msgstr ""
 "configuración de cookies anterior está habilitada y el usuario ha dado su "
 "consentimiento."
 
-#: admin/views/admin_non_necessary_cookie.php:54
+#: admin/views/admin_non_necessary_cookie.php:73
 msgid ""
 "This script will be added right after the BODY section if the above settings "
 "is enabled and user has given consent."
@@ -923,7 +948,7 @@ msgstr ""
 "las configuraciones anteriores están habilitadas y el usuario ha dado su "
 "consentimiento."
 
-#: admin/views/admin_non_necessary_cookie.php:57
+#: admin/views/admin_non_necessary_cookie.php:76
 msgid ""
 "Print scripts before the closing body tag on the front end if above cookie "
 "settings is enabled and user has given consent."
@@ -1074,48 +1099,48 @@ msgstr "Necesario"
 msgid "Non-necessary"
 msgstr "No es necesario"
 
-#: public/class-cookie-law-info-public.php:226
+#: public/class-cookie-law-info-public.php:267
 msgid "GDPR Cookie Consent"
 msgstr "Cookie Consent"
 
-#: public/class-cookie-law-info-public.php:227
+#: public/class-cookie-law-info-public.php:268
 msgid "Cookie List"
 msgstr "Cookie"
 
-#: public/class-cookie-law-info-public.php:228
-#: public/modules/shortcode/shortcode.php:197
+#: public/class-cookie-law-info-public.php:269
+#: public/modules/shortcode/shortcode.php:202
 msgid "Cookie"
 msgstr "Cookie"
 
-#: public/class-cookie-law-info-public.php:229
+#: public/class-cookie-law-info-public.php:270
 msgid "Add New"
 msgstr "Añadir nuevo"
 
-#: public/class-cookie-law-info-public.php:230
+#: public/class-cookie-law-info-public.php:271
 msgid "Add New Cookie Type"
 msgstr "Agregar nueva Cookie"
 
-#: public/class-cookie-law-info-public.php:231
+#: public/class-cookie-law-info-public.php:272
 msgid "Edit Cookie Type"
 msgstr "Tipo de cookie"
 
-#: public/class-cookie-law-info-public.php:232
+#: public/class-cookie-law-info-public.php:273
 msgid "New Cookie Type"
 msgstr "Tipo de cookie"
 
-#: public/class-cookie-law-info-public.php:233
+#: public/class-cookie-law-info-public.php:274
 msgid "View Cookie Type"
 msgstr "Tipo de cookie"
 
-#: public/class-cookie-law-info-public.php:234
+#: public/class-cookie-law-info-public.php:275
 msgid "Search Cookies"
 msgstr "La búsqueda Cookies"
 
-#: public/class-cookie-law-info-public.php:235
+#: public/class-cookie-law-info-public.php:276
 msgid "Nothing found"
 msgstr "Nada Encontrado"
 
-#: public/class-cookie-law-info-public.php:236
+#: public/class-cookie-law-info-public.php:277
 msgid "Nothing found in Trash"
 msgstr "Nada encontrado en la Papelera"
 
@@ -1147,25 +1172,17 @@ msgstr "Eliminar Cookies"
 msgid "No records found"
 msgstr "No se encontrarón archivos"
 
-#: public/modules/shortcode/shortcode.php:201
+#: public/modules/shortcode/shortcode.php:206
 msgid "Type"
 msgstr "Tipo"
 
-#: public/modules/shortcode/shortcode.php:205
+#: public/modules/shortcode/shortcode.php:210
 msgid "Duration"
 msgstr "Duración"
 
 #: public/views/cookie-law-info_popup_content.php:4
 msgid "Always Enabled"
 msgstr "Siempre habilitado"
-
-#: public/views/cookie-law-info_popup_content.php:5
-msgid "Enabled"
-msgstr "Habilitado"
-
-#: public/views/cookie-law-info_popup_content.php:6
-msgid "Disabled"
-msgstr "Discapacitado"
 
 #: public/views/cookie-law-info_popup_content.php:7
 msgid "Show more"

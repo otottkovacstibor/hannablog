@@ -16,7 +16,7 @@
  * Plugin Name:       GDPR Cookie Consent
  * Plugin URI:        https://www.webtoffee.com/product/gdpr-cookie-consent/
  * Description:       A simple way to show your website complies with the EU Cookie Law / GDPR.
- * Version:           1.8.0
+ * Version:           1.8.1
  * Author:            WebToffee
  * Author URI:        http://cookielawinfo.com/
  * License:           GPLv3
@@ -63,9 +63,38 @@ define ( 'CLI_POST_TYPE','cookielawinfo');
  * Currently plugin version.
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'CLI_VERSION', '1.8.0' );
+define( 'CLI_VERSION', '1.8.1' );
 
-
+function wt_cookie_law_info_update_message( $data, $response )
+{   
+    
+    if(isset( $data['upgrade_notice']))
+    {   
+        add_action( 'admin_print_footer_scripts','wt_cookie_law_info_plugin_screen_update_js');
+        $msg=str_replace(array('<p>','</p>'),array('<div>','</div>'),$data['upgrade_notice']);
+        echo '<style type="text/css">
+        #cookie-law-info-update .update-message p:last-child{ display:none;}     
+        #cookie-law-info-update ul{ list-style:disc; margin-left:30px;}
+        .wf-update-message{ padding-left:30px;}
+        </style>
+        <div class="update-message wf-update-message">'. wpautop($msg).'</div>';
+    }
+}
+function wt_cookie_law_info_plugin_screen_update_js()
+{
+    ?>
+        <script>
+            ( function( $ ){
+                var update_dv=$( '#cookie-law-info-update ');
+                update_dv.find('.wf-update-message').next('p').remove();
+                update_dv.find('a.update-link:eq(0)').click(function(){
+                    $('.wf-update-message').remove();
+                });
+            })( jQuery );
+        </script>
+        <?php
+}
+add_action( 'in_plugin_update_message-cookie-law-info/cookie-law-info.php', 'wt_cookie_law_info_update_message', 10, 2 );
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-cookie-law-info-activator.php

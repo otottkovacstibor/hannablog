@@ -76,7 +76,7 @@ class Cookie_Law_Info {
 		} 
 		else 
 		{
-			$this->version = '1.8.0';
+			$this->version = '1.8.1';
 		}
 		$this->plugin_name = 'cookie-law-info';
 
@@ -552,6 +552,7 @@ class Cookie_Law_Info {
 			case 'as_popup':
 			case 'popup_overlay':
 			case 'thirdparty_on_field':
+			case 'third_party_default_state':
 
 				if ( $value == 'true' || $value === true ) 
 				{

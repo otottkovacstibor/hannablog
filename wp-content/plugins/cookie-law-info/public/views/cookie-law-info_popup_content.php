@@ -24,7 +24,7 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                 }
                 ?>                                   
                 <div class="cli-privacy-content">
-                    <p class="cli-privacy-content-text"><?php echo $privacy_overview_content;?></p>
+                    <div class="cli-privacy-content-text"><?php echo $privacy_overview_content;?></div>
                 </div>
                 <?php echo $cli_privacy_readmore; ?>
             </div>
@@ -47,6 +47,7 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
             $cookie_categories = self::get_cookie_categories();
             foreach ($cookie_categories as $key => $value) 
             {   
+                
                 $checked = false;
                 $cli_checked='';
                 if(isset($_COOKIE["cookielawinfo-checkbox-$key"]) && $_COOKIE["cookielawinfo-checkbox-$key"] =='yes')
@@ -56,8 +57,14 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                 }
                 else if(!isset($_COOKIE["cookielawinfo-checkbox-$key"]))
                 {   
+                    
                     $checked = true;
-                    $cli_checked='checked';     
+                    $cli_checked='checked';    
+                    if($key === 'non-necessary' && ! self::wt_cli_check_thirdparty_state())
+                    {
+                        $checked = false;
+                        $cli_checked='';   
+                    }
                 }
                 if($key == 'necessary') 
                 {   
@@ -75,7 +82,6 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                     $cli_cat_content=isset($third_party_cookie_options['thirdparty_description']) ? $third_party_cookie_options['thirdparty_description'] : '';
                 }
             ?>  
-           
             <?php 
             $thirdparty_on_field=isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
             $wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
