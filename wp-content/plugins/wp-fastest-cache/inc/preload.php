@@ -109,7 +109,7 @@
 			if(isset($pre_load->page)){
 				$count_pages = wp_count_posts("page", array('post_status' => 'publish', 'suppress_filters' => true));
 
-				$total->page = $count_posts->publish;
+				$total->page = $count_pages->publish;
 			}
 
 			if(isset($pre_load->category)){
@@ -269,25 +269,19 @@
 
 				// PAGE
 				if($number > 0 && isset($pre_load->page) && $pre_load->page > -1){
-					$pages = get_pages(array(
-							'sort_order' => 'DESC',
-							'sort_column' => 'ID',
-							'parent' => -1,
-							'hierarchical' => 0,
-							'number' => $number,
-							'offset' => $pre_load->page,
-							'post_type' => 'page',
-							'post_status' => 'publish'
-					));
+
+					global $wpdb;
+		    		$pages = $wpdb->get_results("SELECT SQL_CALC_FOUND_ROWS  ".$wpdb->prefix."posts.ID FROM ".$wpdb->prefix."posts  WHERE 1=1  AND (".$wpdb->prefix."posts.post_type = 'page') AND ((".$wpdb->prefix."posts.post_status = 'publish'))  ORDER BY ".$wpdb->prefix."posts.ID DESC LIMIT ".$pre_load->page.", ".$number, ARRAY_A);
+
 
 					if(count($pages) > 0){
 						foreach ($pages as $key => $page) {
 		    				if($mobile_theme){
-		    					array_push($urls, array("url" => get_page_link($page->ID), "user-agent" => "mobile"));
+		    					array_push($urls, array("url" => get_page_link($page["ID"]), "user-agent" => "mobile"));
 		    					$number--;
 		    				}
 
-	    					array_push($urls, array("url" => get_page_link($page->ID), "user-agent" => "desktop"));
+	    					array_push($urls, array("url" => get_page_link($page["ID"]), "user-agent" => "desktop"));
 	    					$number--;
 
 		    				$pre_load->page = $pre_load->page + 1;

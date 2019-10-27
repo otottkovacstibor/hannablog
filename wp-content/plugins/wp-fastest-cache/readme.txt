@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 5.2
-Stable tag: 0.8.9.8
+Stable tag: 0.8.9.9
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -59,7 +59,7 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 * 中文 (by suifengtec)
 * Deutsch
 * English
-* Español (by Diplo)
+* Español (by Javier Esteban)
 * Français (by PascalJ)
 * Italiana (by Valerio)
 * 日本語 (by KUCKLU)
@@ -102,6 +102,12 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.8.9.9 =
+* to fix Undefined variable: count_posts in preload.php on line 112
+* to update of Spanish translation
+* to preload the language pages (WPML)
+* to clear cache of the commend feed as well after clearing cache of a post
 
 = 0.8.9.8 =
 * to clear cache of /feed as well after clearing cache of a post
@@ -356,7 +362,7 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 * to fix Woocommerce basket issue
 * to serve the sources via cdn for logged-in users
 * to prevent removing "=" from exclude rules
-* to change <FilesMatch "\.(html|htm)"> to <FilesMatch "index\.(html|htm)">
+* to change &lt;FilesMatch "\.(html|htm)"&gt; to &lt;FilesMatch "index\.(html|htm)"&gt;
 * to fix problem about random url of photon
 * to replace origin-url which starts with /wp-content with cdn-url
 * to replace wp_get_recent_posts() with get_results() for preload

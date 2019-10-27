@@ -116,7 +116,7 @@
 						//nothing
 					}else{
 						if(is_multisite()){
-							$this->notify(array("The plugin does not work with Multisite", "error"));
+							$this->notify(array("The plugin does not work with Multisite.\n Please <a target='_blank' href='https://www.wpfastestcache.com/blog/multi-site/'>click here</a> to learn how to enable it.", "error"));
 							return 0;
 						}
 					}
@@ -1038,8 +1038,8 @@
 
 
 							<?php if(class_exists("WpFastestCachePowerfulHtml")){ ?>
-								<?php if(file_exists(WPFC_WP_CONTENT_DIR."/plugins/wp-fastest-cache-premium/pro/library/widget-cache.php")){ ?>
-									<?php include_once WPFC_WP_CONTENT_DIR."/plugins/wp-fastest-cache-premium/pro/library/widget-cache.php"; ?>
+								<?php if(file_exists(WPFC_WP_PLUGIN_DIR."/wp-fastest-cache-premium/pro/library/widget-cache.php")){ ?>
+									<?php include_once WPFC_WP_PLUGIN_DIR."/wp-fastest-cache-premium/pro/library/widget-cache.php"; ?>
 
 									<?php if(class_exists("WpfcWidgetCache") && method_exists("WpfcWidgetCache", "add_filter_admin")){ ?>
 										<div class="questionCon">
@@ -1262,20 +1262,20 @@
 								<?php if(method_exists("WpFastestCachePowerfulHtml", "render_blocking")){ ?>
 									<div class="questionCon">
 										<div class="question"><?php _e('Render Blocking Js', 'wp-fastest-cache'); ?></div>
-										<div class="inputCon"><input type="checkbox" <?php echo $wpFastestCacheRenderBlocking; ?> id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking"><?php _e("Remove render-blocking JavaScript", "wp-fastest-cache"); ?></label></div>
+										<div class="inputCon"><input type="checkbox" <?php echo $wpFastestCacheRenderBlocking; ?> id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking"><?php _e("Eliminate render-blocking JavaScript resources", "wp-fastest-cache"); ?></label></div>
 										<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
 									</div>
 								<?php }else{ ?>
 									<div class="questionCon update-needed">
 										<div class="question"><?php _e('Render Blocking Js', 'wp-fastest-cache'); ?></div>
-										<div class="inputCon"><input type="checkbox" id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking"><?php _e("Remove render-blocking JavaScript", "wp-fastest-cache"); ?></label></div>
+										<div class="inputCon"><input type="checkbox" id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking"><?php _e("Eliminate render-blocking JavaScript resources", "wp-fastest-cache"); ?></label></div>
 										<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
 									</div>
 								<?php } ?>
 							<?php }else{ ?>
 								<div class="questionCon disabled">
 									<div class="question"><?php _e('Render Blocking Js', 'wp-fastest-cache'); ?></div>
-									<div class="inputCon"><input type="checkbox" id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking"><?php _e("Remove render-blocking JavaScript", "wp-fastest-cache"); ?></label></div>
+									<div class="inputCon"><input type="checkbox" id="wpFastestCacheRenderBlocking" name="wpFastestCacheRenderBlocking"><label for="wpFastestCacheRenderBlocking"><?php _e("Eliminate render-blocking JavaScript resources", "wp-fastest-cache"); ?></label></div>
 									<div class="get-info"><a target="_blank" href="http://www.wpfastestcache.com/premium/render-blocking-js/"><img src="<?php echo plugins_url("wp-fastest-cache/images/info.png"); ?>" /></a></div>
 								</div>
 							<?php } ?>

@@ -113,10 +113,10 @@ $generated_i18n_strings = array(
 	// Reference: node_modules/@yoast/components/WordOccurrences.js:57
 	__( '%d occurrences', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/composites/LinkSuggestions/LinkSuggestion.js:48
+	// Reference: node_modules/yoast-components/composites/LinkSuggestions/LinkSuggestion.js:49
 	__( 'Copy link', 'wordpress-seo' ),
 
-	// Reference: node_modules/yoast-components/composites/LinkSuggestions/LinkSuggestion.js:51
+	// Reference: node_modules/yoast-components/composites/LinkSuggestions/LinkSuggestion.js:52
 	__( 'Copy link to suggested article: %s', 'wordpress-seo' ),
 
 	// Reference: node_modules/yoast-components/composites/LinkSuggestions/LinkSuggestions.js:129

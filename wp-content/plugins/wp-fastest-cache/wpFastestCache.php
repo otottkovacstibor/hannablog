@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.8.9.8
+Version: 0.8.9.9
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -780,15 +780,17 @@ GNU General Public License for more details.
 			*/
 			
 			if($path){
-				//WPML language switch
-				//https://wpml.org/forums/topic/wpml-language-switch-wp-fastest-cache-issue/
-				$language_negotiation_type = apply_filters('wpml_setting', false, 'language_negotiation_type');
-				if(($language_negotiation_type == 2) && $this->isPluginActive('sitepress-multilingual-cms/sitepress.php')){
-				    $path = preg_replace("/\/cache\/(all|wpfc-minified|wpfc-widget-cache|wpfc-mobile-cache)/", "/cache/".$_SERVER['HTTP_HOST']."/$1", $path);
-				}
+				if(preg_match("/\/cache\/(all|wpfc-minified|wpfc-widget-cache|wpfc-mobile-cache)/", $path)){
+					//WPML language switch
+					//https://wpml.org/forums/topic/wpml-language-switch-wp-fastest-cache-issue/
+					$language_negotiation_type = apply_filters('wpml_setting', false, 'language_negotiation_type');
+					if(($language_negotiation_type == 2) && $this->isPluginActive('sitepress-multilingual-cms/sitepress.php')){
+					    $path = preg_replace("/\/cache\/(all|wpfc-minified|wpfc-widget-cache|wpfc-mobile-cache)/", "/cache/".$_SERVER['HTTP_HOST']."/$1", $path);
+					}
 
-				if(is_multisite()){
-					$path = preg_replace("/\/cache\/(all|wpfc-minified|wpfc-widget-cache|wpfc-mobile-cache)/", "/cache/".$_SERVER['HTTP_HOST']."/$1", $path);
+					if(is_multisite()){
+						$path = preg_replace("/\/cache\/(all|wpfc-minified|wpfc-widget-cache|wpfc-mobile-cache)/", "/cache/".$_SERVER['HTTP_HOST']."/$1", $path);
+					}
 				}
 
 				return WPFC_WP_CONTENT_DIR.$path;
@@ -987,6 +989,11 @@ GNU General Public License for more details.
 					// to clear cache of /feed
 					if(preg_match("/https?:\/\/[^\/]+\/(.+)/", get_feed_link(), $feed_out)){
 						array_push($files, $this->getWpContentDir("/cache/all/").$feed_out[1]);
+					}
+
+					// to clear cache of /comments/feed/
+					if(preg_match("/https?:\/\/[^\/]+\/(.+)/", get_feed_link("comments_"), $comment_feed_out)){
+						array_push($files, $this->getWpContentDir("/cache/all/").$comment_feed_out[1]);
 					}
 
 					foreach((array)$files as $file){
