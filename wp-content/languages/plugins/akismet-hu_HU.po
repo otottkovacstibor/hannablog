@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Akismet Anti-Spam - Development (trunk) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-02-05 09:37:11+0000\n"
+"PO-Revision-Date: 2019-09-22 19:15:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -13,11 +13,11 @@ msgstr ""
 
 #: class.akismet-admin.php:1074
 msgid "Akismet could not recheck your comments for spam."
-msgstr ""
+msgstr "Az Akismet nem tudta ismételten ellenőrizni, hogy a hozzászólás spamnek minősül-e."
 
 #: class.akismet-admin.php:422
 msgid "You don't have permission to do that."
-msgstr ""
+msgstr "A művelethez nincs megfelelő jogosultság."
 
 #: class.akismet-cli.php:165
 msgid "Stats response could not be decoded."
@@ -172,11 +172,11 @@ msgstr "Az Akismet mostantól kezdve védi a weboldalt a spam hozzászólásokt�
 msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key."
 msgstr "A milliók által használt Akismet talán a világon a legjobb megoldás a <strong>weboldal spam hozzászólásainak védelmére</strong>, akkor is védelmet biztosít, amikor a weboldal gazdája éppen szundikál. Első lépésként kapcsoljuk be az Akismet bővítményt, majd az Akismet beállítási oldalán állítsuk be az API kulcsot."
 
-#: class.akismet-admin.php:1179
+#: class.akismet-admin.php:1183
 msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. Your site is fully configured and being protected, even while you sleep."
 msgstr "A milliók által használt Akismet talán a világon a legjobb megoldás a <strong>weboldal spam hozzászólásainak védelmére</strong>, akkor is védelmet biztosít, amikor a weboldal gazdája éppen szundikál. A weboldal beállítva a teljes védelemre."
 
-#: class.akismet-admin.php:1182
+#: class.akismet-admin.php:1186
 msgid "Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started, just go to <a href=\"admin.php?page=akismet-key-config\">your Akismet Settings page</a> to set up your API key."
 msgstr "A milliók által használt Akismet talán a világon a legjobb megoldás a <strong>weboldal spam hozzászólásainak védelmére</strong>, akkor is védelmet biztosít, amikor a weboldal gazdája éppen szundikál. Első lépésként kapcsoljuk be az Akismet bővítményt, majd az<a href=\"admin.php?page=akismet-key-config\">Aismet beállítási oldal</a> felületén állítsuk be az API kulcsot."
 
@@ -899,7 +899,7 @@ msgstr "Eltávolítás..."
 msgid "Remove this URL"
 msgstr "URL eltávolítása"
 
-#: class.akismet-admin.php:88 class.akismet-admin.php:1201
+#: class.akismet-admin.php:88 class.akismet-admin.php:1205
 msgid "Akismet"
 msgstr "Akismet"
 
