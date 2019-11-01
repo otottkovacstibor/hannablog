@@ -110,6 +110,7 @@ return array(
     'WPSEO_Admin_Asset_Manager' => $baseDir . '/admin/class-admin-asset-manager.php',
     'WPSEO_Admin_Asset_SEO_Location' => $baseDir . '/admin/class-admin-asset-seo-location.php',
     'WPSEO_Admin_Asset_Yoast_Components_L10n' => $baseDir . '/admin/class-admin-asset-yoast-components-l10n.php',
+    'WPSEO_Admin_Banner' => $baseDir . '/admin/class-admin-banner.php',
     'WPSEO_Admin_Bar_Menu' => $baseDir . '/inc/class-wpseo-admin-bar-menu.php',
     'WPSEO_Admin_Editor_Specific_Replace_Vars' => $baseDir . '/admin/class-admin-editor-specific-replace-vars.php',
     'WPSEO_Admin_Gutenberg_Compatibility_Notification' => $baseDir . '/admin/class-admin-gutenberg-compatibility-notification.php',
