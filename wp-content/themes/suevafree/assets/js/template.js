@@ -238,21 +238,6 @@ jQuery.noConflict()(function($){
 	});
 
 /* ===============================================
-   MAIN MENU
-   =============================================== */
-
-	$('.suevafree-general-menu li').hover(
-		
-		function () {
-			$(this).children('ul').stop(true, true).fadeIn(100);
-		}, 
-		function () {
-			$(this).children('ul').stop(true, true).fadeOut(400);		
-		}
-			
-	);
-
-/* ===============================================
    TINYNAV MENU
    =============================================== */
 

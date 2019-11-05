@@ -148,12 +148,13 @@ a {
 	transition: color .3s ease;
 }
 
-a:hover ,
-a:active ,
-a:focus {
+a:hover {
 	color:#d14a2b;
-	outline:none;
-	text-decoration:none;
+}
+
+a:focus {
+	outline: thin dotted;
+    text-decoration: underline;
 }
 
 iframe, 
@@ -293,7 +294,8 @@ span.button {
 	transition: background-color .3s ease;
 }
 
-span.button:hover {
+span.button:hover ,
+.read-more:focus span.button {
 	background:#d14a2b;
 	color:#fff;
 	text-decoration:none;
@@ -311,7 +313,8 @@ span.button:hover {
 	transition: color .3s ease;
 }
 
-.post-article a span.nobutton:hover {
+.post-article a span.nobutton:hover ,
+.post-article a:focus span.nobutton {
 	color:#d14a2b;
 }
 
@@ -338,7 +341,12 @@ body.sneak_button #searchform input[type=submit]{
 .contact-form input.sneak[type=submit]:hover,
 body.sneak_button .wpcf7-form input[type=submit]:hover,
 body.sneak_button .contact-form.newsletter-form input[type=submit]:hover,
-body.sneak_button #searchform input[type=submit]:hover {
+body.sneak_button #searchform input[type=submit]:hover,
+.button.sneak:focus,
+.contact-form input.sneak[type=submit]:focus,
+body.sneak_button .wpcf7-form input[type=submit]:focus,
+body.sneak_button .contact-form.newsletter-form input[type=submit]:focus,
+body.sneak_button #searchform input[type=submit]:focus {
 	background:#d14a2b;
 	color:#fff;
 	border:solid 1px #d14a2b;
@@ -1689,7 +1697,12 @@ div.wpcf7-mail-sent-ok {
 .woocommerce-product-search input[type=submit]:hover,
 .contact-form input[type=submit]:hover ,
 .searchform input[type=submit]:hover ,
-.comment-form input[type=submit]:hover {
+.comment-form input[type=submit]:hover,
+.wpcf7-form input[type=submit]:focus ,
+.woocommerce-product-search input[type=submit]:focus,
+.contact-form input[type=submit]:focus ,
+.searchform input[type=submit]:focus,
+.comment-form input[type=submit]:focus {
 	background:#d14a2b;
 	color:#fff;
 	text-decoration:none
@@ -2524,19 +2537,6 @@ body.disable_box_shadow .suevafree-pagination span {
 		margin-bottom:0;
 	}
 	
-	.skills {
-		margin-bottom:50px;
-		width:100%
-	}
-
-	.skills .filter li {
-		display:block;
-	}
-
-	.skills .filter li:last-of-type {
-		margin:0;
-	}
-
 	/* ===============================================
 	   MOBILE TITLE AND CONTENT ALIGN
 	   ============================================= */

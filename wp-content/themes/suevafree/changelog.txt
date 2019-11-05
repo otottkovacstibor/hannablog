@@ -1,5 +1,30 @@
 SuevaFree Changelog
 
+= 3.8.0 =
+Release date - November, 01 - 2019
+
+* Added - Keyboard navigation
+* Edit - Code optimized
+
+= 3.7.9 =
+Release date - August, 25 - 2019
+
+* Optimized - Copyright section
+* Removed - Google plus social button
+* Edit - Code optimized
+
+= 3.7.8 =
+Release date - August, 18 - 2019
+
+* Updated - WooCommerce templates
+* Fixed - Coupon input field on cart page
+
+= 3.7.7 =
+Release date - August, 11 - 2019
+
+* Updated - Italian translation file
+* Edit - Code optimized
+
 = 3.7.6 =
 Release date - August, 06 - 2019
 

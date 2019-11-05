@@ -817,6 +817,15 @@ if (!function_exists('suevafree_scripts_styles')) {
 	
 		if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 
+		wp_enqueue_script( 'suevafree-navigation', get_template_directory_uri() . '/assets/js/navigation.js' , array('jquery'), '1.0', TRUE ); 
+
+		wp_localize_script( 'suevafree-navigation', 'accessibleNavigationScreenReaderText', array(
+			'expandMain'   => __( 'Open the main menu', 'suevafree' ),
+			'collapseMain' => __( 'Close the main menu', 'suevafree' ),
+			'expandChild'   => __( 'expand submenu', 'suevafree' ),
+			'collapseChild' => __( 'collapse submenu', 'suevafree' ),
+		));
+
 		wp_enqueue_script('html5shiv', get_template_directory_uri().'/assets/scripts/html5shiv.js', FALSE, '3.7.3');
 		wp_script_add_data('html5shiv', 'conditional', 'IE 8' );
 		

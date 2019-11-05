@@ -38,7 +38,13 @@ if (!function_exists('suevafree_required_plugins')) {
 				'slug'      => 'wip-woocarousel-lite',
 				'required'  => false,
 			),
-	
+			
+			array(
+				'name'      => 'Chatbox Manager',
+				'slug'      => 'wa-chatbox-manager',
+				'required'  => false,
+			),
+
 			array(
 				'name'      => 'Widget Importer & Exporter',
 				'slug'      => 'widget-importer-exporter',

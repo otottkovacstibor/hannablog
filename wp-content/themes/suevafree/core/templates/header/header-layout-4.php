@@ -36,8 +36,13 @@ if (!function_exists('suevafree_header_layout_4_function')) {
                                 </div>
 
                                 <div class="col-md-10" >
-                                 
-                                    <nav class="suevafree-menu suevafree-general-menu">
+            
+                                    <button class="menu-toggle" aria-controls="suevafree-mainmenu" aria-expanded="false" type="button">
+                                        <span aria-hidden="true"><?php esc_html_e( 'Menu', 'suevafree' ); ?></span>
+                                        <span class="dashicons" aria-hidden="true"></span>
+                                    </button>
+                
+                                    <nav id="suevafree-mainmenu" class="suevafree-menu suevafree-general-menu">
                                             
                                         <?php 
 										
@@ -45,7 +50,6 @@ if (!function_exists('suevafree_header_layout_4_function')) {
                                         		'theme_location' => $theme_location,
                                         		'menu_class' => $menu_class,
 												'container' => 'false',
-												'depth' => 3
 												)
 											); 
 										

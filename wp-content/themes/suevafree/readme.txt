@@ -2,8 +2,8 @@
 Contributors: alexvtn
 Tags: blog, custom-background, custom-colors, custom-header, custom-logo, custom-menu, e-commerce, featured-images, flexible-header, footer-widgets, post-formats, right-sidebar, sticky-post, theme-options, threaded-comments, translation-ready, one-column, two-columns, three-columns, grid-layout, photography
 Requires at least: 4.0
-Tested up to: 5.2.2
-Stable tag: 3.7.9
+Tested up to: 5.2.4
+Stable tag: 3.8.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -18,6 +18,12 @@ SuevaFree WordPress Theme, Copyright 2019 ThemeinProgress.
 SuevaFree is distributed under the terms of the GPLv2 or later
 
 == Changelog ==
+
+= 3.8.0 =
+Release date - November, 01 - 2019
+
+* Added - Keyboard navigation
+* Edit - Code optimized
 
 = 3.7.9 =
 Release date - August, 25 - 2019
@@ -828,6 +834,9 @@ tipsy By Jason Frame - http://onehackoranother.com/projects/jquery/tipsy
 
 TouchSwipe By Matt Bryson - https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
 * touchSwipe.js v1.6.18 - Licensed under MIT license ( Applies to touchSwipe.js file in /suevafree/assets/js/ )
+
+navigation.js file By Automattic, Inc. - https://underscores.me/
+* navigation.js - Licensed under GPLv2 or later ( Applies to navigation.js file in /suevafree/assets/js/ )
 
 HTML5 Shiv By @afarkas @jdalton @jon_neal @rem - https://github.com/aFarkas/html5shiv
 * html5shiv.js v3.7.0 - Licensed under MIT and GPL2 license ( Applies to html5shiv.js file in /suevafree/assets/scripts/ )
