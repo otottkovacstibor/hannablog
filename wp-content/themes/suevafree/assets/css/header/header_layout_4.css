@@ -121,6 +121,12 @@ p.demo_store {
 	max-height:80px
 } 
 
+.menu-toggle,
+.dropdown-toggle {
+	display:none;
+	visibility:hidden;
+}
+
 @media screen and (min-width : 992px) {	
 
 	/* ===============================================
@@ -346,12 +352,6 @@ p.demo_store {
 		padding-right: 15px;
 	}
 	
-	.menu-toggle,
-	.dropdown-toggle {
-		display:none;
-		visibility:hidden;
-	}
-
 }
 
 /* ===============================================

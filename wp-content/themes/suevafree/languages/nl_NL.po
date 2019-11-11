@@ -1,0 +1,2274 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WIP\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-29 14:09+0100\n"
+"PO-Revision-Date: 2017-12-29 14:13+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;esc_html_e;esc_html__;"
+"esc_html_x:1,2c;_n_noop;_n\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:11 layouts/home-default.php:25 layouts/home-sidebar.php:29
+msgid "Not found"
+msgstr "Niet gevonden"
+
+#: 404.php:12 layouts/search-default.php:31 layouts/search-sidebar.php:32
+msgid "Sorry, no posts matched your criteria"
+msgstr "Sorry, er kwamen geen berichten overeen met jouw criteria"
+
+#: attachment.php:14 core/templates/content/before-content.php:89
+msgid "On "
+msgstr "Geplaatst op "
+
+#: attachment.php:14 core/templates/content/before-content.php:89
+msgid " by "
+msgstr " door "
+
+#: comments.php:6
+msgid "No comments"
+msgstr "Geen reacties"
+
+#: comments.php:7 core/templates/content/post-details.php:32
+msgid "comment"
+msgstr "reactie"
+
+#: comments.php:8 core/templates/content/post-details.php:32
+msgid "comments"
+msgstr "reacties"
+
+#: comments.php:43
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: comments.php:45
+#, php-format
+msgid "%1$s at %2$s"
+msgstr "%1$s op %2$s"
+
+#: comments.php:47
+msgid "(Edit)"
+msgstr "(Bewerken)"
+
+#: comments.php:53
+msgid "Your comment is awaiting approval."
+msgstr "Uw reactie is in afwachting van goedkeuring"
+
+#: comments.php:72
+msgid "&laquo;"
+msgstr "&laquo;"
+
+#: comments.php:73
+msgid "&raquo;"
+msgstr "&raquo;"
+
+#: comments.php:91
+msgid "Comment"
+msgstr "Verzenden"
+
+#: comments.php:93
+msgctxt "Comment field textarea."
+msgid "Comment"
+msgstr ""
+
+#: core/admin/customize/customize.php:13 core/includes/class-notice.php:75
+msgid "Upgrade to Sueva Premium"
+msgstr ""
+
+#: core/admin/customize/customize.php:25 core/admin/customize/customize.php:26
+msgid "Thumbnails"
+msgstr "Miniatuurafbeelding"
+
+#: core/admin/customize/customize.php:37
+msgid "Full Width Section"
+msgstr ""
+
+#: core/admin/customize/customize.php:38
+msgid ""
+"Insert the size of thumbnails for all contents without a sidebar, then use a "
+"free plugin like Regenerate Thumbnails, to regenerate all featured images."
+msgstr ""
+
+#: core/admin/customize/customize.php:48 core/admin/customize/customize.php:84
+#: core/admin/customize/customize.php:120
+msgid "Width"
+msgstr ""
+
+#: core/admin/customize/customize.php:49
+msgid "Insert the width of this thumbnail, for example 1170 and not 1170px."
+msgstr ""
+
+#: core/admin/customize/customize.php:60 core/admin/customize/customize.php:96
+#: core/admin/customize/customize.php:132
+msgid "Height"
+msgstr ""
+
+#: core/admin/customize/customize.php:61
+msgid "Insert the height of this thumbnail, for example 690 and not 690px."
+msgstr ""
+
+#: core/admin/customize/customize.php:73
+msgid "Sidebar Section"
+msgstr ""
+
+#: core/admin/customize/customize.php:74
+msgid ""
+"Insert the size of thumbnails for all contents with a sidebar, then use a "
+"free plugin like Regenerate Thumbnails, to regenerate all featured images."
+msgstr ""
+
+#: core/admin/customize/customize.php:85
+msgid "Insert the width of this thumbnail, for example 750 and not 750px."
+msgstr ""
+
+#: core/admin/customize/customize.php:97
+msgid "Insert the height of this thumbnail, for example 379 and not 379px."
+msgstr ""
+
+#: core/admin/customize/customize.php:109
+msgid "Masonry Section"
+msgstr ""
+
+#: core/admin/customize/customize.php:110
+msgid ""
+"Insert the size of thumbnails for the masonry layout, then use a free plugin "
+"like Regenerate Thumbnails, to regenerate all featured images."
+msgstr ""
+
+#: core/admin/customize/customize.php:121
+msgid "Insert the width of this thumbnail, for example 360 and not 360px."
+msgstr ""
+
+#: core/admin/customize/customize.php:133
+msgid "Insert the height of this thumbnail, for example 182 and not 182px."
+msgstr ""
+
+#: core/admin/customize/customize.php:145
+#: core/admin/customize/customize.php:146
+msgid "General"
+msgstr "Algemeen"
+
+#: core/admin/customize/customize.php:157
+msgid "Color Scheme"
+msgstr "Kleurenschema"
+
+#: core/admin/customize/customize.php:158
+msgid "From this section you can manage the color scheme of SuevaFree."
+msgstr ""
+
+#: core/admin/customize/customize.php:168
+msgid "Predefined Color Schemes"
+msgstr "Voorgedefinieerde kleurenschema's"
+
+#: core/admin/customize/customize.php:169
+msgid "Choose your Color Scheme"
+msgstr "Kies uw kleurenschema"
+
+#: core/admin/customize/customize.php:174
+msgid "Cyan"
+msgstr "Cyaan"
+
+#: core/admin/customize/customize.php:175
+msgid "Orange"
+msgstr "Oranje"
+
+#: core/admin/customize/customize.php:176
+msgid "Blue"
+msgstr "Blauw"
+
+#: core/admin/customize/customize.php:177
+msgid "Red"
+msgstr "Rood"
+
+#: core/admin/customize/customize.php:178
+msgid "Pink"
+msgstr "Roze"
+
+#: core/admin/customize/customize.php:179
+msgid "Purple"
+msgstr "Paars"
+
+#: core/admin/customize/customize.php:180
+msgid "Yellow"
+msgstr "Geel"
+
+#: core/admin/customize/customize.php:181
+msgid "Green"
+msgstr "Groen"
+
+#: core/admin/customize/customize.php:182
+msgid "Black"
+msgstr ""
+
+#: core/admin/customize/customize.php:193
+msgid "Page width"
+msgstr "Paginabreedte"
+
+#: core/admin/customize/customize.php:194
+msgid "From this section you can manage the page width of SuevaFree."
+msgstr ""
+
+#: core/admin/customize/customize.php:204
+msgid "Screen greater than 768px"
+msgstr "Scherm groter dan 768 pixels"
+
+#: core/admin/customize/customize.php:205
+msgid ""
+"Set a width, for a screen greater than 768 pixel (for example 750 and not "
+"750px ) "
+msgstr ""
+"Stel een breedte in voor een scherm van meer dan 768 pixels (bijvoorbeeld "
+"750 en niet 750px)"
+
+#: core/admin/customize/customize.php:215
+msgid "Screen greater than 992px"
+msgstr "Scherm groter dan 992 pixels"
+
+#: core/admin/customize/customize.php:216
+msgid ""
+"Set a width, for a screen greater than 992 pixel (for example 940 and not "
+"940px ) "
+msgstr ""
+"Stel een breedte in voor een scherm van meer dan 992 pixels (bijvoorbeeld "
+"940 en niet 940px)"
+
+#: core/admin/customize/customize.php:226
+msgid "Screen greater than 1200px"
+msgstr "Scherm groter dan 1200 pixels"
+
+#: core/admin/customize/customize.php:227
+msgid ""
+"Set a width, in px, for a screen greater than 1200 pixel (for example 1170 "
+"and not 1170px ) "
+msgstr ""
+"Stel een breedte in, in pixels, voor een scherm van meer dan 1200 pixels "
+"(bijvoorbeeld 1170 en niet 1170px)"
+
+#: core/admin/customize/customize.php:237
+msgid "Screen greater than 1400px"
+msgstr ""
+
+#: core/admin/customize/customize.php:238
+msgid ""
+"Set a width, in px, for a screen greater than 1400px pixel (for example 1370 "
+"and not 1370px ) "
+msgstr ""
+
+#: core/admin/customize/customize.php:250
+msgid "Settings"
+msgstr "Instellingen"
+
+#: core/admin/customize/customize.php:251
+msgid "From this section you can manage the main settings of SuevaFree."
+msgstr ""
+
+#: core/admin/customize/customize.php:261
+msgid "Breadcrumb"
+msgstr ""
+
+#: core/admin/customize/customize.php:262
+msgid "Do you want to enable a breadcrumb, using the header layout 4?"
+msgstr ""
+
+#: core/admin/customize/customize.php:267
+#: core/admin/customize/customize.php:283
+#: core/admin/customize/customize.php:299
+#: core/admin/customize/customize.php:315
+#: core/admin/customize/customize.php:331
+#: core/admin/customize/customize.php:347
+#: core/admin/customize/customize.php:363
+#: core/admin/customize/customize.php:379
+#: core/admin/customize/customize.php:395
+#: core/admin/customize/customize.php:411
+#: core/admin/customize/customize.php:426
+#: core/admin/customize/customize.php:442
+#: core/admin/customize/customize.php:458
+#: core/admin/customize/customize.php:1017
+msgid "No"
+msgstr "Nee"
+
+#: core/admin/customize/customize.php:268
+#: core/admin/customize/customize.php:284
+#: core/admin/customize/customize.php:300
+#: core/admin/customize/customize.php:316
+#: core/admin/customize/customize.php:332
+#: core/admin/customize/customize.php:348
+#: core/admin/customize/customize.php:364
+#: core/admin/customize/customize.php:380
+#: core/admin/customize/customize.php:396
+#: core/admin/customize/customize.php:412
+#: core/admin/customize/customize.php:427
+#: core/admin/customize/customize.php:443
+#: core/admin/customize/customize.php:459
+#: core/admin/customize/customize.php:1018
+msgid "Yes"
+msgstr "Ja"
+
+#: core/admin/customize/customize.php:277
+msgid "Nicescroll plugin"
+msgstr ""
+
+#: core/admin/customize/customize.php:278
+msgid "Do you want to use this plugin to manage the page scroll?"
+msgstr ""
+
+#: core/admin/customize/customize.php:293
+msgid "Category title"
+msgstr "Categorietitel"
+
+#: core/admin/customize/customize.php:294
+msgid "Do you want to view the category title, under the black container?"
+msgstr "Wilt u de categorietitel bekijken, onder de zwarte container?"
+
+#: core/admin/customize/customize.php:309
+msgid "Box Shadow"
+msgstr ""
+
+#: core/admin/customize/customize.php:310
+msgid "Do you want to disable the shadow of boxes?"
+msgstr ""
+
+#: core/admin/customize/customize.php:325
+msgid "Searched item"
+msgstr "Gezocht item"
+
+#: core/admin/customize/customize.php:326
+msgid "Do you want to view the searched item, under the black container?"
+msgstr "Wilt u het gezochte item bekijken, onder de zwarte container?"
+
+#: core/admin/customize/customize.php:341
+msgid "Featured image triangle"
+msgstr ""
+
+#: core/admin/customize/customize.php:342
+#: core/admin/customize/customize.php:358
+msgid "Do you want to disable the effect of featured image, at hover?"
+msgstr ""
+
+#: core/admin/customize/customize.php:357
+msgid "Featured image rotate, at hover"
+msgstr ""
+
+#: core/admin/customize/customize.php:373
+msgid "Comments"
+msgstr ""
+
+#: core/admin/customize/customize.php:374
+msgid "Do you want to view the comments after articles?"
+msgstr ""
+
+#: core/admin/customize/customize.php:389
+#: core/admin/customize/customize.php:736
+msgid "Footer"
+msgstr ""
+
+#: core/admin/customize/customize.php:390
+msgid ""
+"Do you want to display the footer, including the widgets under the bottom "
+"sidebar area?"
+msgstr ""
+
+#: core/admin/customize/customize.php:405
+msgid "Post Format"
+msgstr ""
+
+#: core/admin/customize/customize.php:406
+msgid ""
+"Do you want to use a different layout for the Aside, Link and Quote posts?."
+msgstr ""
+
+#: core/admin/customize/customize.php:420
+msgid "Read more"
+msgstr "Lees verder"
+
+#: core/admin/customize/customize.php:421
+msgid "Do you want to display the read more button?"
+msgstr "Wilt u de knop Lees verder weergeven?"
+
+#: core/admin/customize/customize.php:436 core/metaboxes/post.php:68
+msgid "Author"
+msgstr "Auteur"
+
+#: core/admin/customize/customize.php:437
+msgid "Do you want to view the author?"
+msgstr "Wil je de informatie over de auteur bekijken?"
+
+#: core/admin/customize/customize.php:452
+msgid "Back to top button."
+msgstr "Terug naar boven knop"
+
+#: core/admin/customize/customize.php:453
+msgid "Do you want to display a button to back on the top of the site?"
+msgstr ""
+"Wilt u een knop weergeven om terug te gaan naar de bovenkant van het scherm?"
+
+#: core/admin/customize/customize.php:470
+msgid "Styles"
+msgstr ""
+
+#: core/admin/customize/customize.php:471
+msgid "From this section you can include a custom css code."
+msgstr ""
+
+#: core/admin/customize/customize.php:481
+msgid "Custom css"
+msgstr ""
+
+#: core/admin/customize/customize.php:482
+msgid "Insert your custom css code."
+msgstr ""
+
+#: core/admin/customize/customize.php:494
+msgid "Layouts"
+msgstr "Lay-outs"
+
+#: core/admin/customize/customize.php:495
+msgid "From this section you can manage the layouts of SuevaFree."
+msgstr ""
+
+#: core/admin/customize/customize.php:505
+msgid "Main Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:506
+msgid "Choose a layout for your site."
+msgstr ""
+
+#: core/admin/customize/customize.php:511
+msgid "Default"
+msgstr ""
+
+#: core/admin/customize/customize.php:512
+msgid "Minimal Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:521
+msgid "Home Blog Layout"
+msgstr "Home Blog Layout"
+
+#: core/admin/customize/customize.php:522
+msgid "If you've set the latest articles, for the homepage, choose a layout."
+msgstr ""
+"Als u de nieuwste artikelen heeft ingesteld, kiest u voor de startpagina een "
+"lay-out."
+
+#: core/admin/customize/customize.php:527
+#: core/admin/customize/customize.php:546
+#: core/admin/customize/customize.php:564
+#: core/admin/customize/customize.php:582 core/metaboxes/post.php:41
+#: core/metaboxes/product.php:40 core/metaboxes/service.php:41
+#: core/metaboxes/team.php:41 core/metaboxes/testimonial.php:41
+msgid "Full Width"
+msgstr "Volledige breedte"
+
+#: core/admin/customize/customize.php:528
+#: core/admin/customize/customize.php:547
+#: core/admin/customize/customize.php:565
+#: core/admin/customize/customize.php:583 core/metaboxes/post.php:42
+#: core/metaboxes/product.php:41 core/metaboxes/service.php:42
+#: core/metaboxes/team.php:42 core/metaboxes/testimonial.php:42
+msgid "Left Sidebar"
+msgstr "Linkerzijbalk"
+
+#: core/admin/customize/customize.php:529
+#: core/admin/customize/customize.php:548
+#: core/admin/customize/customize.php:566
+#: core/admin/customize/customize.php:584 core/metaboxes/post.php:43
+#: core/metaboxes/product.php:42 core/metaboxes/service.php:43
+#: core/metaboxes/team.php:43 core/metaboxes/testimonial.php:43
+msgid "Right Sidebar"
+msgstr "Rechterzijbalk"
+
+#: core/admin/customize/customize.php:530
+#: core/admin/customize/customize.php:549
+#: core/admin/customize/customize.php:567
+msgid "Masonry"
+msgstr ""
+
+#: core/admin/customize/customize.php:540
+msgid "Category Layout"
+msgstr "Categorie lay-out"
+
+#: core/admin/customize/customize.php:541
+msgid "Select a layout for category pages."
+msgstr "Selecteer een lay-out voor categoriepagina's."
+
+#: core/admin/customize/customize.php:558
+msgid "Search Layout"
+msgstr "Zoeken layout"
+
+#: core/admin/customize/customize.php:559
+msgid "Select a layout for the search section."
+msgstr "Selecteer een lay-out voor de zoeksectie."
+
+#: core/admin/customize/customize.php:576
+msgid "WooCommerce Category Layout"
+msgstr "WooCommerce Categorie-indeling"
+
+#: core/admin/customize/customize.php:577
+msgid "Select a layout for the woocommerce categories."
+msgstr "Selecteer een lay-out voor de Woocommerce-categorieën."
+
+#: core/admin/customize/customize.php:593
+msgid "Header Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:594
+msgid "Choose a layout for the header."
+msgstr ""
+
+#: core/admin/customize/customize.php:599
+#: core/admin/customize/customize.php:618
+msgid "Layout 1"
+msgstr ""
+
+#: core/admin/customize/customize.php:600
+#: core/admin/customize/customize.php:619
+msgid "Layout 2"
+msgstr ""
+
+#: core/admin/customize/customize.php:601
+#: core/admin/customize/customize.php:620
+msgid "Layout 3"
+msgstr ""
+
+#: core/admin/customize/customize.php:602
+msgid "Layout 4"
+msgstr ""
+
+#: core/admin/customize/customize.php:603
+msgid "Layout 5"
+msgstr ""
+
+#: core/admin/customize/customize.php:612
+msgid "Footer Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:613
+msgid "Choose a layout for the footer."
+msgstr ""
+
+#: core/admin/customize/customize.php:629
+msgid "Menu Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:630
+msgid "Choose a menu layout for only the header 1, header 2 and the header 3."
+msgstr ""
+
+#: core/admin/customize/customize.php:635
+msgid "Menu 1"
+msgstr ""
+
+#: core/admin/customize/customize.php:636
+msgid "Menu 2"
+msgstr ""
+
+#: core/admin/customize/customize.php:645
+msgid "Sidebar Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:646
+msgid "Select a layout for the side sidebars."
+msgstr ""
+
+#: core/admin/customize/customize.php:651
+msgid "Default sidebar."
+msgstr ""
+
+#: core/admin/customize/customize.php:652
+msgid "Sneak sidebar."
+msgstr ""
+
+#: core/admin/customize/customize.php:661
+msgid "Post Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:662
+msgid "Select a layout for the details of each post."
+msgstr ""
+
+#: core/admin/customize/customize.php:667
+msgid "None."
+msgstr ""
+
+#: core/admin/customize/customize.php:668
+msgid "Layout 1."
+msgstr ""
+
+#: core/admin/customize/customize.php:669
+msgid "Layout 2."
+msgstr ""
+
+#: core/admin/customize/customize.php:678
+msgid "Read More Layout"
+msgstr "Lees verder lay-out"
+
+#: core/admin/customize/customize.php:679
+msgid "Select a layout for the read more button."
+msgstr ""
+
+#: core/admin/customize/customize.php:684
+msgid "Default Button"
+msgstr "Standaard knop"
+
+#: core/admin/customize/customize.php:685
+msgid "Replace with => [...]"
+msgstr "Vervangen door [...]"
+
+#: core/admin/customize/customize.php:694
+msgid "Page Layout"
+msgstr ""
+
+#: core/admin/customize/customize.php:695
+msgid "Select a layout for the details of each page."
+msgstr ""
+
+#: core/admin/customize/customize.php:700
+#: core/admin/customize/customize.php:1134
+#: core/admin/customize/customize.php:1273
+msgid "None"
+msgstr "Geen"
+
+#: core/admin/customize/customize.php:701
+msgid "Default."
+msgstr ""
+
+#: core/admin/customize/customize.php:712
+msgid "Header"
+msgstr ""
+
+#: core/admin/customize/customize.php:713
+msgid "From this section you can upload a custom logo."
+msgstr ""
+
+#: core/admin/customize/customize.php:723
+msgid "Custom Logo"
+msgstr ""
+
+#: core/admin/customize/customize.php:724
+msgid "Insert the url of your custom logo"
+msgstr ""
+
+#: core/admin/customize/customize.php:737
+msgid ""
+"From this section you can manage the social icons and the copyright text."
+msgstr ""
+
+#: core/admin/customize/customize.php:747
+msgid "Copyright Text"
+msgstr "Auteursrechttekst"
+
+#: core/admin/customize/customize.php:748
+msgid "Insert your copyright text."
+msgstr "Voeg uw auteursrechttekst in."
+
+#: core/admin/customize/customize.php:758
+msgid "Facebook Url"
+msgstr "Facebook URL"
+
+#: core/admin/customize/customize.php:759
+msgid "Insert Facebook Url (leave empty if you want to hide the button)"
+msgstr "Voeg Facebook URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:769
+msgid "Twitter Url"
+msgstr "Twitter URL"
+
+#: core/admin/customize/customize.php:770
+msgid "Insert Twitter Url (leave empty if you want to hide the button)"
+msgstr "Voeg Twitter Url in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:780
+msgid "Flickr Url"
+msgstr "Flickr Url"
+
+#: core/admin/customize/customize.php:781
+msgid "Insert Flickr Url (leave empty if you want to hide the button)"
+msgstr "Voeg Flickr URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:791
+msgid "Google Url"
+msgstr "Google Url"
+
+#: core/admin/customize/customize.php:792
+msgid "Insert Google Url (leave empty if you want to hide the button)"
+msgstr "Voeg Google URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:802
+msgid "Linkedin Url"
+msgstr "LinkedIn URL"
+
+#: core/admin/customize/customize.php:803
+msgid "Insert Linkedin Url (leave empty if you want to hide the button)"
+msgstr "Voeg Linkedin URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:813
+msgid "Slack Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:814
+msgid "Insert Slack Url (leave empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:824
+msgid "Pinterest Url"
+msgstr "Pinterest URL"
+
+#: core/admin/customize/customize.php:825
+msgid "Insert Pinterest Url (leave empty if you want to hide the button)"
+msgstr "Voeg Pinterest URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:835
+msgid "Tumblr Url"
+msgstr "Tumblr Url"
+
+#: core/admin/customize/customize.php:836
+msgid "Insert Tumblr Url (leave empty if you want to hide the button)"
+msgstr "Voeg Tumblr-URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:846
+msgid "Soundcloud Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:847
+msgid "Insert Soundcloud Url (leave empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:857
+msgid "Spotify Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:858
+msgid "Insert Spotify Url (leave empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:868
+msgid "Youtube Url"
+msgstr "Youtube URL"
+
+#: core/admin/customize/customize.php:869
+msgid "Insert Youtube Url (leave empty if you want to hide the button)"
+msgstr "Plaats YouTube URL (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:879
+msgid "Vimeo Url"
+msgstr "Vimeo URL"
+
+#: core/admin/customize/customize.php:880
+msgid "Insert Vimeo Url (leave empty if you want to hide the button)"
+msgstr "Voeg Vimeo URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:890
+msgid "VK Url"
+msgstr ""
+
+#: core/admin/customize/customize.php:891
+msgid "Insert VK Url (leave empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:901
+msgid "Instagram Url"
+msgstr "Instagram URL"
+
+#: core/admin/customize/customize.php:902
+msgid "Insert Instagram Url (leave empty if you want to hide the button)"
+msgstr "Voeg Instagram URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:912
+msgid "Deviantart Url"
+msgstr "Deviantart URL"
+
+#: core/admin/customize/customize.php:913
+msgid "Insert Deviantart Url (leave empty if you want to hide the button)"
+msgstr "Voeg Deviantart URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:923
+msgid "Github Url"
+msgstr "Github URL"
+
+#: core/admin/customize/customize.php:924
+msgid "Insert Github Url (leave empty if you want to hide the button)"
+msgstr "Voeg Github URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:934
+msgid "Xing Url"
+msgstr "Xing URL:"
+
+#: core/admin/customize/customize.php:935
+msgid "Insert Xing Url (leave empty if you want to hide the button)"
+msgstr "Voeg Xing URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:945
+msgid "Dribbble Url"
+msgstr "Dribbble URL"
+
+#: core/admin/customize/customize.php:946
+msgid "Insert Dribbble Url (leave empty if you want to hide the button)"
+msgstr "Voeg Dribbble URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:956
+msgid "Dropbox Url"
+msgstr "Dropbox URL"
+
+#: core/admin/customize/customize.php:957
+msgid "Insert Dropbox Url (leave empty if you want to hide the button)"
+msgstr "Voeg Dropbox URL in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:967
+msgid "Whatsapp Number"
+msgstr "WhatsApp-nummer"
+
+#: core/admin/customize/customize.php:968
+msgid "Insert Whatsapp number (leave empty if you want to hide the button)"
+msgstr "Voeg Whatsapp-nummer in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:978
+msgid "Telegram Account"
+msgstr ""
+
+#: core/admin/customize/customize.php:979
+msgid "Insert Telegram Account (leave empty if you want to hide the button)"
+msgstr ""
+
+#: core/admin/customize/customize.php:989
+msgid "Skype Url"
+msgstr "Skype URL"
+
+#: core/admin/customize/customize.php:990
+msgid "Insert Skype ID (leave empty if you want to hide the button)"
+msgstr "Voer Skype ID in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:1000
+msgid "Email Address"
+msgstr "E-mailadres"
+
+#: core/admin/customize/customize.php:1001
+msgid "Insert Email Address (leave empty if you want to hide the button)"
+msgstr "Voeg e-mailadres in (laat leeg als u de knop wilt verbergen)"
+
+#: core/admin/customize/customize.php:1011
+msgid "Feed Rss Button"
+msgstr "Feed RSS-knop"
+
+#: core/admin/customize/customize.php:1012
+msgid "Do you want to display the Feed Rss button?"
+msgstr "Wilt u de Feed RSS-knop weergeven?"
+
+#: core/admin/customize/customize.php:1029
+#: core/admin/customize/customize.php:1030
+msgid "Typography"
+msgstr "Typografie"
+
+#: core/admin/customize/customize.php:1041
+msgid "Logo"
+msgstr "Website titel"
+
+#: core/admin/customize/customize.php:1042
+msgid "From this section you can manage the typography of the logo."
+msgstr ""
+
+#: core/admin/customize/customize.php:1052
+#: core/admin/customize/customize.php:1098
+#: core/admin/customize/customize.php:1157
+msgid "Font size"
+msgstr "Lettertypegrootte"
+
+#: core/admin/customize/customize.php:1053
+msgid "Insert a size, for logo font (For example, 60px) "
+msgstr ""
+"Voeg een lettertypegrootte in voor de titel van de website (bijvoorbeeld "
+"60px)"
+
+#: core/admin/customize/customize.php:1063
+msgid "Description font size"
+msgstr "Lettertypegrootte ondertitel website"
+
+#: core/admin/customize/customize.php:1064
+msgid "Insert a size, for logo description (For example, 14px) "
+msgstr ""
+"Voer een grootte in voor de beschrijving van het logo (bijvoorbeeld 14 px)"
+
+#: core/admin/customize/customize.php:1074
+msgid "Description top margin"
+msgstr ""
+
+#: core/admin/customize/customize.php:1075
+msgid "Add a space between the logo and the description (For example, 15px) "
+msgstr ""
+
+#: core/admin/customize/customize.php:1087
+#: core/templates/header/scroll-sidebar.php:26
+msgid "Menu"
+msgstr "Menu"
+
+#: core/admin/customize/customize.php:1088
+msgid "From this section you can manage the typography of the menu."
+msgstr ""
+
+#: core/admin/customize/customize.php:1099
+msgid "Insert a size, for menu font (For example, 14px) "
+msgstr "Voeg een grootte in, voor het menu-lettertype (bijvoorbeeld 14px)"
+
+#: core/admin/customize/customize.php:1109
+msgid "Menu weight"
+msgstr "Lettertype-gewicht voor het menu"
+
+#: core/admin/customize/customize.php:1110
+msgid "Choose a font weight for the menu."
+msgstr ""
+
+#: core/admin/customize/customize.php:1115
+#: core/admin/customize/customize.php:1254
+msgid "400"
+msgstr "400"
+
+#: core/admin/customize/customize.php:1116
+#: core/admin/customize/customize.php:1255
+msgid "500"
+msgstr "500"
+
+#: core/admin/customize/customize.php:1117
+#: core/admin/customize/customize.php:1256
+msgid "600"
+msgstr "600"
+
+#: core/admin/customize/customize.php:1118
+#: core/admin/customize/customize.php:1257
+msgid "700"
+msgstr "700"
+
+#: core/admin/customize/customize.php:1119
+#: core/admin/customize/customize.php:1258
+msgid "800"
+msgstr "800"
+
+#: core/admin/customize/customize.php:1128
+#: core/admin/customize/customize.php:1267
+msgid "Text transform"
+msgstr "Teksttransformatie"
+
+#: core/admin/customize/customize.php:1129
+msgid "Do you want to display an uppercase menu?."
+msgstr ""
+
+#: core/admin/customize/customize.php:1135
+#: core/admin/customize/customize.php:1274
+msgid "Uppercase"
+msgstr "Hoofdletters"
+
+#: core/admin/customize/customize.php:1146
+msgid "Content"
+msgstr "Inhoud"
+
+#: core/admin/customize/customize.php:1147
+msgid "From this section you can manage the typography of the content."
+msgstr ""
+
+#: core/admin/customize/customize.php:1158
+msgid "Insert a size, for content font (For example, 14px) "
+msgstr "Voeg een lettertypegrootte in voor de inhoud (bijvoorbeeld 14px)"
+
+#: core/admin/customize/customize.php:1171
+msgid "Headlines"
+msgstr "Koppen"
+
+#: core/admin/customize/customize.php:1172
+msgid "From this section you can manage the typography of the headlines."
+msgstr ""
+
+#: core/admin/customize/customize.php:1182
+msgid "H1 headline"
+msgstr "H1 kop"
+
+#: core/admin/customize/customize.php:1183
+msgid "Insert a size, for for H1 elements (For example, 24px) "
+msgstr "Voeg een lettertypegrootte in voor de H1 kop (bijvoorbeeld 24px)"
+
+#: core/admin/customize/customize.php:1193
+msgid "H2 headline"
+msgstr "H2 kop"
+
+#: core/admin/customize/customize.php:1194
+msgid "Insert a size, for for H2 elements (For example, 22px) "
+msgstr "Voeg een lettertypegrootte in voor de H2 kop (bijvoorbeeld 22px)"
+
+#: core/admin/customize/customize.php:1204
+msgid "H3 headline"
+msgstr "H3 kop"
+
+#: core/admin/customize/customize.php:1205
+msgid "Insert a size, for for H3 elements (For example, 20px) "
+msgstr "Voeg een lettertypegrootte in voor de H3 kop (bijvoorbeeld 20px)"
+
+#: core/admin/customize/customize.php:1215
+msgid "H4 headline"
+msgstr "H4 kop"
+
+#: core/admin/customize/customize.php:1216
+msgid "Insert a size, for for H4 elements (For example, 18px) "
+msgstr "Voeg een lettertypegrootte in voor de H4 kop (bijvoorbeeld 18px)"
+
+#: core/admin/customize/customize.php:1226
+msgid "H5 headline"
+msgstr "H5 kop"
+
+#: core/admin/customize/customize.php:1227
+msgid "Insert a size, for for H5 elements (For example, 16px) "
+msgstr "Voeg een lettertypegrootte in voor de H5 kop (bijvoorbeeld 16px)"
+
+#: core/admin/customize/customize.php:1237
+msgid "H6 headline"
+msgstr "H6 kop"
+
+#: core/admin/customize/customize.php:1238
+msgid "Insert a size, for for H6 elements (For example, 14px) "
+msgstr "Voeg een lettertypegrootte in voor de H6 kop (bijvoorbeeld 14px)"
+
+#: core/admin/customize/customize.php:1248
+msgid "Titles weight"
+msgstr ""
+
+#: core/admin/customize/customize.php:1249
+msgid "Choose a font weight for the titles."
+msgstr ""
+
+#: core/admin/customize/customize.php:1268
+msgid "Do you want to display an uppercase title?."
+msgstr ""
+
+#: core/functions/function-widgets.php:9
+msgid "Side Sidebar"
+msgstr "Plaatsing zijbalk"
+
+#: core/functions/function-widgets.php:11
+msgid "This sidebar will be shown after the content."
+msgstr "Deze zijbalk wordt getoond na de inhoud."
+
+#: core/functions/function-widgets.php:21
+msgid "One Page"
+msgstr ""
+
+#: core/functions/function-widgets.php:23
+msgid "This sidebar area is recommended to manage the one page section."
+msgstr ""
+
+#: core/functions/function-widgets.php:33
+msgid "Home Side Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:35
+msgid "This sidebar will be shown at the side of your homepage."
+msgstr ""
+
+#: core/functions/function-widgets.php:45
+msgid "Category Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:47
+msgid "This sidebar will be shown at the side of category page."
+msgstr ""
+
+#: core/functions/function-widgets.php:57
+msgid "Search Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:59
+msgid "This sidebar will be shown at the side of search page."
+msgstr ""
+
+#: core/functions/function-widgets.php:69
+msgid "Top Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:71
+msgid ""
+"This sidebar will be shown at the top of your content (Recommended for "
+"Revolution Slider)."
+msgstr ""
+
+#: core/functions/function-widgets.php:81
+msgid "Home Top Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:83
+msgid ""
+"This sidebar will be shown at the top of your homepage (Recommended for "
+"Revolution Slider)."
+msgstr ""
+
+#: core/functions/function-widgets.php:93
+msgid "Header Sidebar"
+msgstr "Headerzijbalk"
+
+#: core/functions/function-widgets.php:95
+msgid "This sidebar will be shown before the content."
+msgstr "Deze zijbalk wodt getoond voor de berichtinhoud."
+
+#: core/functions/function-widgets.php:105
+msgid "Home Header Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:107
+msgid "This sidebar will be shown before the content of your homepage."
+msgstr ""
+
+#: core/functions/function-widgets.php:117
+msgid "Full Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:119
+msgid ""
+"This sidebar will be shown at the bottom of your content, with a full width "
+"layout (Recommended for Instagram widget)"
+msgstr ""
+
+#: core/functions/function-widgets.php:129
+msgid "Bottom Sidebar"
+msgstr ""
+
+#: core/functions/function-widgets.php:131
+msgid "This sidebar will be shown at the end of your content."
+msgstr ""
+
+#: core/functions/function-woocommerce.php:65
+#: core/functions/function-woocommerce.php:93
+#, php-format
+msgid "%d"
+msgstr ""
+
+#: core/includes/class-customize.php:390
+msgid "Upgrade to Sueva Premium."
+msgstr ""
+
+#: core/includes/class-customize.php:392 core/includes/class-notice.php:71
+msgid ""
+"Upgrade to the premium version of Sueva, to enable 600+ Google Fonts, "
+"Unlimited sidebars, Portfolio section and much more."
+msgstr ""
+
+#: core/includes/class-customize.php:396
+msgid "Upgrade to Sueva premium"
+msgstr ""
+
+#: core/includes/class-customize.php:404
+msgid "SuevaFree child themes."
+msgstr ""
+
+#: core/includes/class-customize.php:406
+msgid "You can also choose one of available premium child themes for SuevaFree"
+msgstr ""
+
+#: core/includes/class-customize.php:410
+msgid "Upgrade to ValePro"
+msgstr ""
+
+#: core/includes/class-customize.php:411
+msgid "Upgrade to SvevaPro"
+msgstr ""
+
+#: core/includes/class-customize.php:412
+msgid "Upgrade to Avana"
+msgstr ""
+
+#: core/includes/class-customize.php:420
+msgid "WordPress Support Service."
+msgstr ""
+
+#: core/includes/class-customize.php:422
+msgid ""
+"We are excited to announce the opening of our new Premium WordPress Support "
+"Service, to solve all technical issues like code issues, white screen "
+"issues, theme and plugin issues and much more."
+msgstr ""
+
+#: core/includes/class-customize.php:426
+msgid "WordPress Support"
+msgstr ""
+
+#: core/includes/class-customize.php:434
+msgid "SuevaFree Support"
+msgstr ""
+
+#: core/includes/class-customize.php:436
+msgid ""
+"If you've opened a new support ticket from <strong>WordPress.org</strong>, "
+"please send a reminder to <strong>support@wpinprogress.com</strong>, to get "
+"a faster reply."
+msgstr ""
+
+#: core/includes/class-customize.php:440
+msgid "Open a new ticket"
+msgstr "Open een nieuw ticket"
+
+#: core/includes/class-customize.php:441
+msgid "Send a reminder"
+msgstr "Stuur een herinnering"
+
+#: core/includes/class-customize.php:446
+msgid ""
+"If you like this theme and support, <strong>I'd appreciate</strong> any of "
+"the following:"
+msgstr ""
+
+#: core/includes/class-customize.php:450
+msgid "Rate this Theme"
+msgstr "Geef een beoordeling van dit thema"
+
+#: core/includes/class-customize.php:451
+msgid "Like on Facebook"
+msgstr "Like ons op Facebook"
+
+#: core/includes/class-customize.php:452
+msgid "Subscribe our newsletter"
+msgstr "Schrijf u in voor onze nieuwsbrief"
+
+#: core/includes/class-customize.php:453
+msgid "Download our free WordPress themes"
+msgstr ""
+
+#: core/includes/class-notice.php:72
+#: core/includes/class-plugin-activation.php:400
+msgid "Dismiss this notice"
+msgstr "Melding verbergen"
+
+#: core/includes/class-plugin-activation.php:332
+msgid "Install Required Plugins"
+msgstr "Installeer vereiste plug-ins"
+
+#: core/includes/class-plugin-activation.php:333
+msgid "Install Plugins"
+msgstr "Installeer plugins"
+
+#: core/includes/class-plugin-activation.php:335
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr "Installeren plug-in: %s"
+
+#: core/includes/class-plugin-activation.php:337
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr "Plugin bijwerken: %s"
+
+#: core/includes/class-plugin-activation.php:338
+msgid "Something went wrong with the plugin API."
+msgstr "Er is iets misgegaan met de plug-in API."
+
+#: core/includes/class-plugin-activation.php:341
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgstr "Dit thema vereist de volgende plugin: %1$s."
+
+#: core/includes/class-plugin-activation.php:347
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgstr "Dit thema beveelt de volgende plugins aan: %1$s."
+
+#: core/includes/class-plugin-activation.php:353
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr ""
+"De volgende plugin moet worden bijgewerkt naar de nieuwste versie voor "
+"maximale compatibiliteit met dit thema: %1$s."
+
+#: core/includes/class-plugin-activation.php:359
+#, php-format
+msgid "There is an update available for: %1$s."
+msgstr "Er is een update beschikbaar voor: %1$s."
+
+#: core/includes/class-plugin-activation.php:365
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgstr "De volgende vereiste plugin is momenteel inactief: %1$s."
+
+#: core/includes/class-plugin-activation.php:371
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgstr "De volgende aanbevolen plugin is momenteel inactief: %1$s."
+
+#: core/includes/class-plugin-activation.php:376
+msgid "Begin installing plugin"
+msgstr "Beginnen met het installeren van de plugin"
+
+#: core/includes/class-plugin-activation.php:381
+msgid "Begin updating plugin"
+msgstr "Beginnen met bijwerken van de plugin"
+
+#: core/includes/class-plugin-activation.php:386
+msgid "Begin activating plugin"
+msgstr "Beginnen met het activeren van de plugin"
+
+#: core/includes/class-plugin-activation.php:390
+msgid "Return to Required Plugins Installer"
+msgstr "Terug naar verplichte plugins installatie"
+
+#: core/includes/class-plugin-activation.php:391
+#: core/includes/class-plugin-activation.php:838
+#: core/includes/class-plugin-activation.php:2544
+#: core/includes/class-plugin-activation.php:3591
+msgid "Return to the Dashboard"
+msgstr "Terug naar het dashboard"
+
+#: core/includes/class-plugin-activation.php:392
+#: core/includes/class-plugin-activation.php:3170
+msgid "Plugin activated successfully."
+msgstr "Plugin met succes geactiveerd"
+
+#: core/includes/class-plugin-activation.php:393
+#: core/includes/class-plugin-activation.php:2963
+msgid "The following plugin was activated successfully:"
+msgstr "De volgende plugin is met succes geactiveerd:"
+
+#: core/includes/class-plugin-activation.php:395
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr "Geen actie ondernomen. Plugin %1$s was reeds actief."
+
+#: core/includes/class-plugin-activation.php:397
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+"Plugin niet geactiveerd. Een recentere versie van %s is nodig voor dit "
+"thema. Update de plugin aub."
+
+#: core/includes/class-plugin-activation.php:399
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr "Alle plug-ins zijn met succes geïnstalleerd en geactiveerd. %s"
+
+#: core/includes/class-plugin-activation.php:401
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+"Er zijn een of meerdere vereiste of aanbevolen plugins om te installeren, "
+"bij te werken of te activeren."
+
+#: core/includes/class-plugin-activation.php:402
+msgid "Please contact the administrator of this site for help."
+msgstr "Neem aub contact op met de beheerder van deze site voor hulp."
+
+#: core/includes/class-plugin-activation.php:521
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+"Deze plugin moet geüpdatet worden om maximale compatibiliteit met dit thema "
+"te kunnen garanderen."
+
+#: core/includes/class-plugin-activation.php:522
+msgid "Update Required"
+msgstr "Bijwerken vereist"
+
+#: core/includes/class-plugin-activation.php:639
+msgid "Set the parent_slug config variable instead."
+msgstr "Zet de parent_slug config variabele in plaats daarvan."
+
+#: core/includes/class-plugin-activation.php:945
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+"De externe plugin bevat geen map met de gewenste slug en het hernoemen van "
+"de map heeft gefaald."
+
+#: core/includes/class-plugin-activation.php:945
+#: core/includes/class-plugin-activation.php:948
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+"Neem contact op met de plugin auteur en vraag hem om deze opnieuw samen te "
+"stellen conform de WordPress richtlijnen."
+
+#: core/includes/class-plugin-activation.php:948
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+"Het externe plugin pakket bestaat uit meer dan één bestand maar deze zijn "
+"niet in een map geplaatst."
+
+#: core/includes/class-plugin-activation.php:1132
+#: core/includes/class-plugin-activation.php:2959
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr "en"
+
+#: core/includes/class-plugin-activation.php:1993
+#, php-format
+msgid "TGMPA v%s"
+msgstr "TGMPA v%s"
+
+#: core/includes/class-plugin-activation.php:2284
+msgid "Required"
+msgstr "Verplicht"
+
+#: core/includes/class-plugin-activation.php:2287
+msgid "Recommended"
+msgstr "Aanbevolen"
+
+#: core/includes/class-plugin-activation.php:2303
+msgid "WordPress Repository"
+msgstr "WordPress Repository"
+
+#: core/includes/class-plugin-activation.php:2306
+msgid "External Source"
+msgstr "Externe bron"
+
+#: core/includes/class-plugin-activation.php:2309
+msgid "Pre-Packaged"
+msgstr "Voorverpakt"
+
+#: core/includes/class-plugin-activation.php:2326
+msgid "Not Installed"
+msgstr "Niet geinstalleerd"
+
+#: core/includes/class-plugin-activation.php:2330
+msgid "Installed But Not Activated"
+msgstr "Geïnstalleerd, maar niet geactiveerd"
+
+#: core/includes/class-plugin-activation.php:2332
+msgid "Active"
+msgstr "Actief"
+
+#: core/includes/class-plugin-activation.php:2338
+msgid "Required Update not Available"
+msgstr "Vereiste update niet beschikbaar"
+
+#: core/includes/class-plugin-activation.php:2341
+msgid "Requires Update"
+msgstr "Heeft update nodig"
+
+#: core/includes/class-plugin-activation.php:2344
+msgid "Update recommended"
+msgstr "Update aanbevolen"
+
+#: core/includes/class-plugin-activation.php:2353
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr "%1$s, %2$s"
+
+#: core/includes/class-plugin-activation.php:2403
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgstr "Installeer <span class=\"count\">(%s)</span>"
+
+#: core/includes/class-plugin-activation.php:2407
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgstr "Update beschikbaar <span class=\"count\">(%s)</span>"
+
+#: core/includes/class-plugin-activation.php:2411
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgstr "Activeer <span class=\"count\">(%s)</span>"
+
+#: core/includes/class-plugin-activation.php:2493
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr "onbekend"
+
+#: core/includes/class-plugin-activation.php:2501
+msgid "Installed version:"
+msgstr "Geïnstalleerde versie:"
+
+#: core/includes/class-plugin-activation.php:2509
+msgid "Minimum required version:"
+msgstr "Minimaal vereiste versie:"
+
+#: core/includes/class-plugin-activation.php:2521
+msgid "Available version:"
+msgstr "Beschikbare versie:"
+
+#: core/includes/class-plugin-activation.php:2544
+msgid "No plugins to install, update or activate."
+msgstr "Geen plugins om te installeren of te activeren."
+
+#: core/includes/class-plugin-activation.php:2558
+msgid "Plugin"
+msgstr "Plugin"
+
+#: core/includes/class-plugin-activation.php:2559
+msgid "Source"
+msgstr "Bron"
+
+#: core/includes/class-plugin-activation.php:2560
+msgid "Type"
+msgstr "Type"
+
+#: core/includes/class-plugin-activation.php:2564
+msgid "Version"
+msgstr "Versie"
+
+#: core/includes/class-plugin-activation.php:2565
+msgid "Status"
+msgstr "Status"
+
+#: core/includes/class-plugin-activation.php:2614
+#, php-format
+msgid "Install %2$s"
+msgstr "Installeer %2$s"
+
+#: core/includes/class-plugin-activation.php:2619
+#, php-format
+msgid "Update %2$s"
+msgstr "Werk %2$s bij"
+
+#: core/includes/class-plugin-activation.php:2625
+#, php-format
+msgid "Activate %2$s"
+msgstr "Activeer %2$s"
+
+#: core/includes/class-plugin-activation.php:2695
+msgid "Upgrade message from the plugin author:"
+msgstr "Werk melding van de pluginauteur bij:"
+
+#: core/includes/class-plugin-activation.php:2728
+msgid "Install"
+msgstr "Installeer"
+
+#: core/includes/class-plugin-activation.php:2734
+msgid "Update"
+msgstr "Bijwerken"
+
+#: core/includes/class-plugin-activation.php:2737
+msgid "Activate"
+msgstr "Activeren"
+
+#: core/includes/class-plugin-activation.php:2768
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+"Geen plugins geselecteerd om geïnstalleerd te worden. Geen actie ondernomen."
+
+#: core/includes/class-plugin-activation.php:2770
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+"Geen plugins geselecteerd om geüpdatet te worden. Geen actie ondernomen."
+
+#: core/includes/class-plugin-activation.php:2811
+msgid "No plugins are available to be installed at this time."
+msgstr "Er zijn op dit moment geen plugins beschikbaar om te installeren."
+
+#: core/includes/class-plugin-activation.php:2813
+msgid "No plugins are available to be updated at this time."
+msgstr "Er zijn op dit moment geen plugins beschikbaar om te installeren."
+
+#: core/includes/class-plugin-activation.php:2919
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+"Er zijn geen plugins geselecteerd om te activeren. Geen actie ondernomen."
+
+#: core/includes/class-plugin-activation.php:2945
+msgid "No plugins are available to be activated at this time."
+msgstr "Er zijn op dit moment geen plugins beschikbaar om te activeren."
+
+#: core/includes/class-plugin-activation.php:3169
+msgid "Plugin activation failed."
+msgstr "Plugin activering mislukt."
+
+#: core/includes/class-plugin-activation.php:3509
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr "Plugin %1$s (%2$d/%3$d) bijwerken"
+
+#: core/includes/class-plugin-activation.php:3512
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+"Er is een fout opgetreden bij het installeren van %1$s: <strong>%2$s</"
+"strong>."
+
+#: core/includes/class-plugin-activation.php:3514
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr "De installatie van %1$s is mislukt."
+
+#: core/includes/class-plugin-activation.php:3518
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+"Het installatie- en activeringsproces is begonnen. Dit proces kan even duren "
+"en verschilt per hoster dus heb een moment geduld aub."
+
+#: core/includes/class-plugin-activation.php:3520
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr "%1$s met succes geïnstalleerd en geactiveerd."
+
+#: core/includes/class-plugin-activation.php:3520
+#: core/includes/class-plugin-activation.php:3528
+msgid "Show Details"
+msgstr "Toon details"
+
+#: core/includes/class-plugin-activation.php:3520
+#: core/includes/class-plugin-activation.php:3528
+msgid "Hide Details"
+msgstr "Verberg details"
+
+#: core/includes/class-plugin-activation.php:3521
+msgid "All installations and activations have been completed."
+msgstr "Alle installaties en activeringen zijn voltooid."
+
+#: core/includes/class-plugin-activation.php:3523
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr "Installeren en activeren van plugin %1$s (%2$d/%3$d)"
+
+#: core/includes/class-plugin-activation.php:3526
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+"Het installatieproces begint. Dit proces kan even duren en verschilt per "
+"hoster dus heb een moment geduld aub."
+
+#: core/includes/class-plugin-activation.php:3528
+#, php-format
+msgid "%1$s installed successfully."
+msgstr "%s is met succes geïnstalleerd."
+
+#: core/includes/class-plugin-activation.php:3529
+msgid "All installations have been completed."
+msgstr "Alle installaties zijn voltooid."
+
+#: core/includes/class-plugin-activation.php:3531
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr "Installeren van plugin %1$s (%2$d/%3$d)"
+
+#: core/main.php:63
+#, php-format
+msgid "Category: %s"
+msgstr "Categorie: %s"
+
+#: core/main.php:65
+#, php-format
+msgid "Tag: %s"
+msgstr "Trefwoord: %s"
+
+#: core/main.php:67
+#, php-format
+msgid "Author: %s"
+msgstr "Auteur: %s"
+
+#: core/main.php:69
+#, php-format
+msgid "Year: %s"
+msgstr "Jaar: %s"
+
+#: core/main.php:69
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "J"
+
+#: core/main.php:71
+#, php-format
+msgid "Month: %s"
+msgstr "Maand: %s"
+
+#: core/main.php:71
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "M J"
+
+#: core/main.php:73
+#, php-format
+msgid "Day: %s"
+msgstr "Dag: %s"
+
+#: core/main.php:73
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "j F Y"
+
+#: core/main.php:76
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Zijvakken"
+
+#: core/main.php:78
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Galerijen"
+
+#: core/main.php:80
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: core/main.php:82
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Video’s"
+
+#: core/main.php:84
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Quotes"
+
+#: core/main.php:86
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Links"
+
+#: core/main.php:88
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Statussen"
+
+#: core/main.php:90
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: core/main.php:92
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chats"
+
+#: core/main.php:95
+#, php-format
+msgid "Archives: %s"
+msgstr "Archieven: %s"
+
+#: core/main.php:98
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s – %2$s"
+
+#: core/main.php:607 core/main.php:613
+msgid "Read More"
+msgstr "Lees verder"
+
+#: core/main.php:718
+msgid "Article"
+msgstr ""
+
+#: core/main.php:871
+msgid "Default image"
+msgstr ""
+
+#: core/main.php:906
+msgid "Main menu"
+msgstr ""
+
+#: core/main.php:907
+msgid "One Page menu"
+msgstr ""
+
+#: core/metaboxes/post.php:19 core/metaboxes/post.php:32
+#: core/metaboxes/product.php:20 core/metaboxes/product.php:31
+#: core/metaboxes/service.php:20 core/metaboxes/service.php:31
+#: core/metaboxes/team.php:20 core/metaboxes/team.php:31
+#: core/metaboxes/testimonial.php:20 core/metaboxes/testimonial.php:31
+msgid "Setting"
+msgstr "Instelling"
+
+#: core/metaboxes/post.php:20
+msgid "Quote Post"
+msgstr ""
+
+#: core/metaboxes/post.php:21
+msgid "Link Post"
+msgstr ""
+
+#: core/metaboxes/post.php:36 core/metaboxes/product.php:35
+#: core/metaboxes/service.php:35 core/metaboxes/team.php:35
+#: core/metaboxes/testimonial.php:35
+msgid "Template"
+msgstr "Sjabloon"
+
+#: core/metaboxes/post.php:37 core/metaboxes/product.php:36
+#: core/metaboxes/service.php:36 core/metaboxes/team.php:36
+#: core/metaboxes/testimonial.php:36
+msgid "Select a template for this page"
+msgstr "Selecteer een sjabloon voor deze pagina"
+
+#: core/metaboxes/post.php:58
+msgid "Quote Post Options"
+msgstr ""
+
+#: core/metaboxes/post.php:62
+msgid "Quote"
+msgstr ""
+
+#: core/metaboxes/post.php:63
+msgid "Insert the text of quote"
+msgstr ""
+
+#: core/metaboxes/post.php:69
+msgid "Insert the author of quote"
+msgstr ""
+
+#: core/metaboxes/post.php:82
+msgid "Link Post Options"
+msgstr ""
+
+#: core/metaboxes/post.php:86
+msgid "Name of url"
+msgstr ""
+
+#: core/metaboxes/post.php:87
+msgid "Insert the name of your link"
+msgstr ""
+
+#: core/metaboxes/post.php:92 core/metaboxes/service.php:70
+msgid "Link"
+msgstr ""
+
+#: core/metaboxes/post.php:93
+msgid "Insert the link with http, for example http://www.wpinprogress.com"
+msgstr ""
+
+#: core/metaboxes/service.php:49
+msgid "Background color"
+msgstr ""
+
+#: core/metaboxes/service.php:50
+msgid "Choose a background color for this service."
+msgstr ""
+
+#: core/metaboxes/service.php:56
+msgid "Background color at hover."
+msgstr ""
+
+#: core/metaboxes/service.php:57
+msgid "Choose a background color at hover for this service."
+msgstr ""
+
+#: core/metaboxes/service.php:63
+msgid "Font Awesome Icon"
+msgstr ""
+
+#: core/metaboxes/service.php:64
+msgid "Insert the name of a Font Awesome icon for this service."
+msgstr ""
+
+#: core/metaboxes/service.php:71
+msgid "Do you want to link the service name to the details?"
+msgstr ""
+
+#: core/metaboxes/testimonial.php:49
+msgid "Website"
+msgstr ""
+
+#: core/metaboxes/testimonial.php:50
+msgid "Website url."
+msgstr ""
+
+#: core/templates/content/masonry.php:35 layouts/archive-default.php:29
+#: layouts/archive-sidebar.php:31 layouts/search-default.php:30
+#: layouts/search-sidebar.php:31
+msgid "Not found."
+msgstr "Niet gevonden."
+
+#: core/templates/content/masonry.php:36
+msgid "Sorry, no items found, in this section."
+msgstr ""
+
+#: core/templates/content/post-details.php:32
+msgid "0 comments"
+msgstr ""
+
+#: core/templates/content/search-title.php:45
+msgid "Search"
+msgstr "Zoekresultaten"
+
+#: core/templates/content/search-title.php:45
+msgid "results for"
+msgstr "voor"
+
+#: core/templates/header/breadcrumb.php:32
+msgid "Home"
+msgstr ""
+
+#: core/templates/header/breadcrumb.php:53
+msgid "<span>Search </span> results for "
+msgstr ""
+
+#: core/templates/header/breadcrumb.php:57
+msgid "Page 404"
+msgstr ""
+
+#: core/templates/header/breadcrumb.php:61
+msgid "Attachment: "
+msgstr ""
+
+#: core/templates/header/breadcrumb.php:65
+msgid "Portfolio: "
+msgstr ""
+
+#: core/templates/header/breadcrumb.php:69
+msgid "Testimonial: "
+msgstr ""
+
+#: core/templates/sidebar/side-sidebar.php:35
+#: core/templates/sidebar/side-sidebar.php:93
+msgid "Calendar"
+msgstr "Kalender"
+
+#: layouts/archive-default.php:30 layouts/archive-sidebar.php:32
+msgid "Sorry, no posts matched into "
+msgstr "Sorry, er kwamen geen berichten overeen met "
+
+#: layouts/home-default.php:26 layouts/home-sidebar.php:30
+msgid "Sorry, no posts found"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:19
+msgid "Cart Totals"
+msgstr "Bestelbedrag"
+
+#: woocommerce/cart/cart-totals.php:24 woocommerce/checkout/review-order.php:50
+msgid "Subtotal"
+msgstr "Subtotaal"
+
+#: woocommerce/cart/cart-totals.php:46
+msgid "Shipping"
+msgstr "Verzendkosten"
+
+#: woocommerce/cart/cart-totals.php:78 woocommerce/cart/cart.php:49
+#: woocommerce/checkout/review-order.php:18
+#: woocommerce/checkout/review-order.php:97
+msgid "Total"
+msgstr "Totaal"
+
+#: woocommerce/cart/cart-totals.php:90
+#, php-format
+msgid " (taxes estimated for %s)"
+msgstr ""
+
+#: woocommerce/cart/cart-totals.php:93
+#, php-format
+msgid ""
+"Note: Shipping and taxes are estimated%s and will be updated during checkout "
+"based on your billing and shipping information."
+msgstr ""
+
+#: woocommerce/cart/cart.php:37
+msgid "Cart"
+msgstr "Winkelwagen"
+
+#: woocommerce/cart/cart.php:46 woocommerce/checkout/review-order.php:17
+msgid "Product"
+msgstr "Product"
+
+#: woocommerce/cart/cart.php:47
+msgid "Price"
+msgstr "Prijs"
+
+#: woocommerce/cart/cart.php:48
+msgid "Quantity"
+msgstr "Aantal"
+
+#: woocommerce/cart/cart.php:70
+msgid "Remove this item"
+msgstr "Verwijder dit artikel"
+
+#: woocommerce/cart/cart.php:102
+msgid "Available on backorder"
+msgstr "Beschikbaar als nabestelling"
+
+#: woocommerce/cart/cart.php:148
+msgid "Coupon:"
+msgstr "Waardebon:"
+
+#: woocommerce/checkout/form-checkout.php:20
+msgid "You must be logged in to checkout."
+msgstr "U moet ingelogd zijn om zijn om uw bestelling te kunnen plaatsen."
+
+#: woocommerce/checkout/form-checkout.php:52
+msgid "Your order"
+msgstr "Uw order"
+
+#: woocommerce/checkout/form-coupon.php:24
+msgid "Have a coupon? "
+msgstr "Heeft u een kortingscode?"
+
+#: woocommerce/checkout/form-coupon.php:24
+msgid "Click here to enter your code"
+msgstr "Klik hier om uw code in te voeren"
+
+#: woocommerce/single-product-reviews.php:34
+#, php-format
+msgid "%1$s review for %2$s"
+msgstr "%1$s beoordeling voor %2$s"
+
+#: woocommerce/single-product-reviews.php:36
+msgid "Reviews"
+msgstr "Beoordelingen"
+
+#: woocommerce/single-product-reviews.php:58
+msgid "There are no reviews yet."
+msgstr "Er zijn nog geen beoordelingen."
+
+#: woocommerce/single-product-reviews.php:71
+msgid "Add a review"
+msgstr "Voeg een beoordeling toe"
+
+#: woocommerce/single-product-reviews.php:71
+#, php-format
+msgid "Be the first to review &ldquo;%s&rdquo;"
+msgstr "Wees de eerste om &ldquo;%s&rdquo; te beoordelen;"
+
+#: woocommerce/single-product-reviews.php:72
+#, php-format
+msgid "Leave a Reply to %s"
+msgstr "Laat een reactie achter op %s"
+
+#: woocommerce/single-product-reviews.php:75
+msgid "Name"
+msgstr "Naam"
+
+#: woocommerce/single-product-reviews.php:77
+msgid "Email"
+msgstr "E-mailadres"
+
+#: woocommerce/single-product-reviews.php:80
+msgid "Submit"
+msgstr "Verzenden"
+
+#: woocommerce/single-product-reviews.php:86
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a review."
+msgstr ""
+"U moet <a href=\"%s\">ingelogd</a> zijn om een beoordeling te plaatsen."
+
+#: woocommerce/single-product-reviews.php:90
+msgid "Your Rating"
+msgstr "Uw waardering"
+
+#: woocommerce/single-product-reviews.php:91
+msgid "Rate&hellip;"
+msgstr "Beoordeel &hellip;"
+
+#: woocommerce/single-product-reviews.php:92
+msgid "Perfect"
+msgstr "Perfect"
+
+#: woocommerce/single-product-reviews.php:93
+msgid "Good"
+msgstr "Goed"
+
+#: woocommerce/single-product-reviews.php:94
+msgid "Average"
+msgstr "Gemiddelde"
+
+#: woocommerce/single-product-reviews.php:95
+msgid "Not that bad"
+msgstr "Matig"
+
+#: woocommerce/single-product-reviews.php:96
+msgid "Very Poor"
+msgstr "Slecht"
+
+#: woocommerce/single-product-reviews.php:100
+msgid "Your review"
+msgstr "Uw beoordeling"
+
+#: woocommerce/single-product-reviews.php:109
+msgid ""
+"Only logged in customers who have purchased this product may leave a review."
+msgstr ""
+"Alleen ingelogde klanten, die dit product hebben gekocht, kunnen een "
+"beoordeling geven."
+
+#: woocommerce/single-product/product-image.php:55
+msgid "Awaiting product image"
+msgstr "Wacht op productafbeelding"
+
+#: woocommerce/single-product/related.php:31
+msgid "Related products"
+msgstr ""
+
+#: woocommerce/single-product/review.php:43
+#, php-format
+msgid "Rated %d out of 5"
+msgstr ""
+
+#: woocommerce/single-product/review.php:44
+msgid "out of 5"
+msgstr "van de 5"
+
+#: woocommerce/single-product/review.php:51
+msgid "Your comment is awaiting approval"
+msgstr "Uw reactie wacht op goedkeuring"
+
+#: woocommerce/single-product/review.php:60
+msgid "verified owner"
+msgstr "geverifieerde eigenaar"
+
+#: woocommerce/single-product/tabs/additional-information.php:25
+msgid "Additional information"
+msgstr ""
+
+#: woocommerce/single-product/up-sells.php:32
+msgid "You may also like&hellip;"
+msgstr "Misschien iets voor jou &hellip;"
+
+#~ msgid "Comment by %s"
+#~ msgstr "Commentaar door %s"
+
+#~ msgid "Logo color"
+#~ msgstr "Logo kleur"
+
+#~ msgid "Choose a color for the logo."
+#~ msgstr "Kies een kleur voor het logo."
+
+#~ msgid "Upgrade to Venice Pro"
+#~ msgstr "Upgrade naar Venice Pro"
+
+#~ msgid "Load system"
+#~ msgstr "Laadsysteem"
+
+#~ msgid "Choose a load system"
+#~ msgstr "Kies een laadsysteem"
+
+#~ msgid ""
+#~ "Select a load system, if you've some problems with the theme (for example "
+#~ "a blank page)."
+#~ msgstr ""
+#~ "Selecteer een laadsysteem als u problemen heeft met het thema "
+#~ "(bijvoorbeeld een lege pagina)."
+
+#~ msgid "Mode a"
+#~ msgstr "Modus a"
+
+#~ msgid "Mode b"
+#~ msgstr "Modus b"
+
+#~ msgid "Post icon"
+#~ msgstr "﻿Berichtpictogram"
+
+#~ msgid "Do you want to display the post icon, of each article?"
+#~ msgstr "Wilt u het berichtpictogram van elk artikel weergeven?"
+
+#~ msgid "WooCommerce header cart"
+#~ msgstr "WooCommerce header cart"
+
+#~ msgid "Do you want to display the header cart?"
+#~ msgstr "Wilt u de winkelwagen weergeven?"
+
+#~ msgid "Select a layout for the readmore button."
+#~ msgstr "Selecteer een lay-out voor de knop Lees verder."
+
+#~ msgid "Blog Thumbnail"
+#~ msgstr "Blog miniatuurafbeelding"
+
+#~ msgid "Insert the height for blog thumbnail."
+#~ msgstr "Voeg de hoogte in voor de blogminiatuurafbeelding."
+
+#~ msgid "Footer & Social Media"
+#~ msgstr "Voettekst & sociale media"
+
+#~ msgid "Telegram account"
+#~ msgstr "Telegram-account"
+
+#~ msgid "Insert Telegram account (leave empty if you want to hide the button)"
+#~ msgstr "Voeg Telegram-account in (laat leeg als u de knop wilt verbergen)"
+
+#~ msgid "Choose a font weight for the menu"
+#~ msgstr "Kies een lettertype-gewicht voor het menu"
+
+#~ msgid "This sidebar will be shown at the side of content."
+#~ msgstr "Deze zijbalk wordt getoond aan de zijkant van de inhoud."
+
+#~ msgid "Footer Sidebar"
+#~ msgstr "Footerzijbalk"
+
+#~ msgid ""
+#~ "Upgrade to the premium version of Venice, to enable 600+ Google Fonts, "
+#~ "the masonry layout, different layout for post formats and much more."
+#~ msgstr ""
+#~ "Upgrade naar de premium-versie van Venice om 600+ Google lettertypen te "
+#~ "gebruiken , de lay-out van 'metselwerk' toe te passen, verschillende lay-"
+#~ "outs voor berichttypen en nog veel meer."
+
+#~ msgid "Get support"
+#~ msgstr "Krijg ondersteuning"
+
+#~ msgid ""
+#~ "If you've opened a new support ticket from WordPress.org, please send a "
+#~ "reminder to support@wpinprogress.com, to get a faster reply."
+#~ msgstr ""
+#~ "Als u een nieuwe supportticket hebt geopend vanaf WordPress.org, stuur "
+#~ "dan aub een herinnering naar support@wpinprogress.com, om een sneller "
+#~ "antwoord krijgen."
+
+#~ msgid ""
+#~ "If you like this theme and support, I'd appreciate any of the following:"
+#~ msgstr ""
+#~ "Als je tevreden bent over dit thema en de ondersteuning, zou ik een van "
+#~ "de volgende handelingen op prijs stellen:"
+
+#~ msgid "All"
+#~ msgstr "Alle"
+
+#~ msgid "Upgrade to Venice Premium"
+#~ msgstr "Upgrade naar Venice Premium"
+
+#~ msgid "Page %s"
+#~ msgstr "Pagina %s"
+
+#~ msgid "Navigation"
+#~ msgstr "Navigatie"
+
+#~ msgid "Select a template for this post"
+#~ msgstr "Selecteer een sjabloon voor dit bericht"
+
+#~ msgid "Written by "
+#~ msgstr "Geschreven door "
+
+#~ msgid "<span>Search </span> results for"
+#~ msgstr "<span>Zoek </span> resultaten voor:"
+
+#~ msgid "Copyright"
+#~ msgstr "Auteursrecht"
+
+#~ msgid "Theme by"
+#~ msgstr "Thema door"
+
+#~ msgid "A Semantic Personal Publishing Platform"
+#~ msgstr "Een semantisch persoonlijk publicatieplatform"
+
+#~ msgid "Proudly powered by %s"
+#~ msgstr "Mogelijk gemaakt door %s"
+
+#~ msgid "Back to top"
+#~ msgstr "Naar boven"
+
+#~ msgid "(estimated for %s)"
+#~ msgstr "(schatting voor %s)"
+
+#~ msgid "Username or email"
+#~ msgstr "Gebruikersnaam of e-mailadres"
+
+#~ msgid "Password"
+#~ msgstr "Wachtwoord"
+
+#~ msgid "Remember me"
+#~ msgstr "Onthoud mij"
+
+#~ msgid "Lost your password?"
+#~ msgstr "Wachtwoord vergeten?"
+
+#~ msgid "Related Products"
+#~ msgstr "Gerelateerde producten"
+
+#~ msgid "Category"
+#~ msgstr "Categorie"
