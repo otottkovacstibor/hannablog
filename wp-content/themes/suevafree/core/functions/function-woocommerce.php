@@ -1,37 +1,36 @@
 <?php
 
-/*-----------------------------------------------------------------------------------*/
-/* Woocommerce Hooks */
-/*-----------------------------------------------------------------------------------*/ 
-	
-remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
-remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+/**
+ * List of all WooCommerce hooks
+ */
 
-remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
-remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
+if ( ! function_exists( 'suevafree_woocommerce_init' ) ) {
 
+	function suevafree_woocommerce_init() {
+		
+		remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
+		remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10 );
+		remove_action( 'woocommerce_before_shop_loop_item', 'woocommerce_template_loop_product_link_open', 10 );
+		remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_product_link_close', 5 );
 
-if ( suevafree_setting ('suevafree_woocommerce_cross_sell_cart') == "on" ) :
-	
-	add_action( 'woocommerce_after_cart', 'woocommerce_cross_sell_display' );
-	
-endif;
-	
-if ( suevafree_setting ('suevafree_woocommerce_related_products') == "off" ) :
-	
-	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
-	
-endif;
+		if ( suevafree_setting ('suevafree_woocommerce_cross_sell_cart') == "on" )
+			add_action( 'woocommerce_after_cart', 'woocommerce_cross_sell_display' );
+			
+		if ( suevafree_setting ('suevafree_woocommerce_related_products') == "off" )
+			remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
+		
+		if ( suevafree_setting ('suevafree_woocommerce_upsell_products') == "off" )
+			remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15);
 
-if ( suevafree_setting ('suevafree_woocommerce_upsell_products') == "off" ) :
-	
-	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15);
-	
-endif;
+	}
 
-/*-----------------------------------------------------------------------------------*/
-/* Woocommerce restore page templates */
-/*-----------------------------------------------------------------------------------*/ 
+	add_action( 'init', 'suevafree_woocommerce_init' );
+
+}
+
+/**
+ * Woocommerce restore page templates
+ */
 
 if ( ! function_exists( 'suevafree_restore_page_templates' ) ) {
 
@@ -60,9 +59,9 @@ if ( ! function_exists( 'suevafree_restore_page_templates' ) ) {
 
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Woocommerce remove breadcrumbs */
-/*-----------------------------------------------------------------------------------*/ 
+/**
+ * Woocommerce remove breadcrumbs
+ */
 
 if ( ! function_exists( 'suevafree_remove_breadcrumbs' ) ) {
 
@@ -76,9 +75,9 @@ if ( ! function_exists( 'suevafree_remove_breadcrumbs' ) ) {
 
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Woocommerce header cart */
-/*-----------------------------------------------------------------------------------*/ 
+/**
+ * Woocommerce header cart
+ */
 
 if ( ! function_exists( 'suevafree_header_cart' ) ) {
 
@@ -135,9 +134,9 @@ if ( ! function_exists( 'suevafree_cart_link_fragment' ) ) {
 
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Woocommerce before content */
-/*-----------------------------------------------------------------------------------*/ 
+/**
+ * Woocommerce before content
+ */
 
 if (!function_exists('suevafree_woocommerce_before_main_content')) {
 
@@ -172,9 +171,9 @@ if (!function_exists('suevafree_woocommerce_before_main_content')) {
 
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Woocommerce after content */
-/*-----------------------------------------------------------------------------------*/ 
+/**
+ * Woocommerce after content
+ */
 
 if (!function_exists('suevafree_woocommerce_after_main_content')) {
 	
@@ -206,10 +205,10 @@ if (!function_exists('suevafree_woocommerce_after_main_content')) {
 
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Replace woocommerce_get_product_thumbnail function  */
-/*-----------------------------------------------------------------------------------*/ 
-	
+/**
+ * Replace woocommerce_get_product_thumbnail function
+ */
+
 if ( ! function_exists( 'suevafree_get_wc_product_thumbnail' ) ) {
 	
 	function suevafree_get_wc_product_thumbnail( $size = 'woocommerce_thumbnail', $deprecated1 = 0, $deprecated2 = 0 ) {
@@ -227,9 +226,9 @@ if ( ! function_exists( 'suevafree_get_wc_product_thumbnail' ) ) {
 	
 }
 
-/*-----------------------------------------------------------------------------------*/
-/* Replace wc_get_gallery_image_html function */ 
-/*-----------------------------------------------------------------------------------*/ 
+/**
+ * Replace wc_get_gallery_image_html function
+ */
 
 if ( ! function_exists( 'suevafree_wc_get_gallery_image_html' ) ) {
 	
@@ -255,6 +254,5 @@ if ( ! function_exists( 'suevafree_wc_get_gallery_image_html' ) ) {
 	}
 
 }
-
 
 ?>

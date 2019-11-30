@@ -3,8 +3,8 @@ Contributors: emrevona
 Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
-Tested up to: 5.2
-Stable tag: 0.8.9.9
+Tested up to: 5.3
+Stable tag: 0.9.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -102,6 +102,12 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.9.0.0 =
+* to exclude the css source of elementor which is /elementor/css/post-[number].css to avoid increasing the size of minified sources
+* to replace urls which have data-vc-parallax-image attribute with cdn-url
+* to avoid clearing cache of feed after voting (All In One Schema.org Rich Snippets)
+* to fix clearing cache after switching url on WPML
 
 = 0.8.9.9 =
 * to fix Undefined variable: count_posts in preload.php on line 112

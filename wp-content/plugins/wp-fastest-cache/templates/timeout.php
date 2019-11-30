@@ -126,7 +126,11 @@
 														<select name="wpfc-timeout-rule-schedule">
 															<?php
 																$schedules = wp_get_schedules();
-																$schedules = wp_list_sort($schedules, "interval", "ASC", true);
+
+																if(function_exists("wp_list_sort")){
+																	$schedules = wp_list_sort($schedules, "interval", "ASC", true);
+																}
+																
 																$first = true;
 																foreach ($schedules as $key => $value) {
 																	if(!isset($value["wpfc"])){

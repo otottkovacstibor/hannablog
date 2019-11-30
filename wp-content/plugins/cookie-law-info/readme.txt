@@ -1,10 +1,10 @@
 === GDPR Cookie Consent ===
-Contributors: webtoffee,markwt
+Contributors: webtoffee
 Donate link: https://www.webtoffee.com/plugins/ 
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
-Tested up to: 5.2
-Stable tag: 1.8.1
+Tested up to: 5.3
+Stable tag: 1.8.2
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,46 +12,42 @@ A simple way to get GDPR Cookie Consent as per EU GDPR/Cookie Law regulations. S
 
 == Description ==
 
-NOTE: INSTALLING THIS PLUGIN ALONE DOES NOT MAKE YOUR SITE GDPR COMPLIANT. SINCE EACH SITE USES DIFFERENT COOKIES, YOU MAY NEED TO ENSURE YOU HAVE NECESSARY CONFIGURATIONS IN PLACE.
+The GDPR Cookie Consent plugin will assist you in making your website GDPR compliant. It comes with a host of features some of which are listed below.
 
-Our plugin will help you to become GDPR compliant with following features. 
+= Key Features = 
 
-- Plugin will show a notice with Accept and Reject options. By default the cookie value will be set to 'null'. If the user clicks 'Accept' button the value will be changed to 'yes'. IF the user clicks on 'Reject' the value will be set to 'no'. Your developer can check this value to set a cookie
+- The plugin will enable a notice with Accept and Reject options. The cookies are not rendered by default and only upon user consent. (The cookie value will be set to ‘null’ by default; it takes a value 'yes' when the user clicks ‘Accept’ and ‘no’ upon 'Reject'. Your developer can check this value to set a cookie accordingly.)
 
-- Admin can add cookie details from the backend. The list of cookies can be displayed in your cookie policy page by using a short code
+- Admin can configure cookie details and their description from the backend. The list of cookies can be displayed in your cookie policy page by using a shortcode.
 
+- This plugin adds a subtle cookie banner to your website either in the header or footer so you can show your compliance status regarding the new GDPR law.
 
-This plugin adds a subtle banner to your website either in the header or footer so you can show your compliance status regarding the new EU Cookie Law.
+- You can fully customise the cookie notice style so it blends with your existing website: change the colours, fonts, styles, the position on the page and even how it behaves when you click “Accept”.
 
+- You can choose to make the cookie notice bar disappear after a few seconds (completely configurable) or to accept on scroll (an option available under Italian law).
 
-You can fully customise the style so it fits in with your existing website- change the colours, fonts, styles, the position on the page and even how it behaves when you click "accept".
-
-
-You can choose to make the cookie bar disappear after a few seconds (completely configurable) or to accept on scroll (an option available under Italian law).
-
-
-It also has a Cookie Audit module so you can easily show what cookies your site uses and display them neatly in a table on your Privacy & Cookies Policy page.
+- It also has a Cookie Audit module so you can easily show what cookies your site uses and display them neatly in a table on your Privacy & Cookies Policy page.
 
 
-The plugin uses the following cookies.
+= The plugin uses the following cookies = 
 
-- viewed_cookie_policy - Is the primary cookie that records the user consent for the usage of the cookies upon accept and reject. It doesn’t track any personal data and is set only upon user action(accept/reject).
+- viewed_cookie_policy – Is the primary cookie that records the user consent for the usage of the cookies upon accept and reject. It doesn’t track any personal data and is set only upon user action(accept/reject).
 
-- cookielawinfo-checkbox-necessary/cookielawinfo-checkbox-non-necessary - Records the default button state of the corresponding category. It works only in coordination with the primary cookie.
+- cookielawinfo-checkbox-necessary/cookielawinfo-checkbox-non-necessary – Records the default button state of the corresponding category. It works only in coordination with the primary cookie.
 
 
 This plugin supports WPML and qTranslate so your translation needs are covered.
 
 
-Features:
+= Features = 
 
-* Fully customisable to look just like your own website's style: customise the colours, styles and fonts
+* Fully customisable to look just like your own website’s style: customise the colours, styles and fonts
 * Put the cookie bar in either the header or the footer
 * (Optional) accept cookie policy if the user scrolls
-* (Optional) automatically close the cookie bar after a delay (delay is configurable)
-* (Optional) cookie bar can be permanently dismissed or accessible through a "show again" tab
-* (Optional) "show again" tab is fully customisable including position shown on page and styles
-* "Cookie Audit" shortcode to construct a nicely-styled 'Privacy & Cookie Policy'
+* (Optional) automatically close the cookie notice bar after a delay (delay is configurable)
+* (Optional) cookie banner can be permanently dismissed or accessible through a “show again” tab
+* (Optional) “show again” tab is fully customisable including position shown on page and styles
+* “Cookie Audit” shortcode to construct a nicely-styled ‘Privacy & Cookie Policy’
 * WPML compatible
 * qTranslate support
 
@@ -59,71 +55,68 @@ Features:
 
 <blockquote>
 
-= GDPR Cookie Consent Premium Version Features =
-&#9989; Manage list of cookies ( Name, CookieID, Description, Duration, Type, Category, Header Script, Footer Script).  
-&#9989; Manage Cookie Categories.  
-&#9989; Scan and auto block scripts - Google Analytics, FB Pixel, Google tag manager, Hotjar, Instagram, etc.  
-&#9989; Location based exclusion of cookie notice for EU countries.  
-&#9989; Provide the users with the granular control over the cookies/scipts used by the website.  
-&#9989; Optionally log users' consent and export into a CSV file.  
-&#9989; Customize the privacy overview in the cookie settings popup.  
-&#9989; Export/import cookies and related information via CSV file.  
-&#9989; Scan and import/export the cookies  
-&#9989; Allow to display cookie cettings popup where site visitors can opt-in or give consent to cookie categories.  
-&#9989; Customisable to look just like your own website’s style: customise the colours, styles and fonts.  
-&#9989; Put the cookie bar in either the header or the footer.  
-&#9989; Cookie bar preview in admin settings  
-&#9989; (Optional) accept cookie policy if the user scrolls.  
-&#9989; (Optional) automatically close the cookie bar after a delay (delay is configurable).  
-&#9989; (Optional) cookie bar can be permanently dismissed or accessible through a “show again” tab.  
-&#9989; (Optional) “show again” tab is fully customisable including position shown on page and styles.  
-&#9989; “Cookie Audit” shortcode to construct a nicely-styled ‘Privacy & Cookie Policy’.  
-&#9989; WPML compatible  
-&#9989; qTranslate support  
+= GDPR COOKIE CONSENT PREMIUM VERSION FEATURES =
+&#9989; Manage list of cookies ( Name, CookieID, Description, Duration, Type, Category, Header Script, Footer Script). 
+&#9989; Manage Cookie Categories.
+&#9989; Scan and auto block scripts – Google Analytics, FB Pixel, Google tag manager, Hotjar, Instagram, etc.
+&#9989; Location based exclusion of cookie notice for EU countries.
+&#9989; Provide the users with the granular control over the cookies/scripts used by the website.
+&#9989; Option to renew consents when there is a change in policy.
+&#9989; Optionally log users’ consent and export into a CSV file. 
+&#9989; Customize the privacy overview in the cookie banner settings popup.
+&#9989; Export/import cookies and related information via CSV file.
+&#9989; Scan and import/export the cookies
+&#9989; Allow to display cookie notice settings popup where site visitors can opt-in or give consent to cookie categories.
+&#9989; Customisable to look just like your own website’s style: customise the colours, styles and fonts.
+&#9989; Put the cookie banner in either the header or the footer.
+&#9989; Compatibility with major caching servers and plugins.
+&#9989; Cookie policy generator
+&#9989; Cookie banner preview in admin settings
+&#9989; (Optional) accept cookie notice if the user scrolls.
+&#9989; (Optional) automatically close the cookie bar after a delay (delay is configurable).
+&#9989; (Optional) cookie banner can be permanently dismissed or accessible through a “show again” tab.
+&#9989; (Optional) “show again” tab is fully customisable including position shown on page and styles.
+&#9989; “Cookie Audit” shortcode to construct a nicely-styled ‘Privacy & Cookie Policy’.
+&#9989; WPML,qTranslate,Polylang compatible
 
 For complete list of features and details, Please visit <a rel="nofollow" href="https://www.webtoffee.com/product/gdpr-cookie-consent/">GDPR Cookie Consent Premium Plugin</a> for more details
 
 </blockquote>
 
-== Installation ==
 
-This section describes how to install the plugin and get it working.
-
-1. Upload the `cookie-law-info` folder to the `/wp-content/plugins/` directory
-2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Go to "Cookie Law Info / Cookie Law Settings" to configure the banner with your own text, colours and styles
+= NOTE: INSTALLING THIS PLUGIN ALONE DOES NOT MAKE YOUR SITE GDPR COMPLIANT. SINCE EACH SITE USES DIFFERENT COOKIES, YOU NEED TO ENSURE YOU HAVE THE NECESSARY CONFIGURATIONS IN PLACE WITH A SUPPORTING COOKIE NOTICE. = 
 
 == Frequently Asked Questions ==
 
-There's a lot of help available on the main plugin website. See:
+There’s a lot of help available on the main plugin website. See:
 
 https://cookielawinfo.com/faq
 https://cookielawinfo.com/user-guide
 https://cookielawinfo.com/support
 
-= The cookie header isn't displaying =
+= The cookie notice header isn’t displaying ? =
 First check you have installed the plugin and have activated it in the plugins panel.
-To check if it is switched on or not, go to 'Settings / Cookie Law Info' and then enable the header by setting 'Display cookie bar?' to 'yes'.
+To check if it is switched on or not, go to ‘Settings / Cookie Law Info’ and then enable the header by setting ‘Display cookie bar?’ to ‘yes’.
 
-= The header doesn't work on my browser =
+= The cookie notice header doesn’t work on my browser ? =
 Please report a bug on the support forum. Be sure to include the following information:
 
 * Your URL (I will need this in order to help you!)
-* WordPress version e.g. 4.2.2 (found in bottom right hand corner of dashboard)
+* WordPress version e.g. 4.2.2 (found in bottom right hand corner of the dashboard)
 * Browser e.g. FireFox, Chrome, IE
 * Describe the problem
 
-The more information you give, the quicker I can respond.
+The more information you give, the quicker we can respond.
 
 = What does this plugin do? =
 This plugin will:
 
-1. Add a banner to the top/bottom of all pages on your website, notifying the visitor that you have a clearly defined privacy and cookie policy.
+1. Add a cookie banner to the top/bottom of all pages on your website, notifying the visitor that you have a clearly defined privacy and cookie policy.
 2. Allow you to record which cookies your site uses, and:
 3. Neatly display a list of these cookies (via a shortcode). You can put this list on your Privacy & Cookie Policy page, for example.
 
 = Does this plugin block all cookies? =
-No. This plugin restricts cookies by optionally loading the scripts. For this you have to add all cookies using the add cookie feature. It is not currently technically possible to completely block all cookies on your WordPress website without first updating all plugins that use cookies in some way. That is beyond the scope of any single plugin.
+No. This plugin restricts cookies by optionally loading the scripts. For this, you have to add all cookies using the add cookie feature. It is not currently technically possible to completely block all cookies on your WordPress website without first updating all plugins that use cookies in some way. That is beyond the scope of any single plugin.
 A more realistic approach for WordPress website owners is to move the scripts that place cookies( for eg Google Analytics tracking code) to the GDPR Cookie Consent plugin and then allow visitors to control it by giving consent.
 
 
@@ -131,13 +124,13 @@ A more realistic approach for WordPress website owners is to move the scripts th
 No. Only the 'necessary' cookies will be loaded till the user gives consent. 
 
 = Does this plugin stop cookies from being stored? =
-We provide you the facility to add cookies and the corresponding scripts (This works if the cookies are placed when a script is added to the site header or footer as in the case of Google analytics, Hotjar etc..). In our premium version, visitors can reject the category of cookies they don't want to get installed. In such cases all cookies in that category will be blocked for the user. In the free version you can still block the scripts but doesn't have category level granularity.
+We provide you the facility to add cookies and the corresponding scripts (This works if the cookies are placed when a script is added to the site header or footer as in the case of Google analytics, Hotjar etc..). In our premium version, visitors can reject the category of cookies they don't want to get installed. In such cases, all cookies in that category will be blocked for the user. In the free version, you can still block the scripts but doesn't have category level granularity.
 
 But if another plugin adds scripts or places a cookie then we do not have any control. We have no way of knowing what plugins you use or how they work, so blocking/deleting cookies on a WordPress website/blog would possibly/probably break your site. Larger websites with huge budgets may well invest in such technology, but this plugin aims to help you provide a certain level of compliance without taking drastic action. 
 
 = Does this plugin guarantee that I comply with this law? =
 No.
-As a generic plugin there's no way we can know anything about your specific circumstances. It can be used as part of an overall plan of action to comply, but just installing it and doing nothing more does nothing to help you. In all cases, you need to assess your own website's use of cookies and decide an appropriate course of action. If you are looking for specialist legal advice relating to your website you should always consult a lawyer.
+As a generic plugin, there's no way we can know anything about your specific circumstances. It can be used as part of an overall plan of action to comply, but just installing it and doing nothing more does nothing to help you. In all cases, you need to assess your own website's use of cookies and decide an appropriate course of action. If you are looking for specialist legal advice relating to your website you should always consult a lawyer.
 See http://cookielawinfo.com for more information on what is required.
 
 
@@ -149,6 +142,10 @@ See http://cookielawinfo.com for more information on what is required.
 4. Header (with custom styles)
 
 == Changelog ==
+
+= 1.8.2 =
+
+* Tested ok with WP 5.3
 
 = 1.8.1 =
 
@@ -384,9 +381,6 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.8.1 =
+= 1.8.2 =
 
-* Added option in admin to modify the default button state of the non-necessary cookie category
-* [Bug fix] Show more / show less issue when custom text editor is used in the privacy overview content.
-* Updated translations
-* Read me updates
+* Tested ok with WP 5.3

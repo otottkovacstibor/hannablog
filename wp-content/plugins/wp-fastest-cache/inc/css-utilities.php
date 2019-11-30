@@ -16,6 +16,11 @@
 
 		public function check_exclude($css_url = false){
 			if($css_url){
+				// to exclude the css source of elementor which is /elementor/css/post-[number].css to avoid increasing the size of minified sources
+				if(preg_match("/\/elementor\/css\/post-\d+\.css/i", $css_url)){
+					return true;
+				}
+
 				foreach((array)$this->wpfc->exclude_rules as $key => $value){
 
 					if(isset($value->prefix) && $value->prefix && $value->type == "css"){
