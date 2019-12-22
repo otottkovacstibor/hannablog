@@ -108,8 +108,8 @@
 										    		</td>
 										    		<td width="300">
 										    			<div class="wpfc-exclude-rule-line-middle">
-										    				<input type="text" name="wpfc-exclude-rule-content" style="width:300px;">
-										    				<input type="hidden" name="wpfc-exclude-rule-type" style="width:300px;">
+										    				<input type="text" name="wpfc-exclude-rule-content" style="width:289px;">
+										    				<input type="hidden" name="wpfc-exclude-rule-type" style="width:289px;">
 										    			</div>
 										    		</td>
 										    	</tr>

@@ -32,7 +32,6 @@ if (!function_exists('suevafree_mobile_menu_function')) {
 								'theme_location' => $theme_location,
 								'menu_class' => $menu_class,
 								'container' => 'false',
-								'depth' => 3
 							
 								)
 							

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.3.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-11-13 12:50:24+0000\n"
+"PO-Revision-Date: 2019-12-15 20:30:18+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -22,16 +22,42 @@ msgctxt "start of week"
 msgid "1"
 msgstr "1"
 
-#: wp-admin/about.php:93
+#: wp-admin/includes/media.php:1697 wp-admin/upgrade.php:77
+#: wp-admin/upgrade.php:153
+msgid "Continue"
+msgstr "Folytatás"
+
+#: wp-admin/includes/class-wp-site-health.php:1906
+msgid "PHP Default Timezone"
+msgstr "PHP alapértelmezett időzónája"
+
+#. translators: %s: date_default_timezone_set()
+#: wp-admin/includes/class-wp-site-health.php:1049
+msgid "PHP default timezone was changed after WordPress loading by a %s function call. This interferes with correct calculations of dates and times."
+msgstr ""
+
+#: wp-admin/includes/class-wp-site-health.php:1043
+msgid "PHP default timezone is invalid"
+msgstr "A PHP alapértelmezett időzónája érvénytelen"
+
+#: wp-admin/includes/class-wp-site-health.php:1035
+msgid "PHP default timezone was configured by WordPress on loading. This is necessary for correct calculations of dates and times."
+msgstr ""
+
+#: wp-admin/includes/class-wp-site-health.php:1027
+msgid "PHP default timezone is valid"
+msgstr "A PHP alapértelmezett időzónája érvényes"
+
+#: wp-admin/about.php:126
 msgid "Heading blocks now offer controls for text color"
 msgstr "A címsor blokkok már a színezést is támogatják"
 
 #. translators: %s: Link to the PHP 7 developer notes.
-#: wp-admin/about.php:184
+#: wp-admin/about.php:217
 msgid "WordPress 5.3 aims to fully support PHP 7.4. This release contains <a href=\"%s\">multiple changes</a> to remove deprecated functionality and ensure compatibility. WordPress continues to encourage all users to run the latest and greatest versions of PHP."
 msgstr "WordPress 5.3 teljes támogatja a PHP 7.4 verzióját. Az aktuális megjelenés <a href=\"%s\">számtalan olyan változtatást tartalmaz</a> amellyel elavult funkciókat távolítottunk el a kompatibilitás biztosítása mellett. A WordPress továbbra is arra bátorítja a felhasználókat, hogy használjuk a legújabb verziót."
 
-#: wp-admin/about.php:167
+#: wp-admin/about.php:200
 msgid "Date/Time Component Fixes"
 msgstr "Date/Time komponens javítások"
 
@@ -40,82 +66,82 @@ msgstr "Date/Time komponens javítások"
 msgid "The seventh parameter passed to %s should be an integer representing menu position."
 msgstr "A hetedik %s funkciónak átadott paraméternek számnak kell lennie, amely a menü pozíciót jelöli."
 
-#: wp-admin/about.php:179
+#: wp-admin/about.php:212
 msgid "PHP 7.4 Compatibility"
 msgstr "PHP 7.4 kompatibilitás"
 
 #. translators: %s: Link to the date/time developer notes.
-#: wp-admin/about.php:172
+#: wp-admin/about.php:205
 msgid "Developers can now work with <a href=\"%s\">dates and timezones</a> in a more reliable way. Date and time functionality has received a number of new API functions for unified timezone retrieval and PHP interoperability, as well as many bug fixes."
 msgstr "A fejlesztők <a href=\"%s\">dátumokkal és időzónákkal</a> megbízhatóbb módon tudnak dolgozni. A dátum és időzóna API számos új funkcióval gazdagodott egységesítve a lekérdezéseket és az átjárhatóságot, valamint számtalan hibajavítással is."
 
-#: wp-admin/about.php:149
+#: wp-admin/about.php:182
 msgid "You’ll now be periodically asked to confirm that your admin email address is up to date when you log in as an administrator. This reduces the chance of getting locked out of your site if you change your email address."
 msgstr "Időnként azt fogjuk kérni, hogy az adminisztrátori e-mail cím kerüljön megerősítésre, amikor adminisztrátorként bejelentkezünk. Ez a funkció csökkenti annak az esélyét, hogy kizárjuk magunkat az oldalainkról."
 
-#: wp-admin/about.php:148
+#: wp-admin/about.php:181
 msgid "Admin Email Verification"
 msgstr "Admin e-mail ellenőrzés"
 
-#: wp-admin/about.php:145
+#: wp-admin/about.php:178
 msgid "The improvements introduced in 5.3 make it even easier to identify issues. Expanded recommendations highlight areas that may need troubleshooting on your site from the Health Check screen."
 msgstr "Az 5.3-ban bevezetett fejlesztések egyszerűbbé teszik a problémák azonosítását. A bővített ajánlások kiemelnek bizonyos területeket a Webhely egészség képernyőn, hogy a hibákat könnyebb legyen megtalálni."
 
-#: wp-admin/about.php:141
+#: wp-admin/about.php:174
 msgid "Your images will be correctly rotated upon upload according to the embedded orientation data. This feature was first proposed nine years ago and made possible through the perserverance of many dedicated contributors."
 msgstr "Feltöltés után a képek a beágyazott tájolási adatokat figyelembe véve helyes irányba forgatjuk. Ez a funkció először kilenc éve merül fel, és munkatársaink kitartásának eredményeképpen készült el."
 
-#: wp-admin/about.php:140
+#: wp-admin/about.php:173
 msgid "Automatic Image Rotation"
 msgstr "Automatikus kép elforgatás"
 
 #. translators: %s: Link to the Inter font website.
-#: wp-admin/about.php:113
+#: wp-admin/about.php:146
 msgid "As befits a theme called Twenty Twenty, clarity and readability is also a big focus. The theme includes the typeface <a href=\"%s\">Inter</a>, designed by Rasmus Andersson. Inter comes in a Variable Font version, a first for default themes, which keeps load times short by containing all weights and styles of Inter in just two font files."
 msgstr "Ahogy illik az új sablont 2020-nak hívják, a letisztultság és az olvashatóság nagy hangsúlyt kapott. A sablon tartalmazza Rasmus Andersson által tervezett <a href=\"%s\">Inter</a> nevű betűtípust. Az Inter változó betűmérettel érkezik, elsőként az alapértelmezett sablonok közül, ami lerövidíti a betöltési időket mivel minden magasság és stílus elfért két fájlban."
 
-#: wp-admin/about.php:107
+#: wp-admin/about.php:140
 msgid "As the block editor celebrates its first birthday, we are proud that Twenty Twenty is designed with flexibility at its core. Show off your services or products with a combination of columns, groups, and media blocks. Set your content to wide or full alignment for dynamic and engaging layouts. Or let your thoughts be the star with a centered content column!"
 msgstr "A blokk szerkesztőnk első születésnapját ünnepli, ezért büszkék vagyunk rá, hogy a 2020 sablont a magjától rugalmasságra terveztük. Bemutathatunk szolgáltatások és termékeket oszlopokkal, csoportokkal és média blokkokkal. Legyen a tartalmuk széles, vagy alkalmazkodjon teljesen az kinézethez. Vagy hagyjuk a gondolataink sztárrá válni a középre rendezett tartalmi oszloppal."
 
-#: wp-admin/about.php:94
+#: wp-admin/about.php:127
 msgid "Additional style options allow you to set your preferred style for any block that supports this feature"
 msgstr "További stílus lehetőséget biztosítják, hogy olyan stílust alkalmazzunk amelyet csak szeretnénk, az ezt támogató blokkjainkon."
 
-#: wp-admin/about.php:92
+#: wp-admin/about.php:125
 msgid "The new Predefined layouts make it a cinch to arrange content into advanced designs"
 msgstr "Az új előregyártott elrendezésekkel hihetetlenül könnyű a tartalmakat fejlett kinézetekké alakítani"
 
-#: wp-admin/about.php:91
+#: wp-admin/about.php:124
 msgid "The Columns block now supports fixed column widths"
 msgstr "Az oszlop blokk mostantól támogatja a fix szélességet"
 
-#: wp-admin/about.php:90
+#: wp-admin/about.php:123
 msgid "The new Group block lets you easily divide your page into colorful sections"
 msgstr "Az új csoport blokkal lehetőség nyílik az oldalainkat felosztani színezett bekezdésekkel"
 
 #. translators: %s: The current WordPress version number.
-#: wp-admin/about.php:84
+#: wp-admin/about.php:117
 msgid "WordPress %s adds even more robust tools for creating amazing designs."
 msgstr "WordPress %s még több masszív eszközt biztosít ahhoz, hogy csodálatos kinézeteket valósíthassunk meg."
 
-#: wp-admin/about.php:79
+#: wp-admin/about.php:112
 msgid "Expanded Design Flexibility"
 msgstr "Bővített kinézeti rugalmasság"
 
-#: wp-admin/about.php:72
+#: wp-admin/about.php:105
 msgid "Accessibility improvements include the integration of block editor styles in the admin interface. These improved styles fix many accessibility issues: color contrast on form fields and buttons, consistency between editor and admin interfaces, new snackbar notices, standardizing to the default WordPress color scheme, and the introduction of Motion to make interacting with your blocks feel swift and natural. For people who use a keyboard to navigate the dashboard, the block editor now has a Navigation mode. This lets you jump from block to block without tabbing through every part of the block controls."
 msgstr "A kisegítő lehetőségek fejlesztése tartalmazza a blokk szerkesztő stílusainak integrációját a felületbe. Ezek a tovább fejlesztett stílusok számos kisegítő lehetőségekkel kapcsolatos problémát javítanak: a szín kontrasztot az űrlap mezőkön és gombokon, egységesíti a szerkesztő és az admin felületet, új értesítési rendszer, egységesíti az új alapértelmezett WordPress színsémát, és a Motion bevezetésével a blokkokkal való munkát gyorssá és természetessé teszi. Azok számára, akik billentyűzettel navigálnak a vezérlőpulton, a blokk szerkesztő navigációs módot kapott. Ez lehetővé teszi a blokkról blokkra váltást anélkül, hogy a blokk vezérlők minden részén át kellene tabolnunk."
 
-#: wp-admin/about.php:68
+#: wp-admin/about.php:101
 msgid "This enhancement-focused update introduces over 150 new features and usability improvements, including improved large image support for uploading non-optimized, high-resolution pictures taken from your smartphone or other high-quality cameras. Combined with larger default image sizes, pictures always look their best."
 msgstr "A fejlesztés fókuszú frissítéssel több, mint 150 új funkció és használhatósági javítás érkezett, beleértve az okos telefonnal vagy kiváló minőségű fényképezőgéppel készült nagy méretű nem optimalizált képek feltöltésének támogatását. Ezzel együtt megnöveltük az alapértelmezett kép méreteket, hogy a képek mindig a legjobban mutassanak."
 
-#: wp-admin/about.php:66
+#: wp-admin/about.php:99
 msgid "Block Editor Improvements"
 msgstr "Blokk szerkesztő frissítések"
 
-#: wp-admin/about.php:53
+#: wp-admin/about.php:86
 msgid "5.3 expands and refines the block editor introduced in WordPress 5.0 with a new block, more intuitive interactions, and improved accessibility. New features in the editor increase design freedoms, provide additional layout options and style variations to allow designers complete control over the look of a site. This release also introduces the Twenty Twenty theme giving the user more design flexibility and integration with the block editor. Creating beautiful web pages and advanced layouts has never been easier."
 msgstr "Az 5.3 kibővíti és tovább finomítja a WordPress 5.0-ban bemutatott blokk szerkesztőt, új blokkokkal és még több intuitív kölcsönhatással és fejlesztett kisegítő lehetőségekkel. A szerkesztő új funkciói növelik a tervezés szabadságát, további elrendezési opciók és stílus variációk biztosítanak teljes szabadságot a tervezőknek az oldal kinézete fölött. A megjelenés elhozza a 2020 sablont, ami még nagyobb kinézeti szabadságot ad a felhasználóknak a blokk szerkesztő integrálásával. Gyönyörű kinézetek és bonyolult elrendezések létrehozása még sosem volt ilyen egyszerű."
 
@@ -130,7 +156,7 @@ msgstr "A WordPress %s bemutatja a legkifinomultabb felhasználói élményt a t
 msgid "The update cannot be installed because WordPress %1$s requires the %2$s PHP extension."
 msgstr "A frissítést nem lehet telepíteni, mert a WordPress %1$s használatához %2$s PHP kiterjesztés szükséges."
 
-#: wp-admin/includes/class-wp-site-health.php:1122
+#: wp-admin/includes/class-wp-site-health.php:1162
 msgid "UTF8MB4 is the character set WordPress prefers for database storage because it safely supports the widest set of characters and encodings, including Emoji, enabling better support for non-English languages."
 msgstr "UTF8MB4 karakterkészletet használja a WordPress az adattárolásra, mert ez támogatja a karakterek és kódolások legszélesebb spektrumát, beleértve az Emojikat is, ezáltal jobb támogatást nyújt a nem angol nyelvekhez."
 
@@ -221,7 +247,7 @@ msgstr "FIGYELEM!"
 #. translators: %s: The option/setting.
 #: wp-admin/options.php:270
 msgid "The %s setting is unregistered. Unregistered settings are deprecated. See https://developer.wordpress.org/plugins/settings/settings-api/"
-msgstr ""
+msgstr "%s nem regisztrált. A nem regisztrált beállítások nem ajánlottak. Bővebben: https://developer.wordpress.org/plugins/settings/settings-api/"
 
 #: wp-admin/edit-form-advanced.php:374
 msgid "<strong>Format</strong> &mdash; Post Formats designate how your theme will display a specific post. For example, you could have a <em>standard</em> blog post with a title and paragraphs, or a short <em>aside</em> that omits the title and contains a short text blurb. Your theme could enable all or some of 10 possible formats. <a href=\"https://wordpress.org/support/article/post-formats/#supported-formats\">Learn more about each post format</a>."
@@ -233,11 +259,11 @@ msgstr "<a href=\"https://wordpress.org/support/article/pages-screen/\">Dokument
 
 #: wp-admin/edit-form-advanced.php:330
 msgid "<a href=\"https://wordpress.org/support/article/pages-add-new-screen/\">Documentation on Adding New Pages</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/pages-add-new-screen/\">Új oldalak létrehozásának dokumentációja</a>"
 
 #: wp-admin/edit-form-advanced.php:313
 msgid "<a href=\"https://wordpress.org/support/article/wordpress-editor/\">Documentation on Writing and Editing Posts</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/wordpress-editor/\">Bejegyzések írásának és szerkesztésének dokumentációja</a>"
 
 #: wp-admin/upload.php:75 wp-admin/upload.php:250
 msgid "<a href=\"https://wordpress.org/support/article/media-library-screen/\">Documentation on Media Library</a>"
@@ -253,11 +279,11 @@ msgstr "<a href=\"https://wordpress.org/support/article/edit-media/\">Dokumentá
 
 #: wp-admin/edit-comments.php:209
 msgid "<a href=\"https://wordpress.org/support/article/keyboard-shortcuts/\">Documentation on Keyboard Shortcuts</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/keyboard-shortcuts/\">A billentyűzetkódok dokumentációja</a>"
 
 #: wp-admin/edit-comments.php:208
 msgid "<a href=\"https://wordpress.org/support/article/comment-spam/\">Documentation on Comment Spam</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/comment-spam/\">Hozzászólás spam dokumentációja</a>"
 
 #: wp-admin/plugins.php:466
 msgid "<a href=\"https://wordpress.org/support/article/managing-plugins/\">Documentation on Managing Plugins</a>"
@@ -265,11 +291,11 @@ msgstr "<a href=\"https://wordpress.org/support/article/managing-plugins/\">Doku
 
 #: wp-admin/index.php:107
 msgid "<a href=\"https://wordpress.org/support/article/dashboard-screen/\">Documentation on Dashboard</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/dashboard-screen/\">Vezérlőpult dokumentációja</a>"
 
 #: wp-admin/user-new.php:268
 msgid "<a href=\"https://wordpress.org/support/article/users-add-new-screen/\">Documentation on Adding New Users</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/users-add-new-screen/\">Új felhasználók létrehozásának dokumentációja</a>"
 
 #. translators: %s: URL to Site Health Status page.
 #: wp-admin/site-health-info.php:90
@@ -286,23 +312,23 @@ msgstr "<a href=\"https://wordpress.org/support/article/nginx/\">Nginx konfigur�
 
 #: wp-admin/options-permalink.php:187
 msgid "https://wordpress.org/support/article/using-permalinks/"
-msgstr ""
+msgstr "https://wordpress.org/support/article/using-permalinks/"
 
 #: wp-admin/options-permalink.php:61
 msgid "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Documentation on Using Permalinks</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Állandó hivatkozások használatának dokumentációja</a>"
 
 #: wp-admin/options-permalink.php:60
 msgid "<a href=\"https://wordpress.org/support/article/settings-permalinks-screen/\">Documentation on Permalinks Settings</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/settings-permalinks-screen/\">Állandó hivatkozások beállításának dokumentációja</a>"
 
 #: wp-admin/update-core.php:726
 msgid "<a href=\"https://wordpress.org/support/article/dashboard-updates-screen/\">Documentation on Updating WordPress</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/dashboard-updates-screen/\">A WordPress frissítésének dokumentációja</a>"
 
 #: wp-admin/update-core.php:247
 msgid "<strong>Important:</strong> Before updating, please <a href=\"https://wordpress.org/support/article/wordpress-backups/\">back up your database and files</a>. For help with updates, visit the <a href=\"https://wordpress.org/support/article/updating-wordpress/\">Updating WordPress</a> documentation page."
-msgstr ""
+msgstr "<strong>FIGYELEM!</strong> A frissítések megkezdése előtt ne feledjük el <a href=\"https://wordpress.org/support/article/wordpress-backups/\">menteni az adatbázist és a fájlokat</a>. A frissítésekkel kapcsolatos segítségekhez olvassuk el a <a href=\"https://wordpress.org/support/article/updating-wordpress/\">WordPress frissítése</a> dokumentációs oldal tartalmát."
 
 #: wp-admin/nav-menus.php:604
 msgid "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentation on Menus</a>"
@@ -318,27 +344,27 @@ msgstr "<a href=\"https://wordpress.org/support/article/plugins-editor-screen/\"
 
 #: wp-admin/theme-editor.php:54
 msgid "<a href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Documentation on Template Tags</a>"
-msgstr ""
+msgstr "<a href=\"https://developer.wordpress.org/themes/basics/template-tags/\">Sablonminták címkéinek dokumentációja</a>."
 
 #: wp-admin/theme-editor.php:53
 msgid "<a href=\"https://wordpress.org/support/article/editing-files/\">Documentation on Editing Files</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/editing-files/\">Fájlszerkesztés dokumentációja</a>."
 
 #: wp-admin/theme-editor.php:52 wp-admin/themes.php:148
 msgid "<a href=\"https://wordpress.org/support/article/using-themes/\">Documentation on Using Themes</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/using-themes/\">Sablonok használatának dokumentációja</a>."
 
 #: wp-admin/theme-editor.php:51
 msgid "<a href=\"https://developer.wordpress.org/themes/\">Documentation on Theme Development</a>"
-msgstr ""
+msgstr "<a href=\"https://developer.wordpress.org/themes/\">A sablonfejlesztés dokumentációja</a>."
 
 #: wp-admin/comment.php:56 wp-admin/edit-comments.php:207
 msgid "<a href=\"https://wordpress.org/support/article/comments-screen/\">Documentation on Comments</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/comments-screen/\">Hozzászólások dokumentációja</a>."
 
 #: wp-admin/options-general.php:391
 msgid "<a href=\"https://wordpress.org/support/article/formatting-date-and-time/\">Documentation on date and time formatting</a>."
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/formatting-date-and-time/\">A dátum- és időformátumok dokumentációja</a>."
 
 #. translators: %s: UTC time.
 #: wp-admin/options-general.php:246
@@ -356,21 +382,21 @@ msgstr "Adminisztrációs e-mail cím"
 
 #: wp-admin/options-general.php:100
 msgid "https://wordpress.org/support/article/giving-wordpress-its-own-directory/"
-msgstr ""
+msgstr "https://wordpress.org/support/article/giving-wordpress-its-own-directory/"
 
 #: wp-admin/options-general.php:48
 msgid "<a href=\"https://wordpress.org/support/article/settings-general-screen/\">Documentation on General Settings</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/settings-general-screen/\">Az általános beállítások dokumentációja</a>."
 
-#: wp-admin/includes/dashboard.php:1820
+#: wp-admin/includes/dashboard.php:1809
 msgid "https://wordpress.org/support/article/first-steps-with-wordpress-b/"
-msgstr ""
+msgstr "https://wordpress.org/support/article/first-steps-with-wordpress-b/"
 
 #: wp-admin/includes/file.php:319 wp-admin/theme-editor.php:321
 #: wp-admin/plugin-editor.php:288 wp-admin/options-permalink.php:341
 #: wp-admin/options-permalink.php:366 wp-admin/options-permalink.php:399
 msgid "https://wordpress.org/support/article/changing-file-permissions/"
-msgstr ""
+msgstr "https://wordpress.org/support/article/changing-file-permissions/"
 
 #. translators: %s: Documentation URL.
 #: wp-admin/includes/file.php:318 wp-admin/theme-editor.php:320
@@ -426,15 +452,15 @@ msgid "Password protected"
 msgstr "Jelszóval védett"
 
 #. translators: %s: The name of the late cron event.
-#: wp-admin/includes/class-wp-site-health.php:1527
+#: wp-admin/includes/class-wp-site-health.php:1567
 msgid "The scheduled event, %s, is late to run. Your site still works, but this may indicate that scheduling posts or automated updates may not work as intended."
 msgstr "%s ütemezett esemény későn futott le. A webhelyünk működik, de a bejegyzés ütemezés, illetve az automatikus frissítések nem úgy működnek, ahogy annak kellene."
 
-#: wp-admin/includes/class-wp-site-health.php:1521
+#: wp-admin/includes/class-wp-site-health.php:1561
 msgid "A scheduled event is late"
 msgstr "Az ütemezett esemény elmúlt"
 
-#: wp-admin/includes/class-wp-site-health.php:1375
+#: wp-admin/includes/class-wp-site-health.php:1415
 msgid "An HTTPS connection is a more secure way of browsing the web. Many services now have HTTPS as a requirement. HTTPS allows you to take advantage of new features that can increase site speed, improve search rankings, and gain the trust of your visitors by helping to protect their online privacy."
 msgstr "A HTTPS kapcsolat az internetes böngészés egy biztonságosabb módja. Számtalan szolgáltatás elvárja a HTTPS kapcsolatot, annak érdekében, hogy kihasználhatóak legyenek olyan új lehetőségek amelyekkel az oldal gyorsítható, javítható a kereső rangsorolása és bizalmat lehet építeni a látogatók felé az adataik védelmével."
 
@@ -470,61 +496,61 @@ msgstr "WordPress (%s) verziónk a lehető legfrissebb."
 
 #: wp-admin/includes/ms.php:1152
 msgid "<a href=\"https://wordpress.org/support/article/network-admin-sites-screen/\">Documentation on Site Management</a>"
-msgstr ""
+msgstr "<a href=\"https://wordpress.org/support/article/network-admin-sites-screen/\">Weboldal kezelésének dokumentációja</a>."
 
 #: wp-admin/includes/meta-boxes.php:783
 msgid "https://wordpress.org/support/article/introduction-to-blogging/#managing-comments"
-msgstr ""
+msgstr "https://wordpress.org/support/article/introduction-to-blogging/#managing-comments"
 
 #: wp-admin/includes/meta-boxes.php:759
 msgid "https://wordpress.org/support/article/custom-fields/"
-msgstr ""
+msgstr "https://wordpress.org/support/article/custom-fields/"
 
 #: wp-admin/includes/meta-boxes.php:722
 msgid "https://wordpress.org/support/article/introduction-to-blogging/#comments"
-msgstr ""
+msgstr "https://wordpress.org/support/article/introduction-to-blogging/#comments"
 
 #: wp-admin/includes/meta-boxes.php:685
 msgid "https://wordpress.org/support/article/excerpt/"
-msgstr ""
+msgstr "https://wordpress.org/support/article/excerpt/"
 
 #. translators: Post date information. %s: Date on which the post is to be
 #. published.
 #: wp-admin/includes/meta-boxes.php:218
 msgid "Publish on: %s"
-msgstr ""
+msgstr "Közzététel: %s"
 
 #. translators: Post date information. %s: Date on which the post is to be
 #. published.
 #: wp-admin/includes/meta-boxes.php:215
 msgid "Schedule for: %s"
-msgstr ""
+msgstr "Időzítés: %s"
 
 #. translators: Post date information. %s: Date on which the post was
 #. published.
 #: wp-admin/includes/meta-boxes.php:210
 msgid "Published on: %s"
-msgstr ""
+msgstr "Közzétéve: %s"
 
 #. translators: Post date information. %s: Date on which the post is currently
 #. scheduled to be published.
 #: wp-admin/includes/meta-boxes.php:207
 msgid "Scheduled for: %s"
-msgstr ""
+msgstr "Időzítve: %s"
 
 #. translators: Publish box time format, see https://secure.php.net/date
 #: wp-admin/includes/meta-boxes.php:202 wp-admin/includes/meta-boxes.php:390
 #: wp-admin/edit-form-advanced.php:175 wp-admin/edit-form-comment.php:112
 msgctxt "publish box time format"
 msgid "H:i"
-msgstr ""
+msgstr "H:i"
 
 #. translators: Publish box date format, see https://secure.php.net/date
 #: wp-admin/includes/meta-boxes.php:200 wp-admin/includes/meta-boxes.php:388
 #: wp-admin/edit-form-advanced.php:173 wp-admin/edit-form-comment.php:110
 msgctxt "publish box date format"
 msgid "M j, Y"
-msgstr ""
+msgstr "Y. m. d."
 
 #. translators: 1: Marker.
 #: wp-admin/includes/misc.php:129
@@ -610,11 +636,11 @@ msgstr ""
 #. translators: %s: Site title.
 #: wp-admin/ms-delete-site.php:91
 msgid "[%s] Delete My Site"
-msgstr ""
+msgstr "[%s] Törlöm a weboldalam"
 
 #: wp-admin/options-discussion.php:58
 msgid "Allow people to submit comments on new posts"
-msgstr ""
+msgstr "Engedélyezzük az embereknek, hogy hozzászóljanak az új bejegyzésekhez."
 
 #: wp-admin/options-discussion.php:46 wp-admin/options-discussion.php:47
 msgid "Default post settings"
@@ -690,11 +716,11 @@ msgstr ""
 msgid "You are in recovery mode. This means there may be an error with a theme or plugin. To exit recovery mode, log out or use the Exit button. <a href=\"%s\">Exit Recovery Mode</a>"
 msgstr "Helyreállítási üzemmódban vagyunk. Ez annyit jelent, hogy hiba lehet egy sablonnal, vagy bővítménnyel. A helyreállítási üzemmód elhagyásához ki kell jelentkezni a weboldalról, vagy használható a <a href=\"%s\">Kilépés a helyreállítási üzemmódból</a> hivatkozásra történő kattintás."
 
-#: wp-admin/about.php:137
+#: wp-admin/about.php:170
 msgid "Improvements for Everyone"
 msgstr "Fejlesztések mindenkinek"
 
-#: wp-admin/about.php:144
+#: wp-admin/about.php:177
 msgid "Site Health Checks"
 msgstr "Webhely egészség ellenőrzés"
 
@@ -727,31 +753,31 @@ msgstr[0] "%s kritikus hiba"
 msgstr[1] "%s kritikus hiba"
 
 #. translators: 1: Name of the library, 2: Number of version.
-#: wp-admin/includes/class-wp-site-health.php:1193
-#: wp-admin/includes/class-wp-site-health.php:1209
+#: wp-admin/includes/class-wp-site-health.php:1233
+#: wp-admin/includes/class-wp-site-health.php:1249
 msgid "WordPress&#8217; utf8mb4 support requires MySQL client library (%1$s) version %2$s or newer. Please contact your server administrator."
 msgstr "A WordPress utf8mb4 támogatásához a MySQL kliens könyvtár (%1$s) %2$s, vagy újabb verziója szükséges.Vegyük fel a kapcsolatot a szerver üzemeltetőjével."
 
 #. translators: %s: Version number.
-#: wp-admin/includes/class-wp-site-health.php:1158
+#: wp-admin/includes/class-wp-site-health.php:1198
 msgid "WordPress&#8217; utf8mb4 support requires MariaDB version %s or greater. Please contact your server administrator."
 msgstr "A WordPress utf8mb4 támogatásához a MariaDB %s, vagy újabb verziója szükséges.Vegyük fel a kapcsolatot a szerver üzemeltetőjével."
 
 #. translators: %s: Version number.
-#: wp-admin/includes/class-wp-site-health.php:1138
+#: wp-admin/includes/class-wp-site-health.php:1178
 msgid "WordPress&#8217; utf8mb4 support requires MySQL version %s or greater. Please contact your server administrator."
 msgstr "A WordPress utf8mb4 támogatásához a MySQL %s, vagy újabb verziója szükséges.Vegyük fel a kapcsolatot a szerver üzemeltetőjével."
 
-#: wp-admin/includes/class-wp-site-health.php:1041
+#: wp-admin/includes/class-wp-site-health.php:1081
 msgid "Learn more about what WordPress requires to run."
 msgstr "Tudjunk meg többet arról, hogy mi szükséges a WordPress futtatásához."
 
 #. translators: Localized version of WordPress requirements if one exists.
-#: wp-admin/includes/class-wp-site-health.php:1040
+#: wp-admin/includes/class-wp-site-health.php:1080
 msgid "https://wordpress.org/about/requirements/"
 msgstr "https://wordpress.org/about/requirements/"
 
-#: wp-admin/includes/class-wp-site-health.php:1035
+#: wp-admin/includes/class-wp-site-health.php:1075
 msgid "The SQL server is a required piece of software for the database WordPress uses to store all your site&#8217;s content and settings."
 msgstr "Az SQL szerver egy kötelező szoftveres része amelyben a WordPress minden webhely adatot és beállítást tárol."
 
@@ -763,7 +789,7 @@ msgstr "PHP modulok végzik a kiszolgálón a legtöbb feladatot, amely a webhel
 msgid "PHP is the programming language we use to build and maintain WordPress. Newer versions of PHP are both faster and more secure, so updating will have a positive effect on your site&#8217;s performance."
 msgstr "A PHP az a programozási nyelv, amelyet a WordPress építéséhez és karbantartásához használunk.A PHP legújabb verziói egyszerre nyújtanak gyorsaságot és biztonságot, így a frissítés a weboldal sebességére pozitív hatással bír."
 
-#: wp-admin/includes/class-wp-site-health.php:1274
+#: wp-admin/includes/class-wp-site-health.php:1314
 msgid "Get help resolving this issue."
 msgstr "Segítség a hiba megoldásában."
 
@@ -792,7 +818,7 @@ msgid "User Language"
 msgstr "Felhasználó által használt nyelv"
 
 #. translators: 1: WP_DEBUG_DISPLAY, 2: WP_DEBUG
-#: wp-admin/includes/class-wp-site-health.php:1344
+#: wp-admin/includes/class-wp-site-health.php:1384
 msgid "The value, %1$s, has either been enabled by %2$s or added to your configuration file. This will make errors display on the front end of your site."
 msgstr ""
 
@@ -870,7 +896,7 @@ msgstr "Minden formátum"
 msgid "Filter by post format"
 msgstr "Szűkítés bejegyzés formátum alapján"
 
-#: wp-admin/includes/plugin.php:2402
+#: wp-admin/includes/plugin.php:2403
 msgid "Go to the Plugins screen"
 msgstr "Bővítmények képernyő"
 
@@ -921,17 +947,17 @@ msgid "Sorry, you are not allowed to perform this action."
 msgstr "Sajnos, ennek a műveletnek a végrehajtása nem engedélyezett."
 
 #. translators: 1: Name of the constant used. 2: List of hostnames whitelisted.
-#: wp-admin/includes/class-wp-site-health.php:1715
+#: wp-admin/includes/class-wp-site-health.php:1755
 msgid "HTTP requests have been blocked by the %1$s constant, with some hosts whitelisted: %2$s."
 msgstr ""
 
 #. translators: %s: Name of the constant used.
-#: wp-admin/includes/class-wp-site-health.php:1700
+#: wp-admin/includes/class-wp-site-health.php:1740
 msgid "HTTP requests have been blocked by the %s constant, with no allowed hosts."
 msgstr "A HTTP le lett tiltva lekérdezés a %s konstans miatt, és mert nincsenek engedélyezett gépnevek megadva."
 
 #. translators: 1: The name of the drop-in. 2: The name of the database engine.
-#: wp-admin/includes/class-wp-site-health.php:1089
+#: wp-admin/includes/class-wp-site-health.php:1129
 msgid "You are using a %1$s drop-in which might mean that a %2$s database is not being used."
 msgstr ""
 
@@ -950,11 +976,12 @@ msgstr ""
 #: wp-admin/includes/class-wp-site-health.php:684
 #: wp-admin/includes/class-wp-site-health.php:798
 #: wp-admin/includes/class-wp-site-health.php:1030
-#: wp-admin/includes/class-wp-site-health.php:1117
-#: wp-admin/includes/class-wp-site-health.php:1479
-#: wp-admin/includes/class-wp-site-health.php:1627
-#: wp-admin/includes/class-wp-site-health.php:1669
-#: wp-admin/includes/class-wp-site-health.php:1740
+#: wp-admin/includes/class-wp-site-health.php:1070
+#: wp-admin/includes/class-wp-site-health.php:1157
+#: wp-admin/includes/class-wp-site-health.php:1519
+#: wp-admin/includes/class-wp-site-health.php:1667
+#: wp-admin/includes/class-wp-site-health.php:1709
+#: wp-admin/includes/class-wp-site-health.php:1780
 msgid "Performance"
 msgstr "Teljesítmény"
 
@@ -995,12 +1022,12 @@ msgstr "A használaton kívüli bővítmények a támadók csábító célpontja
 #: wp-admin/includes/class-wp-site-health.php:314
 #: wp-admin/includes/class-wp-site-health.php:446
 #: wp-admin/includes/class-wp-site-health.php:741
-#: wp-admin/includes/class-wp-site-health.php:1070
-#: wp-admin/includes/class-wp-site-health.php:1232
-#: wp-admin/includes/class-wp-site-health.php:1301
-#: wp-admin/includes/class-wp-site-health.php:1370
-#: wp-admin/includes/class-wp-site-health.php:1433
-#: wp-admin/includes/class-wp-site-health.php:1551
+#: wp-admin/includes/class-wp-site-health.php:1110
+#: wp-admin/includes/class-wp-site-health.php:1272
+#: wp-admin/includes/class-wp-site-health.php:1341
+#: wp-admin/includes/class-wp-site-health.php:1410
+#: wp-admin/includes/class-wp-site-health.php:1473
+#: wp-admin/includes/class-wp-site-health.php:1591
 msgid "Security"
 msgstr "Biztonság"
 
@@ -1108,321 +1135,321 @@ msgstr "Nagyszerű munka!"
 msgid "Secondary menu"
 msgstr "Másodlagos menü"
 
-#: wp-admin/includes/class-wp-site-health.php:2123
+#: wp-admin/includes/class-wp-site-health.php:2167
 msgid "The loopback request to your site completed successfully."
 msgstr ""
 
 #. translators: %d: The HTTP response code returned.
-#: wp-admin/includes/class-wp-site-health.php:2115
+#: wp-admin/includes/class-wp-site-health.php:2159
 msgid "The loopback request returned an unexpected http status code, %d, it was not possible to determine if this will prevent features from working as expected."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:2099
+#: wp-admin/includes/class-wp-site-health.php:2143
 msgid "The loopback request to your site failed, this means features relying on them are not currently working as expected."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1988
+#: wp-admin/includes/class-wp-site-health.php:2032
 msgid "No scheduled events exist on this site."
 msgstr "Nincsenek ütemezett feladatok a webhelyen."
 
-#: wp-admin/includes/class-wp-site-health.php:1913
+#: wp-admin/includes/class-wp-site-health.php:1957
 msgid "REST API availability"
 msgstr "REST API elérhetősége"
 
-#: wp-admin/includes/class-wp-site-health.php:1904
+#: wp-admin/includes/class-wp-site-health.php:1948
 msgid "Loopback request"
 msgstr "Loopback –  visszacsatolási kérés"
 
-#: wp-admin/includes/class-wp-site-health.php:1890
+#: wp-admin/includes/class-wp-site-health.php:1934
 msgid "Debugging enabled"
 msgstr "Hibakeresés bekapcsolva"
 
-#: wp-admin/includes/class-wp-site-health.php:1886
+#: wp-admin/includes/class-wp-site-health.php:1930
 msgid "HTTP Requests"
 msgstr "HTTP kérések"
 
-#: wp-admin/includes/class-wp-site-health.php:1882
+#: wp-admin/includes/class-wp-site-health.php:1926
 msgid "Scheduled events"
 msgstr "Időzített események"
 
-#: wp-admin/includes/class-wp-site-health.php:1878
+#: wp-admin/includes/class-wp-site-health.php:1922
 msgid "Secure communication"
 msgstr "Titkosított kommunikáció"
 
-#: wp-admin/includes/class-wp-site-health.php:1874
+#: wp-admin/includes/class-wp-site-health.php:1918
 msgid "HTTPS status"
 msgstr "HTTPS állapot"
 
-#: wp-admin/includes/class-wp-site-health.php:1870
+#: wp-admin/includes/class-wp-site-health.php:1914
 msgid "MySQL utf8mb4 support"
 msgstr "MySQL utf8mb4 támogatás"
 
-#: wp-admin/includes/class-wp-site-health.php:1866
+#: wp-admin/includes/class-wp-site-health.php:1902
 msgid "PHP Extensions"
 msgstr "PHP kiegészítések"
 
-#: wp-admin/includes/class-wp-site-health.php:1862
+#: wp-admin/includes/class-wp-site-health.php:1910
 msgid "Database Server version"
 msgstr "Adatbázis szerver verzió"
 
-#: wp-admin/includes/class-wp-site-health.php:1858
+#: wp-admin/includes/class-wp-site-health.php:1898
 msgid "PHP Version"
 msgstr "PHP verzió"
 
-#: wp-admin/includes/class-wp-site-health.php:1854
+#: wp-admin/includes/class-wp-site-health.php:1894
 msgid "Theme Versions"
 msgstr "Sablon verziók"
 
-#: wp-admin/includes/class-wp-site-health.php:1850
+#: wp-admin/includes/class-wp-site-health.php:1890
 msgid "Plugin Versions"
 msgstr "Bővítmény verziók"
 
-#: wp-admin/includes/class-wp-site-health.php:1846
+#: wp-admin/includes/class-wp-site-health.php:1886
 msgid "WordPress Version"
 msgstr "WordPress verzió"
 
 #. translators: %s: The name of the query parameter being tested.
-#: wp-admin/includes/class-wp-site-health.php:1821
+#: wp-admin/includes/class-wp-site-health.php:1861
 msgid "The REST API did not process the %s query parameter correctly."
 msgstr "A REST API nem dolgozza fel a %s paramétert helyesen."
 
-#: wp-admin/includes/class-wp-site-health.php:1815
+#: wp-admin/includes/class-wp-site-health.php:1855
 msgid "The REST API did not behave correctly"
 msgstr "A REST API nem működik megfelelően"
 
 #. translators: 1: The HTTP response code returned. 2: The error message
 #. returned.
-#: wp-admin/includes/class-wp-site-health.php:1804
+#: wp-admin/includes/class-wp-site-health.php:1844
 msgid "The REST API call gave the following unexpected result: (%1$d) %2$s."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1798
+#: wp-admin/includes/class-wp-site-health.php:1838
 msgid "The REST API encountered an unexpected result"
 msgstr "A REST API váratlan eredményt észlelt"
 
-#: wp-admin/includes/class-wp-site-health.php:1786
+#: wp-admin/includes/class-wp-site-health.php:1826
 msgid "The REST API request failed due to an error."
 msgstr "A REST API lekérdezés nem sikerült egy hiba miatt."
 
-#: wp-admin/includes/class-wp-site-health.php:1780
+#: wp-admin/includes/class-wp-site-health.php:1820
 msgid "The REST API encountered an error"
 msgstr "A REST API hibát generált"
 
-#: wp-admin/includes/class-wp-site-health.php:1745
+#: wp-admin/includes/class-wp-site-health.php:1785
 msgid "The REST API is one way WordPress, and other applications, communicate with the server. One example is the block editor screen, which relies on this to display, and save, your posts and pages."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1737
+#: wp-admin/includes/class-wp-site-health.php:1777
 msgid "The REST API is available"
 msgstr "A REST API elérhető"
 
-#: wp-admin/includes/class-wp-site-health.php:1709
+#: wp-admin/includes/class-wp-site-health.php:1749
 msgid "HTTP requests are partially blocked"
 msgstr "A HTTP lekérdezések részben tiltva vannak"
 
-#: wp-admin/includes/class-wp-site-health.php:1694
+#: wp-admin/includes/class-wp-site-health.php:1734
 msgid "HTTP requests are blocked"
 msgstr "A HTTP lekérdezések tiltva vannak"
 
-#: wp-admin/includes/class-wp-site-health.php:1674
+#: wp-admin/includes/class-wp-site-health.php:1714
 msgid "It is possible for site maintainers to block all, or some, communication to other sites and services. If set up incorrectly, this may prevent plugins and themes from working as intended."
 msgstr ""
 "A webhelykarbantartók képesek blokkolni a kommunikációt, vagy annak egy részét más\n"
 "webhelyekkel és szolgáltatásokkal. Helytelen beállítások esetén ez megakadályozhatja a a sablonok és bővítmények tervezett működését."
 
-#: wp-admin/includes/class-wp-site-health.php:1666
+#: wp-admin/includes/class-wp-site-health.php:1706
 msgid "HTTP requests seem to be working as expected"
 msgstr "A HTTP lekérdezések rendben működnek"
 
-#: wp-admin/includes/class-wp-site-health.php:1643
+#: wp-admin/includes/class-wp-site-health.php:1683
 msgid "Your site could not complete a loopback request"
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1632
+#: wp-admin/includes/class-wp-site-health.php:1672
 msgid "Loopback requests are used to run scheduled events, and are also used by the built-in editors for themes and plugins to verify code stability."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1624
+#: wp-admin/includes/class-wp-site-health.php:1664
 msgid "Your site can perform loopback requests"
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1585
+#: wp-admin/includes/class-wp-site-health.php:1625
 msgid "Background updates may not be working properly"
 msgstr "Előfordulhat, hogy a háttérfrissítések nem működnek megfelelően"
 
-#: wp-admin/includes/class-wp-site-health.php:1577
+#: wp-admin/includes/class-wp-site-health.php:1617
 msgid "Background updates are not working as expected"
 msgstr "A háttér frissítések nem úgy működnek, ahogy elvárható lenne."
 
-#: wp-admin/includes/class-wp-site-health.php:1574
+#: wp-admin/includes/class-wp-site-health.php:1614
 msgid "Passed"
 msgstr "Teljesítve"
 
-#: wp-admin/includes/class-wp-site-health.php:1556
+#: wp-admin/includes/class-wp-site-health.php:1596
 msgid "Background updates ensure that WordPress can auto-update if a security update is released for the version you are currently using."
 msgstr "A háttér frissítések garantálják, hogy a WordPress automatikusan frissüljön, amikor egy biztonsági frissítés megjelenik az általunk használt verzióhoz."
 
-#: wp-admin/includes/class-wp-site-health.php:1548
+#: wp-admin/includes/class-wp-site-health.php:1588
 msgid "Background updates are working"
 msgstr "A háttér frissítések működnek"
 
 #. translators: %s: The name of the failed cron event.
-#: wp-admin/includes/class-wp-site-health.php:1514
+#: wp-admin/includes/class-wp-site-health.php:1554
 msgid "The scheduled event, %s, failed to run. Your site still works, but this may indicate that scheduling posts or automated updates may not work as intended."
 msgstr "Az ütemezett esemény, %s, nem futott le. A weboldal működik, de ez azt jelezheti, hogy az ütemezett bejegyzések, vagy az automatikus frissítések lehetséges, hogy nem a szándéknak megfelelően zajlanak."
 
-#: wp-admin/includes/class-wp-site-health.php:1508
+#: wp-admin/includes/class-wp-site-health.php:1548
 msgid "A scheduled event has failed"
 msgstr "Egy időzített feladat végrehajtása nem sikerült."
 
 #. translators: %s: The error message returned while from the cron scheduler.
-#: wp-admin/includes/class-wp-site-health.php:1501
+#: wp-admin/includes/class-wp-site-health.php:1541
 msgid "While trying to test your site&#8217;s scheduled events, the following error was returned: %s"
 msgstr "A weboldal ütemezett események tesztelése az alábbi hibával tért vissza: %s"
 
-#: wp-admin/includes/class-wp-site-health.php:1495
+#: wp-admin/includes/class-wp-site-health.php:1535
 msgid "It was not possible to check your scheduled events"
 msgstr "Nem lehetséges ellenőrizni az ütemezett feladatokat."
 
-#: wp-admin/includes/class-wp-site-health.php:1484
+#: wp-admin/includes/class-wp-site-health.php:1524
 msgid "Scheduled events are what periodically looks for updates to plugins, themes and WordPress itself. It is also what makes sure scheduled posts are published on time. It may also be used by various plugins to make sure that planned actions are executed."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1476
+#: wp-admin/includes/class-wp-site-health.php:1516
 msgid "Scheduled events are running"
 msgstr "Jelenleg futnak ütemezett feladatok."
 
-#: wp-admin/includes/class-wp-site-health.php:1457
+#: wp-admin/includes/class-wp-site-health.php:1497
 msgid "Talk to your web host about OpenSSL support for PHP."
 msgstr "Fel kellene venni a kapcsolatot a tárhely szolgáltatóval, hogy engedélyezze a PHP OpenSSL támogatását."
 
-#: wp-admin/includes/class-wp-site-health.php:1453
+#: wp-admin/includes/class-wp-site-health.php:1493
 msgid "Your site is unable to communicate securely with other services"
 msgstr "A webhely nem képes biztonságos kapcsolatot létesíteni a külső szolgáltatásokkal"
 
-#: wp-admin/includes/class-wp-site-health.php:1449
+#: wp-admin/includes/class-wp-site-health.php:1489
 msgid "Your site can communicate securely with other services"
 msgstr "A webhely képes biztonságosan kapcsolatot létesíteni külső szolgáltatásokkal"
 
-#: wp-admin/includes/class-wp-site-health.php:1438
+#: wp-admin/includes/class-wp-site-health.php:1478
 msgid "Securely communicating between servers are needed for transactions such as fetching files, conducting sales on store sites, and much more."
 msgstr "A szerverek közötti biztonságos kommunikáció szükséges egyes tranzakciókhoz, mint például fájlok lekérése, áruházi értékesítés, és még sok más."
 
-#: wp-admin/includes/class-wp-site-health.php:1381
+#: wp-admin/includes/class-wp-site-health.php:1421
 msgid "Learn more about why you should use HTTPS"
 msgstr "További információ a HTTPS használatának előnyeiről"
 
 #. translators: Documentation explaining HTTPS and why it should be used.
-#: wp-admin/includes/class-wp-site-health.php:1380
+#: wp-admin/includes/class-wp-site-health.php:1420
 msgid "https://wordpress.org/support/article/why-should-i-use-https/"
 msgstr "https://wordpress.org/support/article/why-should-i-use-https/"
 
-#: wp-admin/includes/class-wp-site-health.php:1415
+#: wp-admin/includes/class-wp-site-health.php:1455
 msgid "Your site does not use HTTPS"
 msgstr "A webhely nem használ HTTPS-t"
 
-#: wp-admin/includes/class-wp-site-health.php:1367
+#: wp-admin/includes/class-wp-site-health.php:1407
 msgid "Your website is using an active HTTPS connection."
 msgstr "A webhely aktív HTTPS kapcsolatot használ."
 
-#: wp-admin/includes/class-wp-site-health.php:1409
+#: wp-admin/includes/class-wp-site-health.php:1449
 msgid "Update your site addresses"
 msgstr "Webhely címeinek frissítése"
 
 #. translators: %s: URL to General Settings screen.
-#: wp-admin/includes/class-wp-site-health.php:1401
+#: wp-admin/includes/class-wp-site-health.php:1441
 msgid "You are accessing this website using HTTPS, but your <a href=\"%s\">WordPress Address</a> is not set up to use HTTPS by default."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1395
+#: wp-admin/includes/class-wp-site-health.php:1435
 msgid "Only parts of your site are using HTTPS"
 msgstr "Csak a webhely egy része használ HTTPS-t"
 
-#: wp-admin/includes/class-wp-site-health.php:1336
+#: wp-admin/includes/class-wp-site-health.php:1376
 msgid "Your site is set to display errors to site visitors"
 msgstr "A webhely úgy van beállítva, hogy jelenítse meg a hibákat a látogatók számára."
 
 #. translators: %s: WP_DEBUG_LOG
-#: wp-admin/includes/class-wp-site-health.php:1329
+#: wp-admin/includes/class-wp-site-health.php:1369
 msgid "The value, %s, has been added to this website&#8217;s configuration file. This means any errors on the site will be written to a file which is potentially available to normal users."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1321
+#: wp-admin/includes/class-wp-site-health.php:1361
 msgid "Your site is set to log errors to a potentially public file."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1306
+#: wp-admin/includes/class-wp-site-health.php:1346
 msgid "Debug mode is often enabled to gather more details about an error or site failure, but may contain sensitive information which should not be available on a publicly available website."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1298
+#: wp-admin/includes/class-wp-site-health.php:1338
 msgid "Your site is not set to output debug information"
 msgstr "A webhelyünk úgy van beállítva, hogy ne adjon ki hibakeresési információkat."
 
 #. translators: 1: The IP address WordPress.org resolves to. 2: The error
 #. returned by the lookup.
-#: wp-admin/includes/class-wp-site-health.php:1263
+#: wp-admin/includes/class-wp-site-health.php:1303
 msgid "Your site is unable to reach WordPress.org at %1$s, and returned the error: %2$s"
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1254
+#: wp-admin/includes/class-wp-site-health.php:1294
 msgid "Could not reach WordPress.org"
 msgstr "Nem sikerült elérni a WordPress.org-ot"
 
-#: wp-admin/includes/class-wp-site-health.php:1237
+#: wp-admin/includes/class-wp-site-health.php:1277
 msgid "Communicating with the WordPress servers is used to check for new versions, and to both install and update WordPress core, themes or plugins."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1229
+#: wp-admin/includes/class-wp-site-health.php:1269
 msgid "Can communicate with WordPress.org"
 msgstr "Sikerült kapcsolatba lépni a WordPress.org-gal"
 
-#: wp-admin/includes/class-wp-site-health.php:1187
-#: wp-admin/includes/class-wp-site-health.php:1203
+#: wp-admin/includes/class-wp-site-health.php:1227
+#: wp-admin/includes/class-wp-site-health.php:1243
 msgid "utf8mb4 requires a newer client library"
 msgstr "Az utf8mb4 használatához frissebb kliens alkalmazás verzió szükséges"
 
-#: wp-admin/includes/class-wp-site-health.php:1165
+#: wp-admin/includes/class-wp-site-health.php:1205
 msgid "Your MariaDB version supports utf8mb4."
 msgstr "A MariaDB verziója támogatja az utf8mb4-et."
 
-#: wp-admin/includes/class-wp-site-health.php:1152
+#: wp-admin/includes/class-wp-site-health.php:1192
 msgid "utf8mb4 requires a MariaDB update"
 msgstr "Az utf8mb4 támogatáshoz MariaDB frissítés szükséges"
 
-#: wp-admin/includes/class-wp-site-health.php:1145
+#: wp-admin/includes/class-wp-site-health.php:1185
 msgid "Your MySQL version supports utf8mb4."
 msgstr "A MySQL verziója támogatja az utf8mb4-et."
 
-#: wp-admin/includes/class-wp-site-health.php:1132
+#: wp-admin/includes/class-wp-site-health.php:1172
 msgid "utf8mb4 requires a MySQL update"
 msgstr "Az utf8mb4 használatához MySQL frissítés szükséges"
 
-#: wp-admin/includes/class-wp-site-health.php:1114
+#: wp-admin/includes/class-wp-site-health.php:1154
 msgid "UTF8MB4 is supported"
 msgstr "Az UTF8MB4 támogatott"
 
 #. translators: 1: The database engine in use (MySQL or MariaDB). 2: Database
 #. server minimum version number.
-#: wp-admin/includes/class-wp-site-health.php:1076
+#: wp-admin/includes/class-wp-site-health.php:1116
 msgid "WordPress requires %1$s version %2$s or higher. Contact your web hosting company to correct this."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1069
+#: wp-admin/includes/class-wp-site-health.php:1109
 msgid "Severely outdated SQL server"
 msgstr "Az SQL kiszolgáló súlyosan elavult"
 
 #. translators: 1: The database engine in use (MySQL or MariaDB). 2: Database
 #. server recommended version number.
-#: wp-admin/includes/class-wp-site-health.php:1059
+#: wp-admin/includes/class-wp-site-health.php:1099
 msgid "For optimal performance and security reasons, we recommend running %1$s version %2$s or higher. Contact your web hosting company to correct this."
 msgstr ""
 
-#: wp-admin/includes/class-wp-site-health.php:1053
+#: wp-admin/includes/class-wp-site-health.php:1093
 msgid "Outdated SQL server"
 msgstr "Elavult SQL kiszolgáló"
 
-#: wp-admin/includes/class-wp-site-health.php:1027
+#: wp-admin/includes/class-wp-site-health.php:1067
 msgid "SQL server is up to date"
 msgstr "Az SQL kiszolgáló a lehető legfrissebb"
 
@@ -1445,8 +1472,8 @@ msgid "The required module, %s, is not installed, or has been disabled."
 msgstr ""
 
 #: wp-admin/includes/class-wp-site-health.php:964
-#: wp-admin/includes/class-wp-site-health.php:1260
-#: wp-admin/includes/class-wp-site-health.php:1581
+#: wp-admin/includes/class-wp-site-health.php:1300
+#: wp-admin/includes/class-wp-site-health.php:1621
 msgid "Error"
 msgstr "Hiba"
 
@@ -1923,7 +1950,7 @@ msgstr "WordPress.org elérhető"
 
 #: wp-admin/includes/class-wp-debug-data.php:400
 #: wp-admin/includes/class-wp-debug-data.php:406
-#: wp-admin/includes/class-wp-site-health.php:1896
+#: wp-admin/includes/class-wp-site-health.php:1940
 msgid "Communication with WordPress.org"
 msgstr "Kommunikáció a WordPress.org-gal"
 
@@ -2221,15 +2248,15 @@ msgstr "A WordPress észlelte, hogy a webhelyünk egy nem biztonságos PHP verzi
 msgid "PHP Update Required"
 msgstr "PHP frissítés szükséges"
 
-#: wp-admin/includes/plugin.php:2400
+#: wp-admin/includes/plugin.php:2401
 msgid "You can find more details and make changes on the Plugins screen."
 msgstr "További információ és beállítások a Bővítmények képernyőn."
 
-#: wp-admin/includes/plugin.php:2399
+#: wp-admin/includes/plugin.php:2400
 msgid "One or more plugins failed to load properly."
 msgstr "Egy vagy több bővítményt nem sikerült helyesen betölteni."
 
-#: wp-admin/includes/plugin.php:2372
+#: wp-admin/includes/plugin.php:2373
 msgid "Could not resume the plugin."
 msgstr "Bővítmény újraindítása nem sikerült."
 
@@ -2329,8 +2356,9 @@ msgid "Cannot Install"
 msgstr "Nem telepíthető"
 
 #. translators: %s: WordPress version.
+#. translators: %s: WordPress version
 #: wp-admin/includes/update.php:280 wp-admin/install.php:239
-#: wp-admin/update-core.php:78 wp-admin/upgrade.php:83
+#: wp-admin/update-core.php:78 wp-admin/upgrade.php:83 wp-admin/about.php:73
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
@@ -2554,12 +2582,12 @@ msgid "Privacy Policy page updated successfully."
 msgstr "Az adatvédelmi irányelvek oldal frissítése sikerült."
 
 #. translators: %s: admin_init
-#: wp-admin/includes/plugin.php:2262
+#: wp-admin/includes/plugin.php:2263
 msgid "The suggested privacy policy content should be added by using the %s (or later) action. Please see the inline documentation."
 msgstr "A javasolt adatvédelmi irányelvek tartalmat az %s (vagy későbbi) hurokban kell hozzáadni. További információért tekintsük meg a beépített dokumentációt."
 
 #. translators: %s: admin_init
-#: wp-admin/includes/plugin.php:2251
+#: wp-admin/includes/plugin.php:2252
 msgid "The suggested privacy policy content should be added only in wp-admin by using the %s (or later) action."
 msgstr "A javasolt adatvédelmi irányelvek tartalmát kizárólag a wp-adminban az %s (vagy későbbi) hurokban kell hozzáadni. "
 
@@ -3449,7 +3477,7 @@ msgstr "Az adatkezelést és az átláthatóságot mi nagyon komolyan vesszük. 
 
 #: wp-admin/freedoms.php:64 wp-admin/freedoms.php:116
 msgid "https://wordpress.org/about/license/"
-msgstr ""
+msgstr "https://wordpress.org/about/license/"
 
 #: wp-admin/privacy.php:54
 msgid "From time to time, your WordPress site may send data to WordPress.org &#8212; including, but not limited to &#8212; the version of WordPress you are using, and a list of installed plugins and themes."
@@ -3536,7 +3564,7 @@ msgstr "Telepítő futtatása"
 
 #: wp-admin/privacy.php:71
 msgid "https://wordpress.org/about/privacy/"
-msgstr ""
+msgstr "https://wordpress.org/about/privacy/"
 
 #: wp-admin/press-this.php:80
 msgid "Press This is not available. Please contact your site administrator."
@@ -3752,7 +3780,7 @@ msgstr "A korábban időzített módosítások közzétételre kerültek."
 
 #: wp-admin/options-discussion.php:54
 msgid "Allow link notifications from other blogs (pingbacks and trackbacks) on new posts"
-msgstr ""
+msgstr "Engedélyezzük a hivatkozás értesítéseket más weboldalak új bejegyzéseiről (visszajelzések és visszakövetések)."
 
 #: wp-admin/includes/class-wp-media-list-table.php:225
 msgid "No media files found."
@@ -4834,7 +4862,7 @@ msgid "(Currently set to: %s)"
 msgstr "(Jelenlegi beállítás: %s)"
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:220
+#: wp-admin/about.php:253
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>%s verzió</strong> egy biztonsági hibát javított."
 
@@ -4846,15 +4874,15 @@ msgstr "https://en.gravatar.com/"
 msgid "Profile Picture"
 msgstr "Adatlap-kép"
 
-#: wp-admin/about.php:217
+#: wp-admin/about.php:53 wp-admin/about.php:250
 msgid "Maintenance and Security Releases"
 msgstr "Hibajavító- és biztonsági frissítések"
 
-#: wp-admin/about.php:214
+#: wp-admin/about.php:247
 msgid "Security Releases"
 msgstr "Biztonsági frissítések"
 
-#: wp-admin/about.php:211
+#: wp-admin/about.php:244
 msgid "Maintenance Releases"
 msgstr "Hibajavító frissítések"
 
@@ -4964,12 +4992,12 @@ msgid "Check secret keys"
 msgstr "Titkosító kulcsok ellenőrzése"
 
 #. translators: %s: Nav menu title.
-#: wp-admin/includes/nav-menu.php:1226
+#: wp-admin/includes/nav-menu.php:1228
 msgid "%s has been updated."
 msgstr "%s frissítve."
 
 #. translators: %s: Walker class name.
-#: wp-admin/includes/nav-menu.php:1048
+#: wp-admin/includes/nav-menu.php:1050
 msgid "The Walker class named %s does not exist."
 msgstr "%s Walker osztály nem elérhető."
 
@@ -5120,7 +5148,7 @@ msgid "The %1$s plugin header is deprecated. Use %2$s instead."
 msgstr "A(z) %1$s bővítmény fejrész nem támogatott. Helyette %2$s használatos."
 
 #: wp-admin/includes/class-wp-site-health.php:972
-#: wp-admin/includes/class-wp-site-health.php:1589
+#: wp-admin/includes/class-wp-site-health.php:1629
 msgid "Warning"
 msgstr "Figyelem"
 
@@ -5256,7 +5284,7 @@ msgstr "Csak hálózati"
 msgid "Network Active"
 msgstr "Bekapcsolva a hálózatban"
 
-#: wp-admin/includes/class-wp-list-table.php:731
+#: wp-admin/includes/class-wp-list-table.php:734
 msgid "No pending comments"
 msgstr "Nincs függőben lévő hozzászólás"
 
@@ -5459,32 +5487,32 @@ msgstr "Kijelentkezés minden helyről"
 msgid "You will need this password to log&nbsp;in. Please store it in a secure location."
 msgstr "Erre a jelszóra a felhasználói fiókba történő bejelentkezésnél van szükség. Jegyezzük fel, és tároljuk biztonságos helyen."
 
-#: wp-admin/includes/class-wp-list-table.php:708
+#: wp-admin/includes/class-wp-list-table.php:711
 msgid "No approved comments"
 msgstr "Nem engedélyezett hozzászólás"
 
-#: wp-admin/includes/class-wp-list-table.php:686
-#: wp-admin/includes/class-wp-list-table.php:708
-#: wp-admin/includes/class-wp-list-table.php:731
+#: wp-admin/includes/class-wp-list-table.php:689
+#: wp-admin/includes/class-wp-list-table.php:711
+#: wp-admin/includes/class-wp-list-table.php:734
 msgid "No comments"
 msgstr "Nincs hozzászólás"
 
 #. translators: %s: Number of comments.
-#: wp-admin/includes/class-wp-list-table.php:678
+#: wp-admin/includes/class-wp-list-table.php:681
 msgid "%s pending comment"
 msgid_plural "%s pending comments"
 msgstr[0] "%s függőben lévő hozzászólás"
 msgstr[1] "%s függőben lévő hozzászólás"
 
 #. translators: %s: Number of comments.
-#: wp-admin/includes/class-wp-list-table.php:672
+#: wp-admin/includes/class-wp-list-table.php:675
 msgid "%s approved comment"
 msgid_plural "%s approved comments"
 msgstr[0] "%s engedélyezett hozzászólás"
 msgstr[1] "%s engedélyezett hozzászólás"
 
 #. translators: %s: Number of comments.
-#: wp-admin/includes/class-wp-list-table.php:666
+#: wp-admin/includes/class-wp-list-table.php:669
 msgid "%s comment"
 msgid_plural "%s comments"
 msgstr[0] "%s hozzászólás"
@@ -5507,7 +5535,7 @@ msgstr "Ameddig a %1$s fájlt szerkesztjük, vessünk egy pillantást arra, hogy
 #: wp-admin/includes/update.php:796
 #: wp-admin/includes/class-wp-comments-list-table.php:762
 #: wp-admin/includes/class-wp-list-table.php:528
-#: wp-admin/includes/class-wp-list-table.php:1376
+#: wp-admin/includes/class-wp-list-table.php:1379
 msgid "Show more details"
 msgstr "További részletek"
 
@@ -5531,11 +5559,11 @@ msgstr[1] "%s bejegyzés ettől a szerzőtől"
 msgid "Live Preview &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; élő előnézet"
 
-#: wp-admin/includes/class-wp-list-table.php:903
+#: wp-admin/includes/class-wp-list-table.php:906
 msgid "Last page"
 msgstr "Utolsó oldal"
 
-#: wp-admin/includes/class-wp-list-table.php:851
+#: wp-admin/includes/class-wp-list-table.php:854
 msgid "First page"
 msgstr "Első oldal"
 
@@ -5890,7 +5918,7 @@ msgid "Submitted on"
 msgstr "Elküldve:"
 
 #. translators: Localized Support reference.
-#: wp-admin/includes/class-wp-site-health.php:1273
+#: wp-admin/includes/class-wp-site-health.php:1313
 msgid "https://wordpress.org/support"
 msgstr "https://tamogatas.wphu.org/"
 
@@ -6350,11 +6378,11 @@ msgstr "Láthatóság szerkesztése"
 msgid "Edit status"
 msgstr "Állapot szerkesztése"
 
-#: wp-admin/includes/dashboard.php:1812
+#: wp-admin/includes/dashboard.php:1804
 msgid "Manage menus"
 msgstr "Menük kezelése"
 
-#: wp-admin/includes/dashboard.php:1810
+#: wp-admin/includes/dashboard.php:1801
 msgid "Manage widgets"
 msgstr "Widgetek kezelése"
 
@@ -6509,8 +6537,8 @@ msgstr "Ezen a képernyőn mutatjuk az egyes felhasználók összes honlapját a
 
 #. translators: 1: The HTTP response code. 2: The error message returned.
 #. translators: 1: Error code, 2: Error message.
-#: wp-admin/includes/class-wp-site-health.php:1789
-#: wp-admin/includes/class-wp-site-health.php:2102
+#: wp-admin/includes/class-wp-site-health.php:1829
+#: wp-admin/includes/class-wp-site-health.php:2146
 #: wp-admin/includes/class-wp-automatic-updater.php:975
 msgid "Error: [%1$s] %2$s"
 msgstr "Hiba: [%1$s] %2$s"
@@ -6800,7 +6828,7 @@ msgstr "Fordítások frissítése %1$s (%2$s)&#8230;"
 msgid "Update Translations"
 msgstr "Fordítás frissítése"
 
-#: wp-admin/includes/class-wp-site-health.php:1900
+#: wp-admin/includes/class-wp-site-health.php:1944
 msgid "Background updates"
 msgstr "Háttérfrissítések"
 
@@ -7112,7 +7140,7 @@ msgstr "Ismételjük meg a jelszót"
 msgid "Repeat New Password"
 msgstr "Ismételjük meg az új jelszót"
 
-#: wp-admin/includes/nav-menu.php:1024
+#: wp-admin/includes/nav-menu.php:1026
 msgid "Add menu items from the column on the left."
 msgstr "Menütétel hozzáadása a bal oldali oszlopból"
 
@@ -7445,7 +7473,7 @@ msgstr "%s jelenleg szerkeszti"
 msgid "You can upload and insert media (images, audio, documents, etc.) by clicking the Add Media button. You can select from the images and files already uploaded to the Media Library, or upload new media to add to your page or post. To create an image gallery, select the images to add and click the &#8220;Create a new gallery&#8221; button."
 msgstr "A Média hozzáadása gombra kattintással feltölthetőek és beilleszthetők médiák (képek, hang, dokumentum, stb.).  Választhatunk a Médiatárba már feltöltött állományok közül, vagy feltölthetünk új médiát, és hozzáadhatjuk egy oldalhoz, vagy bejegyzéshez. Képgaléria létrehozásához, válasszunk képeket és kattintsunk a &#8220;Galéria létrehozása&#8221; gombra."
 
-#: wp-admin/about.php:106
+#: wp-admin/about.php:139
 msgid "Introducing Twenty Twenty"
 msgstr "Bemutatkozik a 2020"
 
@@ -7457,11 +7485,6 @@ msgstr "A kép forgatást nem támogatja a tárhely szolgáltató."
 #: wp-admin/includes/bookmark.php:323
 msgid "If you are looking to use the link manager, please install the <a href=\"%s\">Link Manager</a> plugin."
 msgstr "Ha a hivatkozásokat szeretnénk kezelni telepítsük a <a href=\"%s\">Hivatkozás kezelő</a> bővítményt."
-
-#. translators: 1: URL to Widgets screen, 2: URL to Menus screen.
-#: wp-admin/includes/dashboard.php:1805
-msgid "Manage <a href=\"%1$s\">widgets</a> or <a href=\"%2$s\">menus</a>"
-msgstr "Kezeljük a <a href=\"%1$s\">widgeteket</a> vagy a <a href=\"%2$s\">menüket</a>"
 
 #: wp-admin/widgets.php:77
 msgid "When changing themes, there is often some variation in the number and setup of widget areas/sidebars and sometimes these conflicts make the transition a bit less smooth. If you changed themes and seem to be missing widgets, scroll down on this screen to the Inactive Widgets area, where all of your widgets and their settings will have been saved."
@@ -7540,11 +7563,11 @@ msgstr "Választhatunk háttér színt, a Szín kiválasztása gombbal, vagy meg
 msgid "You can choose whether or not your site will be crawled by robots, ping services, and spiders. If you want those services to ignore your site, click the checkbox next to &#8220;Discourage search engines from indexing this site&#8221; and click the Save Changes button at the bottom of the screen. Note that your privacy is not complete; your site is still visible on the web."
 msgstr "Eldönthetjük, hogy a honlapunkon engedélyezzük-e a keresőrobotok, a visszajelzés-szolgáltatások és a honlap feltérképezések működését. Ha azt szeretnénk, hogy ezek a szolgáltatások figyelmen kívül hagyják az oldalunkat, válasszuk ki a &#8220;Megtiltjuk a keresőmotoroknak, hogy bejárják az oldalunkat.&#8221; melletti jelölő négyzetet, majd mentsük a módosításokat. Fontos, hogy ettől még az oldalunk nincs teljesen védve, mivel a honlap - a cím ismeretében - bárki számára látható a weben."
 
-#: wp-admin/includes/dashboard.php:1820
+#: wp-admin/includes/dashboard.php:1809
 msgid "Learn more about getting started"
 msgstr "Tudjunk meg többet a kezdeti lépésekről."
 
-#: wp-admin/includes/dashboard.php:1818
+#: wp-admin/includes/dashboard.php:1807
 msgid "Turn comments on or off"
 msgstr "Hozzászólások ki és bekapcsolása"
 
@@ -7931,10 +7954,10 @@ msgstr "<strong>HIBA</strong>: Egy becenevet meg kell adni."
 
 #: wp-admin/credits.php:63
 msgid "https://wordpress.org/about/"
-msgstr ""
+msgstr "https://wordpress.org/about/"
 
-#: wp-admin/includes/class-wp-list-table.php:1125
-#: wp-admin/includes/nav-menu.php:655 wp-admin/includes/nav-menu.php:884
+#: wp-admin/includes/class-wp-list-table.php:1128
+#: wp-admin/includes/nav-menu.php:657 wp-admin/includes/nav-menu.php:886
 #: wp-admin/update-core.php:321 wp-admin/update-core.php:429
 #: wp-admin/update-core.php:471 wp-admin/update-core.php:511
 msgid "Select All"
@@ -8409,28 +8432,31 @@ msgid "Show Toolbar when viewing site"
 msgstr "Eszköztár mutatása az oldal megtekintésekor"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:225
+#: wp-admin/about.php:258
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>%1$s verzió</strong> %2$s hibát javít."
 msgstr[1] "<strong>%1$s verzió</strong> %2$s hibát javít."
 
+#. translators: 1: WordPress version number, 2: plural number of bugs. More
+#. than one security issue.
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:237
+#: wp-admin/about.php:58 wp-admin/about.php:270
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s verzió</strong> biztonsági réseket, és %2$s hibát javított."
 msgstr[1] "<strong>%1$s verzió</strong> biztonsági réseket, és %2$s hibát javított."
 
+#. translators: %s: HelpHub URL
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:243
+#: wp-admin/about.php:70 wp-admin/about.php:276
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "További információk: <a href=\"%s\">Verzió információk</a>."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:231
+#: wp-admin/about.php:264
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s verzió</strong> egy biztonsági rést, és %2$s hibát javított."
@@ -8441,15 +8467,15 @@ msgid "Welcome to your WordPress Dashboard! This is the screen you will see when
 msgstr "Üdvözlet a WordPress vezérlőpultjánál! Ez a képernyő akkor látható, ha a honlapunkra bejelentkeztünk, és a WordPress honlapunk szolgáltatásait  kívánjuk beállítani, kezelni. A súgó minden helyen előhívható a felső sávon található \"Súgó\" fülre történő kattintással."
 
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:222
+#: wp-admin/about.php:255
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "A <strong>%s verzió</strong> néhány biztonsági hibát javít."
 
-#: wp-admin/about.php:210
+#: wp-admin/about.php:243
 msgid "Maintenance Release"
 msgstr "Hibajavító frissítés"
 
-#: wp-admin/about.php:213
+#: wp-admin/about.php:246
 msgid "Security Release"
 msgstr "Biztonsági frissítés"
 
@@ -8458,7 +8484,7 @@ msgstr "Biztonsági frissítés"
 msgid "What&#8217;s New"
 msgstr "Újdonságok"
 
-#: wp-admin/about.php:216
+#: wp-admin/about.php:249
 msgid "Maintenance and Security Release"
 msgstr "Karbantartó és biztonsági frissítés"
 
@@ -8471,7 +8497,7 @@ msgstr "Ezen a képernyőn lehetőségünk van az oldal alapértelmezett hivatko
 msgid "Welcome to WordPress %1$s. <a href=\"%2$s\">Learn more</a>."
 msgstr "Üdvözlet a WordPress %1$s verziójától! <a href=\"%2$s\" target=\"_blank\">További tudnivalók</a>."
 
-#: wp-admin/about.php:197
+#: wp-admin/about.php:230
 msgid "Return to Updates"
 msgstr "Vissza a frissítésekhez"
 
@@ -8742,11 +8768,11 @@ msgstr "Oldalak kezelése"
 msgid "Because this is a multisite installation, you may add accounts that already exist on the Network by specifying a username or email, and defining a role. For more options, such as specifying a password, you have to be a Network Administrator and use the hover link under an existing user&#8217;s name to Edit the user profile under Network Admin > All Users."
 msgstr "Mivel ez egy Multisite telepítés, lehetséges a hálózaton már létező felhasználókat hozzáadni, a felhasználónevük, vagy email címük megadásával, és egy szerepkör meghatározásával. További lehetőségekhez, mint például jelszó megadáshoz Hálózat Adminisztrátornak kell lenni, és Hálózat-kezelő > Összes felhasználó oldalon a felhasználó neve fölé mozgatva az egeret a Szerkesztés lehetőséget választani."
 
-#: wp-admin/about.php:197
+#: wp-admin/about.php:230
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Vezérlőpulthoz &rarr; Frissítések"
 
-#: wp-admin/about.php:200
+#: wp-admin/about.php:233
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Vezérlőpulthoz &rarr; Kezdőlap"
 
@@ -8754,7 +8780,7 @@ msgstr "Vezérlőpulthoz &rarr; Kezdőlap"
 msgid "WordPress is created by a worldwide team of passionate individuals."
 msgstr "A WordPress az elkötelezett, lelkes egyének világméretű csapatának alkotása."
 
-#: wp-admin/about.php:164
+#: wp-admin/about.php:197
 msgid "For Developers"
 msgstr "Fejlesztőknek"
 
@@ -9217,7 +9243,7 @@ msgstr "Úgy tűnik, hogy a(z) %s egy régebbi verziója van használatban! Ahho
 msgid "It looks like you're using an insecure version of %s. Using an outdated browser makes your computer unsafe. For the best WordPress experience, please update your browser."
 msgstr "Úgy tűnik, hogy a(z) %s egy nem biztonságos verziója van használatban. Egy elavult böngésző használata nagyban csökkenti a számítógép biztonságát. Ahhoz, hogy a WordPress által nyújtott felhasználói élmény még teljesebb legyen, frissítsünk böngészőt."
 
-#: wp-admin/includes/nav-menu.php:1070
+#: wp-admin/includes/nav-menu.php:1072
 msgid "There are some invalid menu items. Please check or delete them."
 msgstr "Néhány érvénytelen menü-tételt találtunk. Ellenőrizni kellene őket, vagy törölni."
 
@@ -9391,7 +9417,7 @@ msgid "&larr; Back to Users"
 msgstr "&larr; Vissza a Felhasználókhoz"
 
 #. translators: 1: Current page, 2: Total pages.
-#: wp-admin/includes/class-wp-list-table.php:881
+#: wp-admin/includes/class-wp-list-table.php:884
 msgctxt "paging"
 msgid "%1$s of %2$s"
 msgstr "%1$s. / %2$s"
@@ -9671,8 +9697,8 @@ msgstr "A kért művelet végrehajtásához a WordPress-nek csatlakoznia kell a 
 msgid "No themes match your request."
 msgstr "Nincs a keresésnek megfelelő sablon."
 
-#: wp-admin/includes/class-wp-list-table.php:869
-#: wp-admin/includes/class-wp-list-table.php:873
+#: wp-admin/includes/class-wp-list-table.php:872
+#: wp-admin/includes/class-wp-list-table.php:876
 msgid "Current Page"
 msgstr "Aktuális oldal"
 
@@ -9727,7 +9753,7 @@ msgstr "(Regisztráció kikapcsolva. Csak a regisztrált felhasználók szólhat
 msgid "There is a new version of %1$s available. <a href=\"%2$s\" %3$s>View version %4$s details</a>."
 msgstr "Az új %1$s verzió már elérhető. <a href=\"%2$s\" %3$s> %4$s verzió részleteinek megtekintése</a>."
 
-#: wp-admin/includes/nav-menu.php:1066
+#: wp-admin/includes/nav-menu.php:1068
 msgid "Click Save Menu to make pending menu items public."
 msgstr "Kattintás a Menü mentésére, hogy a folyamatban lévő menü elemeket megjelenítsük."
 
@@ -10168,7 +10194,7 @@ msgstr "A sablon nem támogatja a menü navigációt vagy a widgeteket."
 msgid "Categories and Tags Converter"
 msgstr "Kategória és címke konvertáló"
 
-#: wp-admin/includes/nav-menu.php:503
+#: wp-admin/includes/nav-menu.php:505
 msgid "Most Recent"
 msgstr "Legfrissebb"
 
@@ -10207,7 +10233,7 @@ msgstr "Háttér-kép eltávolítása"
 msgid "Comments on &#8220;%s&#8221;"
 msgstr "&#8220;%s&#8221; című bejegyzés hozzászólásai"
 
-#: wp-admin/includes/nav-menu.php:1092
+#: wp-admin/includes/nav-menu.php:1094
 msgid "Show advanced menu properties"
 msgstr "Mutassa a bővített menü részleteit"
 
@@ -10283,7 +10309,7 @@ msgstr "Elnézést, nincs megfelelő jogosultság létrehozni vagy vázlattá m�
 msgid "If you have posts or comments in another system, WordPress can import those into this site. To get started, choose a system to import from below:"
 msgstr "A WordPress képes importálni másik blogban található bejegyzéseket, hozzászólásokat. Először ki kell választani a másik, használatos (importálandó) rendszert:"
 
-#: wp-admin/includes/nav-menu.php:434 wp-admin/includes/nav-menu.php:712
+#: wp-admin/includes/nav-menu.php:436 wp-admin/includes/nav-menu.php:714
 msgid "No items."
 msgstr "Nincsenek tételek"
 
@@ -10495,7 +10521,7 @@ msgstr "Menü mentése"
 msgid "CSS Classes (optional)"
 msgstr "CSS osztályok (opcionális)"
 
-#: wp-admin/includes/nav-menu.php:1094
+#: wp-admin/includes/nav-menu.php:1096
 msgid "Link Target"
 msgstr "Hivatkozás cél"
 
@@ -10603,7 +10629,7 @@ msgstr "Ebben az időzónában nincs nyári időszámítás."
 msgid "This timezone is currently in daylight saving time."
 msgstr "Ebben az időzónában jelenleg nyári időszámítás van érvényben."
 
-#: wp-admin/includes/nav-menu.php:508 wp-admin/includes/nav-menu.php:794
+#: wp-admin/includes/nav-menu.php:510 wp-admin/includes/nav-menu.php:796
 msgid "View All"
 msgstr "Összes"
 
@@ -10615,7 +10641,7 @@ msgstr "Menü tétel"
 msgid "Please enter a valid menu name."
 msgstr "Érvényes menünevet kell megadni."
 
-#: wp-admin/about.php:200
+#: wp-admin/about.php:233
 msgid "Go to Dashboard"
 msgstr "Vissza a Vezérlőpulthoz"
 
@@ -12973,7 +12999,7 @@ msgstr "Hozzászólás moderálása"
 msgid "Approve this comment"
 msgstr "Hozzászólás jóváhagyása"
 
-#: wp-admin/includes/nav-menu.php:456 wp-admin/includes/nav-menu.php:742
+#: wp-admin/includes/nav-menu.php:458 wp-admin/includes/nav-menu.php:744
 msgid "Page"
 msgstr "oldal"
 
@@ -13292,11 +13318,6 @@ msgstr "Próbáljuk meg újra"
 #: wp-admin/includes/import.php:183
 msgid "Blogger"
 msgstr "Blogger"
-
-#: wp-admin/includes/media.php:1697 wp-admin/upgrade.php:77
-#: wp-admin/upgrade.php:153
-msgid "Continue"
-msgstr "Folytatás"
 
 #: wp-admin/import.php:96
 msgid "No importers are available."
@@ -13741,12 +13762,12 @@ msgstr "Nem lett kategórianév megadva."
 msgid "Comment %d does not exist"
 msgstr "%d hozzászólás nem létezik"
 
-#: wp-admin/includes/media.php:2764 wp-admin/includes/nav-menu.php:455
-#: wp-admin/includes/nav-menu.php:741
+#: wp-admin/includes/media.php:2764 wp-admin/includes/nav-menu.php:457
+#: wp-admin/includes/nav-menu.php:743
 msgid "&raquo;"
 msgstr "&raquo;"
 
-#: wp-admin/includes/media.php:2763 wp-admin/includes/nav-menu.php:454
-#: wp-admin/includes/nav-menu.php:740
+#: wp-admin/includes/media.php:2763 wp-admin/includes/nav-menu.php:456
+#: wp-admin/includes/nav-menu.php:742
 msgid "&laquo;"
 msgstr "&laquo;"

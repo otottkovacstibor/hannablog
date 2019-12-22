@@ -909,7 +909,69 @@
 				</script>
 				<?php
 			}
+		}
 
+		public function get_translation_json(){
+			if(file_exists(WPFC_MAIN_PATH. "languages/wp-fastest-cache-".get_locale().".po")){
+				$files = glob(WPFC_MAIN_PATH. "languages/wp-fastest-cache-".get_locale().".po");
+				if(isset($files) && isset($files[0])){
+					$current_translation = $this->po_to_js($files[0]);
+				}
+			}
+
+			if(isset($this->options->wpFastestCacheLanguage) && $this->options->wpFastestCacheLanguage == "eng"){
+				foreach ($current_translation as $c_key => $c_value){
+					if((strlen($c_value) > 2) && (strlen($c_key) > 2)){
+						echo $c_value.":".$c_key.",\n";
+					}
+				}
+			}else{
+				$translation_file_name = $this->options->wpFastestCacheLanguage;
+
+				if($translation_file_name == "es"){
+					$translation_file_name = "es_ES";
+				}
+
+				if(file_exists(WPFC_MAIN_PATH. "languages/wp-fastest-cache-".$translation_file_name.".po")){
+					$files = glob(WPFC_MAIN_PATH. "languages/wp-fastest-cache-".$translation_file_name.".po");
+
+					if(isset($files) && isset($files[0])){
+						$to = $this->po_to_js($files[0]);
+
+						foreach ($to as $to_key => $to_value){
+							if((strlen($current_translation[$to_key]) > 2) && (strlen($to_value) > 2)){
+								echo $current_translation[$to_key].":".$to_value.",\n";
+							}
+						}
+
+					}
+				}
+			}
+		}
+
+		public function po_to_js($file_path){
+			$translation = array();
+			
+			$tmp_data = $this->read_file($file_path);
+
+			preg_match_all("/^msgid(\s+\"[^\"]*\")+\s+msgstr(\s+\"[^\"]*\")+/m", $tmp_data, $out,  PREG_SET_ORDER);
+
+			foreach ($out as $key => $value) {
+				$value[0] = preg_replace("/\"\s+\"/", "", $value[0]);
+
+				$tmp = explode("\n", $value[0]);
+
+				if($key > 0){
+					$tmp[0] = preg_replace("/msgid\s(.+)/", "$1", $tmp[0]);
+					$tmp[1] = preg_replace("/msgstr\s(.+)/", "$1", $tmp[1]);
+					$tmp[0] = trim($tmp[0]);
+					$tmp[1] = trim($tmp[1]);
+					
+					$translation[$tmp[0]] = $tmp[1];
+				}
+			}
+
+			return $translation;
 		}
 
 		public function optionsPage(){
@@ -1350,7 +1412,7 @@
 							<div class="questionCon">
 								<div class="question">Language</div>
 								<div class="inputCon">
-									<select id="wpFastestCacheLanguage" name="wpFastestCacheLanguage">
+									<select id="wpFastestCacheLanguage" name="wpFastestCacheLanguage" style="width: 100px !important;">
 										<?php
 											$lang_array = array(
 																"cn" => "中文",

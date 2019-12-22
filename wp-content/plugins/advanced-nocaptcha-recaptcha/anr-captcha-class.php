@@ -16,8 +16,8 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 
 		function actions_filters() {
 			if ( anr_is_form_enabled( 'fep_contact_form' ) ) {
-					add_action( 'fepcf_message_form_after_content', array( $this, 'form_field' ), 99 );
-					add_action( 'fepcf_action_message_before_send', array( $this, 'fepcf_verify' ) );
+				add_action( 'fepcf_message_form_after_content', array( $this, 'form_field' ), 99 );
+				add_action( 'fepcf_action_message_before_send', array( $this, 'fepcf_verify' ) );
 			}
 
 			if ( anr_is_form_enabled( 'login' ) && ! defined( 'XMLRPC_REQUEST' ) ) {
@@ -50,10 +50,10 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 			if ( anr_is_form_enabled( 'ms_user_signup' ) && is_multisite() ) {
 				add_action( 'signup_extra_fields', array( $this, 'ms_form_field' ), 99 );
 				add_filter( 'wpmu_validate_user_signup', array( $this, 'ms_form_field_verify' ) );
-				
+
 				add_action( 'signup_blogform', array( $this, 'ms_form_field' ), 99 );
 				add_filter( 'wpmu_validate_blog_signup', array( $this, 'ms_blog_verify' ) );
-				
+
 			}
 
 			if ( anr_is_form_enabled( 'lost_password' ) ) {
@@ -73,7 +73,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 				if ( ! is_user_logged_in() ) {
 					add_action( 'comment_form_after_fields', array( $this, 'form_field' ), 99 );
 				} else {
-					add_filter( 'comment_form_field_comment', array( $this, 'comment_form_field' ), 99 );
+					add_filter( 'comment_form_field_comment', array( $this, 'form_field_return' ), 99 );
 				}
 				if ( version_compare( get_bloginfo( 'version' ), '4.9.0', '>=' ) ) {
 					add_filter( 'pre_comment_approved', array( $this, 'comment_verify_490' ), 99 );
@@ -157,7 +157,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 
 		function footer_script() {
 			static $included = false;
-			
+
 			$number          = $this->total_captcha();
 			$version = anr_get_option( 'captcha_version', 'v2_checkbox' );
 
@@ -191,7 +191,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 						if ( null === captcha_div )
 							continue;
 						captcha_div.innerHTML = '';
-						( function( form ) {	
+						( function( form ) {
 							var anr_captcha = grecaptcha.render( captcha_div,{
 								'sitekey' : '<?php echo esc_js( trim( anr_get_option( 'site_key' ) ) ); ?>',
 								'size'  : '<?php echo esc_js( anr_get_option( 'size', 'normal' ) ); ?>',
@@ -218,10 +218,10 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 			if ( $language ) {
 				$lang = '&hl=' . $language;
 			}
-			$google_url = 'https://www.google.com/recaptcha/api.js?onload=anr_onloadCallback&render=explicit' . $lang;
+			$google_url = apply_filters( 'anr_v2_checkbox_script_api_src', 'https://www.google.com/recaptcha/api.js?onload=anr_onloadCallback&render=explicit' . $lang, $lang );
 			?>
 			<script src="<?php echo esc_url( $google_url ); ?>"
-			async defer>
+				async defer>
 			</script>
 			<?php
 		}
@@ -237,7 +237,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 						if ( null === captcha_div )
 							continue;
 						captcha_div.innerHTML = '';
-						( function( form ) {		
+						( function( form ) {
 							var anr_captcha = grecaptcha.render( captcha_div,{
 								'sitekey' : '<?php echo esc_js( trim( anr_get_option( 'site_key' ) ) ); ?>',
 								'size'  : 'invisible',
@@ -256,7 +256,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 								}
 							});
 							var cf7_submit = form.querySelector( '.wpcf7-submit' );
-							
+
 							if( null !== cf7_submit && ( typeof jQuery !== 'undefined' ) ){
 								jQuery( cf7_submit ).off('click').on('click', function( e ){
 									e.preventDefault();
@@ -280,10 +280,10 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 			if ( $language ) {
 				$lang = '&hl=' . $language;
 			}
-			$google_url = 'https://www.google.com/recaptcha/api.js?onload=anr_onloadCallback&render=explicit' . $lang;
+			$google_url = apply_filters( 'anr_v2_invisible_script_api_src', 'https://www.google.com/recaptcha/api.js?onload=anr_onloadCallback&render=explicit' . $lang, $lang );
 			?>
 			<script src="<?php echo esc_url( $google_url ); ?>"
-			async defer>
+				async defer>
 			</script>
 			<?php
 		}
@@ -291,7 +291,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 		function v3_script() {
 			// v3 support v2 script. So use it
 			// $this->v2_invisible_script();
-			
+
 			$language = trim( anr_get_option( 'language' ) );
 			$site_key = trim( anr_get_option( 'site_key' ) );
 
@@ -300,50 +300,50 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 				$lang = '&hl=' . $language;
 			}
 
-			$google_url = 'https://www.google.com/recaptcha/api.js?render=' . $site_key . $lang;
+			$google_url = apply_filters( 'anr_v3_script_api_src', 'https://www.google.com/recaptcha/api.js?render=' . $site_key . $lang, $site_key, $lang );
 			?>
 			<script src="<?php echo esc_url( $google_url ); ?>"></script>
 			<script type="text/javascript">
-			( function( grecaptcha ) {
+				( function( grecaptcha ) {
 
-				var anr_onloadCallback = function() {
-					grecaptcha.execute(
-						'<?php echo esc_js( $site_key ); ?>',
-						{ action: 'advanced_nocaptcha_recaptcha' }
-					).then( function( token ) {
-						for ( var i = 0; i < document.forms.length; i++ ) {
-							var form = document.forms[i];
-							var captcha = form.querySelector( 'input[name="g-recaptcha-response"]' );
-							if ( null === captcha )
-								continue;
+					var anr_onloadCallback = function() {
+						grecaptcha.execute(
+							'<?php echo esc_js( $site_key ); ?>',
+							{ action: 'advanced_nocaptcha_recaptcha' }
+						).then( function( token ) {
+							for ( var i = 0; i < document.forms.length; i++ ) {
+								var form = document.forms[i];
+								var captcha = form.querySelector( 'input[name="g-recaptcha-response"]' );
+								if ( null === captcha )
+									continue;
 
-							captcha.value = token;
-						}
-					});
-				};
+								captcha.value = token;
+							}
+						});
+					};
 
-				grecaptcha.ready( anr_onloadCallback );
+					grecaptcha.ready( anr_onloadCallback );
 
-				document.addEventListener( 'wpcf7submit', anr_onloadCallback, false );
-				if ( typeof wc_checkout_params !== 'undefined' ) {
-					jQuery( document.body ).on( 'checkout_error', anr_onloadCallback );
-				}
+					document.addEventListener( 'wpcf7submit', anr_onloadCallback, false );
+					if ( typeof wc_checkout_params !== 'undefined' ) {
+						jQuery( document.body ).on( 'checkout_error', anr_onloadCallback );
+					}
 
-			} )( grecaptcha );
+				} )( grecaptcha );
 			</script>
 			<?php
 		}
 
 
 		function form_field() {
-			$loggedin_hide = anr_get_option( 'loggedin_hide' );
-
-			if ( is_user_logged_in() && $loggedin_hide ) {
-				return;
+			echo $this->form_field_return();
 			}
 
-			anr_captcha_form_field( true );
-
+		function form_field_return( $return = '' ) {
+			if ( is_user_logged_in() && anr_get_option( 'loggedin_hide' ) ) {
+				return $return;
+		}
+			return $return . $this->captcha_form_field();
 		}
 
 		function post_id() {
@@ -394,13 +394,8 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 
 		function login_form_return( $field = '' ) {
 			if ( $this->show_login_captcha() ) {
-
-				if ( is_user_logged_in() && anr_get_option( 'loggedin_hide' ) ) {
-					return $field;
+				$field = $this->form_field_return( $field );
 				}
-
-				$field = $field . anr_captcha_form_field( false );
-			}
 			return $field;
 		}
 
@@ -415,41 +410,78 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 		}
 
 		function ms_form_field( $errors ) {
-			$loggedin_hide = anr_get_option( 'loggedin_hide' );
-
-			if ( is_user_logged_in() && $loggedin_hide ) {
-				return;
-			}
-
 			if ( $errmsg = $errors->get_error_message( 'anr_error' ) ) {
 				echo '<p class="error">' . $errmsg . '</p>';
 			}
-
-				anr_captcha_form_field( true );
-
+			$this->form_field();
 		}
 
-		function comment_form_field( $defaults ) {
-			$loggedin_hide = anr_get_option( 'loggedin_hide' );
+		function verify( $response = false ) {
+			static $last_verify = null;
 
-			if ( is_user_logged_in() && $loggedin_hide ) {
-				return $defaults;
+			if ( is_user_logged_in() && anr_get_option( 'loggedin_hide' ) ) {
+				return true;
+			}
+	
+			$secre_key  = trim( anr_get_option( 'secret_key' ) );
+			$remoteip = $_SERVER['REMOTE_ADDR'];
+			$verify = false;
+			
+			if ( false === $response ) {
+				$response = isset( $_POST['g-recaptcha-response'] ) ? $_POST['g-recaptcha-response'] : '';
+			}
+			
+			$pre_check = apply_filters( 'anr_verify_captcha_pre', null, $response );
+			
+			if ( null !== $pre_check ) {
+				return $pre_check;
 			}
 
-				$defaults = $defaults . anr_captcha_form_field( false );
-				return $defaults;
-
-		}
-
-		function verify() {
-			$loggedin_hide = anr_get_option( 'loggedin_hide' );
-
-			if ( is_user_logged_in() && $loggedin_hide ) {
+			if ( ! $secre_key ) { // if $secre_key is not set
 				return true;
 			}
 
-			return anr_verify_captcha();
+			if ( ! $response || ! $remoteip ) {
+				return $verify;
+			}
+			
+			if ( null !== $last_verify ) {
+				return $last_verify;
+			}
 
+			$url = apply_filters( 'anr_google_verify_url', 'https://www.google.com/recaptcha/api/siteverify' );
+
+			// make a POST request to the Google reCAPTCHA Server
+			$request = wp_remote_post(
+				$url, array(
+					'timeout' => 10,
+					'body'    => array(
+						'secret'   => $secre_key,
+						'response' => $response,
+						'remoteip' => $remoteip,
+					),
+				)
+			);
+
+			// get the request response body
+			$request_body = wp_remote_retrieve_body( $request );
+			if ( ! $request_body ) {
+				return $verify;
+			}
+
+				$result = json_decode( $request_body, true );
+			if ( isset( $result['success'] ) && true == $result['success'] ) {
+				if ( 'v3' === anr_get_option( 'captcha_version' ) ) {
+					$score = isset( $result['score'] ) ? $result['score'] : 0;
+					$verify = anr_get_option( 'score', '0.5' ) <= $score;
+				} else {
+					$verify = true;
+				}
+			}
+			$verify = apply_filters( 'anr_verify_captcha', $verify, $result, $response );
+			$last_verify = $verify;
+
+			return $verify;
 		}
 
 		function fepcf_verify( $errors ) {
@@ -476,10 +508,10 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 					}
 					$wpdb->insert(
 						$wpdb->postmeta, array(
-							'post_id'    => $post_id,
-							'meta_key'   => md5( $_SERVER['REMOTE_ADDR'] ),
-							'meta_value' => $username,
-						), array( '%d', '%s', '%s' )
+						'post_id'    => $post_id,
+						'meta_key'   => md5( $_SERVER['REMOTE_ADDR'] ),
+						'meta_value' => $username,
+					), array( '%d', '%s', '%s' )
 					);
 				}
 				// return $user;
@@ -519,15 +551,9 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 		}
 
 		function bp_form_field() {
-			$loggedin_hide = anr_get_option( 'loggedin_hide' );
-
-			if ( is_user_logged_in() && $loggedin_hide ) {
-				return;
-			}
-
 			do_action( 'bp_anr_error_errors' );
 
-			anr_captcha_form_field( true );
+			$this->form_field();
 		}
 
 		function bp_registration_verify() {
@@ -543,7 +569,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 
 			return $result;
 		}
-		
+
 		function ms_blog_verify( $result ) {
 			if ( ! $this->verify() ) {
 				$result['errors']->add( 'anr_error', anr_get_option( 'error_message' ) );
@@ -600,7 +626,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 				return '';
 			}
 
-			return anr_captcha_form_field( false ) . sprintf( '<span class="wpcf7-form-control-wrap %s"></span>', $tag->name );
+			return $this->form_field_return() . sprintf( '<span class="wpcf7-form-control-wrap %s"></span>', $tag->name );
 		}
 
 		function wpcf7_verify( $result, $tag ) {

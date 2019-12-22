@@ -11,13 +11,13 @@ if (!function_exists('suevafree_logo_layout_function')) {
 	
 		if ( suevafree_setting('suevafree_custom_logo') ) :
 				
-			echo "<a href='" . esc_url(home_url('/')) . "' title='" . get_bloginfo('name') . "' class='image-logo'>";
-			echo "<img src='" . esc_url(suevafree_setting('suevafree_custom_logo')) . "' alt='logo'>"; 
+			echo "<a href='" . esc_url(home_url('/')) . "' title='" . esc_attr(get_bloginfo('name')) . "' class='image-logo'>";
+			echo "<img src='" . esc_url(suevafree_setting('suevafree_custom_logo')) . "' alt='" . esc_attr(get_bloginfo('name')) . "'>"; 
 			echo "</a>";
 					
 		else: 
 
-			echo "<a href='" . esc_url(home_url('/')) . "' title='" . get_bloginfo('name') . "' class='logo'>";
+			echo "<a href='" . esc_url(home_url('/')) . "' title='" . esc_attr(get_bloginfo('name')) . "' class='logo'>";
 			bloginfo('name');
 			
 			if ( isset($description) && $description == "on" )

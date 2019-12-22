@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 5.3
-Stable tag: 0.9.0.0
+Stable tag: 0.9.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -60,8 +60,10 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 * Deutsch
 * English
 * Español (by Javier Esteban)
+* Español de Venezuela (by Yordan Soares)
+* فارسی (by Javad Rahimi)
 * Français (by PascalJ)
-* Italiana (by Valerio)
+* Italiana (by Luisa Ravelli)
 * 日本語 (by KUCKLU)
 * Nederlands (by Frans Pronk https://ifra.nl)
 * Polski (by roan24.pl)
@@ -72,6 +74,7 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 * Suomi (by Arhi Paivarinta)
 * Svenska (by Linus Wileryd)
 * Türkçe
+* 繁體中文 (Alex Lion)
 
 == Installation ==
 
@@ -102,6 +105,17 @@ Wpfc supports Wordpress Multisite [<a target="_blank" href="https://www.wpfastes
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.9.0.1 =
+* to remove the clear cache button from column and to add clear cache action on row actions [<a target="_blank" href="https://www.wpfastestcache.com/tutorial/clear-cache-for-specific-page/">Details</a>]
+* to hide clear cache icon on toolbar for IE
+* to fix replacing cdn-url on data-product_variations attribute
+* to add WPFC_TOOLBAR_FOR_EDITOR [<a target="_blank" href="https://www.wpfastestcache.com/features/clear-cache-link-at-the-toolbar/">Details</a>]
+* <strong>[FEATURE]</strong> to add Persian language
+* <strong>[FEATURE]</strong> to add Chinese (Taiwan) language
+* <strong>[FEATURE]</strong> to add Spanish (Venezuela) language
+* refactoring of checking admin users for exclution
+* to fix E_WARNING on wpFastestCache.php line 1064
 
 = 0.9.0.0 =
 * to exclude the css source of elementor which is /elementor/css/post-[number].css to avoid increasing the size of minified sources

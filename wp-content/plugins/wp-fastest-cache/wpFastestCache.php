@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.9.0.0
+Version: 0.9.0.1
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -633,17 +633,20 @@ GNU General Public License for more details.
 			if(!defined('WPFC_HIDE_TOOLBAR') || (defined('WPFC_HIDE_TOOLBAR') && !WPFC_HIDE_TOOLBAR)){
 				$show = false;
 
-				// Admin
-				$show = (current_user_can( 'manage_options' ) || current_user_can('edit_others_pages')) ? true : false;
+				$user = wp_get_current_user();
+				$allowed_roles = array('administrator');
 
 				// Author
 				if(defined('WPFC_TOOLBAR_FOR_AUTHOR') && WPFC_TOOLBAR_FOR_AUTHOR){
-					if(current_user_can( 'delete_published_posts' ) || current_user_can('edit_published_posts')) {
-						$show = true;
-					}
+					array_push($allowed_roles, "author");
+				}
+
+				// Editor
+				if(defined('WPFC_TOOLBAR_FOR_EDITOR') && WPFC_TOOLBAR_FOR_EDITOR){
+					array_push($allowed_roles, "editor");
 				}
 				
-				if($show){
+				if(array_intersect($allowed_roles, $user->roles)){
 					include_once plugin_dir_path(__FILE__)."inc/admin-toolbar.php";
 
 					$toolbar = new WpFastestCacheAdminToolbar();
@@ -1061,8 +1064,14 @@ GNU General Public License for more details.
 				$path = urldecode($path);
 
 				// to remove the cache of tag/cat
-				@unlink($this->getWpContentDir("/cache/all/").$path."/index.html");
-				@unlink($this->getWpContentDir("/cache/wpfc-mobile-cache/").$path."/index.html");
+				if(file_exists($this->getWpContentDir("/cache/all/").$path."/index.html")){
+					@unlink($this->getWpContentDir("/cache/all/").$path."/index.html");
+				}
+
+				if(file_exists($this->getWpContentDir("/cache/wpfc-mobile-cache/").$path."/index.html")){
+					@unlink($this->getWpContentDir("/cache/wpfc-mobile-cache/").$path."/index.html");
+				}
+
 
 				// to remove the cache of the pages
 				$this->rm_folder_recursively($this->getWpContentDir("/cache/all/").$path."/page");
@@ -1728,7 +1737,7 @@ GNU General Public License for more details.
 						$cdn->originurl = str_replace("\/", "\\\\\/", $cdn->originurl);
 						
 						if(preg_match("/".$cdn->originurl."/", $matches[0])){
-							$matches[0] = preg_replace("/(quot\;)(http(s?)\:)?".preg_quote("\/\/", "/")."(www\.)?/i", "$1", $matches[0]);
+							$matches[0] = preg_replace("/(quot\;|\s)(http(s?)\:)?".preg_quote("\/\/", "/")."(www\.)?/i", "$1", $matches[0]);
 							$matches[0] = preg_replace("/".$cdn->originurl."/i", $cdnurl, $matches[0]);
 						}
 					}else if(preg_match("/\{\"concatemoji\"\:\"[^\"]+\"\}/i", $matches[0])){

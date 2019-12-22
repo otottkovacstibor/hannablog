@@ -222,9 +222,10 @@
 				}
 
 				// to exclude admin users
-				$users_groups = get_users(array("role" => "administrator", "fields" => array("user_login")));
 				foreach ((array)$_COOKIE as $cookie_key => $cookie_value){
 					if(preg_match("/wordpress_logged_in/i", $cookie_key)){
+						$users_groups = get_users(array("role" => "administrator", "fields" => array("user_login")));
+						
 						foreach ($users_groups as $user_key => $user_value) {
 							if(preg_match("/^".preg_quote($user_value->user_login, "/")."/", $cookie_value)){
 								ob_start(array($this, "cdn_rewrite"));
@@ -827,7 +828,7 @@
 
 		public function cdn_rewrite($content){
 			if($this->cdn){
-				$content = preg_replace_callback("/(srcset|src|href|data-vc-parallax-image|data-bg|data-fullurl|data-mobileurl|data-img-url|data-cvpsrc|data-cvpset|data-thumb|data-bg-url|data-large_image|data-lazyload|data-lazy|data-source-url|data-srcsmall|data-srclarge|data-srcfull|data-slide-img|data-lazy-original)\s{0,2}\=[\'\"]([^\'\"]+)[\'\"]/i", array($this, 'cdn_replace_urls'), $content);
+				$content = preg_replace_callback("/(srcset|src|href|data-vc-parallax-image|data-bg|data-fullurl|data-mobileurl|data-img-url|data-cvpsrc|data-cvpset|data-thumb|data-bg-url|data-large_image|data-lazyload|data-lazy|data-source-url|data-srcsmall|data-srclarge|data-srcfull|data-slide-img|data-lazy-original)\s{0,2}\=\s{0,2}[\'\"]([^\'\"]+)[\'\"]/i", array($this, 'cdn_replace_urls'), $content);
 
 				//url()
 				$content = preg_replace_callback("/(url)\(([^\)\>]+)\)/i", array($this, 'cdn_replace_urls'), $content);
@@ -949,7 +950,7 @@
 				}
 			}
 
-			if(($extension == "css" || $extension == "js") && $buffer && strlen($buffer) > 5){
+			if(($extension == "svg" || $extension == "woff" || $extension == "css" || $extension == "js") && $buffer && strlen($buffer) > 5){
 				$create = true;
 				$file_name = base_convert(substr(time(), -6), 20, 36).".";
 				$buffer = trim($buffer);

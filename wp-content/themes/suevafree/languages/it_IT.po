@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WIP\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-25 22:13+0100\n"
-"PO-Revision-Date: 2019-11-25 22:14+0100\n"
+"POT-Creation-Date: 2019-12-13 19:08+0100\n"
+"PO-Revision-Date: 2019-12-13 19:08+0100\n"
 "Last-Translator: Alessandro Vellutini <vellutini@hotmail.it>\n"
 "Language-Team: \n"
 "Language: it_IT\n"
@@ -509,7 +509,7 @@ msgstr "Piena pagina"
 #: core/admin/customize/customize.php:571
 #: core/admin/customize/customize.php:589
 #: core/admin/customize/customize.php:607
-#: core/functions/function-woocommerce.php:47 core/metaboxes/post.php:35
+#: core/functions/function-woocommerce.php:46 core/metaboxes/post.php:35
 #: core/metaboxes/product.php:38 core/metaboxes/service.php:37
 #: core/metaboxes/team.php:39 core/metaboxes/testimonial.php:39
 msgid "Left Sidebar"
@@ -519,7 +519,7 @@ msgstr "Sidebar a sinistra"
 #: core/admin/customize/customize.php:572
 #: core/admin/customize/customize.php:590
 #: core/admin/customize/customize.php:608
-#: core/functions/function-woocommerce.php:48 core/metaboxes/post.php:36
+#: core/functions/function-woocommerce.php:47 core/metaboxes/post.php:36
 #: core/metaboxes/product.php:39 core/metaboxes/service.php:38
 #: core/metaboxes/team.php:40 core/metaboxes/testimonial.php:40
 msgid "Right Sidebar"
@@ -1285,8 +1285,8 @@ msgstr "Sidebar piè di pagina"
 msgid "This sidebar will be shown at the end of your content."
 msgstr "Questa barra laterale verrà mostrata alla fine del tuo sito."
 
-#: core/functions/function-woocommerce.php:93
-#: core/functions/function-woocommerce.php:121
+#: core/functions/function-woocommerce.php:92
+#: core/functions/function-woocommerce.php:120
 msgid "View your shopping cart"
 msgstr "Visualizza il carrello"
 
