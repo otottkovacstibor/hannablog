@@ -29,7 +29,8 @@
 	transition: color .3s ease;
 }
 
-#logo a.logo:hover { 
+#logo a.logo:hover , 
+#logo a.logo:focus { 
 	text-decoration:none;
 	color:#d14a2b;
 }

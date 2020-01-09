@@ -81,7 +81,7 @@ if (!function_exists('suevafree_before_content_2_function')) {
 
 		}
 
-		echo '<span class="entry-date">' . esc_html__('On ','suevafree') . esc_html(get_the_date()) . esc_html__(' by ','suevafree') . get_the_author_posts_link() . '</span>';
+		echo '<span class="entry-date">' . esc_html__('On ','suevafree') . esc_html(get_the_date()) . esc_html__(' by ','suevafree') . wp_kses_post(get_the_author_posts_link()) . '</span>';
 
 	} 
 	

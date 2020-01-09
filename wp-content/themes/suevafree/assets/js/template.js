@@ -298,6 +298,7 @@ jQuery.noConflict()(function($){
 	
 	}
 	
+	$( window ).load(suevafree_footer);
 	$( document ).ready(suevafree_footer);
 	$( window ).resize(suevafree_footer);
 

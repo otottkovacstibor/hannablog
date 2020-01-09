@@ -24,14 +24,14 @@ if (!function_exists('suevafree_post_details_function')) {
 					if ( ( !suevafree_setting('suevafree_view_comments') || suevafree_setting('suevafree_view_comments') == "on" ) && comments_open() ) : ?>
                     
                         <span> <i class="fa fa-comments-o"></i>
-                            <?php echo comments_number( '<a href="'.get_permalink($post->ID).'#respond">'.__( "0 comments","suevafree").'</a>', '<a href="'.get_permalink($post->ID).'#comments">1 '.__( "comment","suevafree").'</a>', '<a href="'.get_permalink($post->ID).'#comments">% '.__( "comments","suevafree").'</a>' ); ?>
+                            <?php echo comments_number( '<a href="'.esc_url(get_permalink($post->ID)).'#respond">'.__( "0 comments","suevafree").'</a>', '<a href="'.esc_url(get_permalink($post->ID)).'#comments">1 '.__( "comment","suevafree").'</a>', '<a href="'.esc_url(get_permalink($post->ID)).'#comments">% '.__( "comments","suevafree").'</a>' ); ?>
                         </span>
                     
 						<?php echo suevafree_posticon();  ?>
                     
                     	<span> <i class="fa fa-tags"></i><?php the_category(', '); ?></span>
                     	<?php if ( suevafree_setting('suevafree_view_author') == "on" ) : ?>
-                        <span> <i class="fa fa-user"></i><?php the_author_posts_link(); ?></span>
+                        <span> <i class="fa fa-user"></i><?php echo wp_kses_post(get_the_author_posts_link()); ?></span>
     
 				<?php 
 				
