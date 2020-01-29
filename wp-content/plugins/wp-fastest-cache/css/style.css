@@ -38,7 +38,7 @@ div.questionCon.qsubmit{
 }
 
 .tabGroup div.question{
-	padding-right: 10px;
+	padding-right: 5px;
     float: left;
     text-align: right;
     width: 130px;
@@ -124,6 +124,7 @@ div.questionCon.qsubmit{
 }
 .question:after {
     content: ":";
+    padding-left: 5px;
 }
 .inputCon input[type="checkbox"]{
     margin-right: 5px;

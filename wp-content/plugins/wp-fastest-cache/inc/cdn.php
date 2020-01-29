@@ -253,6 +253,10 @@
 				if(!preg_match("/^http/", $_GET["url"])){
 					$_GET["url"] = "http://".$_GET["url"];
 				}
+
+				if(preg_match("/^https/i", site_url()) && preg_match("/^https/i", home_url())){
+					$_GET["url"] = preg_replace("/http\:\/\//i", "https://", $_GET["url"]);
+				}
 				
 				$response = wp_remote_get($_GET["url"], array('timeout' => 20, 'user-agent' => "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.11; rv:64.0) Gecko/20100101 Firefox/64.0"));
 
@@ -264,6 +268,9 @@
 					if($response->get_error_code() == "http_request_failed"){
 						if($response->get_error_message() == "Failure when receiving data from the peer"){
 							$res = array("success" => true);
+						}else if(preg_match("/cURL\serror\s60/i", $response->get_error_message())){
+							//cURL error 60: SSL: no alternative certificate subject name matches target host name
+							$res = array("success" => false, "error_message" => "<a href='https://www.wpfastestcache.com/warnings/how-to-use-cdn-on-ssl-sites/' target='_blank'>Please Read: https://www.wpfastestcache.com/warnings/how-to-use-cdn-on-ssl-sites/</a>");
 						}else if(preg_match("/cURL\serror\s6/i", $response->get_error_message())){
 							//cURL error 6: Couldn't resolve host
 							if(preg_match("/".preg_quote($host, "/")."/i", $_GET["url"])){
@@ -292,6 +299,10 @@
 
 						if(($response_code == 403) && (preg_match("/stackpathdns\.com/i", $_GET["url"]))){
 							$res = array("success" => true);
+						}
+
+						if(($response_code == 403) && (preg_match("/cloudfront\.net/i", $_GET["url"]))){
+							$res = array("success" => false, "error_message" => "<a href='https://www.wpfastestcache.com/warnings/amazon-s3-cloudfront-access-denied-403-forbidden/' target='_blank'>Please Read: https://www.wpfastestcache.com/warnings/amazon-s3-cloudfront-access-denied-403-forbidden</a>");
 						}
 					}
 				}

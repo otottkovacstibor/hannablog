@@ -15,7 +15,7 @@ msgstr ""
 msgid "Clear Cache"
 msgstr "پاک‌سازی کش"
 
-#: inc/admin.php:1265 inc/admin.php:1271 inc/admin.php:1278
+#: inc/admin.php:1316 inc/admin.php:1322 inc/admin.php:1329
 msgid "Eliminate render-blocking JavaScript resources"
 msgstr "برطرف کردن مشکل Eliminate render-blocking JavaScript resources"
 
@@ -23,75 +23,75 @@ msgstr "برطرف کردن مشکل Eliminate render-blocking JavaScript resour
 msgid "Options have been saved"
 msgstr "تنظیمات ذخیره شدند"
 
-#: inc/admin.php:1733
+#: inc/admin.php:1786
 msgid "Download"
 msgstr "دانلود"
 
-#: inc/admin.php:1728
+#: inc/admin.php:1781
 msgid "Update"
 msgstr "به‌روزرسانی"
 
-#: inc/admin.php:1722
+#: inc/admin.php:1775
 msgid "Please don't delete the free version. Premium version works with the free version."
 msgstr "لطفا ورژن رایگان افزونه را حذف نکنید.ورژن پرمیوم افزونه در کنار ورژن رایگان فعالسازی می شود."
 
-#: inc/admin.php:1721
+#: inc/admin.php:1774
 msgid "Get It Now!"
 msgstr "همین حالا دریافت کنید!"
 
-#: inc/admin.php:1715
+#: inc/admin.php:1768
 msgid "You can download and update the premium when you want if you paid."
 msgstr "دانلود و دریافت بروزرسانی افزونه."
 
-#: inc/admin.php:1712
+#: inc/admin.php:1765
 msgid "Download & Update"
 msgstr "دانلود و بروزرسانی"
 
-#: inc/admin.php:1699
+#: inc/admin.php:1752
 msgid "Buy"
 msgstr "خرید"
 
-#: inc/admin.php:1684
+#: inc/admin.php:1737
 msgid "Purchased"
 msgstr "خریداری شده"
 
-#: inc/admin.php:1679
+#: inc/admin.php:1732
 msgid "The download button will be available after paid. You can buy the premium version now."
 msgstr "دکمه دانلود بعد از خرید فعال می شود."
 
-#: inc/admin.php:1678
+#: inc/admin.php:1731
 msgid "Just"
 msgstr "فقط"
 
-#: inc/admin.php:1664
+#: inc/admin.php:1715
 msgid "You need to pay before downloading the premium version."
 msgstr "قبل از دانلود ورژن پرمیوم افزونه باید آنرا خریداری کنید."
 
-#: inc/admin.php:1661
+#: inc/admin.php:1712
 msgid "Checkout"
 msgstr "پرداخت"
 
-#: inc/admin.php:1647
+#: inc/admin.php:1698
 msgid "New Features"
 msgstr "ویژگی های جدید"
 
-#: inc/admin.php:1641
+#: inc/admin.php:1692
 msgid "In the premium version there are some new features which speed up the sites more."
 msgstr "در حالت پرمیوم ویژگی های فوق العاده و جدیدی برای بهینه سازی بهتر سایت شما قرار گرفته است."
 
-#: inc/admin.php:1638
+#: inc/admin.php:1689
 msgid "Discover Features"
 msgstr "ویژگی های جدید"
 
-#: inc/admin.php:1784 templates/exclude.php:106
+#: templates/exclude.php:106 inc/admin.php:1837
 msgid "has Woocommerce Items in Cart"
 msgstr "دارای محصول در سبد خرید"
 
-#: inc/admin.php:1783 templates/exclude.php:105
+#: templates/exclude.php:105 inc/admin.php:1836
 msgid "has Google Analytics Parameters"
 msgstr "دارای پارامتر های گوگل آنالیتیک"
 
-#: inc/admin.php:1776 templates/exclude.php:99
+#: templates/exclude.php:99 inc/admin.php:1829
 msgid "Archives"
 msgstr "بایگانی ها"
 
@@ -103,27 +103,27 @@ msgstr "زمان سرور"
 msgid "delete the files"
 msgstr "حذف فایلها"
 
-#: inc/admin.php:1507 inc/admin.php:1781 templates/timeout.php:99
-#: templates/exclude.php:103
+#: templates/exclude.php:103 templates/timeout.php:99 inc/admin.php:1558
+#: inc/admin.php:1834
 msgid "Contains"
 msgstr "شامل"
 
-#: inc/admin.php:1508 inc/admin.php:1782 templates/timeout.php:98
-#: templates/exclude.php:104
+#: templates/exclude.php:104 templates/timeout.php:98 inc/admin.php:1559
+#: inc/admin.php:1835
 msgid "Is Equal To"
 msgstr "برابر با"
 
-#: inc/admin.php:1506 inc/admin.php:1780 templates/timeout.php:97
-#: templates/exclude.php:102
+#: templates/exclude.php:102 templates/timeout.php:97 inc/admin.php:1557
+#: inc/admin.php:1833
 msgid "Starts With"
 msgstr "شروع می شود با"
 
-#: inc/admin.php:1505 inc/admin.php:1773 templates/timeout.php:96
-#: templates/exclude.php:93
+#: templates/exclude.php:93 templates/timeout.php:96 inc/admin.php:1556
+#: inc/admin.php:1826
 msgid "Home Page"
 msgstr "صفحه اصلی"
 
-#: inc/admin.php:1504 templates/timeout.php:95
+#: templates/timeout.php:95 inc/admin.php:1555
 msgid "All"
 msgstr "همه"
 
@@ -135,7 +135,7 @@ msgstr "عدم فعال سازی در برگه های"
 msgid "Then"
 msgstr "سپس"
 
-#: templates/timeout.php:91 templates/exclude.php:89
+#: templates/exclude.php:89 templates/timeout.php:91
 msgid "If REQUEST_URI"
 msgstr "اگر لینک درخواستی برابر"
 
@@ -163,16 +163,16 @@ msgstr "موفقیت آمیز"
 msgid "Warning"
 msgstr "هشدار"
 
-#: inc/admin.php:1540 inc/admin.php:1805 inc/admin.php:1822 inc/admin.php:1841
-#: inc/admin.php:1859 inc/admin.php:1879
+#: inc/admin.php:1591 inc/admin.php:1858 inc/admin.php:1875 inc/admin.php:1894
+#: inc/admin.php:1912 inc/admin.php:1932
 msgid "Add New Rule"
 msgstr "افزودن قانون جدید"
 
-#: inc/admin.php:1476 inc/admin-toolbar.php:81
+#: inc/admin-toolbar.php:81 inc/admin.php:1527
 msgid "Delete Cache and Minified CSS/JS"
 msgstr "حذف کش و فایل های سی اس اس و جاوا اسکریپت فشرده شده"
 
-#: inc/admin.php:1411 inc/admin.php:2039 inc/admin.php:2260
+#: inc/admin.php:1462 inc/admin.php:2092 inc/admin.php:2313
 msgid "Only available in Premium version"
 msgstr "قابل دسترسی تنها در نسخه پریمیوم است."
 
@@ -180,76 +180,76 @@ msgstr "قابل دسترسی تنها در نسخه پریمیوم است."
 msgid "Choose One"
 msgstr "یکی را انتخاب کن"
 
-#: inc/admin.php:1481
+#: inc/admin.php:1532
 msgid "All cache files will be removed as well"
 msgstr "تمامی فایل های کش حذف خواهد شد"
 
-#: inc/admin.php:1480
+#: inc/admin.php:1531
 msgid "If you modify any css file, you have to delete minified css files"
 msgstr "در صورت تغییر در فایل های سی اس اس باید کش و فایلهای فشرده را حذف کنید"
 
-#: inc/admin.php:1468 inc/admin.php:1482 inc/admin.php:1483
+#: inc/admin.php:1519 inc/admin.php:1533 inc/admin.php:1534
 msgid "Target folder"
 msgstr "فولدر هدف"
 
-#: inc/admin.php:1467
+#: inc/admin.php:1518
 msgid "You can delete all cache files"
 msgstr "حذف تمامی فایلهای کش"
 
-#: inc/admin.php:992
+#: inc/admin.php:1059
 msgid "Exclude"
 msgstr "عدم تاثیر بر"
 
-#: inc/admin.php:990
+#: inc/admin.php:1057
 msgid "Image Optimization"
 msgstr "بهینه‌سازی تصاویر"
 
-#: inc/admin.php:987
+#: inc/admin.php:1054
 msgid "Settings"
 msgstr "تنظیمات"
 
-#: inc/admin.php:2024
+#: inc/admin.php:2077
 msgid "Database Cleanup"
 msgstr "پاکسازی دیتابیس"
 
-#: inc/admin.php:1912
+#: inc/admin.php:1965
 msgid "CDN Settings"
 msgstr "تنظیمات CDN"
 
-#: inc/admin.php:1875
+#: inc/admin.php:1928
 msgid "Exclude JS"
 msgstr "عدم اعمال بر فایل های جاوااسکریپت"
 
-#: inc/admin.php:1855
+#: inc/admin.php:1908
 msgid "Exclude CSS"
 msgstr "عدم اعمال بر فایل های سی اس اس"
 
-#: inc/admin.php:1837
+#: inc/admin.php:1890
 msgid "Exclude Cookies"
 msgstr "عدم اعمال بر کوکی های"
 
-#: inc/admin.php:1818
+#: inc/admin.php:1871
 msgid "Exclude User-Agents"
 msgstr "عدم اعمال بر User-Agents"
 
-#: inc/admin.php:1801
+#: inc/admin.php:1854
 msgid "Exclude Pages"
 msgstr "عدم اعمال در برگه های"
 
-#: inc/admin.php:1614
+#: inc/admin.php:1665
 msgid "Optimize Image Tool"
 msgstr "بهینه سازی تصاویر"
 
-#: inc/admin.php:1497
+#: inc/admin.php:1548
 msgid "Timeout Rules"
 msgstr "تایم بندی فایل های کش"
 
-#: inc/admin.php:988 inc/admin.php:1458 inc/admin.php:1463
-#: inc/admin-toolbar.php:69
+#: inc/admin-toolbar.php:69 inc/admin.php:1055 inc/admin.php:1509
+#: inc/admin.php:1514
 msgid "Delete Cache"
 msgstr "حذف کش"
 
-#: inc/admin.php:1418
+#: inc/admin.php:1469
 msgid "Cache Statistics"
 msgstr "آمار کش"
 
@@ -265,20 +265,20 @@ msgstr "بعد از بروزرسانی برگه ها و پست ها چه عمل�
 msgid "Clear Cache of Pagination"
 msgstr "حذف کش Pagination"
 
-#: templates/updatepost.php:55 templates/newpost.php:57
+#: templates/newpost.php:57 templates/updatepost.php:55
 msgid "Clear Cache of Post Tags"
 msgstr "حذف کش تگ های پست ها"
 
-#: templates/updatepost.php:54 templates/newpost.php:56
+#: templates/newpost.php:56 templates/updatepost.php:54
 msgid "Clear Cache of Post Categories"
 msgstr "حذف کش دسته بندی پست ها"
 
-#: templates/updatepost.php:56 templates/newpost.php:55
+#: templates/newpost.php:55 templates/updatepost.php:56
 msgid "Clear Cache of Homepage"
 msgstr "حذف کش صفحه اصلی"
 
-#: inc/admin-toolbar.php:74 templates/updatepost.php:49
-#: templates/newpost.php:51
+#: templates/newpost.php:51 templates/updatepost.php:49
+#: inc/admin-toolbar.php:74
 msgid "Clear All Cache"
 msgstr "حذف تمام کش"
 
@@ -286,8 +286,8 @@ msgstr "حذف تمام کش"
 msgid "What do you want to happen after publishing the new post?"
 msgstr "بعد از انتشار پست جدید چه عملی میخواهید انجام شود؟"
 
-#: templates/updatepost.php:64 templates/preload.php:102
-#: templates/newpost.php:68
+#: templates/newpost.php:68 templates/updatepost.php:64
+#: templates/preload.php:102
 msgid "OK"
 msgstr "تایید"
 
@@ -307,23 +307,23 @@ msgstr "تکسونومی های سفارشی"
 msgid "Custom Post Types"
 msgstr "پست تایپ های سفارشی"
 
-#: inc/admin.php:1779 templates/preload.php:53 templates/exclude.php:101
+#: templates/exclude.php:101 templates/preload.php:53 inc/admin.php:1832
 msgid "Attachments"
 msgstr "پیوست‌ها"
 
-#: inc/admin.php:1775 templates/preload.php:49 templates/exclude.php:95
+#: templates/exclude.php:95 templates/preload.php:49 inc/admin.php:1828
 msgid "Tags"
 msgstr "برچسب‌ها"
 
-#: inc/admin.php:1778 templates/preload.php:45 templates/exclude.php:97
+#: templates/exclude.php:97 templates/preload.php:45 inc/admin.php:1831
 msgid "Pages"
 msgstr "برگه‌ها"
 
-#: inc/admin.php:1774 templates/preload.php:41 templates/exclude.php:94
+#: templates/exclude.php:94 templates/preload.php:41 inc/admin.php:1827
 msgid "Categories"
 msgstr "دسته‌بندی‌ها"
 
-#: inc/admin.php:1777 templates/preload.php:37 templates/exclude.php:96
+#: templates/exclude.php:96 templates/preload.php:37 inc/admin.php:1830
 msgid "Posts"
 msgstr "نوشته‌ها"
 
@@ -331,219 +331,219 @@ msgstr "نوشته‌ها"
 msgid "Homepage"
 msgstr "صفحه نخست"
 
-#: inc/admin.php:1212 inc/admin.php:1220 inc/admin.php:1226 inc/admin.php:1232
+#: inc/admin.php:1263 inc/admin.php:1271 inc/admin.php:1277 inc/admin.php:1283
 msgid "Reduce HTTP requests through combined js files"
 msgstr "با فعال کردن این قسمت تعداد درخواست های HTTP کاهش می یابد"
 
-#: inc/admin.php:1320 inc/admin.php:1334 inc/admin.php:1341
+#: inc/admin.php:1371 inc/admin.php:1385 inc/admin.php:1392
 msgid "Load images and iframes when they enter the browsers viewport"
 msgstr "لود تصاویر و آی فریم ها با قرار گرفتن در حالت دید کاربر"
 
-#: inc/admin.php:1314 inc/admin.php:1333 inc/admin.php:1340
+#: inc/admin.php:1365 inc/admin.php:1384 inc/admin.php:1391
 msgid "Lazy Load"
 msgstr "حالت Lazy Load"
 
-#: inc/admin.php:1291 inc/admin.php:1297 inc/admin.php:1304
+#: inc/admin.php:1342 inc/admin.php:1348 inc/admin.php:1355
 msgid "Load Google Fonts asynchronously"
 msgstr "لود فونت های گوگل بصورت asynchronously"
 
-#: inc/admin.php:1290 inc/admin.php:1296 inc/admin.php:1303
+#: inc/admin.php:1341 inc/admin.php:1347 inc/admin.php:1354
 msgid "Google Fonts"
 msgstr "فونت‌های گوگل"
 
-#: inc/admin.php:1264 inc/admin.php:1270 inc/admin.php:1277
+#: inc/admin.php:1315 inc/admin.php:1321 inc/admin.php:1328
 msgid "Render Blocking Js"
 msgstr "فعال کردن Render Blocking Js"
 
-#: inc/admin.php:1256
+#: inc/admin.php:1307
 msgid "You can remove the emoji inline css and wp-emoji-release.min.js"
 msgstr "حذف سی اس اس های مرتبط و wp-emoji-release.min.js"
 
-#: inc/admin.php:1255
+#: inc/admin.php:1306
 msgid "Disable Emojis"
 msgstr "غیرفعال کردن اموجی ها"
 
-#: inc/admin.php:1250
+#: inc/admin.php:1301
 msgid "Reduce page load times for repeat visitors"
 msgstr "کاهش زمان لود برای کاربران تکراری"
 
-#: inc/admin.php:1249
+#: inc/admin.php:1300
 msgid "Browser Caching"
 msgstr "کش مرورگر"
 
-#: inc/admin.php:1238
+#: inc/admin.php:1289
 msgid "Reduce the size of files sent from your server"
 msgstr "کاهش حجم فایل های ارسالی از سمت سرور"
 
-#: inc/admin.php:1237
+#: inc/admin.php:1288
 msgid "Gzip"
 msgstr "GZip"
 
-#: inc/admin.php:1218 inc/admin.php:1225 inc/admin.php:1231
+#: inc/admin.php:1269 inc/admin.php:1276 inc/admin.php:1282
 msgid "Combine Js Plus"
 msgstr "ترکیب کردن قوی تر فایل های JS"
 
-#: inc/admin.php:1211
+#: inc/admin.php:1262
 msgid "Combine Js"
 msgstr "ترکیب کردن فایل های JS"
 
-#: inc/admin.php:1195 inc/admin.php:1200 inc/admin.php:1206
+#: inc/admin.php:1246 inc/admin.php:1251 inc/admin.php:1257
 msgid "You can decrease the size of js files"
 msgstr "فشرده سازی و کاهش حجم فایل های جاوا اسکریپت"
 
-#: inc/admin.php:1194 inc/admin.php:1199 inc/admin.php:1205
+#: inc/admin.php:1245 inc/admin.php:1250 inc/admin.php:1256
 msgid "Minify Js"
 msgstr "فشرده سازی JS"
 
-#: inc/admin.php:1187
+#: inc/admin.php:1238
 msgid "Reduce HTTP requests through combined css files"
 msgstr "با فعال کردن این قسمت تعداد درخواست های HTTP کاهش می یابد"
 
-#: inc/admin.php:1186
+#: inc/admin.php:1237
 msgid "Combine Css"
 msgstr "ترکیب فایل های CSS"
 
-#: inc/admin.php:1175 inc/admin.php:1180
+#: inc/admin.php:1226 inc/admin.php:1231
 msgid "More powerful minify css"
 msgstr "فشرده سازی بیشتر و قوی تر فایل های CSS"
 
-#: inc/admin.php:1174 inc/admin.php:1179
+#: inc/admin.php:1225 inc/admin.php:1230
 msgid "Minify Css Plus"
 msgstr "فشرده سازی قویتر CSS"
 
-#: inc/admin.php:1166
+#: inc/admin.php:1217
 msgid "You can decrease the size of css files"
 msgstr "فشرده سازی و کاهش حجم فایل های CSS"
 
-#: inc/admin.php:1165
+#: inc/admin.php:1216
 msgid "Minify Css"
 msgstr "فشرده سازی CSS"
 
-#: inc/admin.php:1153 inc/admin.php:1158
+#: inc/admin.php:1204 inc/admin.php:1209
 msgid "More powerful minify html"
 msgstr "باعث کاهش بیشتر حجم و فشرده سازی بیشتر می شود"
 
-#: inc/admin.php:1152 inc/admin.php:1157
+#: inc/admin.php:1203 inc/admin.php:1208
 msgid "Minify HTML Plus"
 msgstr "فشرده سازی قویتر HTML"
 
-#: inc/admin.php:1146
+#: inc/admin.php:1197
 msgid "You can decrease the size of page"
 msgstr "باعث کاهش حجم برگه ها میشود"
 
-#: inc/admin.php:1145
+#: inc/admin.php:1196
 msgid "Minify HTML"
 msgstr "فشرده سازی HTML"
 
-#: inc/admin.php:1137
+#: inc/admin.php:1188
 msgid "Clear cache files when a post or page is updated"
 msgstr "حذف کش در صورت بروز رسانی برگه و پست"
 
-#: inc/admin.php:1136 templates/updatepost.php:18
+#: templates/updatepost.php:18 inc/admin.php:1187
 msgid "Update Post"
 msgstr "بروزرسانی پست"
 
-#: inc/admin.php:1130
+#: inc/admin.php:1181
 msgid "Clear cache files when a post or page is published"
 msgstr "حذف کش در صورت انتشار پست و برگه"
 
-#: inc/admin.php:1129 templates/newpost.php:18
+#: templates/newpost.php:18 inc/admin.php:1180
 msgid "New Post"
 msgstr "پست جدید"
 
-#: inc/admin.php:1097 inc/admin.php:1123
+#: inc/admin.php:1148 inc/admin.php:1174
 msgid "Create cache for mobile theme"
 msgstr "ایجاد کش برای موبایل"
 
-#: inc/admin.php:1096 inc/admin.php:1122
+#: inc/admin.php:1147 inc/admin.php:1173
 msgid "Mobile Theme"
 msgstr "تم موبایل"
 
-#: inc/admin.php:1091
+#: inc/admin.php:1142
 msgid "Don't show the cached version for desktop to mobile devices"
 msgstr "عدم نمایش کش دسکتاپ برای موبایل"
 
-#: inc/admin.php:1090
+#: inc/admin.php:1141
 msgid "Mobile"
 msgstr "موبایل"
 
-#: inc/admin.php:1086
+#: inc/admin.php:1137
 msgid "Don't show the cached version for logged-in users"
 msgstr "عدم نمایش حالت کش شده برای کاربران وارد شده"
 
-#: inc/admin.php:1085
+#: inc/admin.php:1136
 msgid "Logged-in Users"
 msgstr "کاربران وارد شده"
 
-#: inc/admin.php:1076
+#: inc/admin.php:1127
 msgid "Create the cache of all the site automatically"
 msgstr "ایجاد اتوماتیک کش تمامی قسمت های سایت"
 
-#: inc/admin.php:1075 templates/preload.php:20
+#: templates/preload.php:20 inc/admin.php:1126
 msgid "Preload"
 msgstr "پیش‌بارگذاری"
 
-#: inc/admin.php:1047 inc/admin.php:1053 inc/admin.php:1060 inc/admin.php:1067
+#: inc/admin.php:1098 inc/admin.php:1104 inc/admin.php:1111 inc/admin.php:1118
 msgid "Reduce the number of SQL queries"
 msgstr "کاهش تعداد کوئری های دیتابیس"
 
-#: inc/admin.php:1046 inc/admin.php:1052 inc/admin.php:1059 inc/admin.php:1066
+#: inc/admin.php:1097 inc/admin.php:1103 inc/admin.php:1110 inc/admin.php:1117
 msgid "Widget Cache"
 msgstr "کش ابزارک ها"
 
-#: inc/admin.php:1021
+#: inc/admin.php:1088
 msgid "Enable"
 msgstr "فعال کردن"
 
-#: inc/admin.php:1020
+#: inc/admin.php:1087
 msgid "Cache System"
 msgstr "فعال کردن کش"
 
-#: wpFastestCache.php:1598
+#: wpFastestCache.php:1611
 msgid "Once Every 15 Days"
 msgstr "یکبار هر 15 روز"
 
-#: wpFastestCache.php:1586
+#: wpFastestCache.php:1599
 msgid "Once Every 7 Days"
 msgstr "یکبار هر 7 روز"
 
-#: wpFastestCache.php:1580
+#: wpFastestCache.php:1593
 msgid "Once Every 3 Days"
 msgstr "یکبار هر 3 روز"
 
-#: wpFastestCache.php:1568
+#: wpFastestCache.php:1581
 msgid "Once Every 10 Hours"
 msgstr "یکبار هر 10 ساعت"
 
-#: wpFastestCache.php:1562
+#: wpFastestCache.php:1575
 msgid "Once Every 9 Hours"
 msgstr "یکبار هر 9 ساعت"
 
-#: wpFastestCache.php:1556
+#: wpFastestCache.php:1569
 msgid "Once Every 8 Hours"
 msgstr "یکبار هر 8 ساعت"
 
-#: wpFastestCache.php:1550
+#: wpFastestCache.php:1563
 msgid "Once Every 7 Hours"
 msgstr "یکبار هر 7 ساعت"
 
-#: wpFastestCache.php:1538
+#: wpFastestCache.php:1551
 msgid "Once Every 5 Hours"
 msgstr "یکبار هر 5 ساعت"
 
-#: wpFastestCache.php:1532
+#: wpFastestCache.php:1545
 msgid "Once Every 4 Hours"
 msgstr "یکبار هر 4 ساعت"
 
-#: wpFastestCache.php:1526
+#: wpFastestCache.php:1539
 msgid "Once Every 3 Hours"
 msgstr "یکبار هر 3 ساعت"
 
-#: wpFastestCache.php:1520
+#: wpFastestCache.php:1533
 msgid "Once Every 2 Hours"
 msgstr "یکبار هر 2 ساعت"
 
-#: wpFastestCache.php:1592
+#: wpFastestCache.php:1605
 msgid "Once Every 10 Days"
 msgstr "یکبار هر 10 روز"
 
@@ -567,38 +567,38 @@ msgstr "http://wordpress.org/plugins/wp-fastest-cache/"
 msgid "WP Fastest Cache"
 msgstr "سریعترین کش وردپرس"
 
-#: wpFastestCache.php:1610
+#: wpFastestCache.php:1623
 msgid "Once a Year"
 msgstr "یکبار در سال"
 
-#: wpFastestCache.php:1604
+#: wpFastestCache.php:1617
 msgid "Once a Month"
 msgstr "یکبار در ماه"
 
-#: wpFastestCache.php:1574
+#: wpFastestCache.php:1587
 msgid "Once a Day"
 msgstr "یکبار در روز"
 
-#: wpFastestCache.php:1544
+#: wpFastestCache.php:1557
 msgid "Once Every 6 Hours"
 msgstr "هر 6 ساعت یکبار"
 
-#: wpFastestCache.php:1514
+#: wpFastestCache.php:1527
 msgid "Once an Hour"
 msgstr "هرساعت یکبار"
 
-#: wpFastestCache.php:1508
+#: wpFastestCache.php:1521
 msgid "Twice an Hour"
 msgstr "هرساعت دوبار"
 
-#: wpFastestCache.php:1502
+#: wpFastestCache.php:1515
 msgid "Once Every 15 Minutes"
 msgstr "یکبار در 15 دقیقه"
 
-#: wpFastestCache.php:1496
+#: wpFastestCache.php:1509
 msgid "Once Every 5 Minutes"
 msgstr "یکبار در هر 5 دقیقه"
 
-#: wpFastestCache.php:1490
+#: wpFastestCache.php:1503
 msgid "Once Every 1 Minute"
 msgstr "یکبار در هر دقیقه"

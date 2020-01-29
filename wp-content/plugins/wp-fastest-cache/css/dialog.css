@@ -215,7 +215,7 @@ button:focus {outline:0;}
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#38bf26', endColorstr='#39cc28',GradientType=0 );
 }
 
-.wiz-error-msg{
+.wiz-error-msg, .wiz-error-msg a{
     color: red;
     font-weight: bold;
     text-align: center;

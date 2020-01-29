@@ -390,4 +390,24 @@ jQuery.noConflict()(function($){
 	
 	}
 
+/* ===============================================
+   Swipebox gallery
+   =============================================== */
+
+	$(document).ready(function(){
+		
+		var counter = 0;
+
+		$('div.gallery').each(function(){
+			
+			counter++;
+			
+			$(this).find('.swipebox').attr('data-rel', 'gallery-' + counter );
+		
+		});
+		
+		$('.swipebox').swipebox();
+
+	});
+
 });          

@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.9.0.1
+Version: 0.9.0.2
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -129,6 +129,7 @@ GNU General Public License for more details.
 			// clearing cache hooks
 			add_action("wpfc_clear_all_cache", array($this, 'deleteCache'), 10, 1);
 			add_action("wpfc_clear_post_cache_by_id", array($this, 'singleDeleteCache'), 10, 2);
+
 
 
 			// to clear cache after ajax request by other plugins
@@ -293,6 +294,7 @@ GNU General Public License for more details.
 				}
 			}
 		}
+
 
 		public function notify($message = array()){
 			if(isset($message[0]) && $message[0]){
@@ -645,6 +647,11 @@ GNU General Public License for more details.
 				if(defined('WPFC_TOOLBAR_FOR_EDITOR') && WPFC_TOOLBAR_FOR_EDITOR){
 					array_push($allowed_roles, "editor");
 				}
+
+				// Shop Manager
+				if(defined('WPFC_TOOLBAR_FOR_SHOP_MANAGER') && WPFC_TOOLBAR_FOR_SHOP_MANAGER){
+					array_push($allowed_roles, "shop_manager");
+				}
 				
 				if(array_intersect($allowed_roles, $user->roles)){
 					include_once plugin_dir_path(__FILE__)."inc/admin-toolbar.php";
@@ -815,7 +822,7 @@ GNU General Public License for more details.
 		}
 
 		protected function get_excluded_useragent(){
-			return "facebookexternalhit|Twitterbot|LinkedInBot|WhatsApp|Mediatoolkitbot";
+			return "facebookexternalhit|WP_FASTEST_CACHE_CSS_VALIDATOR|Twitterbot|LinkedInBot|WhatsApp|Mediatoolkitbot";
 		}
 
 		// protected function detectNewPost(){
@@ -1855,6 +1862,10 @@ GNU General Public License for more details.
 	
 	function wpfc_clear_all_cache($minified = false){
 		do_action("wpfc_clear_all_cache", $minified);
+	}
+
+	function wpfc_exclude_current_page(){
+		do_action("wpfc_exclude_current_page");
 	}
 
 	function wpfc_clear_post_cache_by_id($post_id = false){

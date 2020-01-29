@@ -249,8 +249,17 @@ if ( ! function_exists( 'suevafree_wc_get_gallery_image_html' ) ) {
 			'data-large_image_height' => $full_src[2],
 			'class'                   => $main_image ? 'wp-post-image' : '',
 		) );
-	
-		return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" class="product-thumbnail woocommerce-product-gallery__image"><a data-rel="prettyPhoto[product-gallery]" href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
+
+		if ( suevafree_setting('suevafree_gallery_lightbox', 'prettyphoto') == 'prettyphoto') :
+			
+			return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" class="product-thumbnail woocommerce-product-gallery__image"><a data-rel="prettyPhoto[product-gallery]" href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
+			
+		else :
+			
+			return '<div data-thumb="' . esc_url( $thumbnail_src[0] ) . '" class="product-thumbnail woocommerce-product-gallery__image"><a class="swipebox" data-rel="[product-gallery]" href="' . esc_url( $full_src[0] ) . '">' . $image . '</a></div>';
+			
+		endif;
+
 	}
 
 }

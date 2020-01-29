@@ -47,6 +47,10 @@ if (!function_exists('suevafree_socials_function')) {
 			"dropbox" => array( "icon" => "fa fa-dropbox" , "target" => "_blank" ),
 			"whatsapp" => array( "icon" => "fa fa-whatsapp" , "target" => "_self" ),
 			"telegram" => array( "icon" => "fa fa-telegram" , "target" => "_self" ),
+			"trello" => array( "icon" => "fa fa-trello" , "target" => "_self"),
+			"twitch" => array( "icon" => "fa fa-twitch" , "target" => "_self"),
+			"tripadvisor" => array( "icon" => "fa fa-tripadvisor" , "target" => "_self"),
+			"vine" => array( "icon" => "fa fa-vine" , "target" => "_self"),
 			"skype" => array( "icon" => "fa fa-skype" , "target" => "_self" ),
 			"email" => array( "icon" => "fa fa-envelope" , "target" => "_self" ),
 		

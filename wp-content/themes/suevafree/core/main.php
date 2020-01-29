@@ -539,10 +539,24 @@ if (!function_exists('suevafree_prettyPhoto')) {
 
 	function suevafree_prettyPhoto( $html, $id, $size, $permalink, $icon, $text ) {
 		
-		if ( ! $permalink )
-			return str_replace( '<a', '<a data-rel="prettyPhoto" ', $html );
-		else
+		if ( !$permalink ) :
+		
+			if ( suevafree_setting('suevafree_gallery_lightbox', 'prettyphoto') == 'prettyphoto') :
+			
+				return str_replace( '<a', '<a data-rel="prettyPhoto" ', $html );
+			
+			else :
+			
+				return str_replace( '<a', '<a class="swipebox"', $html );
+			
+			endif;
+
+		else :
+			
 			return $html;
+			
+		endif;
+	
 	}
 
 	add_filter( 'wp_get_attachment_link', 'suevafree_prettyPhoto', 10, 6);
@@ -788,6 +802,7 @@ if (!function_exists('suevafree_scripts_styles')) {
 	
 		wp_enqueue_style('bootstrap', get_template_directory_uri() . '/assets/css/bootstrap.css', array(), '3.3.7' );
 		wp_enqueue_style('font-awesome', get_template_directory_uri() . '/assets/css/font-awesome.css', array(), '4.7.0' );
+		wp_enqueue_style('swipebox', get_template_directory_uri() . '/assets/css/swipebox.css', array(), '1.3.0' );
 		wp_enqueue_style('prettyPhoto', get_template_directory_uri() . '/assets/css/prettyPhoto.css', array(), '3.1.6' );
 		wp_enqueue_style('suevafree-minimal-layout', get_template_directory_uri() . '/assets/css/minimal-layout.css', array(), '1.0.0' );
 		wp_enqueue_style('suevafree-template', get_template_directory_uri() . '/assets/css/template.css', array(), '1.0.0' );
@@ -808,6 +823,7 @@ if (!function_exists('suevafree_scripts_styles')) {
 		
 		wp_enqueue_script('jquery-easing', get_template_directory_uri() . '/assets/js/jquery.easing.js' , array('jquery'), '1.3', TRUE ); 
 		wp_enqueue_script('jquery-nicescroll', get_template_directory_uri() . '/assets/js/jquery.nicescroll.js' , array('jquery'), '3.7.6', TRUE ); 
+		wp_enqueue_script('jquery-swipebox', get_template_directory_uri() . '/assets/js/jquery.swipebox.js' , array('jquery'), '1.4.4', TRUE ); 
 		wp_enqueue_script('jquery.scrollTo', get_template_directory_uri() . '/assets/js/jquery.scrollTo.js' , array('jquery'), '2.1.2', TRUE ); 
 		wp_enqueue_script('prettyPhoto', get_template_directory_uri() . '/assets/js/prettyPhoto.js' , array('jquery'), '3.1.4', TRUE ); 
 		wp_enqueue_script('tinynav', get_template_directory_uri() . '/assets/js/tinynav.js' , array('jquery'), '1.1', TRUE ); 

@@ -180,6 +180,12 @@ if (!function_exists('suevafree_customize_panel_function')) {
 				   'yellow' => esc_html__( 'Yellow','suevafree'),
 				   'green' => esc_html__( 'Green','suevafree'),
 				   'black' => esc_html__( 'Black','suevafree'),
+				   'clean-yellow' => esc_html__( 'Clean Yellow','suevafree'),
+				   'clean-red' => esc_html__( 'Clean Red','suevafree'),
+				   'clean-turquoise' => esc_html__( 'Clean Turquoise','suevafree'),
+				   'clean-green' => esc_html__( 'Clean Green','suevafree'),
+				   'clean-blue' => esc_html__( 'Clean Blue','suevafree'),
+				   'clean-pink' => esc_html__( 'Clean Pink','suevafree'),
 				),
 				
 				'std' => 'orange',
@@ -508,6 +514,22 @@ if (!function_exists('suevafree_customize_panel_function')) {
 				),
 				
 				'std' => 'on',
+			
+			),
+
+			array(
+				
+				'label' => esc_html__( 'Gallery lightbox.','suevafree'),
+				'description' => esc_html__( 'Select one of available gallery lightbox.','suevafree'),
+				'id' => 'suevafree_gallery_lightbox',
+				'type' => 'select',
+				'section' => 'settings_section',
+				'options' => array (
+				   'prettyphoto' => esc_html__( 'prettyPhoto','suevafree'),
+				   'swipebox' => esc_html__( 'Swipebox','suevafree'),
+				),
+				
+				'std' => 'prettyphoto',
 			
 			),
 
@@ -1093,6 +1115,50 @@ if (!function_exists('suevafree_customize_panel_function')) {
 				'section' => 'footer_section',
 				'std' => '',
 
+			),
+			
+			array( 
+	
+				'label' => esc_html__( 'Trello Account','suevafree'),
+				'description' => esc_html__( 'Insert Trello Account (leave empty if you want to hide the button)','suevafree'),
+				'id' => 'suevafree_footer_trello_button',
+				'type' => 'button',
+				'section' => 'footer_section',
+				'std' => '',
+	
+			),
+	
+			array( 
+	
+				'label' => esc_html__( 'Twitch Account','suevafree'),
+				'description' => esc_html__( 'Insert Twitch Account (leave empty if you want to hide the button)','suevafree'),
+				'id' => 'suevafree_footer_twitch_button',
+				'type' => 'button',
+				'section' => 'footer_section',
+				'std' => '',
+	
+			),
+	
+			array( 
+	
+				'label' => esc_html__( 'Tripadvisor Account','suevafree'),
+				'description' => esc_html__( 'Insert Tripadvisor Account (leave empty if you want to hide the button)','suevafree'),
+				'id' => 'suevafree_footer_tripadvisor_button',
+				'type' => 'button',
+				'section' => 'footer_section',
+				'std' => '',
+	
+			),
+	
+			array( 
+	
+				'label' => esc_html__( 'Vine Account','suevafree'),
+				'description' => esc_html__( 'Insert Vine Account (leave empty if you want to hide the button)','suevafree'),
+				'id' => 'suevafree_footer_vine_button',
+				'type' => 'button',
+				'section' => 'footer_section',
+				'std' => '',
+	
 			),
 
 			array( 

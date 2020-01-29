@@ -10,6 +10,7 @@
 		public $preload_user_agent = false;
 		public $current_page_type = false;
 		public $current_page_content_type = false;
+		public $exclude_current_page_text = false;
 
 		public function __construct(){
 			//to fix: PHP Notice: Undefined index: HTTP_USER_AGENT
@@ -413,7 +414,33 @@
 						add_action('get_footer', array($this, "detect_current_page_type"));
 						add_action('get_footer', array($this, "wp_print_scripts_action"));
 
+						// to exclude current page hook
+						add_action("wpfc_exclude_current_page", array($this, 'exclude_current_page'), 10, 0);
+
 						ob_start(array($this, "callback"));
+					}
+				}
+			}
+		}
+
+		public function exclude_current_page($some = true){
+			$via = debug_backtrace();
+
+			if(isset($via) && is_array($via)){
+				foreach ($via as $key => $value){
+					if($value["function"] == "wpfc_exclude_current_page"){
+						
+						if(defined('WPFC_DEBUG') && (WPFC_DEBUG === true)){
+							if(preg_match("/wp-content\/themes/", $value["file"])){
+								$this->exclude_current_page_text = "<!-- This page has been excluded by ".basename($value["file"])." of the Theme -->";
+							}else if(preg_match("/wp-content\/plugins/", $value["file"])){
+								$this->exclude_current_page_text = "<!-- This page has been excluded by ".basename($value["file"])." of ".preg_replace("/([^\/]+)\/.+/", "$1", plugin_basename($value["file"]))." -->";
+							}
+						}else{
+							$this->exclude_current_page_text = "<!-- This page has been excluded -->";
+						}
+
+						break;
 					}
 				}
 			}
@@ -629,7 +656,9 @@
 
 			$buffer = preg_replace('/<\!--WPFC_PAGE_TYPE_[a-z]+-->/i', '', $buffer);
 
-			if($this->is_json() && (!defined('WPFC_CACHE_JSON') || (defined('WPFC_CACHE_JSON') && WPFC_CACHE_JSON !== true))){
+			if($this->exclude_current_page_text){
+				return $buffer.$this->exclude_current_page_text;
+			}else if($this->is_json() && (!defined('WPFC_CACHE_JSON') || (defined('WPFC_CACHE_JSON') && WPFC_CACHE_JSON !== true))){
 				return $buffer;
 			}else if(preg_match("/Mediapartners-Google|Google\sWireless\sTranscoder/i", $_SERVER['HTTP_USER_AGENT'])){
 				return $buffer;
@@ -1052,6 +1081,16 @@
 					return true;
 				}
 			}
+
+		    if(isset($_SERVER['HTTP_CLOUDFRONT_IS_MOBILE_VIEWER']) && "true" === $_SERVER['HTTP_CLOUDFRONT_IS_MOBILE_VIEWER']){
+		        $is_mobile = true;
+		    }
+
+
+		    if(isset($_SERVER['HTTP_CLOUDFRONT_IS_TABLET_VIEWER']) && "true" === $_SERVER['HTTP_CLOUDFRONT_IS_TABLET_VIEWER']){
+		        $is_mobile = true;
+		    }
+
 		}
 
 		public function isWpLogin($buffer){
