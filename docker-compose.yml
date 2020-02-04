@@ -1,9 +1,10 @@
-version: '3.5'
+version: '2.4'
 services:
   hannablog:
     image: wordpress
     restart: always
     container_name: hannablog
+    mem_limit: 200m
     environment:
       VIRTUAL_HOST: hannablog.oktibor.com
       VIRTUAL_PORT: 80
@@ -22,12 +23,6 @@ services:
     networks:
       - nginx
       - mysql
-    deploy:
-      resources:
-        limits:
-          memory: 200M
-        reservations:
-          memory: 150M
 
 networks:
   nginx:
