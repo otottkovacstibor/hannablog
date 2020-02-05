@@ -9,6 +9,8 @@ class WP_Statistics_Welcome {
 	 */
 	public static function init() {
 		global $WP_Statistics;
+
+		// Check Show WelCome Page
 		if ( $WP_Statistics->get_option( 'show_welcome_page', false ) and ( strpos( $_SERVER['REQUEST_URI'], '/wp-admin/index.php' ) !== false or ( isset( $_GET['page'] ) and $_GET['page'] == 'wps_overview_page' ) ) ) {
 			// Disable show welcome page
 			$WP_Statistics->update_option( 'first_show_welcome_page', true );
@@ -34,19 +36,23 @@ class WP_Statistics_Welcome {
 	 * Welcome page
 	 */
 	public static function page_callback() {
-		$response      = wp_remote_get( 'https://wp-statistics.com/wp-json/plugin/addons' );
-		$response_code = wp_remote_retrieve_response_code( $response );
-		$error         = null;
-		$plugins       = array();
 
-		// Check response
-		if ( is_wp_error( $response ) ) {
-			$error = $response->get_error_message();
-		} else {
-			if ( $response_code == '200' ) {
-				$plugins = json_decode( $response['body'] );
+		// Create Default Variable
+		$error   = null;
+		$plugins = array();
+
+		// Check List Plugins if in Plugins Tab
+		if ( isset( $_GET['tab'] ) and $_GET['tab'] == "addons" ) {
+			$response      = wp_remote_get( 'https://wp-statistics.com/wp-json/plugin/addons' );
+			$response_code = wp_remote_retrieve_response_code( $response );
+			if ( is_wp_error( $response ) ) {
+				$error = $response->get_error_message();
 			} else {
-				$error = $response['body'];
+				if ( $response_code == '200' ) {
+					$plugins = json_decode( $response['body'] );
+				} else {
+					$error = $response['body'];
+				}
 			}
 		}
 

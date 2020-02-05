@@ -31,7 +31,7 @@ class WP_Statistics_Hits {
 		// Set the timestamp value.
 		$this->timestamp = $WP_Statistics->current_date( 'U' );
 		if ( WP_Statistics_Rest::is_rest() ) {
-			$this->timestamp = WP_Statistics_Rest::params( 'timestamp' );
+			$this->timestamp = WP_Statistics_Rest::params( '_' );
 		}
 
 		// Check to see if the user wants us to record why we're excluding hits.
@@ -416,9 +416,7 @@ class WP_Statistics_Hits {
 			$this->current_page_id   = $get_page_type['id'];
 			$this->current_page_type = $get_page_type['type'];
 		}
-
 	}
-
 
 	// This function records unique visitors to the site.
 	public function Visitors() {
@@ -650,9 +648,9 @@ class WP_Statistics_Hits {
 				$page_uri = substr( $page_uri, 0, 255 );
 
 				// If we have already been to this page today (a likely scenario), just update the count on the record.
-				$exist = $wpdb->get_row( "SELECT `page_id` FROM {$wpdb->prefix}statistics_pages WHERE `date` = '{$WP_Statistics->Current_Date( 'Y-m-d' )}' " . ( $is_search === true ? "AND `uri` = '" . $page_uri . "'" : "" ) . "AND `type` = '{$this->current_page_type}' AND `id` = {$this->current_page_id}", ARRAY_A );
+				$exist = $wpdb->get_row( "SELECT `page_id` FROM {$wpdb->prefix}statistics_pages WHERE `date` = '{$WP_Statistics->Current_Date( 'Y-m-d' )}' " . ( $is_search === true ? "AND `uri` = '" . esc_sql( $page_uri ) . "'" : "" ) . "AND `type` = '{$this->current_page_type}' AND `id` = {$this->current_page_id}", ARRAY_A );
 				if ( null !== $exist ) {
-					$sql          = $wpdb->prepare( "UPDATE {$wpdb->prefix}statistics_pages SET `count` = `count` + 1 WHERE `date` = '{$WP_Statistics->Current_Date( 'Y-m-d' )}' " . ( $is_search === true ? "AND `uri` = '" . $page_uri . "'" : "" ) . "AND `type` = '{$this->current_page_type}' AND `id` = %d", $this->current_page_id );
+					$sql          = $wpdb->prepare( "UPDATE {$wpdb->prefix}statistics_pages SET `count` = `count` + 1 WHERE `date` = '{$WP_Statistics->Current_Date( 'Y-m-d' )}' " . ( $is_search === true ? "AND `uri` = '" . esc_sql( $page_uri ) . "'" : "" ) . "AND `type` = '{$this->current_page_type}' AND `id` = %d", $this->current_page_id );
 					$this->result = $wpdb->query( $sql );
 					$page_id      = $exist['page_id'];
 
@@ -772,14 +770,8 @@ class WP_Statistics_Hits {
 		$user_id = 0;
 
 		//if Rest Request
-		if ( WP_Statistics_Rest::is_rest() ) {
-			if ( WP_Statistics_Rest::params( 'user_id' ) != "" ) {
-				$user_id = WP_Statistics_Rest::params( 'user_id' );
-			}
-		} else {
-			if ( is_user_logged_in() ) {
-				return get_current_user_id();
-			}
+		if ( is_user_logged_in() ) {
+			return get_current_user_id();
 		}
 
 		return $user_id;

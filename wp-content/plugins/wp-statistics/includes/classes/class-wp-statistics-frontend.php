@@ -20,13 +20,8 @@ class WP_Statistics_Frontend {
 		//Get Visitor information and Save To Database
 		add_action( 'wp', array( $this, 'init' ) );
 
-		//Add inline Rest Request
-		add_action( 'wp_head', array( $this, 'add_inline_rest_js' ) );
-
 		//Add Html Comment in head
-		if ( ! $WP_Statistics->use_cache ) {
-			add_action( 'wp_head', array( $this, 'html_comment' ) );
-		}
+        add_action( 'wp_head', array( $this, 'html_comment' ) );
 
 		// Check to show hits in posts/pages
 		if ( $WP_Statistics->get_option( 'show_hits' ) ) {
@@ -56,23 +51,20 @@ class WP_Statistics_Frontend {
 	 * Enqueue Scripts
 	 */
 	public function enqueue_scripts() {
-
 		// Load our CSS to be used.
 		if ( is_admin_bar_showing() ) {
 			wp_enqueue_style( 'wpstatistics-css', WP_Statistics::$reg['plugin-url'] . 'assets/css/frontend.css', true, WP_Statistics::$reg['version'] );
 		}
-	}
 
-	/*
-	 * Inline Js
-	 */
-	public function add_inline_rest_js() {
-		global $WP_Statistics;
-
-		if ( $WP_Statistics->use_cache ) {
-			$this->html_comment();
-			echo '<script>var WP_Statistics_http = new XMLHttpRequest();WP_Statistics_http.open(\'POST\', \'' . add_query_arg( array( '_' => time() ), path_join( get_rest_url(), WP_Statistics_Rest::route . '/' . WP_Statistics_Rest::func ) ) . '\', true);WP_Statistics_http.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");WP_Statistics_http.send("' . WP_Statistics_Rest::_POST . '=" + JSON.stringify(' . self::set_default_params() . '));</script>' . "\n";
-		}
+        global $WP_Statistics;
+        if ( $WP_Statistics->use_cache ) {
+            wp_enqueue_script( 'wp-statistics-js', WP_Statistics::$reg['plugin-url'] . 'assets/js/front.min.js', true, WP_Statistics::$reg['version'] );
+            wp_localize_script( 'wp-statistics-js', 'wps_statistics_object',
+                array(
+	                'rest_url' => get_rest_url(),
+	                'wpnonce'  => wp_create_nonce( 'wp_rest' )
+                ));
+        }
 	}
 
 	/*
@@ -86,9 +78,6 @@ class WP_Statistics_Frontend {
 		 */
 		$params = array();
 
-		//Set Url
-		$params['base'] = rtrim( get_rest_url(), "/" );
-
 		//Set Browser
 		$result             = $WP_Statistics->get_UserAgent();
 		$params['browser']  = $result['browser'];
@@ -98,14 +87,8 @@ class WP_Statistics_Frontend {
 		//set referred
 		$params['referred'] = $WP_Statistics->get_Referred();
 
-		//set prefix Rest
-		$params['api'] = rtrim( rest_get_url_prefix(), "/" );
-
 		//Set ip
-		$params['ip'] = $WP_Statistics->get_IP();
-
-		//set hash ip
-		$params['hash_ip'] = $WP_Statistics->get_hash_string();
+		$params['ip'] = esc_html( $WP_Statistics->get_IP() );
 
 		//exclude
 		$check_exclude            = new WP_Statistics_Hits();
@@ -115,7 +98,7 @@ class WP_Statistics_Frontend {
 		//User Agent String
 		$params['ua'] = '';
 		if ( array_key_exists( 'HTTP_USER_AGENT', $_SERVER ) ) {
-			$params['ua'] = $_SERVER['HTTP_USER_AGENT'];
+			$params['ua'] = esc_html( $_SERVER['HTTP_USER_AGENT'] );
 		}
 
 		//track all page
@@ -134,7 +117,7 @@ class WP_Statistics_Frontend {
 		$params['current_page_id']   = $get_page_type['id'];
 
 		if ( array_key_exists( "search_query", $get_page_type ) ) {
-			$params['search_query'] = $get_page_type['search_query'];
+			$params['search_query'] = esc_html( $get_page_type['search_query'] );
 		}
 
 		//page url
@@ -146,15 +129,7 @@ class WP_Statistics_Frontend {
 			$params['user_id'] = get_current_user_id();
 		}
 
-		//Fixed entity decode Html
-		foreach ( (array) $params as $key => $value ) {
-			if ( ! is_scalar( $value ) ) {
-				continue;
-			}
-			$params[ $key ] = html_entity_decode( (string) $value, ENT_QUOTES, 'UTF-8' );
-		}
-
-		return json_encode( $params, JSON_UNESCAPED_SLASHES );
+		return $params;
 	}
 
 	/**

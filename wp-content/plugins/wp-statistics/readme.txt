@@ -3,9 +3,9 @@ Contributors: mostafa.s1990, mehrshaddarzi, ghasemi71ir, GregRoss, dedidata
 Donate link: https://wp-statistics.com/donate/
 Tags: analytics, wordpress analytics, stats, statistics, visit, visitors, hits, chart, browser, today, yesterday, week, month, year, total, post, page, sidebar, google, live visit, search word, agent, google analytics, webmasters, google webmasters, geoip, location
 Requires at least: 3.0
-Tested up to: 5.2.1
+Tested up to: 5.3
 Requires PHP: 5.6
-Stable tag: 12.6.6.1
+Stable tag: 12.6.12
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -126,6 +126,32 @@ http://yourwebsite.com/wp-json/wpstatistics/v1
 To register, go to the Permalink page and update the permalink with press Save Changes.
 
 == Changelog ==
+= 12.6.12 =
+* Improvement: Minor issues.
+
+= 12.6.11 =
+* Improvement: REST API request.
+* Improvement: Minor issues.
+* Fixed: Issue to uninstalling the tables.
+
+= 12.6.10 =
+* Improvement: Admin cache detector issue.
+* Added: Some filter for integration with new Add-On called WP-Statistics Customization.
+
+= 12.6.9 =
+* Fixed: Hit counter issue in some servers that blocking some `XMLHttpRequest` request.
+* Improvement REST API.
+
+= 12.6.8 =
+* Fixed: Coefficient per visitors.
+* Improvement www domain in Top Referring.
+* Improvement REST API.
+
+= 12.6.7 =
+* Improvement and sanitize visitor's IP address.
+* Improvement and sanitize parameters in `WP_Statistics_Rest::hit()`, Thanks Thomas Chauchefoin for the report.
+* Improved: Minor issues.
+
 = 12.6.6.1 =
 * Fixed: issue to showing Hit column for custom post type.
 * Improvement: Sanitize page's title and Escaping that in overview page.
