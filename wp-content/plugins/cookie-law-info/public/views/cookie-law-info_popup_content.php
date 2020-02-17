@@ -20,7 +20,7 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                 $content_length=strlen(strip_tags($privacy_overview_content));
                 $overview_title = trim($overview_title);
                 if(isset($overview_title) === true && $overview_title !== '') {
-                    echo "<h4>".$overview_title."</h4>";    
+                    echo "<h1>".$overview_title."</h1>";    
                 }
                 ?>                                   
                 <div class="cli-privacy-content">
@@ -30,19 +30,6 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
             </div>
         </div>  
         <div class="cli-col-12 cli-align-items-stretch cli-px-0 cli-tab-section-container">
-            <div class="cli-tab-section cli-privacy-tab">
-                <div class="cli-tab-header">
-                    <a class="cli-nav-link cli-settings-mobile" >
-                        <?php echo $overview_title; ?>
-                    </a>
-                </div>
-                <div class="cli-tab-content">
-                    <div class="cli-tab-pane cli-fade">
-                        <p><?php echo $privacy_overview_content;?></p>
-                    </div>
-                </div>
-
-            </div>
             <?php  
             $cookie_categories = self::get_cookie_categories();
             foreach ($cookie_categories as $key => $value) 
@@ -76,8 +63,8 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
                 {
                     $cli_switch=
                     '<div class="cli-switch">
-                        <input type="checkbox" id="checkbox-'.$key.'" class="cli-user-preference-checkbox" data-id="checkbox-'.$key.'" '.$cli_checked.' />
-                        <label for="checkbox-'.$key.'" class="cli-slider" data-cli-enable="'.$cli_enable_text.'" data-cli-disable="'.$cli_disable_text.'">'.$value.'</label>
+                        <input type="checkbox" id="wt-cli-checkbox-'.$key.'" class="cli-user-preference-checkbox"  data-id="checkbox-'.$key.'" '.$cli_checked.' />
+                        <label for="wt-cli-checkbox-'.$key.'" class="cli-slider" data-cli-enable="'.$cli_enable_text.'" data-cli-disable="'.$cli_disable_text.'"><span class="wt-cli-sr-only">'.$value.'</span></label>
                     </div>';
                     $cli_cat_content=isset($third_party_cookie_options['thirdparty_description']) ? $third_party_cookie_options['thirdparty_description'] : '';
                 }
@@ -93,7 +80,7 @@ $necessary_cookie_options=get_option('cookielawinfo_necessary_settings');
             {?>
                 <div class="cli-tab-section">
                     <div class="cli-tab-header">
-                        <a class="cli-nav-link cli-settings-mobile" data-target="<?php echo $key; ?>" data-toggle="cli-toggle-tab" >
+                        <a role="button" tabindex="0" class="cli-nav-link cli-settings-mobile" data-target="<?php echo $key; ?>" data-toggle="cli-toggle-tab" >
                             <?php echo $value ?> 
                         </a>
                     <?php echo $cli_switch; ?>

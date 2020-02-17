@@ -16,11 +16,17 @@ window.addEventListener('load', function(){
 					action = "wpfc_delete_current_page_cache";
 				}
 
+				var data_json = {"action": action, "path" : window.location.pathname};
+
+				if(typeof wpfc_nonce != "undefined" && wpfc_nonce){
+					data_json.nonce = wpfc_nonce;
+				}
+
 				jQuery("#revert-loader-toolbar").show();
 				jQuery.ajax({
 					type: 'GET',
 					url: ajax_url,
-					data : {"action": action, "path" : window.location.pathname},
+					data : data_json,
 					dataType : "json",
 					cache: false, 
 					success: function(data){

@@ -74,9 +74,9 @@ class Cookie_Law_Info {
 		{
 			$this->version = CLI_VERSION;
 		} 
-		else 
+		else 	
 		{
-			$this->version = '1.8.2';
+			$this->version = '1.8.3';
 		}
 		$this->plugin_name = 'cookie-law-info';
 
@@ -708,11 +708,10 @@ class Cookie_Law_Info {
 	      //trigger_error( "Invalid hex color length", E_USER_ERROR );
 	      return $supplied_hex;
 	  }
-
 	  // Start shifting
-	  $RGB_values['R'] = hexdec( $supplied_hex{0} . $supplied_hex{1} );
-	  $RGB_values['G'] = hexdec( $supplied_hex{2} . $supplied_hex{3} );
-	  $RGB_values['B'] = hexdec( $supplied_hex{4} . $supplied_hex{5} );
+	  $RGB_values['R'] = hexdec( $supplied_hex[0] . $supplied_hex[1] );
+	  $RGB_values['G'] = hexdec( $supplied_hex[2] . $supplied_hex[3] );
+	  $RGB_values['B'] = hexdec( $supplied_hex[4] . $supplied_hex[5] );
 
 	  foreach ( $RGB_values as $c => $v ) {
 	    switch ( $shift_method ) {

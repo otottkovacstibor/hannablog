@@ -2,7 +2,11 @@
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
     die;
-} 
+}  
+if (!current_user_can('manage_options')) 
+{
+    wp_die(__('You do not have sufficient permission to perform this operation', 'cookie-law-info'));
+}
 $options = array(
     'privacy_overview_title',
     'privacy_overview_content',

@@ -307,8 +307,8 @@ class Cookie_Law_Info_Public {
 
 	/** Removes leading # characters from a string */
 	public static function cookielawinfo_remove_hash( $str ) 
-	{
-	  if( $str{0} == "#" ) 
+	{	
+	  if( $str[0] == "#" ) 
 	  {
 	    $str = substr( $str, 1, strlen($str) );
 	  }
@@ -499,12 +499,14 @@ class Cookie_Law_Info_Public {
         if(isset($GLOBALS['wp_fastest_cache']) && method_exists($GLOBALS['wp_fastest_cache'],'deleteCache')) 
         {
           	$cli_flush_cache=1;
-        }
+		}
+		if($cli_flush_cache == 1):
 		?>
 		<script type="text/javascript">
 			var cli_flush_cache=<?php echo $cli_flush_cache; ?>;
 		</script>
 		<?php
+		endif;
 	}
 
 

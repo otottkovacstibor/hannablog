@@ -79,30 +79,32 @@
 		}
 
 		public function set_cache_file_path(){
+			$type = "all";
 
 			if($this->isMobile() && isset($this->options->wpFastestCacheMobile)){
 				if(class_exists("WpFcMobileCache") && isset($this->options->wpFastestCacheMobileTheme)){
-					$wpfc_mobile = new WpFcMobileCache();
-					$this->cacheFilePath = $this->getWpContentDir("/cache/wpfc-mobile-cache").$_SERVER["REQUEST_URI"];
-				}
-			}else{
-				if($this->isPluginActive('gtranslate/gtranslate.php')){
-					if(isset($_SERVER["HTTP_X_GT_LANG"])){
-						$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["HTTP_X_GT_LANG"].$_SERVER["REQUEST_URI"];
-					}else if(isset($_SERVER["REDIRECT_URL"]) && $_SERVER["REDIRECT_URL"] != "/index.php"){
-						$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["REDIRECT_URL"];
-					}else if(isset($_SERVER["REQUEST_URI"])){
-						$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["REQUEST_URI"];
-					}
-				}else{
-					$this->cacheFilePath = $this->getWpContentDir("/cache/all/").$_SERVER["REQUEST_URI"];
+					$type = "wpfc-mobile-cache";
 				}
 			}
 
+			if($this->isPluginActive('gtranslate/gtranslate.php')){
+				if(isset($_SERVER["HTTP_X_GT_LANG"])){
+					$this->cacheFilePath = $this->getWpContentDir("/cache/".$type."/").$_SERVER["HTTP_X_GT_LANG"].$_SERVER["REQUEST_URI"];
+				}else if(isset($_SERVER["REDIRECT_URL"]) && $_SERVER["REDIRECT_URL"] != "/index.php"){
+					$this->cacheFilePath = $this->getWpContentDir("/cache/".$type."/").$_SERVER["REDIRECT_URL"];
+				}else if(isset($_SERVER["REQUEST_URI"])){
+					$this->cacheFilePath = $this->getWpContentDir("/cache/".$type."/").$_SERVER["REQUEST_URI"];
+				}
+			}else{
+				$this->cacheFilePath = $this->getWpContentDir("/cache/".$type."/").$_SERVER["REQUEST_URI"];
+
+				// for /?s=
+				$this->cacheFilePath = preg_replace("/(\/\?s\=)/", "$1/", $this->cacheFilePath);
+			}
 
 
 			$this->cacheFilePath = $this->cacheFilePath ? rtrim($this->cacheFilePath, "/")."/" : "";
-			$this->cacheFilePath = str_replace("/cache/all//", "/cache/all/", $this->cacheFilePath);
+			$this->cacheFilePath = preg_replace("/\/cache\/(all|wpfc-mobile-cache)\/\//", "/cache/$1/", $this->cacheFilePath);
 
 
 			if(strlen($_SERVER["REQUEST_URI"]) > 1){ // for the sub-pages
@@ -292,6 +294,13 @@
 					return 0;
 				}
 
+				// to check permalink if it does not end with slash
+				if(isset($_SERVER['REQUEST_URI']) && preg_match("/[^\/]+\/$/", $_SERVER['REQUEST_URI'])){
+					if(!preg_match("/\/$/", get_option('permalink_structure'))){
+						return 0;
+					}
+				}
+
 				if(isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == "POST"){
 					return 0;
 				}
@@ -322,13 +331,6 @@
 
 				if(!preg_match("/www\./i", get_option("home")) && preg_match("/www\./i", $_SERVER['HTTP_HOST'])){
 					return 0;
-				}
-
-				//different domain names may be used for different languages
-				if($this->isPluginActive('polylang/polylang.php')){
-					if(!preg_match("/".preg_quote(str_replace("www.", "", $_SERVER["HTTP_HOST"]), "/")."/i", get_option("home"))){
-						return 0;
-					}
 				}
 
 				if($this->exclude_page()){

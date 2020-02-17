@@ -727,7 +727,7 @@
 			if($this->is_trailing_slash()){
 				$trailing_slash_rule = "RewriteCond %{REQUEST_URI} \/$"."\n";
 			}else{
-				//toDo
+				$trailing_slash_rule = "RewriteCond %{REQUEST_URI} ![^\/]+\/$"."\n";
 			}
 
 			$data = "# BEGIN WpFastestCache"."\n".
@@ -933,8 +933,10 @@
 			}else{
 				$translation_file_name = $this->options->wpFastestCacheLanguage;
 
-				if($translation_file_name == "es"){
-					$translation_file_name = "es_ES";
+				if(preg_match("/^(de|es|fr|it|tr)$/", $translation_file_name)){
+					$translation_file_name = $translation_file_name."_".strtoupper($translation_file_name);
+				}else if($translation_file_name == "sv"){
+					$translation_file_name = "sv_SE";
 				}
 
 				if(file_exists(WPFC_MAIN_PATH. "languages/wp-fastest-cache-".$translation_file_name.".po")){
@@ -1366,7 +1368,7 @@
 										<div class="inputCon">
 											<input type="hidden" value="<?php echo $wpFastestCacheLazyLoad_placeholder; ?>" id="wpFastestCacheLazyLoad_placeholder" name="wpFastestCacheLazyLoad_placeholder">
 											<input type="hidden" value="<?php echo $wpFastestCacheLazyLoad_keywords; ?>" id="wpFastestCacheLazyLoad_keywords" name="wpFastestCacheLazyLoad_keywords">
-											<input type="hidden" value="<?php echo $wpFastestCacheLazyLoad_exclude_full_size_img; ?>" id="wpFastestCacheLazyLoad_exclude_full_size_img" name="wpFastestCacheLazyLoad_exclude_full_size_img">
+											<input style="display: none;" type="checkbox" <?php echo $wpFastestCacheLazyLoad_exclude_full_size_img; ?>  id="wpFastestCacheLazyLoad_exclude_full_size_img" name="wpFastestCacheLazyLoad_exclude_full_size_img">
 											
 											<input type="checkbox" <?php echo $wpFastestCacheLazyLoad; ?> id="wpFastestCacheLazyLoad" name="wpFastestCacheLazyLoad"><label for="wpFastestCacheLazyLoad"><?php _e("Load images and iframes when they enter the browsers viewport", "wp-fastest-cache"); ?></label>
 										</div>
@@ -1719,9 +1721,13 @@
 				    			</div>
 				    			<div class="wpfc-premium-step-footer">
 				    				<?php
-				    					if(in_array(get_bloginfo('language'), array("tr-TR", "tr"))){
-				    						$premium_price = "150TL";
+				    					if(in_array(get_bloginfo('language'), array("tr-TR", "tr", "it-IT", "nl", "fr-FR", "ja", "de-AT", "en-CA", "en-GB"))){
 				    						$premium_buy_link = "https://www.wpfastestcache.com/#buy";
+				    						$premium_price = "$49.99";
+
+				    						if(in_array(get_bloginfo('language'), array("tr-TR", "tr"))){
+				    							$premium_price = "150TL";
+				    						}
 				    					}else{
 					    					$premium_price = "$49.99";
 					    					$premium_buy_link = "https://api.wpfastestcache.net/paypal/buypremium/";

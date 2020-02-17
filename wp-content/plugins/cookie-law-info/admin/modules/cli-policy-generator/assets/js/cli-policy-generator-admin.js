@@ -7,17 +7,17 @@
 			cli_pg_lefth_tmr:null,
 			cli_pg_editormode_tmr:null,
 			active_elm:null,
-			autosave_interval:2000,
+			autosave_interval:10000,
 			onPrg:false,
 			Set:function()
 			{
 				this.leftBoxHeight();
 				this.tabView();
 				this.regAddNew();
+				this.regAutoSaveForPreview();
 				setTimeout(function(){
 					CLI_pg.editOnChange();
 				},1000);
-				this.regAutoSaveForPreview();
 				this.regSaveData();
 				this.refreshCurrentPolicyPageId();
 			},
@@ -121,36 +121,49 @@
 				});
 			},
 			regAutoSaveForPreview:function()
-			{
-				var content_data=this.genContentData();
-				
-				var data = {
-		            action: 'cli_policy_generator',
-		            security: cli_policy_generator.nonces.cli_policy_generator,
-		            cli_policy_generator_action:'autosave_contant_data',
-		            content_data:content_data,
-		            page_id:cli_policy_generator.page_id,
-		            enable_webtofee_powered_by:($('[name="enable_webtofee_powered_by"]').is(':checked') ? 1 : 0)
-		        };
-		        $.ajax({
-					url: cli_policy_generator.ajax_url,
-		            data: data,
-		            datatype:'json',
-		            type: 'POST',
-		            success:function(data) 
-		            {
-		               setTimeout(function(){
-		               		CLI_pg.regAutoSaveForPreview();
-		               },CLI_pg.autosave_interval);
-		            },
-		            error:function()
-		            {
-		            	setTimeout(function(){
-		               		CLI_pg.regAutoSaveForPreview();
-		               },CLI_pg.autosave_interval);
-		            }
+			{	
+				$('[name="cli_pg_live_preview"]').on('click',function(event){
+					event.preventDefault();
+					if(CLI_pg.onPrg)
+					{
+						return false;
+					}
+					var content_data=CLI_pg.genContentData();
+					var preview_page_url=$(this).attr('href');
+					var data = {
+						action: 'cli_policy_generator',
+						security: cli_policy_generator.nonces.cli_policy_generator,
+						cli_policy_generator_action:'autosave_contant_data',
+						content_data:content_data,
+						page_id:cli_policy_generator.page_id,
+						enable_webtofee_powered_by:($('[name="enable_webtofee_powered_by"]').is(':checked') ? 1 : 0)
+					};
+					$.ajax({
+						url: cli_policy_generator.ajax_url,
+						data: data,
+						datatype:'json',
+						type: 'POST',
+						success:function(data) 
+						{	
+							data=JSON.parse(data);
+							CLI_pg.onPrg=false;
+							if(data.response===true)
+							{	
+								window.location.href=preview_page_url;
+							}
+							else
+							{
+								cli_notify_msg.error(cli_policy_generator.labels.error);
+							}
+						},
+						error:function()
+						{
+							CLI_pg.onPrg=false;
+							$('.cli_pg_footer a').css({'opacity':1,'cursor':'pointer'});
+							cli_notify_msg.error(cli_policy_generator.labels.error);
+						}
+					});
 				});
-
 			},
 			editOnChange:function()
 			{

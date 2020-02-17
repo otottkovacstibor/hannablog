@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 5.3
-Stable tag: 0.9.0.2
+Stable tag: 0.9.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,15 @@ The free version is enough to speed up your site but in the premium version ther
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.9.0.3 =
+* [FEATURE] Compatible with Multiple Domain Mapping on single site
+* [BETA FEATURE] to create cache after publishing new post or updating a post [<a target="_blank" href="https://www.wpfastestcache.com/features/automatic-cache/">Details</a>]
+* to fix clearing search (/?s=) result cache 
+* to add settings link on the plugin list
+* [FEATURE] Compatible with Polylang with one different subdomain or domain per language
+* to exclude url which ends with slash if the permalink does not end with slush
+* to exclude images for cdn if the url contains brizy_media=
 
 = 0.9.0.2 =
 * <strong>[FEATURE]</strong> to add Spanish (Argentina) language

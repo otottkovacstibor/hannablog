@@ -1009,7 +1009,7 @@ color:inherit;
     border:none;
     min-width: 40px;
 }
-.cli-tab-container h4 {
+.cli-tab-container h4,.cli-tab-container h1 {
 	font-family: inherit;
     font-size: 16px;
     margin-bottom: 15px;
@@ -1176,4 +1176,10 @@ span.cli-necessary-caption {
 .cli_settings_button
 {
     cursor: pointer;
+}
+/* Accessibility Fix */
+.wt-cli-sr-only
+{
+    display: none;
+    font-size:16px;
 }

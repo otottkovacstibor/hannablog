@@ -15,7 +15,12 @@ class Cookie_Law_Info_Policy_Generator_Ajax extends Cookie_Law_Info_Cli_Policy_G
 	* Main Ajax hook for processing requests
 	*/
 	public function ajax_policy_generator()
-	{
+	{	
+		check_ajax_referer('cli_policy_generator','security');
+		if (!current_user_can('manage_options')) 
+		{
+		    wp_die(__('You do not have sufficient permission to perform this operation', 'cookie-law-info'));
+		}
 		$out=array(
 			'response'=>false,
 			'message'=>__('Unable to handle your request.','cookie-law-info'),

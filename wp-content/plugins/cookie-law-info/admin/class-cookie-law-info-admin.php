@@ -214,7 +214,11 @@ class Cookie_Law_Info_Admin {
 	public function admin_non_necessary_cookie_page()
 	{
 	    wp_enqueue_style($this->plugin_name);
-	    wp_enqueue_script($this->plugin_name);
+		wp_enqueue_script($this->plugin_name);
+		if (!current_user_can('manage_options')) 
+		{
+		    wp_die(__('You do not have sufficient permission to perform this operation', 'cookie-law-info'));
+		}
 		$options = array('thirdparty_on_field',
 			'third_party_default_state',
 			'thirdparty_description',
@@ -272,7 +276,11 @@ class Cookie_Law_Info_Admin {
 	public function admin_necessary_cookie_page()
 	{
 	    wp_enqueue_style($this->plugin_name);
-	    wp_enqueue_script($this->plugin_name);
+		wp_enqueue_script($this->plugin_name);
+		if (!current_user_can('manage_options')) 
+		{
+		    wp_die(__('You do not have sufficient permission to perform this operation', 'cookie-law-info'));
+		}
 		$options = array('necessary_description'
 	    );
 	    // Get options:
