@@ -200,6 +200,13 @@ $this->whitelistedParams['request.fileNames'][] = array (
   ),
 );
 
+$this->rules[208] = wfWAFRule::create($this, 208, NULL, 'xss', '100', 'Strong Testimonials < 2.40.1 - Stored Cross Site Scripting (XSS)', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/post\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', new wfWAFRuleVariable($this, 'xssRegex', NULL), array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.body',
+  1 => 'custom',
+), array (
+))))));
 $this->rules[119] = wfWAFRule::create($this, 119, NULL, 'rce', '100', 'Duplicator Installer wp-config.php Overwrite', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/installer(-backup)?\\.php/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'equals', '3', array(wfWAFRuleComparisonSubject::create($this, array (
   0 => 'request.body',
@@ -1996,7 +2003,7 @@ wfWAFRuleComparisonSubject::create($this, array (
 ), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
-$this->rules[134] = wfWAFRule::create($this, 134, NULL, 'auth-bypass', '100', 'Siteground Optimizer <= 5.0.12 - Improper REST capabilities checks', 1, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+siteground-optimizer[\\/]+v1/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+$this->rules[134] = wfWAFRule::create($this, 134, NULL, 'auth-bypass', '100', 'Siteground Optimizer <= 5.0.12 - Improper REST capabilities checks', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+siteground-optimizer[\\/]+v1/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/siteground-optimizer[\\/]+v1/i', array(wfWAFRuleComparisonSubject::create($this, array (
   0 => 'request.body',
   1 => 'rest_route',
@@ -2599,5 +2606,27 @@ wfWAFRuleComparisonSubject::create($this, array (
   1 => 'auth_key',
 ), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'notEquals', '192.200.108.100', array(wfWAFRuleComparisonSubject::create($this, 'request.ip', array (
+))))));
+$this->rules[207] = wfWAFRule::create($this, 207, NULL, 'auth-bypass', '100', 'ThemeGrill Demo Importer < 1.6.2 - Auth Bypass & Database Wipe', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.queryString',
+  1 => 'do_reset_wordpress',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.queryString',
+  1 => 'do_reset_wordpress',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[209] = wfWAFRule::create($this, 209, NULL, 'rce', '100', 'TRX Addons >= 1.6.50 - Remote Code Execution', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+trx_addons[\\/]+V2[\\/]+get[\\/]+sc_layout/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/trx_addons[\\/]+V2[\\/]+get[\\/]+sc_layout/i', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.body',
+  1 => 'rest_route',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.queryString',
+  1 => 'rest_route',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
 ?>
