@@ -3292,4 +3292,375 @@ wfWAFRuleComparisonSubject::create($this, array (
 ), array (
 ))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
+$this->rules[220] = wfWAFRule::create($this, 220, NULL, 'auth-bypass', '100', 'WAF-RULE-220', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/\\/wp\\-admin[\\/]+admin\\-ajax\\.php/i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'md5Equals', 'c881e4373a35aa645a60c9c4f6056d17', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'e4320523e9c1db973220080cd0146a70', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '#^idx_#', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'notEquals', 'idx_get_saves', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'notEquals', 'idx_check_login', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'editor', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[222] = wfWAFRule::create($this, 222, NULL, 'auth-bypass', '100', 'WAF-RULE-222', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/admin\\-ajax\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'md5Equals', 'e8a43789cce4eaee66f5af68e832f210', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '46d1f7a3b426837651e70f1e4525e2fc', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'e2747695b1d30daca617a8c5708d9fec', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '01da931955bedd5def99acca8931c0af', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '7851f092d332ecc0aa45a145383873ac', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '26c150f7c6b4e92cb94ff82bd2dace8b', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '3b699ea99a59eacb2157e3784d24cd4e', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '8fddb32f887bf3d76f694df551ca98ae', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'a0cd543807039401fde4e3e326215385', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'eaccb4631bf2ad334f5d2847ee59e5de', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'fa47c486e5b049fe22ad7d62931da666', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'e2a32cf249503cbd2063fb971f767b1d', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'e981587409a4cabc1fcb7e8da5020ba9', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '659adcbd54c2d533ecccf5ec8cc20ba2', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'f05fb5311d8e8bc2c74e9aea99ea06f8', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '17d19b0403f386b201665d49d2cf229a', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[223] = wfWAFRule::create($this, 223, NULL, 'bypass', '100', 'WAF-RULE-223', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/\\/wp\\-admin[\\/]+admin\\-ajax\\.php/i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'md5Equals', 'a979024825634ef52fd7fca2404206e4', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[224] = wfWAFRule::create($this, 224, NULL, 'xss', '100', 'WAF-RULE-224', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/admin\\-(?:ajax|post)\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#^c(?:ore)?37_lp_#', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '#^wplx_campaign#', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '32003126ef405405da2c71a534a8acab', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '28f81077c8efbd32c9d5871762b937aa', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'editor', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[225] = wfWAFRule::create($this, 225, NULL, 'xss', '100', 'WAF-RULE-225', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/admin\\-ajax\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'md5Equals', 'd067cd4e3ec93478796872d23a8f53df', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', 'a5a47552eca02003e86edf3c24d40a06', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'editor', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/admin\\-post\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'md5Equals', 'b08d94100a708384dd382c719038cae0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '19d7c53678e3f0dce91ef07ceb2f7b50', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'md5Equals', '3ac02641cf41c7283e5aef8a851e0ae8', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '418c5509e2171d55b0aee5c2ea4442b5',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))))));
+$this->rules[226] = wfWAFRule::create($this, 226, NULL, 'auth-bypass', '100', 'WAF-RULE-226', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '199f203c0e63313383b7ee7b26a61e3e',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '199f203c0e63313383b7ee7b26a61e3e',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '53f932d9758ddedf3eb8bfa6138ada87',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '53f932d9758ddedf3eb8bfa6138ada87',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '178b343ef715f054a745748cae356282',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '178b343ef715f054a745748cae356282',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '2654b721f3e5a5d8afaa001565297405',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '2654b721f3e5a5d8afaa001565297405',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '138323282685d8fb70094a6650e888ea',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '138323282685d8fb70094a6650e888ea',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '3fa7c98035c506117d6f0d99d2ed67d0',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '3fa7c98035c506117d6f0d99d2ed67d0',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '61b92fa8340efd655d4e925b6cc24b59',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '61b92fa8340efd655d4e925b6cc24b59',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '7ea2dc58336ce62017ff55732a05bc18',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => '7ea2dc58336ce62017ff55732a05bc18',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '3e7d4583f80795791a2a137abf97773a',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '3e7d4583f80795791a2a137abf97773a',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '967851ebf030bdda557665889885f826',
+), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => '967851ebf030bdda557665889885f826',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
 ?>
