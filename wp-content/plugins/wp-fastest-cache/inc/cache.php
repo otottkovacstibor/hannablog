@@ -140,6 +140,18 @@
 			if(preg_match("/\.{2,}/", $this->cacheFilePath)){
 				$this->cacheFilePath = false;
 			}
+
+			if($this->isMobile()){
+				if(isset($this->options->wpFastestCacheMobile)){
+					if(!class_exists("WpFcMobileCache")){
+						$this->cacheFilePath = false;
+					}else{
+						if(!isset($this->options->wpFastestCacheMobileTheme)){
+							$this->cacheFilePath = false;
+						}
+					}
+				}
+			}
 		}
 
 		public function remove_url_paramters(){
@@ -777,7 +789,7 @@
 					$content = str_replace("<!--WPFC_FOOTER_START-->", "", $content);
 
 
-					if(isset($this->options->wpFastestCacheLazyLoad)){
+					if(isset($this->options->wpFastestCacheLazyLoad) && class_exists("WpFastestCachePowerfulHtml")){
 						$execute_lazy_load = true;
 						
 						// to disable Lazy Load if the page is amp
@@ -876,7 +888,8 @@
 				$content = preg_replace_callback("/(jsFileLocation)\s*\:[\"\']([^\"\']+)[\"\']/i", array($this, 'cdn_replace_urls'), $content);
 
 				// <form data-product_variations="[{&quot;src&quot;:&quot;//domain.com\/img.jpg&quot;}]">
-				$content = preg_replace_callback("/data-product_variations\=[\"\'][^\"\']+[\"\']/i", array($this, 'cdn_replace_urls'), $content);
+				// <div data-siteorigin-parallax="{&quot;backgroundUrl&quot;:&quot;https:\/\/domain.com\/wp-content\/TOR.jpg&quot;,&quot;backgroundSize&quot;:[830,467],&quot;}" data-stretch-type="full">
+				$content = preg_replace_callback("/(data-product_variations|data-siteorigin-parallax)\=[\"\'][^\"\']+[\"\']/i", array($this, 'cdn_replace_urls'), $content);
 
 				// <object data="https://site.com/source.swf" type="application/x-shockwave-flash"></object>
 				$content = preg_replace_callback("/<object[^\>]+(data)\s{0,2}\=[\'\"]([^\'\"]+)[\'\"][^\>]+>/i", array($this, 'cdn_replace_urls'), $content);

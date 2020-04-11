@@ -90,8 +90,8 @@ if ( ! function_exists( 'suevafree_header_cart' ) ) {
             <div class="header-cart">
             
                 <a class="cart-contents" href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>" title="<?php esc_attr_e( 'View your shopping cart','suevafree' ); ?>">
-                    <i class="fa fa-shopping-cart"></i>
-					<span class="cart-count"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->cart_contents_count, 'suevafree' ), WC()->cart->cart_contents_count ); ?></span>  
+                    <i class="fa <?php echo esc_attr(suevafree_setting('suevafree_woocommerce_header_icon', 'fa-shopping-basket'));?>"></i>
+                    <span class="cart-count"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->cart_contents_count, 'suevafree' ), WC()->cart->cart_contents_count ); ?></span>  
                 </a>
                             
                 <div class="header-cart-widget">
@@ -118,7 +118,7 @@ if ( ! function_exists( 'suevafree_cart_link_fragment' ) ) {
 
 ?>
 		<a class="cart-contents" href="<?php echo esc_url(WC()->cart->get_cart_url()); ?>" title="<?php esc_attr_e( 'View your shopping cart','suevafree' ); ?>">
-            <i class="fa fa-shopping-cart"></i>
+			<i class="fa <?php echo esc_attr(suevafree_setting('suevafree_woocommerce_header_icon', 'fa-shopping-basket'));?>"></i>
 			<span class="cart-count"><?php echo sprintf ( _n( '%d', '%d', WC()->cart->cart_contents_count, 'suevafree' ), WC()->cart->cart_contents_count ); ?></span>  
 		</a>
         

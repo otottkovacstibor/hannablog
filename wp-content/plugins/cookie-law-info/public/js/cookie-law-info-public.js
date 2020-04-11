@@ -249,11 +249,10 @@ var CLI=
 			var strippedText = jQuery('<div />').html(textBlock.html()); 
 			strippedText.find('table').remove();        
 			textBlock.html(strippedText.html());
-			while (textBlock.text().length > 250 ) 
-			{
-				textBlock.text(function(index, text) {
-					return text.replace(/\W*\s(\S)*$/, '...');
-				});
+			currentText = textBlock.text();
+			if(currentText.trim().length > 250){
+				var newStr = currentText.substring(0, 250);
+				textBlock.empty().html(newStr).append('...');
 			}
 		},     
 		replaceText: function ( textBlock, original ){

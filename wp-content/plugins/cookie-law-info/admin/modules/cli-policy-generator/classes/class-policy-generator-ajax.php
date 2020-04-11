@@ -27,9 +27,9 @@ class Cookie_Law_Info_Policy_Generator_Ajax extends Cookie_Law_Info_Cli_Policy_G
 		);
 		$non_json_response=array();
 		if(isset($_POST['cli_policy_generator_action']))
-		{
-			$cli_policy_generator_action=$_POST['cli_policy_generator_action'];
-			$allowed_actions=array('autosave_contant_data','save_contentdata','get_policy_pageid');			
+		{	
+			$allowed_actions = array('autosave_contant_data','save_contentdata','get_policy_pageid');
+			$cli_policy_generator_action = sanitize_text_field( isset( $_POST['cli_policy_generator_action'] ) && in_array( $_POST['cli_policy_generator_action'], $allowed_actions ) ? $_POST['cli_policy_generator_action'] : '' );
 			if(in_array($cli_policy_generator_action,$allowed_actions) && method_exists($this,$cli_policy_generator_action))
 			{
 				$out=$this->{$cli_policy_generator_action}();
@@ -77,9 +77,9 @@ class Cookie_Law_Info_Policy_Generator_Ajax extends Cookie_Law_Info_Cli_Policy_G
 			'response'=>true,
 			'er'=>''
 		);
-		$content_data=isset($_POST['content_data']) ? $_POST['content_data'] : array();
-		$page_id=(int) isset($_POST['page_id']) ? $_POST['page_id']*1 : 0;
-		$enable_webtofee_powered_by=(int) isset($_POST['enable_webtofee_powered_by']) ? $_POST['enable_webtofee_powered_by']*1 : 0;
+		$content_data = isset($_POST['content_data']) ? $_POST['content_data'] : array();
+		$page_id = (int) sanitize_text_field( isset( $_POST['page_id'] ) ? $_POST['page_id'] : 0 );
+		$enable_webtofee_powered_by = (int) isset($_POST['enable_webtofee_powered_by']) ? $_POST['enable_webtofee_powered_by'] : 0;
 		$id=wp_insert_post(
 			array(
 				'ID'=>$page_id, //if ID is zero it will create new page otherwise update
@@ -99,7 +99,7 @@ class Cookie_Law_Info_Policy_Generator_Ajax extends Cookie_Law_Info_Cli_Policy_G
 		}else
 		{
 			Cookie_Law_Info_Cli_Policy_Generator::set_cookie_policy_pageid($id);
-			$out['url']=get_edit_post_link($id);
+			$out['url'] = get_edit_post_link($id);
 		}
 		return $out;
 	}
@@ -118,9 +118,9 @@ class Cookie_Law_Info_Policy_Generator_Ajax extends Cookie_Law_Info_Cli_Policy_G
 			'response'=>true,
 			'er'=>''
 		);
-		$content_data=isset($_POST['content_data']) ? $_POST['content_data'] : array();
-		$page_id=isset($_POST['page_id']) ? $_POST['page_id'] : '';
-		$enable_webtofee_powered_by=(int) isset($_POST['enable_webtofee_powered_by']) ? $_POST['enable_webtofee_powered_by']*1 : 0;
+		$content_data = isset($_POST['content_data']) ? $_POST['content_data'] : array();
+		$page_id= (int) sanitize_text_field( isset($_POST['page_id']) ? $_POST['page_id'] : '' );
+		$enable_webtofee_powered_by=(int) isset($_POST['enable_webtofee_powered_by']) ? $_POST['enable_webtofee_powered_by'] : 0;
 		if(is_array($content_data))
 		{
 			$content_html=Cookie_Law_Info_Cli_Policy_Generator::generate_page_content($enable_webtofee_powered_by,$content_data);

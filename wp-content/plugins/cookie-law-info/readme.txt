@@ -3,8 +3,8 @@ Contributors: webtoffee
 Donate link: https://www.webtoffee.com/plugins/ 
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
-Tested up to: 5.3
-Stable tag: 1.8.3
+Tested up to: 5.4
+Stable tag: 1.8.7
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -142,6 +142,25 @@ See http://cookielawinfo.com for more information on what is required.
 4. Header (with custom styles)
 
 == Changelog ==
+
+= 1.8.7 =
+
+* Tested ok with Wordpress version 5.4.0
+
+= 1.8.6 =
+
+* [Bug fix] Privacy overview is not visible if the content is in Cyrillic alphabets
+* [Improvements] Fixed compatibility issues with Decorator – WooCommerce Email Customizer
+
+= 1.8.5 =
+
+* Bug fix w.r.t the plugin release version 1.8.4
+
+= 1.8.4 =
+
+* Defaulted privacy overview heading tag to H4
+* Introduced 'wt_cli_change_privacy_overview_title_tag' filter to change privacy overview heading tag
+* Introduced 'wt_cli_add_custom_cookie_categories_name' filter to change cookie category names
 
 = 1.8.3 =
 
@@ -386,7 +405,6 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.8.3 =
+= 1.8.7 =
 
-* PHP 7.4 compatibility
-* Security fix
+* Tested ok with Wordpress version 5.4.0

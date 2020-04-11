@@ -74,6 +74,7 @@ class Cookie_Law_Info_Public {
 			'necessary'=>__('Necessary','cookie-law-info'),
 			'non-necessary' => __('Non-necessary','cookie-law-info'),
 		);
+		$cookie_categories = apply_filters('wt_cli_add_custom_cookie_categories_name', $cookie_categories);
 		return $cookie_categories;
 	}
 	public static function wt_cli_check_thirdparty_state()
@@ -153,7 +154,7 @@ class Cookie_Law_Info_Public {
 			
 			foreach ($cookie_categories as $key => $value) 
 			{ 	
-				if(empty($_COOKIE["cookielawinfo-checkbox-$key"])) 
+				if( empty($_COOKIE["cookielawinfo-checkbox-$key"]) ) 
 				{	
 					if($key === 'non-necessary' ) {
 
@@ -325,12 +326,13 @@ class Cookie_Law_Info_Public {
 	 This function should be attached to the wp_footer action hook.
 	*/
 	public function cookielawinfo_inject_cli_script() 
-	{
-	  $the_options = Cookie_Law_Info::get_settings();
+	{		
+		global $wp_customize;
+	    $the_options = Cookie_Law_Info::get_settings();
 	  	if ( $the_options['is_on'] == true )
 	  	{ 	
 			// Output the HTML in the footer:
-				$message =nl2br($the_options['notify_message']);
+			$message =nl2br($the_options['notify_message']);
 	    	$str = do_shortcode( stripslashes ( $message ) );
 	        $str = __($str,'cookie-law-info');
 	        $head= __($the_options['bar_heading_text'],'cookie-law-info');
@@ -342,7 +344,7 @@ class Cookie_Law_Info_Public {
 		    
 		    //if($the_options['showagain_tab'] === true) 
 		    //{
-		    	$show_again=__($the_options["showagain_text"],'cookie-law-info');
+		    	$show_again=__( stripslashes( $the_options["showagain_text"] ),'cookie-law-info');
 		      	$notify_html .= '<div id="' . $this->cookielawinfo_remove_hash( $the_options["showagain_div_id"] ) . '" style="display:none;"><span id="cookie_hdr_showagain">'.$show_again.'</span></div>';
 		    //}
 		    global $wp_query;
@@ -366,6 +368,9 @@ class Cookie_Law_Info_Public {
 			    	}			    	
 			    }
 			}		    
+			if( isset( $wp_customize ) ) {
+				$notify_html = '';
+			}
 		    $notify_html = apply_filters('cli_show_cookie_bar_only_on_selected_pages',$notify_html,$post_slug);
 		    require_once plugin_dir_path( __FILE__ ).'views/cookie-law-info_bar.php';
 	  	}
@@ -377,16 +382,16 @@ class Cookie_Law_Info_Public {
 	     $the_options = Cookie_Law_Info::get_settings();	      
 	     if($the_options['is_on'] == true && !is_admin()) 
 	     {
-			$third_party_cookie_options=get_option('cookielawinfo_thirdparty_settings');
+			$third_party_cookie_options = get_option('cookielawinfo_thirdparty_settings');
 	        if(!empty($third_party_cookie_options))
 	        {	
 				$thirdparty_on_field = isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
 				$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
-				if($wt_cli_is_thirdparty_enabled == true && isset($_COOKIE['viewed_cookie_policy']))
+				if($wt_cli_is_thirdparty_enabled == true && isset( $_COOKIE['viewed_cookie_policy'] ) && isset( $_COOKIE["cookielawinfo-checkbox-non-necessary"] ))
 				{
 					if($_COOKIE['viewed_cookie_policy']=='yes' && $_COOKIE["cookielawinfo-checkbox-non-necessary"] =='yes')
 					{   
-						echo (isset($third_party_cookie_options['thirdparty_head_section'])) ? $third_party_cookie_options['thirdparty_head_section'] : '';
+						echo wp_unslash( isset($third_party_cookie_options['thirdparty_head_section']) ? $third_party_cookie_options['thirdparty_head_section'] : '' );
 					}
 				}	           
 	       	}
@@ -404,11 +409,11 @@ class Cookie_Law_Info_Public {
 	        {	
 				$thirdparty_on_field = isset($third_party_cookie_options['thirdparty_on_field']) ? $third_party_cookie_options['thirdparty_on_field'] : false;
 				$wt_cli_is_thirdparty_enabled = Cookie_Law_Info::sanitise_settings('thirdparty_on_field',$thirdparty_on_field);
-		        if($wt_cli_is_thirdparty_enabled == true  && isset($_COOKIE['viewed_cookie_policy']))
+		        if( $wt_cli_is_thirdparty_enabled == true  && isset($_COOKIE['viewed_cookie_policy']) && isset( $_COOKIE["cookielawinfo-checkbox-non-necessary"] ) )
 		        {		
 	               if($_COOKIE['viewed_cookie_policy'] == 'yes' && $_COOKIE["cookielawinfo-checkbox-non-necessary"] =='yes')
 	               {                   
-						echo (isset($third_party_cookie_options['thirdparty_body_section'])) ? $third_party_cookie_options['thirdparty_body_section'] : '';
+						echo wp_unslash( isset($third_party_cookie_options['thirdparty_body_section']) ? $third_party_cookie_options['thirdparty_body_section'] : '' );
 	               }
 		        }		           
 		    }

@@ -830,7 +830,11 @@ if (!function_exists('suevafree_scripts_styles')) {
 		wp_enqueue_script('tipsy', get_template_directory_uri() . '/assets/js/tipsy.js' , array('jquery'), '1.0.0a', TRUE ); 
 		wp_enqueue_script('touchSwipe.js', get_template_directory_uri() . '/assets/js/touchSwipe.js' , array('jquery'), '1.6.18', TRUE ); 
 		wp_enqueue_script('suevafree-template', get_template_directory_uri() . '/assets/js/template.js' , array('jquery', 'imagesloaded', 'masonry'), '1.0.0', TRUE ); 
-	
+
+		wp_localize_script( 'suevafree-template', 'suevafreeMobileMenu', array(
+			'selectItem'   => __( 'Select an item', 'suevafree' ),
+		));
+
 		if ( is_singular() ) wp_enqueue_script( 'comment-reply' );
 
 		wp_enqueue_script( 'suevafree-navigation', get_template_directory_uri() . '/assets/js/navigation.js' , array('jquery'), '1.0', TRUE ); 

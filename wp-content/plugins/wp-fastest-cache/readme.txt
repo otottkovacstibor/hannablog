@@ -3,8 +3,8 @@ Contributors: emrevona
 Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
-Tested up to: 5.3
-Stable tag: 0.9.0.3
+Tested up to: 5.4
+Stable tag: 0.9.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -123,6 +123,14 @@ The free version is enough to speed up your site but in the premium version ther
 18. Database Cleanup
 
 == Changelog ==
+
+= 0.9.0.4 =
+* to fix PHP Fatal error:  Call to a member function lazy_load() on null in cache.php on line 798
+* to clear sitemap cache after updating or publishing post
+* to clear cache of the static posts page
+* to replace urls on data-siteorigin-parallax attribute with cdn-url
+* to fix the problem abour "Mobile" option
+* [FEATURE] Clear cache after theme or plugin update [<a target="_blank" href="https://www.wpfastestcache.com/features/clear-cache-after-theme-or-plugin-update/">Details</a>]
 
 = 0.9.0.3 =
 * [FEATURE] Compatible with Multiple Domain Mapping on single site

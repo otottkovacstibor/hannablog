@@ -40,7 +40,8 @@ class Cookie_Law_Info_Cli_Policy_Generator
 		foreach($content_data_arr as $key=>$value) 
 		{
 			$html.='<h3>'.$value['hd'].'</h3>';
-			$html.='<div>'.($render_shortcode==1 ? do_shortcode(stripslashes($value['content'])) : stripslashes($value['content'])).'</div>';
+			$post_content = (isset( $value['content'] ) ? sanitize_textarea_field( $value['content'] ) : '');
+			$html.='<div>'.($render_shortcode==1 ? do_shortcode( stripslashes($post_content) ) : stripslashes( $post_content )).'</div>';
 		}
 		return $html;
 	}

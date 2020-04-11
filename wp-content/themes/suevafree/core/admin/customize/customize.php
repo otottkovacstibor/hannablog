@@ -328,6 +328,23 @@ if (!function_exists('suevafree_customize_panel_function')) {
 
 			array(
 				
+				'label' => esc_html__('WooCommerce header cart icon','suevafree'),
+				'description' => esc_html__('Select the icon for WooCommerce header cart (Please clear the cookies to display the new icon)','suevafree'),
+				'id' => 'suevafree_woocommerce_header_icon',
+				'type' => 'select',
+				'section' => 'settings_section',
+				'options' => array (
+					'fa-shopping-basket' => esc_html__( 'Icon 1','suevafree'),
+					'fa-shopping-cart' => esc_html__( 'Icon 2','suevafree'),
+					'fa-cart-plus' => esc_html__( 'Icon 3','suevafree'),
+				),
+					
+				'std' => 'fa-shopping-basket',
+				
+			),
+
+			array(
+				
 				'label' => esc_html__( 'WooCommerce linkable product thumbnails','suevafree'),
 				'description' => esc_html__( 'Do you want to make linkable the product thumbnails on WooCommerce category pages?','suevafree'),
 				'id' => 'suevafree_linkable_product_thumbnails',

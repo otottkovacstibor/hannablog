@@ -348,7 +348,7 @@ class Cookie_Law_Info_Shortcode {
         }
         else 
         {
-            $classr= 'class="cli_settings_button" ';
+            $classr= ' class="cli_settings_button"';
         }
 
         //adding custom style
@@ -356,7 +356,7 @@ class Cookie_Law_Info_Shortcode {
         $link_tag = '';
         $link_tag .= '<a ' . $url_s;
         $link_tag .= ( $settings['button_4_new_win'] ) ? ' target="_blank" ' : '' ;
-        $link_tag .= $classr . ' '.$margin_style.'>' . stripslashes( $settings['button_4_text'] ) . '</a>';
+        $link_tag .= $classr.''.$margin_style.'>' . stripslashes( $settings['button_4_text'] ) . '</a>';
         return $link_tag;           
     }
     /** Returns HTML for a generic button */

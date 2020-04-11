@@ -250,7 +250,7 @@ jQuery.noConflict()(function($){
 	} else {
 	
 		$('.tinynav-menu ul:first').tinyNav({
-			header: 'Select an item',
+			header: suevafreeMobileMenu.selectItem,
 		});
 
 	}
@@ -356,18 +356,10 @@ jQuery.noConflict()(function($){
 
 	}
 
-/* ===============================================
-   MASONRY
-   =============================================== */
-   
-	$(document).ready(function(){
-		suevafree_masonry();
-	});
+	$( window ).load(suevafree_masonry);
+	$( document ).ready(suevafree_masonry);
+	$( window ).resize(suevafree_masonry);
 
-	$(window).resize(function(){
-		suevafree_masonry();
-	});
-	
 /* ===============================================
    Prettyphoto
    =============================================== */
