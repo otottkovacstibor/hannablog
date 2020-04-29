@@ -1644,7 +1644,7 @@ wfWAFRuleComparisonSubject::create($this, array (
   1 => 'action',
 ), array (
 ))))));
-$this->rules[152] = wfWAFRule::create($this, 152, NULL, 'backdoor', '100', 'WAF-RULE-152', 0, 'log', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/^[0-9a-f]{32}$/', array(wfWAFRuleComparisonSubject::create($this, array (
+$this->rules[152] = wfWAFRule::create($this, 152, NULL, 'backdoor', '100', 'WAF-RULE-152', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/^[0-9a-f]{32}$/', array(wfWAFRuleComparisonSubject::create($this, array (
   0 => 'request.md5Body',
   1 => '5f4dcc3b5aa765d61d8327deb882cf99',
 ), array (
@@ -1790,32 +1790,6 @@ $this->rules[161] = wfWAFRule::create($this, 161, NULL, 'auth-bypass', '100', 'W
   1 => 'wppcp_tab',
 ), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
-))))));
-$this->rules[150] = wfWAFRule::create($this, 150, NULL, 'bypass', '100', 'Generic X-Forwarded-For and X-Real-Ip Injection', 0, 'log', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/[^0-9a-zA-Z.:,\\ \\[\\]\\+\\-]/', array(wfWAFRuleComparisonSubject::create($this, array (
-  0 => 'request.headers',
-  1 => 'X-Forwarded-For',
-), array (
-)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'notEquals', '(null)', array(wfWAFRuleComparisonSubject::create($this, array (
-  0 => 'request.headers',
-  1 => 'X-Forwarded-For',
-), array (
-)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'notMatch', '/^https?:\\/\\/(?:[a-z0-9][a-z0-9\\-]{1,65}\\.)+[a-z0-9]{2,16},\\ ?\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$/', array(wfWAFRuleComparisonSubject::create($this, array (
-  0 => 'request.headers',
-  1 => 'X-Forwarded-For',
-), array (
-))))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/[^0-9a-zA-Z.:,\\ \\[\\]\\+\\-]/', array(wfWAFRuleComparisonSubject::create($this, array (
-  0 => 'request.headers',
-  1 => 'X-Real-Ip',
-), array (
-)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'notEquals', '(null)', array(wfWAFRuleComparisonSubject::create($this, array (
-  0 => 'request.headers',
-  1 => 'X-Real-Ip',
-), array (
-)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'notMatch', '/^https?:\\/\\/(?:[a-z0-9][a-z0-9\\-]{1,65}\\.)+[a-z0-9]{2,16},\\ ?\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}$/', array(wfWAFRuleComparisonSubject::create($this, array (
-  0 => 'request.headers',
-  1 => 'X-Real-Ip',
-), array (
-)))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
 $this->rules[103] = wfWAFRule::create($this, 103, NULL, 'obji', '100', 'PHP Object Injection', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'matchCount', '/(^|;|{|})O:+?\\+*[0-9]+:"WP_Theme"/i', array(wfWAFRuleComparisonSubject::create($this, 'request.headers', array (
 )),
@@ -3843,5 +3817,18 @@ wfWAFRuleComparisonSubject::create($this, array (
   1 => '418c5509e2171d55b0aee5c2ea4442b5',
 ), array (
 ))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[233] = wfWAFRule::create($this, 233, NULL, 'priv-esc', '100', 'WAF-RULE-233', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+rankmath[\\/]+v1[\\/]+update/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/rankmath[\\/]+v1[\\/]+update/i', array(wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5Body',
+  1 => 'c98d48a702d2fb75df0353af9c222655',
+), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array (
+  0 => 'request.md5QueryString',
+  1 => 'c98d48a702d2fb75df0353af9c222655',
+), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'editor', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
 ?>
