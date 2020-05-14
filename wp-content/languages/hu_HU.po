@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-04-01 02:17:22+0000\n"
+"PO-Revision-Date: 2020-05-13 12:18:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: hu\n"
 "Project-Id-Version: WordPress - 5.4.x - Development\n"
 
@@ -60,7 +60,7 @@ msgid "&#8221;"
 msgstr "&#8221;"
 
 #. translators: Opening curly double quote.
-#: wp-includes/formatting.php:101 wp-includes/formatting.php:5379
+#: wp-includes/formatting.php:101 wp-includes/formatting.php:5396
 msgctxt "opening curly double quote"
 msgid "&#8220;"
 msgstr "&#8220;"
@@ -78,22 +78,22 @@ msgid "number_format_decimal_point"
 msgstr ","
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23769
+#: wp-includes/js/dist/block-editor.js:23760
 msgid "Block %1$s is at the beginning of the content and can’t be moved left"
 msgstr "%1$s blokkot a tartalom elején nem lehet balra mozgatni."
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23764
+#: wp-includes/js/dist/block-editor.js:23755
 msgid "Block %1$s is at the beginning of the content and can’t be moved up"
 msgstr "%1$s blokkot a tartalom elején nem lehet felfelé mozgatni."
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23729
+#: wp-includes/js/dist/block-editor.js:23720
 msgid "Block %1$s is at the end of the content and can’t be moved left"
 msgstr "%1$s blokkot a tartalom végén nem lehet balra mozgatni"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23724
+#: wp-includes/js/dist/block-editor.js:23715
 msgid "Block %1$s is at the end of the content and can’t be moved down"
 msgstr "%1$s blokkot a tartalom végén nem lehet lefelé mozgatni"
 
@@ -123,11 +123,11 @@ msgstr "Valószínűleg offline vagyunk."
 
 #: wp-includes/js/dist/block-library.js:23639
 msgid "Display an icon linking to a social media profile or website."
-msgstr ""
+msgstr "Egy ikont jelenít meg, ami egy közösségi média profilra mutat, vagy egy weboldalra."
 
 #: wp-includes/js/dist/block-library.js:23560
 msgid "Briefly describe the link to help screen reader users."
-msgstr ""
+msgstr "A hivatkozásnak adott tömör leírással segítsünk a képernyő felolvasót használóknak."
 
 #: wp-includes/js/dist/block-library.js:23559
 msgid "Link label"
@@ -145,11 +145,11 @@ msgstr "Közösségi ikon"
 #: wp-includes/js/dist/block-library.js:22440
 msgctxt "block keywords"
 msgid "links"
-msgstr ""
+msgstr "hivatkozás"
 
 #: wp-includes/js/dist/block-library.js:22439
 msgid "Display icons linking to your social media profiles or websites."
-msgstr ""
+msgstr "Ikonokat jelenít meg, amelyek hivatkozhatnak közösségi média profilokra vagy weboldalakra."
 
 #: wp-includes/js/dist/block-library.js:22438
 msgid "Social Icons"
@@ -205,6 +205,9 @@ msgid ""
 "Window, very small in the distance, illuminated.\n"
 "All around this is an almost totally black screen. Now, as the camera moves slowly towards the window which is almost a postage stamp in the frame, other forms appear;"
 msgstr ""
+"EXT. XANADU - ÁJULT HAJNAL - 1940 (MINIATÚRA)\n"
+"Távoli, kicsi, megvilágított ablak.\n"
+"Körülötte egy szinte teljesen fekete képernyő. Ahogyan a kamera lassan postai bélyeg szerű ablak felé mozdul, új alakzatok is megjelennek;"
 
 #: wp-includes/js/dist/block-library.js:16595
 msgid "Unsupported"
@@ -228,7 +231,7 @@ msgstr "Teljes bejegyzés"
 
 #: wp-includes/js/dist/block-library.js:15705
 msgid "Show:"
-msgstr ""
+msgstr "Mutat:"
 
 #: wp-includes/js/dist/block-library.js:14112
 msgid "download"
@@ -241,7 +244,7 @@ msgstr "Média fájl"
 #. translators: example text.
 #: wp-includes/js/dist/block-library.js:11331
 msgid "Suspendisse commodo neque lacus, a dictum orci interdum et."
-msgstr ""
+msgstr "Suspendisse commodo neque lacus, a dictum orci interdum et."
 
 #. translators: example text.
 #: wp-includes/js/dist/block-library.js:11320
@@ -257,10 +260,15 @@ msgid ""
 "// content or layout of a page.\n"
 "registerBlockType( name, settings );"
 msgstr ""
+"// A \"block\" egy absztrakt fogalom\n"
+"// markup egységeket jelent, \n"
+"// mely egységek összessége adja \n"
+"// az oldal tartalmát és elrendezését.\n"
+"registerBlockType( name, settings );"
 
 #: wp-includes/js/dist/block-library.js:9988
 msgid "Prompt visitors to take action with a group of button-style links."
-msgstr ""
+msgstr "Biztassuk cselekvésre a látogatókat egy csoport, gomb kinézetű hivatkozással."
 
 #: wp-includes/js/dist/block-library.js:9987
 msgid "Buttons"
@@ -285,7 +293,7 @@ msgstr "Képek mérete"
 #: wp-includes/js/dist/block-library.js:8244
 #: wp-includes/js/dist/block-library.js:13573
 msgid "Link to"
-msgstr ""
+msgstr "Hivatkozás"
 
 #: wp-includes/js/dist/block-library.js:8228
 msgid "Gallery settings"
@@ -298,16 +306,16 @@ msgstr "MÉDIA HOZZÁADÁSA"
 #. translators: accessibility text. 1: heading level. 2: heading content.
 #: wp-includes/js/dist/block-library.js:6403
 msgid "Level %1$s. %2$s"
-msgstr ""
+msgstr "%1$s. szint %2$s"
 
 #. translators: accessibility text. %s: heading level.
 #: wp-includes/js/dist/block-library.js:6401
 msgid "Level %s. Empty."
-msgstr ""
+msgstr "%s. szint üres."
 
 #: wp-includes/js/dist/block-library.js:6048
 msgid "Change heading level"
-msgstr ""
+msgstr "Címsor szint változtatása"
 
 #: wp-includes/js/dist/block-library.js:5269
 msgid "(Note: many devices and browsers do not display this text.)"
@@ -319,7 +327,7 @@ msgstr "Adjuk meg a kép szerepét az oldalon."
 
 #: wp-includes/js/dist/block-library.js:5264
 msgid "Title attribute"
-msgstr ""
+msgstr "Cím tulajdonság"
 
 #: wp-includes/js/dist/block-library.js:4275
 msgid "Embed a TikTok video."
@@ -333,7 +341,7 @@ msgstr "%s Blokk"
 #. translators: accessibility text. %1: The block title. %2: The block label.
 #: wp-includes/js/dist/blocks.js:6900
 msgid "%1$s Block. %2$s"
-msgstr ""
+msgstr "%1$s Blokk. %2$s"
 
 #. translators: accessibility text. %s: The block title, %d The block column
 #. number.
@@ -345,19 +353,19 @@ msgstr "%s blokk. %d oszlop"
 #. number, %3: The block label..
 #: wp-includes/js/dist/blocks.js:6889
 msgid "%1$s Block. Column %2$d. %3$s"
-msgstr ""
+msgstr "%1$s Blokk. Oszlop: %2$d. %3$s"
 
 #. translators: accessibility text. %s: The block title, %d The block row
 #. number.
 #: wp-includes/js/dist/blocks.js:6884
 msgid "%s Block. Row %d"
-msgstr ""
+msgstr "%s blokk. %d sor"
 
 #. translators: accessibility text. %1: The block title, %2: The block row
 #. number, %3: The block label..
 #: wp-includes/js/dist/blocks.js:6879
 msgid "%1$s Block. Row %2$d. %3$s"
-msgstr ""
+msgstr "%1$s blokk. %2$d. sor %3$s"
 
 #: wp-includes/js/dist/edit-post.js:6471
 msgid "Open document settings"
@@ -373,11 +381,11 @@ msgstr "Itt egy bővebb útmutató."
 
 #: wp-includes/js/dist/edit-post.js:6370
 msgid "New to the Block Editor? Want to learn more about using it? "
-msgstr ""
+msgstr "Új a Blokkszerkesztő? Szeretnénk többet megtudni róla?"
 
 #: wp-includes/js/dist/edit-post.js:6366
 msgid "Learn how to use the Block Editor"
-msgstr "Tanuljuk meg a Blokk szerkesztő használatát"
+msgstr "Tanuljuk meg a Blokkszerkesztő használatát"
 
 #: wp-includes/js/dist/edit-post.js:6358
 msgid "All of the blocks available to you live in the Block Library. You’ll find it wherever you see the <InserterIconImage /> icon."
@@ -393,7 +401,7 @@ msgstr "Minden blokk saját vezérlőkkel rendelkezik, mint színek, szélesség
 
 #: wp-includes/js/dist/edit-post.js:6346
 msgid "Make each block your own"
-msgstr ""
+msgstr "Rendelje saját magához mindegyik blokkot"
 
 #: wp-includes/js/dist/edit-post.js:6342
 msgid "In the WordPress editor, each paragraph, image, or video is presented as a distinct “block” of content."
@@ -405,7 +413,7 @@ msgstr "Kezdjük el"
 
 #: wp-includes/js/dist/edit-post.js:6329 wp-includes/js/dist/edit-post.js:6338
 msgid "Welcome to the Block Editor"
-msgstr "Üdv a Blokk Szerkesztőben"
+msgstr "Üdv a Blokkszerkesztőben"
 
 #: wp-includes/js/dist/edit-post.js:6295
 msgid "inserter"
@@ -425,127 +433,127 @@ msgstr "https://wordpress.org/support/article/wordpress-editor/"
 
 #: wp-includes/js/dist/edit-post.js:1352
 msgid "Welcome Guide"
-msgstr ""
+msgstr "Üdvözlő útmutató"
 
 #: wp-includes/js/dist/edit-post.js:1293 wp-includes/js/dist/edit-post.js:3178
 msgid "Keyboard shortcuts"
 msgstr "Gyorsbillentyűk"
 
-#: wp-includes/js/dist/block-editor.js:25291
+#: wp-includes/js/dist/block-editor.js:25282
 msgid "Remove multiple selected blocks."
 msgstr "Több kiválasztott blokk eltávolítása."
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23714
-#: wp-includes/js/dist/block-editor.js:23754
+#: wp-includes/js/dist/block-editor.js:23705
+#: wp-includes/js/dist/block-editor.js:23745
 msgid "Move %1$s block from position %2$d right to position %3$d"
-msgstr ""
+msgstr "Mozgassuk a(z) %1$s blokkot a(z) %2$d pozícióból a következő pozícióba: %3$d"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23709
-#: wp-includes/js/dist/block-editor.js:23749
+#: wp-includes/js/dist/block-editor.js:23700
+#: wp-includes/js/dist/block-editor.js:23740
 msgid "Move %1$s block from position %2$d left to position %3$d"
-msgstr ""
+msgstr "Mozgassuk a(z) %1$s blokkot a(z) %2$d pozícióból a következő pozícióba: %3$d"
 
-#: wp-includes/js/dist/block-editor.js:22539
+#: wp-includes/js/dist/block-editor.js:22530
 msgid "Tools offer different interactions for block selection & editing. To select, press Escape, to go back to editing, press Enter."
-msgstr ""
+msgstr "Az eszközök különböző interakciókat ajánlanak fel a blokk kiválasztására és szerkesztésére. Kiválasztásra váltáshoz nyomjunk Esc-et, a szerkesztéshez visszatéréshez nyomjunk Entert."
 
-#: wp-includes/js/dist/block-editor.js:21586
+#: wp-includes/js/dist/block-editor.js:21577
 msgid "Toggle between using the same value for all screen sizes or using a unique value per screen size."
-msgstr ""
-
-#: wp-includes/js/dist/block-editor.js:21583
-msgid "Use the same %s on all screensizes."
-msgstr ""
+msgstr "Váltás, hogy ugyanazt az értéket használjuk az összes képernyőmérethez, vagy egyedi értékeket adunk meg minden egyes képernyőmérethez."
 
 #: wp-includes/js/dist/block-editor.js:21574
+msgid "Use the same %s on all screensizes."
+msgstr "%s használata minden egyes képernyőméret esetén."
+
+#: wp-includes/js/dist/block-editor.js:21565
 msgid "Large screens"
 msgstr "Nagy képernyőn"
 
-#: wp-includes/js/dist/block-editor.js:21571
+#: wp-includes/js/dist/block-editor.js:21562
 msgid "Medium screens"
 msgstr "Közepes képernyőn"
 
-#: wp-includes/js/dist/block-editor.js:21568
+#: wp-includes/js/dist/block-editor.js:21559
 msgid "Small screens"
 msgstr "Kis képernyőn"
 
-#: wp-includes/js/dist/block-editor.js:21520
+#: wp-includes/js/dist/block-editor.js:21511
 msgctxt "Text labelling a interface as controlling a given layout property (eg: margin) for a given screen size."
 msgid "Controls the %1$s property for %2$s viewports."
-msgstr ""
+msgstr "A(z) %1$s tulajdonság megadása %2$s képernyőméret esetén."
 
-#: wp-includes/js/dist/block-editor.js:20918
+#: wp-includes/js/dist/block-editor.js:20909
 msgid "Open Media Library"
 msgstr "Médiatár megnyitása"
 
-#: wp-includes/js/dist/block-editor.js:20825
+#: wp-includes/js/dist/block-editor.js:20816
 msgid "The media file has been replaced"
 msgstr "Médiafájl kicserélve"
 
-#: wp-includes/js/dist/block-editor.js:20113
+#: wp-includes/js/dist/block-editor.js:20104
 msgid "Currently selected"
 msgstr "Aktuálisan kiválasztott"
 
-#: wp-includes/js/dist/block-editor.js:20065
+#: wp-includes/js/dist/block-editor.js:20056
 msgid "Recently updated"
 msgstr "Legutóbb frissítve"
 
-#: wp-includes/js/dist/block-editor.js:19797
+#: wp-includes/js/dist/block-editor.js:19788
 msgid "Search or type url"
-msgstr ""
+msgstr "Keresőkifejezés, vagy url cím megadása"
 
-#: wp-includes/js/dist/block-editor.js:19716
+#: wp-includes/js/dist/block-editor.js:19707
 msgid "Press ENTER to add this link"
-msgstr ""
+msgstr "Ezen hivatkozás hozzáadása érdekében nyomjuk le az ENTER billentyűt"
 
-#: wp-includes/js/dist/block-editor.js:19666
+#: wp-includes/js/dist/block-editor.js:19657
 msgid "Currently selected link settings"
-msgstr ""
+msgstr "Jelenlegi kiválasztott hivatkozás beállítások"
 
-#: wp-includes/js/dist/block-editor.js:19200
+#: wp-includes/js/dist/block-editor.js:19191
 msgid "Image size"
 msgstr "Képméret"
 
-#: wp-includes/js/dist/block-editor.js:19068
+#: wp-includes/js/dist/block-editor.js:19059
 msgid "Gradient Presets"
 msgstr "Előre beállított színátmenetek"
 
-#: wp-includes/js/dist/block-editor.js:19001
+#: wp-includes/js/dist/block-editor.js:18992
 msgid "Editor footer"
-msgstr ""
+msgstr "Szerkesztő lábrész"
 
-#: wp-includes/js/dist/block-editor.js:18720
+#: wp-includes/js/dist/block-editor.js:18711
 msgid "Select a variation to start with."
 msgstr "A kezdéshez válasszunk ki egy változatot"
 
-#: wp-includes/js/dist/block-editor.js:18718
+#: wp-includes/js/dist/block-editor.js:18709
 msgid "Choose variation"
 msgstr "Variáció választás"
 
-#: wp-includes/js/dist/block-editor.js:18195
-#: wp-includes/js/dist/block-editor.js:18449
+#: wp-includes/js/dist/block-editor.js:18186
+#: wp-includes/js/dist/block-editor.js:18440
 msgctxt "Generic label for block inserter button"
 msgid "Add block"
 msgstr "Blokk hozzáadása"
 
 #. translators: %s: the name of the block when there is only one
-#: wp-includes/js/dist/block-editor.js:18193
-#: wp-includes/js/dist/block-editor.js:18447
+#: wp-includes/js/dist/block-editor.js:18184
+#: wp-includes/js/dist/block-editor.js:18438
 msgctxt "directly add the only allowed block"
 msgid "Add %s"
 msgstr "%s hozzáadás"
 
 #. translators: %s: the name of the block that has been added
-#: wp-includes/js/dist/block-editor.js:18141
-#: wp-includes/js/dist/block-editor.js:18400
+#: wp-includes/js/dist/block-editor.js:18132
+#: wp-includes/js/dist/block-editor.js:18391
 msgid "%s block added"
 msgstr "%s blokk hozzáadva"
 
-#: wp-includes/js/dist/block-editor.js:15314
+#: wp-includes/js/dist/block-editor.js:15305
 msgid "Multiple selected blocks"
 msgstr "Több kiválasztott blokk"
 
@@ -607,7 +615,7 @@ msgstr "Élénk ciánkéktől élénk liláig"
 
 #: wp-includes/js/dist/block-editor.js:8496
 msgid "Block breadcrumb"
-msgstr ""
+msgstr "Blokk útmutató-jelek"
 
 #: wp-includes/js/dist/block-editor.js:7300
 msgid "(%s: gradient %s)"
@@ -618,7 +626,7 @@ msgid "(%s: color %s)"
 msgstr "(%s: szín %s)"
 
 #: wp-includes/js/dist/block-editor.js:7226
-#: wp-includes/js/dist/block-editor.js:19122
+#: wp-includes/js/dist/block-editor.js:19113
 msgid "Gradient"
 msgstr "Színátmenet"
 
@@ -669,11 +677,11 @@ msgstr "Befejezés"
 
 #: wp-includes/js/dist/components.js:38313
 msgid "Page %1$d of %2$d"
-msgstr ""
+msgstr "%1$d / %2$d oldal"
 
 #: wp-includes/js/dist/components.js:38300
 msgid "Guide controls"
-msgstr ""
+msgstr "Irányító vezérlők"
 
 #. translators: %s: The name of the gradient e.g: "Angular red to blue".
 #: wp-includes/js/dist/components.js:37720
@@ -685,33 +693,33 @@ msgstr "Színátmenet: %s"
 #: wp-includes/js/dist/components.js:37711
 #: wp-includes/js/dist/components.js:37721
 msgid "Gradient code: %s"
-msgstr ""
+msgstr "Színátmenet kódja: %s"
 
 #: wp-includes/js/dist/components.js:37637
 msgid "Radial Gradient"
-msgstr ""
+msgstr "Sugárirányú színátmenet"
 
 #: wp-includes/js/dist/components.js:37632
 msgid "Linear Gradient"
-msgstr ""
+msgstr "Lineáris színátmenet"
 
 #: wp-includes/js/dist/components.js:37053
 msgid "Remove Control Point"
-msgstr ""
+msgstr "Vezérlő pont eltávolítása"
 
 #: wp-includes/js/dist/components.js:36953
 msgid "Use your left or right arrow keys or drag and drop with the mouse to change the gradient position. Press the button to change the color or remove the control point."
-msgstr ""
+msgstr "A billentyűzet jobbra-balra nyilaival, vagy egérhúzással szerkeszthetjük a színátmenet helyét. Nyomjuk meg a gombot a szín megváltoztatásához, vagy távolítsuk el a vezérlő pontot."
 
 #. translators: %1$s: gradient position e.g: 70%, %2$s: gradient color code
 #. e.g: rgb(52,121,151).
 #: wp-includes/js/dist/components.js:36941
 msgid "Gradient control point at position %1$s with color code %2$s."
-msgstr ""
+msgstr "Színátmenet vezérlőpontja %1$s -nál a következő színkóddal: %2$s."
 
 #: wp-includes/js/dist/components.js:35299
 msgid "Preset size"
-msgstr ""
+msgstr "Előre beállított méret"
 
 #: wp-includes/js/dist/components.js:33405
 msgid "Extra Large"
@@ -728,12 +736,12 @@ msgstr "Szög"
 #. translators: 1: Post status, 2: Capability name.
 #: wp-includes/capabilities.php:246
 msgid "The post status %1$s is not registered, so it may not be reliable to check the capability \"%2$s\" against a post with that status."
-msgstr ""
+msgstr "%1$s nevű bejegyzés állapot nincs regisztrálva, vagyis nem megbízható a \"%2$s\" jogosultság ellenőrzése erre a bejegyzés állapotra."
 
 #. translators: %s: Comment link.
 #: wp-includes/comment-template.php:975
 msgid "In reply to %s."
-msgstr ""
+msgstr "Válaszként erre: %s"
 
 #: wp-includes/general-template.php:2241
 msgid "Previous and next months"
@@ -741,7 +749,7 @@ msgstr "Előző és következő hónapok"
 
 #: wp-includes/option.php:2149
 msgid "When registering an \"array\" setting to show in the REST API, you must specify the schema for each array item in \"show_in_rest.schema.items\"."
-msgstr ""
+msgstr "Amikor \"array\" beállítást regisztrál a REST API-ban való megjelenéshez, meg kell adnia a tömb minden egyes elemének a sémáját itt: \"show_in_rest.schema.items\""
 
 #: wp-includes/user.php:3127
 msgid "User&#8217;s Session Tokens data."
@@ -765,7 +773,7 @@ msgstr "Lejárat"
 
 #: wp-includes/user.php:3092
 msgid "User&#8217;s location data used for the Community Events in the WordPress Events and News dashboard widget."
-msgstr ""
+msgstr "Felhasználói hely adat használata a \"Közösségi Események\" listában a \"WordPress Események\", illetve az \"Újdonságok\" widget esetén a Vezérlőpulton."
 
 #: wp-includes/user.php:3091
 msgid "Community Events Location"
@@ -794,7 +802,7 @@ msgstr "Város"
 #. translators: %s: wp_privacy_additional_user_profile_data
 #: wp-includes/user.php:3047
 msgid "Filter %s returned items with reserved names."
-msgstr ""
+msgstr "A(z) %s szűrő olyan elemeket adott vissza, melyek neve ütközik a rendszer belső használatára fenntartott nevekkel."
 
 #: wp-includes/media-template.php:430 wp-includes/media-template.php:625
 msgid "Original image:"
@@ -811,7 +819,7 @@ msgstr "Válaszolva: %s"
 
 #: wp-includes/pluggable.php:1259
 msgid "HTTP redirect status code must be a redirection code, 3xx."
-msgstr ""
+msgstr "A HTTP átirányítás állapotkódja átirányítás kód (3xx) kell legyen"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2708
 msgid "Limit result set based on relationship between multiple taxonomies."
@@ -819,17 +827,17 @@ msgstr "Az eredménykészlet korlátozása a több taxonómiás kapcsolatokban"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2427
 msgid "Please use register_rest_field to add new schema properties."
-msgstr ""
+msgstr "Az új séma-tulajdonságok megadásához a  register_rest_field-et használjuk."
 
 #. translators: 1. The taxonomy name, 2. The property name, either 'rest_base'
 #. or 'name', 3. The conflicting value.
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:2383
 msgid "The \"%1$s\" taxonomy \"%2$s\" property (%3$s) conflicts with an existing property on the REST API Posts Controller. Specify a custom \"rest_base\" when registering the taxonomy to avoid this error."
-msgstr ""
+msgstr "A(z) \"%1$s\" taxonómia \"%2$s\" tulajdonsága (%3$s) ütközik a REST API Bejegyzés kezelő egy meglevő tulajdonsága nevéve. Saját \"rest_base\" értéket kell megadni a taxonómia regisztrálásakor, hogy elkerüljük ezt a hibát. "
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:456
 msgid "Whether theme opts in to default WordPress block styles for viewing."
-msgstr ""
+msgstr "Támogatja-e a sablon, hogy alapértelmezetten a WordPress blokk stílusokat használja megtekintéskor."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:452
 msgid "Whether the theme can manage the document title tag."
@@ -837,11 +845,11 @@ msgstr "A sablon kezelheti-e a dokumentum címsorát."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:425
 msgid "Allows use of html5 markup for search forms, comment forms, comment lists, gallery, and caption."
-msgstr ""
+msgstr "HTML5 jelölés engedélyezése űrlapok, hozzászólás űrlapok, hozzászólás listák, galériák és képaláírások esetén."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:413
 msgid "Whether theme opts in to the editor styles CSS wrapper."
-msgstr ""
+msgstr "Támogatja-e a sablon hogy szerkesztői stílusok CSS wrappert."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:394
 msgid "Custom gradient presets if defined by the theme."
@@ -873,7 +881,7 @@ msgstr "A sablon támogatja-e a sötét szerkesztő kinézetet."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:336
 msgid "Whether the theme enables Selective Refresh for Widgets being managed with the Customizer."
-msgstr ""
+msgstr "Támogatja-e a sablon hogy a \"Widgetek szelekív frissítése\" beállítást a Testreszabás menü alatt kezeljük"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:311
 msgid "Custom logo if defined by the theme."
@@ -893,7 +901,7 @@ msgstr "Bejegyzések és hozzászólások RSS csatornája hozzá van-e adva a fe
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php:201
 msgid "Whether theme opts in to wide alignment CSS class."
-msgstr ""
+msgstr "Támogatja-e a sablon a széles megjelenés CSS osztályt."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1645
 #: wp-includes/class-wp-xmlrpc-server.php:5062
@@ -919,7 +927,7 @@ msgstr "3"
 
 #: wp-includes/script-loader.php:865
 msgid "Post-processing of the image failed likely because the server is busy or does not have enough resources. Uploading a smaller image may help. Suggested maximum size is 2500 pixels."
-msgstr ""
+msgstr "A kép utófeldolgozása sikertelen, valószínűleg a szerver terhelt vagy más okból nincs elég erőforrása. Segithet egy kissebb méretű kép feltöltése. A javasolt legnagyobb képméret 2500 képpont."
 
 #: wp-login.php:843
 msgid "Please enter your username or email address. You will receive an email message with instructions on how to reset your password."
@@ -929,7 +937,7 @@ msgstr "Adjuk meg a felhasználónevünket, vagy e-mail címünket. Majd, ellen�
 msgid "Media upload failed. If this is a photo or a large image, please scale it down and try again."
 msgstr "A média feltöltése nem sikerült. Ha, ez egy fénykép vagy egy nagy kép, akkor méretezzük át, és próbáljuk újra."
 
-#: wp-includes/js/dist/block-editor.js:18014
+#: wp-includes/js/dist/block-editor.js:18005
 msgid "No Preview Available."
 msgstr "Nem érhető el előnézet."
 
@@ -988,8 +996,8 @@ msgstr "Médialissta"
 msgid "Filter Media"
 msgstr "Média-szűrő"
 
-#: wp-includes/js/dist/block-editor.js:18592
-#: wp-includes/js/dist/block-editor.js:18669
+#: wp-includes/js/dist/block-editor.js:18583
+#: wp-includes/js/dist/block-editor.js:18660
 msgid "Block navigation"
 msgstr "Blokk navigáció"
 
@@ -1003,7 +1011,7 @@ msgstr "Cím megadása"
 
 #: wp-includes/js/dist/block-library.js:22474
 msgid "Pill Shape"
-msgstr ""
+msgstr "Pill Shape"
 
 #: wp-includes/js/dist/block-library.js:22471
 msgid "Logos Only"
@@ -1035,13 +1043,13 @@ msgstr "Bejegyzés tartalma"
 msgid "Post content settings"
 msgstr "Bejegyzés tartalmának beállításai"
 
-#: wp-includes/js/dist/block-editor.js:24047
-#: wp-includes/js/dist/block-editor.js:24053
+#: wp-includes/js/dist/block-editor.js:24038
+#: wp-includes/js/dist/block-editor.js:24044
 msgid "Move right"
 msgstr "Mozgatás jobbra"
 
-#: wp-includes/js/dist/block-editor.js:24047
-#: wp-includes/js/dist/block-editor.js:24053
+#: wp-includes/js/dist/block-editor.js:24038
+#: wp-includes/js/dist/block-editor.js:24044
 msgid "Move left"
 msgstr "Mozgatás balra"
 
@@ -1117,7 +1125,7 @@ msgstr "Kapcsolódó hivatkozás"
 
 #: wp-includes/js/dist/block-library.js:9580
 msgid "Border radius"
-msgstr ""
+msgstr "Határoló lekerekítés"
 
 #: wp-includes/js/dist/block-library.js:14320
 msgid "Welcome to the wonderful world of blocks…"
@@ -1153,8 +1161,8 @@ msgstr "Az egyik legnehezebb dolog a tegnológiában, hogy megzavarjuk önmagunk
 msgid "Upload a file or pick one from your media library."
 msgstr "Töltsünk fel egy fájlt, vagy válasszunk egyet a Médiatárból"
 
-#: wp-includes/js/dist/block-editor.js:19633
-#: wp-includes/js/dist/block-editor.js:22899
+#: wp-includes/js/dist/block-editor.js:19624
+#: wp-includes/js/dist/block-editor.js:22890
 #: wp-includes/js/dist/block-library.js:9741
 #: wp-includes/js/dist/block-library.js:13578
 msgid "Open in new tab"
@@ -1358,7 +1366,7 @@ msgstr "A módosítások hatályba lépéséhez szükséges az oldal újraolvast
 
 #: wp-includes/js/dist/edit-post.js:3856
 msgid "Inserter help panel"
-msgstr ""
+msgstr "Beillesztő segítség panel"
 
 #: wp-includes/js/dist/edit-post.js:3853
 msgid "Pre-publish checks"
@@ -1378,40 +1386,40 @@ msgstr "Jelenítsük meg ezeket a billentyűzet-parancsokat."
 msgid "More tools & options"
 msgstr "További eszközök és lehetőségek"
 
-#: wp-includes/js/dist/block-editor.js:26355
+#: wp-includes/js/dist/block-editor.js:26351
 msgid "Separate multiple classes with spaces."
 msgstr "Az osztály neveket szóközökkel választjuk el"
 
-#: wp-includes/js/dist/block-editor.js:26253
+#: wp-includes/js/dist/block-editor.js:26249
 msgid "Learn more about anchors"
 msgstr "Tudjunk meg többet a horgonyokról"
 
-#: wp-includes/js/dist/block-editor.js:26251
+#: wp-includes/js/dist/block-editor.js:26247
 msgid "Enter a word or two — without spaces — to make a unique web address just for this heading, called an “anchor.” Then, you’ll be able to link directly to this section of your page."
-msgstr ""
+msgstr "Adjon meg egy-két szót — szóköz nélkül — hogy létrehozzon egy egyedi, \"horgony\"-nak nevezett azonosítót ehhez a címsorhoz. Így közvetlenül is tud hivatkozni az oldalnak erre a részére."
 
-#: wp-includes/js/dist/block-editor.js:23541
+#: wp-includes/js/dist/block-editor.js:23532
 msgid "Default Style"
 msgstr "Alapértelmezett stílus"
 
-#: wp-includes/js/dist/block-editor.js:21280
+#: wp-includes/js/dist/block-editor.js:21271
 msgid "Upload a video file, pick one from your media library, or add one with a URL."
 msgstr "Töltsünk fel videót, válasszuk ki a médiatárból, vagy adjuk meg URL-el"
 
-#: wp-includes/js/dist/block-editor.js:21278
+#: wp-includes/js/dist/block-editor.js:21269
 #: wp-includes/js/dist/block-library.js:5201
 msgid "Upload an image file, pick one from your media library, or add one with a URL."
 msgstr "Töltsünk fel egy képfájlt, jelöljük ki a médiakönyvtárból, vagy adjunk egyet hozzá URL címmel"
 
-#: wp-includes/js/dist/block-editor.js:21276
+#: wp-includes/js/dist/block-editor.js:21267
 msgid "Upload an audio file, pick one from your media library, or add one with a URL."
 msgstr "Töltsünk fel egy hangfájlt, jelöljük ki a médiakönyvtárból, vagy adjunk egyet hozzá URL címmel"
 
-#: wp-includes/js/dist/block-editor.js:21273
+#: wp-includes/js/dist/block-editor.js:21264
 msgid "Upload a media file or pick one from your media library."
 msgstr "Töltsünk fel egy média fájlt, jelöljük ki a médiakönyvtárból."
 
-#: wp-includes/js/dist/block-editor.js:18755
+#: wp-includes/js/dist/block-editor.js:18746
 msgid "Skip"
 msgstr "Kihagyás"
 
@@ -1419,27 +1427,27 @@ msgstr "Kihagyás"
 msgid "This color combination may be hard for people to read."
 msgstr "Ezt a színkombinációt nehéz lehet elolvasni."
 
-#: wp-includes/js/dist/block-editor.js:18315
+#: wp-includes/js/dist/block-editor.js:18306
 msgid "Add a block"
 msgstr "Egy blokk hozzáadása"
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "While writing, you can press <kbd>/</kbd> to quickly insert new blocks."
 msgstr "Írás közben nyomjuk meg a <kbd>/</kbd>-t új blokkok beillesztéséhez."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "Browse through the library to learn more about what each block does."
 msgstr "Nézzük át a gyűjteményt, és hogy az egyes blokkok mire valók."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "There are blocks available for all kinds of content: insert text, headings, images, lists, videos, tables, and lots more."
 msgstr "Léteznek blokkok, mindenféle tartalom típushoz: szöveg beillesztésre, fejlécekhez, képekhez, listákhoz, videókhoz, táblázatokhoz és még Isten tudja mihez."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "Welcome to the wonderful world of blocks! Blocks are the basis of all content within the editor."
 msgstr "Üdvözlet a blokkok csodálatos világában! A szerkesztőben a blokkok képezik a tartalmak alapját."
 
-#: wp-includes/js/dist/block-editor.js:18020
+#: wp-includes/js/dist/block-editor.js:18011
 msgid "Content blocks"
 msgstr "Tartalmi blokkok"
 
@@ -1447,22 +1455,22 @@ msgstr "Tartalmi blokkok"
 msgid "Vivid purple"
 msgstr "Rikító lila"
 
-#: wp-includes/js/dist/block-editor.js:18854
+#: wp-includes/js/dist/block-editor.js:18845
 msgctxt "Block vertical alignment setting label"
 msgid "Change vertical alignment"
 msgstr "Függőleges elrendezés változtatása"
 
-#: wp-includes/js/dist/block-editor.js:18830
+#: wp-includes/js/dist/block-editor.js:18821
 msgctxt "Block vertical alignment setting"
 msgid "Vertically Align Bottom"
 msgstr "Rendezzük alulra"
 
-#: wp-includes/js/dist/block-editor.js:18826
+#: wp-includes/js/dist/block-editor.js:18817
 msgctxt "Block vertical alignment setting"
 msgid "Vertically Align Middle"
 msgstr "Rendezzük függőlegesen középre"
 
-#: wp-includes/js/dist/block-editor.js:18822
+#: wp-includes/js/dist/block-editor.js:18813
 msgctxt "Block vertical alignment setting"
 msgid "Vertically Align Top"
 msgstr "Rendezzük legfelülre"
@@ -1583,7 +1591,7 @@ msgstr "WordPress %s verzió"
 msgid "https://wordpress.org/support/article/debugging-a-wordpress-network/"
 msgstr "https://wordpress.org/support/article/debugging-a-wordpress-network/"
 
-#: wp-includes/formatting.php:4786
+#: wp-includes/formatting.php:4803
 msgid "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
 msgstr "https://wordpress.org/support/article/using-permalinks/#choosing-your-permalink-structure"
 
@@ -1610,7 +1618,7 @@ msgstr "%1$s a használatban lévő időzóna (%2$s), a jelenlegi idő %3$s (ös
 #. translators: 1: Block name, 2: Block style name.
 #: wp-includes/class-wp-block-styles-registry.php:77
 msgid "Block \"%1$s\" does not contain a style named \"%2$s\"."
-msgstr ""
+msgstr "\"%1$s\" nevű blokk nem tartalmazza a(z) \"%2$s\" blokkstílus nevet."
 
 #: wp-includes/class-wp-block-styles-registry.php:52
 msgid "Block style name must be a string."
@@ -1716,7 +1724,7 @@ msgstr "A követelménynek nem felel meg"
 #. "kind" HTML attribute.
 #: wp-includes/media-template.php:1383
 msgid "The %1$s, %2$s, and %3$s values can be edited to set the video track language and kind."
-msgstr ""
+msgstr "A %1$s, %2$s, és %3$s értékek szerkesztésével beállítható a videósáv nyelve és megjelenése."
 
 #: wp-includes/comment.php:3498
 msgid "User&#8217;s comment data."
@@ -1734,7 +1742,7 @@ msgstr "Létrehozva:"
 msgid "Whether posts of this status may have floating published dates."
 msgstr "Ezzel az állapottal bíró bejegyzések kaphatnak-e lebegő dátumokat."
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:392
+#: wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php:415
 msgid "Sorry, you are not allowed to delete revisions of this post."
 msgstr "Sajnos, nem engedélyezett a bejegyzés állapotainak törlése."
 
@@ -1747,7 +1755,7 @@ msgstr "Nem lehetséges %s meta értékének frissítése az adatbázisban."
 
 #: wp-includes/meta.php:1210
 msgid "When registering an \"array\" meta type to show in the REST API, you must specify the schema for each array item in \"show_in_rest.schema.items\"."
-msgstr ""
+msgstr "Amikor \"array\" meta-típust regisztrál a REST API-ban való megjelenéshez, meg kell adnia a tömb minden egyes elemének a sémáját itt: \"show_in_rest.schema.items\""
 
 #. translators: %s: taxonomy name
 #: wp-includes/blocks/tag-cloud.php:37
@@ -1809,12 +1817,12 @@ msgid "Confirm your administration email"
 msgstr "Adminisztrátori email cím visszaigazolás"
 
 #. translators: Maximum number of words used in a post excerpt.
-#: wp-includes/formatting.php:3810
+#: wp-includes/formatting.php:3827
 msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
 
-#: wp-includes/class-wp-customize-manager.php:5466
+#: wp-includes/class-wp-customize-manager.php:5493
 msgctxt "Original Size"
 msgid "Original"
 msgstr "Eredeti"
@@ -2144,7 +2152,7 @@ msgstr "Késztessük cselekvésre a látogatókat egy gomb stílusú hivatkozás
 #: wp-includes/js/dist/block-library.js:12267
 #: wp-includes/js/dist/block-library.js:15020
 msgid "Focal point picker"
-msgstr ""
+msgstr "Fókuszpont kiválasztó"
 
 #. translators: %1$d is the order number of the image, %2$d is the total number
 #. of images.
@@ -2217,11 +2225,11 @@ msgstr "Funkció kikapcsolva"
 msgid "Block Manager"
 msgstr "Blokk kezelő"
 
-#: wp-includes/js/dist/block-editor.js:24772
+#: wp-includes/js/dist/block-editor.js:24763
 msgid "Change block type or style"
 msgstr "Blokk típusának vagy stílusának módosítása"
 
-#: wp-includes/js/dist/block-editor.js:23348
+#: wp-includes/js/dist/block-editor.js:23339
 #: wp-includes/js/dist/block-library.js:5790
 #: wp-includes/js/dist/block-library.js:6922
 #: wp-includes/js/dist/block-library.js:17706
@@ -2240,7 +2248,7 @@ msgctxt "keyboard key"
 msgid "Backspace"
 msgstr "Visszatörlés"
 
-#: wp-includes/js/dist/block-editor.js:21720
+#: wp-includes/js/dist/block-editor.js:21711
 msgid "More rich text controls"
 msgstr "További vizuális szerkesztő elem"
 
@@ -2463,7 +2471,7 @@ msgid "REST API routes must be registered on the %s action."
 msgstr "REST API útvonalakat a következő művelethez kell regisztrálni: %s."
 
 #. translators: Used to join last two items in a list with more than 2 times.
-#: wp-includes/formatting.php:5053
+#: wp-includes/formatting.php:5070
 msgid "%1$s, and %2$s"
 msgstr "%1$s, valamint %2$s"
 
@@ -2552,7 +2560,7 @@ msgid "Formats"
 msgstr "Formátumok"
 
 #. translators: Used to join items in a list with more than 2 items.
-#: wp-includes/formatting.php:5051
+#: wp-includes/formatting.php:5068
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
@@ -2569,7 +2577,7 @@ msgstr "https://hu.wordpress.org/support/update-php/"
 #. translators: %s: Time duration in second or seconds.
 #. translators: Time difference between two dates, in seconds. %s: Number of
 #. seconds.
-#: wp-includes/functions.php:537 wp-includes/formatting.php:3723
+#: wp-includes/functions.php:537 wp-includes/formatting.php:3740
 msgid "%s second"
 msgid_plural "%s seconds"
 msgstr[0] "%s másodperc"
@@ -2666,7 +2674,7 @@ msgid "Top toolbar"
 msgstr "Felső eszköztár"
 
 #. translators: %d: number of words
-#: wp-includes/js/dist/block-editor.js:23478
+#: wp-includes/js/dist/block-editor.js:23469
 msgid "%d word"
 msgid_plural "%d words"
 msgstr[0] "%d szó"
@@ -2692,15 +2700,15 @@ msgstr "Közvetlen hivatkozás"
 msgid "To edit the featured image, you need permission to upload media."
 msgstr "A kiemelt kép szerkesztéséhez szükséges a médiafájl-feltöltési jogosultság."
 
-#: wp-includes/js/dist/block-editor.js:21263
+#: wp-includes/js/dist/block-editor.js:21254
 msgid "To edit this block, you need permission to upload media."
 msgstr "Ezen blokk szerkesztéséhez szükséges a média feltöltési jogosultság."
 
-#: wp-includes/js/dist/block-editor.js:18536
+#: wp-includes/js/dist/block-editor.js:18527
 msgid "(selected block)"
 msgstr "(választott blokk)"
 
-#: wp-includes/js/dist/block-editor.js:15693
+#: wp-includes/js/dist/block-editor.js:15684
 msgid "Block tools"
 msgstr "Blokk eszközök"
 
@@ -2734,12 +2742,12 @@ msgstr "Lássunk neki a szöveg, vagy HTML sorok írásának"
 msgid "Type text or HTML"
 msgstr "Szöveg, vagy HTML beírása"
 
-#: wp-includes/js/dist/block-editor.js:16588
+#: wp-includes/js/dist/block-editor.js:16579
 #: wp-includes/js/dist/block-library.js:3382
 msgid "Start writing or type / to choose a block"
 msgstr "Kezdjünk el írni, vagy írjuk be a / jelet egy blokk kiválasztásához"
 
-#: wp-includes/js/dist/block-editor.js:24748
+#: wp-includes/js/dist/block-editor.js:24739
 msgid "Block icon"
 msgstr "Blokk ikon"
 
@@ -2901,11 +2909,11 @@ msgstr "Oszlop törlése"
 
 #: wp-includes/js/dist/block-library.js:20350
 msgid "Add Column After"
-msgstr "Oszlop létrehozás utána"
+msgstr "Oszlop hozzáadás utána"
 
 #: wp-includes/js/dist/block-library.js:20345
 msgid "Add Column Before"
-msgstr "Oszlop létrehozás előtte"
+msgstr "Oszlop hozzáadás előtte"
 
 #: wp-includes/js/dist/block-library.js:20340
 msgid "Delete Row"
@@ -2913,11 +2921,11 @@ msgstr "Sor törlése"
 
 #: wp-includes/js/dist/block-library.js:20335
 msgid "Add Row After"
-msgstr "Sor hozzáadása előtte"
+msgstr "Sor hozzáadása utána"
 
 #: wp-includes/js/dist/block-library.js:20330
 msgid "Add Row Before"
-msgstr "Sor létrehozása előtte"
+msgstr "Sor hozzáadása előtte"
 
 #: wp-includes/js/dist/block-library.js:19294
 msgid "Write subheading…"
@@ -3192,7 +3200,7 @@ msgstr "fénykép"
 msgid "Insert an image to make a visual statement."
 msgstr "Képi közléshez csak illesszünk be egyet."
 
-#: wp-includes/js/dist/block-editor.js:19208
+#: wp-includes/js/dist/block-editor.js:19199
 msgid "Image dimensions"
 msgstr "Kép méretek"
 
@@ -3552,7 +3560,7 @@ msgstr "Fix háttér"
 
 #: wp-includes/js/dist/block-library.js:9577
 msgid "Border settings"
-msgstr ""
+msgstr "Keret beállításai"
 
 #: wp-includes/js/dist/block-library.js:12666
 msgid "Add an image or video with a text overlay — great for headers."
@@ -3762,7 +3770,7 @@ msgstr "Kilépés a kód szerkesztőből"
 msgid "Editing Code"
 msgstr "Kód szerkesztése"
 
-#: wp-includes/js/dist/block-editor.js:18987
+#: wp-includes/js/dist/block-editor.js:18978
 msgid "Editor settings"
 msgstr "Szerkesztő beállítások"
 
@@ -3778,7 +3786,7 @@ msgid "Close settings"
 msgstr "Beállítások bezárása"
 
 #. translators: %d: number of blocks
-#: wp-includes/js/dist/block-editor.js:23474
+#: wp-includes/js/dist/block-editor.js:23465
 msgid "%d block"
 msgid_plural "%d blocks"
 msgstr[0] "%d blokk"
@@ -3820,11 +3828,11 @@ msgstr "Dokumentum panelek"
 msgid "Open publish panel"
 msgstr "Közzététel panel megnyitása"
 
-#: wp-includes/js/dist/block-editor.js:18980
+#: wp-includes/js/dist/block-editor.js:18971
 msgid "Editor content"
 msgstr "Szerkesztő tartalma"
 
-#: wp-includes/js/dist/block-editor.js:18994
+#: wp-includes/js/dist/block-editor.js:18985
 msgid "Editor publish"
 msgstr "Szerkesztő közzététel"
 
@@ -3861,19 +3869,19 @@ msgstr "Perjel"
 msgid "Change the block type after adding a new paragraph."
 msgstr "Változtasd meg a blokkot miután egy bekezdést kezdesz."
 
-#: wp-includes/js/dist/block-editor.js:25282
+#: wp-includes/js/dist/block-editor.js:25273
 msgid "Insert a new block after the selected block(s)."
 msgstr "Adjunk hozzá új blokkot, a kijelölt blokkok után."
 
-#: wp-includes/js/dist/block-editor.js:25273
+#: wp-includes/js/dist/block-editor.js:25264
 msgid "Insert a new block before the selected block(s)."
 msgstr "Új blokk beillesztése a kiválasztott blokk(ok) elé."
 
-#: wp-includes/js/dist/block-editor.js:25264
+#: wp-includes/js/dist/block-editor.js:25255
 msgid "Remove the selected block(s)."
 msgstr "Kijelölt blokk(ok) eltávolítása."
 
-#: wp-includes/js/dist/block-editor.js:25255
+#: wp-includes/js/dist/block-editor.js:25246
 msgid "Duplicate the selected block(s)."
 msgstr "Kijelölt blokk(ok) megkettőzése."
 
@@ -3881,7 +3889,7 @@ msgstr "Kijelölt blokk(ok) megkettőzése."
 msgid "Block shortcuts"
 msgstr "Blokk gyorsbillentyűk"
 
-#: wp-includes/js/dist/block-editor.js:25302
+#: wp-includes/js/dist/block-editor.js:25293
 msgid "Select all text when typing. Press again to select all blocks."
 msgstr "Gépelés közben legyen minden szöveg kiválasztva. Nyomjuk meg újra, minden blokk kiválasztásához."
 
@@ -3893,7 +3901,7 @@ msgstr "Kijelölés gyorsgombjai"
 msgid "Switch between Visual editor and Code editor."
 msgstr "Váltás a Vizuális szerkesztő és a Kódszerkesztő között."
 
-#: wp-includes/js/dist/block-editor.js:25319
+#: wp-includes/js/dist/block-editor.js:25310
 msgid "Navigate to the nearest toolbar."
 msgstr "Navigáljunk a legközelebbi eszköztárhoz."
 
@@ -3943,7 +3951,7 @@ msgstr "Egy időben egy blokkra összpontosítsunk"
 
 #: wp-includes/js/dist/edit-post.js:4456
 msgid "Spotlight mode"
-msgstr ""
+msgstr "Reflektorfény mód"
 
 #: wp-includes/js/dist/edit-post.js:4451
 msgid "Access all block and document tools in a single place"
@@ -3970,7 +3978,7 @@ msgstr "Kód szerkesztő"
 msgid "Visual editor"
 msgstr "Vizuális szerkesztő"
 
-#: wp-includes/js/dist/block-editor.js:18971
+#: wp-includes/js/dist/block-editor.js:18962
 msgid "Editor top bar"
 msgstr "Szerkesztő legfelső sáv"
 
@@ -4087,15 +4095,15 @@ msgstr "Élénkpiros"
 msgid "Pale pink"
 msgstr "Halványlila"
 
-#: wp-includes/js/dist/block-editor.js:26348
+#: wp-includes/js/dist/block-editor.js:26344
 msgid "Additional CSS class(es)"
 msgstr "További CSS osztály(ok)"
 
-#: wp-includes/js/dist/block-editor.js:26250
+#: wp-includes/js/dist/block-editor.js:26246
 msgid "HTML anchor"
 msgstr "HTML horgony (anchor)"
 
-#: wp-includes/js/dist/block-editor.js:21032
+#: wp-includes/js/dist/block-editor.js:21023
 #: wp-includes/js/dist/block-library.js:9739
 msgid "Link settings"
 msgstr "Hivatkozás beállítások"
@@ -4140,7 +4148,7 @@ msgstr "Dokumentum statisztika"
 msgid "Content structure"
 msgstr "Tartalom felépítése"
 
-#: wp-includes/js/dist/block-editor.js:23219
+#: wp-includes/js/dist/block-editor.js:23210
 msgid "Skip to the selected block"
 msgstr "Ugrás a kiválasztott blokkra"
 
@@ -4477,37 +4485,37 @@ msgstr "nincs cím"
 msgid "Order"
 msgstr "Sorrend"
 
-#: wp-includes/js/dist/block-editor.js:21102
+#: wp-includes/js/dist/block-editor.js:21093
 msgid "Paste or type URL"
 msgstr "Illesszük be, vagy írjuk be az URL-t"
 
-#: wp-includes/js/dist/block-editor.js:17978
+#: wp-includes/js/dist/block-editor.js:17969
 #: wp-includes/js/dist/edit-post.js:1385
 msgid "Manage all reusable blocks"
 msgstr "Újrahasznosítható blokkok kezelése"
 
-#: wp-includes/js/dist/block-editor.js:17964
+#: wp-includes/js/dist/block-editor.js:17955
 msgid "Reusable"
 msgstr "Újra felhasználható"
 
-#: wp-includes/js/dist/block-editor.js:17916
+#: wp-includes/js/dist/block-editor.js:17907
 msgctxt "blocks"
 msgid "Most used"
 msgstr "Legtöbbet használt"
 
-#: wp-includes/js/dist/block-editor.js:17909
+#: wp-includes/js/dist/block-editor.js:17900
 #: wp-includes/js/dist/edit-post.js:3432
 msgid "Available block types"
 msgstr "Elérhető blokk típusok"
 
-#: wp-includes/js/dist/block-editor.js:17897
-#: wp-includes/js/dist/block-editor.js:17900
+#: wp-includes/js/dist/block-editor.js:17888
+#: wp-includes/js/dist/block-editor.js:17891
 #: wp-includes/js/dist/edit-post.js:3419
 msgid "Search for a block"
 msgstr "Blokk keresése"
 
 #: wp-includes/js/dist/editor.js:11722
-#: wp-includes/js/dist/block-editor.js:17839
+#: wp-includes/js/dist/block-editor.js:17830
 msgid "%d result found."
 msgid_plural "%d results found."
 msgstr[0] "%d találat."
@@ -4553,15 +4561,15 @@ msgstr "Ez a színösszeállítás nehezen olvasható. Próbáljunk egy világos
 msgid "This color combination may be hard for people to read. Try using a darker background color and/or a brighter text color."
 msgstr "Ez a színösszeállítás nehezen olvasható. Próbáljunk egy sötétebb háttérszínt és/vagy egy világosabb szövegszínt használni."
 
-#: wp-includes/js/dist/block-editor.js:24805
+#: wp-includes/js/dist/block-editor.js:24796
 msgid "Transform To:"
 msgstr "Átalakítás:"
 
-#: wp-includes/js/dist/block-editor.js:24798
+#: wp-includes/js/dist/block-editor.js:24789
 msgid "Block Styles"
 msgstr "Blokk stílusok"
 
-#: wp-includes/js/dist/block-editor.js:24772
+#: wp-includes/js/dist/block-editor.js:24763
 msgid "Change type of %d block"
 msgid_plural "Change type of %d blocks"
 msgstr[0] "%d típusú blokk módosítása"
@@ -4579,87 +4587,87 @@ msgstr "Konvertáljuk normál blokkba"
 msgid "Add to Reusable blocks"
 msgstr "Hozzáadás az újrafelhasználható blokkokhoz"
 
-#: wp-includes/js/dist/block-editor.js:24636
+#: wp-includes/js/dist/block-editor.js:24627
 msgid "Remove Block"
 msgid_plural "Remove Blocks"
 msgstr[0] "Blokk eltávolítása"
 msgstr[1] ""
 
-#: wp-includes/js/dist/block-editor.js:24624
+#: wp-includes/js/dist/block-editor.js:24615
 msgid "Insert After"
 msgstr "Utána illeszt"
 
-#: wp-includes/js/dist/block-editor.js:24620
+#: wp-includes/js/dist/block-editor.js:24611
 msgid "Insert Before"
 msgstr "Elé illeszt"
 
-#: wp-includes/js/dist/block-editor.js:24616
+#: wp-includes/js/dist/block-editor.js:24607
 msgid "Duplicate"
 msgstr "Másolat"
 
 #: wp-includes/js/dist/block-editor.js:13760
-#: wp-includes/js/dist/block-editor.js:24599
+#: wp-includes/js/dist/block-editor.js:24590
 msgid "More options"
 msgstr "További beállítások"
 
-#: wp-includes/js/dist/block-editor.js:24424
+#: wp-includes/js/dist/block-editor.js:24415
 msgid "Edit visually"
 msgstr "Szerkesztés vizuálisan"
 
-#: wp-includes/js/dist/block-editor.js:24424
+#: wp-includes/js/dist/block-editor.js:24415
 msgid "Edit as HTML"
 msgstr "Szerkesztés HTML-ben"
 
 #. translators: 1: Number of selected blocks, 2: Position of selected blocks
-#: wp-includes/js/dist/block-editor.js:23809
+#: wp-includes/js/dist/block-editor.js:23800
 msgid "Move %1$d block from position %2$d down by one place"
 msgid_plural "Move %1$d blocks from position %2$d down by one place"
 msgstr[0] "Mozgasd a(z) %1$d blokkot a(z) %2$d alá"
 msgstr[1] "Mozgasd a(z) %1$d blokkokat a(z) %2$d alá"
 
 #. translators: 1: Number of selected blocks, 2: Position of selected blocks
-#: wp-includes/js/dist/block-editor.js:23804
+#: wp-includes/js/dist/block-editor.js:23795
 msgid "Move %1$d block from position %2$d up by one place"
 msgid_plural "Move %1$d blocks from position %2$d up by one place"
 msgstr[0] "Mozgasd a(z) %1$d blokkot a(z) %2$d fölé"
 msgstr[1] "Mozgasd a(z) %1$d blokkokat a(z) %2$d fölé"
 
-#: wp-includes/js/dist/block-editor.js:23799
+#: wp-includes/js/dist/block-editor.js:23790
 msgid "Blocks cannot be moved down as they are already at the bottom"
 msgstr "Blokkokat nem lehet lejjebb mozgatni, ha már a legalul vannak"
 
-#: wp-includes/js/dist/block-editor.js:23795
+#: wp-includes/js/dist/block-editor.js:23786
 msgid "Blocks cannot be moved up as they are already at the top"
 msgstr "A blokkok nem mozgathatóak felfelé, mert már legfelül vannak"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23774
+#: wp-includes/js/dist/block-editor.js:23765
 msgid "Block %1$s is at the beginning of the content and can’t be moved right"
 msgstr "%1$s blokk a tartalom elején van, így nem lehet tovább mozgatni"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23744
+#: wp-includes/js/dist/block-editor.js:23735
 msgid "Move %1$s block from position %2$d up to position %3$d"
 msgstr "Mozgasd a(z) %1$s blokkot a(z) %2$d pozícióból a következő pozícióba: %3$d"
 
 #. translators: 1: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23734
+#: wp-includes/js/dist/block-editor.js:23725
 msgid "Block %1$s is at the end of the content and can’t be moved right"
 msgstr "%1$s blokk a tartalom végén van, így nem lehet tovább mozgatni"
 
 #. translators: 1: Type of block (i.e. Text, Image etc), 2: Position of
 #. selected block, 3: New position
-#: wp-includes/js/dist/block-editor.js:23704
+#: wp-includes/js/dist/block-editor.js:23695
 msgid "Move %1$s block from position %2$d down to position %3$d"
 msgstr "Mozgasd a(z) %1$s blokkot a(z) %2$d pozícióból a következő pozícióba: %3$d"
 
 #. translators: %s: Type of block (i.e. Text, Image etc)
-#: wp-includes/js/dist/block-editor.js:23695
+#: wp-includes/js/dist/block-editor.js:23686
 msgid "Block %s is the only block, and cannot be moved"
 msgstr "%s blokk az egyetlen, amelyet nem lehet áthelyezni"
 
-#: wp-includes/js/dist/block-editor.js:16209
+#: wp-includes/js/dist/block-editor.js:16200
 msgid "Block: %s"
 msgstr "Blokk: %s"
 
@@ -4674,7 +4682,7 @@ msgid "Resolve"
 msgstr "Javítás"
 
 #: wp-includes/js/dist/block-editor.js:14030
-#: wp-includes/js/dist/block-editor.js:24474
+#: wp-includes/js/dist/block-editor.js:24465
 msgid "Convert to Blocks"
 msgstr "Konvertálás blokkokra"
 
@@ -4691,12 +4699,12 @@ msgstr "Alakítsuk klasszikus blokká"
 msgid "This block has encountered an error and cannot be previewed."
 msgstr "Ez a blokk hibás, ezért nincs előnézete."
 
-#: wp-includes/js/dist/block-editor.js:16608
+#: wp-includes/js/dist/block-editor.js:16599
 #: wp-includes/js/dist/block-directory.js:1262
 msgid "Add block"
 msgstr "Blokk hozzáadás"
 
-#: wp-includes/js/dist/block-editor.js:23593
+#: wp-includes/js/dist/block-editor.js:23584
 msgid "No block selected."
 msgstr "Nincs blokk kiválasztva."
 
@@ -4794,7 +4802,7 @@ msgstr "Elem hozzáadása"
 
 #: wp-includes/js/dist/components.js:35173
 #: wp-includes/js/dist/components.js:35322
-#: wp-includes/js/dist/block-editor.js:19250
+#: wp-includes/js/dist/block-editor.js:19241
 msgid "Reset"
 msgstr "Visszaállít"
 
@@ -4809,9 +4817,9 @@ msgstr "Normál"
 #: wp-includes/media-template.php:173
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:59
 #: wp-includes/functions.php:7441
-#: wp-includes/class-wp-customize-manager.php:4277
-#: wp-includes/class-wp-customize-manager.php:5599
-#: wp-includes/class-wp-customize-manager.php:5620
+#: wp-includes/class-wp-customize-manager.php:4304
+#: wp-includes/class-wp-customize-manager.php:5626
+#: wp-includes/class-wp-customize-manager.php:5647
 #: wp-includes/js/dist/components.js:34651 wp-includes/js/dist/editor.js:8930
 msgid "(opens in a new tab)"
 msgstr "(megnyitás új fülön)"
@@ -4955,13 +4963,13 @@ msgstr "Egyéni színválasztó"
 
 #: wp-includes/js/dist/components.js:24023
 #: wp-includes/js/dist/components.js:36349
-#: wp-includes/js/dist/block-editor.js:20371
+#: wp-includes/js/dist/block-editor.js:20362
 msgid "No results."
 msgstr "Nincs találat."
 
 #: wp-includes/js/dist/components.js:24021
 #: wp-includes/js/dist/components.js:36349
-#: wp-includes/js/dist/block-editor.js:20369
+#: wp-includes/js/dist/block-editor.js:20360
 msgid "%d result found, use up and down arrow keys to navigate."
 msgid_plural "%d results found, use up and down arrow keys to navigate."
 msgstr[0] "%d találat, a fel és le nyíl segítségével lehet navigálni."
@@ -4999,7 +5007,7 @@ msgstr "Blokkok listája navigáció"
 msgid "Filter blocks list"
 msgstr "Blokkok listájának szűrése"
 
-#: wp-includes/post.php:273 wp-includes/js/dist/block-editor.js:17993
+#: wp-includes/post.php:273 wp-includes/js/dist/block-editor.js:17984
 #: wp-includes/js/dist/edit-post.js:3436
 msgid "No blocks found."
 msgstr "Nem találhatóak blokkok."
@@ -5712,16 +5720,16 @@ msgid "Something went wrong."
 msgstr "Valami rosszul sült el."
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4044
+#: wp-includes/class-wp-customize-manager.php:4071
 msgid "%s is already customizing this changeset. Do you want to take over?"
 msgstr "%s már a beállítások változtatását végzi. Szeretnénk átvenni tőle a műveletet?"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4042
+#: wp-includes/class-wp-customize-manager.php:4069
 msgid "%s is already customizing this changeset. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "%s már a beállítások változtatását végzi. Várjuk meg, amíg végez vele. A legutóbbi módosításaink automatikusan mentésre kerülnek."
 
-#: wp-includes/class-wp-customize-manager.php:4250
+#: wp-includes/class-wp-customize-manager.php:4277
 msgid "Update anyway, even though it might break your site?"
 msgstr "Mindenképpen módosítsuk, még akkor is, ha ez megállíthatja a webhelyet?"
 
@@ -5777,7 +5785,7 @@ msgid "Schedule"
 msgstr "Időzít"
 
 #: wp-includes/script-loader.php:1157
-#: wp-includes/class-wp-customize-manager.php:4761
+#: wp-includes/class-wp-customize-manager.php:4788
 msgctxt "customizer changeset action/button label"
 msgid "Schedule"
 msgstr "Időzít"
@@ -5810,33 +5818,33 @@ msgstr "%s átvette és jelenleg személyre szabja."
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "Úgy tűnik, hogy valami rosszul sült el. Várjunk egy kicsit, majd próbáljuk újra."
 
-#: wp-includes/class-wp-customize-manager.php:4236
+#: wp-includes/class-wp-customize-manager.php:4263
 msgid "Take over"
 msgstr "Átvétel"
 
-#: wp-includes/class-wp-customize-manager.php:4232
+#: wp-includes/class-wp-customize-manager.php:4259
 msgid "Go back"
 msgstr "Vissza"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4049
+#: wp-includes/class-wp-customize-manager.php:4076
 msgid "%s is already customizing this site. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "%s éppen testre szabja a webhelyet. Várjunk addig, amíg nem végez vele. A legutóbbi módosításokat automatikusan mentettük."
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4051
+#: wp-includes/class-wp-customize-manager.php:4078
 msgid "%s is already customizing this site. Do you want to take over?"
 msgstr "%s is éppen testre szabja a webhelyet. Átvegyük tőle?"
 
-#: wp-includes/class-wp-customize-manager.php:3331
+#: wp-includes/class-wp-customize-manager.php:3358
 msgid "Sorry, you are not allowed to take over."
 msgstr "Elnézést, nincs megfelelő jogosultság az átvételhez."
 
-#: wp-includes/class-wp-customize-manager.php:3322
+#: wp-includes/class-wp-customize-manager.php:3349
 msgid "No changeset found to take over"
 msgstr "Nincsenek olyan változások, amelyeket felül kell bírálni"
 
-#: wp-includes/class-wp-customize-manager.php:3311
+#: wp-includes/class-wp-customize-manager.php:3338
 msgid "Security check failed."
 msgstr "A biztonsági ellenőrzés nem sikerült."
 
@@ -5874,11 +5882,11 @@ msgctxt "menu locations"
 msgid "View All Locations"
 msgstr "Összes hely megtekintése"
 
-#: wp-includes/class-wp-customize-manager.php:4966
+#: wp-includes/class-wp-customize-manager.php:4993
 msgid "While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options."
 msgstr "Az új sablon előnézete közben folytathatjuk a testreszabásokat, mint widgetek és menük beállítása, és a sablon saját beállításai."
 
-#: wp-includes/class-wp-customize-manager.php:4965
+#: wp-includes/class-wp-customize-manager.php:4992
 msgid "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here."
 msgstr "Sablont keresünk? Keresgéljük, vagy böngésszünk a WordPress.org sablonkönyvtárat, ahol kipróbálhatjuk az előnézeteket, majd telepíthetjük és aktiválhatjuk is azonnal."
 
@@ -6604,67 +6612,67 @@ msgstr[1] "A sablon %s helyen jeleníthet meg menüket."
 msgid "Your theme can display menus in one location."
 msgstr "A sablonunk csak egy helyen képes menüt megjeleníteni."
 
-#: wp-includes/class-wp-customize-manager.php:5655
+#: wp-includes/class-wp-customize-manager.php:5682
 msgid "CSS code"
 msgstr "CSS kód"
 
 #. translators: 1: Link to user profile, 2: Additional link attributes, 3:
 #. Accessibility text.
 #: wp-includes/widgets/class-wp-widget-custom-html.php:311
-#: wp-includes/class-wp-customize-manager.php:5614
+#: wp-includes/class-wp-customize-manager.php:5641
 msgid "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text mode."
 msgstr "A szerkesztő mezőben automatikusan szintaktika kiemelés van használatban. Ez a funkció kikapcsolható a <a href=\"%1$s\" %2$s>felhasználói profilban%3$s</a>, hogy a mezők egyszerű szövegként működjenek."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:326
-#: wp-includes/class-wp-customize-manager.php:5607
+#: wp-includes/class-wp-customize-manager.php:5634
 msgid "Screen reader users: when in forms mode, you may need to press the Esc key twice."
 msgstr "Felolvasó programot használóknak: ha űrlapmódban vagyunk, előfordulhat, hogy kétszer kell megnyomni az Esc billentyűt."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:325
-#: wp-includes/class-wp-customize-manager.php:5606
+#: wp-includes/class-wp-customize-manager.php:5633
 msgid "To move away from this area, press the Esc key followed by the Tab key."
 msgstr "A terület elhagyásához nyomjuk meg az Esc billentyűt, majd a Tab billentyűt."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:324
-#: wp-includes/class-wp-customize-manager.php:5605
+#: wp-includes/class-wp-customize-manager.php:5632
 msgid "In the editing area, the Tab key enters a tab character."
 msgstr "A szerkesztési területen a Tab billentyű egy tabulátor karaktert illeszt be."
 
 #: wp-includes/widgets/class-wp-widget-custom-html.php:322
-#: wp-includes/class-wp-customize-manager.php:5603
+#: wp-includes/class-wp-customize-manager.php:5630
 msgid "When using a keyboard to navigate:"
 msgstr "Billentyűzet használata a navigációhoz:"
 
-#: wp-includes/class-wp-customize-manager.php:5593
+#: wp-includes/class-wp-customize-manager.php:5620
 msgid "Add your own CSS code here to customize the appearance and layout of your site."
 msgstr "Itt hozzáadhatjuk a saját CSS kódunkat, annak érdekében hogy a webhelyünk megjelenését és kinézetét testreszabjuk."
 
-#: wp-includes/class-wp-customize-manager.php:5545
+#: wp-includes/class-wp-customize-manager.php:5572
 msgid "Your homepage displays"
 msgstr "Kezdőlap megjelenése"
 
-#: wp-includes/class-wp-customize-manager.php:5528
+#: wp-includes/class-wp-customize-manager.php:5555
 msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
 msgstr "Kiválaszthatjuk, hogy mi jelenjen meg a főoldalunkon. Lehet, egy bejegyzéseket csökkenő időrendben listázó (klasszikus blog), vagy egy fix/statikus oldal. Statikus oldal létrehozásához először két oldalt kell létrehozunk, az egyik lesz a főoldal, a másikon listázódnak majd a bejegyzések."
 
-#: wp-includes/class-wp-customize-manager.php:5526
+#: wp-includes/class-wp-customize-manager.php:5553
 msgid "Homepage Settings"
 msgstr "Kezdőoldal beállítások"
 
 #. translators: %s: Site icon size in pixels.
-#: wp-includes/class-wp-customize-manager.php:5100
+#: wp-includes/class-wp-customize-manager.php:5127
 msgid "Site Icons should be square and at least %s pixels."
 msgstr "Az ikonok négyszög alakúak és legalább %s pixel szélesek legyenek."
 
-#: wp-includes/class-wp-customize-manager.php:5098
+#: wp-includes/class-wp-customize-manager.php:5125
 msgid "Site Icons are what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. Upload one here!"
 msgstr "A webhely ikonok a böngésző lapokon, a könyvjelzősávokon és a WordPress mobilalkalmazásokban találhatóak. Töltse fel ide!"
 
-#: wp-includes/class-wp-customize-manager.php:4994
+#: wp-includes/class-wp-customize-manager.php:5021
 msgid "WordPress.org themes"
 msgstr "WordPress.org sablonok"
 
-#: wp-includes/class-wp-customize-manager.php:4979
+#: wp-includes/class-wp-customize-manager.php:5006
 msgid "Installed themes"
 msgstr "Telepített sablonok"
 
@@ -6672,40 +6680,40 @@ msgstr "Telepített sablonok"
 msgid "Publish Settings"
 msgstr "Közzétételi beállítások"
 
-#: wp-includes/class-wp-customize-manager.php:4280
+#: wp-includes/class-wp-customize-manager.php:4307
 msgid "Copied"
 msgstr "Másolva"
 
-#: wp-includes/class-wp-customize-manager.php:4274
+#: wp-includes/class-wp-customize-manager.php:4301
 msgid "Preview Link"
 msgstr "Előnézet hivatkozás"
 
-#: wp-includes/class-wp-customize-manager.php:4271
+#: wp-includes/class-wp-customize-manager.php:4298
 msgid "See how changes would look live on your website, and share the preview with people who can't access the Customizer."
 msgstr "Nézzük meg, hogy a változások hogyan jelennek meg élőben a webhelyen, vagy osszuk meg az előnézetet azokkal, akik nem férnek hozzá a Testreszabóhoz."
 
-#: wp-includes/class-wp-customize-manager.php:4269
+#: wp-includes/class-wp-customize-manager.php:4296
 msgid "Share Preview Link"
 msgstr "Előnézeti hivatkozás megosztása"
 
-#: wp-includes/class-wp-customize-manager.php:3139
+#: wp-includes/class-wp-customize-manager.php:3166
 msgid "Changes trashed successfully."
 msgstr "A változások lomtárba kerültek."
 
-#: wp-includes/class-wp-customize-manager.php:3120
+#: wp-includes/class-wp-customize-manager.php:3147
 msgid "Changes have already been trashed."
 msgstr "A változások már a lomtárban vannak."
 
-#: wp-includes/class-wp-customize-manager.php:3112
-#: wp-includes/class-wp-customize-manager.php:3132
+#: wp-includes/class-wp-customize-manager.php:3139
+#: wp-includes/class-wp-customize-manager.php:3159
 msgid "Unable to trash changes."
 msgstr "Nem sikerült a változásokat lomtárba helyezni."
 
-#: wp-includes/class-wp-customize-manager.php:3101
+#: wp-includes/class-wp-customize-manager.php:3128
 msgid "No changes saved yet, so there is nothing to trash."
 msgstr "Semmi sem került még mentésre, ezért nincs mit lomtárba helyezni."
 
-#: wp-includes/class-wp-customize-manager.php:3091
+#: wp-includes/class-wp-customize-manager.php:3118
 msgid "There was an authentication problem. Please reload and try again."
 msgstr "Azonosítási hiba történt. Frissítsük az oldalt és próbáljuk újra."
 
@@ -7566,12 +7574,12 @@ msgstr "Érvénytelen hozzászólás-tartalom."
 msgid "Invalid JSONP callback function."
 msgstr "Érvénytelen JSONP visszahívási funkció."
 
-#: wp-includes/post.php:4036
+#: wp-includes/post.php:4045
 msgid "Invalid page template."
 msgstr "Érvénytelen oldal mintasablon."
 
 #: wp-includes/script-loader.php:1211 wp-includes/rest-api.php:1332
-#: wp-includes/post.php:3736
+#: wp-includes/post.php:3739
 msgid "Invalid date."
 msgstr "Érvénytelen dátum."
 
@@ -7896,7 +7904,7 @@ msgstr "Vezérlők elrejtése"
 msgid "Document Preview"
 msgstr "Dokumentum előnézet"
 
-#: wp-includes/class-wp-customize-manager.php:5227
+#: wp-includes/class-wp-customize-manager.php:5254
 msgid "Header Media"
 msgstr "Média fejrész"
 
@@ -7930,7 +7938,7 @@ msgstr "A melléklet HTML felirata, a megjelenítéshez."
 msgid "Caption for the attachment, as it exists in the database."
 msgstr "A csatolmány felirata, ahogyan az adatbázisban szerepel."
 
-#: wp-includes/class-wp-customize-manager.php:6002
+#: wp-includes/class-wp-customize-manager.php:6029
 msgid "Please enter a valid YouTube URL."
 msgstr "Érvényes YouTube url-t kell megadni."
 
@@ -7967,7 +7975,7 @@ msgstr "A bejegyzés lomtárba helyezése nem támogatott. A törléshez '%s' é
 msgid "The comment does not support trashing. Set '%s' to delete."
 msgstr "A hozzászólás lomtárba helyezése nem támogatott. A törléshez '%s' értékét állítsuk be."
 
-#: wp-includes/class-wp-customize-manager.php:5341
+#: wp-includes/class-wp-customize-manager.php:5368
 msgid "Or, enter a YouTube URL:"
 msgstr "Vagy adjunk megy egy YouTube URL címet:"
 
@@ -8017,7 +8025,7 @@ msgstr "Elnézést, ehhez a tételhez a visszakövetés nincs bekapcsolva."
 msgid "I really need an ID for this to work."
 msgstr "A működéséhez tényleg szükségem lenne egy azonosítóra."
 
-#: wp-includes/class-wp-customize-manager.php:5566
+#: wp-includes/class-wp-customize-manager.php:5593
 msgid "Homepage"
 msgstr "Kezdőoldal"
 
@@ -9045,110 +9053,110 @@ msgid "Post"
 msgstr "Bejegyzés"
 
 #. translators: 1: .mp4, 2: .mov
-#: wp-includes/class-wp-customize-manager.php:5977
+#: wp-includes/class-wp-customize-manager.php:6004
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
 msgstr "Csak %1$s, vagy %2$s fájlokat használhatunk a fejrész videóhoz.Ennek megfelelően kell konvertálni a fájlokat, majd így feltölteni, vagy a videót a YouTube-ra történő feltöltést követően az alul lévő lehetőség használatával meghivatkozni."
 
-#: wp-includes/class-wp-customize-manager.php:5969
+#: wp-includes/class-wp-customize-manager.php:5996
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 msgstr "Ez a videó túl nagy méretű fejrész videónak. Próbáljunk csökkenteni, vagy optimalizálni a tömörítési beállításokat, majd töltsük fel újra, hogy kisebb legyen a méret 8 MB-nál, vagy töltsük fel a videót a YouTube-ra, és adjuk meg alul a feltöltési hivatkozást."
 
-#: wp-includes/class-wp-customize-manager.php:5928
+#: wp-includes/class-wp-customize-manager.php:5955
 msgid "Unrecognized background setting."
 msgstr "Nem felismerhető háttér beállítások."
 
-#: wp-includes/class-wp-customize-manager.php:5919
-#: wp-includes/class-wp-customize-manager.php:5923
+#: wp-includes/class-wp-customize-manager.php:5946
+#: wp-includes/class-wp-customize-manager.php:5950
 msgid "Invalid value for background size."
 msgstr "Érvénytelen érték a háttér méretéhez."
 
-#: wp-includes/class-wp-customize-manager.php:5915
+#: wp-includes/class-wp-customize-manager.php:5942
 msgid "Invalid value for background position Y."
 msgstr "Érvénytelen érték a háttér Y pozíciójához."
 
-#: wp-includes/class-wp-customize-manager.php:5911
+#: wp-includes/class-wp-customize-manager.php:5938
 msgid "Invalid value for background position X."
 msgstr "Érvénytelen érték a háttér X pozíciójához."
 
-#: wp-includes/class-wp-customize-manager.php:5907
+#: wp-includes/class-wp-customize-manager.php:5934
 msgid "Invalid value for background attachment."
 msgstr "Érvénytelen háttérkép."
 
-#: wp-includes/class-wp-customize-manager.php:5903
+#: wp-includes/class-wp-customize-manager.php:5930
 msgid "Invalid value for background repeat."
 msgstr "Érvénytelen érték a háttér ismétlődéséhez."
 
-#: wp-includes/class-wp-customize-manager.php:5597
+#: wp-includes/class-wp-customize-manager.php:5624
 msgid "Learn more about CSS"
 msgstr "CSS ismeretek"
 
-#: wp-includes/class-wp-customize-manager.php:5633
+#: wp-includes/class-wp-customize-manager.php:5660
 msgid "Additional CSS"
 msgstr "További CSS"
 
-#: wp-includes/class-wp-customize-manager.php:5503
+#: wp-includes/class-wp-customize-manager.php:5530
 msgid "Scroll with Page"
 msgstr "Gördüljön az oldallal"
 
-#: wp-includes/class-wp-customize-manager.php:5485
+#: wp-includes/class-wp-customize-manager.php:5512
 msgid "Repeat Background Image"
 msgstr "Háttérkép ismétlése"
 
-#: wp-includes/class-wp-customize-manager.php:5462
-#: wp-includes/js/dist/block-editor.js:19235
+#: wp-includes/class-wp-customize-manager.php:5489
+#: wp-includes/js/dist/block-editor.js:19226
 msgid "Image Size"
 msgstr "Képméret"
 
 #: wp-includes/customize/class-wp-customize-background-position-control.php:93
-#: wp-includes/class-wp-customize-manager.php:5440
+#: wp-includes/class-wp-customize-manager.php:5467
 msgid "Image Position"
 msgstr "Kép elrendezése"
 
-#: wp-includes/class-wp-customize-manager.php:5412
+#: wp-includes/class-wp-customize-manager.php:5439
 msgctxt "Custom Preset"
 msgid "Custom"
 msgstr "Egyéni"
 
-#: wp-includes/class-wp-customize-manager.php:5411
+#: wp-includes/class-wp-customize-manager.php:5438
 msgctxt "Repeat Image"
 msgid "Repeat"
 msgstr "Ismétlés"
 
-#: wp-includes/class-wp-customize-manager.php:5410
-#: wp-includes/class-wp-customize-manager.php:5467
+#: wp-includes/class-wp-customize-manager.php:5437
+#: wp-includes/class-wp-customize-manager.php:5494
 msgid "Fit to Screen"
 msgstr "Képernyőméret"
 
-#: wp-includes/class-wp-customize-manager.php:5408
+#: wp-includes/class-wp-customize-manager.php:5435
 msgctxt "Default Preset"
 msgid "Default"
 msgstr "Alapértelmezett"
 
-#: wp-includes/class-wp-customize-manager.php:5404
+#: wp-includes/class-wp-customize-manager.php:5431
 msgctxt "Background Preset"
 msgid "Preset"
 msgstr "Előre beállított"
 
-#: wp-includes/class-wp-customize-manager.php:5327
+#: wp-includes/class-wp-customize-manager.php:5354
 msgid "Header Video"
 msgstr "Fejrész videó"
 
 #. translators: 1: .mp4, 2: Header height in pixels.
-#: wp-includes/class-wp-customize-manager.php:5249
+#: wp-includes/class-wp-customize-manager.php:5276
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
 msgstr "%1$s formátumban töltsük fel a videónkat, és minimalizáljuk a méretét a legjobb eredmény elérése érdekében. A sablon a magassághoz a(z) %2$s pixel méretet ajánlja."
 
 #. translators: 1: .mp4, 2: Header width in pixels.
-#: wp-includes/class-wp-customize-manager.php:5242
+#: wp-includes/class-wp-customize-manager.php:5269
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
 msgstr "A videófájlt %1$s formátumban kell feltölteni, a lehető legkisebb méretben, a legjobb eredmény érdekében. A használt sablon által javasolt szélesség: %2$s pixel."
 
 #. translators: 1: .mp4, 2: Header size in pixels.
-#: wp-includes/class-wp-customize-manager.php:5235
+#: wp-includes/class-wp-customize-manager.php:5262
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 msgstr "A videófájlt %1$s formátumban kell feltölteni, a lehető legkisebb méretben, a legjobb eredmény érdekében. A használt sablon által javasolt méret: %2$s pixel."
 
-#: wp-includes/class-wp-customize-manager.php:5228
+#: wp-includes/class-wp-customize-manager.php:5255
 msgid "If you add a video, the image will be used as a fallback while the video loads."
 msgstr "Amennyiben egy videót adunk hozzá, a betöltődés alatt a kép poszterképként fog megjelenni."
 
@@ -9160,23 +9168,23 @@ msgid "Search themes&hellip;"
 msgstr "Sablonok keresése&hellip;"
 
 #. translators: %s: Theme name.
-#: wp-includes/class-wp-customize-manager.php:4844
+#: wp-includes/class-wp-customize-manager.php:4871
 msgid "Showing details for theme: %s"
 msgstr "Sablon részletei: %s"
 
 #. translators: %d: Number of themes being displayed, which cannot currently
 #. consider singular vs. plural forms.
-#: wp-includes/class-wp-customize-manager.php:4842
+#: wp-includes/class-wp-customize-manager.php:4869
 msgid "Displaying %d themes"
 msgstr "%d sablon megjelenítve"
 
 #. translators: %d: Number of theme search results, which cannot currently
 #. consider singular vs. plural forms.
-#: wp-includes/class-wp-customize-manager.php:4840
+#: wp-includes/class-wp-customize-manager.php:4867
 msgid "%d themes found"
 msgstr "%d sablon találat"
 
-#: wp-includes/class-wp-customize-manager.php:4838
+#: wp-includes/class-wp-customize-manager.php:4865
 msgid "Are you sure you want to delete this theme?"
 msgstr "Biztos, hogy törölni szeretnénk ezt a sablont?"
 
@@ -9545,7 +9553,7 @@ msgid "Image crop area preview. Requires mouse interaction."
 msgstr "Képkivágás terület előnézete. A művelethez az egér használata szükséges."
 
 #. translators: %s: Documentation URL.
-#: wp-includes/formatting.php:4785
+#: wp-includes/formatting.php:4802
 msgid "A structure tag is required when using custom permalinks. <a href=\"%s\">Learn more</a>"
 msgstr "Az egyéni közvetlen hivatkozás használatakor szükséges a strukturált címke. <a href=\"%s\">További információ</a>"
 
@@ -9593,7 +9601,7 @@ msgstr "Hivatkozás beállítások"
 msgid "Link inserted."
 msgstr "Hivatkozás beillesztve."
 
-#: wp-includes/script-loader.php:1122 wp-includes/js/dist/block-editor.js:20477
+#: wp-includes/script-loader.php:1122 wp-includes/js/dist/block-editor.js:20468
 msgid "Link selected."
 msgstr "Hivatkozás kiválasztva."
 
@@ -9645,7 +9653,7 @@ msgstr "A %1$s állandó <strong>elavult</strong>. Használjuk a %3$s fájlban l
 
 #. translators: 1: Panel ID, 2: Link to 'customize_loaded_components' filter
 #. reference.
-#: wp-includes/class-wp-customize-manager.php:3851
+#: wp-includes/class-wp-customize-manager.php:3878
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "%1$s kézzel történő eltávolítása PHP hibát okozhat, használjuk helyette a %2$s szűrőt."
 
@@ -9753,20 +9761,20 @@ msgstr "Párbeszéd bezárása"
 msgid "The called constructor method for %1$s in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "A meghívott %1$s felépítő metódusa %2$s osztályban <strong>elavult</strong> %3$s óta. Használjuk inkább %4$s hívást."
 
-#: wp-includes/class-wp-customize-manager.php:5139
+#: wp-includes/class-wp-customize-manager.php:5166
 msgid "Choose logo"
 msgstr "Válasszunk logót"
 
-#: wp-includes/class-wp-customize-manager.php:5137
+#: wp-includes/class-wp-customize-manager.php:5164
 msgid "No logo selected"
 msgstr "Nincs kiválasztva logó"
 
-#: wp-includes/class-wp-customize-manager.php:5134
+#: wp-includes/class-wp-customize-manager.php:5161
 msgid "Change logo"
 msgstr "Logó cseréje"
 
-#: wp-includes/class-wp-customize-manager.php:5133
-#: wp-includes/class-wp-customize-manager.php:5138
+#: wp-includes/class-wp-customize-manager.php:5160
+#: wp-includes/class-wp-customize-manager.php:5165
 msgid "Select logo"
 msgstr "Logó kiválasztása"
 
@@ -9821,28 +9829,28 @@ msgid "Invalid object type."
 msgstr "Hibás objektum típus"
 
 #: wp-includes/class-wp-editor.php:1389
-#: wp-includes/js/dist/block-editor.js:20523
+#: wp-includes/js/dist/block-editor.js:20514
 msgid "Paste URL or type to search"
 msgstr "Másoljuk be az URL címet, vagy írjuk be a kereséshez"
 
-#: wp-includes/class-wp-customize-manager.php:5125
+#: wp-includes/class-wp-customize-manager.php:5152
 msgid "Logo"
 msgstr "Logó"
 
-#: wp-includes/class-wp-customize-manager.php:5074
-#: wp-includes/class-wp-customize-manager.php:5182
+#: wp-includes/class-wp-customize-manager.php:5101
+#: wp-includes/class-wp-customize-manager.php:5209
 msgid "Display Site Title and Tagline"
 msgstr "Honlap nevének és címsorának megjelenítése"
 
-#: wp-includes/class-wp-customize-manager.php:4931
+#: wp-includes/class-wp-customize-manager.php:4958
 msgid "Enter mobile preview mode"
 msgstr "Belépés a mobil előnézet módba"
 
-#: wp-includes/class-wp-customize-manager.php:4928
+#: wp-includes/class-wp-customize-manager.php:4955
 msgid "Enter tablet preview mode"
 msgstr "Belépés a tablet előnézet módba"
 
-#: wp-includes/class-wp-customize-manager.php:4924
+#: wp-includes/class-wp-customize-manager.php:4951
 msgid "Enter desktop preview mode"
 msgstr "Belépés az asztali előnézet módba"
 
@@ -10489,7 +10497,7 @@ msgid "Press return or enter to open this section"
 msgstr "Return vagy Enter ennek a szekciónak a kinyitásához"
 
 #. translators: %s: Document title from the preview.
-#: wp-includes/class-wp-customize-manager.php:4481
+#: wp-includes/class-wp-customize-manager.php:4508
 msgid "Live Preview: %s"
 msgstr "Élő előnézet: %s"
 
@@ -10510,7 +10518,7 @@ msgstr "%1$s nevű bejegyzés típus nincs regisztrálva, vagyis nem megbízhat�
 #. translators: 1: "type => link", 2: "taxonomy => link_category"
 #. translators: 1: caller_get_posts, 2: ignore_sticky_posts
 #: wp-includes/category.php:46 wp-includes/category-template.php:360
-#: wp-includes/class-wp-query.php:1810
+#: wp-includes/class-wp-query.php:1806
 msgid "%1$s is deprecated. Use %2$s instead."
 msgstr "%1$s használata nem ajánlott, használjuk helyette a(z) %2$s lehetőséget."
 
@@ -10532,7 +10540,7 @@ msgstr "Szekció váltás: %s"
 #. Asian characters), enter 'characters_excluding_spaces' or
 #. 'characters_including_spaces'. Otherwise, enter 'words'. Do not translate
 #. into your own language.
-#: wp-includes/script-loader.php:1915 wp-includes/formatting.php:3871
+#: wp-includes/script-loader.php:1915 wp-includes/formatting.php:3888
 #: wp-includes/js/dist/editor.js:12766
 msgctxt "Word count type. Do not translate!"
 msgid "words"
@@ -10638,11 +10646,11 @@ msgstr "Kép elrejtése"
 msgid "Hide header image"
 msgstr "Fejrész kép elrejtése"
 
-#: wp-includes/class-wp-customize-manager.php:5096
+#: wp-includes/class-wp-customize-manager.php:5123
 msgid "Site Icon"
 msgstr "Honlap ikon"
 
-#: wp-includes/class-wp-customize-manager.php:5021
+#: wp-includes/class-wp-customize-manager.php:5048
 msgid "Site Identity"
 msgstr "Honlap azonosítás"
 
@@ -11784,7 +11792,7 @@ msgstr "Csoportos kijelölés"
 
 #. translators: %s: Taxonomy label, %l: List of terms formatted as per
 #. $term_template.
-#: wp-includes/taxonomy.php:4341
+#: wp-includes/taxonomy.php:4343
 msgid "%s: %l."
 msgstr "%s: %l."
 
@@ -12055,7 +12063,7 @@ msgstr "Videólista mutatása"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:130
 #: wp-includes/media-template.php:1166
-#: wp-includes/js/dist/block-editor.js:22909
+#: wp-includes/js/dist/block-editor.js:22900
 msgid "Link CSS Class"
 msgstr "CSS osztály hivatkozás"
 
@@ -12526,8 +12534,8 @@ msgstr "Kép részletei"
 msgid "Insert Read More tag"
 msgstr "'Bővebben...' tag beillesztése"
 
-#: wp-includes/js/dist/block-editor.js:22520
-#: wp-includes/js/dist/block-editor.js:22526
+#: wp-includes/js/dist/block-editor.js:22511
+#: wp-includes/js/dist/block-editor.js:22517
 #: wp-includes/js/dist/edit-post.js:1328
 msgid "Tools"
 msgstr "Eszközök"
@@ -12607,7 +12615,7 @@ msgid "Find and replace"
 msgstr "Keresés és csere"
 
 #: wp-includes/media-template.php:1179 wp-includes/media.php:3884
-#: wp-includes/js/dist/block-editor.js:20789
+#: wp-includes/js/dist/block-editor.js:20780
 msgid "Replace"
 msgstr "Csere"
 
@@ -12739,13 +12747,13 @@ msgstr "Válasszunk ki egy területet és mozgassuk oda a widgetet:"
 
 #: wp-includes/class-wp-customize-widgets.php:699
 #: wp-includes/class-wp-customize-nav-menus.php:1028
-#: wp-includes/js/dist/block-editor.js:24050
+#: wp-includes/js/dist/block-editor.js:24041
 msgid "Move up"
 msgstr "Mozgatás fel"
 
 #: wp-includes/class-wp-customize-widgets.php:698
 #: wp-includes/class-wp-customize-nav-menus.php:1029
-#: wp-includes/js/dist/block-editor.js:24056
+#: wp-includes/js/dist/block-editor.js:24047
 msgid "Move down"
 msgstr "Mozgatás le"
 
@@ -12949,7 +12957,7 @@ msgstr "Fordítási frissítések"
 msgid "The theme directory \"%s\" does not exist."
 msgstr "A sablon \"%s\" könyvtára nem létezik."
 
-#: wp-includes/class-wp-query.php:1470
+#: wp-includes/class-wp-query.php:1466
 msgctxt "Comma-separated list of search stopwords in your language"
 msgid "about,an,are,as,at,be,by,com,for,from,how,in,is,it,of,on,or,that,the,this,to,was,what,when,where,who,will,with,www"
 msgstr "a,az,egy,be,ki,le,fel,meg,el,át,rá,ide,oda,szét,össze,vissza,de,hát,és,vagy,hogy,van,lesz,volt,csak,nem,igen,mint,én,te,ő,mi,ti,õk,ön,ide,volt,ahogy,ahol,aki,akik,akkor,alatt,által,stb"
@@ -13019,7 +13027,7 @@ msgstr "Üres"
 
 #. translators: Time difference between two dates, in years. %s: Number of
 #. years.
-#: wp-includes/formatting.php:3765
+#: wp-includes/formatting.php:3782
 msgid "%s year"
 msgid_plural "%s years"
 msgstr[0] "%s év"
@@ -13027,7 +13035,7 @@ msgstr[1] "%s év"
 
 #. translators: Time difference between two dates, in months. %s: Number of
 #. months.
-#: wp-includes/formatting.php:3758
+#: wp-includes/formatting.php:3775
 msgid "%s month"
 msgid_plural "%s months"
 msgstr[0] "%s hónap"
@@ -13035,7 +13043,7 @@ msgstr[1] "%s hónap"
 
 #. translators: Time difference between two dates, in weeks. %s: Number of
 #. weeks.
-#: wp-includes/formatting.php:3751
+#: wp-includes/formatting.php:3768
 msgid "%s week"
 msgid_plural "%s weeks"
 msgstr[0] "%s hét"
@@ -13078,7 +13086,7 @@ msgstr "H:i"
 msgid "F j, Y"
 msgstr "Y.m.d."
 
-#: wp-includes/js/dist/block-editor.js:23524
+#: wp-includes/js/dist/block-editor.js:23515
 msgid "Not set"
 msgstr "Nincs beállítva"
 
@@ -13181,8 +13189,8 @@ msgstr "Hibás felhasználói azonosító (ID)."
 msgid "Random Order"
 msgstr "Véletlen sorrend"
 
-#: wp-includes/media.php:3936 wp-includes/js/dist/block-editor.js:20940
-#: wp-includes/js/dist/block-editor.js:21358
+#: wp-includes/media.php:3936 wp-includes/js/dist/block-editor.js:20931
+#: wp-includes/js/dist/block-editor.js:21349
 msgid "Insert from URL"
 msgstr "Beillesztés webcímből"
 
@@ -13249,7 +13257,7 @@ msgstr "Videó kezelése"
 
 #: wp-includes/widgets/class-wp-widget-media-video.php:28
 #: wp-includes/post.php:2740 wp-includes/js/dist/editor.js:8565
-#: wp-includes/js/dist/block-editor.js:21292
+#: wp-includes/js/dist/block-editor.js:21283
 #: wp-includes/js/dist/block-library.js:21833
 msgid "Video"
 msgstr "Videó"
@@ -13286,7 +13294,7 @@ msgstr "Oldalba illesztés"
 
 #: wp-includes/widgets/class-wp-widget-media-audio.php:28
 #: wp-includes/post.php:2731 wp-includes/js/dist/editor.js:8568
-#: wp-includes/js/dist/block-editor.js:21288
+#: wp-includes/js/dist/block-editor.js:21279
 #: wp-includes/js/dist/block-library.js:9205
 msgid "Audio"
 msgstr "Hang"
@@ -13369,7 +13377,7 @@ msgstr "Húzzunk ide fájlt a feltöltéshez"
 msgid "Create Gallery"
 msgstr "Galéria létrehozása"
 
-#: wp-includes/media.php:3900 wp-includes/js/dist/block-editor.js:21400
+#: wp-includes/media.php:3900 wp-includes/js/dist/block-editor.js:21391
 msgid "Media Library"
 msgstr "Médiatár"
 
@@ -13428,14 +13436,14 @@ msgstr ""
 
 #: wp-includes/media-template.php:772 wp-includes/media-template.php:847
 #: wp-includes/media-template.php:1120
-#: wp-includes/js/dist/block-editor.js:22842
+#: wp-includes/js/dist/block-editor.js:22833
 #: wp-includes/js/dist/block-library.js:7851
 msgid "Media File"
 msgstr "Média fájl"
 
 #: wp-includes/media-template.php:779 wp-includes/media-template.php:844
 #: wp-includes/media-template.php:1123
-#: wp-includes/js/dist/block-editor.js:22847
+#: wp-includes/js/dist/block-editor.js:22838
 #: wp-includes/js/dist/block-library.js:7848
 msgid "Attachment Page"
 msgstr "Csatolmány oldal"
@@ -13541,7 +13549,7 @@ msgstr "Média beillesztése"
 msgid "View Attachment Page"
 msgstr "Csatolmány oldal megtekintése"
 
-#: wp-includes/js/dist/block-editor.js:25311
+#: wp-includes/js/dist/block-editor.js:25302
 msgid "Clear selection."
 msgstr "Kiválasztás megszüntetése."
 
@@ -13610,11 +13618,11 @@ msgstr "HTML"
 msgid "Skip to toolbar"
 msgstr "Tovább az eszköztárra"
 
-#: wp-includes/class-wp-customize-manager.php:5194
+#: wp-includes/class-wp-customize-manager.php:5221
 msgid "Header Text Color"
 msgstr "Fejrész szöveg színe"
 
-#: wp-includes/class-wp-customize-manager.php:5160
+#: wp-includes/class-wp-customize-manager.php:5187
 msgid "Colors"
 msgstr "Színek"
 
@@ -13650,7 +13658,7 @@ msgid "Sorry, you are not allowed to publish this page."
 msgstr "Elnézést, nincs megfelelő jogosultság ezen oldal közzétételéhez."
 
 #: wp-includes/customize/class-wp-customize-header-image-control.php:54
-#: wp-includes/class-wp-customize-manager.php:5255
+#: wp-includes/class-wp-customize-manager.php:5282
 msgid "Header Image"
 msgstr "Fejrész kép"
 
@@ -13693,16 +13701,16 @@ msgid_plural "Site name must be at least %s characters."
 msgstr[0] "A honlap nevének legalább %s karakter hosszúságúnak kell lennie."
 msgstr[1] "A honlap nevének legalább %s karakter hosszúságúnak kell lennie."
 
-#: wp-includes/class-wp-customize-manager.php:5550
+#: wp-includes/class-wp-customize-manager.php:5577
 msgid "A static page"
 msgstr "Statikus oldal"
 
 #: wp-includes/customize/class-wp-customize-background-image-control.php:33
-#: wp-includes/class-wp-customize-manager.php:5364
+#: wp-includes/class-wp-customize-manager.php:5391
 msgid "Background Image"
 msgstr "Háttérkép"
 
-#: wp-includes/class-wp-customize-manager.php:5218
+#: wp-includes/class-wp-customize-manager.php:5245
 #: wp-includes/js/dist/block-editor.js:7575
 msgid "Background Color"
 msgstr "Háttérszín"
@@ -13725,7 +13733,7 @@ msgstr "Kép eltávolítása"
 msgid "Sorry, you are not allowed to edit this comment."
 msgstr "Elnézést, nem engedélyezett ennek a hozzászólásnak a szerkesztése."
 
-#: wp-includes/class-wp-customize-manager.php:5584
+#: wp-includes/class-wp-customize-manager.php:5611
 msgid "Posts page"
 msgstr "Bejegyzések oldala"
 
@@ -13740,15 +13748,15 @@ msgstr "Engedélyezett fájlok"
 #: wp-includes/customize/class-wp-customize-media-control.php:236
 #: wp-includes/customize/class-wp-customize-media-control.php:247
 #: wp-includes/customize/class-wp-customize-media-control.php:257
-#: wp-includes/class-wp-customize-manager.php:5135
+#: wp-includes/class-wp-customize-manager.php:5162
 #: wp-includes/class-wp-editor.php:1387 wp-includes/js/dist/edit-post.js:1145
 #: wp-includes/js/dist/block-directory.js:1501
 msgid "Remove"
 msgstr "Eltávolítás"
 
-#: wp-includes/js/dist/block-editor.js:20932
-#: wp-includes/js/dist/block-editor.js:21414
-#: wp-includes/js/dist/block-editor.js:21427
+#: wp-includes/js/dist/block-editor.js:20923
+#: wp-includes/js/dist/block-editor.js:21405
+#: wp-includes/js/dist/block-editor.js:21418
 msgid "Upload"
 msgstr "Feltöltés"
 
@@ -13868,7 +13876,7 @@ msgid "Error: The themes directory is either empty or doesn&#8217;t exist. Pleas
 msgstr "Hiba: A sablon könyvtár üres, vagy nem létezik. Ellenőrizzük a telepítést."
 
 #. translators: %s: Document title from the preview.
-#: wp-includes/class-wp-customize-manager.php:4478
+#: wp-includes/class-wp-customize-manager.php:4505
 msgid "Customize: %s"
 msgstr "%s testreszabása"
 
@@ -13878,15 +13886,15 @@ msgstr "%s testreszabása"
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; Választás &mdash;"
 
-#: wp-includes/class-wp-customize-manager.php:5055
+#: wp-includes/class-wp-customize-manager.php:5082
 msgid "Tagline"
 msgstr "Honlap egysoros leírása"
 
-#: wp-includes/class-wp-customize-manager.php:5549
+#: wp-includes/class-wp-customize-manager.php:5576
 msgid "Your latest posts"
 msgstr "a legutóbbi saját bejegyzés(ek)"
 
-#: wp-includes/js/dist/block-editor.js:23604
+#: wp-includes/js/dist/block-editor.js:23595
 msgid "Styles"
 msgstr "Stíluslapok"
 
@@ -13927,7 +13935,7 @@ msgid "Edit Site"
 msgstr "Honlap szerkesztése"
 
 #: wp-includes/script-loader.php:1298 wp-includes/script-loader.php:1391
-#: wp-includes/post.php:4573
+#: wp-includes/post.php:4582
 msgctxt "tag delimiter"
 msgid ","
 msgstr ","
@@ -14037,7 +14045,7 @@ msgstr "Konfigurációs fájl létrehozása"
 msgid "You can create a %s file through a web interface, but this doesn't work for all server setups. The safest way is to manually create the file."
 msgstr "A %s fájl létrehozható egy webes felületen keresztül is, de ez nem minden szerver-beállítás esetén működik.Biztonságosabb út a kézzel történő létrehozás."
 
-#: wp-includes/class-wp-customize-manager.php:5596
+#: wp-includes/class-wp-customize-manager.php:5623
 msgid "https://codex.wordpress.org/CSS"
 msgstr "https://codex.wordpress.org/CSS"
 
@@ -14149,7 +14157,7 @@ msgstr "<strong>Hiba</strong>: Ez a honlap URL már használatban van."
 msgid "Documentation"
 msgstr "Dokumentáció"
 
-#: wp-includes/general-template.php:4197 wp-includes/formatting.php:3859
+#: wp-includes/general-template.php:4197 wp-includes/formatting.php:3876
 msgid "&hellip;"
 msgstr "&hellip;"
 
@@ -14217,7 +14225,7 @@ msgctxt "admin color scheme"
 msgid "Blue"
 msgstr "Kék"
 
-#: wp-includes/formatting.php:4767
+#: wp-includes/formatting.php:4784
 msgid "The timezone you have entered is not valid. Please select a valid timezone."
 msgstr "A megadott időzóna érvénytelen! Érvényes időzónát kell kiválasztani."
 
@@ -14278,7 +14286,7 @@ msgstr "Bejegyzés navigáció"
 #. translators: %s: Social Link service name
 #: wp-includes/blocks/social-link.php:21
 msgid "Link to %s"
-msgstr ""
+msgstr "Közvetlen hivatkozás: %s"
 
 #: wp-includes/class-walker-comment.php:242
 msgid "Pingback:"
@@ -14569,7 +14577,7 @@ msgid "Blavatar"
 msgstr "Blavatar"
 
 #. translators: %s: Taxonomy name.
-#: wp-includes/post.php:3969
+#: wp-includes/post.php:3978
 msgid "Invalid taxonomy: %s."
 msgstr "Nem megfelelő osztályozás: %s."
 
@@ -14633,7 +14641,7 @@ msgid "F, Y"
 msgstr "Y. F"
 
 #. translators: Used to join items in a list with only 2 items.
-#: wp-includes/formatting.php:5055
+#: wp-includes/formatting.php:5072
 msgid "%1$s and %2$s"
 msgstr "%1$s és %2$s"
 
@@ -14906,15 +14914,15 @@ msgstr "Ez a honlap archiválásra, vagy felfüggesztésre került."
 msgid "The given object ID is not that of a menu item."
 msgstr "A megadott azonosító nem menü elem."
 
-#: wp-includes/formatting.php:4708
+#: wp-includes/formatting.php:4725
 msgid "The Site address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "A megadott honlapcím hibás, vagy helytelen formátumban került megadásra. Valódi URL-t kell megadni."
 
-#: wp-includes/formatting.php:4695
+#: wp-includes/formatting.php:4712
 msgid "The WordPress address you entered did not appear to be a valid URL. Please enter a valid URL."
 msgstr "A megadott WordPress cím nem tűnik érvényes URL-címnek. Valódi URL-címet kell megadni."
 
-#: wp-includes/formatting.php:4585
+#: wp-includes/formatting.php:4602
 msgid "The email address entered did not appear to be a valid email address. Please enter a valid email address."
 msgstr "A megadott email cím hibásnak tűnik. Valódi email címet kell megadni."
 
@@ -15333,7 +15341,7 @@ msgstr "A hozzászólás írójának meg kell adnia a nevét és e-mail címét.
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:361
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:828
 #: wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php:398
-#: wp-includes/post.php:3609 wp-includes/post.php:4185
+#: wp-includes/post.php:3612 wp-includes/post.php:4194
 #: wp-includes/revision.php:308
 msgid "Invalid post ID."
 msgstr "Hibás bejegyzés ID."
@@ -15572,7 +15580,7 @@ msgstr "Hiányzó/hibás stíluslap."
 msgid "The parent theme is missing. Please install the \"%s\" parent theme."
 msgstr "A szülő sablon hibás. \"%s\" szülő sablont telepíteni kell."
 
-#: wp-includes/taxonomy.php:4414
+#: wp-includes/taxonomy.php:4416
 msgid "Invalid object ID."
 msgstr "Hibás objektum ID."
 
@@ -15702,7 +15710,7 @@ msgstr "/"
 #: wp-includes/script-loader.php:839
 #: wp-includes/widgets/class-wp-widget-media-image.php:28
 #: wp-includes/class-wp-editor.php:1216 wp-includes/js/dist/editor.js:8553
-#: wp-includes/js/dist/block-editor.js:21290
+#: wp-includes/js/dist/block-editor.js:21281
 #: wp-includes/js/dist/block-library.js:5200
 #: wp-includes/js/dist/block-library.js:5775
 msgid "Image"
@@ -15760,15 +15768,15 @@ msgstr "Nem lehet üres a felhasználónév."
 msgid "Cannot create a revision of a revision"
 msgstr "Nem lehet egy korábbi változatból egy másikat menteni"
 
-#: wp-includes/post.php:3938
+#: wp-includes/post.php:3947
 msgid "Could not insert post into the database"
 msgstr "Nem sikerült beilleszteni a bejegyzést az adatbázisba"
 
-#: wp-includes/post.php:3923
+#: wp-includes/post.php:3932
 msgid "Could not update post in the database"
 msgstr "Nem sikerült frissíteni a bejegyzést az adatbázisban"
 
-#: wp-includes/post.php:3656
+#: wp-includes/post.php:3659
 msgid "Content, title, and excerpt are empty."
 msgstr "A tartalom, a cím és a kivonat egyaránt üres."
 
@@ -16053,8 +16061,8 @@ msgstr "Hozzászólások hírcsatorna"
 msgid "Insert Page Break tag"
 msgstr "Oldaltörés beszúrása"
 
-#: wp-includes/class-wp-customize-manager.php:5409
-#: wp-includes/class-wp-customize-manager.php:5468
+#: wp-includes/class-wp-customize-manager.php:5436
+#: wp-includes/class-wp-customize-manager.php:5495
 msgid "Fill Screen"
 msgstr "Teljes képernyő"
 
@@ -16063,13 +16071,13 @@ msgid "Quote"
 msgstr "Idézet"
 
 #: wp-includes/class-wp-editor.php:1257
-#: wp-includes/js/dist/block-editor.js:22956
+#: wp-includes/js/dist/block-editor.js:22947
 msgid "Remove link"
 msgstr "Hivatkozás eltávolítása"
 
 #: wp-includes/script-loader.php:643 wp-includes/class-wp-editor.php:1261
-#: wp-includes/js/dist/block-editor.js:22622
-#: wp-includes/js/dist/block-editor.js:22920
+#: wp-includes/js/dist/block-editor.js:22613
+#: wp-includes/js/dist/block-editor.js:22911
 msgid "Insert link"
 msgstr "Hivatkozás beszúrás"
 
@@ -16091,7 +16099,7 @@ msgstr "Betű"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:137
 #: wp-includes/media-template.php:1162
-#: wp-includes/js/dist/block-editor.js:22903
+#: wp-includes/js/dist/block-editor.js:22894
 msgid "Link Rel"
 msgstr "Kapcsolódó hivatkozás"
 
@@ -16218,7 +16226,7 @@ msgstr "Új dokumentum"
 msgid "Paste"
 msgstr "Beillesztés"
 
-#: wp-includes/class-wp-customize-manager.php:4280
+#: wp-includes/class-wp-customize-manager.php:4307
 #: wp-includes/class-wp-editor.php:1175
 msgid "Copy"
 msgstr "Másolás"
@@ -16772,7 +16780,7 @@ msgid ", "
 msgstr ", "
 
 #. translators: Time difference between two dates, in days. %s: Number of days.
-#: wp-includes/formatting.php:3744
+#: wp-includes/formatting.php:3761
 msgid "%s day"
 msgid_plural "%s days"
 msgstr[0] "%s nap"
@@ -16781,7 +16789,7 @@ msgstr[1] "%s nap"
 #. translators: %s: Time duration in hour or hours.
 #. translators: Time difference between two dates, in hours. %s: Number of
 #. hours.
-#: wp-includes/functions.php:525 wp-includes/formatting.php:3737
+#: wp-includes/functions.php:525 wp-includes/formatting.php:3754
 msgid "%s hour"
 msgid_plural "%s hours"
 msgstr[0] "%s óra"
@@ -16789,7 +16797,7 @@ msgstr[1] "%s óra"
 
 #. translators: Time difference between two dates, in minutes (min=minute). %s:
 #. Number of minutes.
-#: wp-includes/formatting.php:3730
+#: wp-includes/formatting.php:3747
 msgid "%s min"
 msgid_plural "%s mins"
 msgstr[0] "%s perc"
@@ -17061,7 +17069,7 @@ msgstr "%s honlapjának megtekintése"
 msgid "Meta"
 msgstr "Meta"
 
-#: wp-includes/js/dist/block-editor.js:20065
+#: wp-includes/js/dist/block-editor.js:20056
 msgid "Search results for %s"
 msgstr "Keresési eredmény: %s"
 
@@ -17147,7 +17155,7 @@ msgid "&laquo; Previous Page"
 msgstr "&laquo; Előző oldal"
 
 #: wp-includes/js/dist/components.js:39290
-#: wp-includes/js/dist/block-editor.js:21561
+#: wp-includes/js/dist/block-editor.js:21552
 msgid "All"
 msgstr "Összes"
 
@@ -17208,7 +17216,7 @@ msgstr "Bővítmény:"
 #: wp-includes/customize/class-wp-customize-media-control.php:235
 #: wp-includes/customize/class-wp-customize-media-control.php:246
 #: wp-includes/customize/class-wp-customize-media-control.php:256
-#: wp-includes/class-wp-customize-manager.php:5136
+#: wp-includes/class-wp-customize-manager.php:5163
 #: wp-includes/js/dist/components.js:33463
 #: wp-includes/js/dist/components.js:35215
 #: wp-includes/js/dist/block-library.js:18937
@@ -17218,7 +17226,7 @@ msgstr "Alapértelmezett"
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:84
 #: wp-includes/media-template.php:1108 wp-includes/class-wp-editor.php:1328
-#: wp-includes/js/dist/block-editor.js:19224
+#: wp-includes/js/dist/block-editor.js:19215
 msgid "Height"
 msgstr "Magasság"
 
@@ -17235,7 +17243,7 @@ msgid "Email"
 msgstr "E-mail cím"
 
 #: wp-includes/class-wp-xmlrpc-server.php:545
-#: wp-includes/class-wp-customize-manager.php:5038
+#: wp-includes/class-wp-customize-manager.php:5065
 msgid "Site Title"
 msgstr "Honlap neve"
 
@@ -17265,8 +17273,8 @@ msgstr "Sablonok"
 msgid "Sites"
 msgstr "Honlapok"
 
-#: wp-includes/js/dist/block-editor.js:22622
-#: wp-includes/js/dist/block-editor.js:22920
+#: wp-includes/js/dist/block-editor.js:22613
+#: wp-includes/js/dist/block-editor.js:22911
 msgid "Edit link"
 msgstr "Hivatkozás szerkesztése"
 
@@ -17306,7 +17314,7 @@ msgstr "<strong>Hiba</strong>: Meg kell adni a felhasználónevet."
 
 #: wp-includes/widgets/class-wp-widget-media-image.php:78
 #: wp-includes/media-template.php:1103 wp-includes/class-wp-editor.php:1329
-#: wp-includes/js/dist/block-editor.js:19213
+#: wp-includes/js/dist/block-editor.js:19204
 #: wp-includes/js/dist/format-library.js:927
 msgid "Width"
 msgstr "Szélesség"
@@ -17389,16 +17397,16 @@ msgstr "Média módosítása"
 msgid "New Page"
 msgstr "Új oldal"
 
-#: wp-includes/media.php:3881 wp-includes/js/dist/block-editor.js:22535
+#: wp-includes/media.php:3881 wp-includes/js/dist/block-editor.js:22526
 msgid "Select"
 msgstr "Kiválasztás"
 
 #: wp-includes/script-loader.php:841 wp-includes/script-loader.php:1165
 #: wp-includes/script-loader.php:1968
-#: wp-includes/class-wp-customize-manager.php:5627
+#: wp-includes/class-wp-customize-manager.php:5654
 #: wp-includes/class-wp-editor.php:1183 wp-includes/class-wp-editor.php:1840
 #: wp-includes/js/dist/components.js:33272
-#: wp-includes/js/dist/block-editor.js:22639
+#: wp-includes/js/dist/block-editor.js:22630
 #: wp-includes/js/dist/edit-post.js:3179 wp-includes/js/dist/edit-post.js:3503
 #: wp-includes/js/dist/edit-post.js:3848
 msgid "Close"
@@ -17448,7 +17456,7 @@ msgstr "Keresés"
 #: wp-includes/script-loader.php:696 wp-includes/script-loader.php:875
 #: wp-includes/widgets/class-wp-widget-text.php:538
 #: wp-includes/widgets/class-wp-widget-text.php:553
-#: wp-includes/class-wp-customize-manager.php:4207
+#: wp-includes/class-wp-customize-manager.php:4234
 msgid "Dismiss"
 msgstr "Bezárás"
 
@@ -17510,7 +17518,7 @@ msgstr "Kép URL"
 
 #: wp-includes/media.php:3877 wp-includes/media.php:4442
 #: wp-includes/class-wp-editor.php:1233
-#: wp-includes/js/dist/block-editor.js:21285
+#: wp-includes/js/dist/block-editor.js:21276
 msgid "Media"
 msgstr "Média"
 
@@ -17648,7 +17656,7 @@ msgid "Reply"
 msgstr "Válasz"
 
 #: wp-includes/script-loader.php:1154 wp-includes/script-loader.php:1324
-#: wp-includes/class-wp-customize-manager.php:4756
+#: wp-includes/class-wp-customize-manager.php:4783
 #: wp-includes/js/dist/editor.js:11076
 msgid "Save Draft"
 msgstr "Mentés vázlatként"
@@ -17664,8 +17672,8 @@ msgstr "Tartalom"
 #: wp-includes/script-loader.php:1100 wp-includes/script-loader.php:1164
 #: wp-includes/script-loader.php:1312 wp-includes/media.php:3882
 #: wp-includes/class-wp-editor.php:1182 wp-includes/class-wp-editor.php:1886
-#: wp-includes/js/dist/block-editor.js:21334
-#: wp-includes/js/dist/block-editor.js:21337
+#: wp-includes/js/dist/block-editor.js:21325
+#: wp-includes/js/dist/block-editor.js:21328
 msgid "Cancel"
 msgstr "Kilépés"
 
@@ -17679,9 +17687,9 @@ msgid "Recent Comments"
 msgstr "Legutóbbi hozzászólások"
 
 #: wp-includes/media-template.php:1441
-#: wp-includes/class-wp-customize-manager.php:4234
+#: wp-includes/class-wp-customize-manager.php:4261
 #: wp-includes/class-wp-editor.php:1249
-#: wp-includes/js/dist/block-editor.js:24823
+#: wp-includes/js/dist/block-editor.js:24814
 #: wp-includes/js/dist/block-library.js:14219
 msgid "Preview"
 msgstr "Előnézet"
@@ -17691,8 +17699,8 @@ msgstr "Előnézet"
 msgid "RSS"
 msgstr "RSS"
 
-#: wp-includes/js/dist/block-editor.js:19806
-#: wp-includes/js/dist/block-editor.js:22646
+#: wp-includes/js/dist/block-editor.js:19797
+#: wp-includes/js/dist/block-editor.js:22637
 msgid "Submit"
 msgstr "Küldés"
 
@@ -17752,7 +17760,7 @@ msgid "Name"
 msgstr "Név"
 
 #: wp-includes/class-wp-editor.php:1219
-#: wp-includes/js/dist/block-editor.js:23614
+#: wp-includes/js/dist/block-editor.js:23605
 msgid "Advanced"
 msgstr "Haladó"
 
@@ -17807,7 +17815,7 @@ msgid "Excerpt"
 msgstr "Kivonat"
 
 #: wp-includes/script-loader.php:1152 wp-includes/script-loader.php:1320
-#: wp-includes/class-wp-customize-manager.php:4751
+#: wp-includes/class-wp-customize-manager.php:4778
 #: wp-includes/js/dist/editor.js:9397 wp-includes/js/dist/edit-post.js:4970
 msgid "Publish"
 msgstr "Közzététel"
@@ -17819,8 +17827,8 @@ msgstr "Hozzászólások"
 
 #: wp-includes/class-wp-customize-widgets.php:777 wp-includes/media.php:3921
 #: wp-includes/class-wp-editor.php:1390
-#: wp-includes/js/dist/block-editor.js:20691
-#: wp-includes/js/dist/block-editor.js:21108
+#: wp-includes/js/dist/block-editor.js:20682
+#: wp-includes/js/dist/block-editor.js:21099
 #: wp-includes/js/dist/block-library.js:23595
 #: wp-includes/js/dist/format-library.js:933
 msgid "Apply"
@@ -17843,9 +17851,9 @@ msgstr "%s telt el"
 #: wp-includes/class-wp-editor.php:1388
 #: wp-includes/class-walker-comment.php:242
 #: wp-includes/class-walker-comment.php:392 wp-includes/js/dist/editor.js:12394
-#: wp-includes/js/dist/block-editor.js:20132
-#: wp-includes/js/dist/block-editor.js:20751
-#: wp-includes/js/dist/block-editor.js:22532
+#: wp-includes/js/dist/block-editor.js:20123
+#: wp-includes/js/dist/block-editor.js:20742
+#: wp-includes/js/dist/block-editor.js:22523
 #: wp-includes/js/dist/block-library.js:17817
 msgid "Edit"
 msgstr "Szerkesztés"
@@ -17871,8 +17879,8 @@ msgstr "Hozzászólás"
 #: wp-includes/customize/class-wp-customize-nav-menu-item-control.php:94
 #: wp-includes/class-wp-editor.php:1265 wp-includes/class-wp-editor.php:1845
 #: wp-includes/class-wp-customize-nav-menus.php:1194
-#: wp-includes/js/dist/block-editor.js:20567
-#: wp-includes/js/dist/block-editor.js:21101
+#: wp-includes/js/dist/block-editor.js:20558
+#: wp-includes/js/dist/block-editor.js:21092
 #: wp-includes/js/dist/block-library.js:13557
 msgid "URL"
 msgstr "URL"
