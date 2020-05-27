@@ -536,8 +536,9 @@ var CLI=
         return false;
     },
     reload_current_page:function()
-    {
-    	if(typeof cli_flush_cache!=='undefined' && cli_flush_cache==1)
+    {	
+		
+    	if(typeof cli_flush_cache!=='undefined' && cli_flush_cache === true)
     	{
             window.location.href=this.add_clear_cache_url_query();
     	}else

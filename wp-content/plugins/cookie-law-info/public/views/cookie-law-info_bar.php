@@ -3,6 +3,8 @@
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+// Disable indexing of CookieLawInfo Cookie data
+echo "<!--googleoff: all-->";
 
 if($notify_html==""){ return; } //if filter is applied
 echo $notify_html;
@@ -35,3 +37,6 @@ if(file_exists($pop_content_html_file))
   cli_cookiebar_settings='<?php echo Cookie_Law_Info::get_json_settings(); ?>';
   /* ]]> */
 </script>
+<?php 
+// Re-enable indexing
+echo "<!--googleon: all-->";

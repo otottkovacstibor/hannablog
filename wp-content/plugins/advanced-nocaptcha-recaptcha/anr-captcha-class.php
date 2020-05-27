@@ -23,6 +23,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 			if ( anr_is_form_enabled( 'login' ) && ! defined( 'XMLRPC_REQUEST' ) ) {
 				add_action( 'login_form', array( $this, 'login_form_field' ), 99 );
 				add_filter( 'login_form_middle', array( $this, 'login_form_return' ), 99 );
+				add_action( 'um_after_login_fields', array( $this, 'login_form_field' ), 99 );
 				add_action( 'woocommerce_login_form', array( $this, 'login_form_field' ), 99 );
 				add_filter( 'authenticate', array( $this, 'login_verify' ), 999, 3 );
 
@@ -197,7 +198,7 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 								'size'  : '<?php echo esc_js( anr_get_option( 'size', 'normal' ) ); ?>',
 								'theme' : '<?php echo esc_js( anr_get_option( 'theme', 'light' ) ); ?>'
 							});
-							if ( typeof wc_checkout_params !== 'undefined' ) {
+							if ( typeof jQuery !== 'undefined' ) {
 								jQuery( document.body ).on( 'checkout_error', function(){
 									grecaptcha.reset(anr_captcha);
 								});
@@ -325,9 +326,12 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 					grecaptcha.ready( anr_onloadCallback );
 
 					document.addEventListener( 'wpcf7submit', anr_onloadCallback, false );
-					if ( typeof wc_checkout_params !== 'undefined' ) {
+					if ( typeof jQuery !== 'undefined' ) {
+						//Woocommerce
 						jQuery( document.body ).on( 'checkout_error', anr_onloadCallback );
 					}
+					//token is valid for 2 minutes, So get new token every after 1 minutes 50 seconds
+					setInterval(anr_onloadCallback, 110000);
 
 				} )( grecaptcha );
 			</script>
@@ -342,7 +346,11 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 		function form_field_return( $return = '' ) {
 			if ( is_user_logged_in() && anr_get_option( 'loggedin_hide' ) ) {
 				return $return;
-		}
+			}
+			$ip = $_SERVER['REMOTE_ADDR'];
+			if ( in_array( $ip, array_filter( explode( '\n', anr_get_option( 'whitelisted_ips' ) ) ) ) ) {
+				return $return;
+			}
 			return $return . $this->captcha_form_field();
 		}
 
@@ -372,6 +380,9 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 
 			$show_captcha = true;
 			$ip           = $_SERVER['REMOTE_ADDR'];
+			if ( in_array( $ip, array_filter( explode( '\n', anr_get_option( 'whitelisted_ips' ) ) ) ) ) {
+				return false;
+			}
 			// filter_var( $ip, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE );
 			$count   = absint( anr_get_option( 'failed_login_allow' ) );
 			$post_id = $this->post_id();
@@ -426,6 +437,10 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 			$secre_key  = trim( anr_get_option( 'secret_key' ) );
 			$remoteip = $_SERVER['REMOTE_ADDR'];
 			$verify = false;
+
+			if ( in_array( $remoteip, array_filter( explode( '\n', anr_get_option( 'whitelisted_ips' ) ) ) ) ) {
+				return true;
+			}
 			
 			if ( false === $response ) {
 				$response = isset( $_POST['g-recaptcha-response'] ) ? $_POST['g-recaptcha-response'] : '';
@@ -473,7 +488,8 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 			if ( isset( $result['success'] ) && true == $result['success'] ) {
 				if ( 'v3' === anr_get_option( 'captcha_version' ) ) {
 					$score = isset( $result['score'] ) ? $result['score'] : 0;
-					$verify = anr_get_option( 'score', '0.5' ) <= $score;
+					$action = isset( $result['action'] ) ? $result['action'] : '';
+					$verify = anr_get_option( 'score', '0.5' ) <= $score && 'advanced_nocaptcha_recaptcha' == $action;
 				} else {
 					$verify = true;
 				}
@@ -620,11 +636,6 @@ if ( ! class_exists( 'anr_captcha_class' ) ) {
 		}
 
 		function wpcf7_form_field( $tag ) {
-			$loggedin_hide = anr_get_option( 'loggedin_hide' );
-
-			if ( is_user_logged_in() && $loggedin_hide ) {
-				return '';
-			}
 
 			return $this->form_field_return() . sprintf( '<span class="wpcf7-form-control-wrap %s"></span>', $tag->name );
 		}

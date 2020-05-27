@@ -1,80 +1,76 @@
-# Translation of Plugins - WP Fastest Cache - Development (trunk) in Hungarian
-# This file is distributed under the same license as the Plugins - WP Fastest Cache - Development (trunk) package.
+# Translation of Plugins - WP Fastest Cache - Stable (latest release) in Hungarian
+# This file is distributed under the same license as the Plugins - WP Fastest Cache - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-09-01 06:38:52+0000\n"
+"PO-Revision-Date: 2017-02-14 12:39:25+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.3.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: hu\n"
-"Project-Id-Version: Plugins - WP Fastest Cache - Development (trunk)\n"
+"Project-Id-Version: Plugins - WP Fastest Cache - Stable (latest release)\n"
 
-#: wpFastestCache.php:1578
-msgid "Once Every 2 Hours"
-msgstr "2 óránként egyszer"
-
-#: wpFastestCache.php:1602
-msgid "Once Every 10 Days"
-msgstr "10 naponként egyszer"
-
-#. Author URI of the plugin/theme
-msgid "http://tr.linkedin.com/in/emrevona"
-msgstr "http://tr.linkedin.com/in/emrevona"
-
-#. Author of the plugin/theme
+#. Author of the plugin
 msgid "Emre Vona"
 msgstr "Emre Vona"
 
-#. Description of the plugin/theme
+#. Author URI of the plugin
+msgid "http://tr.linkedin.com/in/emrevona"
+msgstr "http://tr.linkedin.com/in/emrevona"
+
+#. Description of the plugin
 msgid "The simplest and fastest WP Cache system"
 msgstr "A legegyszerűbb és leggyorsabb WP Cache rendszer"
 
-#. Plugin URI of the plugin/theme
-msgid "http://wordpress.org/plugins/wp-fastest-cache/"
-msgstr "http://wordpress.org/plugins/wp-fastest-cache/"
-
-#. Plugin Name of the plugin/theme
+#. Plugin Name of the plugin
 msgid "WP Fastest Cache"
 msgstr "WP Fastest Cache"
 
-#: wpFastestCache.php:1614
+#. Plugin URI of the plugin
+msgid "http://wordpress.org/plugins/wp-fastest-cache/"
+msgstr "http://wordpress.org/plugins/wp-fastest-cache/"
+
+#: wpFastestCache.php:1762
 msgid "Once a Year"
 msgstr "Évente egyszer"
 
-#: wpFastestCache.php:1608
+#: wpFastestCache.php:1756
 msgid "Once a Month"
 msgstr "Havonta egyszer"
 
-#: wpFastestCache.php:1596
-msgid "Once a Week"
-msgstr "Hetente egyszer"
-
-#: wpFastestCache.php:1590
+#: wpFastestCache.php:1726
 msgid "Once a Day"
 msgstr "Naponta egyszer"
 
-#: wpFastestCache.php:1584
+#: wpFastestCache.php:1696
 msgid "Once Every 6 Hours"
 msgstr "6 óránként egyszer"
 
-#: wpFastestCache.php:1572
+#: wpFastestCache.php:1666
 msgid "Once an Hour"
 msgstr "Óránként egyszer"
 
-#: wpFastestCache.php:1566
+#: wpFastestCache.php:1660
 msgid "Twice an Hour"
 msgstr "Kétszer óránként"
 
-#: wpFastestCache.php:1560
+#: wpFastestCache.php:1654
 msgid "Once Every 15 Minutes"
 msgstr "15 percenként egyszer"
 
-#: wpFastestCache.php:1554
+#: wpFastestCache.php:1648
 msgid "Once Every 5 Minutes"
 msgstr "5 percenként egyszer"
 
-#: wpFastestCache.php:1548
+#: wpFastestCache.php:1672
+msgid "Once Every 2 Hours"
+msgstr "2 óránként egyszer"
+
+#: wpFastestCache.php:1744
+msgid "Once Every 10 Days"
+msgstr "10 naponként egyszer"
+
+#: wpFastestCache.php:1642
 msgid "Once Every 1 Minute"
 msgstr "Percenként egyszer"

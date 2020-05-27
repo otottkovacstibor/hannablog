@@ -4,7 +4,7 @@ Donate link: https://www.webtoffee.com/plugins/
 Tags: eu cookie law, GDPR, cookie law, cookie consent, eu privacy directive, privacy directive, cookies, privacy, compliance
 Requires at least: 3.3.1
 Tested up to: 5.4
-Stable tag: 1.8.7
+Stable tag: 1.8.8
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
@@ -142,6 +142,11 @@ See http://cookielawinfo.com for more information on what is required.
 4. Header (with custom styles)
 
 == Changelog ==
+
+= 1.8.8 =
+
+* Introduced 'wt_cli_enable_cache_flush' filter to enable / disable cache flushing
+* Cookie elements are excluded from the Google search engine indexing  (<! - googleoff: all ->)
 
 = 1.8.7 =
 
@@ -405,6 +410,7 @@ See http://cookielawinfo.com for more information on what is required.
 
 == Upgrade Notice ==
 
-= 1.8.7 =
+= 1.8.8 =
 
-* Tested ok with Wordpress version 5.4.0
+* Introduced 'wt_cli_enable_cache_flush' filter to enable / disable cache flushing
+* Cookie elements are excluded from the Google search engine indexing  (<! - googleoff: all ->)

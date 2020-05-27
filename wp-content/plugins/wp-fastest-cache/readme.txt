@@ -4,7 +4,7 @@ Donate link: http://profiles.wordpress.org/emrevona/
 Tags: cache, caching, performance, wp-cache, total cache, super cache, cdn
 Requires at least: 3.3
 Tested up to: 5.4
-Stable tag: 0.9.0.4
+Stable tag: 0.9.0.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -42,7 +42,7 @@ Setup of this plugin is so easy. You don't need to modify the .htacces file. It 
 
 <h4>Performance Optimization</h4>
 
-In the premium version there are many features such as Minify Html, Minify Css, Enable Gzip Compression, Leverage browser caching, Combine CSS, Combine JS, Disable Emoji.
+In the premium version there are many features such as Minify Html, Minify Css, Enable Gzip Compression, Leverage Browser Caching, Add Expires Headers, Combine CSS, Combine JS, Disable Emoji.
 
 1. Generating static html files from your dynamic WordPress blog
 2. Minify Html - You can decrease the size of page
@@ -124,20 +124,31 @@ The free version is enough to speed up your site but in the premium version ther
 
 == Changelog ==
 
+= 0.9.0.6 =
+* <strong>[FEATURE]</strong> to add WP-CLI command for clearing minified sources [<a target="_blank" href="https://www.wpfastestcache.com/features/wp-cli-commands/">Details</a>]
+* to fix Warning: parse_url() expects parameter 1 to be string, object given in preload.php on line 458
+* <strong>[FEATURE]</strong> Compatible with <a target="_blank" href="https://wordpress.org/plugins/multiple-domain/">Multiple Domain</a>
+* <strong>[FEATURE]</strong> to add Clear Cache of All Sites button [<a target="_blank" href="https://www.wpfastestcache.com/features/clear-cache-of-all-sites/">Details</a>]
+
+= 0.9.0.5 =
+* to fix replacing urls on the json source with cdn url
+* to fix clearing cache on sites using Polylang plugin
+* to prevent creating cache for feed of nonexistent content
+
 = 0.9.0.4 =
 * to fix PHP Fatal error:  Call to a member function lazy_load() on null in cache.php on line 798
 * to clear sitemap cache after updating or publishing post
 * to clear cache of the static posts page
 * to replace urls on data-siteorigin-parallax attribute with cdn-url
 * to fix the problem abour "Mobile" option
-* [FEATURE] Clear cache after theme or plugin update [<a target="_blank" href="https://www.wpfastestcache.com/features/clear-cache-after-theme-or-plugin-update/">Details</a>]
+* <strong>[FEATURE]</strong> Clear cache after theme or plugin update [<a target="_blank" href="https://www.wpfastestcache.com/features/clear-cache-after-theme-or-plugin-update/">Details</a>]
 
 = 0.9.0.3 =
-* [FEATURE] Compatible with Multiple Domain Mapping on single site
-* [BETA FEATURE] to create cache after publishing new post or updating a post [<a target="_blank" href="https://www.wpfastestcache.com/features/automatic-cache/">Details</a>]
+* <strong>[FEATURE]</strong> Compatible with Multiple Domain Mapping on single site
+* <strong>[BETA FEATURE]</strong> to create cache after publishing new post or updating a post [<a target="_blank" href="https://www.wpfastestcache.com/features/automatic-cache/">Details</a>]
 * to fix clearing search (/?s=) result cache 
 * to add settings link on the plugin list
-* [FEATURE] Compatible with Polylang with one different subdomain or domain per language
+* <strong>[FEATURE]</strong> Compatible with Polylang with one different subdomain or domain per language
 * to exclude url which ends with slash if the permalink does not end with slush
 * to exclude images for cdn if the url contains brizy_media=
 

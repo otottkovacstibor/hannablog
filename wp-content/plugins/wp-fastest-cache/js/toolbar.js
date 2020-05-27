@@ -14,6 +14,8 @@ window.addEventListener('load', function(){
 					action = "wpfc_delete_cache_and_minified";
 				}else if(id == "wp-admin-bar-wpfc-toolbar-parent-clear-cache-of-this-page"){
 					action = "wpfc_delete_current_page_cache";
+				}else if(id == "wp-admin-bar-wpfc-toolbar-parent-clear-cache-of-allsites"){
+					action = "wpfc_clear_cache_of_allsites";
 				}
 
 				var data_json = {"action": action, "path" : window.location.pathname};

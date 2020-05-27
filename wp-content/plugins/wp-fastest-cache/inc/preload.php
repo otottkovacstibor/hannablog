@@ -455,6 +455,10 @@
 		}
 
 		public static function is_excluded($url){
+			if(!is_string($url)){
+				return false;
+			}
+
 			$request_url = parse_url($url, PHP_URL_PATH);
 			$request_url = urldecode(trim($request_url, "/"));
 

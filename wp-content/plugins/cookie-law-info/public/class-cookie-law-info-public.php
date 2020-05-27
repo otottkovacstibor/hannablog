@@ -470,45 +470,48 @@ class Cookie_Law_Info_Public {
 	public function other_plugin_clear_cache()
 	{
 	
-		$cli_flush_cache=2;
+		$cli_flush_cache = false;
 		// Clear Litespeed cache
 		if(class_exists('LiteSpeed_Cache_API') && method_exists( 'LiteSpeed_Cache_API', 'purge_all' ))
 		{
-			$cli_flush_cache=1;
+			$cli_flush_cache = true;
 		}
 
         // WP Super Cache
         if(function_exists('wp_cache_clear_cache')) 
         {
-          	$cli_flush_cache=1;
+			$cli_flush_cache = true;
         }
 
         // W3 Total Cache
         if(function_exists('w3tc_flush_all')) 
         {
-          	$cli_flush_cache=1;
+			$cli_flush_cache = true;
         }
 
         // Site ground
         if(class_exists('SG_CachePress_Supercacher') && method_exists('SG_CachePress_Supercacher', 'purge_cache')) {
-        	$cli_flush_cache=1;
+        	$cli_flush_cache = true;
         }
 
         // Endurance Cache
         if(class_exists('Endurance_Page_Cache') && method_exists('Endurance_Page_Cache','purge_all')) 
         {
-          $cli_flush_cache=1;
+			$cli_flush_cache = true;
         }
 
         // WP Fastest Cache
         if(isset($GLOBALS['wp_fastest_cache']) && method_exists($GLOBALS['wp_fastest_cache'],'deleteCache')) 
         {
-          	$cli_flush_cache=1;
+			$cli_flush_cache = true;
 		}
-		if($cli_flush_cache == 1):
+		
+		$cli_flush_cache = apply_filters('wt_cli_enable_cache_flush',$cli_flush_cache);
+		
+		if( $cli_flush_cache === true ):
 		?>
 		<script type="text/javascript">
-			var cli_flush_cache=<?php echo $cli_flush_cache; ?>;
+			var cli_flush_cache = true;
 		</script>
 		<?php
 		endif;

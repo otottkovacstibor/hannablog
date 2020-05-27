@@ -326,10 +326,12 @@
 					//must be normal connection
 					if(!$this->isPluginActive('really-simple-ssl/rlrsssl-really-simple-ssl.php')){
 						if(!$this->isPluginActive('really-simple-ssl-pro/really-simple-ssl-pro.php')){
-							if(!$this->isPluginActive('ssl-insecure-content-fixer/ssl-insecure-content-fixer.php')){
-								if(!$this->isPluginActive('https-redirection/https-redirection.php')){
-									if(!$this->isPluginActive('better-wp-security/better-wp-security.php')){
-										return 0;
+							if(!$this->isPluginActive('really-simple-ssl-on-specific-pages/really-simple-ssl-on-specific-pages.php')){
+								if(!$this->isPluginActive('ssl-insecure-content-fixer/ssl-insecure-content-fixer.php')){
+									if(!$this->isPluginActive('https-redirection/https-redirection.php')){
+										if(!$this->isPluginActive('better-wp-security/better-wp-security.php')){
+											return 0;
+										}
 									}
 								}
 							}
@@ -828,6 +830,12 @@
 							$this->createFolder($this->cacheFilePath, $content);
 							do_action('wpfc_is_cacheable_action');
 						}else if($this->is_xml()){
+							if(preg_match("/<link><\/link>/", $buffer)){
+								if(preg_match("/\/feed$/", $_SERVER["REQUEST_URI"])){
+									return $buffer.time();
+								}
+							}
+
 							$this->createFolder($this->cacheFilePath, $buffer, "xml");
 							do_action('wpfc_is_cacheable_action');
 
