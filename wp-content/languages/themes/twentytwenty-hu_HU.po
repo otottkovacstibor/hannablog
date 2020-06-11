@@ -34,38 +34,26 @@ msgctxt "Theme starter content"
 msgid "The New UMoMA Opens its Doors"
 msgstr "Az új UMoMA megnyitja kapuit"
 
-#: inc/template-tags.php:393
-msgctxt "A string that is output before one or more categories"
-msgid "In"
-msgstr "Kategória:"
+#: inc/starter-content.php:72 inc/starter-content.php:87
+#: inc/starter-content.php:104 inc/starter-content.php:119
+msgid "Read More"
+msgstr "Bővebben"
 
-#: inc/starter-content.php:150
-msgid "Join the Club"
-msgstr "Csatlakozás a Klubba"
+#: classes/class-twentytwenty-customize.php:125
+msgid "Default"
+msgstr "Alapértelmezett"
 
-#: inc/starter-content.php:147
-msgid "Members get access to exclusive exhibits and sales. Our memberships cost $99.99 and are billed annually."
-msgstr ""
+#: classes/class-twentytwenty-customize.php:126
+msgid "Custom"
+msgstr "Egyéni"
 
-#: inc/starter-content.php:144
-msgid "Become a Member and Get Exclusive Offers!"
-msgstr "Taggá válni és exkluzív ajánlatok részese lenni! Ez az ajánlatunk!"
+#: classes/class-twentytwenty-customize.php:123
+msgid "Primary Color"
+msgstr "Elsődleges szín"
 
-#: inc/starter-content.php:136
-msgid "The exhibitions are produced by UMoMA in collaboration with artists and museums around the world and they often attract international attention. UMoMA has received a Special Commendation from the European Museum of the Year, and was among the top candidates for the Swedish Museum of the Year Award as well as for the Council of Europe Museum Prize."
-msgstr ""
-
-#: inc/starter-content.php:133
-msgid "With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission"
-msgstr ""
-
-#: inc/starter-content.php:129
-msgid "&#8220;Cyborgs, as the philosopher Donna Haraway established, are not reverent. They do not remember the cosmos.&#8221;"
-msgstr ""
-
-#: inc/starter-content.php:113
-msgid "From Signac to Matisse"
-msgstr "Signac-tól Matisse-ig"
+#: classes/class-twentytwenty-customize.php:183
+msgid "Apply a custom color for links, buttons, featured images."
+msgstr "Egyéni szín alkalmazása a hivatkozásokhoz, gombokhoz, kiemelt képekhez."
 
 #: inc/starter-content.php:98
 msgid "The Life I Deserve"
@@ -75,38 +63,13 @@ msgstr "Az élet, amelyet érdemlek"
 msgid "October 1 -- December 1"
 msgstr "Október 1. -- December 1."
 
-#: inc/starter-content.php:81
-msgid "Theatre of Operations"
-msgstr ""
-
-#: inc/starter-content.php:72 inc/starter-content.php:87
-#: inc/starter-content.php:104 inc/starter-content.php:119
-msgid "Read More"
-msgstr "Bővebben"
-
 #: inc/starter-content.php:69 inc/starter-content.php:101
 msgid "August 1 -- December 1"
 msgstr "Augusztus 1. -- December 1."
 
-#: inc/starter-content.php:66
-msgid "Works and Days"
-msgstr ""
-
-#: inc/starter-content.php:55
-msgid "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
-msgstr "A modern művészet elsődleges helye Észak-Svédországban. Nyitvatartás a nyári hónapok alatt 10:00 - 18:00."
-
-#: inc/starter-content.php:47
-msgid "The New UMoMA Opens its Doors"
-msgstr ""
-
-#: classes/class-twentytwenty-customize.php:395
-msgid "Overlay Opacity"
-msgstr "Átfedés átlátszósága"
-
-#: classes/class-twentytwenty-customize.php:375
-msgid "The color used for the text in the overlay."
-msgstr "Az átfedésben használt szöveg színe."
+#: classes/class-twentytwenty-customize.php:352
+msgid "Overlay Background Color"
+msgstr "Átfedés háttérszíne"
 
 #: classes/class-twentytwenty-customize.php:374
 msgid "Overlay Text Color"
@@ -116,37 +79,46 @@ msgstr "Átfedés szövegszíne"
 msgid "The color used for the overlay. Defaults to the accent color."
 msgstr "Az átfedéshez használt szín. Alapértelmezetten a kiemelőszín."
 
-#: classes/class-twentytwenty-customize.php:352
-msgid "Overlay Background Color"
-msgstr "Átfedés háttérszíne"
+#: classes/class-twentytwenty-customize.php:375
+msgid "The color used for the text in the overlay."
+msgstr "Az átfedésben használt szöveg színe."
 
-#: classes/class-twentytwenty-customize.php:283
-msgid "Settings for the \"Cover Template\" page template. Add a featured image to use as background."
-msgstr ""
+#: classes/class-twentytwenty-customize.php:395
+msgid "Overlay Opacity"
+msgstr "Átfedés átlátszósága"
 
-#: classes/class-twentytwenty-customize.php:183
-msgid "Apply a custom color for links, buttons, featured images."
-msgstr "Egyéni szín alkalmazása a hivatkozásokhoz, gombokhoz, kiemelt képekhez."
+#: inc/template-tags.php:393
+msgctxt "A string that is output before one or more categories"
+msgid "In"
+msgstr "Kategória:"
 
-#: classes/class-twentytwenty-customize.php:126
-msgid "Custom"
-msgstr "Egyéni"
+#: inc/starter-content.php:150
+msgid "Join the Club"
+msgstr "Csatlakozás a Klubba"
 
-#: classes/class-twentytwenty-customize.php:125
-msgid "Default"
-msgstr "Alapértelmezett"
+#: inc/starter-content.php:113
+msgid "From Signac to Matisse"
+msgstr "Signac-tól Matisse-ig"
 
-#: classes/class-twentytwenty-customize.php:123
-msgid "Primary Color"
-msgstr "Elsődleges szín"
+#: inc/starter-content.php:55
+msgid "The premier destination for modern art in Northern Sweden. Open from 10 AM to 6 PM every day during the summer months."
+msgstr "A modern művészet elsődleges helye Észak-Svédországban. Nyitvatartás a nyári hónapok alatt 10:00 - 18:00."
 
-#: searchform.php:24 template-parts/modal-search.php:20
-msgid "Search for:"
-msgstr "Keresés:"
+#: inc/starter-content.php:144
+msgid "Become a Member and Get Exclusive Offers!"
+msgstr "Taggá válni és exkluzív ajánlatok részese lenni! Ez az ajánlatunk!"
 
 #: index.php:99
 msgid "search again"
 msgstr "ismételt keresés"
+
+#: 404.php:24
+msgid "404 not found"
+msgstr "404 nincs találat"
+
+#: searchform.php:24 template-parts/modal-search.php:20
+msgid "Search for:"
+msgstr "Keresés:"
 
 #. translators: %s: Number of search results.
 #: index.php:39
@@ -171,93 +143,93 @@ msgctxt "copyright date format"
 msgid "Y"
 msgstr "Y."
 
-#: 404.php:24
-msgid "404 not found"
-msgstr "404 nincs találat"
+#. translators: 1: Comment date, 2: Comment time.
+#: classes/class-twentytwenty-walker-comment.php:69
+msgid "%1$s at %2$s"
+msgstr "%1$s - %2$s"
 
-#. Template Name of the theme
-msgid "Full Width Template"
-msgstr "Teljes szélességű sablon"
+#: classes/class-twentytwenty-walker-comment.php:77
+msgid "Edit"
+msgstr "Szerkesztés"
 
-#: template-parts/pagination.php:25
-msgid "Older <span class=\"nav-short\">Posts</span>"
-msgstr "Korábbi <span class=\"nav-short\">bejegyzések</span>"
+#: classes/class-twentytwenty-walker-comment.php:92
+msgid "Your comment is awaiting moderation."
+msgstr "A hozzászólás rendszer-moderációra várakozik."
 
-#: template-parts/pagination.php:21
-msgid "Newer <span class=\"nav-short\">Posts</span>"
-msgstr "Újabb <span class=\"nav-short\">bejegyzések</span>"
+#: comments.php:34
+msgid "Leave a comment"
+msgstr "Egy jó hozzászólás jó lenne"
 
-#: template-parts/navigation.php:25
-msgid "Post"
-msgstr "Bejegyzés"
+#. translators: %s: Post title.
+#: comments.php:37
+msgctxt "comments title"
+msgid "One reply on &ldquo;%s&rdquo;"
+msgstr "Egy hozzászólás a(z) &ldquo;%s&rdquo; című bejegyzéshez"
 
-#: template-parts/modal-search.php:26
-msgid "Close search"
-msgstr "Keresés bezárása"
+#. translators: 1: Number of comments, 2: Post title.
+#: comments.php:41
+msgctxt "comments title"
+msgid "%1$s reply on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s hozzászólás a(z) &ldquo;%2$s&rdquo; című bejegyzéshez"
+msgstr[1] "%1$s hozzászólás a(z) &ldquo;%2$s&rdquo; című bejegyzéshez"
 
-#: template-parts/modal-menu.php:117
-msgid "Expanded Social links"
-msgstr "Bővített közöségi hivatkozások"
+#: comments.php:88
+msgid "Comments"
+msgstr "Hozzászólás"
 
-#: template-parts/modal-menu.php:73
-msgid "Mobile"
-msgstr "Mobil"
+#: comments.php:127
+msgid "Comments are closed."
+msgstr "A hozzászólások jelenleg nem engedélyezettek ezen a részen."
 
-#: template-parts/modal-menu.php:48
-msgid "Expanded"
-msgstr "Bővített"
+#: inc/starter-content.php:176 inc/starter-content.php:186 functions.php:492
+msgid "Primary"
+msgstr "Elsődleges"
 
-#: template-parts/modal-menu.php:21
-msgid "Close Menu"
-msgstr "Menü bezárása"
-
-#: template-parts/footer-menus-widgets.php:57
-msgid "Social links"
-msgstr "Közösségi hivatkozások"
-
-#: template-parts/footer-menus-widgets.php:37
-msgid "Footer"
-msgstr "Lábrész"
-
-#. translators: %s: Author name.
-#: inc/template-tags.php:354 template-parts/entry-author-bio.php:20
-msgid "By %s"
-msgstr "Szerző: %s"
-
-#: template-parts/content.php:48 template-parts/content-cover.php:138
-msgid "Pages:"
-msgstr "Oldal:"
-
-#: template-parts/content.php:48 template-parts/content-cover.php:138
-msgid "Page"
-msgstr "Oldal"
-
-#: template-parts/content-cover.php:88
-msgid "Scroll Down"
-msgstr "Görgetés lefelé"
-
-#: searchform.php:27
-msgctxt "submit button"
-msgid "Search"
-msgstr "Keresés"
-
-#: searchform.php:25
-msgctxt "placeholder"
-msgid "Search &hellip;"
-msgstr "Keresés &hellip;"
-
-#: index.php:48
-msgid "We could not find any results for your search. You can give it another try through the search form below."
-msgstr "A keresett kifejezést nem találjuk. Javaslunk egy újabb keresést az alul lévő űrlap használatával."
-
-#: index.php:32
-msgid "Search:"
-msgstr "Keresés:"
+#: inc/starter-content.php:196
+msgid "Social Links Menu"
+msgstr "Közösségi hivatkozások menü"
 
 #. translators: %s: Post title. Only visible to screen readers.
 #: inc/template-tags.php:206
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztés"
+
+#: functions.php:261
+msgid "Footer Menu"
+msgstr "Lábrész menü"
+
+#: template-parts/content-cover.php:138 template-parts/content.php:48
+msgid "Pages:"
+msgstr "Oldal:"
+
+#: template-parts/footer-menus-widgets.php:37
+msgid "Footer"
+msgstr "Lábrész"
+
+#: template-parts/content-cover.php:138 template-parts/content.php:48
+msgid "Page"
+msgstr "Oldal"
+
+#: functions.php:497
+msgid "Secondary"
+msgstr "Másodlagos"
+
+#: template-parts/modal-menu.php:73
+msgid "Mobile"
+msgstr "Mobil"
+
+#: template-parts/pagination.php:25
+msgid "Older <span class=\"nav-short\">Posts</span>"
+msgstr "Korábbi <span class=\"nav-short\">bejegyzések</span>"
+
+#: template-parts/navigation.php:25
+msgid "Post"
+msgstr "Bejegyzés"
+
+#: index.php:32
+msgid "Search:"
+msgstr "Keresés:"
 
 #: inc/template-tags.php:445
 msgid "Sticky post"
@@ -272,21 +244,23 @@ msgstr "Címkék"
 msgid "Categories"
 msgstr "Kategóriák"
 
-#: inc/template-tags.php:371
-msgid "Post date"
-msgstr "Bejegyzés dátuma"
+#: searchform.php:27
+msgctxt "submit button"
+msgid "Search"
+msgstr "Keresés"
 
-#: inc/template-tags.php:347
-msgid "Post author"
-msgstr "Bejegyzés szerzője"
+#: template-parts/footer-menus-widgets.php:57
+msgid "Social links"
+msgstr "Közösségi hivatkozások"
 
-#: inc/starter-content.php:196
-msgid "Social Links Menu"
-msgstr "Közösségi hivatkozások menü"
+#: template-parts/modal-menu.php:21
+msgid "Close Menu"
+msgstr "Menü bezárása"
 
-#: functions.php:492 inc/starter-content.php:176 inc/starter-content.php:186
-msgid "Primary"
-msgstr "Elsődleges"
+#: searchform.php:25
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Keresés &hellip;"
 
 #: header.php:88
 msgid "Horizontal"
@@ -300,34 +274,30 @@ msgstr "Menü"
 msgid "Search"
 msgstr "Keresés"
 
-#: template-parts/content.php:36
-msgid "Continue reading"
-msgstr "Olvasás folytatása"
-
 #: functions.php:549
 msgctxt "Short name of the larger font size in the block editor."
 msgid "XL"
 msgstr "XL"
-
-#: functions.php:548
-msgctxt "Name of the larger font size in the block editor"
-msgid "Larger"
-msgstr "Nagyobb"
-
-#: functions.php:543
-msgctxt "Short name of the large font size in the block editor."
-msgid "L"
-msgstr "L"
 
 #: functions.php:542
 msgctxt "Name of the large font size in the block editor"
 msgid "Large"
 msgstr "Nagy"
 
+#: functions.php:548
+msgctxt "Name of the larger font size in the block editor"
+msgid "Larger"
+msgstr "Nagyobb"
+
 #: functions.php:537
 msgctxt "Short name of the regular font size in the block editor."
 msgid "M"
 msgstr "M"
+
+#: functions.php:543
+msgctxt "Short name of the large font size in the block editor."
+msgid "L"
+msgstr "L"
 
 #: functions.php:536
 msgctxt "Name of the regular font size in the block editor"
@@ -339,78 +309,17 @@ msgctxt "Short name of the small font size in the block editor."
 msgid "S"
 msgstr "S"
 
-#: functions.php:530
-msgctxt "Name of the small font size in the block editor"
-msgid "Small"
-msgstr "Kicsi"
-
 #: functions.php:515
 msgid "Background Color"
 msgstr "Háttérszín"
-
-#: functions.php:502
-msgid "Subtle Background"
-msgstr "Finom háttér"
-
-#: functions.php:497
-msgid "Secondary"
-msgstr "Másodlagos"
-
-#: functions.php:487
-msgid "Accent Color"
-msgstr "Kiemelőszín"
-
-#: functions.php:380
-msgid "Widgets in this area will be displayed in the second column in the footer."
-msgstr "Az itt található widgetek a lábléc második oszlopában jelennek meg."
-
-#: functions.php:378
-msgid "Footer #2"
-msgstr "2. lábrész"
-
-#: functions.php:368
-msgid "Widgets in this area will be displayed in the first column in the footer."
-msgstr "Az itt található widgetek a lábléc első oszlopában jelennek meg."
-
-#: functions.php:366
-msgid "Footer #1"
-msgstr "1. lábrész"
-
-#: functions.php:341
-msgid "Skip to the content"
-msgstr "Ugrás a tartalomhoz"
-
-#: functions.php:262
-msgid "Social Menu"
-msgstr "Közösségi menü"
-
-#: functions.php:261
-msgid "Footer Menu"
-msgstr "Lábrész menü"
 
 #: functions.php:260
 msgid "Mobile Menu"
 msgstr "Mobil menü"
 
-#: functions.php:259
-msgid "Desktop Expanded Menu"
-msgstr "Asztali bővített menü"
-
-#: functions.php:258
-msgid "Desktop Horizontal Menu"
-msgstr "Asztali vízszintes menü"
-
-#: footer.php:33
-msgid "Powered by WordPress"
-msgstr "Köszönjük WordPress!"
-
-#: comments.php:127
-msgid "Comments are closed."
-msgstr "A hozzászólások jelenleg nem engedélyezettek ezen a részen."
-
-#: comments.php:88
-msgid "Comments"
-msgstr "Hozzászólás"
+#: functions.php:262
+msgid "Social Menu"
+msgstr "Közösségi menü"
 
 #: comments.php:75
 msgid "Older Comments"
@@ -420,70 +329,9 @@ msgstr "Korábbi hozzászólások"
 msgid "Newer Comments"
 msgstr "Újabb hozzászólások"
 
-#. translators: 1: Number of comments, 2: Post title.
-#: comments.php:41
-msgctxt "comments title"
-msgid "%1$s reply on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s replies on &ldquo;%2$s&rdquo;"
-msgstr[0] "%1$s hozzászólás a(z) &ldquo;%2$s&rdquo; című bejegyzéshez"
-msgstr[1] "%1$s hozzászólás a(z) &ldquo;%2$s&rdquo; című bejegyzéshez"
-
-#. translators: %s: Post title.
-#: comments.php:37
-msgctxt "comments title"
-msgid "One reply on &ldquo;%s&rdquo;"
-msgstr "Egy hozzászólás a(z) &ldquo;%s&rdquo; című bejegyzéshez"
-
-#: comments.php:34
-msgid "Leave a comment"
-msgstr "Egy jó hozzászólás jó lenne"
-
 #: classes/class-twentytwenty-walker-page.php:107 inc/template-tags.php:555
 msgid "Show sub menu"
 msgstr "Almenü mutatása"
-
-#. translators: %d: ID of a post.
-#: classes/class-twentytwenty-walker-page.php:70
-msgid "#%d (no title)"
-msgstr "#%d (cím nélkül)"
-
-#: classes/class-twentytwenty-walker-comment.php:127
-msgid "By Post Author"
-msgstr "Bejegyzés szerzője"
-
-#: classes/class-twentytwenty-walker-comment.php:92
-msgid "Your comment is awaiting moderation."
-msgstr "A hozzászólás rendszer-moderációra várakozik."
-
-#: classes/class-twentytwenty-walker-comment.php:77
-msgid "Edit"
-msgstr "Szerkesztés"
-
-#. translators: 1: Comment date, 2: Comment time.
-#: classes/class-twentytwenty-walker-comment.php:69
-msgid "%1$s at %2$s"
-msgstr "%1$s - %2$s"
-
-#: classes/class-twentytwenty-walker-comment.php:56
-msgid "says:"
-msgstr "szerint:"
-
-#: classes/class-twentytwenty-customize.php:396
-msgid "Make sure that the contrast is high enough so that the text is readable."
-msgstr "Bizonyosodjunk meg róla, hogy a kontraszt elég magas, ezáltal a szöveg jól olvasható."
-
-#: classes/class-twentytwenty-customize.php:306
-msgid "Creates a parallax effect when the visitor scrolls."
-msgstr "Létrehoz egy parallax hatást, amikor a látogató görgeti a lapot."
-
-#: classes/class-twentytwenty-customize.php:305
-msgid "Fixed Background Image"
-msgstr "Rögzített háttérkép"
-
-#. Template Name of the theme
-#: classes/class-twentytwenty-customize.php:281
-msgid "Cover Template"
-msgstr "Borító sablonminta"
 
 #: classes/class-twentytwenty-customize.php:270
 msgid "Summary"
@@ -493,37 +341,153 @@ msgstr "Összegzés"
 msgid "Full text"
 msgstr "Teljes szöveg"
 
-#: classes/class-twentytwenty-customize.php:267
-msgid "On archive pages, posts show:"
-msgstr "Arhív oldalon mutatott bejegyzések: "
-
-#: classes/class-twentytwenty-customize.php:225
-msgid "Show search in header"
-msgstr "Keresés megjelenítése a fejlécben"
+#: classes/class-twentytwenty-customize.php:81
+msgid "Retina logo"
+msgstr "Retina logó"
 
 #: classes/class-twentytwenty-customize.php:202
 msgid "Theme Options"
 msgstr "Sablon beállítások"
 
-#: classes/class-twentytwenty-customize.php:101
-msgid "Header &amp; Footer Background Color"
-msgstr "Fejrész és lábrész háttérszíne"
+#: classes/class-twentytwenty-customize.php:225
+msgid "Show search in header"
+msgstr "Keresés megjelenítése a fejlécben"
 
-#: classes/class-twentytwenty-customize.php:82
-msgid "Scales the logo to half its uploaded size, making it sharp on high-res screens."
-msgstr ""
+#: functions.php:341
+msgid "Skip to the content"
+msgstr "Ugrás a tartalomhoz"
 
-#: classes/class-twentytwenty-customize.php:81
-msgid "Retina logo"
-msgstr "Retina logó"
+#: functions.php:530
+msgctxt "Name of the small font size in the block editor"
+msgid "Small"
+msgstr "Kicsi"
+
+#. Template Name of the theme
+msgid "Full Width Template"
+msgstr "Teljes szélességű sablon"
+
+#: template-parts/modal-search.php:26
+msgid "Close search"
+msgstr "Keresés bezárása"
+
+#: template-parts/pagination.php:21
+msgid "Newer <span class=\"nav-short\">Posts</span>"
+msgstr "Újabb <span class=\"nav-short\">bejegyzések</span>"
+
+#: 404.php:17
+msgid "Page Not Found"
+msgstr "Oldal nem található"
 
 #: 404.php:19
 msgid "The page you were looking for could not be found. It might have been removed, renamed, or did not exist in the first place."
 msgstr "A keresett oldal nem található. Talán eltávolították, átnevezték vagy esetleg nem is létezett."
 
-#: 404.php:17
-msgid "Page Not Found"
-msgstr "Oldal nem található"
+#: classes/class-twentytwenty-customize.php:101
+msgid "Header &amp; Footer Background Color"
+msgstr "Fejrész és lábrész háttérszíne"
+
+#: classes/class-twentytwenty-customize.php:305
+msgid "Fixed Background Image"
+msgstr "Rögzített háttérkép"
+
+#. translators: %d: ID of a post.
+#: classes/class-twentytwenty-walker-page.php:70
+msgid "#%d (no title)"
+msgstr "#%d (cím nélkül)"
+
+#: functions.php:258
+msgid "Desktop Horizontal Menu"
+msgstr "Asztali vízszintes menü"
+
+#: functions.php:368
+msgid "Widgets in this area will be displayed in the first column in the footer."
+msgstr "Az itt található widgetek a lábléc első oszlopában jelennek meg."
+
+#: functions.php:380
+msgid "Widgets in this area will be displayed in the second column in the footer."
+msgstr "Az itt található widgetek a lábléc második oszlopában jelennek meg."
+
+#: inc/template-tags.php:371
+msgid "Post date"
+msgstr "Bejegyzés dátuma"
+
+#: inc/template-tags.php:347
+msgid "Post author"
+msgstr "Bejegyzés szerzője"
+
+#: functions.php:487
+msgid "Accent Color"
+msgstr "Kiemelőszín"
+
+#: classes/class-twentytwenty-customize.php:396
+msgid "Make sure that the contrast is high enough so that the text is readable."
+msgstr "Bizonyosodjunk meg róla, hogy a kontraszt elég magas, ezáltal a szöveg jól olvasható."
+
+#: template-parts/content.php:36
+msgid "Continue reading"
+msgstr "Olvasás folytatása"
+
+#: functions.php:378
+msgid "Footer #2"
+msgstr "2. lábrész"
+
+#: functions.php:366
+msgid "Footer #1"
+msgstr "1. lábrész"
+
+#. translators: %s: Author name.
+#: inc/template-tags.php:354 template-parts/entry-author-bio.php:20
+msgid "By %s"
+msgstr "Szerző: %s"
+
+#: template-parts/content-cover.php:88
+msgid "Scroll Down"
+msgstr "Görgetés lefelé"
+
+#: index.php:48
+msgid "We could not find any results for your search. You can give it another try through the search form below."
+msgstr "A keresett kifejezést nem találjuk. Javaslunk egy újabb keresést az alul lévő űrlap használatával."
+
+#: functions.php:502
+msgid "Subtle Background"
+msgstr "Finom háttér"
+
+#: footer.php:33
+msgid "Powered by WordPress"
+msgstr "Köszönjük WordPress!"
+
+#: functions.php:259
+msgid "Desktop Expanded Menu"
+msgstr "Asztali bővített menü"
+
+#: classes/class-twentytwenty-walker-comment.php:127
+msgid "By Post Author"
+msgstr "Bejegyzés szerzője"
+
+#: classes/class-twentytwenty-walker-comment.php:56
+msgid "says:"
+msgstr "szerint:"
+
+#: template-parts/modal-menu.php:117
+msgid "Expanded Social links"
+msgstr "Bővített közöségi hivatkozások"
+
+#: template-parts/modal-menu.php:48
+msgid "Expanded"
+msgstr "Bővített"
+
+#: classes/class-twentytwenty-customize.php:306
+msgid "Creates a parallax effect when the visitor scrolls."
+msgstr "Létrehoz egy parallax hatást, amikor a látogató görgeti a lapot."
+
+#. Template Name of the theme
+#: classes/class-twentytwenty-customize.php:281
+msgid "Cover Template"
+msgstr "Borító sablonminta"
+
+#: classes/class-twentytwenty-customize.php:267
+msgid "On archive pages, posts show:"
+msgstr "Arhív oldalon mutatott bejegyzések: "
 
 #. Author URI of the theme
 #: footer.php:32

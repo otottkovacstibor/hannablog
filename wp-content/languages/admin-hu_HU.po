@@ -266,7 +266,7 @@ msgstr "Nincsenek hozzászólások a Lomtárban."
 msgid "File is empty. Please upload something more substantial. This error could also be caused by uploads being disabled in your %1$s file or by %2$s being defined as smaller than %3$s in %1$s."
 msgstr "A fájl üres. Töltsünk fel valami tartalmasabbat. A hibát az is okozhatja, hogy a feltöltés nincs engedélyezve a %1$s-ben, vagy a %2$s  által meghatározott méret kisebb, mint a %1$s fájlban meghatározott %3$s."
 
-#: wp-admin/includes/class-wp-site-health.php:2296
+#: wp-admin/includes/class-wp-site-health.php:2302
 msgid "A test is unavailable"
 msgstr "Egy teszt nem érhető el"
 
@@ -2783,7 +2783,7 @@ msgid "Privacy Policy Page"
 msgstr "Adatvédelmi irányelvek oldal"
 
 #. translators: %s: Page title.
-#: wp-admin/includes/misc.php:1385
+#: wp-admin/includes/misc.php:1408
 msgid "%s (Draft)"
 msgstr "%s (Vázlat)"
 
@@ -6029,7 +6029,7 @@ msgstr ""
 
 #. translators: Do not translate USERNAME, ADMIN_URL, EMAIL, SITENAME, SITEURL:
 #. those are placeholders.
-#: wp-admin/includes/misc.php:1306
+#: wp-admin/includes/misc.php:1329
 msgid ""
 "Howdy ###USERNAME###,\n"
 "\n"
@@ -7585,7 +7585,7 @@ msgid "You cannot move this item to the Trash. %s is currently editing."
 msgstr "%s jelenleg szerkesztés alatt áll, ezért nem mozgatható a lomtárba."
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/misc.php:1075
+#: wp-admin/includes/misc.php:1098
 msgid "%s has taken over and is currently editing."
 msgstr "%s átvétel alatt, és jelenleg szerkesztés alatt áll."
 
@@ -7639,7 +7639,7 @@ msgid "The Documentation menu below the editor lists the PHP functions recognize
 msgstr "A lenti Dokumentáció menüben listázzuk a bővítmény fájlban felismert PHP függvényeket. Kattintsunk a Kikeresésre amely az adott függvénnyel kapcsolatos oldalra visz."
 
 #. translators: %s: User's display name.
-#: wp-admin/includes/misc.php:1025
+#: wp-admin/includes/misc.php:1048
 #: wp-admin/includes/class-wp-posts-list-table.php:1003
 msgid "%s is currently editing"
 msgstr "%s jelenleg szerkeszti"
@@ -8385,7 +8385,7 @@ msgstr[1] "Szünetel <span class=\"count\">(%s)</span>"
 
 #. translators: New admin email address notification email subject. %s: Site
 #. title.
-#: wp-admin/includes/misc.php:1359
+#: wp-admin/includes/misc.php:1382
 msgid "[%s] New Admin Email Address"
 msgstr "[%s] Új admin email cím"
 
@@ -10919,7 +10919,7 @@ msgstr "Elérhető widgetek"
 msgid "Error in displaying the widget settings form."
 msgstr "Hiba a widget beállítási űrlap megjelenítésekor."
 
-#: wp-admin/includes/misc.php:1195 wp-admin/includes/post.php:1941
+#: wp-admin/includes/misc.php:1218 wp-admin/includes/post.php:1941
 #: wp-admin/widgets.php:378
 msgid "Error while saving."
 msgstr "Hiba történt a mentés közben."
@@ -11062,7 +11062,7 @@ msgstr "Keresztnév"
 msgid "Enable keyboard shortcuts for comment moderation."
 msgstr "Gyorsbillentyűk bekapcsolása a hozzászólás moderálásához"
 
-#: wp-admin/includes/misc.php:924 wp-admin/user-edit.php:295
+#: wp-admin/includes/misc.php:947 wp-admin/user-edit.php:295
 msgid "Admin Color Scheme"
 msgstr "Admin színséma"
 
@@ -13885,12 +13885,12 @@ msgid "Someone"
 msgstr "Valaki"
 
 #. translators: %s: Date and time.
-#: wp-admin/includes/misc.php:1203
+#: wp-admin/includes/misc.php:1226
 msgid "Draft saved at %s."
 msgstr "Vázlat mentve: %s."
 
 #. translators: Draft saved date format, see https://www.php.net/date
-#: wp-admin/includes/misc.php:1199
+#: wp-admin/includes/misc.php:1222
 msgid "g:i:s a"
 msgstr "H:i:s"
 

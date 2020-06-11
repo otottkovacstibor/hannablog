@@ -10008,7 +10008,7 @@ msgctxt "genitive"
 msgid "May"
 msgstr "május"
 
-#: wp-includes/embed.php:1143
+#: wp-includes/embed.php:1156
 msgid "Sharing options"
 msgstr "Megosztás opciók"
 
@@ -10070,7 +10070,7 @@ msgid "Oops! That embed can&#8217;t be found."
 msgstr "Hoppá! Ilyen beillesztő nem található."
 
 #. translators: %s: Post title.
-#: wp-includes/embed.php:943 wp-includes/post-template.php:296
+#: wp-includes/embed.php:956 wp-includes/post-template.php:296
 msgid "Continue reading %s"
 msgstr "Bővebben: %s"
 
@@ -10441,34 +10441,34 @@ msgstr "Bejegyzések közzétéve: %s"
 msgid "Use the %s filter instead."
 msgstr "%s szűrő helyett használjuk."
 
-#: wp-includes/embed.php:1170
+#: wp-includes/embed.php:1183
 msgid "Close sharing dialog"
 msgstr "Megosztás párbeszéd bezárása"
 
-#: wp-includes/embed.php:1165
+#: wp-includes/embed.php:1178
 msgid "Copy and paste this code into your site to embed"
 msgstr "A beágyazáshoz másoljuk és illesszük ezt a kódot a honlapunkba"
 
 #. translators: %s: Number of comments.
-#: wp-includes/embed.php:1102
+#: wp-includes/embed.php:1115
 msgid "%s <span class=\"screen-reader-text\">Comment</span>"
 msgid_plural "%s <span class=\"screen-reader-text\">Comments</span>"
 msgstr[0] "%s <span class=\"screen-reader-text\">hozzászólás</span>"
 msgstr[1] "%s <span class=\"screen-reader-text\">hozzászólás</span>"
 
-#: wp-includes/embed.php:1126
+#: wp-includes/embed.php:1139
 msgid "Open sharing dialog"
 msgstr "Megosztás párbeszéd megnyitása"
 
-#: wp-includes/embed.php:1148
+#: wp-includes/embed.php:1161
 msgid "WordPress Embed"
 msgstr "WordPress beágyazás"
 
-#: wp-includes/embed.php:1151
+#: wp-includes/embed.php:1164
 msgid "HTML Embed"
 msgstr "HTML beágyazás"
 
-#: wp-includes/embed.php:1158
+#: wp-includes/embed.php:1171
 msgid "Copy and paste this URL into your WordPress site to embed"
 msgstr "A beágyazáshoz másoljuk és illesszük ezt az URL címet a WordPress honlapba"
 

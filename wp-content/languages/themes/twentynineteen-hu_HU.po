@@ -11,38 +11,17 @@ msgstr ""
 "Language: hu\n"
 "Project-Id-Version: Themes - Twenty Nineteen\n"
 
-#. Description of the theme
-msgid "Our 2019 default theme is designed to show off the power of the block editor. It features custom styles for all the default blocks, and is built so that what you see in the editor looks like what you'll see on your website. Twenty Nineteen is designed to be adaptable to a wide range of websites, whether you’re running a photo blog, launching a new business, or supporting a non-profit. Featuring ample whitespace and modern sans-serif headlines paired with classic serif body text, it's built to be beautiful on all screen sizes."
-msgstr ""
-
 #. Theme Name of the theme
 msgid "Twenty Nineteen"
 msgstr "Twenty Nineteen"
-
-#: classes/class-twentynineteen-walker-comment.php:96
-msgid "Your comment is awaiting moderation. This is a preview, your comment will be visible after it has been approved."
-msgstr ""
-
-#: functions.php:153
-msgid "Dark Blue"
-msgstr ""
-
-#: functions.php:148
-msgid "Blue"
-msgstr ""
-
-#. translators: %s: Parent post link.
-#: single.php:31
-msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%s</span>"
-msgstr ""
 
 #: image.php:87
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><br><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">Kategória:</span><br><span class=\"post-title\">%title</span>"
 
-#: template-parts/content/content-excerpt.php:18
 #: template-parts/content/content.php:18
+#: template-parts/content/content-excerpt.php:18
 msgctxt "post"
 msgid "Featured"
 msgstr "Kiemelt"
@@ -122,7 +101,7 @@ msgstr "Kicsi"
 msgid "S"
 msgstr "S"
 
-#: footer.php:37 functions.php:60
+#: functions.php:60 footer.php:37
 msgid "Footer Menu"
 msgstr "Lábrész menü"
 
@@ -139,13 +118,92 @@ msgstr "Oldal"
 msgid "Add widgets here to appear in your footer."
 msgstr "A lábrészben megjelenó widgeteket itt adjuk hozzá."
 
-#: template-parts/footer/footer-widgets.php:12 functions.php:190
+#: functions.php:190 template-parts/footer/footer-widgets.php:12
 msgid "Footer"
 msgstr "Lábrész"
 
 #: inc/customizer.php:53
 msgid "Primary Color"
 msgstr "Elsődleges szín"
+
+#: template-parts/content/content-none.php:39
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Elnézést, nem találunk a keresési feltételekhez igazodó eredményt. Másik kulcsszóval, kifejezéssel újra kellene kezdeni egy keresést."
+
+#: template-parts/content/content-none.php:16
+msgid "Nothing Found"
+msgstr "Nincs megfelelő találat"
+
+#. translators: 1: Link to WP admin new post page.
+#: template-parts/content/content-none.php:26
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Készen állunk az első bejegyzés közzétételére? <a href=\"%1$s\">Kezdőlépések</a>."
+
+#: comments.php:95
+msgid "Previous"
+msgstr "Előző"
+
+#: comments.php:96
+msgid "Next"
+msgstr "Következő"
+
+#: image.php:52 template-parts/content/content-page.php:27
+#: template-parts/content/content.php:49
+#: template-parts/content/content-single.php:40
+msgid "Pages:"
+msgstr "Oldal:"
+
+#: header.php:25
+msgid "Skip to content"
+msgstr "Tartalomhoz"
+
+#: functions.php:61 template-parts/header/site-branding.php:46
+msgid "Social Links Menu"
+msgstr "Közösségi hivatkozások menü"
+
+#: comments.php:116
+msgid "Comments are closed."
+msgstr "A hozzászólások jelenleg nem engedélyezettek ezen a részen."
+
+#: 404.php:20
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "A keresett oldal nem található."
+
+#: 404.php:24
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "Úgy tűnik, ezen a helyen nem található amit kerestünk. Talán egy újabb keresés segíthetne."
+
+#: template-parts/content/content-none.php:46
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Úgy tűnik, nem találtuk meg amit kerestünk. :) Talán, egy újabb keresés segíthetne..."
+
+#. translators: %s: WordPress.
+#: footer.php:28
+msgid "Proudly powered by %s."
+msgstr "Köszönjük %s!"
+
+#. translators: %s: Post title. Only visible to screen readers.
+#: template-parts/content/content.php:36
+#: template-parts/content/content-single.php:27
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
+
+#. translators: Used between list items, there is a space after the comma.
+#: inc/template-tags.php:86 inc/template-tags.php:98
+msgid ", "
+msgstr ", "
+
+#: single.php:38
+msgid "Next Post"
+msgstr "Következő bejegyzés"
+
+#: template-parts/header/site-branding.php:33
+msgid "Top Menu"
+msgstr "Felső menü"
+
+#: single.php:41
+msgid "Previous Post"
+msgstr "Korábbi bejegyzés"
 
 #: template-parts/post/discussion-meta.php:18
 msgid "No comments"
@@ -167,58 +225,13 @@ msgstr "További bejegyzések megtekintése"
 msgid "Published by %s"
 msgstr "Szerző: %s"
 
-#: template-parts/header/site-branding.php:33
-msgid "Top Menu"
-msgstr "Felső menü"
-
-#. translators: %s: Post title. Only visible to screen readers.
-#: template-parts/content/content-single.php:27
-#: template-parts/content/content.php:36
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr "<span class=\"screen-reader-text\">\"%s\"</span> bővebben"
-
-#: template-parts/content/content-single.php:40
-#: template-parts/content/content.php:49
-#: template-parts/content/content-page.php:27 image.php:52
-msgid "Pages:"
-msgstr "Oldal:"
-
-#: template-parts/content/content-none.php:46
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
-msgstr "Úgy tűnik, nem találtuk meg amit kerestünk. :) Talán, egy újabb keresés segíthetne..."
-
-#: template-parts/content/content-none.php:39
-msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Elnézést, nem találunk a keresési feltételekhez igazodó eredményt. Másik kulcsszóval, kifejezéssel újra kellene kezdeni egy keresést."
-
-#. translators: 1: Link to WP admin new post page.
-#: template-parts/content/content-none.php:26
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
-msgstr "Készen állunk az első bejegyzés közzétételére? <a href=\"%1$s\">Kezdőlépések</a>."
-
-#: template-parts/content/content-none.php:16
-msgid "Nothing Found"
-msgstr "Nincs megfelelő találat"
-
 #: single.php:42
 msgid "Previous post:"
 msgstr "Előző bejegyzés:"
 
-#: single.php:41
-msgid "Previous Post"
-msgstr "Korábbi bejegyzés"
-
 #: single.php:39
 msgid "Next post:"
 msgstr "Következő bejegyzés:"
-
-#: single.php:38
-msgid "Next Post"
-msgstr "Következő bejegyzés"
-
-#: search.php:22
-msgid "Search results for: "
-msgstr ""
 
 #: inc/template-tags.php:234
 msgid "Older posts"
@@ -235,11 +248,6 @@ msgstr "Címke:"
 #: inc/template-tags.php:92
 msgid "Posted in"
 msgstr "Kategória:"
-
-#. translators: Used between list items, there is a space after the comma.
-#: inc/template-tags.php:86 inc/template-tags.php:98
-msgid ", "
-msgstr ", "
 
 #. translators: %s: Post title. Only visible to screen readers.
 #: inc/template-tags.php:63
@@ -297,40 +305,9 @@ msgstr "Címketár:"
 msgid "Category Archives: "
 msgstr "Kategória tár:"
 
-#. translators: %s: Post title. Only visible to screen readers.
-#: template-parts/header/entry-header.php:32
-#: template-parts/content/content-page.php:41 inc/template-tags.php:120
-msgid "Edit <span class=\"screen-reader-text\">%s</span>"
-msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztés"
-
-#: header.php:25
-msgid "Skip to content"
-msgstr "Tartalomhoz"
-
-#: template-parts/header/site-branding.php:46 functions.php:61
-msgid "Social Links Menu"
-msgstr "Közösségi hivatkozások menü"
-
 #: functions.php:59
 msgid "Primary"
 msgstr "Elsődleges"
-
-#. translators: %s: WordPress.
-#: footer.php:28
-msgid "Proudly powered by %s."
-msgstr "Köszönjük %s!"
-
-#: comments.php:116
-msgid "Comments are closed."
-msgstr "A hozzászólások jelenleg nem engedélyezettek ezen a részen."
-
-#: comments.php:96
-msgid "Next"
-msgstr "Következő"
-
-#: comments.php:95
-msgid "Previous"
-msgstr "Előző"
 
 #: comments.php:92 comments.php:95 comments.php:96
 msgid "Comments"
@@ -376,17 +353,11 @@ msgstr "%1$s - %2$s"
 msgid "%s <span class=\"screen-reader-text says\">says:</span>"
 msgstr "%s <span class=\"screen-reader-text says\">szerint:</span>"
 
-#: 404.php:24
-msgid "It looks like nothing was found at this location. Maybe try a search?"
-msgstr "Úgy tűnik, ezen a helyen nem található amit kerestünk. Talán egy újabb keresés segíthetne."
-
-#: 404.php:20
-msgid "Oops! That page can&rsquo;t be found."
-msgstr "A keresett oldal nem található."
-
-#. Theme URI of the theme
-msgid "https://wordpress.org/themes/twentynineteen/"
-msgstr ""
+#. translators: %s: Post title. Only visible to screen readers.
+#: template-parts/content/content-page.php:41
+#: template-parts/header/entry-header.php:32 inc/template-tags.php:120
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr "<span class=\"screen-reader-text\">%s</span> szerkesztés"
 
 #. Author of the theme
 msgid "the WordPress team"
