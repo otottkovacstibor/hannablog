@@ -4,7 +4,7 @@ Tags: security, firewall, malware scanner, web application firewall, two factor 
 Requires at least: 3.9
 Requires PHP: 5.3
 Tested up to: 5.4
-Stable tag: 7.4.7
+Stable tag: 7.4.8
 
 Secure your website with the most comprehensive WordPress security plugin. Firewall, malware scan, blocking, live traffic, login security & more.
 
@@ -182,6 +182,9 @@ Secure your website with Wordfence.
 9. Logging in is easy with Wordfence 2FA.
 
 == Changelog ==
+
+= 7.4.8 - June 16, 2020 =
+* Fix: Fixed issue with fatal errors encountered during activation under certain conditions.
 
 = 7.4.7 - April 23, 2020 =
 * Improvement: Updated bundled GeoIP database.

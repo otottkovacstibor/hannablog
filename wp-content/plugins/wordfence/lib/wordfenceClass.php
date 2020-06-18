@@ -440,7 +440,8 @@ SQL
 			$wpdb->query("ALTER TABLE {$configTable} ADD COLUMN autoload ENUM('no', 'yes') NOT NULL DEFAULT 'yes'");
 			$wpdb->query("UPDATE {$configTable} SET autoload = 'no' WHERE name = 'wfsd_engine' OR name LIKE 'wordfence_chunked_%'");
 		}
-		
+
+		$wpdb->query("DELETE FROM $configTable WHERE `name` = 'emailedIssuesList' AND LENGTH(`val`) > 2 * 1024 * 1024");
 		wfConfig::setDefaults(); //If not set
 
 		$restOfSite = wfConfig::get('cbl_restOfSiteBlocked', 'notset');
