@@ -96,6 +96,16 @@
 					});
 				});
 
+				$('#exportDiagnostics').click(function() {
+					self.showLoading();
+
+					var diagnosticsExportWindow = window.open(WordfenceAdminVars.ajaxURL + '?action=wordfence_exportDiagnostics&nonce=' + WFAD.nonce);
+					diagnosticsExportWindow.onbeforeunload = function() {
+						self.removeLoading();
+					};
+					return false;
+				});
+
 				$('#sendByEmail').click(function() {
 					$('#sendByEmailForm').removeClass('hidden');
 					$(this).hide();
@@ -1420,6 +1430,9 @@
 				
 				WFAD.sortIssues();
 				WFAD.updateBulkButtons();
+				if (typeof callback === 'function') {
+					callback();
+				}
 			},
 			appendIssue: function(issueObject, container) {
 				var issueType = issueObject.type;
@@ -1584,26 +1597,15 @@
 
 					//Hook up Repair button
 					issue.find('.wf-issue-control-repair').each(function() {
+						// Show prompt to download repair file
+
 						var issueID = $(this).closest('.wf-issue').data('issueId');
 
 						$(this).on('click', function(e) {
 							e.preventDefault();
 							e.stopPropagation();
 
-							var self = this;
-							WFAD.restoreFile(issueID, function(res) {
-								if (res.ok) {
-									var issueElement = $(self).closest('.wf-issue');
-									issueElement.remove();
-									WFAD.updateIssueCounts(res.issueCounts);
-									WFAD.repositionSiteCleaningCallout();
-									WFAD.updateBulkButtons();
-									WFAD.colorboxModal((WFAD.isSmallScreen ? '300px' : '400px'), "Success restoring file", "The file " + res.file + " was successfully restored.");
-								}
-								else if (res.errorMsg) {
-									WFAD.colorboxError(res.errorMsg, res.tokenInvalid);
-								}
-							});
+							WFAD.promptToRepairFile(issueID, $(this).attr('data-file'));
 						});
 					});
 					
@@ -1996,6 +1998,47 @@
 					}
 				});
 			},
+			promptToRepairFile: function(issueID, file) {
+				if (window.localStorage) {
+					var sudoExpiration = window.localStorage.getItem('wf-repair-file-sudo');
+					if (sudoExpiration && parseInt(sudoExpiration, 10) > new Date().getTime()) {
+						this.repairFile(issueID);
+						return;
+					}
+				}
+				WFAD.colorboxModalHTML((WFAD.isSmallScreen ? '300px' : '400px'), "Download Backup File", 'Please make a backup of this file before proceeding. If you need to restore this backup file, you can copy it to the following path from your site\'s root:<p class="wf-padding-add-top-medium"><code>' + file + '</code></p>'
+					+ '<a href="' + WFAD.makeDownloadFileLink(file) + '" onclick="jQuery(\'#wfRepairFileNextBtn\').prop(\'disabled\', false); return true;">Click here to download a backup copy of this file now</a><p class="wf-flex-horizontal">' +
+					'<input type="button" class="wf-btn wf-btn-primary" name="but1" id="wfRepairFileNextBtn" value="Repair File" disabled="disabled" onclick="WFAD.promptToRepairFileDone(' + parseInt(issueID, 10) + ', jQuery(\'#forceRepairFileCheckbox\').attr(\'checked\'));this.disabled=true;" />' +
+					'<label class="wf-padding-add-left"><input type="checkbox" id="forceRepairFileCheckbox" onclick="jQuery(\'#wfRepairFileNextBtn\').prop(\'disabled\', !this.checked); return true;"> Don\'t ask again</label>' +
+					'</p>' +
+					'<div class="wordfenceHelpLink"><a href="' + WordfenceAdminVars.supportURLs['scan-result-repair-modified-files'] + '" target="_blank" rel="noopener noreferrer" class="wfhelp"></a><a href="' + WordfenceAdminVars.supportURLs['scan-result-repair-modified-files'] + '" target="_blank" rel="noopener noreferrer">Learn more about repairing modified files.</a></div>'
+				);
+			},
+			promptToRepairFileDone: function(issueID, dontPromptAgain) {
+				if (dontPromptAgain) {
+					if (window.localStorage) {
+						window.localStorage.setItem('wf-repair-file-sudo', (new Date().getTime() + 86400000));
+					}
+				}
+				this.repairFile(issueID);
+			},
+			repairFile: function(issueID) {
+				var self = this;
+				self.colorboxClose();
+				this.restoreFile(issueID, function(res) {
+					if (res.ok) {
+						var issueElement = $('.wf-issue[data-issue-id=' + parseInt(issueID, 10) + ']');
+						issueElement.remove();
+						self.updateIssueCounts(res.issueCounts);
+						self.repositionSiteCleaningCallout();
+						self.updateBulkButtons();
+						self.colorboxModal((self.isSmallScreen ? '300px' : '400px'), "Success restoring file", "The file " + res.file + " was successfully restored.");
+					}
+					else if (res.errorMsg) {
+						self.colorboxError(res.errorMsg, res.tokenInvalid);
+					}
+				});
+			},
 			deleteDatabaseOption: function(issueID) {
 				var self = this;
 				this.ajax('wordfence_deleteDatabaseOption', {
@@ -2278,6 +2321,9 @@
 			},
 			makeViewFileLink: function(file) {
 				return WordfenceAdminVars.siteBaseURL + '?_wfsf=view&nonce=' + this.nonce + '&file=' + encodeURIComponent(file);
+			},
+			makeDownloadFileLink: function(file) {
+				return WordfenceAdminVars.siteBaseURL + '?_wfsf=download&nonce=' + this.nonce + '&file=' + encodeURIComponent(file);
 			},
 			makeViewOptionLink: function(option, siteID) {
 				return WordfenceAdminVars.siteBaseURL + '?_wfsf=viewOption&nonce=' + this.nonce + '&option=' + encodeURIComponent(option) + '&site_id=' + encodeURIComponent(siteID);
