@@ -3,8 +3,8 @@ Contributors: mmaunder, wfryan, wfmatt, wfmattr
 Tags: security, firewall, malware scanner, web application firewall, two factor authentication, block hackers, country blocking, clean hacked site, blacklist, waf, login security
 Requires at least: 3.9
 Requires PHP: 5.3
-Tested up to: 5.4
-Stable tag: 7.4.9
+Tested up to: 5.5
+Stable tag: 7.4.10
 
 Secure your website with the most comprehensive WordPress security plugin. Firewall, malware scan, blocking, live traffic, login security & more.
 
@@ -182,6 +182,13 @@ Secure your website with Wordfence.
 9. Logging in is easy with Wordfence 2FA.
 
 == Changelog ==
+
+= 7.4.10 - August 5, 2020 =
+
+* Improvement: Prevent author sitemap from leaking usernames in WordPress >= 5.5.0.
+* Fix: Prevent Wordfence auto-update from running if the user has enabled auto-update through WordPress.
+* Fix: Added default `permission_callback` params to Wordfence Central REST routes.
+* Fix: Fixed missing styling on WAF optimization admin notice.
 
 = 7.4.9 - July 8, 2020 =
 

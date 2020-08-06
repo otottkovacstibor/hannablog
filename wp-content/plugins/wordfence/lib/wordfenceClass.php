@@ -1270,6 +1270,8 @@ SQL
 			add_filter('oembed_response_data', 'wordfence::oembedAuthorFilter', 99, 4);
 			add_filter('rest_request_before_callbacks', 'wordfence::jsonAPIAuthorFilter', 99, 3);
 			add_filter('rest_post_dispatch', 'wordfence::jsonAPIAdjustHeaders', 99, 3);
+			add_filter('wp_sitemaps_users_pre_url_list', '__return_false', 99, 0);
+			add_filter('wp_sitemaps_add_provider', 'wordfence::wpSitemapUserProviderFilter', 99, 2);
 		}
 		
 		add_filter('rest_dispatch_request', 'wordfence::_filterCentralFromLiveTraffic', 99, 4);
@@ -2558,6 +2560,12 @@ SQL
 		}
 		
 		return $response;
+	}
+	public static function wpSitemapUserProviderFilter($provider, $name) {
+		if ($name === 'users') {
+			return false;
+		}
+		return $provider;
 	}
 	public static function _filterCentralFromLiveTraffic($dispatch_result, $request, $route, $handler) {
 		if (preg_match('~^/wordfence/v\d+/~i', $route)) {
