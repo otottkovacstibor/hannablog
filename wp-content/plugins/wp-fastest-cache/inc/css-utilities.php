@@ -108,6 +108,9 @@
 								$combined_link = '<link rel="stylesheet" type="text/css" href="'.$cssLink."/".$cssFiles[0].'" media="'.$group_value[0]["media"].'"/>';
 
 								if($css_content = $this->wpfc->read_file($cssLink."/".$cssFiles[0])){
+
+									$css_content = $this->apply_filter($css_content);
+
 									$combined_link = $this->to_inline($combined_link, $css_content);
 								}
 							}
@@ -127,6 +130,8 @@
 								if(is_dir($cachFilePath)){
 									if($cssFiles = @scandir($cachFilePath, 1)){
 										$combined_link = '<link rel="stylesheet" type="text/css" href="'.$cssLink."/".$cssFiles[0].'" media="'.$group_value[0]["media"].'"/>';
+
+										$combined_css = $this->apply_filter($combined_css);
 
 										$combined_link = $this->to_inline($combined_link, $combined_css);
 									}
@@ -186,6 +191,10 @@
 							if($minifiedCss){
 								$prefixLink = str_replace(array("http:", "https:"), "", $minifiedCss["url"]);
 								$text = preg_replace("/href\=[\"\'][^\"\']+[\"\']/", "href='".$prefixLink."'", $text);
+
+
+								$minifiedCss["cssContent"] = $this->apply_filter($minifiedCss["cssContent"]);
+
 
 								$text = $this->to_inline($text, $minifiedCss["cssContent"]);
 
@@ -345,6 +354,11 @@
 			if(is_dir($cachFilePath)){
 				if($cssFiles = @scandir($cachFilePath, 1)){
 					if($cssContent = $this->file_get_contents_curl($cssLink."/".$cssFiles[0])){
+
+
+						$cssContent = $this->apply_filter($cssContent);
+
+
 						return array("cachFilePath" => $cachFilePath, "cssContent" => $cssContent, "url" => $cssLink."/".$cssFiles[0], "realUrl" => $url);
 					}else{
 						return false;
@@ -360,6 +374,8 @@
 					}
 
 					$cssContent = $this->fixPathsInCssContent($cssContent, $url);
+
+					$cssContent = $this->apply_filter($cssContent);
 
 					if(isset($this->wpfc->options->wpFastestCacheMinifyCssPowerFul) && $this->wpfc->options->wpFastestCacheMinifyCssPowerFul){
 						if(class_exists("WpFastestCachePowerfulHtml")){
@@ -515,6 +531,10 @@
 			}
 
 			return "url(".$matches[1].")";
+		}
+
+		public function apply_filter($content){
+			return apply_filters('wpfc_css_content', $content, null, null);
 		}
 
 		public function fix_charset($css){

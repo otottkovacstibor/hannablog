@@ -44,6 +44,8 @@
 			remove_action('wp_print_styles', 'print_emoji_styles');
 			remove_action('admin_print_styles', 'print_emoji_styles');
 			remove_filter('wp_mail', 'wp_staticize_emoji_for_email');
+			// remove the DNS prefetch
+			add_filter('emoji_svg_url', '__return_false');
 		}
 
 		public function detect_current_page_type(){
@@ -225,6 +227,11 @@
 		public function createCache(){		
 			if(isset($this->options->wpFastestCacheStatus)){
 
+				// to exclude static pdf files
+				if(preg_match("/\.pdf$/i", $_SERVER["REQUEST_URI"])){
+					return 0;
+				}
+
 				// to check logged-in user
 				if(isset($this->options->wpFastestCacheLoggedInUser) && $this->options->wpFastestCacheLoggedInUser == "on"){
 					foreach ((array)$_COOKIE as $cookie_key => $cookie_value){
@@ -256,16 +263,6 @@
 					if(preg_match("/comment_author_/i", $cookie_key)){
 						ob_start(array($this, "cdn_rewrite"));
 
-						return 0;
-					}
-				}
-
-				// to check woocommerce_items_in_cart
-				foreach ((array)$_COOKIE as $cookie_key => $cookie_value){
-					//if(preg_match("/^wp\_woocommerce\_session/", $cookie_key)){
-					if(preg_match("/^woocommerce\_items\_in\_cart/", $cookie_key)){
-						ob_start(array($this, "cdn_rewrite"));
-						
 						return 0;
 					}
 				}

@@ -7,8 +7,8 @@
 
 namespace Yoast\WP\SEO\Integrations\Watchers;
 
-use Yoast\WP\SEO\Conditionals\Migrations_Conditional;
 use Yoast\WP\SEO\Builders\Indexable_Builder;
+use Yoast\WP\SEO\Conditionals\Migrations_Conditional;
 use Yoast\WP\SEO\Integrations\Integration_Interface;
 use Yoast\WP\SEO\Repositories\Indexable_Repository;
 
@@ -20,14 +20,14 @@ class Indexable_Author_Watcher implements Integration_Interface {
 	/**
 	 * The indexable repository.
 	 *
-	 * @var \Yoast\WP\SEO\Repositories\Indexable_Repository
+	 * @var Indexable_Repository
 	 */
 	protected $repository;
 
 	/**
 	 * The indexable builder.
 	 *
-	 * @var \Yoast\WP\SEO\Builders\Indexable_Builder
+	 * @var Indexable_Builder
 	 */
 	protected $builder;
 

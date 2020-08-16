@@ -7,6 +7,9 @@
 
 namespace Yoast\WP\SEO\Helpers;
 
+use WPSEO_Meta;
+use WPSEO_Taxonomy_Meta;
+
 /**
  * Class Meta_Helper
  */
@@ -35,6 +38,22 @@ class Meta_Helper {
 	 *                if the post does not exist.
 	 */
 	public function get_value( $key, $postid = 0 ) {
-		return \WPSEO_Meta::get_value( $key, $postid );
+		return WPSEO_Meta::get_value( $key, $postid );
+	}
+
+	/**
+	 * Retrieve a taxonomy term's meta value(s).
+	 *
+	 * @param mixed  $term     Term to get the meta value for
+	 *                         either (string) term name, (int) term id or (object) term.
+	 * @param string $taxonomy Name of the taxonomy to which the term is attached.
+	 * @param string $meta     Optional. Meta value to get (without prefix).
+	 *
+	 * @return mixed|bool Value for the $meta if one is given, might be the default.
+	 *                    If no meta is given, an array of all the meta data for the term.
+	 *                    False if the term does not exist or the $meta provided is invalid.
+	 */
+	public function get_term_value( $term, $taxonomy, $meta = null ) {
+		return WPSEO_Taxonomy_Meta::get_term_meta( $term, $taxonomy, $meta );
 	}
 }

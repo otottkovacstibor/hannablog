@@ -1,9 +1,9 @@
 === Super Progressive Web Apps ===
-Contributors: superpwa, arunbasillal, josevarghese, mariadanieldeepak
+Contributors: superpwa, arunbasillal, josevarghese
 Donate link: http://millionclues.com/donate/
 Tags: pwa, progressive web apps, manifest, web manifest, android app, chrome app, add to homescreen, mobile web
 Requires at least: 3.6.0
-Tested up to: 5.0.3
+Tested up to: 5.4.2
 Requires PHP: 5.3
 Stable tag: trunk
 License: GPLv2 or later
@@ -12,6 +12,9 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 SuperPWA helps you convert your WordPress website into a Progressive Web App instantly.
 
 == Description ==
+
+> **Help decide on the future of SuperPWA**
+> We are looking for your input to decide on the future of SuperPWA. If you wish to acquire SuperPWA as a whole and continue it's development or if you are interested in a premium version of the plugin with extended features, [please fill in the form and let us know](https://superpwa.com/superpwa-2-1/?utm_source=wordpress.org&utm_medium=description-future). 
 
 Progressive Web Apps (PWA) is a new technology that combines the best of mobile web and the best of mobile apps to create a superior mobile web experience. They are installed on the phone like a normal app (web app) and can be accessed from the home screen. 
 
@@ -63,7 +66,8 @@ Here are the current features of Super Progressive Web Apps:
 * New in version 1.8: Compatibility issues with OneSignal are now resolved! 
 * New in version 1.8: New Add-On: [Apple Touch Icons](https://superpwa.com/addons/apple-touch-icons/?utm_source=wordpress.org&utm_medium=description) that sets your app icons as Apple Touch Icons. 
 * New in version 2.0: SuperPWA is now compatible with WordPress installed in a sub-folder. 
-* New in version 2.0: You can now set [display property](https://superpwa.com/doc/web-app-manifest-display-modes/?utm_source=wordpress.org&utm_medium=description) from SuperPWA settings.  
+* New in version 2.0: You can now set [display property](https://superpwa.com/doc/web-app-manifest-display-modes/?utm_source=wordpress.org&utm_medium=description) from SuperPWA settings.
+* New in version 2.1.1: SuperPWA now supports Maskable Icons.
 
 **Upcoming features:**
 
@@ -177,6 +181,24 @@ Feel free to get in touch if you have any questions.
 1. Settings page in WordPress Admin > SuperPWA > Settings
 
 == Changelog ==
+
+= 2.1.2 =
+* Date: [25.July.2020](https://superpwa.com/superpwa-2-1/?utm_source=wordpress.org&utm_medium=changelog)
+* Bug Fix: Fixed issue where Application Icon was not showing.
+
+= 2.1.1 =
+* Date: [4.July.2020](https://superpwa.com/superpwa-2-1/?utm_source=wordpress.org&utm_medium=changelog)
+* Tested with WordPress 5.4.2.
+* Enhancement: Added support for Maskable Icons [#127](https://github.com/SuperPWA/Super-Progressive-Web-Apps/issues/127)
+
+= 2.1 =
+* Date: [29.May.2020](https://superpwa.com/superpwa-2-1/?utm_source=wordpress.org&utm_medium=changelog)
+* Tested with WordPress 5.4.1.
+* Enhancement: Removed the WordPress admin notice suggesting to add SuperPWA manifest to OneSignal. [#114] (https://github.com/SuperPWA/Super-Progressive-Web-Apps/issues/114)
+* Enhancement: Updated fallback value in superpwa_get_display() to match the default value in superpwa_get_settings().
+* Enhancement: UTM Tracking Add-on: Added default values for Campaign Medium and Campaign Name.
+* Bug Fix: Fixed a rare PHP Notice: Array to string conversion in basic-setup.php on line 415. [#92](https://github.com/SuperPWA/Super-Progressive-Web-Apps/issues/92)
+* Bug Fix: Added a check to see if WP_Plugins_List_Table class is available before using it. [#93](https://github.com/SuperPWA/Super-Progressive-Web-Apps/issues/93)
 
 = 2.0.2 =
 * Date: 16.January.2019
@@ -300,6 +322,14 @@ Feel free to get in touch if you have any questions.
 * First release of the plugin.
 
 == Upgrade Notice ==
+
+= 2.1 =
+* Tested with WordPress 5.4.1.
+* Enhancement: Removed the WordPress admin notice suggesting to add SuperPWA manifest to OneSignal. 
+* Enhancement: Updated fallback value in superpwa_get_display() to match the default value in superpwa_get_settings().
+* Enhancement: UTM Tracking Add-on: Added default values for Campaign Medium and Campaign Name.
+* Bug Fix: Fixed a rare PHP Notice: Array to string conversion in basic-setup.php on line 415. 
+* Bug Fix: Added a check to see if WP_Plugins_List_Table class is available before using it. 
 
 = 2.0.2 =
 * Bug Fix: Fix fatal error in PHP versions prior to PHP 5.5. "Cant use function return value in write context". 

@@ -3,8 +3,8 @@ Contributors: timwhitlock
 Tags: translation, translators, localization, localisation, l10n, i18n, Gettext, PO, MO, productivity, multilingual, internationalization
 Requires at least: 4.1
 Requires PHP: 5.2.4
-Tested up to: 5.4.1
-Stable tag: 2.4.0
+Tested up to: 5.5
+Stable tag: 2.4.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,14 +13,14 @@ Translate WordPress plugins and themes directly in your browser
 
 == Description ==
 
-Loco Translate provides in-browser editing of WordPress translation files.
+Loco Translate provides in-browser editing of WordPress translation files and integration with automatic translation services.
 
-It also provides localization tools for developers, such as extracting strings and generating templates.
+It also provides Gettext/localization tools for developers, such as extracting strings and generating templates.
 
 Features include:
 
 * Built-in translation editor within WordPress admin
-* Integration with automatic translation APIs
+* Integration with translation APIs including DeepL, Google, Microsoft and Yandex
 * Create and update language files directly in your theme or plugin
 * Extraction of translatable strings from your source code
 * Native MO file compilation without the need for Gettext on your system
@@ -95,12 +95,29 @@ We don't collect your data or snoop on you. See the [plugin privacy notice](http
 3. PO source view with text filter and clickable file references
 4. Restore tab showing PO diff view with revert function
 5. Showing access to translations by installed language
-
+6. Suggestion feature showing results from several providers
 
 
 == Changelog ==
 
-= 2.4.0
+= 2.4.2 =
+* Added loco_file_written hook
+* Improved script tampering warning
+* Added keypress for selecting auto-suggestion
+* Sync no longer copies msgstr fields by default
+* Style tweaks for WordPress 5.5
+
+= 2.4.1 =
+* Fixed mapping of some API languages
+* Added locale filter to user preferences
+* Added debugging for credential form failures
+* Fixed deprecated use of array_key_exists
+* Added DeepL API service provider
+* Improved script tampering detection
+* Bumped WordPress version to 5.5
+* Added "modern" skin styles
+
+= 2.4.0 =
 * Added support for third party translation APIs
 * Added file references to editor source pane in code view
 * Added fuzzy matching during editor Sync operation
@@ -343,8 +360,8 @@ We don't collect your data or snoop on you. See the [plugin privacy notice](http
 
 == Upgrade Notice ==
 
-= 2.4.0 =
-* Various improvements including automatic translation support
+= 2.4.2 =
+* Various improvements and bugfixes
 
 
 

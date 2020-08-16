@@ -51,11 +51,16 @@
 					<div wpfc-cdn-page="4" class="wiz-cont" style="display:none">
 						<?php include WPFC_MAIN_PATH."templates/cdn/specify_sources.php"; ?>
 					</div>
+
 					<div wpfc-cdn-page="5" class="wiz-cont" style="display:none">
+						<?php include WPFC_MAIN_PATH."templates/cdn/exclude_sources.php"; ?>
+					</div>
+
+					<div wpfc-cdn-page="6" class="wiz-cont" style="display:none">
 						<h1>Ready to Go!</h1>
 						<p>You're all set! Click the finish button below and that's it.</p>
 					</div>
-					<div wpfc-cdn-page="6" class="wiz-cont" style="display:none">
+					<div wpfc-cdn-page="7" class="wiz-cont" style="display:none">
 						<h1>Integration Ready!</h1>
 						<p>Your static contents will be delivered via CDN.</p>
 					</div>

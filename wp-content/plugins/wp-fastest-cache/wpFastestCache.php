@@ -3,7 +3,7 @@
 Plugin Name: WP Fastest Cache
 Plugin URI: http://wordpress.org/plugins/wp-fastest-cache/
 Description: The simplest and fastest WP Cache system
-Version: 0.9.0.6
+Version: 0.9.0.9
 Author: Emre Vona
 Author URI: http://tr.linkedin.com/in/emrevona
 Text Domain: wp-fastest-cache
@@ -102,6 +102,9 @@ GNU General Public License for more details.
 
 			add_action('wp_ajax_wpfc_clear_cache_of_allsites', array($this, "wpfc_clear_cache_of_allsites_callback"));
 
+			add_action('wp_ajax_wpfc_toolbar_save_settings', array($this, "wpfc_toolbar_save_settings_callback"));
+			add_action('wp_ajax_wpfc_toolbar_get_settings', array($this, "wpfc_toolbar_get_settings_callback"));
+
 
 			add_action( 'wp_ajax_wpfc_save_timeout_pages', array($this, 'wpfc_save_timeout_pages_callback'));
 			add_action( 'wp_ajax_wpfc_save_exclude_pages', array($this, 'wpfc_save_exclude_pages_callback'));
@@ -193,7 +196,7 @@ GNU General Public License for more details.
 					add_action('init', array($this, "create_preload_cache"), 11);
 				}
 
-				if(isset($_GET) && isset($_GET["type"]) && preg_match("/^clearcache(andminified)*$/i", $_GET["type"])){
+				if(isset($_GET) && isset($_GET["type"]) && preg_match("/^clearcache(andminified|allsites)*$/i", $_GET["type"])){
 					// /?action=wpfastestcache&type=clearcache&token=123
 					// /?action=wpfastestcache&type=clearcacheandminified&token=123
 
@@ -210,6 +213,10 @@ GNU General Public License for more details.
 
 								if($_GET["type"] == "clearcacheandminified"){
 									$this->deleteCache(true);
+								}
+
+								if($_GET["type"] == "clearcacheallsites"){
+									$this->wpfc_clear_cache_of_allsites_callback();
 								}
 
 								die("Done");
@@ -667,16 +674,14 @@ GNU General Public License for more details.
 				$user = wp_get_current_user();
 				$allowed_roles = array('administrator');
 
-				$constants = get_defined_constants();
-				if(is_array($constants)){
-					foreach ($constants as $key => $value) {
-						if(preg_match("/^WPFC_TOOLBAR_FOR_(.+)/", $key, $role)){
-							if($value){
-								array_push($allowed_roles, strtolower($role[1]));
-							}
-						}
+				$wpfc_role_status = get_option("WpFastestCacheToolbarSettings");
+				if(is_array($wpfc_role_status) && !empty($wpfc_role_status)){
+					foreach ($wpfc_role_status as $key => $value){
+						$key = str_replace("wpfc_toolbar_", "", $key);
+						array_push($allowed_roles, strtolower($key));
 					}
 				}
+
 				
 				if(array_intersect($allowed_roles, $user->roles)){
 					include_once plugin_dir_path(__FILE__)."inc/admin-toolbar.php";
@@ -690,7 +695,6 @@ GNU General Public License for more details.
 					$toolbar = new WpFastestCacheAdminToolbar($is_multi);
 					$toolbar->add();
 				}
-
 			}
 		}
 
@@ -731,6 +735,49 @@ GNU General Public License for more details.
 			$this->deleteCache(true);
 		}
 
+		public function wpfc_toolbar_get_settings_callback(){
+			if(current_user_can('manage_options')){
+				$result = array("success" => true, "roles" => false);
+
+				$wpfc_role_status = get_option("WpFastestCacheToolbarSettings");
+				if(is_array($wpfc_role_status) && !empty($wpfc_role_status)){
+					$result["roles"] = $wpfc_role_status;
+				}
+
+				die(json_encode($result));
+			}else{
+				wp_die("Must be admin");
+			}
+		}
+
+		public function wpfc_toolbar_save_settings_callback(){
+			if(current_user_can('manage_options')){
+				if(is_array($_GET["roles"]) && !empty($_GET["roles"])){
+					$roles_arr = array();
+
+					foreach($_GET["roles"] as $key => $value){
+						$value = esc_html(esc_sql($value));
+						$key = esc_html(esc_sql($key));
+
+						$roles_arr[$key] = $value;
+					}
+
+					if(get_option("WpFastestCacheToolbarSettings") === false){
+						add_option("WpFastestCacheToolbarSettings", $roles_arr, 1, "no");
+					}else{
+						update_option("WpFastestCacheToolbarSettings", $roles_arr);
+					}
+				}else{
+					delete_option("WpFastestCacheToolbarSettings");
+				}
+
+
+				die(json_encode(array("Saved","success")));
+			}else{
+				wp_die("Must be admin");
+			}
+		}
+
 		public function wpfc_clear_cache_of_allsites_callback(){
 			include_once('inc/cdn.php');
 			CdnWPFC::cloudflare_clear_cache();
@@ -749,7 +796,9 @@ GNU General Public License for more details.
 				@rename($file, $this->getWpContentDir("/cache/tmpWpfc/").basename($file)."-".time());
 			}
 
-			die(json_encode(array("The cache of page has been cleared","success")));
+			if (is_admin() && defined('DOING_AJAX') && DOING_AJAX){
+				die(json_encode(array("The cache of page has been cleared","success")));
+			}
 		}
 
 		public function delete_current_page_cache(){
@@ -1883,6 +1932,14 @@ GNU General Public License for more details.
 						}
 					}
 
+					if($cdn->excludekeywords){
+						$cdn->excludekeywords = str_replace(",", "|", $cdn->excludekeywords);
+
+						if(preg_match("/".preg_quote($cdn->excludekeywords, "/")."/i", $matches[0])){
+							continue;
+						}
+					}
+
 					if(preg_match("/(data-product_variations|data-siteorigin-parallax)\=[\"\'][^\"\']+[\"\']/i", $matches[0])){
 						$cdnurl = preg_replace("/(https?\:)?(\/\/)(www\.)?/", "", $cdnurl);
 
@@ -1892,7 +1949,7 @@ GNU General Public License for more details.
 						// 	$matches[0] = preg_replace("/(quot\;|\s)(https?\:)?(\\\\\/\\\\\/|\/\/)(www\.)?".$cdn->originurl."/i", "$1$2$3$4".$cdnurl, $matches[0]);
 						// }
 
-						$matches[0] = preg_replace("/(quot\;|\s)(https?\:)?(\\\\\/\\\\\/|\/\/)(www\.)?".$cdn->originurl."/i", "$1$2$3".$cdnurl, $matches[0]);
+						$matches[0] = preg_replace("/(quot\;|\s)(https?\:)?(\\\\\/\\\\\/|\/\/)(www\.)?".$cdn->originurl."/i", '${1}${2}${3}'.$cdnurl, $matches[0]);
 
 						
 					}else if(preg_match("/\{\"concatemoji\"\:\"[^\"]+\"\}/i", $matches[0])){

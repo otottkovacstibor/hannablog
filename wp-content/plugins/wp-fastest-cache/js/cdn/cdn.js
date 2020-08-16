@@ -1,5 +1,5 @@
 var WpfcCDN = {
-	values: {"name" : "", "cdnurl" : "", "originurl" : "", "file_types" : "", "keywords" : ""},
+	values: {"name" : "", "cdnurl" : "", "originurl" : "", "file_types" : "", "keywords" : "", "excludekeywords" : ""},
 	id : "",
 	template_url : "",
 	content : "",
@@ -50,12 +50,12 @@ var WpfcCDN = {
 			});
 		}
 	},
-	insert_keywords: function(modal, keywords){
+	insert_keywords: function(modal, classname, keywords){
 		var self = this;
 
 		if(keywords){
 			jQuery.each(keywords.split(","), function( index, value ) {
-				jQuery('<li class="keyword-item"><a class="keyword-label">' + value + '</a></li>').insertBefore(modal.find(".wpfc-add-new-keyword").closest(".keyword-item")).click(function(){
+				jQuery('<li class="' + classname + '"><a class="keyword-label">' + value + '</a></li>').insertBefore(modal.find(".wpfc-add-new-keyword").closest("." + classname)).click(function(){
 					jQuery(this).remove();
 				});
 			});
@@ -72,7 +72,8 @@ var WpfcCDN = {
 			modal.find("select#cdn-url").val(e.cdnurl);
 			modal.find("#origin-url").val(e.originurl);
 
-			self.insert_keywords(modal, e.keywords);
+			self.insert_keywords(modal, "keyword-item", e.keywords);
+			self.insert_keywords(modal, "keyword-item-exclude", e.excludekeywords);
 
 			if(e.file_types){
 				modal.find(".wpfc-checkbox-list input[type='checkbox']").attr("checked", false);
@@ -89,10 +90,11 @@ var WpfcCDN = {
 		jQuery(".wpfc-textbox-con .fixed-search input").keypress(function(e){
 			if(e.keyCode == 13){
 				var keyword = jQuery(e.target).val();
+				var keyword_type_class = jQuery(e.target).closest("li[class*='keyword-item']").attr("class");
 				
 				jQuery(".wpfc-textbox-con").hide();
 				jQuery(e.target).val("");
-				jQuery('<li class="keyword-item"><a class="keyword-label">' + keyword + '</a></li>').insertBefore(jQuery(".wpfc-add-new-keyword").closest(".keyword-item")).click(function(){
+				jQuery('<li class="' + keyword_type_class + '"><a class="keyword-label">' + keyword + '</a></li>').insertBefore(jQuery(e.target).closest("." + keyword_type_class)).click(function(){
 					jQuery(this).remove();
 				});
 			}
@@ -100,8 +102,8 @@ var WpfcCDN = {
 	},
 	click_event_add_new_keyword_button: function(){
 		jQuery(".wpfc-add-new-keyword").click(function(){
-			jQuery(".wpfc-textbox-con").show();
-			jQuery(".wpfc-textbox-con .fixed-search input").focus();
+			jQuery(this).next(".wpfc-textbox-con").show();
+			jQuery(this).next(".wpfc-textbox-con").find(".fixed-search input").focus();
 		});
 	},
 	set_buttons_action: function(){
@@ -183,13 +185,14 @@ var WpfcCDN = {
 		self.values.originurl = modal.find("input#origin-url").val();
 		self.values.file_types = modal.find(".wpfc-checkbox-list input[type='checkbox']:checked").map(function(){return this.value;}).get().join(",");
 		self.values.keywords = modal.find(".keyword-item-list li.keyword-item a.keyword-label").map(function(){return this.text;}).get().join(",");
+		self.values.excludekeywords = modal.find(".keyword-item-list li.keyword-item-exclude a.keyword-label").map(function(){return this.text;}).get().join(",");
 		
 		
 		jQuery.ajax({
 			type: 'POST',
 			dataType: "json",
 			url: ajaxurl,
-			data : {"action": "wpfc_save_cdn_integration", "values" : self.values, "file_types" : self.values.file_types, "keywords" : self.values.keywords},
+			data : {"action": "wpfc_save_cdn_integration", "values" : self.values, "file_types" : self.values.file_types, "keywords" : self.values.keywords, "excludekeywords" : self.values.excludekeywords},
 		    success: function(res){
 				jQuery("div[wpfc-cdn-name='" + self.id + "']").find("div.meta").addClass("isConnected");
 				jQuery(".wpfc-dialog-buttons[action='finish']").attr("disabled", false);

@@ -731,6 +731,7 @@
 			}
 
 			$data = "# BEGIN WpFastestCache"."\n".
+					"# Modified Time: ".date("d-m-y G:i:s", current_time('timestamp'))."\n".
 					"<IfModule mod_rewrite.c>"."\n".
 					"RewriteEngine On"."\n".
 					"RewriteBase /"."\n".
@@ -1448,7 +1449,7 @@
 							<?php settings_fields( 'wpfc-group' ); ?>
 				    		<input type="hidden" value="deleteCache" name="wpFastestCachePage">
 				    		<div class="questionCon qsubmit left">
-				    			<div class="submit"><input type="submit" value="<?php _e("Delete Cache", "wp-fastest-cache"); ?>" class="button-primary"></div>
+				    			<div class="submit"><input type="submit" value="<?php _e("Clear All Cache", "wp-fastest-cache"); ?>" class="button-primary"></div>
 				    		</div>
 				    		<div class="questionCon right">
 				    			<div style="padding-left:11px;">
@@ -1656,17 +1657,9 @@
 				    			</div>
 				    			<div class="wpfc-premium-step-footer">
 				    				<?php
-				    					if(in_array(get_bloginfo('language'), array("en-US"))){
-					    					$premium_price = "$49.99";
-					    					$premium_buy_link = "https://api.wpfastestcache.net/paypal/buypremium/";
-				    					}else{
-				    						$premium_buy_link = "https://www.wpfastestcache.com/#buy";
-				    						$premium_price = "$49.99";
 
-				    						if(in_array(get_bloginfo('language'), array("tr-TR", "tr"))){
-				    							$premium_price = "150TL";
-				    						}
-				    					}
+				    					$premium_buy_link = "https://www.wpfastestcache.com/#buy";
+				    					$premium_price = "$49.99";
 
 				    				?>
 				    				<h1 style="float:left;" id="just-h1"><?php _e("Just", "wp-fastest-cache"); ?></h1><h1><span style="margin-left:5px;" id="wpfc-premium-price"><?php echo $premium_price; ?></span></h1>
@@ -2111,6 +2104,7 @@
 				    </div>
 
 				    <?php include_once(WPFC_MAIN_PATH."templates/permission_error.html"); ?>
+				    <?php include_once(WPFC_MAIN_PATH."templates/toolbar_settings.php"); ?>
 
 				    <?php
 				    	if(isset($this->options->wpFastestCacheStatus)){

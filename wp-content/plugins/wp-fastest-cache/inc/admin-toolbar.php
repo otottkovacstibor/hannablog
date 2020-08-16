@@ -106,6 +106,15 @@
 					'parent'=> 'wpfc-toolbar-parent',
 					'meta' => array("class" => "wpfc-toolbar-child")
 				));
+			}else{
+				if(isset($_GET["page"]) && $_GET["page"] == "wpfastestcacheoptions"){
+					$wp_admin_bar->add_menu( array(
+						'id'    => 'wpfc-toolbar-parent-settings',
+						'title' => __("Settings", "wp-fastest-cache"),
+						'parent'=> 'wpfc-toolbar-parent',
+						'meta' => array("class" => "wpfc-toolbar-child")
+					));
+				}
 			}
 		}
 	}

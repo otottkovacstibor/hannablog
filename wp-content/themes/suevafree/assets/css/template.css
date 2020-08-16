@@ -1654,10 +1654,13 @@ div.wpcf7-mail-sent-ok {
 .wpcf7-form textarea ,
 .woocommerce-product-search input[type=search],
 .contact-form input[type=text],
+.contact-form input[type=email],
 .contact-form textarea ,
 .searchform input[type=text],
+.searchform input[type=email],
 .searchform textarea ,
 .comment-form input[type=text], 
+.comment-form input[type=email], 
 .comment-form textarea {
 	padding: 10px 2%;
 	background:#fafafa;

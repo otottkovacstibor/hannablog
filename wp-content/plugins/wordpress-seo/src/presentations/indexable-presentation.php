@@ -10,6 +10,8 @@ namespace Yoast\WP\SEO\Presentations;
 use Yoast\WP\SEO\Context\Meta_Tags_Context;
 use Yoast\WP\SEO\Generators\Breadcrumbs_Generator;
 use Yoast\WP\SEO\Generators\Open_Graph_Image_Generator;
+use Yoast\WP\SEO\Generators\Open_Graph_Locale_Generator;
+use Yoast\WP\SEO\Generators\Schema_Generator;
 use Yoast\WP\SEO\Generators\Twitter_Image_Generator;
 use Yoast\WP\SEO\Helpers\Current_Page_Helper;
 use Yoast\WP\SEO\Helpers\Image_Helper;
@@ -17,8 +19,6 @@ use Yoast\WP\SEO\Helpers\Options_Helper;
 use Yoast\WP\SEO\Helpers\Url_Helper;
 use Yoast\WP\SEO\Helpers\User_Helper;
 use Yoast\WP\SEO\Models\Indexable;
-use Yoast\WP\SEO\Generators\Open_Graph_Locale_Generator;
-use Yoast\WP\SEO\Generators\Schema_Generator;
 
 /**
  * Class Indexable_Presentation
@@ -257,7 +257,7 @@ class Indexable_Presentation extends Abstract_Presentation {
 		 */
 		$robots_filtered = \apply_filters( 'wpseo_robots', $robots_string, $this );
 
-		if ( is_string( $robots_filtered ) ) {
+		if ( \is_string( $robots_filtered ) ) {
 			$robots_values = \explode( ', ', $robots_filtered );
 			$robots_new    = [];
 
@@ -310,7 +310,7 @@ class Indexable_Presentation extends Abstract_Presentation {
 	 * @return array The googlebot value.
 	 */
 	private function generate_snippet_opt_in() {
-		if ( in_array( 'noindex', $this->robots, true ) ) {
+		if ( \in_array( 'noindex', $this->robots, true ) ) {
 			return [];
 		}
 
@@ -617,6 +617,9 @@ class Indexable_Presentation extends Abstract_Presentation {
 	 * @return array
 	 */
 	public function __debugInfo() {
-		return [ 'model' => $this->model, 'context' => $this->context ];
+		return [
+			'model'   => $this->model,
+			'context' => $this->context,
+		];
 	}
 }

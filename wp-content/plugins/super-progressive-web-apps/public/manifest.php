@@ -239,7 +239,11 @@ function superpwa_delete_manifest() {
  * Get PWA Icons
  *
  * @return	array	An array of icons to be used as the application icons and splash screen icons
+ *
+ * @author Jose Varghese
  * @since	1.3
+ * @since	2.1.1 Added support for Maskable Icons
+ *
  */
 function superpwa_get_pwa_icons() {
 	
@@ -251,6 +255,7 @@ function superpwa_get_pwa_icons() {
 							'src' 	=> $settings['icon'],
 							'sizes'	=> '192x192', // must be 192x192. Todo: use getimagesize($settings['icon'])[0].'x'.getimagesize($settings['icon'])[1] in the future
 							'type'	=> 'image/png', // must be image/png. Todo: use getimagesize($settings['icon'])['mime']
+							'purpose'=> 'any maskable', // any maskable to support adaptive icons
 						);
 	
 	// Splash screen icon - Added since 1.3
@@ -311,7 +316,7 @@ function superpwa_get_orientation() {
 /**
  * Get display of PWA
  *
- * @return	string	Display of PWA as set in the plugin settings.
+ * @return (string) Display of PWA as set in the plugin settings.
  * 
  * @author Jose Varghese
  * 
@@ -322,7 +327,7 @@ function superpwa_get_display() {
 	// Get Settings
 	$settings = superpwa_get_settings();
 	
-	$display = isset( $settings['display'] ) ? $settings['display'] : 0;
+	$display = isset( $settings['display'] ) ? $settings['display'] : 1;
 	
 	switch ( $display ) {
 		

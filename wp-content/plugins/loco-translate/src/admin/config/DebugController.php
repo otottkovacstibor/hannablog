@@ -58,6 +58,7 @@ class Loco_admin_config_DebugController extends Loco_admin_config_BaseController
             'WordPress' => $GLOBALS['wp_version'],
             'PHP' => phpversion().' ('.PHP_SAPI.')',
             'Server' => isset($_SERVER['SERVER_SOFTWARE']) ? $_SERVER['SERVER_SOFTWARE'] : ( function_exists('apache_get_version') ? apache_get_version() : '' ),
+            'jQuery' => '...',
         ) );
         // we want to know about modules in case there are security mods installed known to break functionality
         if( function_exists('apache_get_modules') && ( $mods = preg_grep('/^mod_/',apache_get_modules() ) ) ){
@@ -157,11 +158,6 @@ class Loco_admin_config_DebugController extends Loco_admin_config_BaseController
             }
         }
         
-        // alert to third party plugins known to interfere with functioning of this plugin
-        if( class_exists('\\LocoAutoTranslateAddon\\LocoAutoTranslate',false) ){
-            Loco_error_AdminNotices::add( new Loco_error_Warning('Unoffical add-ons for Loco Translate may affect functionality. We cannot provide support when third party products are installed.') );
-        }
-
         return $this->view('admin/config/debug', compact('breadcrumb','versions','encoding','memory','fs','debug') );
     }
     

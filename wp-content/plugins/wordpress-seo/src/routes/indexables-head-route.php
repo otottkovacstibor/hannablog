@@ -59,16 +59,18 @@ class Indexables_Head_Route implements Route_Interface {
 	 * @inheritDoc
 	 */
 	public function register_routes() {
-		\register_rest_route( Main::API_V1_NAMESPACE, self::HEAD_FOR_URL_ROUTE, [
-			'methods'  => 'GET',
-			'callback' => [ $this, 'get_head' ],
-			'args'     => [
+		$route_args = [
+			'methods'             => 'GET',
+			'callback'            => [ $this, 'get_head' ],
+			'permission_callback' => '__return_true',
+			'args'                => [
 				'url' => [
 					'validate_callback' => [ $this, 'is_valid_url' ],
 					'required'          => true,
 				],
 			],
-		] );
+		];
+		\register_rest_route( Main::API_V1_NAMESPACE, self::HEAD_FOR_URL_ROUTE, $route_args );
 	}
 
 	/**
@@ -93,7 +95,7 @@ class Indexables_Head_Route implements Route_Interface {
 	 * @return boolean Whether or not the url is valid.
 	 */
 	public function is_valid_url( $url ) {
-		if ( \filter_var( $url, FILTER_VALIDATE_URL ) === false ) {
+		if ( \filter_var( $url, \FILTER_VALIDATE_URL ) === false ) {
 			return false;
 		}
 		return true;

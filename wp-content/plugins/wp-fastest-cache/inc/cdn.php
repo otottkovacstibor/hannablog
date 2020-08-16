@@ -40,6 +40,7 @@
 		public static function cloudflare_disable_rocket_loader($email = false, $key = false, $zoneid = false){
 			if($email && $key && $zoneid){
 				$header = array("method" => "PATCH",
+								'timeout' => 10,
 								'headers' => array(
 												"X-Auth-Email" => $email,
 												"X-Auth-Key" => $key,
@@ -72,6 +73,7 @@
 		public static function cloudflare_set_browser_caching($email = false, $key = false, $zoneid = false){
 			if($email && $key && $zoneid){
 				$header = array("method" => "PATCH",
+								'timeout' => 10,
 								'headers' => array(
 												"X-Auth-Email" => $email,
 												"X-Auth-Key" => $key,
@@ -83,7 +85,7 @@
 				$response = wp_remote_request('https://api.cloudflare.com/client/v4/zones/'.$zoneid.'/settings/browser_cache_ttl', $header);
 
 				if(!$response || is_wp_error($response)){
-					return array("success" => false, "error_message" => "Unable to disable rocket loader option");
+					return array("success" => false, "error_message" => "Unable to set the browser caching option");
 				}else{
 					$body = json_decode(wp_remote_retrieve_body($response));
 
@@ -103,6 +105,7 @@
 		public static function cloudflare_disable_minify($email = false, $key = false, $zoneid = false){
 			if($email && $key && $zoneid){
 				$header = array("method" => "PATCH",
+								'timeout' => 10,
 								'headers' => array(
 												"X-Auth-Email" => $email,
 												"X-Auth-Key" => $key,

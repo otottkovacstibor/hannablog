@@ -2,7 +2,7 @@
 /**
  * Base layout for all admin pages 
  */
-?><div class="wrap" id="loco"><?php 
+?><div class="wrap" id="loco-admin"><?php 
 
     if( $this->has('breadcrumb') ):?> 
     <h1>
@@ -56,7 +56,7 @@
         // standard file system dialogues
         if( $params->has('fsFields') ):
             echo $this->render('common/inc-fsconn');
-        endif;?> 
+        endif?> 
     </div>
 
 
@@ -68,11 +68,31 @@
 
 
 <?php 
-/* @var Loco_mvc_ViewParams $js */
-if( $this->has('js') ):?> 
-<script>
+if( $this->has('js') && $js instanceof Loco_mvc_ViewParams ):?><script>
 /*<![CDATA[*/
-window.locoConf = <?php echo $js->exportJson()?>;
+window.loco = { conf: <?php echo $js->exportJson()?> };
+document.addEventListener && document.addEventListener('DOMContentLoaded', function(loco,v,s){
+    return function() {
+        function enumJs(s) {
+            var i = s.length;
+            while( 0 !== i-- ){
+                if( null == document.getElementById(s[i]) ){
+                    return false;
+                }
+            }
+            return true;
+        }
+        if( window.loco !== loco || ! loco.validate || ! loco.validate(v) || ! enumJs(s) ) {
+            var t = 'Scripts on this page are not running as expected. Please empty all relevant caches and refresh the screen.\nIf the issue persists, try disabling other plugins that may be modifying the functionality of Loco Translate.';
+            if( loco.notices && loco.notices.warn ){
+                loco.notices.warn(t).link('https://localise.biz/wordpress/plugin/faqs/script-warnings','See FAQ');
+            }
+            else {
+                throw new Error(t);
+            }
+        }
+    };
+}( loco, <?php $js->j('$v')?>, <?php $js->j('$js')?> ) );
 /*]]>*/
 </script><?php
 endif;

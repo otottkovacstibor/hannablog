@@ -10,7 +10,6 @@
 		
 		.wpfc-textbox-con{position:absolute;left:0;top:0;-webkit-border-radius:3px;-moz-border-radius:3px;background:#fff;-webkit-box-shadow:0 2px 6px 2px rgba(0,0,0,0.3);box-shadow:0 2px 6px 2px rgba(0,0,0,0.3);-moz-box-shadow:0 2px 6px 2px rgba(0,0,0,0.3);float:left;z-index:444;width:150px;border:1px solid #adadad;}
 		.keyword-item-list:after{box-shodow:0 2px 6px 0 rgba(0, 0, 0, 0.15);content:'';clear:both;height:0;visibility:hidden;display:block}
-		.keyword-item{width:auto;float:left;line-height:22px;position:relative;background:rgba(0,0,0,0.15);margin:0 5px 0 0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px}
 		.fixed-search input{width:100%;padding:6px 9px;line-height:20px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;border:none;border-bottom:1px solid #ccc;-webkit-box-shadow:0 2px 6px 0 rgba(0,0,0,0.1);box-shadow:0 2px 6px 0 rgba(0,0,0,0.1);-moz-box-shadow:0 2px 6px 0 rgba(0,0,0,0.1);-webkit-border-radius:3px 3px 0 0;-moz-border-radius:3px 3px 0 0;border-radius:3px 3px 0 0;font-weight:bold}.fixed-search input:focus{outline:0}
 		.keyword-item{width:auto;float:left;line-height:22px;position:relative;background:rgba(0,0,0,0.15);margin:0 5px 5px 0;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
 		.wpfc-add-new-keyword, .keyword-item a.keyword-label{

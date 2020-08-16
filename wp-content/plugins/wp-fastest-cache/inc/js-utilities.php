@@ -235,19 +235,21 @@
 				$this->wpfc->createFolder($cachFilePath, $js_content, "js");
 			}
 
-			if($jsFiles = @scandir($cachFilePath, 1)){
+			if(is_dir($cachFilePath)){
+				if($jsFiles = @scandir($cachFilePath, 1)){
 
-				$newLink = "<script src='".$jsLink."/".$jsFiles[0]."' type=\"text/javascript\"></script>";
+					$newLink = "<script src='".$jsLink."/".$jsFiles[0]."' type=\"text/javascript\"></script>";
 
-				$script_tag = substr($this->html, $value["start"], ($value["end"] - $value["start"] + 1));
-				
-				if($last){
-					$script_tag = $newLink."\n<!-- ".$script_tag." -->\n";
-				}else{
-					$script_tag = $newLink."\n".$script_tag;
+					$script_tag = substr($this->html, $value["start"], ($value["end"] - $value["start"] + 1));
+					
+					if($last){
+						$script_tag = $newLink."\n<!-- ".$script_tag." -->\n";
+					}else{
+						$script_tag = $newLink."\n".$script_tag;
+					}
+
+					$this->html = substr_replace($this->html, $script_tag, $value["start"], ($value["end"] - $value["start"] + 1));
 				}
-
-				$this->html = substr_replace($this->html, $script_tag, $value["start"], ($value["end"] - $value["start"] + 1));
 			}
 		}
 
