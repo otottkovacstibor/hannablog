@@ -4,7 +4,7 @@ Tags: security, firewall, malware scanner, web application firewall, two factor 
 Requires at least: 3.9
 Requires PHP: 5.3
 Tested up to: 5.5
-Stable tag: 7.4.10
+Stable tag: 7.4.11
 
 Secure your website with the most comprehensive WordPress security plugin. Firewall, malware scan, blocking, live traffic, login security & more.
 
@@ -182,6 +182,14 @@ Secure your website with Wordfence.
 9. Logging in is easy with Wordfence 2FA.
 
 == Changelog ==
+
+= 7.4.11 - August 27, 2020 =
+
+* Improvement: Added diagnostic debug button to clear Wordfence Central connection data from the database.
+* Improvement: Added help documentation links to modified plugin/theme file scan results.
+* Fix: Prevent file system scan from following symlinks to root.
+* Fix: Cleared pending plugin/theme update scan results and notification when a plugin/theme is auto-updated.
+* Fix: Added check for when site is disconnected on Central's end, but not in the plugin.
 
 = 7.4.10 - August 5, 2020 =
 

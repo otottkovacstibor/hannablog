@@ -321,7 +321,7 @@ class wordfence {
 
 		wfConfig::remove('lastPermissionsTemplateCheck');
 	}
-	public static function _scheduleRefreshUpdateNotification($upgrader, $options) {
+	public static function _scheduleRefreshUpdateNotification($upgrader = null, $options = null) {
 		$defer = false;
 		if (is_array($options) && isset($options['type']) && $options['type'] == 'core') {
 			$defer = true;
@@ -1284,6 +1284,7 @@ SQL
 		add_action('upgrader_process_complete', 'wordfence::_refreshVulnerabilityCache');
 		add_action('upgrader_process_complete', 'wfUpdateCheck::syncAllVersionInfo');
 		add_action('upgrader_process_complete', 'wordfence::_scheduleRefreshUpdateNotification', 99, 2);
+		add_action('automatic_updates_complete', 'wordfence::_scheduleRefreshUpdateNotification', 99, 0);
 		add_action('wordfence_refreshUpdateNotification', 'wordfence::_refreshUpdateNotification', 99, 0);
 		add_action('wordfence_completeCoreUpdateNotification', 'wordfence::_completeCoreUpdateNotification', 99, 0);
 		
