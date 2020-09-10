@@ -2,18 +2,18 @@
 # This file is distributed under the same license as the Plugins - WP Statistics - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-05-29 21:18:39+0000\n"
+"PO-Revision-Date: 2020-09-10 14:51:54+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/3.0.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
 "Language: hu\n"
 "Project-Id-Version: Plugins - WP Statistics - Stable (latest release)\n"
 
 #: includes/classes/class-wp-statistics-rest.php:215
 msgid "Visitor Hit was recorded successfully."
-msgstr "A látogatói találat sikeres rögzítésre került."
+msgstr "A látogatói találat sikeresen rögzítésre került."
 
 #: includes/templates/welcome.php:89
 msgid "For example, different groups for sales, marketing, support or technical team."
@@ -205,21 +205,9 @@ msgstr "Kattintson a gombra a frissítés letöltéséhez."
 msgid "no online users yet."
 msgstr "éppen nincs aktív felhasználó."
 
-#: includes/log/top-referring.php:213
-msgid "Rating"
-msgstr "Értékelés"
-
 #: includes/log/online.php:153
 msgid "Currently there are no online users in the site."
 msgstr "Jelenleg nincs aktív felhasználó a webhelyen."
-
-#: includes/classes/class-wp-statistics-admin-pages.php:426
-msgid "error in get referrer spam list. please try again."
-msgstr "Hiba történt a hivatkozó spamlistájának lekérdezésében. Kérjük, próbálja meg újra."
-
-#: includes/classes/class-wp-statistics-admin-pages.php:424
-msgid "Updated Matomo Referrer Spam."
-msgstr "A Matomo hivatkozásispam-feketelista frissült."
 
 #: includes/log/top-referring.php:216 includes/log/widgets/referring.php:28
 msgid "Server IP"
@@ -232,6 +220,18 @@ msgstr "Honlap címe"
 #: includes/log/top-referring.php:214
 msgid "Site Url"
 msgstr "Honlap URL címe"
+
+#: includes/log/top-referring.php:213
+msgid "Rating"
+msgstr "Értékelés"
+
+#: includes/classes/class-wp-statistics-admin-pages.php:426
+msgid "error in get referrer spam list. please try again."
+msgstr "Hiba történt a hivatkozó spamlistájának lekérdezésében. Kérjük, próbálja meg újra."
+
+#: includes/classes/class-wp-statistics-admin-pages.php:424
+msgid "Updated Matomo Referrer Spam."
+msgstr "A Matomo hivatkozásispam-feketelista frissült."
 
 #: includes/settings/tabs/wps-general.php:322
 msgid "Don't forget to clear your enabled plugin cache."
@@ -317,6 +317,10 @@ msgstr "GeoIP település:"
 #: includes/settings/tabs/wps-externals.php:90
 msgid "Update Database"
 msgstr "Adatbázis frissítése"
+
+#: includes/settings/tabs/wps-exclusions.php:386
+msgid "Exclude any call to the WordPress Admin pages."
+msgstr "A WordPress Rendszergazda oldalaira érkező hívások kizárása."
 
 #: includes/settings/tabs/wps-exclusions.php:307
 #: includes/settings/tabs/wps-exclusions.php:326
@@ -417,21 +421,17 @@ msgstr "WP Statistics rövid kódok"
 msgid "Referrer"
 msgstr "Hivatkozó"
 
-#: includes/classes/class-wp-statistics-admin.php:309
-msgid "You Are Using %s Plugin in WordPress"
-msgstr "A(z) %s bővítményt használja a WordPressben"
+#: includes/classes/class-wp-statistics-admin.php:314
+msgid "Please enable %1$sCache Setting%2$s in WP Statistics."
+msgstr "Engedélyezze a %1$sGyorsítótár beállításait%2$s a WP Statistics bővítményben."
 
 #: includes/classes/class-wp-statistics-admin.php:311
 msgid "WP_CACHE is Enable in Your WordPress"
 msgstr "A WP_CACHE engedélyezve van a WordPress programban"
 
-#: includes/settings/tabs/wps-exclusions.php:386
-msgid "Exclude any call to the WordPress Admin pages."
-msgstr "A WordPress Rendszergazda oldalaira érkező hívások kizárása."
-
-#: includes/classes/class-wp-statistics-admin.php:314
-msgid "Please enable %1$sCache Setting%2$s in WP Statistics."
-msgstr "Engedélyezze a %1$sGyorsítótár beállításait%2$s a WP Statistics bővítményben."
+#: includes/classes/class-wp-statistics-admin.php:309
+msgid "You Are Using %s Plugin in WordPress"
+msgstr "A(z) %s bővítményt használja a WordPressben"
 
 #: includes/settings/tabs/wps-privacy.php:46
 msgid "This option anonymizes the user IP address for GDPR compliance. For example, 888.888.888.888 > 888.888.888.000."
@@ -792,10 +792,6 @@ msgstr "Oldal kijelölése"
 msgid "http://veronalabs.com/"
 msgstr "http://veronalabs.com/"
 
-#: includes/log/exclusions.php:98
-msgid "CronJob"
-msgstr "CronJob"
-
 #. Author of the plugin
 msgid "VeronaLabs"
 msgstr "VeronaLabs"
@@ -803,6 +799,10 @@ msgstr "VeronaLabs"
 #. Description of the plugin
 msgid "Complete WordPress Analytics and Statistics for your site!"
 msgstr "Teljes WordPress elemzések és statisztika a weboldalához!"
+
+#: includes/log/exclusions.php:98
+msgid "CronJob"
+msgstr "CronJob"
 
 #: includes/templates/postbox.php:4
 msgid "Subscribe to Newsletter"
@@ -2892,7 +2892,7 @@ msgstr "A 100 leginkább érdeklődő mai látogató"
 
 #: includes/log/top-referring.php:220 includes/log/widgets/referring.php:29
 msgid "References"
-msgstr "Referenciák"
+msgstr "Hivatkozások"
 
 #: includes/settings/tabs/wps-general.php:120
 #: includes/classes/class-wp-statistics-shortcode.php:162
