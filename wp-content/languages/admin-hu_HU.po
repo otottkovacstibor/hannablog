@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-11-02 11:53:04+0000\n"
+"PO-Revision-Date: 2020-11-06 06:33:52+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -27,6 +27,11 @@ msgstr "0"
 msgid "Continue"
 msgstr "Folytatás"
 
+#. translators: 1: post_max_size, 2: upload_max_filesize
+#: wp-admin/includes/class-wp-site-health.php:2055
+msgid "The \"%1$s\" value is smaller than \"%2$s\"."
+msgstr "A(z) \"%1$s\" érték kisebb, mint a(z) \"%2$s\" érték."
+
 #: wp-admin/includes/class-wp-debug-data.php:124
 msgid "Environment type"
 msgstr "Környezet típusa"
@@ -34,6 +39,14 @@ msgstr "Környezet típusa"
 #: wp-admin/about.php:212
 msgid "Video: An image is added with an image block. In the block toolbar, an icon called \"Crop\" is selected, which changes the toolbar to show image resizing tools. First, zoom is used to zoom into the center of the image. Next, aspect ratio is clicked. This shows a dropdown of common aspect ratios. Square is chosen, and the image is moved within the new square outline. The crop is completed by clicking \"Apply.\""
 msgstr "Videó: Egy kép kerül hozzáadásra egy kép blokkból. A blokk eszköztárban található a \"Kivágás\" ikon, ami megváltoztatja az eszköztárat, hogy a méretezési funkciók jelenjenek meg. Az első a nagyítás, ami arra való, hogy belenagyítsunk a kép közepébe. A következő a képarány, kattintás után legördülő menüből népszerű képarányokból választhatunk. Ha négyzetest választjuk, a kép új négyzetes körvonalba kerül. A körbevágást a \"Alkalmaz\" megnyomásával fejezhetjük be."
+
+#: wp-admin/about.php:204
+msgid "Video: In the editor, the block inserter shows two tabs, Blocks and Patterns. The Patterns tab is selected. There are different block layouts in this tab. After scrolling through options including buttons and columns, a pattern called \"Large header with a heading\" is chosen. This adds a cover block, which is customized with a photo and the name of the WordPress 5.5 jazz musician."
+msgstr "Videó: A blokkbeillesztés szakasz két fület mutat, nevezetesen a Blokkokat és a Mintákat. A Minták fül kiválasztva. Ezen a lapon különböző blokkelrendezések találhatóak. A \"Nagy fejléc címsorral\" elnevezésű mintát a többi minta, például a gombok és oszlopok görgetése után lehet kiválasztani. Fedőlap kerül hozzáadásra, mely egy fénykép, és amelyet WordPress 5.5 Jazz Musician néven testre szabtak."
+
+#: wp-admin/about.php:184
+msgid "Video: Installed plugin screen, which shows a new column, Automatic Updates. In this column are buttons that say \"Enable auto-updates\". When clicked, the auto-updates feature is turned on for that plugin, and the button switches to say \"Disable auto-updates\"."
+msgstr "Videó: Telepített beépülő modul képernyő, mely egy új oszlopot, az Automatikus frissítéseket mutatja. Ebben az oszlopban vannak az \"Automatikus frissítések engedélyezése\" feliratú gombok. Ha rákattintunk, az automatikus frissítés funkció be van kapcsolva az adott bővítménynél, és a gomb átvált a „Letiltja az automatikus frissítéseket” feliratra."
 
 #. translators: %s: 'register_meta' function name.
 #: wp-admin/about.php:324
@@ -107,6 +120,10 @@ msgstr "A Dashicons ikonkönyvtár egy végső frissítést kapott az 5.5 verzi�
 msgid "Dashicons"
 msgstr "Dashikonok"
 
+#: wp-admin/about.php:250
+msgid "The addition of block types endpoints means that JavaScript apps (like the block editor) can retrieve definitions for any blocks registered on the server."
+msgstr "Az új blokk típusú végpontok azt jelentik, hogy a JavaScript-alkalmazások (például a blokkíró szerkesztő) meghatározást kaphatnak a szerveren regisztrált bármely blokkról."
+
 #: wp-admin/about.php:249
 msgid "Server-side registered blocks in the REST API"
 msgstr "Szerver oldalon regisztrált blokkok a REST API-ban"
@@ -146,6 +163,10 @@ msgstr "Mostantól könnyebb megtalálni a nekünk megfelelő blokkot. Az új bl
 #: wp-admin/about.php:222
 msgid "The New Block Directory"
 msgstr "Az új Blokktár"
+
+#: wp-admin/about.php:218
+msgid "You will also find block patterns in a wide variety of plugins and themes, with more added all the time. Pick any of them from a single place — just click and go!"
+msgstr "Blokkmintákat is lehet találni a legkülönbözőbb bővítményekben és sablonokban, folyamatosan több hozzáadásával. Válasszuk ki bármelyiket egyetlen helyről - kattintsunk és menjünk!"
 
 #: wp-admin/about.php:217
 msgid "New block patterns make it simple and fun to create complex, beautiful layouts, using combinations of text and media that you can mix and match to fit your story."
@@ -207,6 +228,10 @@ msgstr "A WordPress alapú oldalak jól együttműködnek a keresőmotorokkal."
 msgid "Say hello to your new sitemap."
 msgstr "Köszöntsük az új oldaltérképet!"
 
+#: wp-admin/about.php:153
+msgid "On mobile, lazy loading can also keep browsers from loading files meant for other devices. That can save your readers money on data — and help preserve battery life."
+msgstr "A mobilon történő lusta betöltés megakadályozhatja a fájlok más eszközökről történő betöltését. Segíthet a felhasználóknak az adatok  mentésében - valamint az akkumulátor élettartamát megkíméli."
+
 #: wp-admin/about.php:152
 msgid "In WordPress 5.5, images wait to load until they’re just about to scroll into view. The technical term is ‘lazy loading’."
 msgstr "WordPress 5.5 verziójában a képek egészen addig nem töltenek be, amíg el nem érik a megjelenési határt, a szakmai szlengben ez ‘lazy loading‘ néven ismert."
@@ -249,6 +274,10 @@ msgstr "A frissítés nem működik a WordPress aktuális verziójával."
 msgid "This update doesn&#8217;t work with your versions of WordPress and PHP."
 msgstr "A frissítés nem működik a WordPress és PHP aktuális verziójával."
 
+#: wp-admin/options-discussion.php:207 wp-admin/options-discussion.php:208
+msgid "Disallowed Comment Keys"
+msgstr "Nem engedélyezett hozzászólás kulcsok"
+
 #: wp-admin/includes/class-wp-site-health.php:2150
 msgid "Plugin and theme auto-updates"
 msgstr "Bővítmény és sablon automatikus frissítések"
@@ -256,6 +285,22 @@ msgstr "Bővítmény és sablon automatikus frissítések"
 #: wp-admin/includes/class-wp-site-health.php:2427
 msgid "There appear to be no issues with plugin and theme auto-updates."
 msgstr "Úgy tűnik, hogy nincs probléma sem a bővítmények, sem a sablonok frissítésével."
+
+#: wp-admin/includes/class-wp-site-health.php:2421
+msgid "Auto-updates for themes appear to be disabled. This will prevent your site from receiving new versions automatically when available."
+msgstr "Úgy tűnik, hogy a sablonok automatikus frissítése le van tiltva. Ez megakadályozza, hogy webhelyünk automatikusan megkaphassa az új verziókat, amikor elérhetőek azok."
+
+#: wp-admin/includes/class-wp-site-health.php:2416
+msgid "Auto-updates for plugins appear to be disabled. This will prevent your site from receiving new versions automatically when available."
+msgstr "Úgy tűnik, hogy a bővítmények automatikus frissítése le van tiltva. Ez megakadályozza, hogy webhelyünk automatikusan megkaphassa az új verziókat, amikor elérhetőek azok."
+
+#: wp-admin/includes/class-wp-site-health.php:2411
+msgid "Auto-updates for plugins and themes appear to be disabled. This will prevent your site from receiving new versions automatically when available."
+msgstr "Úgy tűnik, hogy a bővítmények és a sablonok automatikus frissítése le van tiltva. Ez megakadályozza, hogy webhelyünk automatikusan megkaphassa az új verziókat, amikor elérhetőek azok."
+
+#: wp-admin/includes/class-wp-site-health.php:2402
+msgid "Auto-updates for plugins and/or themes appear to be disabled, but settings are still set to be displayed. This could cause auto-updates to not work as expected."
+msgstr "A beépülő modulok és/vagy sablonok automatikus frissítése le van tiltva, de a beállítások továbbra is megjelenítésre vannak állítva. Ez azt eredményezheti, hogy az automatikus frissítések nem a várt módon működnek."
 
 #: wp-admin/includes/class-wp-site-health.php:1765
 msgid "Your site may have problems auto-updating plugins and themes"
@@ -411,6 +456,10 @@ msgstr "A sablon már nem lesz automatikusan frissítve."
 msgid "Theme will be auto-updated."
 msgstr "A sablon automatikusan frissülni fog."
 
+#: wp-admin/themes.php:190 wp-admin/network/themes.php:313
+msgid "Auto-updates can be enabled or disabled for each individual theme. Themes with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system."
+msgstr "Az automatikus frissítéseket engedélyezhetjük vagy letilthatjuk minden egyes sablonhoz. Az automatikus frissítés engedélyezett sablonai a következő automatikus frissítés becsült dátumát jelenítik meg. Az automatikus frissítés a WP-Cron feladatütemezési rendszerétől függ."
+
 #: wp-admin/themes.php:106
 msgid "Sorry, you are not allowed to disable themes automatic updates."
 msgstr "Elnézést, nincs megfelelő jogosultság a sablonok automatikus frissítésének kikapcsolásához."
@@ -451,6 +500,14 @@ msgstr "A bővítmény már nem lesz automatikusan frissítve."
 msgid "Plugin will be auto-updated."
 msgstr "A bővítmény automatikusan frissülni fog."
 
+#: wp-admin/plugins.php:576
+msgid "Auto-updates can be enabled or disabled for each individual plugin. Plugins with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system."
+msgstr "Az automatikus frissítéseket minden egyes beépülő modulhoz engedélyezni vagy letiltani lehet. Az automatikus frissítést engedélyező beépülő modulok megmutatják a következő automatikus frissítés becsült dátumát. Az automatikus frissítés a WP-Cron feladatütemezési rendszerétől függ."
+
+#: wp-admin/plugins.php:453
+msgid "Please connect to your network admin to manage plugins automatic updates."
+msgstr "Kérjük, csatlakozzon a hálózati rendszergazdához a beépülő bővítmények automatikus frissítésének kezeléséhez."
+
 #. translators: %s: Human-readable time interval.
 #: wp-admin/index.php:137
 msgid "The admin email verification page will reappear after %s."
@@ -472,6 +529,16 @@ msgstr "Automatikus frissítések"
 msgid "Please note: Third-party themes and plugins, or custom code, may override WordPress scheduling."
 msgstr "Fontos megjegyezni: harmadik féltől származó sablonok, bővítmények vagy egyedi kódok felülírhatják a WordPress időzítését."
 
+#: wp-admin/update-core.php:829
+msgid "Auto-updates can be enabled or disabled for each individual theme or plugin. Themes or plugins with auto-updates enabled will display the estimated date of the next auto-update. Auto-updates depends on the WP-Cron task scheduling system."
+msgstr "Az automatikus frissítéseket engedélyezhetjük vagy letilthatjuk minden egyes sablonhoz vagy beépülő bővítményhez. Az automatikus frissítést engedélyező sablonok vagy beépülő bővítmények a következő automatikus frissítés becsült dátumát jelenítik meg. Az automatikus frissítés a WP-Cron feladatütemezési rendszerétől függ."
+
+#. translators: 1: Documentation on WordPress backups, 2: Documentation on
+#. updating WordPress.
+#: wp-admin/update-core.php:252
+msgid "<strong>Important:</strong> Before updating, please <a href=\"%1$s\">back up your database and files</a>. For help with updates, visit the <a href=\"%2$s\">Updating WordPress</a> documentation page."
+msgstr "<strong>Fontos:</strong> Frissítés előtt <a href=\"%1$s\">készítsen biztonsági másolatot az adatbázisról és a fájlokról</a>. Ha segítségre van szüksége a frissítésekkel kapcsolatban, keresse fel a <a href=\"%2$s\">WordPress frissítése</a> dokumentációs oldalt."
+
 #: wp-admin/customize.php:195 wp-admin/themes.php:551 wp-admin/themes.php:897
 #: wp-admin/themes.php:1113 wp-admin/theme-install.php:374
 #: wp-admin/theme-install.php:421
@@ -479,10 +546,35 @@ msgctxt "theme"
 msgid "Cannot Activate"
 msgstr "Bekapcsolás sikertelen"
 
+#: wp-admin/comment.php:46
+msgid "You can&#8217;t edit this comment because the associated post is in the Trash. Please restore the post first, then try again."
+msgstr "Nem szerkesztheti ezt a hozzászólást, mert a társított bejegyzés a kukában van. Kérjük, először állítsa vissza a bejegyzést, majd próbálkozzon újra."
+
 #: wp-admin/async-upload.php:58
 msgctxt "media item"
 msgid "Success"
 msgstr "Sikerült!"
+
+#. translators: 1: Current WordPress version, 2: Plugin name, 3: Required
+#. WordPress version.
+#: wp-admin/includes/plugin.php:1194
+msgctxt "plugin"
+msgid "<strong>Error:</strong> Current WordPress version (%1$s) does not meet minimum requirements for %2$s. The plugin requires WordPress %3$s."
+msgstr "<strong>Hiba:</strong> A WordPress jelenlegi verziója (%1$s) nem felel meg a(z) %2$s. A bővítményhez WordPress %3$s verzió szükséges."
+
+#. translators: 1: Current PHP version, 2: Plugin name, 3: Required PHP
+#. version.
+#: wp-admin/includes/plugin.php:1183
+msgctxt "plugin"
+msgid "<strong>Error:</strong> Current PHP version (%1$s) does not meet minimum requirements for %2$s. The plugin requires PHP %3$s."
+msgstr "<strong>Hiba:</strong> A jelenlegi PHP verzió (%1$s) nem felel meg a(z) %2$s minimális követelményeinek. A bővítményhez PHP %3$s verzió szükséges."
+
+#. translators: 1: Current WordPress version, 2: Current PHP version, 3: Plugin
+#. name, 4: Required WordPress version, 5: Required PHP version.
+#: wp-admin/includes/plugin.php:1170
+msgctxt "plugin"
+msgid "<strong>Error:</strong> Current versions of WordPress (%1$s) and PHP (%2$s) do not meet minimum requirements for %3$s. The plugin requires WordPress %4$s and PHP %5$s."
+msgstr "<strong>Hiba:</strong> A WordPress (%1$s) és a PHP (%2$s) jelenlegi verziói nem felelnek meg a(z) %3$s minimális követelményeinek. A bővítményhez WordPress %4$s és PHP %5$s szükséges."
 
 #: wp-admin/includes/ajax-actions.php:5349
 msgid "Invalid data. The item does not exist."
@@ -510,6 +602,11 @@ msgstr "HIBA: Üresen maradt a hozzászólás mező"
 msgid "Error: You can&#8217;t reply to a comment on a draft post."
 msgstr "Hiba: egy vázlathoz tartozó hozzászólásra nem lehet válaszolni."
 
+#. translators: %s: Themes screen URL.
+#: wp-admin/includes/class-wp-automatic-updater.php:1153
+msgid "To manage themes on your site, visit the Themes page: %s"
+msgstr "A webhelysablonok kezeléséhez érdemes felkeresnünk a sablonok oldalt: %s"
+
 #. translators: %s: Plugins screen URL.
 #: wp-admin/includes/class-wp-automatic-updater.php:1144
 msgid "To manage plugins on your site, visit the Plugins page: %s"
@@ -535,30 +632,60 @@ msgstr "Ezeknek a bővítményeknek a frissítésekor hiba történt:"
 msgid "Please check your site now. It’s possible that everything is working. If there are updates available, you should update."
 msgstr "Ellenőrizzük a honlapunkat. Lehetséges, hogy minden rendesen működik. Ha elérhető frissítések vannak, akkor végezzük el őket."
 
+#. translators: %s: Home URL.
+#: wp-admin/includes/class-wp-automatic-updater.php:1050
+msgid "Howdy! Themes failed to update on your site at %s."
+msgstr "Heló! Nem sikerült frissíteni a sablonokat a(z) %s webhelyeden."
+
 #. translators: %s: Site title.
 #: wp-admin/includes/class-wp-automatic-updater.php:1047
 msgid "[%s] Some themes have failed to update"
 msgstr "[%s] Néhány sablon frissítése sikertelen"
+
+#. translators: %s: Home URL.
+#: wp-admin/includes/class-wp-automatic-updater.php:1042
+msgid "Howdy! Plugins failed to update on your site at %s."
+msgstr "Heló! Nem sikerült frissíteni a bővítményeket a(z) %s webhelyünkön."
 
 #. translators: %s: Site title.
 #: wp-admin/includes/class-wp-automatic-updater.php:1039
 msgid "[%s] Some plugins have failed to update"
 msgstr "[%s] Néhány bővítmény frissítése sikertelen"
 
+#. translators: %s: Home URL.
+#: wp-admin/includes/class-wp-automatic-updater.php:1034
+msgid "Howdy! Plugins and themes failed to update on your site at %s."
+msgstr "Heló! Nem sikerült frissíteni a(z) %s webhelyünk sablonjait és bővítményeit."
+
 #. translators: %s: Site title.
 #: wp-admin/includes/class-wp-automatic-updater.php:1031
 msgid "[%s] Some plugins and themes have failed to update"
 msgstr "[%s] Néhány bővítmény és sablon frissítése sikertelen"
+
+#. translators: %s: Home URL.
+#: wp-admin/includes/class-wp-automatic-updater.php:1021
+msgid "Howdy! Some themes have automatically updated to their latest versions on your site at %s. No further action is needed on your part."
+msgstr "Heló! Néhány sablon automatikusan frissült a legújabb verzióra a(z) %s webhelyen. Nincs szükségünk további lépésekre."
 
 #. translators: %s: Site title.
 #: wp-admin/includes/class-wp-automatic-updater.php:1018
 msgid "[%s] Some themes were automatically updated"
 msgstr "[%s] Néhány sablon automatikusan frissült"
 
+#. translators: %s: Home URL.
+#: wp-admin/includes/class-wp-automatic-updater.php:1013
+msgid "Howdy! Some plugins have automatically updated to their latest versions on your site at %s. No further action is needed on your part."
+msgstr "Heló! Néhány bővítmény automatikusan frissült a legújabb verzióira a(z) %s webhelyen. Nincs szükségünk további lépésekre."
+
 #. translators: %s: Site title.
 #: wp-admin/includes/class-wp-automatic-updater.php:1010
 msgid "[%s] Some plugins were automatically updated"
 msgstr "[%s] Néhány bővítmény automatikusan frissült"
+
+#. translators: %s: Home URL.
+#: wp-admin/includes/class-wp-automatic-updater.php:1005
+msgid "Howdy! Some plugins and themes have automatically updated to their latest versions on your site at %s. No further action is needed on your part."
+msgstr "Helló! Néhány bővítmény és téma automatikusan frissült a legújabb verzióra a(z) %s webhelyünkön. Nincs szükségünk további lépésekre."
 
 #. translators: %s: Site title.
 #: wp-admin/includes/class-wp-automatic-updater.php:1002
@@ -584,9 +711,19 @@ msgstr "Nem spam"
 msgid "PHP Sessions"
 msgstr "PHP Munkamenetek"
 
+#. translators: 1: session_start(), 2: session_write_close()
+#: wp-admin/includes/class-wp-site-health.php:1127
+msgid "A PHP session was created by a %1$s function call. This interferes with REST API and loopback requests. The session should be closed by %2$s before making any HTTP requests."
+msgstr "A PHP munkamenetet %1$s függvényhívás hozta létre. Ez megzavarja a REST API és a visszacsatolási kérelmeket. A munkamenetet %2$s által be kell zárnia, mielőtt bármilyen HTTP-kérést küldene."
+
 #: wp-admin/includes/class-wp-site-health.php:1121
 msgid "An active PHP session was detected"
 msgstr "Egy aktív PHP munkamenetet találtunk"
+
+#. translators: 1: session_start(), 2: session_write_close()
+#: wp-admin/includes/class-wp-site-health.php:1110
+msgid "PHP sessions created by a %1$s function call may interfere with REST API and loopback requests. An active session should be closed by %2$s before making any HTTP requests."
+msgstr "A %1$s függvényhívás által létrehozott PHP munkamenetek megzavarhatják a REST API és a visszacsatolási kérelmeket. Az aktív munkamenetet %2$s által be kell zárnia, mielőtt bármilyen HTTP-kérést küldene."
 
 #: wp-admin/includes/class-wp-site-health.php:1100
 msgid "No PHP sessions detected"
@@ -601,6 +738,10 @@ msgstr "Kiterjesztett nézet"
 #: wp-admin/includes/class-wp-list-table.php:169
 msgid "Compact view"
 msgstr "Kompakt nézet"
+
+#: wp-admin/includes/user.php:177
+msgid "<strong>Error</strong>: Passwords don&#8217;t match. Please enter the same password in both password fields."
+msgstr "<strong>Hiba</strong>: A jelszavak nem egyeznek. Kérjük, mindkét jelszómezőbe írja be ugyanazt a jelszót."
 
 #: wp-admin/includes/post.php:2213
 msgctxt "block category"
@@ -656,6 +797,16 @@ msgstr "Az automatikus frissítés %s ideje elmúlt. Valószínűleg, WP-Cron pr
 #: wp-admin/includes/update.php:1060
 msgid "Automatic update not scheduled. There may be a problem with WP-Cron."
 msgstr "Az automatikus frissítés nincs beütemezve. Valószínűleg, WP-Cron probléma van."
+
+#. translators: %s: Documentation URL.
+#: wp-admin/includes/class-plugin-installer-skin.php:301
+msgid "You are updating a plugin. Be sure to <a href=\"%s\">back up your database and files</a> first."
+msgstr "Frissítünk egy bővítményt. Először feltétlenül <a href=\"%s\">készítsünk biztonsági másolatot az adatbázisról és a fájlokról</a>."
+
+#. translators: %s: Documentation URL.
+#: wp-admin/includes/class-plugin-installer-skin.php:295
+msgid "You are uploading an older version of a current plugin. You can continue to install the older version, but be sure to <a href=\"%s\">back up your database and files</a> first."
+msgstr "Az aktuális bővítmény régebbi verzióját töltjük fel. Folytathatjuk a régebbi verzió telepítését, de mindenképpen először <a href=\"%s\">készítsünk biztonsági másolatot az adatbázisról és a fájlokról</a>."
 
 #. translators: 1: Current WordPress version, 2: Version required by the
 #. uploaded plugin.
@@ -769,6 +920,11 @@ msgstr "Megszakítás és vissza"
 msgid "Replace current with uploaded"
 msgstr "Aktuális lecserélése a feltöltöttel"
 
+#. translators: %s: Documentation URL.
+#: wp-admin/includes/class-theme-installer-skin.php:336
+msgid "You are updating a theme. Be sure to <a href=\"%s\">back up your database and files</a> first."
+msgstr "Frissítsünk egy sablont. Először feltétlenül <a href=\"%s\">készítsünk biztonsági másolatot az adatbázisról és a fájlokról</a>."
+
 #: wp-admin/includes/class-theme-installer-skin.php:331
 #: wp-admin/includes/class-theme-installer-skin.php:337
 #: wp-admin/includes/class-plugin-installer-skin.php:296
@@ -776,6 +932,29 @@ msgstr "Aktuális lecserélése a feltöltöttel"
 #: wp-admin/update-core.php:253
 msgid "https://wordpress.org/support/article/wordpress-backups/"
 msgstr "https://wordpress.org/support/article/wordpress-backups/"
+
+#. translators: %s: Documentation URL.
+#: wp-admin/includes/class-theme-installer-skin.php:330
+msgid "You are uploading an older version of a current theme. You can continue to install the older version, but be sure to <a href=\"%s\">back up your database and files</a> first."
+msgstr "Az aktuális téma régebbi verzióját töltöttük fel. Folytathatjuk a régebbi verzió telepítését, de mindenképpen először <a href=\"%s\">készítsünk biztonsági másolatot az adatbázisról és a fájlokról</a>."
+
+#. translators: 1: Current WordPress version, 2: Version required by the
+#. uploaded theme.
+#: wp-admin/includes/class-theme-installer-skin.php:315
+#: wp-admin/includes/class-theme-upgrader.php:608
+msgid "Your WordPress version is %1$s, however the uploaded theme requires %2$s."
+msgstr "A WordPress verziónk %1$s, azonban a feltöltött sablonhoz %2$s szükséges."
+
+#. translators: 1: Current PHP version, 2: Version required by the uploaded
+#. theme.
+#: wp-admin/includes/class-theme-installer-skin.php:303
+#: wp-admin/includes/class-theme-upgrader.php:598
+msgid "The PHP version on your server is %1$s, however the uploaded theme requires %2$s."
+msgstr "A szerverünk PHP verziója%1$s, azonban a feltöltött témához%2$s szükséges."
+
+#: wp-admin/includes/class-theme-installer-skin.php:294
+msgid "The theme cannot be updated due to the following:"
+msgstr "A sablon nem frissíthető a következők miatt:"
 
 #: wp-admin/includes/class-theme-installer-skin.php:270
 msgid "(not found)"
@@ -806,6 +985,14 @@ msgctxt "theme"
 msgid "Cannot Install"
 msgstr "Nem telepíthető"
 
+#: wp-admin/includes/theme.php:314
+msgid "Full Site Editing"
+msgstr "Teljes honlap szerkesztése"
+
+#: wp-admin/includes/theme.php:304
+msgid "Block Editor Patterns"
+msgstr "Blokkszerkesztő minták"
+
 #: wp-admin/includes/class-plugin-upgrader.php:98
 msgid "Plugin downgraded successfully."
 msgstr "A bővítmény sikeresen visszaállítva a korábbi verzióra."
@@ -818,6 +1005,30 @@ msgstr "A bővítményt nem sikerült visszaállítani a korábbi verzióra."
 msgid "Downgrading the plugin&#8230;"
 msgstr "Bővítmény visszaállítása korábbi verzióra&#8230;"
 
+#: wp-admin/includes/class-plugin-upgrader.php:90
+msgid "Updating the plugin&#8230;"
+msgstr "A bővítmény frissítése&#8230;"
+
+#: wp-admin/includes/class-plugin-upgrader.php:81
+msgid "Could not remove the current plugin."
+msgstr "Nem sikerült eltávolítani az aktuális bővítményt."
+
+#: wp-admin/includes/class-plugin-upgrader.php:80
+msgid "Removing the current plugin&#8230;"
+msgstr "A jelenlegi beépülő bővítmény eltávolítása&#8230;"
+
+#: wp-admin/includes/class-wp-debug-data.php:1232
+msgid "Auto-update"
+msgstr "Automatikus frissítés"
+
+#: wp-admin/includes/class-wp-debug-data.php:993
+#: wp-admin/includes/class-wp-debug-data.php:1315
+#: wp-admin/includes/class-wp-plugins-list-table.php:1100
+#: wp-admin/themes.php:680 wp-admin/js/updates.js:2911
+#: wp-admin/includes/class-wp-ms-themes-list-table.php:779
+msgid "Auto-updates disabled"
+msgstr "Az automatikus frissítések letiltva"
+
 #: wp-admin/includes/class-wp-debug-data.php:991
 #: wp-admin/includes/class-wp-debug-data.php:1313
 #: wp-admin/includes/class-wp-plugins-list-table.php:1098
@@ -826,9 +1037,17 @@ msgstr "Bővítmény visszaállítása korábbi verzióra&#8230;"
 msgid "Auto-updates enabled"
 msgstr "Az automatikus frissítések engedélyezve"
 
+#: wp-admin/includes/class-wp-debug-data.php:771
+msgid "Are pretty permalinks supported?"
+msgstr "Támogatva vannak a szép állandó linkek?"
+
 #: wp-admin/includes/class-wp-debug-data.php:710
 msgid "PHP memory limit (only for admin screens)"
 msgstr "PHP memória korlát (csak az adminisztrációs képernyőkön)"
+
+#: wp-admin/includes/class-wp-debug-data.php:114
+msgid "Is this site discouraging search engines?"
+msgstr "Ez a webhely elriasztja a keresőmotorokat?"
 
 #: wp-admin/includes/privacy-tools.php:282
 #: wp-admin/includes/class-wp-privacy-policy-content.php:427
@@ -4582,6 +4801,14 @@ msgstr "Engedélyezzük a hivatkozás értesítéseket más weboldalak új bejeg
 #: wp-admin/menu-header.php:278 wp-admin/js/common.js:1901
 msgid "Collapse Main menu"
 msgstr "Főmenü összecsukása"
+
+#. translators: %s: Plugin name.
+#: wp-admin/includes/class-wp-plugins-list-table.php:798
+#: wp-admin/includes/class-wp-plugin-install-list-table.php:589
+#: wp-admin/js/updates.js:730
+msgctxt "plugin"
+msgid "Network Activate %s"
+msgstr "%s bővítmény bekapcsolása a hálózaton"
 
 #. translators: %s: Plugin name.
 #: wp-admin/includes/class-wp-plugins-list-table.php:852
