@@ -201,10 +201,14 @@ class Controller_Permissions {
 			return new \WP_Roles($site_id);
 		}
 		
-		//\WP_Roles in WP < 4.9 initializes based on the current blog ID 
-		switch_to_blog($site_id);
+		//\WP_Roles in WP < 4.9 initializes based on the current blog ID
+		if (is_multisite()) {
+			switch_to_blog($site_id);
+		}
 		$wp_roles = new \WP_Roles();
-		restore_current_blog();
+		if (is_multisite()) {
+			restore_current_blog();
+		}
 		return $wp_roles;
 	}
 	
