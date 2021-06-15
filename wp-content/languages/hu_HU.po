@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-24 11:40:03+0000\n"
+"PO-Revision-Date: 2021-06-14 15:46:08+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1554,11 +1554,6 @@ msgstr "&#8211;"
 msgctxt "em dash"
 msgid "&#8212;"
 msgstr "&#8212;"
-
-#. translators: %s: Database repair URL.
-#: wp-includes/functions.php:1771
-msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
-msgstr "Egy vagy több adattábla nem található az adatbázisban. Szükséges lehet az <a href=\"maint/repair.php?referrer=is_blog_installed\">adatbázis javítás</a>ra."
 
 #: wp-includes/class-wp-customize-manager.php:5657
 msgid "https://codex.wordpress.org/CSS"
@@ -3933,6 +3928,11 @@ msgstr "Beágyazás kezelő"
 #: wp-includes/class-wp-customize-manager.php:1914
 msgid "Unauthorized. You may remove the %s param to preview as frontend."
 msgstr "Nincs jogosultság. Távolítsuk el a %s paramétert, hogy külső oldalon nézzük meg."
+
+#. translators: %s: Database repair URL.
+#: wp-includes/functions.php:1771
+msgid "One or more database tables are unavailable. The database may need to be <a href=\"%s\">repaired</a>."
+msgstr "Egy vagy több tábla nem található az adatbázisban. Szükséges az <a href=\"%s\">adatbázis javítása</a>."
 
 #: wp-includes/post.php:1706 wp-includes/js/dist/block-library.js:17984
 msgid "No posts found."
@@ -11151,6 +11151,11 @@ msgstr "Alapértelmezett képméret"
 msgid "Image default align"
 msgstr "Alapértelmezett kép-elrendezés"
 
+#: wp-includes/class-wp-xmlrpc-server.php:1405
+#: wp-includes/class-wp-xmlrpc-server.php:5692
+msgid "The post type may not be changed."
+msgstr "A bejegyzés típusa nem cserélhető."
+
 #: wp-includes/class-wp-xmlrpc-server.php:1402
 #: wp-includes/class-wp-xmlrpc-server.php:1881
 #: wp-includes/class-wp-xmlrpc-server.php:4714
@@ -11168,11 +11173,6 @@ msgstr "Alapértelmezett kép-elrendezés"
 #: wp-admin/includes/ajax-actions.php:1998
 msgid "Sorry, you are not allowed to edit this post."
 msgstr "Bocsánat, nincs jogosultság a bejegyzés módosításához."
-
-#: wp-includes/class-wp-xmlrpc-server.php:1405
-#: wp-includes/class-wp-xmlrpc-server.php:5692
-msgid "The post type may not be changed."
-msgstr "A bejegyzés típusa nem cserélhető."
 
 #: wp-includes/widgets/class-wp-nav-menu-widget.php:185
 #: wp-includes/class-wp-customize-control.php:589

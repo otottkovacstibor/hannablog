@@ -1269,7 +1269,7 @@ msgstr "Új médiafájl feltöltése"
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs. Singular
 #. security issue.
-#: wp-admin/about.php:410
+#: wp-admin/about.php:430
 msgid "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed a security issue and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s verzió</strong> egy biztonsági rést, és %2$s hibát javított."
@@ -1277,269 +1277,270 @@ msgstr[1] "<strong>%1$s verzió</strong> egy biztonsági rést, és %2$s hibát 
 
 #. translators: %s: WordPress version number
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:71 wp-admin/about.php:401
+#: wp-admin/about.php:91 wp-admin/about.php:421
 msgid "<strong>Version %s</strong> addressed some security issues."
 msgstr "A <strong>%s verzió</strong> néhány biztonsági hibát javít."
 
+#. translators: %s: WordPress version number
 #. translators: %s: WordPress version number.
-#: wp-admin/about.php:399
+#: wp-admin/about.php:71 wp-admin/about.php:419
 msgid "<strong>Version %s</strong> addressed one security issue."
 msgstr "<strong>%s verzió</strong> egy biztonsági hibát javított."
 
-#: wp-admin/about.php:395
+#: wp-admin/about.php:415
 msgid "Maintenance and Security Release"
 msgstr "Karbantartó és biztonsági frissítés"
 
-#: wp-admin/about.php:393
+#: wp-admin/about.php:413
 msgid "Security Releases"
 msgstr "Biztonsági frissítések"
 
-#: wp-admin/about.php:392
+#: wp-admin/about.php:412
 msgid "Security Release"
 msgstr "Biztonsági frissítés"
 
-#: wp-admin/about.php:390
+#: wp-admin/about.php:410
 msgid "Maintenance Releases"
 msgstr "Hibajavító frissítések"
 
-#: wp-admin/about.php:389
+#: wp-admin/about.php:409
 msgid "Maintenance Release"
 msgstr "Hibajavító frissítés"
 
-#: wp-admin/about.php:379
+#: wp-admin/about.php:399
 msgid "Go to Dashboard"
 msgstr "Vissza a Vezérlőpulthoz"
 
-#: wp-admin/about.php:379
+#: wp-admin/about.php:399
 msgid "Go to Dashboard &rarr; Home"
 msgstr "Vezérlőpulthoz &rarr; Kezdőlap"
 
-#: wp-admin/about.php:376
+#: wp-admin/about.php:396
 msgid "Return to Dashboard &rarr; Updates"
 msgstr "Vezérlőpulthoz &rarr; Frissítések"
 
-#: wp-admin/about.php:376
+#: wp-admin/about.php:396
 msgid "Return to Updates"
 msgstr "Vissza a frissítésekhez"
 
 #. translators: %s: WordPress 5.5 Field Guide link.
-#: wp-admin/about.php:363
+#: wp-admin/about.php:383
 msgid "There’s a lot more for developers to love in WordPress 5.5. To discover more and learn how to make these changes shine on your sites, themes, plugins and more, check the <a href=\"%s\">WordPress 5.5 Field Guide.</a>"
 msgstr "A fejlesztők számára, még további dolog van a WordPress 5.5-ben. Tudjunk meg többet és ismerjük meg hogy hogyan alkalmazhatjuk ezeket az újításokat az oldalainkon, sablonjainkban és bővítményeinkben, látogassunk el a <a href=\"%s\">WordPress 5.5 Field Guide</a> oldalra."
 
-#: wp-admin/about.php:358
+#: wp-admin/about.php:378
 msgid "Check the Field Guide for more!"
 msgstr "Nézzük meg a Mező útmutatót további részletekért!"
 
-#: wp-admin/about.php:349
+#: wp-admin/about.php:369
 msgid "You will find updated versions of these bundled libraries: SimplePie, Twemoji, Masonry, imagesLoaded, getID3, Moment.js, and clipboard.js."
 msgstr "Az alábbi programkönyvtárakból frissített verziókkal érkeztünk: SimplePie, Twemoji, Masonry, imagesLoaded, getID3, Moment.js és clipboard.js."
 
 #. translators: %s: 'register_meta' function name.
-#: wp-admin/about.php:344
+#: wp-admin/about.php:364
 msgid "The REST API now officially supports specifying default metadata values through %s."
 msgstr "A REST API most már hivatalosan is támogatja az alapértelmezett metaadat értékek megadását %s függvényen keresztül."
 
 #. translators: %s: 'register_taxonomy' function name.
-#: wp-admin/about.php:335
+#: wp-admin/about.php:355
 msgid "Default terms can now be specified for custom taxonomies in %s."
 msgstr "Az alapértelmezett kifejezéseket lehet megadni az egyedi taxonómiákhoz is %s funkcióval."
 
-#: wp-admin/about.php:330
+#: wp-admin/about.php:350
 msgid "Custom post types associated with the category taxonomy can now opt-in to supporting the default term."
 msgstr "Az alapértelmezett kifejezés megadására is van lehetőség az egyedi bejegyzés típusokhoz rendelt kategória taxonómiával."
 
 #. translators: %s: 'wp_opcache_invalidate' function name.
-#: wp-admin/about.php:325
+#: wp-admin/about.php:345
 msgid "Sites that use PHP’s OPcache will see more reliable cache invalidation, thanks to the new %s function during updates (including to plugins and themes)."
 msgstr "Azok az oldalak, amelyek a PHP OPcache lehetőségét használja megbízhatóbb cache ürítési lehetőségek érhetőek el köszönhetően frissítésekkor (beleértve bővítmény és sablon frissítéseket is) elérhető %s funkciónak."
 
 #. translators: %s: 'redirect_guess_404_permalink' function name.
-#: wp-admin/about.php:316
+#: wp-admin/about.php:336
 msgid "Now get more fine-grained control of %s."
 msgstr "A %s kezelését további finomítottuk"
 
-#: wp-admin/about.php:311
+#: wp-admin/about.php:331
 msgid "The PHPMailer library just got a major update, going from version 5.2.27 to 6.1.6."
 msgstr "A PHPMailer programkönyvtár mostanában kapott egy komoly frissítést 5.2.27-ről 6.1.5-ra."
 
-#: wp-admin/about.php:309
+#: wp-admin/about.php:329
 msgid "More changes for developers"
 msgstr "További fejlesztőknek szóló változások"
 
 #. translators: %1$s: 'get_header' function name, %2$s: 'get_template_part'
 #. function name, %3$s: '$args' variable name.
-#: wp-admin/about.php:297
+#: wp-admin/about.php:317
 msgid "The template loading functions (%1$s, %2$s, etc.) have a new %3$s argument. So now you can pass an entire array’s worth of data to those templates."
 msgstr "A sablon fájlokat betöltő funkcióknak  (%1$s, %2$s, stb.) mostantól egy új  %3$s paramétere van. Mostantól tömbnyi adatokat adhatunk át a sablonfájloknak."
 
-#: wp-admin/about.php:292
+#: wp-admin/about.php:312
 msgid "Passing data to template files"
 msgstr "Adattovábbítás a sablon fájlok felé"
 
 #. translators: %s: 'wp_get_environment_type' function name.
-#: wp-admin/about.php:285
+#: wp-admin/about.php:305
 msgid "WordPress now has a standardized way to define a site’s environment type (staging, production, etc). Retrieve that type with %s and execute only the appropriate code."
 msgstr "Mostantól egységesített módon lehetséges megadi a WordPress futtatási környezetének típusát (teszt, éles, stb). Kérdezzük le a %s funkcióval és csak a szükséges kódokat futtassuk."
 
-#: wp-admin/about.php:280
+#: wp-admin/about.php:300
 msgid "Defining environments"
 msgstr "Futtatókörnyezet meghatározása"
 
-#: wp-admin/about.php:274
+#: wp-admin/about.php:294
 msgid "The Dashicons library has received its final update in 5.5. It adds 39 block editor icons along with 26 others."
 msgstr "A Dashicons ikonkönyvtár egy végső frissítést kapott az 5.5 verzióval. 39 további blokk szerkesztő ikon került bele, a meglévő 26 mellé."
 
-#: wp-admin/about.php:273
+#: wp-admin/about.php:293
 msgid "Dashicons"
 msgstr "Dashikonok"
 
-#: wp-admin/about.php:270
+#: wp-admin/about.php:290
 msgid "The addition of block types endpoints means that JavaScript apps (like the block editor) can retrieve definitions for any blocks registered on the server."
 msgstr "Az új blokk típusú végpontok azt jelentik, hogy a JavaScript-alkalmazások (például a blokkíró szerkesztő) meghatározást kaphatnak a szerveren regisztrált bármely blokkról."
 
-#: wp-admin/about.php:269
+#: wp-admin/about.php:289
 msgid "Server-side registered blocks in the REST API"
 msgstr "Szerver oldalon regisztrált blokkok a REST API-ban"
 
-#: wp-admin/about.php:266
+#: wp-admin/about.php:286
 msgid "5.5 also brings a big box of changes just for developers."
 msgstr "Az 5.5-ös verzió nagy csomagnyi változást hoz a fejlesztőknek."
 
-#: wp-admin/about.php:265
+#: wp-admin/about.php:285
 msgid "For developers"
 msgstr "Fejlesztőknek"
 
-#: wp-admin/about.php:257
+#: wp-admin/about.php:277
 msgid "You can also move meta boxes with the keyboard, and edit images in WordPress with your assistive device, as it can read you the instructions in the image editor."
 msgstr "A meta dobozokat most már billentyűzetről is lehet irányítani, képeket szerkeszteni a megfelelő akadálymentes eszközünkkel, amely felolvassa a képszerkesztő útmutatóját."
 
-#: wp-admin/about.php:256
+#: wp-admin/about.php:276
 msgid "Now you can copy links in media screens and modal dialogs with a button, instead of trying to highlight a line of text."
 msgstr "Mostantól szöveg kijelölés helyett gombbal lehet linket másolni a média képernyőkön és párbeszéd ablakokban."
 
-#: wp-admin/about.php:255
+#: wp-admin/about.php:275
 msgid "Every release adds improvements to the accessible publishing experience, and that remains true for WordPress 5.5."
 msgstr "Minden kiadással továbbfejlesztjük az akadálymentes közzétételi lehetőségeket, és ez a WordPress 5.5 kiadásánál is így van."
 
-#: wp-admin/about.php:254
+#: wp-admin/about.php:274
 msgid "Accessibility"
 msgstr "Kisegítő lehetőségek"
 
-#: wp-admin/about.php:246
+#: wp-admin/about.php:266
 msgid "The highlights above are a tiny fraction of the new block editor features you’ve just installed. Open the block editor and enjoy!"
 msgstr "A fenti kiemelés csak egy aprócska részlete a frissen telepített blokk szerkesztő új lehetőségeinek. Nyissuk meg a blokk szerkesztőt és már élvezhetjük is minden előnyét!"
 
-#: wp-admin/about.php:245
+#: wp-admin/about.php:265
 msgid "And so much more."
 msgstr "És még van tovább is."
 
-#: wp-admin/about.php:243
+#: wp-admin/about.php:263
 msgid "Now it’s easier than ever to find the block you need. The new block directory is built right into the block editor, so you can install new block types to your site without ever leaving the editor."
 msgstr "Mostantól könnyebb megtalálni a nekünk megfelelő blokkot. Az új blokktár azért lett beépítve a szerkesztőbe, hogy a felület elhagyása nélkül tudjunk új blokk típusokat telepíteni."
 
-#: wp-admin/about.php:242
+#: wp-admin/about.php:262
 msgid "The New Block Directory"
 msgstr "Az új Blokktár"
 
-#: wp-admin/about.php:240
+#: wp-admin/about.php:260
 msgid "Crop, rotate, and zoom your photos right from the image block. If you spend a lot of time on images, this could save you hours!"
 msgstr "Vágjuk, forgassuk és nagyítsunk bele a fotóinkba a egyenesen kép blokkból. Ha sokat foglalkozunk képekkel, ezzel a lehetőséggel órákat spórolhatunk magunknak!"
 
-#: wp-admin/about.php:239
+#: wp-admin/about.php:259
 msgid "Inline image editing"
 msgstr "Képszerkesztés helyben"
 
-#: wp-admin/about.php:238
+#: wp-admin/about.php:258
 msgid "You will also find block patterns in a wide variety of plugins and themes, with more added all the time. Pick any of them from a single place — just click and go!"
 msgstr "Blokkmintákat is lehet találni a legkülönbözőbb bővítményekben és sablonokban, folyamatosan több hozzáadásával. Válasszuk ki bármelyiket egyetlen helyről - kattintsunk és menjünk!"
 
-#: wp-admin/about.php:237
+#: wp-admin/about.php:257
 msgid "New block patterns make it simple and fun to create complex, beautiful layouts, using combinations of text and media that you can mix and match to fit your story."
 msgstr "Az új blokk mintázatokkal egyszerűen és könnyen lehet bonyolult és elbűvölő kinézeteket létrehozni szövegek és média történetünkhöz illő kombinálásával."
 
-#: wp-admin/about.php:236
+#: wp-admin/about.php:256
 msgid "Block patterns"
 msgstr "Blokk mintázatok"
 
-#: wp-admin/about.php:232
+#: wp-admin/about.php:252
 msgid "Video: An image is added with an image block. In the block toolbar, an icon called \"Crop\" is selected, which changes the toolbar to show image resizing tools. First, zoom is used to zoom into the center of the image. Next, aspect ratio is clicked. This shows a dropdown of common aspect ratios. Square is chosen, and the image is moved within the new square outline. The crop is completed by clicking \"Apply.\""
 msgstr "Videó: Egy kép kerül hozzáadásra egy kép blokkból. A blokk eszköztárban található a \"Kivágás\" ikon, ami megváltoztatja az eszköztárat, hogy a méretezési funkciók jelenjenek meg. Az első a nagyítás, ami arra való, hogy belenagyítsunk a kép közepébe. A következő a képarány, kattintás után legördülő menüből népszerű képarányokból választhatunk. Ha négyzetest választjuk, a kép új négyzetes körvonalba kerül. A körbevágást a \"Alkalmaz\" megnyomásával fejezhetjük be."
 
-#: wp-admin/about.php:224
+#: wp-admin/about.php:244
 msgid "Video: In the editor, the block inserter shows two tabs, Blocks and Patterns. The Patterns tab is selected. There are different block layouts in this tab. After scrolling through options including buttons and columns, a pattern called \"Large header with a heading\" is chosen. This adds a cover block, which is customized with a photo and the name of the WordPress 5.5 jazz musician."
 msgstr "Videó: A blokkbeillesztés szakasz két fület mutat, nevezetesen a Blokkokat és a Mintákat. A Minták fül kiválasztva. Ezen a lapon különböző blokkelrendezések találhatóak. A \"Nagy fejléc címsorral\" elnevezésű mintát a többi minta, például a gombok és oszlopok görgetése után lehet kiválasztani. Fedőlap kerül hozzáadásra, mely egy fénykép, és amelyet WordPress 5.5 Jazz Musician néven testre szabtak."
 
-#: wp-admin/about.php:214
+#: wp-admin/about.php:234
 msgid "Once again, the latest WordPress release packs a long list of exciting new features for the block editor. For example:"
 msgstr "A legfrissebb WordPress ismét a blokk szerkesztővel kapcsolatos izgalmas változások egész sorával érkezik. Például:"
 
-#: wp-admin/about.php:213
+#: wp-admin/about.php:233
 msgid "Highlights from the block editor"
 msgstr "Blokk szerkesztő fénypontjai"
 
-#: wp-admin/about.php:204
+#: wp-admin/about.php:224
 msgid "Video: Installed plugin screen, which shows a new column, Automatic Updates. In this column are buttons that say \"Enable auto-updates\". When clicked, the auto-updates feature is turned on for that plugin, and the button switches to say \"Disable auto-updates\"."
 msgstr "Videó: Telepített beépülő modul képernyő, mely egy új oszlopot, az Automatikus frissítéseket mutatja. Ebben az oszlopban vannak az \"Automatikus frissítések engedélyezése\" feliratú gombok. Ha rákattintunk, az automatikus frissítés funkció be van kapcsolva az adott bővítménynél, és a gomb átvált a „Letiltja az automatikus frissítéseket” feliratra."
 
-#: wp-admin/about.php:196
+#: wp-admin/about.php:216
 msgid "If updating plugins and themes manually is your thing, now that’s easier too — just upload a ZIP file."
 msgstr "Ha a bővítmények és sablonok kézi frissítését szeretjük, akkor jó hírünk van, ez is egyszerűbb lesz — csak töltsük fel ZIP fájlban."
 
-#: wp-admin/about.php:195
+#: wp-admin/about.php:215
 msgid "Update by uploading ZIP files"
 msgstr "Frissítés ZIP fájl feltöltéssel"
 
-#: wp-admin/about.php:194
+#: wp-admin/about.php:214
 msgid "You can also turn auto-updates on or off for each plugin or theme you have installed — all on the same screens you’ve always used."
 msgstr "Az automatikus frissítés ki és be lehet kapcsolni minden egyes telepített bővítményhez vagy sablonhoz — mindezt, a már jól ismert képernyőkön."
 
-#: wp-admin/about.php:193
+#: wp-admin/about.php:213
 msgid "Now you can set plugins and themes to update automatically — or not! — in the WordPress admin. So you always know your site is running the latest code available."
 msgstr "Mostantól beállíthatjuk, hogy bővítmények és sablonok automatikusan frissüljenek - vagy ne - a WordPress adminban. Ezért biztosak lehetünk benne, hogy az oldalunkon mindig a legfrissebb kód fut."
 
-#: wp-admin/about.php:192
+#: wp-admin/about.php:212
 msgid "Auto-updates for Plugins and Themes"
 msgstr "Bővítmények és sablonok automatikus frissítése"
 
-#: wp-admin/about.php:183
+#: wp-admin/about.php:203
 msgid "So more people will find your site sooner, giving you more time to engage, retain and convert them to subscribers, customers or whatever fits your definition of success."
 msgstr "Tehát, egyre több ember talál rá az oldalunkra rövidebb idő alatt, így több időnk lesz őket lekötni, megtartani majd feliratkozóvá, vásárlóvá vagy azzá konvertálni ami, számunkra a sikert jelenti."
 
-#: wp-admin/about.php:182
+#: wp-admin/about.php:202
 msgid "Now, by default, WordPress 5.5 includes an XML sitemap that helps search engines discover your most important pages from the very minute you go live."
 msgstr "Mostantól, a WordPress 5.5 tartalmazza az XML oldaltérképeket, ami segít, hogy a keresőmotorok felfedezzék a legfontosabb tartalmunkat, akár percekkel a közzététel után."
 
-#: wp-admin/about.php:181
+#: wp-admin/about.php:201
 msgid "WordPress sites work well with search engines."
 msgstr "A WordPress alapú oldalak jól együttműködnek a keresőmotorokkal."
 
-#: wp-admin/about.php:180
+#: wp-admin/about.php:200
 msgid "Say hello to your new sitemap."
 msgstr "Köszöntsük az új oldaltérképet!"
 
-#: wp-admin/about.php:179
+#: wp-admin/about.php:199
 msgctxt "sitemap"
 msgid "Search"
 msgstr "Keresés"
 
-#: wp-admin/about.php:173
+#: wp-admin/about.php:193
 msgid "On mobile, lazy loading can also keep browsers from loading files meant for other devices. That can save your readers money on data — and help preserve battery life."
 msgstr "A mobilon történő lusta betöltés megakadályozhatja a fájlok más eszközökről történő betöltését. Segíthet a felhasználóknak az adatok  mentésében - valamint az akkumulátor élettartamát megkíméli."
 
-#: wp-admin/about.php:172
+#: wp-admin/about.php:192
 msgid "In WordPress 5.5, images wait to load until they’re just about to scroll into view. The technical term is ‘lazy loading’."
 msgstr "WordPress 5.5 verziójában a képek egészen addig nem töltenek be, amíg el nem érik a megjelenési határt, a szakmai szlengben ez ‘lazy loading‘ néven ismert."
 
-#: wp-admin/about.php:171
+#: wp-admin/about.php:191
 msgid "Images give your story a lot of impact, but they can sometimes make your site seem slow."
 msgstr "A képek nagy hatást gyakorolhatnak a történetre, ugyanakkor a weboldalunkat néha lelassíthatják."
 
-#: wp-admin/about.php:170
+#: wp-admin/about.php:190
 msgid "Posts and pages feel faster, thanks to lazy-loaded images."
 msgstr "A bejegyzések és az oldalak érezhetően gyorsabbak, köszönhetően a lazy-load segítségével betöltött képeknek."
 
-#: wp-admin/about.php:169
+#: wp-admin/about.php:189
 msgid "Speed"
 msgstr "Sebesség"
 
@@ -1547,7 +1548,7 @@ msgstr "Sebesség"
 #. than one security issue.
 #. translators: 1: WordPress version number, 2: Plural number of bugs. More
 #. than one security issue.
-#: wp-admin/about.php:116 wp-admin/about.php:416
+#: wp-admin/about.php:136 wp-admin/about.php:436
 msgid "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed some security issues and fixed %2$s bugs."
 msgstr[0] "<strong>%1$s verzió</strong> biztonsági réseket, és %2$s hibát javított."
@@ -1556,19 +1557,19 @@ msgstr[1] "<strong>%1$s verzió</strong> biztonsági réseket, és %2$s hibát j
 #. translators: %s: HelpHub URL
 #. translators: %s: HelpHub URL.
 #. translators: %s: Documentation URL.
-#: wp-admin/about.php:78 wp-admin/about.php:103 wp-admin/about.php:128
-#: wp-admin/about.php:153 wp-admin/about.php:422
+#: wp-admin/about.php:78 wp-admin/about.php:98 wp-admin/about.php:123
+#: wp-admin/about.php:148 wp-admin/about.php:173 wp-admin/about.php:442
 msgid "For more information, see <a href=\"%s\">the release notes</a>."
 msgstr "További információk: <a href=\"%s\">Verzió információk</a>."
 
 #. translators: 1: WordPress version number, 2: Plural number of bugs.
-#: wp-admin/about.php:91 wp-admin/about.php:141 wp-admin/about.php:404
+#: wp-admin/about.php:111 wp-admin/about.php:161 wp-admin/about.php:424
 msgid "<strong>Version %1$s</strong> addressed %2$s bug."
 msgid_plural "<strong>Version %1$s</strong> addressed %2$s bugs."
 msgstr[0] "<strong>%1$s verzió</strong> %2$s hibát javít."
 msgstr[1] "<strong>%1$s verzió</strong> %2$s hibát javít."
 
-#: wp-admin/about.php:66 wp-admin/about.php:396
+#: wp-admin/about.php:66 wp-admin/about.php:416
 msgid "Maintenance and Security Releases"
 msgstr "Hibajavító- és biztonsági frissítések"
 
@@ -9228,7 +9229,7 @@ msgstr "Egy új alverzió érhtő el frissítésre. Az alverziók általában bi
 #: wp-admin/includes/class-wp-site-health.php:1497
 #: wp-admin/includes/class-wp-site-health.php:1560
 #: wp-admin/includes/class-wp-site-health.php:1679
-#: wp-admin/includes/class-wp-site-health.php:1749 wp-admin/about.php:191
+#: wp-admin/includes/class-wp-site-health.php:1749 wp-admin/about.php:211
 msgid "Security"
 msgstr "Biztonság"
 
@@ -11776,7 +11777,8 @@ msgstr "<a href=\"%1$s\">WordPress %2$s</a> elérhető! <a href=\"%3$s\" aria-la
 #. translators: %s: WordPress version
 #: wp-admin/includes/update.php:300 wp-admin/install.php:238
 #: wp-admin/update-core.php:80 wp-admin/upgrade.php:80 wp-admin/about.php:81
-#: wp-admin/about.php:106 wp-admin/about.php:131 wp-admin/about.php:156
+#: wp-admin/about.php:101 wp-admin/about.php:126 wp-admin/about.php:151
+#: wp-admin/about.php:176
 msgid "https://wordpress.org/support/wordpress-version/version-%s/"
 msgstr "https://wordpress.org/support/wordpress-version/version-%s/"
 
