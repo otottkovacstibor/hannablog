@@ -2915,4 +2915,54 @@ wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array
 wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
 ))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
+$this->rules[365] = wfWAFRule::create($this, 365, NULL, 'obji', '100', 'Thrive Plugins < 2021-05-11 Object Injection', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/(^|;|{|})(?:O|C):\\d+:"(?!stdClass")[^"]+":/', array(wfWAFRuleComparisonSubject::create($this, array('request.body', '__tcb_lg_msg'), array (
+  0 => 
+  array (
+    0 => 'base64decode',
+  ),
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', '__tcb_lg_fc'), array (
+  0 => 
+  array (
+    0 => 'base64decode',
+  ),
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', 'consent_config'), array (
+  0 => 
+  array (
+    0 => 'base64decode',
+  ),
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', 'tve_mapping'), array (
+  0 => 
+  array (
+    0 => 'base64decode',
+  ),
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', 'tve_labels'), array (
+  0 => 
+  array (
+    0 => 'base64decode',
+  ),
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', 'config'), array (
+  0 => 
+  array (
+    0 => 'base64decode',
+  ),
+))))));
+$this->rules[366] = wfWAFRule::create($this, 366, NULL, 'priv-esc', '100', 'Thrive Plugins < 2021-05-11 Privesc', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/\\$trusted/', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'tve_mapping'), array (
+  0 => 
+  array (
+    0 => 'base64decode',
+  ),
+))))));
+$this->rules[367] = wfWAFRule::create($this, 367, NULL, 'file_upload', '100', 'WAF-RULE-367', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/admin\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'md5Equals', '97ddaa88462e156f1e4769778df7a6fc', array(wfWAFRuleComparisonSubject::create($this, array('request.md5Body', '71860c77c6745379b0d44304d66b6a13'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.md5QueryString', '71860c77c6745379b0d44304d66b6a13'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'filePatternsMatch', '', array(wfWAFRuleComparisonSubject::create($this, 'request.fileNames', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'fileHasPHP', '', array(wfWAFRuleComparisonSubject::create($this, 'request.fileNames', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/\\.(p(h(pt?|t(ml?)?|ar)[0-9]?|l|y)|(j|a)sp|aspx|sh|shtml|html?|cgi|htaccess|user\\.ini)($|\\.)/i', array(wfWAFRuleComparisonSubject::create($this, 'request.fileNames', array (
+)))))));
 ?>
