@@ -3130,4 +3130,10 @@ $this->rules[390] = wfWAFRule::create($this, 390, NULL, 'file_upload', '100', 'W
 wfWAFRuleComparisonSubject::create($this, array('request.md5QueryString', '418c5509e2171d55b0aee5c2ea4442b5'), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
+$this->rules[391] = wfWAFRule::create($this, 391, NULL, 'xss', '100', 'WAF-RULE-391', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'md5Equals', '4c79d931b0f5e420e00a28a8533b0841', array(wfWAFRuleComparisonSubject::create($this, array('request.md5QueryString', '71860c77c6745379b0d44304d66b6a13'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', '#wp-admin[\\/]+admin\\.php.+#i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+))))));
+$this->rules[392] = wfWAFRule::create($this, 392, NULL, 'xss', '100', 'WAF-RULE-392', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'md5Equals', '9b7ed7dcdba9114efde858d0e5e36324', array(wfWAFRuleComparisonSubject::create($this, array('request.md5QueryString', '71860c77c6745379b0d44304d66b6a13'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', '#wp-admin[\\/]+admin\\.php.+#i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+))))));
 ?>
