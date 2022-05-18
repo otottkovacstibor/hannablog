@@ -1620,7 +1620,7 @@
 							e.preventDefault();
 							e.stopPropagation();
 
-							WFAD.promptToRepairFile(issueID, $(this).attr('data-file'));
+							WFAD.promptToRepairFile(issueID, issueObject.data);
 						});
 					});
 					
@@ -2022,7 +2022,7 @@
 					}
 				});
 			},
-			promptToRepairFile: function(issueID, file) {
+			promptToRepairFile: function(issueID, data) {
 				if (window.localStorage) {
 					var sudoExpiration = window.localStorage.getItem('wf-repair-file-sudo');
 					if (sudoExpiration && parseInt(sudoExpiration, 10) > new Date().getTime()) {
@@ -2030,8 +2030,8 @@
 						return;
 					}
 				}
-				WFAD.colorboxModalHTML((WFAD.isSmallScreen ? '300px' : '400px'), __("Download Backup File"), __('Please make a backup of this file before proceeding. If you need to restore this backup file, you can copy it to the following path from your site\'s root:') + '<p class="wf-padding-add-top-medium"><code>' + file + '</code></p>'
-					+ '<a href="' + WFAD.makeDownloadFileLink(file) + '" onclick="jQuery(\'#wfRepairFileNextBtn\').prop(\'disabled\', false); return true;">' + __('Click here to download a backup copy of this file now') + '</a><p class="wf-flex-horizontal">' +
+				WFAD.colorboxModalHTML((WFAD.isSmallScreen ? '300px' : '400px'), __("Download Backup File"), __('Please make a backup of this file before proceeding. If you need to restore this backup file, you can copy it to the following path from your site\'s root:') + '<p class="wf-padding-add-top-medium"><code>' + data.file + '</code></p>'
+					+ '<a href="' + WFAD.makeDownloadFileLink(data) + '" onclick="jQuery(\'#wfRepairFileNextBtn\').prop(\'disabled\', false); return true;">' + __('Click here to download a backup copy of this file now') + '</a><p class="wf-flex-horizontal">' +
 					'<input type="button" class="wf-btn wf-btn-primary" name="but1" id="wfRepairFileNextBtn" value="Repair File" disabled="disabled" onclick="WFAD.promptToRepairFileDone(' + parseInt(issueID, 10) + ', jQuery(\'#forceRepairFileCheckbox\').prop(\'checked\'));this.disabled=true;" />' +
 					'<label class="wf-padding-add-left"><input type="checkbox" id="forceRepairFileCheckbox" onclick="jQuery(\'#wfRepairFileNextBtn\').prop(\'disabled\', !this.checked); return true;"> ' + __('Don\'t ask again') + '</label>' +
 					'</p>' +
@@ -2333,19 +2333,28 @@
 			makeIPTrafLink: function(IP) {
 				return WordfenceAdminVars.siteBaseURL + '?_wfsf=IPTraf&nonce=' + this.nonce + '&IP=' + encodeURIComponent(IP);
 			},
+			getRealFileParameters: function(data) {
+				if ('realFile' in data) {
+					return '&realFile=' + encodeURIComponent(this.es(data['realFile'])) + '&realFileToken=' + encodeURIComponent(this.es(data['realFileToken']));
+				}
+				else {
+					return '';
+				}
+			},
 			makeDiffLink: function(dat) {
 				return WordfenceAdminVars.siteBaseURL + '?_wfsf=diff&nonce=' + this.nonce +
 					'&file=' + encodeURIComponent(this.es(dat['file'])) +
+					this.getRealFileParameters(dat) +
 					'&cType=' + encodeURIComponent(this.es(dat['cType'])) +
 					'&cKey=' + encodeURIComponent(this.es(dat['cKey'])) +
 					'&cName=' + encodeURIComponent(this.es(dat['cName'])) +
 					'&cVersion=' + encodeURIComponent(this.es(dat['cVersion']));
 			},
-			makeViewFileLink: function(file) {
-				return WordfenceAdminVars.siteBaseURL + '?_wfsf=view&nonce=' + this.nonce + '&file=' + encodeURIComponent(file);
+			makeViewFileLink: function(data) {
+				return WordfenceAdminVars.siteBaseURL + '?_wfsf=view&nonce=' + this.nonce + '&file=' + encodeURIComponent(data.file) + this.getRealFileParameters(data);
 			},
-			makeDownloadFileLink: function(file) {
-				return WordfenceAdminVars.siteBaseURL + '?_wfsf=download&nonce=' + this.nonce + '&file=' + encodeURIComponent(file);
+			makeDownloadFileLink: function(data) {
+				return WordfenceAdminVars.siteBaseURL + '?_wfsf=download&nonce=' + this.nonce + '&file=' + encodeURIComponent(data.file) + this.getRealFileParameters(data);
 			},
 			makeViewOptionLink: function(option, siteID) {
 				return WordfenceAdminVars.siteBaseURL + '?_wfsf=viewOption&nonce=' + this.nonce + '&option=' + encodeURIComponent(option) + '&site_id=' + encodeURIComponent(siteID);
