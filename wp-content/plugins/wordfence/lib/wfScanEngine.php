@@ -9,6 +9,8 @@ require_once(__DIR__ . '/wfUtils.php');
 require_once(__DIR__ . '/wfFileUtils.php');
 require_once(__DIR__ . '/wfScanPath.php');
 require_once(__DIR__ . '/wfScanFile.php');
+require_once(__DIR__ . '/wfScanEntrypoint.php');
+require_once(__DIR__ . '/wfCurlInterceptor.php');
 
 class wfScanEngine {
 	const SCAN_MANUALLY_KILLED = -999;
@@ -905,18 +907,11 @@ class wfScanEngine {
 	private function _scannedSkippedPaths() {
 		static $_cache = null;
 		if ($_cache === null) {
-			$scanPaths = array(
-				new wfScanPath(
-					ABSPATH,
-					ABSPATH,
-					'/',
-					array('.htaccess', 'index.php', 'license.txt', 'readme.html', 'wp-activate.php', 'wp-admin', 'wp-app.php', 'wp-blog-header.php', 'wp-comments-post.php', 'wp-config-sample.php', 'wp-content', 'wp-cron.php', 'wp-includes', 'wp-links-opml.php', 'wp-load.php', 'wp-login.php', 'wp-mail.php', 'wp-pass.php', 'wp-register.php', 'wp-settings.php', 'wp-signup.php', 'wp-trackback.php', 'xmlrpc.php', '.well-known', 'cgi-bin')
-				)
-			);
+			$scanPaths = array();
 			$directoryConstants = array(
-				'WP_CONTENT_DIR' => '/wp-content',
 				'WP_PLUGIN_DIR' => '/wp-content/plugins',
-				'UPLOADS' => '/wp-content/uploads'
+				'UPLOADS' => '/wp-content/uploads',
+				'WP_CONTENT_DIR' => '/wp-content',
 			);
 			foreach ($directoryConstants as $constant => $wordpressPath) {
 				if (!defined($constant))
@@ -925,28 +920,50 @@ class wfScanEngine {
 				if (!empty($path)) {
 					if ($constant === 'UPLOADS')
 						$path = ABSPATH . $path;
-					$scanPaths[] = new wfScanPath(
-						ABSPATH,
-						$path,
-						$wordpressPath
-					);
+					try {
+						$scanPaths[] = new wfScanPath(
+							ABSPATH,
+							$path,
+							$wordpressPath
+						);
+					}
+					catch (wfInvalidPathException $e) {
+						//Ignore invalid scan paths
+						wordfence::status(4, 'info', sprintf(__("Ignoring invalid scan path: %s", 'wordfence'), $e->getPath()));
+					}
 				}
 			}
+			$scanPaths[] = new wfScanPath(
+				ABSPATH,
+				ABSPATH,
+				'/',
+				array('.htaccess', 'index.php', 'license.txt', 'readme.html', 'wp-activate.php', 'wp-admin', 'wp-app.php', 'wp-blog-header.php', 'wp-comments-post.php', 'wp-config-sample.php', 'wp-content', 'wp-cron.php', 'wp-includes', 'wp-links-opml.php', 'wp-load.php', 'wp-login.php', 'wp-mail.php', 'wp-pass.php', 'wp-register.php', 'wp-settings.php', 'wp-signup.php', 'wp-trackback.php', 'xmlrpc.php', '.well-known', 'cgi-bin')
+			);
+			if (WF_IS_FLYWHEEL && !empty($_SERVER['DOCUMENT_ROOT'])) {
+				$scanPaths[] = new wfScanPath(
+					ABSPATH,
+					$_SERVER['DOCUMENT_ROOT'],
+					'/../'
+				);
+			}
 			$scanOutside = $this->scanController->scanOutsideWordPress();
-			$scanned = array();
-			$skipped = array();
+			$entrypoints = array();
 			foreach ($scanPaths as $scanPath) {
 				if (!$scanOutside && $scanPath->hasExpectedFiles()) {
 					try {
 						foreach ($scanPath->getContents() as $fileName) {
-							$file = $scanPath->createScanFile($fileName);
-							if (wfUtils::fileTooBig($file->getRealPath()))
-								continue;
-							if ($scanPath->expectsFile($fileName) || wfFileUtils::isReadableFile($file->getRealPath())) {
-								$scanned[$file->getRealPath()] = $file;
+							try {
+								$file = $scanPath->createScanFile($fileName);
+								if (wfUtils::fileTooBig($file->getRealPath()))
+									continue;
+								$entrypoint = new wfScanEntrypoint($file);
+								if ($scanPath->expectsFile($fileName) || wfFileUtils::isReadableFile($file->getRealPath())) {
+									$entrypoint->setIncluded();
+								}
+								$entrypoint->addTo($entrypoints);
 							}
-							else {
-								$skipped[$file->getRealPath()] = $file;
+							catch (wfInvalidPathException $e) {
+								wordfence::status(4, 'info', sprintf(__("Ignoring invalid expected scan file: %s", 'wordfence'), $e->getPath()));
 							}
 						}
 					}
@@ -955,14 +972,16 @@ class wfScanEngine {
 					}
 				}
 				else {
-					$file = $scanPath->createScanFile('/');
-					$scanned[$file->getRealPath()] = $file;
+					try {
+						$entrypoint = new wfScanEntrypoint($scanPath->createScanFile('/'), true);
+						$entrypoint->addTo($entrypoints);
+					}
+					catch (wfInvalidPathException $e) {
+						wordfence::status(4, 'info', sprintf(__("Ignoring invalid base scan file: %s", 'wordfence'), $e->getPath()));
+					}
 				}
 			}
-			$_cache = array(
-				'scanned' => array_values($scanned),
-				'skipped' => array_values($skipped)
-			);
+			$_cache = wfScanEntrypoint::getScannedSkippedFiles($entrypoints);
 		}
 		return $_cache;
 	}
@@ -1045,7 +1064,7 @@ class wfScanEngine {
 		$knownFilesThemes = $this->getThemes();
 		$this->status(2, 'info', sprintf(/* translators: Number of themes. */ _n("Found %d theme", "Found %d themes", sizeof($knownFilesThemes), 'wordfence'), sizeof($knownFilesThemes)));
 
-		$this->hasher = new wordfenceHash($includeInKnownFilesScan, $knownFilesThemes, $knownFilesPlugins, $this, wfUtils::hex2bin($this->malwarePrefixesHash), $this->coreHashesHash, $this->scanMode);
+		$this->hasher = new wordfenceHash($includeInKnownFilesScan, $this, wfUtils::hex2bin($this->malwarePrefixesHash), $this->coreHashesHash, $this->scanMode);
 	}
 
 	private function scan_knownFiles_main() {
@@ -2381,14 +2400,20 @@ class wfScanEngine {
 		}
 		$timeout = self::getMaxExecutionTime() - 2; //2 seconds shorter than max execution time which ensures that only 2 HTTP processes are ever occupied
 		$testURL = admin_url('admin-ajax.php?action=wordfence_testAjax');
+		$forceIpv4 = wfConfig::get('scan_force_ipv4_start');
+		$interceptor = new wfCurlInterceptor($forceIpv4);
+		if ($forceIpv4)
+			$interceptor->setOption(CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
 		if (!wfConfig::get('startScansRemotely', false)) {
 			try {
-				$testResult = wp_remote_post($testURL, array(
-					'timeout'   => $timeout,
-					'blocking'  => true,
-					'sslverify' => false,
-					'headers'   => array()
-				));
+				$testResult = $interceptor->intercept(function () use ($testURL, $timeout) {
+					return wp_remote_post($testURL, array(
+						'timeout'   => $timeout,
+						'blocking'  => true,
+						'sslverify' => false,
+						'headers'   => array()
+					));
+				});
 			} catch (Exception $e) {
 				//Fall through to the remote start test below
 			}
@@ -2406,12 +2431,14 @@ class wfScanEngine {
 
 			try {
 				wfConfig::set('scanStartAttempt', time());
-				$response = wp_remote_get($cronURL, array(
-					'timeout'   => 0.01,
-					'blocking'  => false,
-					'sslverify' => false,
-					'headers'   => $headers
-				));
+				$response = $interceptor->intercept(function () use ($cronURL, $headers) {
+					return wp_remote_get($cronURL, array(
+						'timeout'   => 0.01,
+						'blocking'  => false,
+						'sslverify' => false,
+						'headers'   => $headers
+					));
+				});
 				if (wfCentral::isConnected()) {
 					wfCentral::updateScanStatus();
 				}
@@ -2613,7 +2640,7 @@ class wfScanEngine {
 		foreach ($themeData as $themeName => $themeVal) {
 			if (preg_match('/\/([^\/]+)$/', $themeVal['Stylesheet Dir'], $matches)) {
 				$shortDir = $matches[1]; //e.g. evo4cms
-				$fullDir = substr($themeVal['Stylesheet Dir'], strlen(ABSPATH)); //e.g. wp-content/themes/evo4cms
+				$fullDir = "wp-content/themes/{$shortDir}"; //e.g. wp-content/themes/evo4cms
 				$themes[$themeName] = array(
 					'Name'     => $themeVal['Name'],
 					'Version'  => $themeVal['Version'],

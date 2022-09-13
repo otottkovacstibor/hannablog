@@ -1,5 +1,7 @@
 <?php
 
+require_once __DIR__ . "/wfInvalidPathException.php";
+
 class wfFileUtils {
 
 	const CURRENT_DIRECTORY = '.';
@@ -41,7 +43,7 @@ class wfFileUtils {
 	}
 
 	public static function splitPath($path, &$count = null) {
-		$components = array_filter(explode(self::DIRECTORY_SEPARATOR, $path));
+		$components = array_values(array_filter(explode(self::DIRECTORY_SEPARATOR, $path)));
 		$count = count($components);
 		return $components;
 	}
@@ -62,16 +64,27 @@ class wfFileUtils {
 		return true;
 	}
 
-	public static function matchPaths($a, $b) {
+	public static function matchPaths($a, $b, $allowChild = false) {
 		$aComponents = self::splitPath($a, $aCount);
 		$bComponents = self::splitPath($b, $bCount);
-		if ($aCount !== $bCount)
+		if ($allowChild ? ($bCount < $aCount) : ($aCount !== $bCount))
 			return false;
 		for ($i = 0; $i < $aCount; $i++) {
 			if ($aComponents[$i] !== $bComponents[$i])
 				return false;
 		}
 		return true;
+	}
+
+	public static function realPath($path) {
+		$realPath = realpath($path);
+		if ($realPath === false)
+			throw new wfInvalidPathException("Realpath resolution failed", $path);
+		return $realPath;
+	}
+
+	public static function isChild($parent, $child) {
+		return self::matchPaths($parent, $child, true);
 	}
 
 }
