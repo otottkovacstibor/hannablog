@@ -259,8 +259,64 @@
 			}
 		});
 	};
-	
-	var wfls_query_ajax = function() {
+
+	function FormBlocker(form, buttonSelector, clickOnSubmit) {
+
+		var self = this;
+		var blocked = false;
+		var released = false;
+		clickOnSubmit = clickOnSubmit || false;
+		var clickSubmitInProgress = false;
+
+		this.getButtons = function() {
+			return form.find(buttonSelector);
+		}
+
+		this.block = function() {
+			if (blocked)
+				return false;
+			blocked = true;
+			this.getButtons().addClass('disabled').prop('disabled', true);
+			return true;
+		}
+
+		this.unblock = function() {
+			this.getButtons().removeClass('disabled').prop('disabled', false);
+			blocked = false;
+		}
+
+		this.release = function() {
+			this.released = true;
+		}
+
+		this.clickSubmit = function() {
+			this.unblock();
+			this.getButtons().first().trigger('click');
+		}
+
+		this.initialize = function(callback) {
+			form.on('submit', function(event) {
+				if (self.released && (!self.clickOnSubmit || self.clickSubmitInProgress)) {
+					if (self.clickSubmitInProgress)
+						self.clickSubmitInProgress = false;
+					return;
+				}
+				event.preventDefault();
+				event.stopPropagation();
+				if (self.released) {
+					self.clickSubmitInProgress = true;
+					self.clickSubmit();
+					return;
+				}
+				if (self.block()) {
+					callback();
+				}
+			});
+		}
+
+	}
+
+	var wfls_query_ajax = function(blocker) {
 		$('.wfls-login-message').remove();
 
 		if (!loginLocator.locate()) {
@@ -280,9 +336,8 @@
 			dataType: 'json',
 			data: data,
 			success: function(json) {
-				form.data('wflsLoggingIn', 0);
 				if (json.hasOwnProperty('reset') && json.reset) {
-					$('#wfls-prompt-overlay, #wfls-token-jwt').remove();
+					$('#wfls-prompt-overlay').remove();
 				}
 				
 				if (json.hasOwnProperty('error')) {
@@ -316,27 +371,10 @@
 						wfls_init_captcha();
 						wfls_init_captcha_contact();
 					}
-					
-					if (json.hasOwnProperty('jwt')) {
-						var jwtField = $('#wfls-token-jwt'); 
-						if (!jwtField.length) {
-							jwtField = $('<input type="hidden" name="wfls-token-jwt" id="wfls-token-jwt" value=""/>');
-							form.append(jwtField);
-						}
-						$('#wfls-token-jwt').val(json.jwt);
-						
-						if (parseInt(WFLSVars.useCAPTCHA)) {
-							wfls_init_captcha();
-							wfls_init_captcha_contact();
-						}
-						
-						if (json.hasOwnProperty('combined')) {
-							form.data('wflsLoggingIn', 1);
-							$('#wp-submit,[type=submit][name=login]').trigger('click');
-							return;
-						}
 
-						if (!$('#wfls-token').length) {
+					blocker.release();
+					if (json.hasOwnProperty('two_factor_required') && json.two_factor_required) {
+						if ($('#wfls-prompt-overlay').length === 0) {
 							var overlay = $('<div id="wfls-prompt-overlay"></div>');
 							var wrapper = $('<div id="wfls-prompt-wrapper"></div>');
 							var label = $('<p><label for="wfls-token">2FA Code <a href="javascript:void(0)" class="wfls-2fa-code-help wfls-tooltip-trigger" title="The 2FA Code can be found within the authenticator app you used when first activating two-factor authentication. You may also use one of your recovery codes."><i class="dashicons dashicons-editor-help"></i></a></label></p>');
@@ -351,24 +389,16 @@
 							wrapper.append(button);
 							overlay.append(wrapper);
 							form.css('position', 'relative').append(overlay);
-							
+							$('#wfls-token').focus();
+
 							new $.Zebra_Tooltips($('.wfls-tooltip-trigger'));
-
-							$('#wfls-token-submit').on('click', function(e) {
-								e.preventDefault();
-								e.stopPropagation();
-
-								wfls_query_ajax();
-							});
 						}
-
-						$('#wfls-token').focus();
 					}
 					else { //Unexpected response, skip AJAX and process via the regular login flow
-						form.data('wflsLoggingIn', 1);
-						$('#wp-submit,[type=submit][name=login]').trigger('click');
+						blocker.clickSubmit();
 					}
 				}
+				blocker.unblock();
 			},
 			error: function(err) {
 				if (err.status == 503 || err.status == 403) {
@@ -376,6 +406,7 @@
 					return;
 				}
 				showLoginMessage('<strong>ERROR</strong>: An error was encountered while trying to authenticate. Please try again.', 'error');
+				blocker.unblock();
 			}
 		});
 	};
@@ -383,42 +414,34 @@
 	$(function() {
 		//Login
 		if (loginLocator.locate()) {
-			loginLocator.getForm().on('submit', function(e) {
-				var loggingIn = !!parseInt($(this).data('wflsLoggingIn'));
-				$(this).data('wflsLoggingIn', 0);
-				if (loggingIn) { return; }
-
-				e.preventDefault();
-				e.stopPropagation();
-				
+			var loginBlocker = new FormBlocker(loginLocator.getForm(), '#wp-submit,[type=submit][name=login]', true);
+			loginBlocker.initialize(function() {
 				if (parseInt(WFLSVars.useCAPTCHA)) {
-					wfls_init_captcha(function() { wfls_query_ajax(); });
+					wfls_init_captcha(function() { wfls_query_ajax(loginBlocker); });
 				}
 				else {
-					wfls_query_ajax();
+					wfls_query_ajax(loginBlocker);
 				}
 			});
 		}
 
 		//Registration
-		if (registrationLocator.locate()) {
-			registrationLocator.getForm().on('submit', function(e) {
-				var form = $(this);
-				var registering = !!parseInt(form.data('wflsRegistering'));
-				form.data('wflsRegistering', 0);
-				if (!registering && parseInt(WFLSVars.useCAPTCHA)) {
-					e.preventDefault();
-					e.stopPropagation();
-
-					form.data('wflsRegistering', 1);
-					wfls_init_captcha(function() { form.find('[type=submit]').first().trigger('click'); }, registrationLocator.getInput());
-				}
+		if (registrationLocator.locate() && parseInt(WFLSVars.useCAPTCHA)) {
+			var registrationBlocker = new FormBlocker(registrationLocator.getForm(), '[type=submit]');
+			registrationBlocker.initialize(function() {
+				wfls_init_captcha(
+					function() {
+						registrationBlocker.release();
+						registrationBlocker.clickSubmit();
+					},
+					registrationLocator.getInput()
+				);
 			});
 		}
 
 		var verificationField = $('#wfls-email-verification');
 		if (verificationField.length) {
-			verificationField.val(WFLSVars.verification);
+			verificationField.val(WFLSVars.verification || '');
 		}
 		else {
 			var log = getRelevantInputs();
