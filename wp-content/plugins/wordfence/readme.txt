@@ -4,7 +4,7 @@ Tags: security, firewall, malware scanner, web application firewall, two factor 
 Requires at least: 3.9
 Requires PHP: 5.3
 Tested up to: 6.0
-Stable tag: 7.7.0
+Stable tag: 7.7.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -184,6 +184,9 @@ Secure your website with Wordfence.
 9. Logging in is easy with Wordfence 2FA.
 
 == Changelog ==
+
+= 7.7.1 - October 4, 2022 =
+* Fix: Prevented scan resume attempts from repeating indefinitely when the initial scan stage fails
 
 = 7.7.0 - October 3, 2022 =
 * Improvement: Added configurable scan resume functionality to prevent scan failures on sites with intermittent connectivity issues

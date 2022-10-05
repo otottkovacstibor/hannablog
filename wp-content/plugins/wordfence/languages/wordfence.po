@@ -2,14 +2,14 @@
 # This file is distributed under the same license as the Wordfence Security plugin.
 msgid ""
 msgstr ""
-"Project-Id-Version: Wordfence Security 7.7.0\n"
+"Project-Id-Version: Wordfence Security 7.7.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/src\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2022-10-03T11:28:28-04:00\n"
+"POT-Creation-Date: 2022-10-04T11:39:50-04:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: wordfence\n"
@@ -7075,77 +7075,77 @@ msgstr ""
 msgid "A scan is already running. Use the stop scan button if you would like to terminate the current scan."
 msgstr ""
 
-#: lib/wfScanEngine.php:2427
+#: lib/wfScanEngine.php:2428
 msgid "Cached result for scan start test: %s"
 msgstr ""
 
 #. translators: Scan start test result data.
-#: lib/wfScanEngine.php:2443
+#: lib/wfScanEngine.php:2444
 msgid "Test result of scan start URL fetch: %s"
 msgstr ""
 
 #. translators: WordPress admin panel URL.
-#: lib/wfScanEngine.php:2456
+#: lib/wfScanEngine.php:2457
 msgid "Starting cron with normal ajax at URL %s"
 msgstr ""
 
 #. translators: Error message.
 #. translators: WordPress admin panel URL.
-#: lib/wfScanEngine.php:2480
-#: lib/wfScanEngine.php:2515
+#: lib/wfScanEngine.php:2481
+#: lib/wfScanEngine.php:2516
 msgid "There was an error starting the scan: %s."
 msgstr ""
 
-#: lib/wfScanEngine.php:2482
-#: lib/wfScanEngine.php:2517
+#: lib/wfScanEngine.php:2483
+#: lib/wfScanEngine.php:2518
 msgid "There was an unknown error starting the scan."
 msgstr ""
 
-#: lib/wfScanEngine.php:2489
-#: lib/wfScanEngine.php:2523
+#: lib/wfScanEngine.php:2490
+#: lib/wfScanEngine.php:2524
 msgid "Scan process ended after forking."
 msgstr ""
 
 #. translators: WordPress admin panel URL.
-#: lib/wfScanEngine.php:2493
+#: lib/wfScanEngine.php:2494
 msgid "Starting cron via proxy at URL %s"
 msgstr ""
 
 #. translators: Time in seconds.
-#: lib/wfScanEngine.php:2569
+#: lib/wfScanEngine.php:2570
 msgid "Got value from wf config maxExecutionTime: %s"
 msgstr ""
 
 #. translators: Time in seconds.
-#: lib/wfScanEngine.php:2573
+#: lib/wfScanEngine.php:2574
 msgid "getMaxExecutionTime() returning config value: %s"
 msgstr ""
 
 #. translators: PHP ini value.
-#: lib/wfScanEngine.php:2580
+#: lib/wfScanEngine.php:2581
 msgid "Got max_execution_time value from ini: %s"
 msgstr ""
 
 #. translators: 1. PHP ini setting. 2. Time in seconds.
-#: lib/wfScanEngine.php:2587
+#: lib/wfScanEngine.php:2588
 msgid "ini value of %1$d is higher than value for WORDFENCE_SCAN_MAX_INI_EXECUTION_TIME (%2$d), reducing"
 msgstr ""
 
 #. translators: PHP ini setting.
-#: lib/wfScanEngine.php:2597
+#: lib/wfScanEngine.php:2598
 msgid "getMaxExecutionTime() returning half ini value: %d"
 msgstr ""
 
-#: lib/wfScanEngine.php:2603
+#: lib/wfScanEngine.php:2604
 msgid "getMaxExecutionTime() returning default of: 15"
 msgstr ""
 
 #. translators: 1. HTTP status code.
-#: lib/wfScanEngine.php:2805
+#: lib/wfScanEngine.php:2806
 msgid "Got error response from Wordfence servers: %s"
 msgstr ""
 
-#: lib/wfScanEngine.php:2809
+#: lib/wfScanEngine.php:2810
 msgid "Invalid response from Wordfence servers."
 msgstr ""
 

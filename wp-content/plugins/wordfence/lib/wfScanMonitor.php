@@ -88,7 +88,7 @@ class wfScanMonitor {
 		$mode = wfConfig::get(self::CONFIG_LAST_ATTEMPT_MODE);
 		if (!wfScanner::isValidScanType($mode))
 			$mode = false;
-		wfScanEngine::startScan(wfConfig::get(self::CONFIG_LAST_ATTEMPT_WAS_FORK), $mode);
+		wfScanEngine::startScan(wfConfig::get(self::CONFIG_LAST_ATTEMPT_WAS_FORK), $mode, true);
 	}
 
 	private static function logTimestamp($key) {
