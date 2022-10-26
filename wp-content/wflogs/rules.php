@@ -262,6 +262,14 @@ $this->rules[512] = wfWAFRule::create($this, 512, NULL, 'auth-bypass', '100', 'C
 )),
 wfWAFRuleComparisonSubject::create($this, 'request.uri', array (
 ))))));
+$this->rules[513] = wfWAFRule::create($this, 513, NULL, 'rce', '100', 'CVE-2022-42889: Apache Commons Text RCE', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#\\$\\{(script|dns|url):#i', array(wfWAFRuleComparisonSubject::create($this, 'request.headers', array (
+)),
+wfWAFRuleComparisonSubject::create($this, 'request.body', array (
+)),
+wfWAFRuleComparisonSubject::create($this, 'request.rawbody', array (
+)),
+wfWAFRuleComparisonSubject::create($this, 'request.queryString', array (
+))))));
 $this->rules[375] = wfWAFRule::create($this, 375, NULL, 'security-scanner', '100', 'Common vulnerability scanner User-Agents', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'cyberscan.io', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'UT-Dorkbot/1.0', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'Nuclei - Open-source project (github.com/projectdiscovery/nuclei)', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
