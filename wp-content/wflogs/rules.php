@@ -538,6 +538,15 @@ wfWAFRuleComparisonSubject::create($this, array('request.body', 'aiosp_descripti
 ))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'editor', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
+$this->rules[520] = wfWAFRule::create($this, 520, NULL, 'insufficient-auth', '100', 'Betheme <= 26.6.2 - Missing Authorization Checks', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#wp\\-admin/post.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'equals', 'mfn-live-builder', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'editor', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'author', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'contributor', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
 $this->rules[289] = wfWAFRule::create($this, 289, NULL, 'priv-esc', '100', 'TI WooCommerce Wishlist <= 1.21.11 and TI WooCommerce Wishlist Pro <= 1.21.4 - Arbitrary Options Update', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/#i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'equals', 'tinvwl_import_settings', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
 )),
@@ -3690,6 +3699,24 @@ $this->rules[518] = wfWAFRule::create($this, 518, NULL, 'priv-esc', '100', 'tagD
 )),
 wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'user', 'email'), array (
+))))));
+$this->rules[519] = wfWAFRule::create($this, 519, NULL, 'auth-bypass', '100', 'Multiple Bill Minozzi Plugins - Authenticated (Subscriber+) Missing Authorization to Arbitrary Plugin Install', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/admin\\-ajax\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'antihacker_install_plugin', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'stopbadbots_install_plugin', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'wpmemory_install_plugin', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'cardealer_install_plugin', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'wptools_install_plugin', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
 $this->rules[307] = wfWAFRule::create($this, 307, NULL, 'brute-force', '100', 'Known malicious User-Agents', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '#mozlila#i', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
