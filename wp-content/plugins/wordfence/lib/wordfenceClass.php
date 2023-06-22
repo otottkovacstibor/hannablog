@@ -1527,7 +1527,7 @@ SQL
 			}
 		}
 		flush();
-		if(! $isCrawler){
+		if(!$isCrawler && array_key_exists('hid', $_GET)){
 			$hid = $_GET['hid'];
 			$hid = wfUtils::decrypt($hid);
 			if(! preg_match('/^\d+$/', $hid)){ exit(); }
@@ -6108,7 +6108,7 @@ HTML;
 			add_action('wp_ajax_wordfence_' . $func, 'wordfence::ajaxReceiver');
 		}
 		
-		wp_register_script('chart-js', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/Chart.bundle.min.js'), array('jquery'), '2.4.0');
+		wp_register_script('chart-js', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/chart.umd.js'), array('jquery'), '4.2.1');
 		wp_register_script('wordfence-select2-js', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/wfselect2.min.js'), array('jquery', 'jquery-ui-tooltip'), WORDFENCE_VERSION);
 		wp_register_style('wordfence-select2-css', wfUtils::getBaseURL() . wfUtils::versionedAsset('css/wfselect2.min.css'), array(), WORDFENCE_VERSION);
 		wp_register_style('wordfence-font-awesome-style', wfUtils::getBaseURL() . wfUtils::versionedAsset('css/wf-font-awesome.css'), '', WORDFENCE_VERSION);
@@ -6128,9 +6128,7 @@ HTML;
 			wp_enqueue_script('jquery-ui-menu');
 			wp_enqueue_script('jquery.wftmpl', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/jquery.tmpl.min.js'), array('jquery'), WORDFENCE_VERSION);
 			wp_enqueue_script('jquery.wfcolorbox', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/jquery.colorbox-min.js'), array('jquery'), WORDFENCE_VERSION);
-			wp_enqueue_script('jquery.wfdataTables', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/jquery.dataTables.min.js'), array('jquery'), WORDFENCE_VERSION);
 			wp_enqueue_script('jquery.qrcode', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/jquery.qrcode.min.js'), array('jquery'), WORDFENCE_VERSION);
-			//wp_enqueue_script('jquery.tools', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/jquery.tools.min.js'), array('jquery'));
 			wp_enqueue_script('wfi18njs', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/wfi18n.js'), array(), WORDFENCE_VERSION);
 			wp_enqueue_script('wordfenceAdminExtjs', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/wfglobal.js'), array('jquery'), WORDFENCE_VERSION);
 			wp_enqueue_script('wordfenceAdminjs', wfUtils::getBaseURL() . wfUtils::versionedAsset('js/admin.js'), array('jquery', 'jquery-ui-core', 'jquery-ui-menu'), WORDFENCE_VERSION);
@@ -7335,7 +7333,9 @@ HTML
 	}
 
 	public static function replaceVersion($url) {
-		return preg_replace_callback("/([&;\?]ver)=(.+?)(&|$)/", "wordfence::replaceVersionCallback", $url);
+		if (is_string($url))
+			return preg_replace_callback("/([&;\?]ver)=(.+?)(&|$)/", "wordfence::replaceVersionCallback", $url);
+		return $url;
 	}
 
 	public static function replaceVersionCallback($matches) {
@@ -8235,7 +8235,7 @@ SQL
 			$html = wfView::create('waf/waf-modal-wrapper', array(
 				'title' => __('Filesystem Credentials Required', 'wordfence'),
 				'html' => $credentialsContent,
-				'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)),
+				'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 				'footerHTML' => esc_html__('Once you have entered credentials, click Continue to complete the setup.', 'wordfence'),
 			))->render();
 			return array('needsCredentials' => 1, 'html' => $html);
@@ -8259,7 +8259,7 @@ SQL
 			$html = wfView::create('waf/waf-modal-wrapper', array(
 				'title' => __('Filesystem Permission Error', 'wordfence'),
 				'html' => $credentialsError,
-				'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)),
+				'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 				'footerButtonTitle' => __('Cancel', 'wordfence'),
 			))->render();
 			return array('credentialsFailed' => 1, 'html' => $html);
@@ -8303,7 +8303,7 @@ SQL
 			$html = wfView::create('waf/waf-modal-wrapper', array(
 				'title' => __('Installation Failed', 'wordfence'),
 				'html' => $installError,
-				'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)),
+				'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 				'footerButtonTitle' => __('Cancel', 'wordfence'),
 			))->render();
 			return array('installationFailed' => 1, 'html' => $html);
@@ -8342,7 +8342,7 @@ SQL
 				$html = wfView::create('waf/waf-modal-wrapper', array(
 					'title' => __('Filesystem Credentials Required', 'wordfence'),
 					'html' => $credentialsContent,
-					'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)),
+					'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 					'footerHTML' => esc_html__('Once you have entered credentials, click Continue to complete uninstallation.', 'wordfence'),
 				))->render();
 				return array('needsCredentials' => 1, 'html' => $html);
@@ -8367,7 +8367,7 @@ SQL
 			$html = wfView::create('waf/waf-modal-wrapper', array(
 				'title' => __('Filesystem Permission Error', 'wordfence'),
 				'html' => $credentialsError,
-				'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)),
+				'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 				'footerButtonTitle' => __('Cancel', 'wordfence'),
 			))->render();
 			return array('credentialsFailed' => 1, 'html' => $html);
@@ -8398,7 +8398,7 @@ SQL
 				$html = wfView::create('waf/waf-modal-wrapper', array(
 					'title' => __('Waiting for Changes', 'wordfence'),
 					'html' => $waitingResponse,
-					'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)),
+					'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 					'footerButtonTitle' => __('Close', 'wordfence'),
 					'noX' => true,
 				))->render();
@@ -8427,7 +8427,7 @@ SQL
 					$html = wfView::create('waf/waf-modal-wrapper', array(
 						'title' => __('Unable to Uninstall', 'wordfence'),
 						'html' => $userIniError,
-						'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)),
+						'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 						'footerButtonTitle' => __('Cancel', 'wordfence'),
 					))->render();
 					
@@ -8473,7 +8473,7 @@ SQL
 			$html = wfView::create('waf/waf-modal-wrapper', array(
 				'title' => __('Uninstallation Failed', 'wordfence'),
 				'html' => $installError,
-				'helpHTML' => sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)),
+				'helpHTML' => wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the uninstall process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_REMOVE_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))),
 				'footerButtonTitle' => __('Cancel', 'wordfence'),
 			))->render();
 			return array('uninstallationFailed' => 1, 'html' => $html);
@@ -8679,10 +8679,14 @@ SQL;
 				$durationMessage = wfUtils::makeDuration($alertInterval);
 				$message = sprintf(
 					/* translators: 1. Number of attacks/blocks. 2. Time since. */
-					__('The Wordfence Web Application Firewall has blocked %1$d attacks over the last %2$s. Below is a sample of these recent attacks:', 'wordfence'),
+					__('The Wordfence Web Application Firewall has blocked %1$d attacks over the last %2$s.', 'wordfence'),
 					$attackCount,
 					$durationMessage
 				);
+				$message .= "\n\n";
+				$message .= __('Wordfence is blocking these attacks, and we\'re sending this notice to make you aware that there is a higher volume of the attacks than usual. Additionally, the Wordfence Real-Time IP Blocklist can block known attackers\' IP addresses automatically for Premium users, including any probing requests that may not be malicious on their own. All Wordfence users can also opt to block the attacking IPs manually if desired. As always, be sure to watch your scan results and keep your plugins, themes and WordPress core version updated.', 'wordfence');
+				$message .= "\n\n";
+				$message .= __('Below is a sample of these recent attacks:', 'wordfence');
 				$attackTable = array();
 				$dateMax = $ipMax = $countryMax = 0;
 				foreach ($attackData as $row) {
@@ -8739,7 +8743,7 @@ SQL;
 					$date = str_pad($row['date'], $dateMax + 2);
 					$ip = str_pad($row['IP'] . " ({$row['country']})", $ipMax + $countryMax + 8);
 					$attackMessage = $row['message'];
-					$message .= $date . $ip . $attackMessage . "\n";
+					$message .= "\n" . $date . $ip . $attackMessage;
 				}
 
 				$alertCallback = array(new wfIncreasedAttackRateAlert($message), 'send');
@@ -9210,7 +9214,7 @@ SQL;
 						}
 					}
 
-					$hit->actionData = wfRequestModel::serializeActionData($actionData);
+					$hit->actionData = wfRequestModel::serializeActionData($actionData, array('fullRequest', 'ssl', 'category', 'learningMode', 'paramValue'));
 					$hit->statusCode = $statusCode;
 					$hit->save();
 
@@ -9274,7 +9278,7 @@ SQL;
 		echo '<div class="update-nag" id="wf-extended-protection-notice">' . __('To make your site as secure as possible, take a moment to optimize the Wordfence Web Application Firewall:', 'wordfence') . ' &nbsp;<a class="wf-btn wf-btn-default wf-btn-sm" href="' . esc_url($url) . '">' . __('Click here to configure', 'wordfence') . '</a>
 		<a class="wf-btn wf-btn-default wf-btn-sm wf-dismiss-link" href="#"  onclick="wordfenceExt.setOption(\'dismissAutoPrependNotice\', 1); jQuery(\'#wf-extended-protection-notice\').fadeOut(); return false;" role="button">' . __('Dismiss', 'wordfence') . '</a>
 		<br>
-		<em style="font-size: 85%;">' . sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (' . esc_html__('opens in new tab', 'wordfence') . ')</span></a>.', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)) . '</em>
+		<em style="font-size: 85%;">' . wp_kses(sprintf(/* translators: Support URL. */ __('If you cannot complete the setup process, <a target="_blank" rel="noopener noreferrer" href="%s">click here for help<span class="screen-reader-text"> (opens in new tab)</span></a>.', 'wordfence'), wfSupportController::esc_supportURL(wfSupportController::ITEM_FIREWALL_WAF_INSTALL_MANUALLY)), array('a' => array('href' => array(), 'target' => array(), 'rel' => array()), 'span' => array('class' => array()))) . '</em>
 		</div>';
 	}
 
