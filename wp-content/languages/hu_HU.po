@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.5.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2023-07-22 17:25:25+0000\n"
+"PO-Revision-Date: 2023-07-24 13:57:29+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10569,6 +10569,10 @@ msgstr "Érvénytelen e-mail-cím."
 msgid "The REST API route definition for %1$s is missing the required %2$s argument. For REST API routes that are intended to be public, use %3$s as the permission callback."
 msgstr "A REST API %1$s útvonal definíció %2$s kötelező értéke hiányzik. Azokhoz a REST API útvonalakhoz, amik publikusak, a %3$s jogosultság visszatérési függvényt kell használni."
 
+#: wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php:307
+msgid "Limit result set to blocks matching the search term."
+msgstr "Az eredmény szűkítése a keresési kifejezésnek megfelelő blokkokra."
+
 #: wp-includes/category-template.php:545
 #: wp-includes/theme-compat/sidebar.php:129
 #: wp-includes/widgets/class-wp-widget-categories.php:30
@@ -13639,6 +13643,10 @@ msgstr "Az ilyen típusú blokkok által biztosított kontextus."
 #: wp-includes/theme.php:4007
 msgid "The post types that support thumbnails or true if all post types are supported."
 msgstr "Bejegyzés típusok, amik támogatják az előnézeti képet vagy igaz, ha minden bejegyzés típus támogatott."
+
+#: wp-includes/rest-api/endpoints/class-wp-rest-block-types-controller.php:494
+msgid "Inline CSS code that registers the CSS class required for the style."
+msgstr "Sorközi CSS kód, ami regisztrálja a stílushoz szükséges CSS osztályt."
 
 #: wp-activate.php:128
 msgid "Activation Key Required"
