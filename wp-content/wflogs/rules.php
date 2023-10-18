@@ -889,6 +889,9 @@ $this->rules[630] = wfWAFRule::create($this, 630, NULL, 'file_upload', '100', 'F
     1 => '/wdform_\\d+_element\\d+/',
   ),
 ))))));
+$this->rules[633] = wfWAFRule::create($this, 633, NULL, 'xss', '100', 'PowerPress <= 11.0.10 - Authenticated(Contributor+) Stored Cross-Site Scripting via Media URL', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/wp\\-admin/post\\.php$#i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', new wfWAFRuleVariable($this, 'xssRegex', NULL), array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'Powerpress', 'podcast', 'url'), array (
+))))));
 $this->rules[146] = wfWAFRule::create($this, 146, NULL, 'rce', '100', 'PHAR Deserialization Attack', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/phar:\\/\\//i', array(wfWAFRuleComparisonSubject::create($this, 'request.body', array (
 )),
 wfWAFRuleComparisonSubject::create($this, 'request.queryString', array (
@@ -4796,6 +4799,21 @@ $this->rules[628] = wfWAFRule::create($this, 628, NULL, 'priv-esc', '100', 'Jupi
 )))))));
 $this->rules[629] = wfWAFRule::create($this, 629, NULL, 'rce', '100', 'Media Library Assistant <= 3.09 - Unauthenticated Local/Remote File Inclusion & Remote Code Execution', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'versionLessThan', '3.10', array(wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'media-library-assistant'), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', '#media-library-assistant\\/includes\\/mla\\-stream\\-image\\.php#i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+))))));
+$this->rules[631] = wfWAFRule::create($this, 631, NULL, 'privesc', '100', 'WPvivid Backup Plugin <= 0.9.90 - Missing Authorization via start_staging and get_staging_progress', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'wpvividstg_start_staging_free', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'wpvividstg_get_staging_progress_free', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[632] = wfWAFRule::create($this, 632, NULL, 'auth-bypass', '100', 'MultiVendorX <= 4.0.25 - Improper Authorization on REST Routes via save_settings_permission', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '#/mvx_module/v1/#i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
 $this->rules[307] = wfWAFRule::create($this, 307, NULL, 'brute-force', '100', 'Known malicious User-Agents', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '#mozlila#i', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
