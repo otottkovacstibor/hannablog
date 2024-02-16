@@ -833,7 +833,7 @@ class wfCentral {
 	 */
 	public static function getCentralSiteUrl() {
 		$siteData = json_decode(wfConfig::get('wordfenceCentralSiteData', '[]'), true);
-		return array_key_exists('site-url', $siteData) ? (string) $siteData['site-url'] : null;
+		return (is_array($siteData) && array_key_exists('site-url', $siteData)) ? (string) $siteData['site-url'] : null;
 	}
 	
 	/**
