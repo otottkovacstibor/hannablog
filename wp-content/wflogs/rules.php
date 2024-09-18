@@ -4957,6 +4957,30 @@ wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action')
 wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'cmd'), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
 ))))));
+$this->rules[725] = wfWAFRule::create($this, 725, NULL, 'auth-bypass', '100', 'WAF-RULE-725', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'identical', '', array(wfWAFRuleComparisonSubject::create($this, array('request.md5QueryString', '7695119c5ed410bd84636bd035af648c'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.md5QueryString', '55046bbdcc7824857d85e48ee2c6ed33'), array (
+))))));
+$this->rules[726] = wfWAFRule::create($this, 726, NULL, 'file_upload', '100', 'WAF-RULE-726', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+hb-room[\\/]+v1[\\/]+update-review/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/hb-room[\\/]+v1[\\/]+update-review/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', '/\\.(p(h(pt?|t(ml?)?|ar)[0-9]?|l|y)|(j|a)sp|aspx|sh|shtml|html?|cgi|htaccess|user\\.ini)($|\\.)/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'base64_images'), array (
+  0 => 
+  array (
+    0 => 'filterKeys',
+    1 => '/.*/',
+    2 => '/name/',
+  ),
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'base64_images'), array (
+  0 => 
+  array (
+    0 => 'filterKeys',
+    1 => '/.*/',
+    2 => '/name/',
+  ),
+))))));
 $this->rules[729] = wfWAFRule::create($this, 729, NULL, 'obji', '100', 'WAF-RULE-729', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'versionGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'give'), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'give_action'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/give/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
