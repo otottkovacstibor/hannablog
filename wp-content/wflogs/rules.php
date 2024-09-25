@@ -4981,6 +4981,23 @@ wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'base64_i
     2 => '/name/',
   ),
 ))))));
+$this->rules[727] = wfWAFRule::create($this, 727, NULL, 'priv-esc', '100', 'WAF-RULE-727', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'wpjobportal', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'form_request'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'wpjobportaltask', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'equals', 'configuration', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'wpjobportalme'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', 'wpjobportalme'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'handleRequest', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'task'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', 'task'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'saveconfiguration', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'task'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.body', 'task'), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
+$this->rules[728] = wfWAFRule::create($this, 728, NULL, 'priv-esc', '100', 'LiteSpeed Cache <= 6.3.0.1 - Unauthenticated Privilege Escalation', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('request.cookies', 'litespeed_role'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('request.cookies', 'litespeed_hash'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'currentUserIsNot', 'administrator', array(wfWAFRuleComparisonSubject::create($this, 'server.empty', array (
+))))));
 $this->rules[729] = wfWAFRule::create($this, 729, NULL, 'obji', '100', 'WAF-RULE-729', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'versionGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'give'), array (
 )))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'give_action'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/give/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
