@@ -246,6 +246,10 @@ abstract class wfAuditLogObserversWordfence extends wfAuditLog {
 		);
 	}
 	
+	public static function eventRateLimiters() {
+		return array();
+	}
+	
 	/**
 	 * Registers the observers for this class's chunk of functionality that should run regardless of other settings.
 	 * These observers are expected to do their own check and application of settings like the audit log's mode or
@@ -459,7 +463,10 @@ abstract class wfAuditLogObserversWordfence extends wfAuditLog {
 	
 		//Custom blocking
 		$auditLog->_addObserver('wordfence_updated_country_blocking', function($before, $after) use ($auditLog) { //Country block changed
-			$auditLog->_recordAction(self::WORDFENCE_BLOCKING_COUNTRY_UPDATED, array('before' => $before, 'after' => $after));
+			$diff = wfUtils::array_diff($before, $after);
+			if (!empty($diff['added']) || !empty($diff['removed'])) {
+				$auditLog->_recordAction(self::WORDFENCE_BLOCKING_COUNTRY_UPDATED, array('before' => $before, 'after' => $after));
+			}
 		});
 		
 		$auditLog->_addObserver('wordfence_created_ip_pattern_block', function($type, $reason, $parameters) use ($auditLog) { //IP or Pattern block created manually

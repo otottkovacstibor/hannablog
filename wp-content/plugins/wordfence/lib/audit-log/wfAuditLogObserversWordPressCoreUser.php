@@ -81,6 +81,10 @@ abstract class wfAuditLogObserversWordPressCoreUser extends wfAuditLog {
 		);
 	}
 	
+	public static function eventRateLimiters() {
+		return array();
+	}
+	
 	/**
 	 * Registers the observers for this class's chunk of functionality.
 	 * 

@@ -371,7 +371,7 @@ class wfUtils {
 		
 		$result = array();
 		foreach ($a as $k => $v) {
-			if (isset($b[$k])) {
+			if (array_key_exists($k, $b)) {
 				if ($a[$k] == $b[$k]) {
 					continue;
 				}

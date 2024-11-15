@@ -138,6 +138,19 @@ abstract class wfAuditLogObserversWordPressCoreSite extends wfAuditLog {
 		);
 	}
 	
+	public static function eventRateLimiters() {
+		return array(
+			self::SITE_PERMISSIONS_ROLE_CAPABILITIES => function($auditLog, $payload) {
+				$hash = self::_normalizedPayloadHash($payload);
+				if (self::_rateLimiterCheck(self::SITE_PERMISSIONS_ROLE_CAPABILITIES, $hash)) {
+					self::_rateLimiterConsume(self::SITE_PERMISSIONS_ROLE_CAPABILITIES, $hash);
+					return true;
+				}
+				return false;
+			},
+		);
+	}
+	
 	/**
 	 * Registers the observers for this class's chunk of functionality.
 	 * 
@@ -459,16 +472,22 @@ abstract class wfAuditLogObserversWordPressCoreSite extends wfAuditLog {
 				foreach ($old as $blog_id => $o) {
 					$new = $auditLog->_getState('update_option_wp_user_roles.new', $blog_id);
 					$diff = wfUtils::array_diff($o, $new);
-					$payload[] = array('capabilities' => $new, 'diff' => $diff, 'multisite_blog_id' => $blog_id);
+					if (!empty($diff['added']) || !empty($diff['removed'])) {
+						$payload[] = array('capabilities' => $new, 'diff' => $diff, 'multisite_blog_id' => $blog_id);
+					}
 				}
-				$auditLog->_recordAction(self::SITE_PERMISSIONS_ROLE_CAPABILITIES, array('changes' => $payload));
+				if (count($payload)) {
+					$auditLog->_recordAction(self::SITE_PERMISSIONS_ROLE_CAPABILITIES, array('changes' => $payload));
+				}
 			}
 			else {
 				$blog_id = wfUtils::array_key_first($old);
 				$old = $old[$blog_id];
 				$new = $auditLog->_getState('update_option_wp_user_roles.new', $blog_id);
 				$diff = wfUtils::array_diff($old, $new);
-				$auditLog->_recordAction(self::SITE_PERMISSIONS_ROLE_CAPABILITIES, array('capabilities' => $new, 'diff' => $diff));
+				if (!empty($diff['added']) || !empty($diff['removed'])) {
+					$auditLog->_recordAction(self::SITE_PERMISSIONS_ROLE_CAPABILITIES, array('capabilities' => $new, 'diff' => $diff));
+				}
 			}
 		});
 		
@@ -483,16 +502,22 @@ abstract class wfAuditLogObserversWordPressCoreSite extends wfAuditLog {
 				foreach ($old as $blog_id => $o) {
 					$new = $auditLog->_getState('update_option_active_plugins.new', $blog_id);
 					$diff = wfUtils::array_diff($o, $new);
-					$payload[] = array('plugins' => $new, 'diff' => $diff, 'multisite_blog_id' => $blog_id);
+					if (!empty($diff['added']) || !empty($diff['removed'])) {
+						$payload[] = array('plugins' => $new, 'diff' => $diff, 'multisite_blog_id' => $blog_id);
+					}
 				}
-				$auditLog->_recordAction(self::SITE_OPTION_ACTIVE_PLUGINS, array('changes' => $payload));
+				if (count($payload)) {
+					$auditLog->_recordAction(self::SITE_OPTION_ACTIVE_PLUGINS, array('changes' => $payload));
+				}
 			}
 			else {
 				$blog_id = wfUtils::array_key_first($old);
 				$old = $old[$blog_id];
 				$new = $auditLog->_getState('update_option_active_plugins.new', $blog_id);
 				$diff = wfUtils::array_diff($old, $new);
-				$auditLog->_recordAction(self::SITE_OPTION_ACTIVE_PLUGINS, array('plugins' => $new, 'diff' => $diff));
+				if (!empty($diff['added']) || !empty($diff['removed'])) {
+					$auditLog->_recordAction(self::SITE_OPTION_ACTIVE_PLUGINS, array('plugins' => $new, 'diff' => $diff));
+				}
 			}
 		});
 	}

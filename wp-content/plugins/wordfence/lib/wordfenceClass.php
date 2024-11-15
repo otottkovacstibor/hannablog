@@ -102,6 +102,8 @@ class wordfence {
 		}
 	}
 	public static function uninstallPlugin(){
+		if (!defined('WORDFENCE_DEACTIVATING')) { define('WORDFENCE_DEACTIVATING', true); }
+		
 		//Send admin alert
 		$currentUser = wp_get_current_user();
 		$username = $currentUser->user_login;

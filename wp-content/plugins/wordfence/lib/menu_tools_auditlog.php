@@ -146,7 +146,7 @@ echo wfView::create('tools/options-group-audit-log', array(
 								<div class="wf-col-xs-12">
 									<h3 class="wf-no-bottom"><?php esc_html_e('Recent Event Summary', 'wordfence'); ?></h3>
 									<h4 class="wf-h5 wf-add-bottom-small wf-no-top"><?php echo esc_html(preg_replace('#^https?://#', '', wfUtils::wpHomeURL())); ?></h4>
-									<p><?php esc_html_e('The most recently-detected events on this site are listed below. When the audit log is enabled, full details of each event can be found on Wordfence Central. This includes information such as record IDs, version numbers, and which modifications were made.', 'wordfence'); ?></p>
+									<p><?php esc_html_e('The most recently-detected events on this site are listed below. When the audit log is enabled and your site is connected to Wordfence Central, full details of each event can be found on Central. This includes information such as record IDs, version numbers, and which modifications were made. Log entries in preview mode are only stored locally.', 'wordfence'); ?></p>
 								</div>
 							</div>
 							<div class="wf-row">

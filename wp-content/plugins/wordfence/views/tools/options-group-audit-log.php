@@ -42,7 +42,7 @@ if (!isset($wpTooOld)) {
 			<div class="wf-block-content wf-clearfix">
 				<?php if ($showControls): ?>
 				<p>
-					<?php echo wp_kses(__('These options let you choose which site events to record in the audit log, which is automatically sent to Wordfence Central to prevent any tampering by an attacker. When <strong>Audit Log logging mode</strong> is set to "Significant Events", all events except content changes will be recorded. "All Events" will include content-related events and may be used to monitor for unauthorized post or page changes.', 'wordfence'), array('strong'=>array())); ?>
+					<?php echo wp_kses(__('These options let you choose which site events to record in the audit log. When enabled and your site is connected to Wordfence Central, these events are automatically sent to Central to prevent any tampering by an attacker. When <strong>Audit Log logging mode</strong> is set to "Significant Events", all events except content changes will be recorded. "All Events" will include content-related events and may be used to monitor for unauthorized post or page changes. "Preview" and "Disabled" modes do not send any events to Central.', 'wordfence'), array('strong'=>array())); ?>
 				</p>
 				
 				<div class="wf-row">

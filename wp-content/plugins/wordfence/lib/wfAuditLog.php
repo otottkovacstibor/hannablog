@@ -184,6 +184,87 @@ class wfAuditLog {
 	}
 	
 	/**
+	 * Returns the event rate limiters for use in preprocessing events that occur. A rate limiter for an event type 
+	 * should use the passed $auditLog and $payload values to determine whether the proposed event should be recorded. 
+	 * The primary audit log class will return an array of all observer groupings merged together.
+	 *
+	 *
+	 * @return array
+	 */
+	public static function eventRateLimiters() {
+		static $rateLimiterCache = null;
+		if ($rateLimiterCache === null) {
+			$rateLimiterCache = array();
+			
+			$observers = self::_observers();
+			foreach ($observers as $o) {
+				$rateLimiterCache = array_merge($rateLimiterCache, call_user_func(array($o, 'eventRateLimiters')));
+			}
+		}
+		
+		return $rateLimiterCache;
+	}
+	
+	/**
+	 * Consumes the rate limiter by setting a transient for the given $ttl. Currently this just allows a bucket of one,
+	 * but this could be refactored in the future to allow variable rate limits.
+	 * 
+	 * @param string $event
+	 * @param string $payloadSignature
+	 * @param int $ttl Default is 10 minutes
+	 */
+	protected static function _rateLimiterConsume($event, $payloadSignature, $ttl = 600) {
+		$key = 'wordfenceAuditEvent:' . $event . ':' . $payloadSignature;
+		set_transient($key, time(), $ttl);
+	}
+	
+	/**
+	 * Returns whether or not the rate limiter is available. The return value is `true` if it is, otherwise `false`.
+	 * 
+	 * @param string $event
+	 * @param string $payloadSignature
+	 * @return bool
+	 */
+	protected static function _rateLimiterCheck($event, $payloadSignature) {
+		$key = 'wordfenceAuditEvent:' . $event . ':' . $payloadSignature;
+		return !get_transient($key);
+	}
+	
+	/**
+	 * Recursively computes a hash for the given payload in a deterministic way. This may be used in rate limiter
+	 * implementations for deduplication checks.
+	 * 
+	 * @param mixed $payload
+	 * @param null|HashContext $hasher
+	 * @return bool|string
+	 */
+	protected static function _normalizedPayloadHash($payload, $hasher = null) {
+		$first = is_null($hasher);
+		if ($first) {
+			$hasher = hash_init('sha256');
+		}
+		
+		if (is_array($payload) || is_object($payload)) {
+			$payload = (array) $payload;
+			$keys = array_keys($payload);
+			sort($keys, SORT_REGULAR);
+			foreach ($keys as $k) {
+				$v = $payload[$k];
+				hash_update($hasher, $k);
+				self::_normalizedPayloadHash($v, $hasher);
+			}
+		}
+		else if (is_scalar($payload)) {
+			hash_update($hasher, $payload);
+		}
+		
+		if ($first) {
+			return hash_final($hasher);
+		}
+		return true;
+	}
+	
+	/**
 	 * Returns an array of all observer groupings.
 	 * 
 	 * @return array
@@ -421,6 +502,13 @@ class wfAuditLog {
 	 * @param bool $appendToExisting When true, does not create a new entry and instead only appends to entries of the same $action
 	 */
 	protected function _recordAction($action, $metadata = array(), $appendToExisting = false) {
+		$rateLimiters = self::eventRateLimiters();
+		if (isset($rateLimiters[$action])) {
+			if (!$rateLimiters[$action]($this, $metadata)) {
+				return;
+			}
+		}
+		
 		if ($appendToExisting) {
 			foreach ($this->_pending as &$entry) {
 				if ($entry['action'] == $action) {
@@ -629,11 +717,11 @@ class wfAuditLog {
 				$this->_updateAuditPreview(array_values($preview));
 			}
 			catch (Exception $e) {
-				wfCentralAPIRequest::handleInternalCentralAPIError($e);
+				if (!defined('WORDFENCE_DEACTIVATING') || !WORDFENCE_DEACTIVATING) { wfCentralAPIRequest::handleInternalCentralAPIError($e); }
 				throw new wfAuditLogSendFailedException();
 			}
 			catch (Throwable $t) {
-				wfCentralAPIRequest::handleInternalCentralAPIError($t);
+				if (!defined('WORDFENCE_DEACTIVATING') || !WORDFENCE_DEACTIVATING) { wfCentralAPIRequest::handleInternalCentralAPIError($t); }
 				throw new wfAuditLogSendFailedException();
 			}
 		}
@@ -734,7 +822,10 @@ class wfAuditLog {
 			if ($ts = wp_next_scheduled('wordfence_batchSendAuditEvents')) {
 				self::shared()->_unscheduleSendPendingAuditEvents($ts);
 			}
-			self::shared()->_scheduleSendPendingAuditEvents(true);
+			
+			if (!defined('WORDFENCE_DEACTIVATING') || !WORDFENCE_DEACTIVATING) {
+				self::shared()->_scheduleSendPendingAuditEvents(true);
+			}
 		}
 	}
 	

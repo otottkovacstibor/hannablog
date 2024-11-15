@@ -78,7 +78,7 @@ class wfCentralAPIRequest {
 			// Check if site has been disconnected on Central's end, but the plugin is still trying to connect.
 			if ($statusCode === 404 && strpos($body, 'Site has been disconnected') !== false) {
 				// Increment attempt count.
-				$centralDisconnectCount = get_site_transient('wordfenceCentralDisconnectCount');
+				$centralDisconnectCount = (int) get_site_transient('wordfenceCentralDisconnectCount');
 				set_site_transient('wordfenceCentralDisconnectCount', ++$centralDisconnectCount, 86400);
 
 				// Once threshold is hit, disconnect Central.
