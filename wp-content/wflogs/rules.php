@@ -5310,6 +5310,76 @@ $this->rules[759] = wfWAFRule::create($this, 759, NULL, 'insufficient-auth', '10
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'post_api_key', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'spbc_remote_call_action'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'debug', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'spbc_remote_call_action'), array (
 )))))));
+$this->rules[760] = wfWAFRule::create($this, 760, NULL, 'xss', '100', 'WAF-RULE-760', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/\\/wp\\-admin[\\/]+admin\\-ajax\\.php/i', array(wfWAFRuleComparisonSubject::create($this, 'server.script_filename', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'equals', 'fluentform_submit', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'action'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'action'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'matchCount', new wfWAFRuleVariable($this, 'xssRegex', NULL), array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'data'), array (
+  0 => 
+  array (
+    0 => 'pregReplace',
+    1 => '/%25([0-9A-Fa-f]{2})/',
+    2 => '%$1',
+  ),
+  1 => 
+  array (
+    0 => 'pregReplace',
+    1 => '/%3[dD]/',
+    2 => '=',
+  ),
+  2 => 
+  array (
+    0 => 'pregReplace',
+    1 => '/%20/',
+    2 => ' ',
+  ),
+))))));
+$this->rules[761] = wfWAFRule::create($this, 761, NULL, 'insufficient-auth', '100', 'WAF-RULE-761', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'antispam', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'plugin_name'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'anti-spam', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'plugin_name'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'apbct', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'plugin_name'), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'd41d8cd98f00b204e9800998ecf8427e', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'spbc_remote_call_token'), array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'spbc_remote_call_token'), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'lengthGreaterThan', '0', array(wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'spbc_remote_call_action'), array (
+))))));
+$this->rules[762] = wfWAFRule::create($this, 762, NULL, 'xss', '100', 'WAF-RULE-762', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'versionLessThanEqualTo', '5.3.01', array(wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'hide-my-wp'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', '#/wp-admin\\/plugins\\.php#', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)),
+wfWAFRuleComparisonSubject::create($this, 'request.uri', array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'keyMatches', new wfWAFRuleVariable($this, 'xssRegex', NULL), array(wfWAFRuleComparisonSubject::create($this, 'request.queryString', array (
+))))));
+$this->rules[763] = wfWAFRule::create($this, 763, NULL, 'obji', '100', 'Advanced Order Export For WooCommerce <= 3.5.5 - Unauthenticated PHP Object Injection via Order Details', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'versionLessThanEqualTo', '3.5.5', array(wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'woo-order-export-lite'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+wc[\\/]+store[\\/]+v1[\\/]+checkout/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/wc[\\/]+store[\\/]+v1[\\/]+checkout/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+))))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparison($this, 'match', '/(^|;|{|})(?:O|C):\\d+:"(?!stdClass")[^"]+":/', array(wfWAFRuleComparisonSubject::create($this, array('request.jsonBody', 'customer_note'), array (
+))))));
+$this->rules[764] = wfWAFRule::create($this, 764, NULL, 'auth-bypass', '100', 'Really Simple Security (Free, Pro, and Pro Multisite) 9.0.0 - 9.1.1.1 - Authentication Bypass', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'versionLessThanEqualTo', '9.1.1.1', array(wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'really-simple-ssl'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'really-simple-ssl-pro'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('wordpress.plugins', 'really-simple-ssl-pro-multisite'), array (
+)))), new wfWAFRuleLogicalOperator('AND'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+skip_onboarding/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+skip_onboarding/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+))))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+do_not_ask_again/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+do_not_ask_again/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+))))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+save_default_method_email/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+save_default_method_email/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+))))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+save_default_method_email_profile/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+save_default_method_email_profile/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+))))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'match', '/wp-json[\\/]+reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+validate_email_setup/i', array(wfWAFRuleComparisonSubject::create($this, 'request.path', array (
+)))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '/reallysimplessl[\\/]+v1[\\/]+two_fa[\\/]+validate_email_setup/i', array(wfWAFRuleComparisonSubject::create($this, array('request.body', 'rest_route'), array (
+)),
+wfWAFRuleComparisonSubject::create($this, array('request.queryString', 'rest_route'), array (
+)))))));
 $this->rules[307] = wfWAFRule::create($this, 307, NULL, 'brute-force', '100', 'Known malicious User-Agents', 0, 'block', new wfWAFRuleComparisonGroup(new wfWAFRuleComparison($this, 'equals', 'Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'match', '#mozlila#i', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
 )))), new wfWAFRuleLogicalOperator('OR'), new wfWAFRuleComparison($this, 'equals', 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:62.0) Gecko/20100101 Firefox/62.0', array(wfWAFRuleComparisonSubject::create($this, array('request.headers', 'User-Agent'), array (
